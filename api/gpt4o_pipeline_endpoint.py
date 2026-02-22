@@ -1674,7 +1674,8 @@ async def gpt4o_pipeline_chat(
                                         memory_context=memory_context,
                                         message_round_id=current_message_round_id,
                                         interrupt_state=interrupt_state,
-                                        history_lock=_history_lock
+                                        history_lock=_history_lock,
+                                        track_task=_track_task
                                     )
                                     
                                     if pending_content:
@@ -1967,7 +1968,8 @@ async def gpt4o_pipeline_chat(
                                                 pipeline_context=pipeline_context,
                                                 message_round_id=wait_round_id,
                                                 interrupt_state=interrupt_state,
-                                                history_lock=_history_lock
+                                                history_lock=_history_lock,
+                                                track_task=_track_task
                                             )
                                             logger.info("[等待任务] ✅ LLM 处理完成")
                                             pipeline_context["is_processing"] = False
@@ -2067,7 +2069,8 @@ async def gpt4o_pipeline_chat(
                                         pipeline_context=pipeline_context,
                                         message_round_id=current_message_round_id,
                                         interrupt_state=interrupt_state,
-                                        history_lock=_history_lock
+                                        history_lock=_history_lock,
+                                        track_task=_track_task
                                     )
                                     logger.info("[stop_audio] ✅ LLM 处理完成")
                                 except Exception as e:
@@ -2254,7 +2257,8 @@ async def gpt4o_pipeline_chat(
                                                 interrupt_state=interrupt_state,
                                                 pipeline_context=pipeline_context,
                                                 tts_delay=0,
-                                                history_lock=_history_lock
+                                                history_lock=_history_lock,
+                                                track_task=_track_task
                                             )
                                             
                                             pipeline_context["is_processing"] = False
@@ -2315,7 +2319,8 @@ async def gpt4o_pipeline_chat(
                                     interrupt_state=interrupt_state,
                                     pipeline_context=pipeline_context,
                                     tts_delay=tts_delay,
-                                    history_lock=_history_lock
+                                    history_lock=_history_lock,
+                                    track_task=_track_task
                                 )
                                 
                                 pipeline_context["is_processing"] = False
@@ -2361,7 +2366,8 @@ async def gpt4o_pipeline_chat(
                                     message_round_id=current_message_round_id,
                                     interrupt_state=interrupt_state,
                                     pipeline_context=pipeline_context,
-                                    history_lock=_history_lock
+                                    history_lock=_history_lock,
+                                    track_task=_track_task
                                 )
 
                                 # 🆕 标记热点已使用
@@ -2763,7 +2769,8 @@ async def process_audio_stream(
     message_round_id: Optional[str] = None,
     interrupt_state: Optional[Dict[str, Any]] = None,
     pipeline_context: Optional[Dict[str, Any]] = None,
-    history_lock: Optional[threading.Lock] = None
+    history_lock: Optional[threading.Lock] = None,
+    track_task=None
 ):
     """
     处理用户音频 - GPT-4o 三段链路 + Qwen-Omni 评估轨 + 热点注入 + 记忆管理
@@ -2783,6 +2790,7 @@ async def process_audio_stream(
     timings = {}
     total_start = time.time()
     _lock = history_lock or threading.Lock()
+    _track_task = track_task or (lambda c, name="unnamed": asyncio.ensure_future(c))
 
     # 🆕 初始化打断事件
     if interrupt_state is not None:
@@ -3601,7 +3609,8 @@ async def process_audio_stream_with_transcription(
     interrupt_state: Optional[Dict[str, Any]] = None,
     pipeline_context: Optional[Dict[str, Any]] = None,
     tts_delay: float = 0.5,
-    history_lock: Optional[threading.Lock] = None
+    history_lock: Optional[threading.Lock] = None,
+    track_task=None
 ):
     """
     处理已转录的音频 - LLM 生成 + TTS
@@ -3611,8 +3620,7 @@ async def process_audio_stream_with_transcription(
     timings = {"stt": 0}  # STT 已预先完成
     total_start = time.time()
     _lock = history_lock or threading.Lock()
-
-    # 🆕 初始化打断事件
+    _track_task = track_task or (lambda c, name="unnamed": asyncio.ensure_future(c))
     if interrupt_state is not None:
         interrupt_state["interrupt_event"] = asyncio.Event()
         interrupt_state["is_speaking"] = False
