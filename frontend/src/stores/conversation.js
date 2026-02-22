@@ -1399,6 +1399,12 @@ export const useConversationStore = defineStore('conversation', () => {
           // 重置打断标志，允许接收新的音频块
           console.log('🤖 [AI] AI 开始生成回复，重置 isInterrupting')
           isInterrupting = false
+          // 重置当前消息 ID，确保新回复创建新消息气泡
+          if (currentAssistantMessageId !== null) {
+            const prevMsg = messages.value.find(m => m.id === currentAssistantMessageId)
+            if (prevMsg) prevMsg.streaming = false
+            currentAssistantMessageId = null
+          }
           break
           
         case 'interrupted':

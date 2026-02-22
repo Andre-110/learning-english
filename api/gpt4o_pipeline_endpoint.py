@@ -2782,7 +2782,8 @@ async def process_audio_stream(
     """
     timings = {}
     total_start = time.time()
-    
+    _lock = history_lock or threading.Lock()
+
     # 🆕 初始化打断事件
     if interrupt_state is not None:
         interrupt_state["interrupt_event"] = asyncio.Event()
@@ -3009,7 +3010,6 @@ async def process_audio_stream(
         def run_interaction():
             """在线程中运行 GPT-4o 三段链路"""
             # 🆕 Task #15: 在线程中使用 conversation_history 快照，避免竞态
-            _lock = history_lock or threading.Lock()
             with _lock:
                 history_snapshot = list(conversation_history)
             try:
@@ -3610,7 +3610,8 @@ async def process_audio_stream_with_transcription(
     """
     timings = {"stt": 0}  # STT 已预先完成
     total_start = time.time()
-    
+    _lock = history_lock or threading.Lock()
+
     # 🆕 初始化打断事件
     if interrupt_state is not None:
         interrupt_state["interrupt_event"] = asyncio.Event()
@@ -3840,7 +3841,6 @@ async def process_audio_stream_with_transcription(
         def run_interaction():
             """在线程中运行 LLM + TTS（跳过 STT）"""
             # 🆕 Task #15: 在线程中使用 conversation_history 快照，避免竞态
-            _lock = history_lock or threading.Lock()
             with _lock:
                 history_snapshot = list(conversation_history)
             try:
