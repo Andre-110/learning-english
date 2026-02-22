@@ -742,6 +742,10 @@ async def gpt4o_pipeline_chat(
             "is_continue": is_continue or is_session_resumed,
             "pipeline": "gpt4o"
         })
+
+        # 立即重置前端打断标志，防止开场白音频被丢弃
+        if not is_continue and not is_session_resumed:
+            await websocket.send_json({"type": "ai_response_started"})
         
         # 🆕 设置用户上下文（日志会自动带上 user_id）
         set_user_context(user_id or "anonymous", conversation_id)
