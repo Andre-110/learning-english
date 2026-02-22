@@ -1564,48 +1564,52 @@ async def gpt4o_pipeline_chat(
                             logger.info(f"[双阈值] 收到 speculative_stt, 共 {frame_count} 帧")
                             
                             if streaming_audio_frames and is_streaming:
-                                # 将流式帧合并为完整音频
-                                audio_data_bytes = b''.join(streaming_audio_frames)
-                                wav_audio = create_wav_from_pcm(audio_data_bytes, 16000)
-                                
-                                logger.info(f"[双阈值] 开始预启动 STT: {len(wav_audio)} bytes")
-                                
-                                # 暂存音频数据
-                                speculative_stt_context["pending_audio"] = wav_audio
-                                speculative_stt_context["is_waiting"] = True
-                                
-                                # 异步执行 STT（不阻塞）
-                                async def run_speculative_stt():
-                                    try:
-                                        asr_prompt = "This is an English speaking practice conversation."
-                                        if conversation_history:
-                                            last_ai_msg = next((m for m in reversed(conversation_history) if m.get("role") == "assistant"), None)
-                                            if last_ai_msg:
-                                                prev_content = last_ai_msg.get("content", "")[:100].replace("\n", " ")
-                                                asr_prompt += f" Previous AI said: '{prev_content}'. User replies:"
-                                        
-                                        transcription = await loop.run_in_executor(
-                                            None,
-                                            lambda: pipeline.transcribe(wav_audio, "wav", prompt=asr_prompt)
-                                        )
-                                        
-                                        # 暂存 STT 结果
-                                        speculative_stt_context["pending_transcription"] = transcription
-                                        logger.info(f"[双阈值] STT 完成: {transcription[:50]}...")
-                                        
-                                        # 发送转录结果（让用户看到）
-                                        await websocket.send_json({
-                                            "type": "transcription",
-                                            "text": transcription,
-                                            "is_speculative": True,  # 标记为预启动结果
-                                            "timestamp": datetime.utcnow().isoformat() + "Z"
-                                        })
-                                        
-                                    except Exception as e:
-                                        logger.error(f"[双阈值] 预启动 STT 失败: {e}")
-                                        speculative_stt_context["pending_transcription"] = None
-                                
-                                _track_task(run_speculative_stt(), name="speculative_stt")
+                                # 最少需要 10 帧（约 200ms @ 20ms/帧）才触发 STT
+                                if frame_count < 10:
+                                    logger.info(f"[双阈值] 帧数不足({frame_count})，跳过 speculative STT")
+                                else:
+                                    # 将流式帧合并为完整音频
+                                    audio_data_bytes = b''.join(streaming_audio_frames)
+                                    wav_audio = create_wav_from_pcm(audio_data_bytes, 16000)
+
+                                    logger.info(f"[双阈值] 开始预启动 STT: {len(wav_audio)} bytes")
+
+                                    # 暂存音频数据
+                                    speculative_stt_context["pending_audio"] = wav_audio
+                                    speculative_stt_context["is_waiting"] = True
+
+                                    # 异步执行 STT（不阻塞）
+                                    async def run_speculative_stt():
+                                        try:
+                                            asr_prompt = "This is an English speaking practice conversation."
+                                            if conversation_history:
+                                                last_ai_msg = next((m for m in reversed(conversation_history) if m.get("role") == "assistant"), None)
+                                                if last_ai_msg:
+                                                    prev_content = last_ai_msg.get("content", "")[:100].replace("\n", " ")
+                                                    asr_prompt += f" Previous AI said: '{prev_content}'. User replies:"
+
+                                            transcription = await loop.run_in_executor(
+                                                None,
+                                                lambda: pipeline.transcribe(wav_audio, "wav", prompt=asr_prompt)
+                                            )
+
+                                            # 暂存 STT 结果
+                                            speculative_stt_context["pending_transcription"] = transcription
+                                            logger.info(f"[双阈值] STT 完成: {transcription[:50]}...")
+
+                                            # 发送转录结果（让用户看到）
+                                            await safe_send_json(websocket, {
+                                                "type": "transcription",
+                                                "text": transcription,
+                                                "is_speculative": True,
+                                                "timestamp": datetime.utcnow().isoformat() + "Z"
+                                            })
+
+                                        except Exception as e:
+                                            logger.error(f"[双阈值] 预启动 STT 失败: {e}")
+                                            speculative_stt_context["pending_transcription"] = None
+
+                                    _track_task(run_speculative_stt(), name="speculative_stt")
                             
                         elif msg_type == "confirm_end":
                             # 🆕 双阈值系统：长阈值触发，确认用户说完
