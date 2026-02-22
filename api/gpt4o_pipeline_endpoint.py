@@ -481,6 +481,31 @@ async def gpt4o_pipeline_chat(
         
     # 🆕 P5: 后台预热用户的 interests（不阻塞，仅老用户）
     user_interests = user_profile.get('interests', [])
+
+    audio_buffer = []
+    audio_format = "wav"
+    is_recording = False
+
+    # 🆕 Task #14: 后台任务追踪集合（避免 fire-and-forget 任务被 GC 回收）
+    _background_tasks: set = set()
+
+    def _track_task(coro, name: str = "unnamed"):
+        """创建并追踪后台任务，完成后自动移除"""
+        task = asyncio.create_task(coro, name=name)
+        _background_tasks.add(task)
+        def _done_cb(t):
+            _background_tasks.discard(t)
+            if t.cancelled():
+                return
+            exc = t.exception()
+            if exc:
+                logger.warning(f"[后台任务] {t.get_name()} 异常: {exc}")
+        task.add_done_callback(_done_cb)
+        return task
+
+    # 🆕 Task #15: conversation_history 线程安全锁
+    _history_lock = threading.Lock()
+
     if user_interests and CONTENT_INJECTION_ENABLED and not is_new_user:
         async def _warmup_user_interests():
             """后台预热用户兴趣话题"""
@@ -494,7 +519,7 @@ async def gpt4o_pipeline_chat(
                         logger.info(f"[热点轨] 预热用户兴趣: {interest}")
             except Exception as e:
                 logger.debug(f"[热点轨] 预热失败（不影响使用）: {e}")
-        
+
         # 启动后台任务，不阻塞连接流程
         _track_task(_warmup_user_interests(), name="warmup_interests")
         logger.info(f"[热点轨] 启动后台预热: {user_interests[:3]}")
@@ -529,29 +554,6 @@ async def gpt4o_pipeline_chat(
                 logger.warning(f"[跨对话摘要] 加载失败: {e}")
         elif is_new_user:
             logger.info(f"[新用户] {user_id}, 跳过跨对话摘要查询")
-    audio_buffer = []
-    audio_format = "wav"
-    is_recording = False
-
-    # 🆕 Task #14: 后台任务追踪集合（避免 fire-and-forget 任务被 GC 回收）
-    _background_tasks: set = set()
-
-    def _track_task(coro, name: str = "unnamed"):
-        """创建并追踪后台任务，完成后自动移除"""
-        task = asyncio.create_task(coro, name=name)
-        _background_tasks.add(task)
-        def _done_cb(t):
-            _background_tasks.discard(t)
-            if t.cancelled():
-                return
-            exc = t.exception()
-            if exc:
-                logger.warning(f"[后台任务] {t.get_name()} 异常: {exc}")
-        task.add_done_callback(_done_cb)
-        return task
-
-    # 🆕 Task #15: conversation_history 线程安全锁
-    _history_lock = threading.Lock()
 
     # 评估队列管理
     eval_context = {
