@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-31T04:00:19.634481",
+    "level": "A1",
+    "turns": 15,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "music",
+        "travel",
+        "cooking"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 1.269,
+    "user_avg_latency": 3.311,
+    "hot_search_avg_latency": 6.255,
+    "hot_content_events": 2
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "travel",
+      "headline": "Paris makes a bridge look like a cave!",
+      "search_time": 6.05
+    },
+    {
+      "turn": 6,
+      "type": "async_search",
+      "topic": "cooking",
+      "headline": "Nestlé's new tasty flavors are fun!",
+      "search_time": 6.46
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! Did you hear Paris will turn a bridge into a cave in 2026? Isn't that cool? What do you think about it?",
+      "latency_s": 3.655,
+      "has_hot_content": true,
+      "hot_topic": "travel"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes! I hear. Paris, very famous. Bridge to cave... is strange, right? \n\nI think maybe it is cool. But, why cave? I like bridge. Bridge is nice for walking and looking. Cave... maybe dark? \n\nI feel little confused. But, maybe it is fun for people to explore? What do you think?",
+      "latency_s": 3.221,
+      "word_count": 52
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Turning a bridge into a cave does sound unique! Exploring new places can be exciting. Do you like visiting new places or trying new things?",
+      "latency_s": 1.327,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, yes! I like visiting new places. It is fun! I see different things, eat new food. I like to try, um, how to say, new experiences? \n\nBut sometimes I feel nervous, because people speak fast. I try my best. What about you? Do you like new places?",
+      "latency_s": 3.133,
+      "word_count": 48
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That's great! Trying new experiences is exciting. I love exploring new places too. What's the most fun place you've visited so far?",
+      "latency_s": 1.322,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I think... I visit, um, Japan? Yes! Japan was very fun. I see... cherry blossoms, very beautiful! And, um, food... sushi! Very delicious. I, um, try many new things there. It is different from my country. I like the culture, very interesting! What about you? Where you go?",
+      "latency_s": 3.258,
+      "word_count": 49
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Japan sounds amazing! I love trying new foods too. What's your favorite sushi?",
+      "latency_s": 0.874,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, my favorite sushi... I think is, um, salmon sushi. I like the taste, very fresh! And also, um, tuna sushi, yes. It is nice too. I try some sushi in Japan. Very delicious! I eat with, um, wasabi and soy sauce, yes? Do you like sushi?",
+      "latency_s": 3.003,
+      "word_count": 47
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Salmon sushi is so tasty! I enjoy sushi too, especially with wasabi. Have you ever tried making sushi at home?",
+      "latency_s": 1.034,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I... I never try make sushi at home. I think is... difficult? But I want to try! Maybe with friend? I like cooking, but sushi... um, need many things, like rice, seaweed... and fish. I not sure how to do. Do you make sushi at home?",
+      "latency_s": 1.992,
+      "word_count": 47
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Making sushi at home is fun with friends! I haven't tried yet, but I'd love to someday. What's your favorite dish to cook?",
+      "latency_s": 1.091,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, my favorite dish to cook… I think is, um, fried rice? Yes, fried rice! Very easy. I can put, um, vegetables and egg. Sometimes, I add some chicken or shrimp too! It’s very delicious. But, um, I need more practice. My rice not always good. Do you like fried rice?",
+      "latency_s": 10.405,
+      "word_count": 51
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Fried rice is delicious and easy to make! What do you like to add to your fried rice—maybe vegetables or chicken?",
+      "latency_s": 3.584,
+      "has_hot_content": true,
+      "hot_topic": "cooking"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, yes! I like add, um, vegetables. Like, um, carrots, peas, and maybe, um, egg too? I think egg is good for fried rice. Sometimes I also put, uh, chicken. But I not always have chicken. Um, do you like chicken in fried rice?",
+      "latency_s": 3.066,
+      "word_count": 44
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Egg in fried rice is so tasty! I love adding chicken too. What's your favorite veggie to add?",
+      "latency_s": 1.246,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I like, um, carrots and peas, yes. They are, um, very good in fried rice. Also, I like, um, bell pepper? It’s, um, sweet and colorful! But, um, I not sure about, um, other vegetables. Do you like bell pepper?",
+      "latency_s": 2.096,
+      "word_count": 41
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Bell pepper is so colorful and tasty! It's great in many dishes. Do you ever try new veggies in your cooking?",
+      "latency_s": 1.324,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, yes! I, um, try new veggies sometimes. But, um, I not always know, um, what to pick. I, um, saw, uh, zucchini in the market. It look, um, funny but good, yes? I want to, um, try it. Do you like, um, zucchini?",
+      "latency_s": 2.299,
+      "word_count": 44
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Zucchini is yummy and fun to cook with! What dish do you want to try with zucchini?",
+      "latency_s": 1.101,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I think, um, maybe I want to try, um, zucchini stir fry? Um, yes! I see, um, people cook it with, um, other veggies and, um, sauce. I not sure what sauce, um, maybe soy sauce? I, um, want to learn more, um, about cooking. What do you think?",
+      "latency_s": 2.245,
+      "word_count": 50
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Zucchini stir fry sounds delicious! Soy sauce is a great choice. What do you enjoy most about trying new recipes?",
+      "latency_s": 1.058,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I think, um, I enjoy, um, trying new recipes because it, um, fun! I like, um, see new food and, um, maybe make it. Um, sometimes, um, I feel nervous, but I, um, happy when I finish cooking. Um, also, um, I like share food with my, um, family and friends. They, um, say nice things!",
+      "latency_s": 6.366,
+      "word_count": 57
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Cooking for family and friends is so rewarding! Do you have a favorite dish that everyone loves?",
+      "latency_s": 0.963,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, I think, um, my favorite dish is, um, spaghetti! Everyone, um, like it because, um, it's tasty and, um, easy to make. I, um, put tomato sauce and, um, cheese. Um, sometimes I, uh, add vegetables too. I like, um, cooking it for my family. They, um, say it's good!",
+      "latency_s": 2.011,
+      "word_count": 51
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Spaghetti with tomato sauce and cheese sounds yummy! What veggies do you like to add to your spaghetti?",
+      "latency_s": 1.187,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, I like, um, add vegetables like, um, mushrooms and, um, bell pepper. They, um, make spaghetti, um, more delicious! Also, um, I like spinach too. It’s, um, healthy! But, um, sometimes I forget to, um, put vegetables. I just, um, want to eat fast!",
+      "latency_s": 1.893,
+      "word_count": 45
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "Adding mushrooms and bell peppers sounds tasty! I totally get wanting to eat fast sometimes. What's your favorite quick meal?",
+      "latency_s": 0.961,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, I think, um, my favorite quick meal is, um, fried rice. It's, um, easy to make! I just, um, use rice, um, some vegetables like, um, peas and carrots, and, um, maybe egg. Uh, I can, um, cook it fast, like, in 10 minutes, I think. It, um, very good for, um, lunch or dinner. What about you?",
+      "latency_s": 2.67,
+      "word_count": 59
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Fried rice sounds delicious and perfect for a quick meal! I love making sandwiches when I'm in a hurry. What's your favorite part of cooking?",
+      "latency_s": 0.956,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, I like, um, cooking, um, fried rice because it, um, very fast and, um, many flavors. I, um, like to, um, put eggs and, um, peas. Um, my favorite part is, um, mixing everything. It, um, fun to see the colors. Um, what about you?",
+      "latency_s": 2.0,
+      "word_count": 46
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Mixing everything and seeing the colors sounds fun! I enjoy experimenting with different spices. Do you have any favorite spices for your cooking?",
+      "latency_s": 1.005,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

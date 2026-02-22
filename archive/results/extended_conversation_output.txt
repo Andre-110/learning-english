@@ -1,0 +1,528 @@
+====================================================================================================
+扩展的多轮对话测试 - 处理时间趋势分析
+测试指标：处理时间随轮数增加的变化
+====================================================================================================
+
+2025-12-17 11:03:05 | services.qwen_omni_audio | INFO     | Qwen-Omni Audio 服务初始化: audio_model=qwen3-omni-flash
+2025-12-17 11:03:05 | services.unified_processor | INFO     | 统一处理器初始化: 使用 qwen-omni 服务
+初始化 TTS 服务...
+✅ TTS 服务初始化完成
+
+
+====================================================================================================
+场景 1/3: 场景1：足球兴趣深入探索（20轮）
+====================================================================================================
+
+--- Turn 1/20 ---
+用户: Hello! I want to talk about football.
+2025-12-17 11:03:07 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36864 bytes
+2025-12-17 11:03:10 | services.unified_processor | INFO     | [解析成功] 转录: Hello, I want to talk about fo...
+处理时间: 3.20s
+对话历史长度: 2条消息
+
+--- Turn 2/20 ---
+用户: I really like Messi. He is amazing.
+2025-12-17 11:03:11 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 46464 bytes
+2025-12-17 11:03:16 | services.unified_processor | INFO     | [解析成功] 转录: I really like Messi. He is ama...
+处理时间: 4.70s
+对话历史长度: 4条消息
+
+--- Turn 3/20 ---
+用户: Can you tell me more about his early career?
+2025-12-17 11:03:17 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36096 bytes
+2025-12-17 11:03:23 | services.unified_processor | INFO     | [解析成功] 转录: Can you tell me more about his...
+处理时间: 5.47s
+对话历史长度: 6条消息
+
+--- Turn 4/20 ---
+用户: What about his achievements in Barcelona?
+2025-12-17 11:03:25 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36864 bytes
+2025-12-17 11:03:30 | services.unified_processor | INFO     | [解析成功] 转录: What about his achievements in...
+处理时间: 4.88s
+对话历史长度: 8条消息
+
+--- Turn 5/20 ---
+用户: I also want to know about his family life.
+2025-12-17 11:03:31 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 47232 bytes
+2025-12-17 11:03:36 | services.unified_processor | INFO     | [解析成功] 转录: I also want to know about his ...
+处理时间: 4.38s
+对话历史长度: 10条消息
+
+--- Turn 6/20 ---
+用户: How did he start playing football?
+2025-12-17 11:03:37 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 32256 bytes
+2025-12-17 11:03:41 | services.unified_processor | INFO     | [解析成功] 转录: How did he start playing footb...
+处理时间: 4.00s
+对话历史长度: 12条消息
+
+--- Turn 7/20 ---
+用户: What was his first club?
+2025-12-17 11:03:43 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 30720 bytes
+2025-12-17 11:03:47 | services.unified_processor | INFO     | [解析成功] 转录: What was his first club?...
+处理时间: 4.81s
+对话历史长度: 14条消息
+
+--- Turn 8/20 ---
+用户: When did he join Barcelona?
+2025-12-17 11:03:49 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48000 bytes
+2025-12-17 11:03:53 | services.unified_processor | INFO     | [解析成功] 转录: When did he join Barcelona?...
+处理时间: 3.28s
+对话历史长度: 16条消息
+
+--- Turn 9/20 ---
+用户: How many goals did he score for Barcelona?
+2025-12-17 11:03:54 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 39168 bytes
+2025-12-17 11:04:22 | services.unified_processor | INFO     | [解析成功] 转录: How many goals did he score fo...
+处理时间: 28.24s
+对话历史长度: 18条消息
+
+--- Turn 10/20 ---
+用户: What about his international career?
+2025-12-17 11:04:24 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 32256 bytes
+2025-12-17 11:04:29 | services.unified_processor | INFO     | [解析成功] 转录: What about his international c...
+处理时间: 4.69s
+对话历史长度: 20条消息
+
+--- Turn 11/20 ---
+用户: Did he win the World Cup?
+2025-12-17 11:04:30 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 22656 bytes
+2025-12-17 11:04:33 | services.unified_processor | INFO     | [解析成功] 转录: Did he win the World Cup?...
+处理时间: 3.75s
+对话历史长度: 22条消息
+
+--- Turn 12/20 ---
+用户: What year did he win it?
+2025-12-17 11:04:37 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 25728 bytes
+2025-12-17 11:04:41 | services.unified_processor | INFO     | [解析成功] 转录: What year did he win it...
+处理时间: 4.06s
+对话历史长度: 24条消息
+
+--- Turn 13/20 ---
+用户: Who were his teammates?
+2025-12-17 11:04:42 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 24192 bytes
+2025-12-17 11:04:47 | services.unified_processor | INFO     | [解析成功] 转录: Who were his teammates?...
+处理时间: 5.17s
+对话历史长度: 26条消息
+
+--- Turn 14/20 ---
+用户: What about his playing style?
+2025-12-17 11:04:49 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33792 bytes
+2025-12-17 11:04:53 | services.unified_processor | INFO     | [解析成功] 转录: What about his playing style?...
+处理时间: 4.36s
+对话历史长度: 28条消息
+
+--- Turn 15/20 ---
+用户: Is he still playing professionally?
+2025-12-17 11:04:54 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 26496 bytes
+2025-12-17 11:04:59 | services.unified_processor | INFO     | [解析成功] 转录: Is he still playing profession...
+处理时间: 4.64s
+对话历史长度: 30条消息
+
+--- Turn 16/20 ---
+用户: Where does he play now?
+2025-12-17 11:05:00 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 17664 bytes
+2025-12-17 11:05:06 | services.unified_processor | INFO     | [解析成功] 转录: Where does he play now...
+处理时间: 5.80s
+对话历史长度: 32条消息
+
+--- Turn 17/20 ---
+用户: How old is he now?
+2025-12-17 11:05:07 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 21120 bytes
+2025-12-17 11:05:11 | services.unified_processor | INFO     | [解析成功] 转录: How old is he now...
+处理时间: 3.55s
+对话历史长度: 34条消息
+
+--- Turn 18/20 ---
+用户: What are his hobbies?
+2025-12-17 11:05:12 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 23424 bytes
+2025-12-17 11:05:15 | services.unified_processor | INFO     | [解析成功] 转录: What are his hobbies?...
+处理时间: 3.39s
+对话历史长度: 36条消息
+
+--- Turn 19/20 ---
+用户: Does he have any charity work?
+2025-12-17 11:05:17 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 30720 bytes
+2025-12-17 11:05:22 | services.unified_processor | INFO     | [解析成功] 转录: Does he have any charity work?...
+处理时间: 5.06s
+对话历史长度: 38条消息
+
+--- Turn 20/20 ---
+用户: Can you tell me more about his legacy?
+2025-12-17 11:05:23 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33792 bytes
+2025-12-17 11:05:27 | services.unified_processor | INFO     | [解析成功] 转录: Can you tell me more about his...
+处理时间: 3.96s
+对话历史长度: 40条消息
+
+
+====================================================================================================
+场景总结: 场景1：足球兴趣深入探索（20轮）
+====================================================================================================
+
+处理时延分段分析:
+  第1段（前5轮）平均: 4.53s
+  第2段（第6-10轮）平均: 9.00s
+  第3段（第11-15轮）平均: 4.40s
+  第4段（后5轮）平均: 4.35s
+  总体增长: -3.8%
+
+处理时延统计:
+  平均: 5.57s
+  范围: 3.20s - 28.24s
+  各轮时间: ['3.20s', '4.70s', '5.47s', '4.88s', '4.38s', '4.00s', '4.81s', '3.28s', '28.24s', '4.69s', '3.75s', '4.06s', '5.17s', '4.36s', '4.64s', '5.80s', '3.55s', '3.39s', '5.06s', '3.96s']
+
+====================================================================================================
+场景 2/3: 场景2：电影话题深入（20轮）
+====================================================================================================
+
+--- Turn 1/20 ---
+用户: Hi! I watched a movie yesterday.
+2025-12-17 11:05:28 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 29568 bytes
+2025-12-17 11:05:32 | services.unified_processor | INFO     | [解析成功] 转录: Hi, I watched a movie yesterda...
+处理时间: 4.05s
+对话历史长度: 2条消息
+
+--- Turn 2/20 ---
+用户: It was about time travel. Very interesting.
+2025-12-17 11:05:33 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 53760 bytes
+2025-12-17 11:05:42 | services.unified_processor | INFO     | [解析成功] 转录: It was about time travel, very...
+处理时间: 8.30s
+对话历史长度: 4条消息
+
+--- Turn 3/20 ---
+用户: Have you seen Interstellar?
+2025-12-17 11:05:43 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 24960 bytes
+2025-12-17 11:05:48 | services.unified_processor | INFO     | [解析成功] 转录: Have you seen Interstellar?...
+处理时间: 4.98s
+对话历史长度: 6条消息
+
+--- Turn 4/20 ---
+用户: I prefer science fiction movies.
+2025-12-17 11:05:50 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33792 bytes
+2025-12-17 11:05:53 | services.unified_processor | INFO     | [解析成功] 转录: I prefer science fiction movie...
+处理时间: 3.27s
+对话历史长度: 8条消息
+
+--- Turn 5/20 ---
+用户: What other sci-fi movies do you recommend?
+2025-12-17 11:05:54 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 41856 bytes
+2025-12-17 11:05:59 | services.unified_processor | INFO     | [解析成功] 转录: What other sci-fi movies do yo...
+处理时间: 5.23s
+对话历史长度: 10条消息
+
+--- Turn 6/20 ---
+用户: What about Blade Runner?
+2025-12-17 11:06:01 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 21888 bytes
+2025-12-17 11:06:07 | services.unified_processor | INFO     | [解析成功] 转录: What about Blade Runner?...
+处理时间: 6.20s
+对话历史长度: 12条消息
+
+--- Turn 7/20 ---
+用户: Is it similar to Interstellar?
+2025-12-17 11:06:09 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 41856 bytes
+2025-12-17 11:06:16 | services.unified_processor | INFO     | [解析成功] 转录: Is it similar to Interstellar?...
+处理时间: 6.73s
+对话历史长度: 14条消息
+
+--- Turn 8/20 ---
+用户: What makes a good sci-fi movie?
+2025-12-17 11:06:17 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 37632 bytes
+2025-12-17 11:06:23 | services.unified_processor | INFO     | [解析成功] 转录: What makes a good sci-fi movie...
+处理时间: 5.68s
+对话历史长度: 16条消息
+
+--- Turn 9/20 ---
+用户: Do you like space movies?
+2025-12-17 11:06:24 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 27264 bytes
+2025-12-17 11:07:01 | services.unified_processor | INFO     | [解析成功] 转录: Do you like space movies?...
+处理时间: 37.23s
+对话历史长度: 18条消息
+
+--- Turn 10/20 ---
+用户: What about alien movies?
+2025-12-17 11:07:03 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 32256 bytes
+2025-12-17 11:07:07 | services.unified_processor | INFO     | [解析成功] 转录: What about alien movies?...
+处理时间: 4.09s
+对话历史长度: 20条消息
+
+--- Turn 11/20 ---
+用户: Have you seen Arrival?
+2025-12-17 11:07:08 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 19968 bytes
+2025-12-17 11:07:13 | services.unified_processor | INFO     | [解析成功] 转录: Have you seen Arrival?...
+处理时间: 5.51s
+对话历史长度: 22条消息
+
+--- Turn 12/20 ---
+用户: What did you think of it?
+2025-12-17 11:07:15 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 19200 bytes
+2025-12-17 11:07:18 | services.unified_processor | INFO     | [解析成功] 转录: What did you think of it?...
+处理时间: 3.56s
+对话历史长度: 24条消息
+
+--- Turn 13/20 ---
+用户: What about The Matrix?
+2025-12-17 11:07:19 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 22656 bytes
+2025-12-17 11:07:23 | services.unified_processor | INFO     | [解析成功] 转录: What about The Matrix?...
+处理时间: 4.16s
+对话历史长度: 26条消息
+
+--- Turn 14/20 ---
+用户: Is it still relevant today?
+2025-12-17 11:07:24 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 40320 bytes
+2025-12-17 11:07:29 | services.unified_processor | INFO     | [解析成功] 转录: Is it still relevant today?...
+处理时间: 4.18s
+对话历史长度: 28条消息
+
+--- Turn 15/20 ---
+用户: What about newer sci-fi movies?
+2025-12-17 11:07:30 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36864 bytes
+2025-12-17 11:07:34 | services.unified_processor | INFO     | [解析成功] 转录: What about newer sci-fi movies...
+处理时间: 4.30s
+对话历史长度: 30条消息
+
+--- Turn 16/20 ---
+用户: Any recommendations from recent years?
+2025-12-17 11:07:35 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 42624 bytes
+2025-12-17 11:08:05 | services.unified_processor | INFO     | [解析成功] 转录: Any recommendations from recen...
+处理时间: 29.74s
+对话历史长度: 32条消息
+
+--- Turn 17/20 ---
+用户: What about Dune?
+2025-12-17 11:08:06 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 23424 bytes
+2025-12-17 11:08:11 | services.unified_processor | INFO     | [解析成功] 转录: What about Dune?...
+处理时间: 4.67s
+对话历史长度: 34条消息
+
+--- Turn 18/20 ---
+用户: Is it worth watching?
+2025-12-17 11:08:12 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 21120 bytes
+2025-12-17 11:08:16 | services.unified_processor | INFO     | [解析成功] 转录: Is it worth watching?...
+处理时间: 3.55s
+对话历史长度: 36条消息
+
+--- Turn 19/20 ---
+用户: What makes sci-fi movies interesting?
+2025-12-17 11:08:17 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 47232 bytes
+2025-12-17 11:08:21 | services.unified_processor | INFO     | [解析成功] 转录: What about newer sci-fi movies...
+处理时间: 4.18s
+对话历史长度: 38条消息
+
+--- Turn 20/20 ---
+用户: Can you recommend more?
+2025-12-17 11:08:22 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 19200 bytes
+2025-12-17 11:08:26 | services.unified_processor | INFO     | [解析成功] 转录: Can you recommend more?...
+处理时间: 4.11s
+对话历史长度: 40条消息
+
+
+====================================================================================================
+场景总结: 场景2：电影话题深入（20轮）
+====================================================================================================
+
+处理时延分段分析:
+  第1段（前5轮）平均: 5.16s
+  第2段（第6-10轮）平均: 11.98s
+  第3段（第11-15轮）平均: 4.34s
+  第4段（后5轮）平均: 9.25s
+  总体增长: +79.1%
+
+处理时延统计:
+  平均: 7.68s
+  范围: 3.27s - 37.23s
+  各轮时间: ['4.05s', '8.30s', '4.98s', '3.27s', '5.23s', '6.20s', '6.73s', '5.68s', '37.23s', '4.09s', '5.51s', '3.56s', '4.16s', '4.18s', '4.30s', '29.74s', '4.67s', '3.55s', '4.18s', '4.11s']
+
+====================================================================================================
+场景 3/3: 场景3：英语学习深入（20轮）
+====================================================================================================
+
+--- Turn 1/20 ---
+用户: I want to improve my English.
+2025-12-17 11:08:27 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33024 bytes
+2025-12-17 11:08:31 | services.unified_processor | INFO     | [解析成功] 转录: I want to improve my English....
+处理时间: 4.12s
+对话历史长度: 2条消息
+
+--- Turn 2/20 ---
+用户: I need it for my job.
+2025-12-17 11:08:32 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 21120 bytes
+2025-12-17 11:08:35 | services.unified_processor | INFO     | [解析成功] 转录: I need it for my job....
+处理时间: 3.01s
+对话历史长度: 4条消息
+
+--- Turn 3/20 ---
+用户: I work in a technology company.
+2025-12-17 11:08:36 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36864 bytes
+2025-12-17 11:08:46 | services.unified_processor | INFO     | [解析成功] 转录: I work in a technology company...
+处理时间: 10.22s
+对话历史长度: 6条消息
+
+--- Turn 4/20 ---
+用户: We have many international clients.
+2025-12-17 11:08:48 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 34560 bytes
+2025-12-17 11:08:51 | services.unified_processor | INFO     | [解析成功] 转录: We have many international cli...
+处理时间: 3.34s
+对话历史长度: 8条消息
+
+--- Turn 5/20 ---
+用户: So I need to communicate better in English.
+2025-12-17 11:08:52 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 52224 bytes
+2025-12-17 11:08:56 | services.unified_processor | INFO     | [解析成功] 转录: So I need to communicate bette...
+处理时间: 3.76s
+对话历史长度: 10条消息
+
+--- Turn 6/20 ---
+用户: What should I focus on first?
+2025-12-17 11:08:57 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 29568 bytes
+2025-12-17 11:09:04 | services.unified_processor | INFO     | [解析成功] 转录: What should I focus on first....
+处理时间: 6.51s
+对话历史长度: 12条消息
+
+--- Turn 7/20 ---
+用户: Should I practice speaking more?
+2025-12-17 11:09:05 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 28800 bytes
+2025-12-17 11:09:10 | services.unified_processor | INFO     | [解析成功] 转录: Should I practice speaking mor...
+处理时间: 4.68s
+对话历史长度: 14条消息
+
+--- Turn 8/20 ---
+用户: How can I improve my vocabulary?
+2025-12-17 11:09:11 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 30720 bytes
+2025-12-17 11:09:15 | services.unified_processor | INFO     | [解析成功] 转录: How can I improve my vocabular...
+处理时间: 4.18s
+对话历史长度: 16条消息
+
+--- Turn 9/20 ---
+用户: What about grammar?
+2025-12-17 11:09:16 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 19200 bytes
+2025-12-17 11:09:20 | services.unified_processor | INFO     | [解析成功] 转录: What about gramer?...
+处理时间: 3.98s
+对话历史长度: 18条消息
+
+--- Turn 10/20 ---
+用户: Is grammar important?
+2025-12-17 11:09:33 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 157056 bytes
+2025-12-17 11:09:38 | services.unified_processor | INFO     | [解析成功] 转录: Is grammar important? Is gramm...
+处理时间: 4.33s
+对话历史长度: 20条消息
+
+--- Turn 11/20 ---
+用户: How can I practice listening?
+2025-12-17 11:09:39 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 25728 bytes
+2025-12-17 11:09:42 | services.unified_processor | INFO     | [解析成功] 转录: How can I practice listening?...
+处理时间: 3.10s
+对话历史长度: 22条消息
+
+--- Turn 12/20 ---
+用户: What about reading?
+2025-12-17 11:09:43 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 24192 bytes
+2025-12-17 11:09:47 | services.unified_processor | INFO     | [解析成功] 转录: What about reading?...
+处理时间: 4.01s
+对话历史长度: 24条消息
+
+--- Turn 13/20 ---
+用户: Should I read English books?
+2025-12-17 11:09:48 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 24192 bytes
+2025-12-17 11:09:51 | services.unified_processor | INFO     | [解析成功] 转录: Should I read English books?...
+处理时间: 3.58s
+对话历史长度: 26条消息
+
+--- Turn 14/20 ---
+用户: What kind of books?
+2025-12-17 11:09:52 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 21888 bytes
+2025-12-17 11:09:55 | services.unified_processor | INFO     | [解析成功] 转录: What kind of books...
+处理时间: 2.88s
+对话历史长度: 28条消息
+
+--- Turn 15/20 ---
+用户: How about watching English movies?
+2025-12-17 11:09:56 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33792 bytes
+2025-12-17 11:09:59 | services.unified_processor | INFO     | [解析成功] 转录: How about watching English mov...
+处理时间: 2.94s
+对话历史长度: 30条消息
+
+--- Turn 16/20 ---
+用户: Should I use subtitles?
+2025-12-17 11:10:00 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 27264 bytes
+2025-12-17 11:10:04 | services.unified_processor | INFO     | [解析成功] 转录: Should I use subtitles?...
+处理时间: 4.48s
+对话历史长度: 32条消息
+
+--- Turn 17/20 ---
+用户: How can I practice writing?
+2025-12-17 11:10:05 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 23424 bytes
+2025-12-17 11:10:08 | services.unified_processor | INFO     | [解析成功] 转录: How can I practice writing?...
+处理时间: 2.94s
+对话历史长度: 34条消息
+
+--- Turn 18/20 ---
+用户: Should I keep a journal?
+2025-12-17 11:10:09 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 23424 bytes
+2025-12-17 11:10:14 | services.unified_processor | WARNING  | JSON 解析失败: Expecting ',' delimiter: line 9 column 63 (char 384)
+2025-12-17 11:10:14 | services.unified_processor | INFO     | [正则提取] response: Yes, keeping a journal is a great way to practice ...
+2025-12-17 11:10:14 | services.unified_processor | INFO     | [正则提取] 转录: Should I keep a journal?...
+处理时间: 5.02s
+对话历史长度: 36条消息
+
+--- Turn 19/20 ---
+用户: What about pronunciation?
+2025-12-17 11:10:16 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 30720 bytes
+2025-12-17 11:10:19 | services.unified_processor | INFO     | [解析成功] 转录: What about pronunciation?...
+处理时间: 3.61s
+对话历史长度: 38条消息
+
+--- Turn 20/20 ---
+用户: How can I improve it?
+2025-12-17 11:10:20 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 17664 bytes
+2025-12-17 11:10:25 | services.unified_processor | INFO     | [解析成功] 转录: How can I improve it...
+处理时间: 4.83s
+对话历史长度: 40条消息
+
+
+====================================================================================================
+场景总结: 场景3：英语学习深入（20轮）
+====================================================================================================
+
+处理时延分段分析:
+  第1段（前5轮）平均: 4.89s
+  第2段（第6-10轮）平均: 4.74s
+  第3段（第11-15轮）平均: 3.30s
+  第4段（后5轮）平均: 4.18s
+  总体增长: -14.6%
+
+处理时延统计:
+  平均: 4.28s
+  范围: 2.88s - 10.22s
+  各轮时间: ['4.12s', '3.01s', '10.22s', '3.34s', '3.76s', '6.51s', '4.68s', '4.18s', '3.98s', '4.33s', '3.10s', '4.01s', '3.58s', '2.88s', '2.94s', '4.48s', '2.94s', '5.02s', '3.61s', '4.83s']
+
+
+====================================================================================================
+总体统计
+====================================================================================================
+
+总体指标:
+  总对话轮数: 60
+  平均处理时延: 5.84s
+
+各轮次平均处理时间:
+  Turn 1: 3.79s (样本数: 3)
+  Turn 2: 5.34s (样本数: 3)
+  Turn 3: 6.89s (样本数: 3)
+  Turn 4: 3.83s (样本数: 3)
+  Turn 5: 4.46s (样本数: 3)
+  Turn 6: 5.57s (样本数: 3)
+  Turn 7: 5.41s (样本数: 3)
+  Turn 8: 4.38s (样本数: 3)
+  Turn 9: 23.15s (样本数: 3)
+  Turn 10: 4.37s (样本数: 3)
+  Turn 11: 4.12s (样本数: 3)
+  Turn 12: 3.88s (样本数: 3)
+  Turn 13: 4.30s (样本数: 3)
+  Turn 14: 3.81s (样本数: 3)
+  Turn 15: 3.96s (样本数: 3)
+  Turn 16: 13.34s (样本数: 3)
+  Turn 17: 3.72s (样本数: 3)
+  Turn 18: 3.99s (样本数: 3)
+  Turn 19: 4.28s (样本数: 3)
+  Turn 20: 4.30s (样本数: 3)
+
+结果已保存到: conversation_extended_results.json

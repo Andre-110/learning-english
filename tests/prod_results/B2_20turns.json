@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T04:07:37.724839",
+    "level": "B2",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "B2",
+      "interests": [
+        "travel",
+        "cooking",
+        "art"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 2.13,
+    "user_avg_latency": 3.222,
+    "hot_search_avg_latency": 7.262,
+    "hot_content_events": 3
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "travel",
+      "headline": "Iceland's having a solar eclipse party in 2026!",
+      "search_time": 8.14
+    },
+    {
+      "turn": 2,
+      "type": "async_search",
+      "topic": "art",
+      "headline": "Thailand's afternoon cheers are back!",
+      "search_time": 5.85
+    },
+    {
+      "turn": 3,
+      "type": "async_search",
+      "topic": "art",
+      "headline": "Art celebrates visible imperfections now!",
+      "search_time": 7.79
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hi! Guess what? Iceland's throwing a huge solar eclipse party in 2026 with music and fun! Sounds awesome, right? Would you want to check it out someday?",
+      "latency_s": 3.819,
+      "has_hot_content": true,
+      "hot_topic": "travel"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Wow, that sounds really exciting! A solar eclipse party with music must be an amazing experience. I think I would love to go, especially because I’ve never seen a solar eclipse before. \n\nBut, um, I'm not sure about traveling to Iceland. It seems far and also... maybe expensive? I need to save money. Do you think the party will be very crowded? I like music, though! What kind of music do you think they will have?",
+      "latency_s": 3.404,
+      "word_count": 76
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I totally get the excitement about the solar eclipse party! Seeing one for the first time would be unforgettable. As for Iceland, it can be pricey, but maybe there are ways to plan a budget-friendly trip. I imagine the party might be quite lively, with lots of people eager to experience the eclipse. About the music, I bet they'll have a mix of local Icelandic tunes and international hits—something to keep everyone energized. What kind of music do you usually enjoy at events like this?",
+      "latency_s": 2.104,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Oh, I think a mix of local and international music would be really great! I usually enjoy pop music and some rock, but I also like to discover new sounds, especially if they are unique to a place. I believe music can really create an amazing atmosphere at events like this. \n\nI wonder if they will have live bands or DJs? Sometimes, live performances feel more exciting, right? And yeah, I know Iceland can be expensive, but maybe I can find some good deals on flights or accommodations if I plan early. Do you think it's better to go with friends or solo to a party like that?",
+      "latency_s": 3.104,
+      "word_count": 108
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I love that you're open to discovering new sounds at events! Live bands definitely bring a unique energy to a party, don't they? As for going with friends or solo, both have their perks. Friends can make it more memorable and fun, while going solo gives you the freedom to explore at your own pace. What do you think would make the trip more enjoyable for you?",
+      "latency_s": 1.822,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Yes, I agree! Live bands create such an amazing atmosphere. I think going with friends would be more enjoyable for me because we can share our reactions to the music together. It’s fun to dance and sing along with people you know. But, um, going solo also sounds interesting because I could focus more on the music without distractions. \n\nMaybe I could try both! For the solar eclipse party, I might prefer to go with friends. We could plan some fun activities together, like taking pictures or having a picnic before the eclipse. What do you think?",
+      "latency_s": 2.364,
+      "word_count": 97
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Friends definitely make live music events more enjoyable! Have you attended any concerts recently or have plans to see any live bands soon?",
+      "latency_s": 3.899,
+      "has_hot_content": true,
+      "hot_topic": "travel"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Yes, I went to a concert last month! It was a local band, and they played some really interesting songs. The energy in the crowd was incredible! I think I had a lot of fun, but... I can't remember the name of the band right now. \n\nI don't have any plans for concerts in the near future, but I'm thinking about looking for some upcoming events. I want to explore more live music, especially since it can be a great way to, um, practice my English too, like talking to other people there. What about you? Have you been to any good concerts lately?",
+      "latency_s": 3.565,
+      "word_count": 104
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds like such a fun experience! What genres did the band play, and did you have a favorite song from the concert?",
+      "latency_s": 3.548,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Yes, it was really fun! The band played a mix of indie rock and folk music. I really enjoy those genres because they have a nice vibe. My favorite song from the concert was probably their original song called \"Waves.\" It had a beautiful melody and the lyrics were very touching. I think I even sang along a little, but I wasn't sure of all the words! Do you like that kind of music?",
+      "latency_s": 2.981,
+      "word_count": 74
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I love indie rock and folk music too! They definitely have a special vibe that's both relaxing and energetic at the same time. \"Waves\" sounds like it must have been a beautiful song! Singing along, even if you don't know all the words, is part of the fun, right? Have you ever tried playing any of these kinds of songs on an instrument yourself?",
+      "latency_s": 1.887,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Yes, singing along is really fun! I think it makes the experience feel more special. I haven't played much, but I do have a guitar. I’ve tried to learn some folk songs, but it’s sometimes difficult for me. I get confused with the chords. I can play a few simple ones, like \"Wonderwall\" by Oasis, but I want to learn more songs from indie rock bands. Do you play any instruments?",
+      "latency_s": 3.328,
+      "word_count": 71
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Oh, playing guitar sounds like a great way to connect with music on a deeper level! I can imagine how challenging it must be to learn new chords, but it's awesome that you can play \"Wonderwall.\" That's such a classic! I play a little piano myself. It's always fun to try and figure out songs by ear. What indie rock bands do you want to learn songs from?",
+      "latency_s": 2.004,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Yes, I think learning new chords can be challenging but also really rewarding. \"Wonderwall\" is a great song to start with! I want to learn songs from bands like Arctic Monkeys and Vampire Weekend. Their music has such a nice rhythm and catchy melodies. \n\nActually, I really like how they mix different styles, you know? But sometimes, I feel a bit lost when I try to play their songs. They can be fast or have tricky chords. Do you have any tips for playing songs by ear? That would help a lot!",
+      "latency_s": 2.98,
+      "word_count": 92
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "I totally get what you mean about mixing styles—Arctic Monkeys and Vampire Weekend really know how to keep things interesting! Playing songs by ear can be tricky, but it’s so rewarding when you nail it. One tip is to start by listening carefully to the rhythm and try to play simpler versions of the chords first. Focus on getting the general feel of the song, and then gradually add more complexity as you get comfortable. What’s the most challenging part for you when you try to play their songs?",
+      "latency_s": 1.887,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Yes, I agree! Mixing styles is so interesting. For me, the most challenging part is definitely the timing. Sometimes, I feel like I can’t catch the rhythm properly, especially when the songs are fast. I also struggle with some chords that are... hmm, more difficult to transition between. I try to practice them slowly, but sometimes I get frustrated because I want to play it like the original version right away. \n\nI think focusing on simpler chords first is a good idea. I can try that! Do you have any suggestions for songs that are easier to start with?",
+      "latency_s": 2.227,
+      "word_count": 99
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I totally get how timing can be tricky, especially with faster songs. It's great that you're willing to try simpler chords first; it really helps build confidence. As for easier songs, you might enjoy playing \"Riptide\" by Vance Joy. It's got a simple chord progression and a fun rhythm, making it a great choice for practicing. What's the feeling you get when you finally nail a song you've been working on?",
+      "latency_s": 2.094,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "When I finally nail a song, it's such a great feeling! I feel really proud of myself, you know? Like, all the practice pays off. I also get this rush of happiness, especially when I can play it well in front of my friends. Sometimes, I still feel a bit nervous or unsure, but when I get it right, it's like, wow, I can actually do this! \n\nI think \"Riptide\" sounds like a good choice. I've heard it a few times, and it seems catchy. I like when a song has a fun rhythm; it makes practicing more enjoyable. Do you think it’s easy to learn the strumming pattern for that song?",
+      "latency_s": 4.994,
+      "word_count": 112
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "I totally understand that feeling of pride and happiness when you finally master a song! It's like all your hard work really pays off, and playing for friends must feel amazing. As for \"Riptide,\" the strumming pattern is quite straightforward, which makes it a great song to start with. It's mostly about getting the rhythm right, and once you do, it feels so satisfying to play. What's your favorite part about performing in front of your friends?",
+      "latency_s": 1.964,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Yes, exactly! When I play in front of my friends, I feel like... um, it's a mixture of excitement and nervousness. I really enjoy seeing their reactions. Sometimes they sing along, and it makes me feel more confident. My favorite part is when I finish a song, and they clap or cheer. It feels like all the practice was worth it. \n\nBut, um, sometimes I worry about making mistakes. I guess everyone does, right? So I try to focus on having fun instead of being perfect. Do you have any tips for, um, handling nerves before a performance?",
+      "latency_s": 2.766,
+      "word_count": 98
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "I can totally relate to those mixed feelings of excitement and nervousness when performing! It's amazing how your friends' reactions, like singing along, can boost your confidence. About handling nerves, one tip is to visualize your performance going well, focusing on the positive energy you'll get from your friends. Also, try some deep breathing exercises before you start to help calm your nerves. What's been your most memorable performance moment so far?",
+      "latency_s": 1.981,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Oh, that's a really good tip! I will definitely try the visualization and breathing exercises. My most memorable performance moment... hmm, let me think. I think it was last summer when I played at a friend’s birthday party. I was so nervous because it was my first time in front of a larger group. But then, when I started playing, I saw my friends smiling and singing along. It felt amazing! \n\nBut, um, I remember I made a mistake in the middle of the song. My fingers slipped, and I missed a chord. I thought, oh no! But then I just laughed it off and continued. My friends cheered even louder, and it made me feel so much better. So, yes, even if",
+      "latency_s": 3.627,
+      "word_count": 123
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Wow, that birthday party performance sounds like such a special moment! It's great that you could laugh off the mistake and keep going—your friends cheering must have felt amazing! 😊 How did that experience change the way you approach playing in front of people now?",
+      "latency_s": 1.612,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Yes, it was really special! At first, I was very embarrassed because I made a mistake. But when I saw my friends laughing and encouraging me, I felt more relaxed. Now, I think I approach playing in front of people with less pressure. I try to focus on enjoying the moment rather than being perfect.\n\nSometimes, I still feel nervous, but I remind myself that it’s okay to make mistakes. I think the birthday party taught me that the audience is there to support me, not to judge. So, I try to enjoy the performance more, even if I make a little mistake. It’s like... the fun is more important than being perfect!",
+      "latency_s": 2.829,
+      "word_count": 113
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "I love your perspective on focusing on fun over perfection during performances! It must feel liberating to have that support from your friends. 😊 What's something new you've learned or tried recently that really added to your enjoyment during a performance?",
+      "latency_s": 1.642,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Thank you! Yes, it really is liberating. Recently, I tried out a new way to connect with the audience. I, um, started to make eye contact more and smile at them during my performance. At first, it felt a bit strange, but then I noticed that it made the performance more enjoyable. I could see people smiling back at me, and it created a really nice atmosphere. I think it helped me feel more relaxed too. Have you ever tried something like that?",
+      "latency_s": 2.974,
+      "word_count": 83
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "That's such a great way to connect with your audience! Eye contact and smiles can really build a bond and make the entire experience more interactive and enjoyable. 😊 I haven't performed music in front of people, but I've definitely tried making eye contact and smiling during presentations or while speaking in public. It helps me feel more connected to the audience and less nervous. What other ways do you think you might try to enhance your performance even more?",
+      "latency_s": 1.966,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "I agree! Eye contact and smiling are really important. They help create a good atmosphere. Hmm, other ways I can enhance my performance? I think maybe I can use more gestures. Like, when I play music, moving my hands or body can express emotions better. \n\nAlso, I want to try telling a short story before starting the performance. Maybe something related to the song, you know? It could help the audience feel more engaged. \n\nSometimes, I worry about forgetting the lyrics or playing the wrong notes, but I think if I focus on connecting with the audience, it will help me relax. What do you think? Have you seen other ways to engage the audience during a performance?",
+      "latency_s": 3.188,
+      "word_count": 118
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "I love the idea of using gestures and storytelling to enhance your performance! It's like adding another layer of expression to your music. Telling a story related to the song could really draw the audience in and make the experience more memorable. 😊\n\nWhen it comes to engaging the audience, I've seen performers use humor or ask the audience questions to get them involved. It creates a more interactive vibe. Have you ever thought about involving the audience in a fun way like that?",
+      "latency_s": 2.206,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Yes, I think involving the audience is a great idea! Actually, I haven't tried it yet, but I have seen some performers do it, and it looks so fun. Maybe I could, um, ask them questions about the song or even share a funny story that connects to it. \n\nI believe humor can really lighten the mood and make everyone feel more relaxed. It’s just that sometimes I worry about the timing, you know? Like, I don't want to interrupt the flow of the music. But I think if I practice, I could make it work. \n\nWhat do you think is the best way to, um, engage the audience without losing the rhythm of the performance?",
+      "latency_s": 3.578,
+      "word_count": 116
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I love your idea of using humor and storytelling to engage the audience. It can really make the performance feel more personal and lively! Timing can definitely be tricky, but practicing can help you find the right moments. Maybe you could try small interactions during instrumental breaks or between songs. That way, you can keep the flow going without disrupting the music. 🎶 Have you thought about sharing a specific funny story or question related to your songs?",
+      "latency_s": 2.211,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "That's a great idea! I think sharing a funny story could make the audience feel more connected. Hmm, I was thinking about... maybe a story from when I first learned to play the guitar. It was really embarrassing! I was practicing a song and I kept mixing up the chords. I thought I was playing beautifully, but it sounded awful. \n\nI could ask the audience if they ever had a similar experience, you know, something embarrassing or funny while learning something new? It might make them laugh and feel more comfortable. What do you think? Would it work well?",
+      "latency_s": 3.528,
+      "word_count": 99
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Oh, I love that idea! Sharing a funny story about your early guitar days sounds like a great way to connect with the audience. Everyone has been there with those awkward learning moments, and it could definitely lighten the mood and make people feel more relaxed. 🎸 Have you ever tried sharing stories like this before, or would it be your first time? I'm curious to hear how you might introduce it!",
+      "latency_s": 2.289,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Yes, I think it would be my first time actually. I mean, I have shared some stories, but not really about my guitar learning. I remember one time, I… um, I tried to play a song for my friends, and I was so nervous. My hands were shaking, and I ended up playing the wrong chords. It was really embarrassing, but everyone laughed, and it made me feel better. \n\nI think I could start by saying something like, \"So, let me tell you about my first experience with guitar. It was a disaster!” I hope that would make them smile. Do you think that would work?",
+      "latency_s": 2.219,
+      "word_count": 106
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "That story sounds like a great way to break the ice and connect with your audience! Sharing those moments of vulnerability can really make people feel more comfortable and engaged. It's wonderful that laughter helped ease the tension for you back then. 😊 Do you have any other memorable experiences with performing that you might share, or is this the one that stands out most for you?",
+      "latency_s": 1.973,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Hmm, I think there are a few other experiences that stand out to me. For example, one time I performed at a small café, and I was so nervous! I practiced a lot, but when I got on stage, my hands were shaking. I almost forgot the chords! But then, I saw some friends in the audience, and they were smiling at me. It helped me relax a little. \n\nI also remember a funny moment when I accidentally sang the wrong lyrics to a song. Everyone laughed, including me! It turned out to be a fun memory, even though I was embarrassed at first. \n\nBut yes, I think my early guitar days are really special because they taught me a lot about performing. Do you think sharing these",
+      "latency_s": 3.426,
+      "word_count": 128
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "I love hearing about your café performance! It must've been nerve-wracking at first, but seeing familiar faces in the audience sounds like it really helped. 😊 Sharing those moments when things didn't go perfectly can definitely make your audience feel more connected. How did those experiences shape your confidence for future performances?",
+      "latency_s": 1.9,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Yes, exactly! At first, I felt really nervous, like my heart was racing. But when I saw my friends and family, it was... um, comforting? I think sharing those not-so-perfect moments made me feel more relatable, you know? \n\nAfter that performance, I realized that mistakes can actually make a performance more memorable. So, I became a little more confident. Each time I performed after that, I focused more on enjoying the moment instead of worrying about being perfect. \n\nBut sometimes, I still feel nervous before going on stage. It's like, um, a little voice in my head saying, \"What if I forget the lyrics?\" But I try to remind myself that it’s okay to be imperfect. I think that’s",
+      "latency_s": 3.131,
+      "word_count": 119
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "It sounds like you've really learned how to embrace those \"imperfect\" moments on stage! It's great that you've found a way to enjoy performing despite the nerves. 🎶 How do you usually calm that little voice before going on stage? Is there a particular routine or mindset you try to stick to?",
+      "latency_s": 1.767,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Thank you! Yes, I think I have learned to accept those little mistakes. Before I go on stage, I usually try to take a few deep breaths. It helps me relax a bit. Sometimes, I also visualize the performance in my mind, like, um, picturing myself singing and enjoying it. \n\nBut, you know, there are still moments when I feel really anxious. I try to remind myself that it’s okay to not be perfect. I also listen to some calming music before I go up. It makes me feel more confident. \n\nDo you have any tips for calming nerves before a performance?",
+      "latency_s": 4.222,
+      "word_count": 102
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "It sounds like you've got some solid strategies for calming your nerves before performing! Deep breaths and visualization are great techniques. Personally, I find that focusing on the joy of sharing music helps too. Sometimes, reminding myself why I love the craft can shift my mindset from anxiety to excitement. How do you feel when you finally get on stage and start performing?",
+      "latency_s": 1.837,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

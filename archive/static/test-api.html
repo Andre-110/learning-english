@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API测试页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #5568d3;
+        }
+        pre {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .error {
+            color: #dc3545;
+        }
+        .success {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <h1>API测试页面</h1>
+    
+    <div class="test-section">
+        <h2>1. 测试API根路径</h2>
+        <button onclick="testRoot()">测试 GET /api</button>
+        <pre id="rootResult"></pre>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. 测试创建对话</h2>
+        <input type="text" id="userId" placeholder="输入用户ID" value="test_user_001" style="padding: 8px; width: 200px;">
+        <button onclick="testStartConversation()">测试 POST /conversations/start</button>
+        <pre id="startResult"></pre>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. 测试WebSocket连接</h2>
+        <input type="text" id="wsConversationId" placeholder="输入对话ID" style="padding: 8px; width: 200px;">
+        <button onclick="testWebSocket()">测试 WebSocket</button>
+        <pre id="wsResult"></pre>
+    </div>
+
+    <script>
+        const API_BASE = window.location.origin;
+        
+        async function testRoot() {
+            const resultEl = document.getElementById('rootResult');
+            resultEl.textContent = '测试中...';
+            
+            try {
+                const response = await fetch(`${API_BASE}/api`);
+                const data = await response.json();
+                resultEl.textContent = JSON.stringify(data, null, 2);
+                resultEl.className = 'success';
+            } catch (error) {
+                resultEl.textContent = `错误: ${error.message}`;
+                resultEl.className = 'error';
+            }
+        }
+        
+        async function testStartConversation() {
+            const resultEl = document.getElementById('startResult');
+            const userId = document.getElementById('userId').value.trim();
+            
+            if (!userId) {
+                resultEl.textContent = '请输入用户ID';
+                resultEl.className = 'error';
+                return;
+            }
+            
+            resultEl.textContent = '测试中...';
+            
+            try {
+                const response = await fetch(`${API_BASE}/conversations/start`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ user_id: userId })
+                });
+                
+                const responseText = await response.text();
+                
+                if (!response.ok) {
+                    resultEl.textContent = `错误 (${response.status}): ${responseText}`;
+                    resultEl.className = 'error';
+                    return;
+                }
+                
+                try {
+                    const data = JSON.parse(responseText);
+                    resultEl.textContent = JSON.stringify(data, null, 2);
+                    resultEl.className = 'success';
+                    
+                    // 自动填充WebSocket测试的对话ID
+                    document.getElementById('wsConversationId').value = data.conversation_id;
+                } catch (e) {
+                    resultEl.textContent = `响应解析失败: ${responseText}`;
+                    resultEl.className = 'error';
+                }
+            } catch (error) {
+                resultEl.textContent = `请求失败: ${error.message}`;
+                resultEl.className = 'error';
+            }
+        }
+        
+        function testWebSocket() {
+            const resultEl = document.getElementById('wsResult');
+            const conversationId = document.getElementById('wsConversationId').value.trim();
+            
+            if (!conversationId) {
+                resultEl.textContent = '请输入对话ID';
+                resultEl.className = 'error';
+                return;
+            }
+            
+            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsUrl = `${protocol}//${window.location.host}/streaming-voice/${conversationId}/chat`;
+            
+            resultEl.textContent = `连接中: ${wsUrl}\n`;
+            
+            try {
+                const ws = new WebSocket(wsUrl);
+                
+                ws.onopen = () => {
+                    resultEl.textContent += '✓ WebSocket连接成功\n';
+                    resultEl.className = 'success';
+                    ws.send(JSON.stringify({ type: 'close' }));
+                    ws.close();
+                };
+                
+                ws.onmessage = (event) => {
+                    resultEl.textContent += `收到消息: ${event.data}\n`;
+                };
+                
+                ws.onerror = (error) => {
+                    resultEl.textContent += `✗ WebSocket错误: ${error}\n`;
+                    resultEl.className = 'error';
+                };
+                
+                ws.onclose = () => {
+                    resultEl.textContent += 'WebSocket连接已关闭\n';
+                };
+            } catch (error) {
+                resultEl.textContent += `✗ 连接失败: ${error.message}\n`;
+                resultEl.className = 'error';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

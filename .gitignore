@@ -1,0 +1,52 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+.env
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+ENV/
+
+# Conda环境
+.conda/
+
+# 前端构建输出
+static-vue/
+frontend/node_modules/
+frontend/dist/
+
+# 测试音频文件
+test_audio/
+tests/audio/
+
+# 调试录音（上传到服务器）
+debug_recordings/
+
+# 日志
+logs/
+
+# 临时文件
+*.wav
+*.mp3
+.env.backup
+online_logs/

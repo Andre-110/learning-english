@@ -1,0 +1,441 @@
+====================================================================================================
+qwen-omni 多轮对话质量测试
+测试指标：对话流畅度、兴趣捕捉、上下文压缩时延
+====================================================================================================
+
+2025-12-17 10:37:21 | services.qwen_omni_audio | INFO     | Qwen-Omni Audio 服务初始化: audio_model=qwen3-omni-flash
+2025-12-17 10:37:21 | services.unified_processor | INFO     | 统一处理器初始化: 使用 qwen-omni 服务
+初始化 TTS 服务...
+✅ TTS 服务初始化完成
+
+
+====================================================================================================
+场景 1/5: 场景1：足球兴趣探索
+====================================================================================================
+
+--- Turn 1/5 ---
+用户: Hello! I want to talk about football.
+2025-12-17 10:37:23 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 47232 bytes
+2025-12-17 10:37:26 | services.unified_processor | INFO     | [解析成功] 转录: Hello, I want to talk about fo...
+AI回复: That sounds exciting! Do you have a favorite team or player? (听起来很有趣！你有最喜欢的球队或球员吗？)...
+转录: Hello, I want to talk about football.
+分数: 45 (A2)
+处理时间: 2.75s
+兴趣: ['football']
+
+--- Turn 2/5 ---
+用户: I really like Messi. He is amazing.
+2025-12-17 10:37:27 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48768 bytes
+2025-12-17 10:37:32 | services.unified_processor | INFO     | [解析成功] 转录: I really like Messi. He is ama...
+AI回复: Messi is an amazing player! He was born in Argentina in 1987. (梅西是一位了不起的球员！他1987年出生于阿根廷。)...
+转录: I really like Messi. He is amazing.
+分数: 45 (A2)
+处理时间: 4.27s
+兴趣: ['football', 'Lionel Messi']
+⚠️  流畅度问题: ['Turn 2: 话题跳跃']
+
+--- Turn 3/5 ---
+用户: Can you tell me more about his early career?
+2025-12-17 10:37:33 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 44160 bytes
+2025-12-17 10:37:36 | services.unified_processor | INFO     | [解析成功] 转录: Can you tell me more about his...
+AI回复: Sure! Messi joined Barcelona's youth academy at age 13. He made his professional debut at 17. (当然！梅西...
+转录: Can you tell me more about his early career?
+分数: 45 (A2)
+处理时间: 3.40s
+兴趣: ['football', 'Lionel Messi']
+⚠️  流畅度问题: ['Turn 3: AI未回应用户话题', 'Turn 3: 话题跳跃']
+
+--- Turn 4/5 ---
+用户: What about his achievements in Barcelona?
+2025-12-17 10:37:37 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 31488 bytes
+2025-12-17 10:37:41 | services.unified_processor | INFO     | [解析成功] 转录: What about his achievements in...
+AI回复: Messi won many titles with Barcelona! He won 10 La Liga titles and 3 Champions League trophies. (梅西在...
+转录: What about his achievements in Barcelona?
+分数: 45 (A2)
+处理时间: 4.16s
+兴趣: ['football', 'Lionel Messi', 'Barcelona']
+⚠️  流畅度问题: ['Turn 4: 话题跳跃']
+
+--- Turn 5/5 ---
+用户: I also want to know about his family life.
+2025-12-17 10:37:44 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 51456 bytes
+2025-12-17 10:37:48 | services.unified_processor | INFO     | [解析成功] 转录: I also want to know about his ...
+AI回复: Messi has a close family! He has a wife named Antonela Roccuzzo and three sons. (梅西有一个亲密的家庭！他的妻子是安东内...
+转录: I also want to know about his family life.
+分数: 45 (A2)
+处理时间: 4.36s
+兴趣: ['football', 'Lionel Messi', 'Barcelona']
+⚠️  流畅度问题: ['Turn 5: 话题跳跃']
+
+
+====================================================================================================
+场景总结: 场景1：足球兴趣探索
+====================================================================================================
+
+兴趣捕捉:
+  期望兴趣: ['football', 'Messi', 'sports']
+  实际捕捉: ['football', 'Lionel Messi', 'Barcelona']
+  捕捉率: 66.7% (2/3)
+  缺失兴趣: ['sports']
+
+处理时延:
+  平均: 3.79s
+  范围: 2.75s - 4.36s
+  各轮: ['2.75s', '4.27s', '3.40s', '4.16s', '4.36s']
+  上下文压缩影响: 1.13x (后2轮 vs 前2轮)
+
+对话流畅度:
+  总轮数: 5
+  流畅度问题: 5个
+    - Turn 2: 话题跳跃
+    - Turn 3: AI未回应用户话题
+    - Turn 3: 话题跳跃
+    - Turn 4: 话题跳跃
+    - Turn 5: 话题跳跃
+
+====================================================================================================
+场景 2/5: 场景2：电影话题转换
+====================================================================================================
+
+--- Turn 1/5 ---
+用户: Hi! I watched a movie yesterday.
+2025-12-17 10:37:50 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33024 bytes
+2025-12-17 10:37:53 | services.unified_processor | INFO     | [解析成功] 转录: Hi, I watched a movie yesterda...
+AI回复: That sounds interesting! What kind of movie did you watch? (听起来很有趣！你看了什么类型的电影？)...
+转录: Hi, I watched a movie yesterday.
+分数: 40 (A2)
+处理时间: 2.87s
+兴趣: ['movies']
+
+--- Turn 2/5 ---
+用户: It was about time travel. Very interesting.
+2025-12-17 10:37:54 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 47232 bytes
+2025-12-17 10:37:58 | services.unified_processor | INFO     | [解析成功] 转录: It was about time travel, very...
+AI回复: Time travel movies are fascinating! Have you seen 'Interstellar' or 'Back to the Future'? (时间旅行电影很有趣...
+转录: It was about time travel, very interesting.
+分数: 45 (A2)
+处理时间: 3.57s
+兴趣: ['movies', 'time travel']
+⚠️  流畅度问题: ['Turn 2: 话题跳跃']
+
+--- Turn 3/5 ---
+用户: Have you seen Interstellar?
+2025-12-17 10:38:00 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 24960 bytes
+2025-12-17 10:38:05 | services.unified_processor | INFO     | [解析成功] 转录: Have you seen Interstellar?...
+AI回复: Yes, I have! 'Interstellar' is a great sci-fi film about space travel and time. (是的，我看过！《星际穿越》是一部关于太...
+转录: Have you seen Interstellar?
+分数: 45 (A2)
+处理时间: 4.96s
+兴趣: ['movies', 'time travel']
+⚠️  流畅度问题: ['Turn 3: 话题跳跃']
+
+--- Turn 4/5 ---
+用户: I prefer science fiction movies.
+2025-12-17 10:38:07 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 34560 bytes
+2025-12-17 10:38:11 | services.unified_processor | INFO     | [解析成功] 转录: I prefer science fiction movie...
+AI回复: That's great! Do you have a favorite sci-fi movie? (很棒！你有最喜欢的科幻电影吗？)...
+转录: I prefer science fiction movies.
+分数: 45 (A2)
+处理时间: 3.99s
+兴趣: ['science fiction movies']
+⚠️  流畅度问题: ['Turn 4: AI未回应用户话题', 'Turn 4: 话题跳跃']
+
+--- Turn 5/5 ---
+用户: What other sci-fi movies do you recommend?
+2025-12-17 10:38:12 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 35328 bytes
+2025-12-17 10:38:18 | services.unified_processor | INFO     | [解析成功] 转录: What other sci-fi movies do yo...
+AI回复: I really like 'Blade Runner' and 'The Matrix'. They're both great sci-fi films with interesting stor...
+转录: What other sci-fi movies do you recommend?
+分数: 45 (A2)
+处理时间: 5.68s
+兴趣: ['science fiction movies', 'movie recommendations']
+⚠️  流畅度问题: ['Turn 5: AI未回应用户话题']
+
+
+====================================================================================================
+场景总结: 场景2：电影话题转换
+====================================================================================================
+
+兴趣捕捉:
+  期望兴趣: ['movies', 'science fiction', 'time travel']
+  实际捕捉: ['movies', 'time travel', 'science fiction movies', 'movie recommendations']
+  捕捉率: 100.0% (3/3)
+
+处理时延:
+  平均: 4.21s
+  范围: 2.87s - 5.68s
+  各轮: ['2.87s', '3.57s', '4.96s', '3.99s', '5.68s']
+  上下文压缩影响: 1.51x (后2轮 vs 前2轮)
+
+对话流畅度:
+  总轮数: 5
+  流畅度问题: 5个
+    - Turn 2: 话题跳跃
+    - Turn 3: 话题跳跃
+    - Turn 4: AI未回应用户话题
+    - Turn 4: 话题跳跃
+    - Turn 5: AI未回应用户话题
+
+====================================================================================================
+场景 3/5: 场景3：学习英语动机
+====================================================================================================
+
+--- Turn 1/5 ---
+用户: I want to improve my English.
+2025-12-17 10:38:19 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33792 bytes
+2025-12-17 10:38:23 | services.unified_processor | INFO     | [解析成功] 转录: I want to improve my English....
+AI回复: That's a great goal! Want to start with something specific like speaking, writing, or vocabulary? (这...
+转录: I want to improve my English.
+分数: 35 (A2)
+处理时间: 3.40s
+兴趣: ['English learning']
+
+--- Turn 2/5 ---
+用户: I need it for my job.
+2025-12-17 10:38:24 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 25728 bytes
+2025-12-17 10:38:28 | services.unified_processor | INFO     | [解析成功] 转录: I need it for my job....
+AI回复: That's great to hear! What kind of job do you do? (听起来很棒！你的工作是什么？)...
+转录: I need it for my job.
+分数: 40 (A2)
+处理时间: 4.29s
+兴趣: ['job-related English', 'workplace communication']
+⚠️  流畅度问题: ['Turn 2: AI未回应用户话题', 'Turn 2: 话题跳跃']
+
+--- Turn 3/5 ---
+用户: I work in a technology company.
+2025-12-17 10:38:29 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 31488 bytes
+2025-12-17 10:38:34 | services.unified_processor | INFO     | [解析成功] 转录: I work in a technology company...
+AI回复: That's great! What kind of technology do you work with? (听起来很棒！你从事哪种技术工作？)...
+转录: I work in a technology company.
+分数: 40 (A2)
+处理时间: 4.79s
+兴趣: ['technology', 'workplace communication']
+⚠️  流畅度问题: ['Turn 3: 话题跳跃']
+
+--- Turn 4/5 ---
+用户: We have many international clients.
+2025-12-17 10:38:35 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 47232 bytes
+2025-12-17 10:38:39 | services.unified_processor | INFO     | [解析成功] 转录: We have many international cli...
+AI回复: That's great! Do you work with clients from many different countries? (听起来很棒！你和很多不同国家的客户合作吗？)...
+转录: We have many international clients.
+分数: 45 (A2)
+处理时间: 3.75s
+兴趣: ['technology', 'international clients', 'workplace communication']
+⚠️  流畅度问题: ['Turn 4: 话题跳跃']
+
+--- Turn 5/5 ---
+用户: So I need to communicate better in English.
+2025-12-17 10:38:40 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 40320 bytes
+2025-12-17 10:38:44 | services.unified_processor | INFO     | [解析成功] 转录: So, I need to communicate bett...
+AI回复: That's a great goal for your career! What specific situations at work do you want to improve? (这是一个很...
+转录: So, I need to communicate better in English.
+分数: 40 (A2)
+处理时间: 4.59s
+兴趣: ['job-related English', 'workplace communication', 'professional development']
+⚠️  流畅度问题: ['Turn 5: AI未回应用户话题', 'Turn 5: 话题跳跃']
+
+
+====================================================================================================
+场景总结: 场景3：学习英语动机
+====================================================================================================
+
+兴趣捕捉:
+  期望兴趣: ['English learning', 'career', 'technology']
+  实际捕捉: ['English learning', 'job-related English', 'workplace communication', 'technology', 'international clients', 'professional development']
+  捕捉率: 66.7% (2/3)
+  缺失兴趣: ['career']
+
+处理时延:
+  平均: 4.16s
+  范围: 3.40s - 4.79s
+  各轮: ['3.40s', '4.29s', '4.79s', '3.75s', '4.59s']
+  上下文压缩影响: 1.14x (后2轮 vs 前2轮)
+
+对话流畅度:
+  总轮数: 5
+  流畅度问题: 6个
+    - Turn 2: AI未回应用户话题
+    - Turn 2: 话题跳跃
+    - Turn 3: 话题跳跃
+    - Turn 4: 话题跳跃
+    - Turn 5: AI未回应用户话题
+    - Turn 5: 话题跳跃
+
+====================================================================================================
+场景 4/5: 场景4：兴趣爱好深入
+====================================================================================================
+
+--- Turn 1/5 ---
+用户: I love reading books.
+2025-12-17 10:38:45 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 24960 bytes
+2025-12-17 10:38:48 | services.unified_processor | INFO     | [解析成功] 转录: I love reading books....
+AI回复: That's wonderful! What kind of books do you enjoy reading? (这很棒！你喜欢读什么类型的书？)...
+转录: I love reading books.
+分数: 45 (A2)
+处理时间: 2.64s
+兴趣: ['reading', 'books']
+
+--- Turn 2/5 ---
+用户: Especially mystery novels.
+2025-12-17 10:38:49 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 25728 bytes
+2025-12-17 10:38:52 | services.unified_processor | INFO     | [解析成功] 转录: especially mystery novels....
+AI回复: Mystery novels are exciting! Who is your favorite detective? (神秘小说很刺激！你最喜欢的侦探是谁？)...
+转录: especially mystery novels.
+分数: 45 (A2)
+处理时间: 3.12s
+兴趣: ['mystery novels', 'reading']
+⚠️  流畅度问题: ['Turn 2: 话题跳跃']
+
+--- Turn 3/5 ---
+用户: Agatha Christie is my favorite author.
+2025-12-17 10:38:53 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 39168 bytes
+2025-12-17 10:38:56 | services.unified_processor | INFO     | [解析成功] 转录: Agatha Christie is my favorite...
+AI回复: Agatha Christie is amazing! Her book 'Murder on the Orient Express' is very famous. (阿加莎·克里斯蒂很棒！她的《东...
+转录: Agatha Christie is my favorite author.
+分数: 45 (A2)
+处理时间: 3.19s
+兴趣: ['reading', 'mystery novels', 'Agatha Christie']
+⚠️  流畅度问题: ['Turn 3: 话题跳跃']
+
+--- Turn 4/5 ---
+用户: I've read almost all her books.
+2025-12-17 10:38:57 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36864 bytes
+2025-12-17 10:39:02 | services.unified_processor | INFO     | [解析成功] 转录: I've read almost all her books...
+AI回复: That's impressive! Have you read her book 'The Murder of Roger Ackroyd'? (真厉害！你读过她的《罗杰疑案》吗？)...
+转录: I've read almost all her books.
+分数: 45 (A2)
+处理时间: 4.63s
+兴趣: ['reading', 'Agatha Christie', 'mystery novels']
+⚠️  流畅度问题: ['Turn 4: 话题跳跃']
+
+--- Turn 5/5 ---
+用户: Can you recommend similar authors?
+2025-12-17 10:39:14 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 41088 bytes
+2025-12-17 10:39:19 | services.unified_processor | INFO     | [解析成功] 转录: Can you recommend similar auth...
+AI回复: Sure! Do you like detective stories? I can suggest some authors who write similar mysteries. (当然！你喜欢...
+转录: Can you recommend similar authors?
+分数: 45 (A2)
+处理时间: 4.55s
+兴趣: ['mystery novels', 'Agatha Christie']
+⚠️  流畅度问题: ['Turn 5: 话题跳跃']
+
+
+====================================================================================================
+场景总结: 场景4：兴趣爱好深入
+====================================================================================================
+
+兴趣捕捉:
+  期望兴趣: ['reading', 'books', 'mystery', 'Agatha Christie']
+  实际捕捉: ['reading', 'books', 'mystery novels', 'Agatha Christie']
+  捕捉率: 100.0% (4/4)
+
+处理时延:
+  平均: 3.63s
+  范围: 2.64s - 4.63s
+  各轮: ['2.64s', '3.12s', '3.19s', '4.63s', '4.55s']
+  上下文压缩影响: 1.43x (后2轮 vs 前2轮)
+
+对话流畅度:
+  总轮数: 5
+  流畅度问题: 4个
+    - Turn 2: 话题跳跃
+    - Turn 3: 话题跳跃
+    - Turn 4: 话题跳跃
+    - Turn 5: 话题跳跃
+
+====================================================================================================
+场景 5/5: 场景5：话题跳跃测试
+====================================================================================================
+
+--- Turn 1/5 ---
+用户: I like playing basketball.
+2025-12-17 10:39:20 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33024 bytes
+2025-12-17 10:39:23 | services.unified_processor | INFO     | [解析成功] 转录: I like playing basketball....
+AI回复: That sounds fun! Do you play with friends or in a team? (听起来很有趣！你是和朋友打还是在球队打？)...
+转录: I like playing basketball.
+分数: 45 (A2)
+处理时间: 2.84s
+兴趣: ['basketball', 'sports']
+
+--- Turn 2/5 ---
+用户: But I also enjoy cooking.
+2025-12-17 10:39:24 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 31488 bytes
+2025-12-17 10:39:27 | services.unified_processor | INFO     | [解析成功] 转录: But I also enjoy cooking....
+AI回复: That's great! What kind of food do you like to cook? (那很棒！你喜欢做什么菜？)...
+转录: But I also enjoy cooking.
+分数: 45 (A2)
+处理时间: 3.00s
+兴趣: ['cooking', 'basketball']
+⚠️  流畅度问题: ['Turn 2: AI未回应用户话题', 'Turn 2: 话题跳跃']
+
+--- Turn 3/5 ---
+用户: Actually, I'm learning to cook Italian food.
+2025-12-17 10:39:28 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 44160 bytes
+2025-12-17 10:39:33 | services.unified_processor | INFO     | [解析成功] 转录: Actually I'm learning to cook ...
+AI回复: That's wonderful! What Italian dishes do you enjoy making? (那很棒！你喜欢做什么意大利菜？)...
+转录: Actually I'm learning to cook Italian food.
+分数: 45 (A2)
+处理时间: 5.04s
+兴趣: ['cooking', 'Italian cuisine', 'food']
+⚠️  流畅度问题: ['Turn 3: 话题跳跃']
+
+--- Turn 4/5 ---
+用户: Do you know how to make pasta?
+2025-12-17 10:39:35 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 27264 bytes
+2025-12-17 10:39:38 | services.unified_processor | INFO     | [解析成功] 转录: Do you know how to make pasta?...
+AI回复: Yes, I can help you with that! Pasta is a delicious Italian dish. (是的，我可以帮你！意大利面是一道美味的意大利菜。)...
+转录: Do you know how to make pasta?
+分数: 45 (A2)
+处理时间: 3.43s
+兴趣: ['cooking', 'Italian food', 'pasta']
+⚠️  流畅度问题: ['Turn 4: 话题跳跃']
+
+--- Turn 5/5 ---
+用户: I want to try making pizza next.
+2025-12-17 10:39:39 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 37632 bytes
+2025-12-17 10:39:42 | services.unified_processor | INFO     | [解析成功] 转录: I want to try making pizza nex...
+AI回复: Pizza is delicious! Do you want to learn how to make it? (披萨很好吃！你想学做吗？)...
+转录: I want to try making pizza next.
+分数: 45 (A2)
+处理时间: 3.29s
+兴趣: ['cooking', 'Italian food', 'pizza']
+⚠️  流畅度问题: ['Turn 5: 话题跳跃']
+
+
+====================================================================================================
+场景总结: 场景5：话题跳跃测试
+====================================================================================================
+
+兴趣捕捉:
+  期望兴趣: ['basketball', 'cooking', 'Italian food']
+  实际捕捉: ['basketball', 'sports', 'cooking', 'Italian cuisine', 'food', 'Italian food', 'pasta', 'pizza']
+  捕捉率: 100.0% (3/3)
+
+处理时延:
+  平均: 3.52s
+  范围: 2.84s - 5.04s
+  各轮: ['2.84s', '3.00s', '5.04s', '3.43s', '3.29s']
+  上下文压缩影响: 1.34x (后2轮 vs 前2轮)
+
+对话流畅度:
+  总轮数: 5
+  流畅度问题: 5个
+    - Turn 2: AI未回应用户话题
+    - Turn 2: 话题跳跃
+    - Turn 3: 话题跳跃
+    - Turn 4: 话题跳跃
+    - Turn 5: 话题跳跃
+
+
+====================================================================================================
+总体统计
+====================================================================================================
+
+总体指标:
+  总对话轮数: 25
+  平均兴趣捕捉率: 86.7%
+  平均处理时延: 3.86s
+  流畅度问题总数: 25
+  流畅度问题率: 100.0%
+
+结果已保存到: conversation_quality_results.json

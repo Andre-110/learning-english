@@ -1,0 +1,663 @@
+================================================================================
+测试 qwen-omni 模型（覆盖六个 CEFR 等级）
+使用 qwen-omni TTS 生成音频
+================================================================================
+
+2025-12-17 10:05:27 | services.qwen_omni_audio | INFO     | Qwen-Omni Audio 服务初始化: audio_model=qwen3-omni-flash
+2025-12-17 10:05:27 | services.unified_processor | INFO     | 统一处理器初始化: 使用 qwen-omni 服务
+初始化 TTS 服务（使用 OpenAI TTS）...
+✅ TTS 服务初始化完成
+
+⚠️  注意：OpenAI TTS 不支持中文，中文部分可能发音不准确，但这不影响测试评分功能
+
+
+================================================================================
+测试用例 1/23 - A1 级别
+================================================================================
+描述: 纯中文输入
+用户输入文本: 我不会说英语，请帮帮我
+
+⏳ 生成音频...
+✅ 音频生成完成 (44928 bytes, 1.96s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:05:29 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 44928 bytes
+2025-12-17 10:05:34 | services.unified_processor | INFO     | [解析成功] 转录: 我不会说英语，请帮帮我。...
+✅ 处理完成 (4.51s)
+
+📊 评估结果:
+  预期等级: A1
+  实际分数: 15
+  实际等级: A1
+
+✏️  修正建议:
+  1. 我不会说英语 → I can't speak English
+     说明: Use 'I can't speak English' to express inability to speak English.
+  2. 请帮帮我 → Please help me
+     说明: Use 'Please help me' for polite requests.
+
+💬 鼓励语:
+  Good thought! Try saying: 'I can't speak English. Please help me.'
+
+
+================================================================================
+测试用例 2/23 - A1 级别
+================================================================================
+描述: 极简单词
+用户输入文本: Hello. Yes. Good.
+
+⏳ 生成音频...
+✅ 音频生成完成 (34560 bytes, 1.02s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:05:35 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 34560 bytes
+2025-12-17 10:05:38 | services.unified_processor | INFO     | [解析成功] 转录: Hello, yes, good....
+✅ 处理完成 (3.56s)
+
+📊 评估结果:
+  预期等级: A1
+  实际分数: 30
+  实际等级: A1
+
+✏️  修正建议:
+  1. yes, good → I am good
+     说明: Add a subject like 'I' to make a complete sentence.
+
+💬 鼓励语:
+  Great start! Try saying 'I am good' to complete your sentence.
+
+
+================================================================================
+测试用例 3/23 - A1 级别
+================================================================================
+描述: 中英文混杂，简单词汇
+用户输入文本: I like 苹果. 很好吃.
+
+⏳ 生成音频...
+✅ 音频生成完成 (48768 bytes, 1.23s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:05:39 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48768 bytes
+2025-12-17 10:05:43 | services.unified_processor | INFO     | [解析成功] 转录: I like 苹果，很好吃。...
+✅ 处理完成 (4.16s)
+
+📊 评估结果:
+  预期等级: A1
+  实际分数: 25
+  实际等级: A1
+
+✏️  修正建议:
+  1. I like 苹果，很好吃。 → I like apples. They are delicious.
+     说明: In English, 'apple' is the word for '苹果'. 'They are delicious' is a natural way to say '很好吃'.
+
+💬 鼓励语:
+  Good start! Try saying the full sentence in English next time: 'I like apples. They are delicious.'
+
+
+================================================================================
+测试用例 4/23 - A1 级别
+================================================================================
+描述: 中英文混杂，简单结构
+用户输入文本: 请tell me about 足球
+
+⏳ 生成音频...
+✅ 音频生成完成 (35328 bytes, 1.02s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:05:44 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 35328 bytes
+2025-12-17 10:05:49 | services.unified_processor | INFO     | [解析成功] 转录: 请 Tell me about Fu Chou...
+✅ 处理完成 (4.32s)
+
+📊 评估结果:
+  预期等级: A1
+  实际分数: 30
+  实际等级: A1
+
+✏️  修正建议:
+  1. Tell me about Fu Chou → Tell me about Fu Chou
+     说明: The word 'Fu Chou' is likely a name, so no correction needed. However, 'Fu Chou' might be a typo or mispronunciation of 'Foucault' or another name. If you meant 'Foucault', please clarify.
+
+💬 鼓励语:
+  Good attempt! Try saying 'Tell me about Foucault' if you meant the philosopher.
+
+
+================================================================================
+测试用例 5/23 - A2 级别
+================================================================================
+描述: 简单句有错误
+用户输入文本: I like play basketball. Yesterday I go to school.
+
+⏳ 生成音频...
+✅ 音频生成完成 (61824 bytes, 1.40s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:05:50 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 61824 bytes
+2025-12-17 10:05:55 | services.unified_processor | INFO     | [解析成功] 转录: I like play basketball. Yester...
+✅ 处理完成 (4.51s)
+
+📊 评估结果:
+  预期等级: A2
+  实际分数: 30
+  实际等级: A2
+
+✏️  修正建议:
+  1. like play → like playing
+     说明: After 'like', use the -ing form: 'I like playing basketball'.
+  2. I go to school → I went to school
+     说明: Use past tense 'went' for actions in the past, like yesterday.
+
+💬 鼓励语:
+  Good effort! Remember: 'like' + -ing form. Try: 'I like playing basketball.'
+
+
+================================================================================
+测试用例 6/23 - A2 级别
+================================================================================
+描述: 中英文混杂，简单句子
+用户输入文本: I want to talk about 足球 with you. 梅西 is very good.
+
+⏳ 生成音频...
+✅ 音频生成完成 (72192 bytes, 1.45s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:05:56 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 72192 bytes
+2025-12-17 10:06:03 | services.unified_processor | INFO     | [解析成功] 转录: I want to talk about zu qiao w...
+✅ 处理完成 (6.92s)
+
+📊 评估结果:
+  预期等级: A2
+  实际分数: 40
+  实际等级: A2
+
+✏️  修正建议:
+  1. zu qiao → Zhou Qiao
+     说明: This is a proper name, so it should be capitalized and spelled correctly.
+  2. Mei xi → Messi
+     说明: This refers to the famous football player Lionel Messi. The correct spelling is 'Messi'.
+
+💬 鼓励语:
+  Good attempt! Remember to check the spelling of names. Messi is a famous football player. Would you like to know more about him?
+
+
+================================================================================
+测试用例 7/23 - A2 级别
+================================================================================
+描述: 中英文混杂，时态错误
+用户输入文本: Yesterday I go to the park and see many people play 篮球
+
+⏳ 生成音频...
+✅ 音频生成完成 (71424 bytes, 2.08s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:06:05 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 71424 bytes
+2025-12-17 10:06:14 | services.unified_processor | INFO     | [解析成功] 转录: Yesterday I go to the park and...
+✅ 处理完成 (8.32s)
+
+📊 评估结果:
+  预期等级: A2
+  实际分数: 30
+  实际等级: A2
+
+✏️  修正建议:
+  1. I go → I went
+     说明: Use past tense 'went' for actions that happened yesterday
+  2. play luncho → play lunch
+     说明: Did you mean 'play lunch'? But 'lunch' is a noun, not a verb. Maybe you meant 'eat lunch' or 'have lunch'?
+
+💬 鼓励语:
+  Good attempt! Remember: 'yesterday' needs past tense verbs like 'went'.
+
+
+================================================================================
+测试用例 8/23 - A2 级别
+================================================================================
+描述: 中英文混杂，主谓一致错误
+用户输入文本: He is a very good player, 我很like him
+
+⏳ 生成音频...
+✅ 音频生成完成 (51456 bytes, 1.73s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:06:15 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 51456 bytes
+2025-12-17 10:06:23 | services.unified_processor | INFO     | [解析成功] 转录: He is a very good player, Woha...
+✅ 处理完成 (7.54s)
+
+📊 评估结果:
+  预期等级: A2
+  实际分数: 30
+  实际等级: A2
+
+✏️  修正建议:
+  1. Wohan → Wuhan
+     说明: Did you mean 'Wuhan'? It's a city in China. Or did you mean a person's name?
+  2. He is a very good player, Wohan like him. → He is a very good player. Wohan likes him.
+     说明: Add a period to separate sentences. Use 'likes' instead of 'like' because 'Wohan' is third person singular.
+
+💬 鼓励语:
+  Good attempt! Remember: 'He likes' not 'He like'. Try saying: 'He is a very good player. Wohan likes him.'
+
+
+================================================================================
+测试用例 9/23 - B1 级别
+================================================================================
+描述: 完整表达，偶有小错
+用户输入文本: I went to the cinema last weekend and watched a movie about time travel. It was very interesting.
+
+⏳ 生成音频...
+✅ 音频生成完成 (89856 bytes, 2.00s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:06:25 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 89856 bytes
+2025-12-17 10:06:29 | services.unified_processor | INFO     | [解析成功] 转录: I went to the cinema last week...
+✅ 处理完成 (4.63s)
+
+📊 评估结果:
+  预期等级: B1
+  实际分数: 65
+  实际等级: B2
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Great job! Your English is fluent and natural. Try using synonyms like 'a film' instead of 'a movie' to expand your vocabulary!
+
+
+================================================================================
+测试用例 10/23 - B1 级别
+================================================================================
+描述: 有细节描述
+用户输入文本: Last summer, I traveled to Beijing with my family. We visited the Great Wall and took many photos.
+
+⏳ 生成音频...
+✅ 音频生成完成 (92160 bytes, 1.68s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:06:31 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 92160 bytes
+2025-12-17 10:06:35 | services.unified_processor | INFO     | [解析成功] 转录: Last summer I traveled to Beij...
+✅ 处理完成 (4.05s)
+
+📊 评估结果:
+  预期等级: B1
+  实际分数: 65
+  实际等级: B2
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent English! Your sentences are clear and natural. Keep practicing with more details!
+
+
+================================================================================
+测试用例 11/23 - B1 级别
+================================================================================
+描述: 中英文混杂，但表达相对完整
+用户输入文本: I think Messi is one of the best players in the world. 他的achievements真的很impressive.
+
+⏳ 生成音频...
+✅ 音频生成完成 (87168 bytes, 1.57s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:06:37 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 87168 bytes
+2025-12-17 10:06:44 | services.unified_processor | INFO     | [解析成功] 转录: I think Messi is one of the be...
+✅ 处理完成 (7.77s)
+
+📊 评估结果:
+  预期等级: B1
+  实际分数: 40
+  实际等级: A2
+
+✏️  修正建议:
+  1. Tada achievements → His achievements
+     说明: Use 'His' to show possession, not 'Tada' which is not English.
+  2. gender impressive → are impressive
+     说明: The correct structure is 'are impressive' to describe achievements.
+
+💬 鼓励语:
+  Good attempt! Try saying: 'I think Messi is one of the best players in the world. His achievements are impressive.'
+
+
+================================================================================
+测试用例 12/23 - B1 级别
+================================================================================
+描述: 中英文混杂，有复杂结构
+用户输入文本: I want to learn more about football, especially about Messi的playing style and his career.
+
+⏳ 生成音频...
+✅ 音频生成完成 (78720 bytes, 2.05s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:06:47 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 78720 bytes
+2025-12-17 10:06:53 | services.unified_processor | INFO     | [解析成功] 转录: I want to learn more about foo...
+✅ 处理完成 (6.45s)
+
+📊 评估结果:
+  预期等级: B1
+  实际分数: 65
+  实际等级: B1
+
+✏️  修正建议:
+  1. football → the football
+     说明: We usually say 'the football' when referring to the sport in general
+  2. playing style → playing style
+     说明: This is actually correct! 'Playing style' is the right term for how a player plays
+
+💬 鼓励语:
+  Great topic choice! You're expressing your interest clearly. Would you like to know about Messi's specific skills or his career milestones?
+
+
+================================================================================
+测试用例 13/23 - B2 级别
+================================================================================
+描述: 复杂句式和从句
+用户输入文本: Although I was initially skeptical about the movie, I found myself captivated by its storyline and character development.
+
+⏳ 生成音频...
+✅ 音频生成完成 (113664 bytes, 2.31s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:06:55 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 113664 bytes
+2025-12-17 10:06:59 | services.unified_processor | INFO     | [解析成功] 转录: Although I was initially skept...
+✅ 处理完成 (3.30s)
+
+📊 评估结果:
+  预期等级: B2
+  实际分数: 75
+  实际等级: B2
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent use of advanced vocabulary and complex sentence structure!
+
+
+================================================================================
+测试用例 14/23 - B2 级别
+================================================================================
+描述: 虚拟语气和条件句
+用户输入文本: If I had known about this opportunity earlier, I would have prepared more thoroughly for the interview.
+
+⏳ 生成音频...
+✅ 音频生成完成 (87168 bytes, 1.55s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:07:00 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 87168 bytes
+2025-12-17 10:07:04 | services.unified_processor | INFO     | [解析成功] 转录: If I had known about this oppo...
+✅ 处理完成 (3.85s)
+
+📊 评估结果:
+  预期等级: B2
+  实际分数: 75
+  实际等级: B2
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent use of advanced grammar! Your sentence is very clear and natural.
+
+
+================================================================================
+测试用例 15/23 - B2 级别
+================================================================================
+描述: 中英文混杂，但使用复杂词汇
+用户输入文本: Messi's playing style is really unique. 他的technique和vision让很多fans都admire him.
+
+⏳ 生成音频...
+✅ 音频生成完成 (89088 bytes, 1.70s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:07:06 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 89088 bytes
+2025-12-17 10:07:13 | services.unified_processor | INFO     | [解析成功] 转录: Messi's playing style is reall...
+✅ 处理完成 (6.90s)
+
+📊 评估结果:
+  预期等级: B2
+  实际分数: 30
+  实际等级: A2
+
+✏️  修正建议:
+  1. Tada technic her vision young can do fans do admire him → His technique and vision are admired by young fans
+     说明: The original sentence has multiple errors. 'Tada' is likely a typo for 'His'. 'technic' should be 'technique'. 'her vision' should be 'his vision'. 'young can do fans do admire him' is grammatically incorrect. The correct structure is 'young fans admire him'.
+  2. do admire him → admire him
+     说明: In present simple tense, 'do' is not needed before the main verb 'admire'.
+
+💬 鼓励语:
+  Good attempt! Try to focus on subject-verb agreement and correct word choices next time.
+
+
+================================================================================
+测试用例 16/23 - B2 级别
+================================================================================
+描述: 复杂句式，高级词汇
+用户输入文本: The way Messi plays football demonstrates not only his exceptional talent but also his dedication to the sport.
+
+⏳ 生成音频...
+✅ 音频生成完成 (119424 bytes, 2.21s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:07:15 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 119424 bytes
+2025-12-17 10:07:19 | services.unified_processor | INFO     | [解析成功] 转录: The way Messi plays football d...
+✅ 处理完成 (3.96s)
+
+📊 评估结果:
+  预期等级: B2
+  实际分数: 85
+  实际等级: C1
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent use of sophisticated language! Your sentence is very clear and well-structured.
+
+
+================================================================================
+测试用例 17/23 - C1 级别
+================================================================================
+描述: 高级词汇和学术表达
+用户输入文本: The proliferation of artificial intelligence has precipitated a paradigm shift in how we conceptualize human-machine interaction.
+
+⏳ 生成音频...
+✅ 音频生成完成 (129024 bytes, 1.91s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:07:21 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 129024 bytes
+2025-12-17 10:07:24 | services.unified_processor | INFO     | [解析成功] 转录: The proliferation of artificia...
+✅ 处理完成 (3.55s)
+
+📊 评估结果:
+  预期等级: C1
+  实际分数: 85
+  实际等级: C1
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent use of sophisticated language! Your sentence shows strong academic English skills.
+
+
+================================================================================
+测试用例 18/23 - C1 级别
+================================================================================
+描述: 复杂论述和精准用词
+用户输入文本: Notwithstanding the considerable obstacles that impeded our progress, we persevered and ultimately achieved unprecedented results in our research.
+
+⏳ 生成音频...
+✅ 音频生成完成 (137088 bytes, 2.12s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:07:26 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 137088 bytes
+2025-12-17 10:07:31 | services.unified_processor | INFO     | [解析成功] 转录: Notwithstanding the considerab...
+✅ 处理完成 (4.61s)
+
+📊 评估结果:
+  预期等级: C1
+  实际分数: 85
+  实际等级: C1
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent use of advanced vocabulary and complex structures! This is very impressive academic English.
+
+
+================================================================================
+测试用例 19/23 - C1 级别
+================================================================================
+描述: 高级词汇，复杂结构
+用户输入文本: Messi's career exemplifies the notion that exceptional talent, when combined with relentless perseverance, can transcend conventional limitations.
+
+⏳ 生成音频...
+✅ 音频生成完成 (148224 bytes, 2.07s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:07:33 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 148224 bytes
+2025-12-17 10:07:40 | services.unified_processor | INFO     | [解析成功] 转录: Messi's career exemplifies the...
+✅ 处理完成 (6.64s)
+
+📊 评估结果:
+  预期等级: C1
+  实际分数: 85
+  实际等级: C1
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent use of advanced vocabulary and complex structures! Your sentence is very clear and impactful.
+
+
+================================================================================
+测试用例 20/23 - C1 级别
+================================================================================
+描述: 学术风格，复杂论述
+用户输入文本: The intricate dynamics of modern football require players to possess not merely technical proficiency but also strategic acumen and psychological resilience.
+
+⏳ 生成音频...
+✅ 音频生成完成 (167424 bytes, 2.95s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:07:43 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 167424 bytes
+2025-12-17 10:07:52 | services.unified_processor | INFO     | [解析成功] 转录: The intricate dynamics of mode...
+✅ 处理完成 (9.68s)
+
+📊 评估结果:
+  预期等级: C1
+  实际分数: 65
+  实际等级: B2
+
+✏️  修正建议:
+  1. require players to possess not merely technical proficiency, it also strategic acumen → require players to possess not merely technical proficiency, but also strategic acumen
+     说明: After 'not merely', use 'but also' to maintain parallel structure. 'It also' is incorrect because 'it' refers to 'players', which would make the sentence illogical. The correct conjunction is 'but also'.
+
+💬 鼓励语:
+  Excellent use of advanced vocabulary and complex structure! Just remember to use 'but also' instead of 'it also' after 'not merely'.
+
+
+================================================================================
+测试用例 21/23 - C2 级别
+================================================================================
+描述: 接近母语水平的深度表达
+用户输入文本: The epistemological underpinnings of contemporary discourse reveal a fascinating interplay between Cartesian dualism and emergent materialism.
+
+⏳ 生成音频...
+✅ 音频生成完成 (132096 bytes, 2.28s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:07:55 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 132096 bytes
+2025-12-17 10:08:04 | services.unified_processor | INFO     | [解析成功] 转录: The epistemological underpinni...
+✅ 处理完成 (9.33s)
+
+📊 评估结果:
+  预期等级: C2
+  实际分数: 85
+  实际等级: C1
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent use of sophisticated language! Your sentence shows strong academic English skills.
+
+
+================================================================================
+测试用例 22/23 - C2 级别
+================================================================================
+描述: 母语水平，复杂论述
+用户输入文本: Lionel Messi's unparalleled mastery of the beautiful game transcends mere athleticism, embodying a synthesis of technical virtuosity, tactical intelligence, and artistic expression that has redefined the parameters of footballing excellence.
+
+⏳ 生成音频...
+✅ 音频生成完成 (271488 bytes, 3.93s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:08:08 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 271488 bytes
+2025-12-17 10:08:15 | services.unified_processor | INFO     | [解析成功] 转录: Lionel Messi's unparalleled ma...
+✅ 处理完成 (7.50s)
+
+📊 评估结果:
+  预期等级: C2
+  实际分数: 85
+  实际等级: C1
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent use of advanced vocabulary and complex sentence structure! Your English is very close to native-level proficiency.
+
+
+================================================================================
+测试用例 23/23 - C2 级别
+================================================================================
+描述: 学术深度，精准表达
+用户输入文本: The multifaceted nature of linguistic competence encompasses not only grammatical accuracy but also pragmatic appropriateness, sociolinguistic awareness, and the ability to navigate subtle nuances of meaning across diverse communicative contexts.
+
+⏳ 生成音频...
+✅ 音频生成完成 (273792 bytes, 3.55s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:08:19 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 273792 bytes
+2025-12-17 10:08:25 | services.unified_processor | INFO     | [解析成功] 转录: A multifaceted nature of lingu...
+✅ 处理完成 (6.05s)
+
+📊 评估结果:
+  预期等级: C2
+  实际分数: 85
+  实际等级: C1
+
+✏️  修正建议:
+  (无修正)
+
+💬 鼓励语:
+  Excellent use of sophisticated academic language! Your sentence structure is very advanced.
+
+
+================================================================================
+测试完成！结果已保存到: qwen_omni_full_levels_results.json
+================================================================================
+
+📈 按等级统计:
+
+A1 级别:
+  用例数: 4
+  平均分: 25.0
+  分数范围: 15 - 30
+  预期范围: 0-25
+
+A2 级别:
+  用例数: 4
+  平均分: 32.5
+  分数范围: 30 - 40
+  预期范围: 25-45
+
+B1 级别:
+  用例数: 4
+  平均分: 58.8
+  分数范围: 40 - 65
+  预期范围: 45-65
+
+B2 级别:
+  用例数: 4
+  平均分: 66.2
+  分数范围: 30 - 85
+  预期范围: 65-80
+
+C1 级别:
+  用例数: 4
+  平均分: 80.0
+  分数范围: 65 - 85
+  预期范围: 80-92
+
+C2 级别:
+  用例数: 3
+  平均分: 85.0
+  分数范围: 85 - 85
+  预期范围: 92-100
+
+总体统计:
+  成功处理: 23/23
+  平均分数: 56.7
+  分数范围: 15 - 85
+  标准差: 24.8

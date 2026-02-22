@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T16:15:02.320423",
+    "level": "B1",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "music",
+        "art",
+        "technology"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.993,
+    "user_avg_latency": 2.476,
+    "strategies": {
+      "continue": 5
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! Nice to meet you! 😊 What’s a song or piece of art that really makes you feel something special? (Feel free to answer naturally - I'll help if needed!)",
+      "latency_s": 3.024,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Hi! Nice to meet you too! 😊 Um, I think a song that makes me feel special is \"Imagine\" by John Lennon. It’s very beautiful, and the message is about peace and unity. \n\nI like to listen to it when I feel, um, a little sad or when I just want to think about good things in the world. Sometimes, I close my eyes and imagine a better place. \n\nBut, I also really like some paintings, like the Starry Night by Van Gogh. It's very colorful and it makes me feel calm. The stars look like they are moving, and it’s... um, magical! What about you? Do you have a favorite song or art?",
+      "latency_s": 3.076,
+      "word_count": 114,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I love \"Imagine\"! It's such a powerful song. 🎶 I feel the same way about music—it really helps me when I'm down. \n\nAs for art, I really enjoy \"The Persistence of Memory\" by Salvador Dalí. The melting clocks are so strange but fascinating! Do you paint or create art yourself?",
+      "latency_s": 2.36,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Oh, yes! \"The Persistence of Memory\" is very interesting. I like how the clocks look so soft and... um, not normal. \n\nI don’t paint much, but I like to draw sometimes. I draw simple things like flowers or animals. I want to be better at it, but it's hard for me. Do you paint?",
+      "latency_s": 2.187,
+      "word_count": 54,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I totally get that! Drawing flowers and animals sounds lovely. 🌼 I don’t paint either, but I enjoy doodling sometimes. It’s so relaxing! What kind of flowers or animals do you like to draw the most?",
+      "latency_s": 1.981,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I like to draw... uh, I really like drawing cats and roses. Cats are so cute, right? 😺 I try to make them look fluffy. And roses are nice because they have many colors. Sometimes I... um, I draw them in different positions, like, um, when they are facing up or down. \n\nBut I’m not very good yet, I think. Just practicing! How about you? What do you like to doodle?",
+      "latency_s": 2.23,
+      "word_count": 72,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Cats and roses sound adorable! 😺 I love how many different ways you can draw them. I enjoy doodling random things, like cartoons or silly faces. It’s fun to just let my imagination flow! How often do you practice drawing?",
+      "latency_s": 2.013,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Oh, I practice drawing, um, maybe two or three times a week. Sometimes I draw every day if I, uh, have time. I like to try new things, but sometimes I feel, um, nervous about it. Like, I want to make it look perfect, but it’s not easy, you know? I think just having fun is the most important part! Do you have a favorite cartoon you like to doodle?",
+      "latency_s": 2.299,
+      "word_count": 70,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I totally understand that feeling! Trying to make things perfect can be stressful. I think having fun is key too! 🎨 I love doodling characters from \"Adventure Time.\" They're so quirky and colorful! Do you have a favorite artist or cartoon that inspires you?",
+      "latency_s": 1.881,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes! I really like, uh, Hayao Miyazaki. His movies are so beautiful, and the characters are very, um, interesting. \"Spirited Away\" is my favorite! I like how he draws nature and, um, the creatures. They feel very magical, you know? \n\nBut I also like some cartoons, like, uh, \"Adventure Time\" too! The colors are so bright and, um, funny. I think I get inspired by both, like the, um, details in movies and the fun style in cartoons. What about you? Do you have a favorite character you like to draw?",
+      "latency_s": 2.586,
+      "word_count": 92,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I love Hayao Miyazaki too! His films have such a unique charm. 🎥 I really enjoy drawing Finn from \"Adventure Time.\" He's adventurous and fun! I like capturing his expressions. Do you ever try to draw characters from movies or shows?",
+      "latency_s": 1.728,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

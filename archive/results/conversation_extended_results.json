@@ -1,0 +1,1027 @@
+[
+  {
+    "scenario": "场景1：足球兴趣深入探索（20轮）",
+    "turns": [
+      {
+        "turn": 1,
+        "user_input": "Hello! I want to talk about football.",
+        "transcription": "Hello, I want to talk about football.",
+        "ai_response": "That sounds fun! Do you have a favorite team or player? (听起来很有趣！你有最喜欢的球队或球员吗？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football"
+        ],
+        "process_time": 3.1952483654022217,
+        "tts_time": 2.1691484451293945,
+        "conversation_history_length": 2
+      },
+      {
+        "turn": 2,
+        "user_input": "I really like Messi. He is amazing.",
+        "transcription": "I really like Messi. He is amazing.",
+        "ai_response": "Messi is an amazing player! He was born in Argentina in 1987. (梅西是一位了不起的球员！他1987年出生于阿根廷。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi"
+        ],
+        "process_time": 4.698349714279175,
+        "tts_time": 1.1357526779174805,
+        "conversation_history_length": 4
+      },
+      {
+        "turn": 3,
+        "user_input": "Can you tell me more about his early career?",
+        "transcription": "Can you tell me more about his early career?",
+        "ai_response": "Sure! Messi joined Barcelona's youth academy, La Masia, at age 13. He made his first-team debut in 2004. (当然！梅西13岁时加入了巴塞罗那的青训营拉玛西亚。他在2004年首次亮相一线队。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi"
+        ],
+        "process_time": 5.473935842514038,
+        "tts_time": 1.1303822994232178,
+        "conversation_history_length": 6
+      },
+      {
+        "turn": 4,
+        "user_input": "What about his achievements in Barcelona?",
+        "transcription": "What about his achievements in Barcelona?",
+        "ai_response": "Messi won many titles with Barcelona! He won 10 La Liga championships and 3 UEFA Champions League trophies. (梅西在巴塞罗那赢得了众多冠军！他获得了10次西甲冠军和3次欧洲冠军联赛奖杯。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "Barcelona"
+        ],
+        "process_time": 4.884819507598877,
+        "tts_time": 2.000528335571289,
+        "conversation_history_length": 8
+      },
+      {
+        "turn": 5,
+        "user_input": "I also want to know about his family life.",
+        "transcription": "I also want to know about his family life.",
+        "ai_response": "Messi has a close family! He has three children with his wife Antonela Roccuzzo. (梅西有一个亲密的家庭！他和妻子安东内拉·罗库索有三个孩子。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "Messi",
+          "family life",
+          "football"
+        ],
+        "process_time": 4.380913257598877,
+        "tts_time": 1.6454288959503174,
+        "conversation_history_length": 10
+      },
+      {
+        "turn": 6,
+        "user_input": "How did he start playing football?",
+        "transcription": "How did he start playing football?",
+        "ai_response": "Messi started playing football at age 4 in Rosario, Argentina. He played for a local team called Newell's Old Boys. (梅西4岁时在阿根廷罗萨里奥开始踢足球。他为当地一支名为纽维尔老男孩的球队踢球。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "sports history"
+        ],
+        "process_time": 3.9994473457336426,
+        "tts_time": 1.5109102725982666,
+        "conversation_history_length": 12
+      },
+      {
+        "turn": 7,
+        "user_input": "What was his first club?",
+        "transcription": "What was his first club?",
+        "ai_response": "Messi's first club was Newell's Old Boys in Argentina. He joined Barcelona's youth academy at age 13. (梅西的第一家俱乐部是阿根廷的纽维尔老男孩队。他在13岁时加入了巴塞罗那的青训营。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "Barcelona"
+        ],
+        "process_time": 4.808771848678589,
+        "tts_time": 1.4264271259307861,
+        "conversation_history_length": 14
+      },
+      {
+        "turn": 8,
+        "user_input": "When did he join Barcelona?",
+        "transcription": "When did he join Barcelona?",
+        "ai_response": "Messi joined Barcelona's youth academy at age 13. (梅西13岁时加入了巴塞罗那的青训营。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "Barcelona"
+        ],
+        "process_time": 3.2820146083831787,
+        "tts_time": 1.8473188877105713,
+        "conversation_history_length": 16
+      },
+      {
+        "turn": 9,
+        "user_input": "How many goals did he score for Barcelona?",
+        "transcription": "How many goals did he score for Barcelona?",
+        "ai_response": "Messi scored 672 goals for Barcelona in all competitions! (梅西为巴塞罗那在所有比赛中打进了672个进球！)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "Barcelona"
+        ],
+        "process_time": 28.238880395889282,
+        "tts_time": 1.6428940296173096,
+        "conversation_history_length": 18
+      },
+      {
+        "turn": 10,
+        "user_input": "What about his international career?",
+        "transcription": "What about his international career.",
+        "ai_response": "Messi played for Argentina's national team. He won the 2022 FIFA World Cup with them! (梅西为阿根廷国家队效力。他与球队一起赢得了2022年国际足联世界杯！)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "Barcelona",
+          "sports history"
+        ],
+        "process_time": 4.6916351318359375,
+        "tts_time": 1.5556561946868896,
+        "conversation_history_length": 20
+      },
+      {
+        "turn": 11,
+        "user_input": "Did he win the World Cup?",
+        "transcription": "Did he win the World Cup?",
+        "ai_response": "Yes, Messi won the 2022 FIFA World Cup with Argentina! (是的，梅西与阿根廷队一起赢得了2022年国际足联世界杯！)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "international football"
+        ],
+        "process_time": 3.75419020652771,
+        "tts_time": 0.9294049739837646,
+        "conversation_history_length": 22
+      },
+      {
+        "turn": 12,
+        "user_input": "What year did he win it?",
+        "transcription": "What year did he win it",
+        "ai_response": "Messi won the 2022 FIFA World Cup with Argentina! (梅西与阿根廷队一起赢得了2022年国际足联世界杯！)",
+        "score": 35,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "World Cup"
+        ],
+        "process_time": 4.059451341629028,
+        "tts_time": 3.7710912227630615,
+        "conversation_history_length": 24
+      },
+      {
+        "turn": 13,
+        "user_input": "Who were his teammates?",
+        "transcription": "Who were his teammates?",
+        "ai_response": "Messi played with many great players at Barcelona, like Xavi, Iniesta, and Neymar. (梅西在巴塞罗那与许多伟大的球员一起踢球，比如哈维、伊涅斯塔和内马尔。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "Barcelona",
+          "Argentina national team"
+        ],
+        "process_time": 5.165078639984131,
+        "tts_time": 1.0629940032958984,
+        "conversation_history_length": 26
+      },
+      {
+        "turn": 14,
+        "user_input": "What about his playing style?",
+        "transcription": "What about his playing style?",
+        "ai_response": "Messi has a unique playing style! He's very fast and skilled with the ball. (梅西有独特的踢球风格！他速度很快，控球技术很好。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "player analysis",
+          "sports techniques"
+        ],
+        "process_time": 4.358459234237671,
+        "tts_time": 1.5625882148742676,
+        "conversation_history_length": 28
+      },
+      {
+        "turn": 15,
+        "user_input": "Is he still playing professionally?",
+        "transcription": "Is he still playing professionally.",
+        "ai_response": "Yes, Messi still plays professionally! He currently plays for Inter Miami in the United States. (是的，梅西仍然在职业比赛中踢球！他目前在美国的迈阿密国际队踢球。)",
+        "score": 35,
+        "level": "A2",
+        "interests": [
+          "football",
+          "professional athletes",
+          "sports careers"
+        ],
+        "process_time": 4.6385791301727295,
+        "tts_time": 0.9449620246887207,
+        "conversation_history_length": 30
+      },
+      {
+        "turn": 16,
+        "user_input": "Where does he play now?",
+        "transcription": "Where does he play now",
+        "ai_response": "He currently plays for Inter Miami in the United States. (他目前在美国的迈阿密国际队踢球。)",
+        "score": 35,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Messi",
+          "sports"
+        ],
+        "process_time": 5.797441005706787,
+        "tts_time": 0.8626744747161865,
+        "conversation_history_length": 32
+      },
+      {
+        "turn": 17,
+        "user_input": "How old is he now?",
+        "transcription": "How old is he now",
+        "ai_response": "Messi is 36 years old now! (梅西现在36岁了！)",
+        "score": 35,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Messi",
+          "sports"
+        ],
+        "process_time": 3.5514612197875977,
+        "tts_time": 1.8339908123016357,
+        "conversation_history_length": 34
+      },
+      {
+        "turn": 18,
+        "user_input": "What are his hobbies?",
+        "transcription": "What are his hobbies?",
+        "ai_response": "Messi enjoys spending time with his family and playing golf in his free time. (梅西喜欢在空闲时间与家人共度时光，并打高尔夫球。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Messi",
+          "sports careers"
+        ],
+        "process_time": 3.3918464183807373,
+        "tts_time": 1.0414931774139404,
+        "conversation_history_length": 36
+      },
+      {
+        "turn": 19,
+        "user_input": "Does he have any charity work?",
+        "transcription": "Does he have any charity work?",
+        "ai_response": "Yes, Messi has a foundation that helps children in need. He supports many charities around the world. (是的，梅西有一个帮助有需要儿童的基金会。他在世界各地支持许多慈善机构。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "Messi",
+          "charity work",
+          "football"
+        ],
+        "process_time": 5.06358528137207,
+        "tts_time": 1.1619958877563477,
+        "conversation_history_length": 38
+      },
+      {
+        "turn": 20,
+        "user_input": "Can you tell me more about his legacy?",
+        "transcription": "Can you tell me more about his legacy?",
+        "ai_response": "Messi is considered one of the greatest football players ever! He won many awards and helped Argentina win the 2022 World Cup. (梅西被认为是史上最伟大的足球运动员之一！他赢得了许多奖项，并帮助阿根廷赢得了2022年世界杯。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "Messi",
+          "football legacy",
+          "sports history"
+        ],
+        "process_time": 3.9590752124786377,
+        "tts_time": 1.5710201263427734,
+        "conversation_history_length": 40
+      }
+    ],
+    "timing_analysis": {
+      "avg_time": 5.569659185409546,
+      "max_time": 28.238880395889282,
+      "min_time": 3.1952483654022217,
+      "all_times": [
+        3.1952483654022217,
+        4.698349714279175,
+        5.473935842514038,
+        4.884819507598877,
+        4.380913257598877,
+        3.9994473457336426,
+        4.808771848678589,
+        3.2820146083831787,
+        28.238880395889282,
+        4.6916351318359375,
+        3.75419020652771,
+        4.059451341629028,
+        5.165078639984131,
+        4.358459234237671,
+        4.6385791301727295,
+        5.797441005706787,
+        3.5514612197875977,
+        3.3918464183807373,
+        5.06358528137207,
+        3.9590752124786377
+      ]
+    }
+  },
+  {
+    "scenario": "场景2：电影话题深入（20轮）",
+    "turns": [
+      {
+        "turn": 1,
+        "user_input": "Hi! I watched a movie yesterday.",
+        "transcription": "Hi, I watched a movie yesterday.",
+        "ai_response": "That sounds interesting! What kind of movie did you watch? (听起来很有趣！你看了什么类型的电影？)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "movies"
+        ],
+        "process_time": 4.0498340129852295,
+        "tts_time": 0.9702787399291992,
+        "conversation_history_length": 2
+      },
+      {
+        "turn": 2,
+        "user_input": "It was about time travel. Very interesting.",
+        "transcription": "It was about time travel, very interesting.",
+        "ai_response": "Time travel movies are fascinating! Have you seen 'Interstellar' or 'Back to the Future'? (时间旅行电影很吸引人！你看过《星际穿越》或《回到未来》吗？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "movies",
+          "time travel"
+        ],
+        "process_time": 8.3016676902771,
+        "tts_time": 1.2145321369171143,
+        "conversation_history_length": 4
+      },
+      {
+        "turn": 3,
+        "user_input": "Have you seen Interstellar?",
+        "transcription": "Have you seen Interstellar?",
+        "ai_response": "Yes, I have! Interstellar is a great sci-fi movie about space and time travel. (是的，我看过！《星际穿越》是一部很棒的科幻电影，关于太空和时间旅行。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "movies",
+          "time travel",
+          "Interstellar"
+        ],
+        "process_time": 4.976299285888672,
+        "tts_time": 1.611767053604126,
+        "conversation_history_length": 6
+      },
+      {
+        "turn": 4,
+        "user_input": "I prefer science fiction movies.",
+        "transcription": "I prefer science fiction movies.",
+        "ai_response": "That's great! Do you like movies about space or time travel? (很棒！你喜欢关于太空还是时间旅行的电影？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "science fiction movies"
+        ],
+        "process_time": 3.266171455383301,
+        "tts_time": 1.3126366138458252,
+        "conversation_history_length": 8
+      },
+      {
+        "turn": 5,
+        "user_input": "What other sci-fi movies do you recommend?",
+        "transcription": "What other sci-fi movies do you recommend?",
+        "ai_response": "I really like 'The Matrix' and 'Blade Runner'. They're both about futuristic worlds and technology. (我特别喜欢《黑客帝国》和《银翼杀手》。它们都是关于未来世界和技术的。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "science fiction movies",
+          "time travel",
+          "Interstellar"
+        ],
+        "process_time": 5.225646734237671,
+        "tts_time": 1.28082275390625,
+        "conversation_history_length": 10
+      },
+      {
+        "turn": 6,
+        "user_input": "What about Blade Runner?",
+        "transcription": "What about Blade Runner?",
+        "ai_response": "Blade Runner is a classic sci-fi film from 1982. It's set in a futuristic city with flying cars and robots. (《银翼杀手》是一部1982年的经典科幻电影。故事发生在一个有飞行汽车和机器人的未来城市。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "Blade Runner",
+          "sci-fi movies",
+          "time travel"
+        ],
+        "process_time": 6.1974427700042725,
+        "tts_time": 1.4524390697479248,
+        "conversation_history_length": 12
+      },
+      {
+        "turn": 7,
+        "user_input": "Is it similar to Interstellar?",
+        "transcription": "Is it similar to Interstellar?",
+        "ai_response": "Yes, both movies explore deep space and time travel concepts. Interstellar focuses more on black holes and relativity, while Blade Runner examines artificial intelligence and human identity. (是的，这两部电影都探讨了深空和时间旅行的概念。《星际穿越》更多地关注黑洞和相对论，而《银翼杀手》则探讨了人工智能和人类身份。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "science fiction movies",
+          "time travel",
+          "Interstellar"
+        ],
+        "process_time": 6.730789661407471,
+        "tts_time": 1.7476987838745117,
+        "conversation_history_length": 14
+      },
+      {
+        "turn": 8,
+        "user_input": "What makes a good sci-fi movie?",
+        "transcription": "What makes a good sci-fi movie?",
+        "ai_response": "A good sci-fi movie usually has a strong story, interesting characters, and believable science. (一部好的科幻电影通常有一个强有力的故事、有趣的角色和可信的科学。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "movie analysis"
+        ],
+        "process_time": 5.677717685699463,
+        "tts_time": 1.6173102855682373,
+        "conversation_history_length": 16
+      },
+      {
+        "turn": 9,
+        "user_input": "Do you like space movies?",
+        "transcription": "Do you like space movies?",
+        "ai_response": "Yes, I enjoy space movies! They often explore amazing ideas about the universe. (是的，我喜欢太空电影！它们经常探索关于宇宙的惊人想法。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "space movies",
+          "sci-fi movies"
+        ],
+        "process_time": 37.232412576675415,
+        "tts_time": 1.3293142318725586,
+        "conversation_history_length": 18
+      },
+      {
+        "turn": 10,
+        "user_input": "What about alien movies?",
+        "transcription": "What about alien movies?",
+        "ai_response": "I really like 'Alien' and 'Independence Day'! They're both about space and aliens. (我特别喜欢《异形》和《独立日》！它们都是关于太空和外星人的。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "alien movies",
+          "sci-fi movies"
+        ],
+        "process_time": 4.086213111877441,
+        "tts_time": 1.5117104053497314,
+        "conversation_history_length": 20
+      },
+      {
+        "turn": 11,
+        "user_input": "Have you seen Arrival?",
+        "transcription": "Have you seen Arrival?",
+        "ai_response": "Yes, I have! Arrival is a great sci-fi movie about aliens and communication. (是的，我看过！《降临》是一部关于外星人和沟通的优秀科幻电影。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "time travel",
+          "Blade Runner",
+          "Interstellar"
+        ],
+        "process_time": 5.510315418243408,
+        "tts_time": 0.8291449546813965,
+        "conversation_history_length": 22
+      },
+      {
+        "turn": 12,
+        "user_input": "What did you think of it?",
+        "transcription": "What did you think of it?",
+        "ai_response": "I thought it was fascinating! The way they showed time as a physical dimension was mind-blowing. (我觉得很有趣！他们展示时间作为物理维度的方式令人惊叹。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "movie analysis"
+        ],
+        "process_time": 3.5599632263183594,
+        "tts_time": 1.389089584350586,
+        "conversation_history_length": 24
+      },
+      {
+        "turn": 13,
+        "user_input": "What about The Matrix?",
+        "transcription": "What about The Matrix?",
+        "ai_response": "The Matrix is a great sci-fi movie about artificial intelligence and reality. (《黑客帝国》是一部关于人工智能和现实的优秀科幻电影。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "The Matrix"
+        ],
+        "process_time": 4.157313585281372,
+        "tts_time": 0.9270937442779541,
+        "conversation_history_length": 26
+      },
+      {
+        "turn": 14,
+        "user_input": "Is it still relevant today?",
+        "transcription": "Is it still relevant today?",
+        "ai_response": "Yes, The Matrix is still relevant today! It explores artificial intelligence and reality, which are still important topics. (是的，《黑客帝国》至今仍然很相关！它探讨了人工智能和现实，这些都是至今仍然重要的主题。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "time travel",
+          "the matrix"
+        ],
+        "process_time": 4.184880018234253,
+        "tts_time": 1.0831773281097412,
+        "conversation_history_length": 28
+      },
+      {
+        "turn": 15,
+        "user_input": "What about newer sci-fi movies?",
+        "transcription": "What about newer sci-fi movies?",
+        "ai_response": "Sure! Have you seen 'Dune' or 'No Time to Die'? They're both newer sci-fi films with great stories. (当然！你看过《沙丘》或《007：无暇赴死》吗？它们都是故事很棒的新科幻电影。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "newer films",
+          "science fiction"
+        ],
+        "process_time": 4.295297622680664,
+        "tts_time": 1.0456798076629639,
+        "conversation_history_length": 30
+      },
+      {
+        "turn": 16,
+        "user_input": "Any recommendations from recent years?",
+        "transcription": "Any recommendations from recent years?",
+        "ai_response": "Sure! Have you seen 'Dune' or 'No Time to Die'? They're both newer sci-fi films with great stories. (当然！你看过《沙丘》或《007：无暇赴死》吗？它们都是故事很棒的新科幻电影。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "recent films",
+          "movie recommendations"
+        ],
+        "process_time": 29.737950325012207,
+        "tts_time": 1.3477487564086914,
+        "conversation_history_length": 32
+      },
+      {
+        "turn": 17,
+        "user_input": "What about Dune?",
+        "transcription": "What about Dune?",
+        "ai_response": "Dune is a great sci-fi movie about space and survival. (《沙丘》是一部关于太空和生存的优秀科幻电影。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "recent films",
+          "movie recommendations"
+        ],
+        "process_time": 4.6680748462677,
+        "tts_time": 1.3964259624481201,
+        "conversation_history_length": 34
+      },
+      {
+        "turn": 18,
+        "user_input": "Is it worth watching?",
+        "transcription": "Is it worth watching?",
+        "ai_response": "Yes, it's definitely worth watching! It has amazing visuals and deep themes. (是的，绝对值得一看！它有令人惊叹的视觉效果和深刻的主题。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "movie recommendations"
+        ],
+        "process_time": 3.5532078742980957,
+        "tts_time": 0.8536899089813232,
+        "conversation_history_length": 36
+      },
+      {
+        "turn": 19,
+        "user_input": "What makes sci-fi movies interesting?",
+        "transcription": "What about newer sci-fi movies?",
+        "ai_response": "I really like 'Dune' and 'No Time to Die'! They're both newer sci-fi films with great stories. (当然！我特别喜欢《沙丘》和《007：无暇赴死》！它们都是故事很棒的新科幻电影。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "recent films",
+          "movie recommendations"
+        ],
+        "process_time": 4.176681995391846,
+        "tts_time": 1.1914453506469727,
+        "conversation_history_length": 38
+      },
+      {
+        "turn": 20,
+        "user_input": "Can you recommend more?",
+        "transcription": "Can you recommend more?",
+        "ai_response": "Sure! Have you seen 'Dune' or 'No Time to Die'? They're both newer sci-fi films with great stories. (当然！你看过《沙丘》或《007：无暇赴死》吗？它们都是故事很棒的新科幻电影。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "sci-fi movies",
+          "movie recommendations"
+        ],
+        "process_time": 4.111721515655518,
+        "tts_time": 1.0094943046569824,
+        "conversation_history_length": 40
+      }
+    ],
+    "timing_analysis": {
+      "avg_time": 7.6849800705909725,
+      "max_time": 37.232412576675415,
+      "min_time": 3.266171455383301,
+      "all_times": [
+        4.0498340129852295,
+        8.3016676902771,
+        4.976299285888672,
+        3.266171455383301,
+        5.225646734237671,
+        6.1974427700042725,
+        6.730789661407471,
+        5.677717685699463,
+        37.232412576675415,
+        4.086213111877441,
+        5.510315418243408,
+        3.5599632263183594,
+        4.157313585281372,
+        4.184880018234253,
+        4.295297622680664,
+        29.737950325012207,
+        4.6680748462677,
+        3.5532078742980957,
+        4.176681995391846,
+        4.111721515655518
+      ]
+    }
+  },
+  {
+    "scenario": "场景3：英语学习深入（20轮）",
+    "turns": [
+      {
+        "turn": 1,
+        "user_input": "I want to improve my English.",
+        "transcription": "I want to improve my English.",
+        "ai_response": "That's a great goal! What specific areas of English would you like to improve? (这是一个很棒的目标！你希望在英语的哪些方面有所提高？)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "English learning",
+          "language improvement"
+        ],
+        "process_time": 4.116677284240723,
+        "tts_time": 0.9977865219116211,
+        "conversation_history_length": 2
+      },
+      {
+        "turn": 2,
+        "user_input": "I need it for my job.",
+        "transcription": "I need it for my job.",
+        "ai_response": "That's great to know! What kind of job do you have? (很高兴知道！你做什么工作？)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "job-related English",
+          "work communication"
+        ],
+        "process_time": 3.0061397552490234,
+        "tts_time": 0.855492353439331,
+        "conversation_history_length": 4
+      },
+      {
+        "turn": 3,
+        "user_input": "I work in a technology company.",
+        "transcription": "I work in a technology company.",
+        "ai_response": "That's great! What kind of technology work do you do? (这很棒！你从事什么样的技术工作？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "technology",
+          "work",
+          "job-related English"
+        ],
+        "process_time": 10.224913358688354,
+        "tts_time": 1.0440845489501953,
+        "conversation_history_length": 6
+      },
+      {
+        "turn": 4,
+        "user_input": "We have many international clients.",
+        "transcription": "We have many international clients.",
+        "ai_response": "That's great! Do you often communicate with these clients in English? (这很棒！你经常用英语和这些客户沟通吗？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "technology",
+          "work communication",
+          "international business"
+        ],
+        "process_time": 3.3424718379974365,
+        "tts_time": 1.6143269538879395,
+        "conversation_history_length": 8
+      },
+      {
+        "turn": 5,
+        "user_input": "So I need to communicate better in English.",
+        "transcription": "So I need to communicate better in English.",
+        "ai_response": "That's a great goal! What specific situations at work do you need to communicate in English? (这是一个很棒的目标！你在工作中需要在哪些具体情况下用英语沟通呢？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "English learning",
+          "Work communication",
+          "Technology"
+        ],
+        "process_time": 3.7600619792938232,
+        "tts_time": 1.2886559963226318,
+        "conversation_history_length": 10
+      },
+      {
+        "turn": 6,
+        "user_input": "What should I focus on first?",
+        "transcription": "What should I focus on first.",
+        "ai_response": "Since you work in tech with international clients, focus on business communication first! (既然你在科技行业与国际客户合作，首先应该专注于商务沟通！) Practice common phrases like 'I'll follow up on that' or 'Let me check the details.'",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "English learning",
+          "Work communication",
+          "Technology"
+        ],
+        "process_time": 6.509390354156494,
+        "tts_time": 0.9813146591186523,
+        "conversation_history_length": 12
+      },
+      {
+        "turn": 7,
+        "user_input": "Should I practice speaking more?",
+        "transcription": "Should I practice speaking more?",
+        "ai_response": "Yes, practicing speaking is very important! Try talking to yourself in English or find a language partner. (是的，练习口语非常重要！可以尝试用英语自言自语或找语言伙伴练习。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "speaking practice",
+          "English improvement"
+        ],
+        "process_time": 4.682354927062988,
+        "tts_time": 1.534740924835205,
+        "conversation_history_length": 14
+      },
+      {
+        "turn": 8,
+        "user_input": "How can I improve my vocabulary?",
+        "transcription": "How can I improve my vocabulary?",
+        "ai_response": "Great question! Try learning 3 new words every day. Write them down and use them in sentences. (很棒的问题！试着每天学习3个新单词。把它们写下来，并用在句子中。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "vocabulary",
+          "language learning"
+        ],
+        "process_time": 4.183543682098389,
+        "tts_time": 1.0332984924316406,
+        "conversation_history_length": 16
+      },
+      {
+        "turn": 9,
+        "user_input": "What about grammar?",
+        "transcription": "What about gramer?",
+        "ai_response": "Grammar is very important for clear communication! (语法对于清晰沟通非常重要！)",
+        "score": 30,
+        "level": "A2",
+        "interests": [
+          "grammar",
+          "English learning"
+        ],
+        "process_time": 3.9788262844085693,
+        "tts_time": 0.8660659790039062,
+        "conversation_history_length": 18
+      },
+      {
+        "turn": 10,
+        "user_input": "Is grammar important?",
+        "transcription": "Is grammar important? Is grammar important? Is grammar important? Is grammar important? Is grammar important? Is grammar important? Is grammar important?",
+        "ai_response": "Yes, grammar is very important for clear communication! (是的，语法对于清晰沟通非常重要！) For example, 'I go to work' is correct, but 'I goes to work' is not. (例如，'I go to work' 是正确的，但 'I goes to work' 是错误的。)",
+        "score": 30,
+        "level": "A1",
+        "interests": [
+          "grammar",
+          "language learning"
+        ],
+        "process_time": 4.327874422073364,
+        "tts_time": 13.183195114135742,
+        "conversation_history_length": 20
+      },
+      {
+        "turn": 11,
+        "user_input": "How can I practice listening?",
+        "transcription": "How can I practice listening?",
+        "ai_response": "Try listening to English podcasts or videos about technology. (试试听关于科技的英语播客或视频。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "listening practice",
+          "technology"
+        ],
+        "process_time": 3.10032320022583,
+        "tts_time": 1.040029525756836,
+        "conversation_history_length": 22
+      },
+      {
+        "turn": 12,
+        "user_input": "What about reading?",
+        "transcription": "What about reading?",
+        "ai_response": "Reading is great for learning new words! Try reading tech articles or news. (阅读对学习新单词很有帮助！可以尝试阅读科技文章或新闻。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "reading",
+          "English improvement"
+        ],
+        "process_time": 4.0083818435668945,
+        "tts_time": 1.017895221710205,
+        "conversation_history_length": 24
+      },
+      {
+        "turn": 13,
+        "user_input": "Should I read English books?",
+        "transcription": "Should I read English books?",
+        "ai_response": "Yes, reading English books is great for learning new words and improving your grammar! (是的，读英文书对学习新单词和提高语法很有帮助！)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "reading",
+          "English learning"
+        ],
+        "process_time": 3.5792429447174072,
+        "tts_time": 0.9363925457000732,
+        "conversation_history_length": 26
+      },
+      {
+        "turn": 14,
+        "user_input": "What kind of books?",
+        "transcription": "What kind of books",
+        "ai_response": "For work purposes, try reading tech articles or business books. (对于工作来说，可以尝试阅读科技文章或商业书籍。)",
+        "score": 30,
+        "level": "A1",
+        "interests": [
+          "books",
+          "reading"
+        ],
+        "process_time": 2.8798742294311523,
+        "tts_time": 0.8606691360473633,
+        "conversation_history_length": 28
+      },
+      {
+        "turn": 15,
+        "user_input": "How about watching English movies?",
+        "transcription": "How about watching English movies?",
+        "ai_response": "Watching English movies is a fun way to learn! Try watching with English subtitles first. (看英文电影是学习的好方法！可以先用英文字幕观看。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "movies",
+          "English learning"
+        ],
+        "process_time": 2.9448118209838867,
+        "tts_time": 0.958716630935669,
+        "conversation_history_length": 30
+      },
+      {
+        "turn": 16,
+        "user_input": "Should I use subtitles?",
+        "transcription": "Should I use subtitles?",
+        "ai_response": "Yes, using subtitles is a great way to learn! Try watching with English subtitles first. (是的，使用字幕是学习的好方法！可以先用英文字幕观看。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "subtitles",
+          "English learning"
+        ],
+        "process_time": 4.478771448135376,
+        "tts_time": 0.9325013160705566,
+        "conversation_history_length": 32
+      },
+      {
+        "turn": 17,
+        "user_input": "How can I practice writing?",
+        "transcription": "How can I practice writing?",
+        "ai_response": "Try writing short emails or messages in English. (试试用英语写简短的邮件或信息。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "writing",
+          "language learning"
+        ],
+        "process_time": 2.943854331970215,
+        "tts_time": 0.8842382431030273,
+        "conversation_history_length": 34
+      },
+      {
+        "turn": 18,
+        "user_input": "Should I keep a journal?",
+        "transcription": "Should I keep a journal?",
+        "ai_response": "Yes, keeping a journal is a great way to practice writing! Try writing a few sentences each day about your work or daily life. (是的，写日记是练习写作的好方法！每天试着写几句关于你的工作或日常生活的内容。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [],
+        "process_time": 5.021539211273193,
+        "tts_time": 1.125744104385376,
+        "conversation_history_length": 36
+      },
+      {
+        "turn": 19,
+        "user_input": "What about pronunciation?",
+        "transcription": "What about pronunciation?",
+        "ai_response": "Pronunciation is very important for being understood! Try listening to native speakers and repeating what they say. (发音对被理解非常重要！可以尝试听母语者的发音并重复他们的话。)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "pronunciation",
+          "language learning"
+        ],
+        "process_time": 3.611482858657837,
+        "tts_time": 1.4494366645812988,
+        "conversation_history_length": 38
+      },
+      {
+        "turn": 20,
+        "user_input": "How can I improve it?",
+        "transcription": "How can I improve it",
+        "ai_response": "You're asking about improving something specific! What exactly would you like to improve? (你问的是要改进具体什么东西！你具体想改进什么呢？)",
+        "score": 30,
+        "level": "A2",
+        "interests": [
+          "English learning",
+          "grammar",
+          "writing"
+        ],
+        "process_time": 4.825319051742554,
+        "tts_time": 0.8713512420654297,
+        "conversation_history_length": 40
+      }
+    ],
+    "timing_analysis": {
+      "avg_time": 4.2762927412986755,
+      "max_time": 10.224913358688354,
+      "min_time": 2.8798742294311523,
+      "all_times": [
+        4.116677284240723,
+        3.0061397552490234,
+        10.224913358688354,
+        3.3424718379974365,
+        3.7600619792938232,
+        6.509390354156494,
+        4.682354927062988,
+        4.183543682098389,
+        3.9788262844085693,
+        4.327874422073364,
+        3.10032320022583,
+        4.0083818435668945,
+        3.5792429447174072,
+        2.8798742294311523,
+        2.9448118209838867,
+        4.478771448135376,
+        2.943854331970215,
+        5.021539211273193,
+        3.611482858657837,
+        4.825319051742554
+      ]
+    }
+  }
+]

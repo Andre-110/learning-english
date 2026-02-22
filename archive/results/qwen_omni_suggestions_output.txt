@@ -1,0 +1,412 @@
+====================================================================================================
+qwen-omni 模型输出的建议（展示给前端）
+====================================================================================================
+
+
+====================================================================================================
+用例 1/20: I want to talk some thing about 足球player with you
+====================================================================================================
+
+📊 评估: 30分 (A1)
+
+✏️  修正建议 (2条):
+  1. some thing → something
+     说明: 'Something' is one word when used as a pronoun or noun. 'Some thing' is incorrect.
+  2. zu ge player → soccer player
+     说明: 'Zu ge' sounds like 'soccer' or 'football'. 'Soccer player' is the correct term in American English.
+
+✅ 强项: Attempted to express interest in a topic
+
+⚠️  弱项: Word choice error: 'some thing' should be 'something', Incorrect word: 'zu ge' is not a known English word; likely meant 'soccer' or 'football'
+
+💬 鼓励语: Good effort! Try saying: 'I want to talk about soccer players with you.'
+
+====================================================================================================
+用例 2/20: 请继续详细地介绍一下Messi的故事
+====================================================================================================
+
+📊 评估: 25分 (A1)
+
+✏️  修正建议 (3条):
+  1. messi → Messi
+     说明: Proper nouns like names should be capitalized.
+  2. 介绍一下 → introduce
+     说明: Use 'introduce' for English expression. '介绍' is Chinese.
+  3. 故事 → story
+     说明: Use 'story' for English expression. '故事' is Chinese.
+
+✅ 强项: Attempted to express interest in Messi's story
+
+⚠️  弱项: Mixed Chinese/English, Missing article, Incorrect word order
+
+💬 鼓励语: Good attempt! Try saying: 'Please continue to introduce Messi's story in detail.'
+
+====================================================================================================
+用例 3/20: I play for 土豆and 番茄because they are delicious
+====================================================================================================
+
+📊 评估: 30分 (A1)
+
+✏️  修正建议 (2条):
+  1. play for Tudo and Funche → prefer Tudo and Funche
+     说明: Use 'prefer' when talking about liking food, not 'play for'. 'Play for' is used for teams or organizations.
+  2. they are delicious → they are delicious
+     说明: This part is correct!
+
+✅ 强项: Simple sentence structure, Clear reason given
+
+⚠️  弱项: Incorrect preposition, Possible word confusion
+
+🌟 好的表达: delicious, because they are delicious
+
+💬 鼓励语: Good attempt! Remember: 'prefer' means 'like more'. Try saying 'I prefer Tudo and Funche because they are delicious.'
+
+====================================================================================================
+用例 4/20: 这个football player真的很amazing，我想知道more about him
+====================================================================================================
+
+📊 评估: 40分 (A2)
+
+✏️  修正建议 (2条):
+  1. 这个足球运动员真的很 amazing → This football player is really amazing
+     说明: Use 'This' instead of '这个' and 'amazing' instead of 'amazing' (English spelling)
+  2. 我想知道 more about him → I want to know more about him
+     说明: Use 'I want to know' instead of '我想知道' and 'more' instead of 'more' (English word)
+
+✅ 强项: Good attempt to use English, Clear meaning
+
+⚠️  弱项: Mixed language use, Incomplete sentence structure
+
+🌟 好的表达: amazing, more about him
+
+💬 鼓励语: Good effort! Try to use full English sentences next time. You're doing well!
+
+====================================================================================================
+用例 5/20: Yesterday I go to the park and see many people play 篮球
+====================================================================================================
+
+📊 评估: 35分 (A2)
+
+✏️  修正建议 (3条):
+  1. I go → I went
+     说明: Use past tense 'went' for actions that happened yesterday
+  2. see → saw
+     说明: Past tense of 'see' is 'saw', not 'see'
+  3. lan qiu → basketball
+     说明: The correct English term is 'basketball'. 'Lan qiu' is Chinese for basketball
+
+✅ 强项: Used past tense correctly for 'yesterday', Good vocabulary: 'park', 'many people', 'play'
+
+⚠️  弱项: Incorrect verb form: 'go' should be 'went', Incorrect verb form: 'see' should be 'saw', Missing article: 'lan qiu' should be 'lanqiu' or 'basketball'
+
+🌟 好的表达: Yesterday, many people
+
+💬 鼓励语: Good attempt! Remember: 'yesterday' needs past tense verbs like 'went' and 'saw'.
+
+====================================================================================================
+用例 6/20: 请tell me more about Messi的achievements
+====================================================================================================
+
+📊 评估: 30分 (A2)
+
+✏️  修正建议 (2条):
+  1. Show to me → Show me
+     说明: 'Show' is a transitive verb that directly takes an object. 'Show me' is correct; 'Show to me' is redundant.
+  2. Messi the achievements → Messi's achievements
+     说明: Use the possessive form 'Messi's' to show ownership of achievements.
+
+✅ 强项: Clear topic: Messi's achievements
+
+⚠️  弱项: Incorrect verb form: 'Show to me' should be 'Show me', Missing article: 'Messi the achievements' should be 'Messi's achievements'
+
+🌟 好的表达: more, achievements
+
+💬 鼓励语: Good attempt! Try saying: 'Show me more of Messi's achievements.'
+
+====================================================================================================
+用例 7/20: I think this story tell me how to face 困难
+====================================================================================================
+
+📊 评估: 35分 (A2)
+
+✏️  修正建议 (3条):
+  1. story tell me → story tells me
+     说明: Third person singular requires 'tells' not 'tell'
+  2. face quinnan → face challenges
+     说明: Quinnan is not a standard English word. Did you mean 'challenges' or 'difficulties'?
+  3. this story → this story
+     说明: Consider adding 'the' for natural phrasing: 'the story'
+
+✅ 强项: Meaningful content, Good vocabulary: face
+
+⚠️  弱项: Subject-verb agreement error, Incorrect word choice, Missing article
+
+🌟 好的表达: face, how to face
+
+💬 鼓励语: Good attempt! Remember: 'tells' for third person, and 'challenges' for difficulties.
+
+====================================================================================================
+用例 8/20: 我想了解more about football，特别是about Messi
+====================================================================================================
+
+📊 评估: 30分 (A1)
+
+✏️  修正建议 (2条):
+  1. I want to了解 → I want to learn about
+     说明: Use 'learn about' instead of '了解' when speaking English. '了解' is Chinese.
+  2. football,特别是about Messi → football, especially Messi
+     说明: Use 'especially' instead of '特别是about' when speaking English. 'about' is redundant here.
+
+✅ 强项: Attempted to express interest in football and Messi
+
+⚠️  弱项: Mixed Chinese/English, Incorrect word choice
+
+💬 鼓励语: Good attempt! Try saying: 'I want to learn about football, especially Messi.'
+
+====================================================================================================
+用例 9/20: He is a very good player, 我很like him
+====================================================================================================
+
+📊 评估: 35分 (A2)
+
+✏️  修正建议 (1条):
+  1. Wuhan like him → Wuhan likes him
+     说明: Third person singular requires 'likes' not 'like'
+
+✅ 强项: Clear sentence structure, Good vocabulary: 'very good player'
+
+⚠️  弱项: Subject-verb agreement error, Incorrect use of 'like' for third person singular
+
+🌟 好的表达: He is a very good player
+
+💬 鼓励语: Good attempt! Remember: 'he/she/it' needs the verb ending in 's'.
+
+====================================================================================================
+用例 10/20: 请continue介绍Messi的childhood，我想知道more details
+====================================================================================================
+
+📊 评估: 40分 (A2)
+
+✏️  修正建议 (2条):
+  1. Messi 的 childhood → Messi's childhood
+     说明: Use possessive form 'Messi's' instead of Chinese '的'
+  2. I want to know more details → I want to know more details
+     说明: Consider using 'learn more about' for more natural expression
+
+✅ 强项: Clear topic, Good attempt at English
+
+⚠️  弱项: Missing article before 'childhood', Word choice: 'more details' is correct but could be more natural
+
+🌟 好的表达: childhood, more details
+
+💬 鼓励语: Good attempt! Try saying: 'I want to learn more about Messi's childhood.'
+
+====================================================================================================
+用例 11/20: I want to tell some 运动with you
+====================================================================================================
+
+📊 评估: 30分 (A2)
+
+✏️  修正建议 (2条):
+  1. tell some in dong → tell some information
+     说明: Use 'tell someone something' structure. 'In dong' is not a standard English phrase. 'Information' is the correct noun to use here.
+  2. some in dong → some information
+     说明: 'Information' is the correct noun form. 'In dong' is likely a mispronunciation of 'information'.
+
+✅ 强项: Clear intent to communicate, Uses 'tell' correctly
+
+⚠️  弱项: Incorrect phrase: 'tell some in dong', Missing article: 'some' should be 'some information'
+
+🌟 好的表达: want to tell, with you
+
+💬 鼓励语: Good attempt! Try saying 'I want to tell you some information.'
+
+====================================================================================================
+用例 12/20: 这个player真的很great，他的story很inspiring
+====================================================================================================
+
+📊 评估: 35分 (A2)
+
+✏️  修正建议 (3条):
+  1. 这个 player → this player
+     说明: Use 'this' instead of '这个' when referring to someone in English.
+  2. 他的 story → his story
+     说明: Use 'his' instead of '他的' when referring to someone in English.
+  3. 很 great → really great
+     说明: Use 'really' instead of '很' for natural English expression.
+
+✅ 强项: Good vocabulary: great, inspiring, Clear expression of admiration
+
+⚠️  弱项: Word choice error, Missing articles, Mixed language use
+
+🌟 好的表达: great, inspiring
+
+💬 鼓励语: Good attempt! Try saying: 'This player is really great. His story is very inspiring.'
+
+====================================================================================================
+用例 13/20: Yesterday I see a movie about football, 它was very interesting
+====================================================================================================
+
+📊 评估: 35分 (A2)
+
+✏️  修正建议 (1条):
+  1. I see → I saw
+     说明: Use past tense 'saw' because the action happened yesterday
+
+✅ 强项: Clear topic: movie about football, Used past tense correctly for 'was very interesting'
+
+⚠️  弱项: Verb tense error: 'I see' should be 'I saw'
+
+🌟 好的表达: a movie about football, That was very interesting
+
+💬 鼓励语: Good attempt! Remember to match verb tense with time words like 'yesterday'.
+
+====================================================================================================
+用例 14/20: 请explain more about Messi的playing style
+====================================================================================================
+
+📊 评估: 45分 (A2)
+
+✏️  修正建议 (1条):
+  1. Messi → Messi
+     说明: No correction needed - 'Messi' is a proper noun and doesn't require an article.
+
+✅ 强项: Clear topic, Good use of 'playing style'
+
+⚠️  弱项: Missing article before 'Messi'
+
+🌟 好的表达: explain more, playing style
+
+💬 鼓励语: Good attempt! Try saying: 'Ching, please explain more about Lionel Messi's playing style.'
+
+====================================================================================================
+用例 15/20: I think football is a very good sport, 我喜欢to watch it
+====================================================================================================
+
+📊 评估: 35分 (A2)
+
+✏️  修正建议 (2条):
+  1. a very good sport → a very good sport
+     说明: No correction needed - 'a very good sport' is grammatically correct.
+  2. I like watch it → I like watching it
+     说明: After 'like', use the gerund form 'watching', not the base form 'watch'.
+
+✅ 强项: Clear expression of opinion, Good vocabulary: football, sport
+
+⚠️  弱项: Missing article before 'sport', Incorrect verb form after 'like'
+
+🌟 好的表达: I think football is a very good sport
+
+💬 鼓励语: Good attempt! Remember: 'like' is followed by a gerund (-ing form).
+
+====================================================================================================
+用例 16/20: 我想知道more about Messi的family life
+====================================================================================================
+
+📊 评估: 40分 (A2)
+
+✏️  修正建议 (2条):
+  1. more about Messi → more about Lionel Messi
+     说明: Use full name 'Lionel Messi' for clarity, or 'Messi' with context
+  2. 的 family life → family life
+     说明: Remove '的' as it's not needed in English; 'family life' is a noun phrase
+
+✅ 强项: Attempted to express interest in Messi's family life
+
+⚠️  弱项: Mixed language use, Missing article, Word choice error
+
+💬 鼓励语: Good attempt! Try saying: 'I want to know more about Lionel Messi's family life.'
+
+====================================================================================================
+用例 17/20: He play football very well, 我很admire him
+====================================================================================================
+
+📊 评估: 30分 (A2)
+
+✏️  修正建议 (3条):
+  1. He play → He plays
+     说明: Third person singular requires 'plays' not 'play'
+  2. Wuhan admire him → Wuhan admires him
+     说明: Third person singular requires 'admires' not 'admire'
+  3. football → football
+     说明: Consider adding 'the' before 'football' for specificity: 'the football' or 'football' as a sport name
+
+✅ 强项: Clear subject and object, Good vocabulary: football
+
+⚠️  弱项: Subject-verb agreement error, Missing article, Incorrect verb form
+
+🌟 好的表达: very well, admire him
+
+💬 鼓励语: Good attempt! Remember: 'he plays' and 'he admires'. Try saying: 'He plays football very well. Wuhan admires him.'
+
+====================================================================================================
+用例 18/20: 请继续talk about Messi的career，特别是his early years
+====================================================================================================
+
+📊 评估: 35分 (A2)
+
+✏️  修正建议 (2条):
+  1. Messi the career → Messi's career
+     说明: Use the possessive form 'Messi's' to show ownership, not 'the'.
+  2. his early years → his early years
+     说明: This part is correct, but note that 'his' should be capitalized if it starts the sentence.
+
+✅ 强项: Attempted to express interest in Messi's career, Used some English vocabulary
+
+⚠️  弱项: Incorrect article usage ('the career'), Missing possessive form ('his early years' is correct but 'his' should be capitalized if starting sentence)
+
+🌟 好的表达: talk about, early years
+
+💬 鼓励语: Good attempt! Remember to use 'Messi's career' instead of 'Messi the career'.
+
+====================================================================================================
+用例 19/20: I want to learn English better so I can talk about 运动
+====================================================================================================
+
+📊 评估: 35分 (A2)
+
+✏️  修正建议 (1条):
+  1. yundong → sports
+     说明: Use 'sports' instead of 'yundong' when speaking English
+
+✅ 强项: Clear purpose statement, Good use of 'better' for comparison
+
+⚠️  弱项: Word choice error: 'yundong' is Chinese for 'sports'
+
+🌟 好的表达: learn English better, so I can talk about
+
+💬 鼓励语: Good effort! Remember: 'sports' is the English word for '运动'.
+
+====================================================================================================
+用例 20/20: 这个player的achievements真的很impressive，我想知道how he did it
+====================================================================================================
+
+📊 评估: 40分 (A2)
+
+✏️  修正建议 (2条):
+  1. 这个player的achievements → the player's achievements
+     说明: Use 'the' before 'player's achievements' and write 'achievements' in English only
+  2. how he did it → how he achieved them
+     说明: 'Achieved them' is more natural when referring to accomplishments
+
+✅ 强项: Uses English words like 'achievements', 'impressive', 'how he did it'
+
+⚠️  弱项: Mixed Chinese/English - '这个player的achievements' should be fully in English, Missing article: 'the player's achievements', Word choice: 'how he did it' is informal, better to say 'how he achieved them'
+
+🌟 好的表达: impressive, how he did it
+
+💬 鼓励语: Good attempt! Try to use full English sentences next time. For example: 'The player's achievements are really impressive. I want to know how he achieved them.'
+
+====================================================================================================
+📈 统计摘要
+====================================================================================================
+
+成功处理: 20/20
+平均分数: 34.5
+
+修正建议统计:
+  总修正数: 41
+  有修正的用例: 20/20
+  平均每用例修正数: 2.0
+
+====================================================================================================

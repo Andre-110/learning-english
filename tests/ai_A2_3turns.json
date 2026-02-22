@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T09:25:01.118822",
+    "level": "A2",
+    "turns": 3,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "movies",
+        "travel",
+        "cooking"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 1.354,
+    "user_avg_latency": 1.428,
+    "strategies": {
+      "summarize": 3
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hi! 😊 Have you tried cooking something new lately? (You can answer in simple words or even mix some Chinese - I'll help you!)",
+      "latency_s": 1.58
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Uh... yes, I tried cook...um, 炒饭. Fried rice! I put egg, carrot, and ham. But taste... not very good. I think too much salt. Next time, less salt. I want try 做面条... make noodles, maybe.",
+      "latency_s": 1.505,
+      "word_count": 35,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I see! Sometimes fried rice can be tricky with salt. I’ve made that mistake too. How did you feel when you tried your fried rice? Was it fun to cook, even if the taste wasn’t perfect?",
+      "latency_s": 1.304,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um... I feel, eh, okay... I think fun, yes, because I try new thing. But I很紧张, a little nervous, because I don’t know how, uhh, much salt. Maybe next time I put less... Or more? I忘了, forget. But I want learn more, cook better!",
+      "latency_s": 1.631,
+      "word_count": 44,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I get that! Trying something new can make anyone a bit nervous. But it’s cool you had fun too. What is a dish you dream of making really well one day? (For example, a food you love or something special from your family)",
+      "latency_s": 1.461,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um... I think... maybe 火锅, hot pot! I like eat hot pot with my family. It has many东西... uh, things, like meat, vegetables, tofu. I don’t know how make, but I want learn. Looks hard, but very delicious! Maybe one day I can cook good hot pot for my family.",
+      "latency_s": 1.149,
+      "word_count": 50,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh wow, hot pot with family sounds so warm and happy! Was there a special time when you ate hot pot together that you remember well? (Like a holiday or funny moment!)",
+      "latency_s": 1.295,
+      "strategy": "summarize"
+    }
+  ]
+}

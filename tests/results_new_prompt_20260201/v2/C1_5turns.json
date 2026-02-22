@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T16:26:52.861202",
+    "level": "C1",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "C1",
+      "interests": [
+        "sports",
+        "music",
+        "cooking"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.789,
+    "user_avg_latency": 2.065,
+    "strategies": {
+      "continue": 5
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "What dish have you recently cooked that surprised you the most, and what inspired you to try it? Just speak naturally - let's have a real conversation!",
+      "latency_s": 2.528,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Well, um, I recently cooked a dish called, uh, shakshuka. It surprised me because, um, I never expected it to be so flavorful and, um, satisfying. I was inspired to try it after, uh, watching a cooking show. They, you know, made it look so easy and delicious.\n\nAt first, I was a bit intimidated by the, um, poaching of the eggs, but, surprisingly, it turned out quite well. The combination of, um, tomatoes, peppers, and spices, it's just... really vibrant. \n\nI think what surprised me most was how, um, the flavors melded together. Honestly, I thought it would be, um, simple and bland, but it was,",
+      "latency_s": 2.369,
+      "word_count": 107,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh wow, shakshuka sounds amazing! I love that it turned out to be so vibrant in flavor. The way those ingredients blend is truly magical. Have you thought about experimenting with different spices or maybe adding a twist to it next time?",
+      "latency_s": 1.923,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Yes, exactly! I was thinking about, um, adding some smoked paprika next time, maybe? I’ve heard it can give a nice, deeper flavor. And, um, I might try adding some feta cheese, too, because I love the creamy texture. I’m not sure if it’s traditional, but I think it could, uh, complement the dish well. What do you think?",
+      "latency_s": 1.554,
+      "word_count": 59,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That sounds like a fantastic idea! Smoked paprika would definitely add a wonderful depth to the dish. Feta cheese can really elevate the whole experience with its creaminess and tang. Have you ever considered pairing it with different types of bread or maybe a side salad? That could make for a delightful meal!",
+      "latency_s": 1.656,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Oh, yes, I absolutely agree about the feta cheese! It would add such a nice, creamy texture. Um, I haven't thought much about bread or salad, but that sounds really interesting. Maybe, um, like a crusty bread? I imagine it would be perfect for dipping into the sauce. \n\nAnd a side salad could bring, you know, some freshness to the dish. Perhaps a simple salad with, um, like cucumbers and tomatoes? That could complement the flavors nicely, right? I should definitely try that next time!",
+      "latency_s": 2.329,
+      "word_count": 85,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Absolutely! A crusty bread would be perfect for soaking up all those delicious flavors. And a fresh salad would balance everything out nicely! I love the idea of cucumbers and tomatoes; they add such a refreshing crunch. Have you thought about adding any herbs to your salad, like fresh parsley or mint? They could really enhance the dish!",
+      "latency_s": 1.813,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Yes, definitely! A fresh salad with cucumbers and tomatoes sounds great. I think adding, um, herbs like parsley or mint would really brighten the flavors. I’m just not sure which one I prefer. Maybe both? They could complement each other nicely. I also thought about adding a little bit of lemon juice for some acidity. What do you think?",
+      "latency_s": 1.801,
+      "word_count": 59,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds like a winning combination! Both parsley and mint would add a lovely freshness. The lemon juice is a brilliant idea, too; it’ll really elevate the whole dish. Have you ever tried making a vinaigrette to drizzle over the salad? It could add another layer of flavor!",
+      "latency_s": 1.668,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Oh, yes, I have tried making a vinaigrette before! But, um, I think I need more practice. I usually mix olive oil and vinegar, but sometimes it turns out too sour or, um, not flavorful enough. I like the idea of adding mustard or, um, honey to balance the flavors. Do you have any tips for making it, like, perfect?",
+      "latency_s": 2.273,
+      "word_count": 60,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Absolutely! Getting the balance right can be tricky. A good rule of thumb is to use a ratio of three parts oil to one part vinegar. Adding a teaspoon of mustard is great for an emulsion, and honey can help mellow the tanginess. Taste as you go to find that perfect harmony! Have you experimented with different types of vinegar? Balsamic or apple cider can add unique flavor profiles!",
+      "latency_s": 1.886,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

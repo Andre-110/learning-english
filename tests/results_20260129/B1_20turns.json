@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T10:18:22.437340",
+    "level": "B1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "sports",
+        "travel",
+        "cooking"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 3.19,
+    "user_avg_latency": 3.064,
+    "strategies": {
+      "summarize": 20
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! 😊 If you could cook a special meal for someone, what would you make and why? (Feel free to answer naturally - I'll help if you need it!)",
+      "latency_s": 2.909
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, hi! 😊 I think if I could cook a special meal, I would make lasagna. I really like it because it has many layers and flavors, and it’s comfort food, you know? \n\nI remember my mom used to make it for family dinners, and it always made us feel happy. I would try to make it with fresh ingredients, like homemade pasta and a lot of cheese. \n\nBut, um, I am not sure if I can make it perfect like my mom. Maybe I need practice first. What do you think?",
+      "latency_s": 3.749,
+      "word_count": 92,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Hey there! 😊 I love how lasagna brings back such happy memories with your family. That idea of using fresh ingredients sounds delicious! What do you think would be the most challenging part of making it?",
+      "latency_s": 3.282,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Yeah, thank you! 😊 I think the most challenging part of making lasagna is probably... um, making the sauce. You have to cook it for a long time to get the right flavor, and sometimes I worry it will be too watery or too thick. Also, assembling the layers can be tricky because I want it to look nice! But I really enjoy cooking, so I will try my best. What do you think? Do you have other tips?",
+      "latency_s": 2.718,
+      "word_count": 79,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That sounds like a fun challenge! Making the sauce can definitely be tricky, but simmering it slowly helps develop those flavors. Have you thought about adding any special ingredients to make it your own? I’d love to hear about your cooking adventures!",
+      "latency_s": 2.722,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Oh, yes! I think about adding some... um, maybe mushrooms or spinach? I really like those vegetables. They can make the lasagna more healthy, I think. Also, I want to use fresh basil because it smells so good and tastes great! \n\nBut I'm not sure if I should put too many ingredients. Maybe it will be too complicated? Have you tried something special in your lasagna? What do you like to add? ",
+      "latency_s": 3.328,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds delicious! I love the idea of adding mushrooms and spinach; they really do make it healthier. Fresh basil is a great choice too! \n\nI think you can definitely experiment without making it too complicated. Sometimes, a few special ingredients make a dish unique. Have you thought about how you would prepare the mushrooms? Sautéing them first can bring out amazing flavors!",
+      "latency_s": 2.994,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Yes, I agree! Fresh basil would be very nice, too. I think preparing the mushrooms... um, I could sauté them, yes. I’m not very sure about the time, maybe five or ten minutes? I want them to be soft and... um, maybe a little brown? But I need to watch it so they don’t burn. \n\nI also heard that adding garlic with the mushrooms gives a good flavor! Do you think I should add garlic too? I really like garlic.",
+      "latency_s": 3.773,
+      "word_count": 80,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds like a great plan for the mushrooms! Sautéing them for about five to ten minutes is perfect, and adding garlic will definitely enhance the flavor. I think garlic and mushrooms together is such a classic combo! \n\nWhat kind of garlic flavor do you like more? Strong and pungent, or milder and sweeter?",
+      "latency_s": 3.408,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I think... I like the stronger garlic flavor more. It gives, um, a nice kick to the dish, right? But sometimes, if it's too strong, it can be... um, too much. So, I guess it depends on the recipe. If I want a simple dish, maybe milder garlic would be better. What about you? Do you like strong or mild garlic?",
+      "latency_s": 2.565,
+      "word_count": 62,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I totally get that! A strong garlic flavor can really add a nice kick, but it can be overpowering sometimes. I actually enjoy a strong garlic taste too, especially in pasta dishes. \n\nDo you have a favorite recipe that uses garlic? I'd love to hear about it!",
+      "latency_s": 2.681,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! I have a favorite recipe with garlic. It's, um, garlic butter shrimp. I make it sometimes when I want something easy but delicious. \n\nSo, first, I, um, cook the shrimp in a pan with butter and lots of garlic. I like to add some, um, lemon juice too for a little, um, sour taste. And then I put it over pasta or rice. \n\nIt's really good! But, um, I have to be careful not to put too much garlic because, you know, it can be really strong. Do you like shrimp?",
+      "latency_s": 3.344,
+      "word_count": 93,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Garlic butter shrimp sounds amazing! I love how you add lemon juice for that sour kick; it must balance the flavors really well. Shrimp is such a versatile ingredient! Do you have a favorite way to serve it, like with a specific type of pasta or rice?",
+      "latency_s": 2.47,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, yes! I usually serve it with, um, jasmine rice because it's really fluffy and, um, it soaks up the garlic butter. I like to add some, um, steamed vegetables on the side, like broccoli or carrots. It makes the plate more colorful, and, um, it's healthy too! Sometimes I also use spaghetti, but I think rice is my favorite. What do you think?",
+      "latency_s": 2.78,
+      "word_count": 64,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Jasmine rice sounds like a perfect choice! I love how it soaks up all that delicious garlic butter. Adding steamed vegetables really does make the plate look vibrant and healthy! Do you have a favorite vegetable that you like to pair with your shrimp dish?",
+      "latency_s": 3.714,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yes! I really like to add broccoli because it, um, it has a nice color and, uh, a good crunch. Also, I like bell peppers, um, the red ones. They are sweet and, um, they look pretty on the plate. I try to have, um, a mix of colors for my meal. It makes it look, uh, more appetizing! What about you? Do you have a favorite vegetable?",
+      "latency_s": 3.47,
+      "word_count": 69,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I love that you add a mix of colors to your meals! Broccoli and red bell peppers not only look great but also provide different flavors and nutrients. My favorite vegetable is probably spinach—it's so versatile! Do you ever use spinach in your dishes?",
+      "latency_s": 3.059,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, yes! I like spinach too. I, um, sometimes use it in salads or, uh, in pasta. It adds a nice, um, green color and, uh, it’s really healthy. But, um, I don’t use it a lot because I, um, forget to buy it sometimes. What do you, um, like to make with spinach?",
+      "latency_s": 2.843,
+      "word_count": 54,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "I totally get that! Spinach is great in salads and pasta; it really adds that fresh green touch. I like making a spinach and cheese stuffed pasta—it's delicious! Have you ever tried using spinach in any other dishes?",
+      "latency_s": 3.846,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, yes! I have tried spinach in, uh, smoothies before. It's, um, really good because you can't taste it much, but it makes it healthy. I also, uh, sometimes put spinach in omelets, um, for breakfast. I think it makes them more, uh, filling and tasty. Have you ever tried spinach in smoothies?",
+      "latency_s": 2.575,
+      "word_count": 53,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "I love that you use spinach in smoothies! It's such a clever way to add nutrition without changing the taste much. I have tried spinach in smoothies too, and it’s amazing how well it blends in. What other ingredients do you like to add to your smoothies?",
+      "latency_s": 2.469,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I like to add, uh, bananas because they make it, um, sweet and creamy. And sometimes I put, um, berries too, like strawberries or blueberries. They are, um, really tasty and, uh, colorful! I also add, um, yogurt for protein, I think? It makes the smoothie very, um, thick. What do you like to put in your smoothies?",
+      "latency_s": 2.36,
+      "word_count": 59,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "I love that you add bananas and berries to your smoothies! They really do make it tasty and colorful. I usually add a bit of spinach, like we talked about, and sometimes I throw in peanut butter for a nutty flavor. What’s your favorite smoothie combination?",
+      "latency_s": 2.263,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, I think my favorite smoothie combination is, uh, banana, strawberries, and yogurt. It’s, um, really creamy and sweet! I also like to put a little honey, um, for extra sweetness. But, uh, I haven't tried peanut butter in smoothies yet. Does it taste, um, very strong? I’m curious about that!",
+      "latency_s": 2.185,
+      "word_count": 51,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Your smoothie combination sounds delicious! Banana, strawberries, and yogurt make a great mix. As for peanut butter, it does have a strong flavor, but it adds a nice creaminess and a bit of a nutty taste. If you try it, you might really enjoy the combination! What made you decide to add honey to your smoothie?",
+      "latency_s": 4.375,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, I add honey because, uh, it makes the smoothie sweeter, and I like, um, sweet things. Sometimes if I don’t have honey, I use, uh, maple syrup or, um, agave. I think honey is more, um, natural, but I’m not sure. Also, I like how it, um, mixes well with the yogurt and fruit. Do you think, um, honey is good for health? I heard it has some, uh, benefits.",
+      "latency_s": 3.232,
+      "word_count": 71,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "I love that you use honey in your smoothies! It really does add a nice sweetness. Honey can have some health benefits, like being a natural source of antioxidants and having antibacterial properties. What do you like most about the taste of honey in your smoothies compared to other sweeteners?",
+      "latency_s": 3.705,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, I think, uh, honey has a, like, unique flavor. It’s, um, not too strong, but it’s also, uh, kind of floral? I like that better than, um, sugar or, uh, other sweeteners. Sugar is, um, very sweet, but honey, it’s more, um, natural? Sometimes, I feel like it makes the smoothie taste, um, richer, you know? And, um, I also think honey is, like, comforting. So, um, I really enjoy it in my drinks!",
+      "latency_s": 3.05,
+      "word_count": 75,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "I love how you describe honey! It really does have that comforting, floral flavor that makes drinks special. I'm curious, do you have a favorite drink where honey really shines, like a specific tea or something else?",
+      "latency_s": 2.519,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, yes! I really like, uh, honey in chamomile tea. I think it, um, makes the tea more, like, calming and sweet. Sometimes, I drink it before bed because it helps me relax. Also, I like how, um, the honey mixes with the, uh, floral taste of the chamomile. It's, um, really nice! Do you like chamomile tea too?",
+      "latency_s": 2.428,
+      "word_count": 59,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Chamomile tea with honey sounds so soothing! I love how it can really help you relax before bed. Do you have any other favorite nighttime rituals or drinks that help you wind down?",
+      "latency_s": 2.069,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um, yes! I also like, uh, warm milk before sleep. It’s, um, not very strong, but I think it helps me, uh, feel sleepy. And sometimes, I listen to, like, soft music or, um, read a book. I feel it’s very nice, you know? \n\nBut, uh, I don't always have time for that. Sometimes I just go to bed and, um, hope to sleep well! What about you? What do you do before bed?",
+      "latency_s": 2.912,
+      "word_count": 74,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Warm milk before bed sounds cozy! I can see how it helps you relax. Listening to soft music or reading a book is a lovely way to wind down, too. I usually enjoy reading a good novel or sometimes meditating for a few minutes. What kind of books do you like to read before sleep?",
+      "latency_s": 2.468,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Um, I like to read, uh, fiction books, mostly. I think stories can, um, take me to another world, you know? I enjoy, like, adventure stories or, um, fantasy. But sometimes I also read, uh, non-fiction books, like about, um, history or science. It depends on my mood! \n\nAnd, um, I like books that are not too, like, complicated because I want to relax before sleep. What about you? What kind of novels do you like?",
+      "latency_s": 2.586,
+      "word_count": 76,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "I totally get what you mean about fiction taking you to another world! Adventure and fantasy stories can be so immersive. I enjoy reading novels that blend mystery and a bit of magic—those keep me hooked! What’s one of your favorite adventure or fantasy books?",
+      "latency_s": 4.044,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um, I really like \"The Hobbit\" by J.R.R. Tolkien. It's, um, a story about a little hobbit, Bilbo, who goes on an adventure with, uh, some dwarves and a wizard. I think it’s, um, very exciting because they meet dragons and trolls. \n\nI like how, um, it shows friendship and bravery, you know? And, uh, the world he created is so rich with, um, details. What about you? Do you have a favorite mystery book?",
+      "latency_s": 3.703,
+      "word_count": 75,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "I love \"The Hobbit\" too! The adventure and the friendships really make it special. I also appreciate how Tolkien builds such a detailed world. One of my favorite mystery books is \"The Girl with the Dragon Tattoo\" by Stieg Larsson. It has a gripping story and complex characters. What do you think makes a good adventure story?",
+      "latency_s": 3.476,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Um, I think a good adventure story needs, uh, interesting characters, right? Like, um, they should have, like, goals and face many challenges. And the settings, um, they should be exciting too, like, different places that make you, um, feel like you are there. \n\nAlso, there should be, uh, some surprises or twists in the story, I think. Like, um, moments that make you go, \"Wow!\" Maybe, um, friendships like in \"The Hobbit\" are important too, because they make the adventure feel more, um, real and, like, emotional. What do you think?",
+      "latency_s": 4.552,
+      "word_count": 92,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "You made some great points about what makes an adventure story compelling! I really like the idea of interesting characters facing challenges; it adds so much depth. What’s a surprise or twist in a story that really caught you off guard?",
+      "latency_s": 3.401,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Um, yes, I agree! Interesting characters are very important. Uh, one surprise I remember is, um, in \"The Hobbit\" when, uh, Bilbo finds the One Ring. I didn't expect, um, that little thing to be so powerful and, uh, important for the whole story. It was, um, a big twist because he, uh, just thought it was a simple ring at first. \n\nAlso, um, in other stories, like, uh, in \"Harry Potter\" when, um, Snape is, uh, not what he seems. I thought he was, um, a bad guy, but then, uh, there’s a twist at the end about his true loyalty. It made me feel",
+      "latency_s": 3.125,
+      "word_count": 106,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "You brought up some really cool examples of twists in stories! The One Ring being so powerful is such a surprising moment, and it really changes everything for Bilbo. I totally get how Snape's character adds that layer of complexity too. What do you think makes a twist really effective in a story?",
+      "latency_s": 4.824,
+      "strategy": "summarize"
+    }
+  ]
+}

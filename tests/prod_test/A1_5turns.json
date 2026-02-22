@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T03:49:01.189204",
+    "level": "A1",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "technology",
+        "sports",
+        "cooking"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 2.23,
+    "user_avg_latency": 2.475,
+    "hot_search_avg_latency": 6.731,
+    "hot_content_events": 1
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "technology",
+      "headline": "Google uses goats to cut grass!",
+      "search_time": 6.73
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I heard Google uses goats to eat grass instead of mowing. How cool is that? What do you think?",
+      "latency_s": 3.817,
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, um, I think... it's very interesting! Goats eat grass? Like, um, they are animals, right? I not see goats before. I think it is cool because, uh, no machine noise? And, um, goats maybe very cute. \n\nBut, um, I not sure if they work hard. Do they eat a lot? What you think about goats?",
+      "latency_s": 2.154,
+      "word_count": 56
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I love how you think about goats! They do eat a lot of grass, and it's a fun and eco-friendly way to handle lawns. I also think they must be quite hardworking, munching away all day! Goats are indeed very cute. What do you think it would be like to see goats in action?",
+      "latency_s": 1.943,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I think... to see goats in action, it must be fun! They, um, run and jump, yes? I like when they, uh, play with each other. Maybe they make sounds, like \"baa baa\"? I feel happy to see cute animals. But, um, I not know how they work hard. Do they eat a lot?",
+      "latency_s": 2.136,
+      "word_count": 55
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Seeing goats in action would definitely be fun! They do run, jump, and play a lot, and their \"baa baa\" sounds are quite cute. Goats eat a lot of grass, which is why they can be so helpful. Imagine playing in a field with them, surrounded by their playful energy! What kind of cute animals make you feel happy?",
+      "latency_s": 3.126,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I think... cute animals, um, make me happy! I like puppies and kittens. They very small and, um, they play a lot too. Puppies, they, um, run fast and, um, they like to bite my shoes. Hehe. Kittens, they, um, sleep a lot and they are soft. I like when they purr. \n\nUm, also rabbits! They are fluffy and jump, yes? I want to see all cute animals together, like, um, in a big park! That would be so fun! What about you? What animals make you happy?",
+      "latency_s": 2.637,
+      "word_count": 89
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, imagining all those cute animals together in a big park sounds like a dream! I think puppies and kittens are adorable too, especially when they play and purr. For me, dolphins make me happy. I love how they jump and play in the water. Have you ever seen dolphins? What do you think it would be like to see them up close?",
+      "latency_s": 2.241,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I... I think dolphins are very, um, beautiful! They jump in water and, um, do tricks, yes? I never see dolphins in real life, but, um, I see them on TV. They look so happy and, um, play a lot. I think it must be... um, exciting to see them close! Maybe, um, I can go to ocean and see dolphins one day. Do you, um, like to see dolphins?",
+      "latency_s": 2.953,
+      "word_count": 71
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, dolphins really are beautiful and full of energy! I do like seeing dolphins. Their playful nature is amazing, and watching them jump and do tricks is always exciting. Going to the ocean to see them sounds like a fantastic plan! What do you think it would feel like to be near dolphins in the ocean?",
+      "latency_s": 1.705,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I think... it feel very, um, exciting! Maybe, um, a little scary too? Because, um, ocean is big and, um, water is deep. But dolphins, they look friendly, yes? I want to, um, swim with them and, um, play games! I think it will be fun. I hope they, um, like me too. Do you think dolphins, um, like people?",
+      "latency_s": 2.497,
+      "word_count": 61
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I totally get that feeling of excitement and a bit of fear about the ocean. Dolphins do seem very friendly, and they are known to enjoy playing with people! I believe they can sense when someone is kind and playful, just like you. What games would you like to play with dolphins if you could?",
+      "latency_s": 2.136,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

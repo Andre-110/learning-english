@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-31T04:05:49.906644",
+    "level": "B2",
+    "turns": 15,
+    "user_profile": {
+      "cefr_level": "B2",
+      "interests": [
+        "technology",
+        "sports",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 1.507,
+    "user_avg_latency": 7.862,
+    "hot_search_avg_latency": 6.394,
+    "hot_content_events": 1
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "technology",
+      "headline": "Robot pets and bartenders at CES!",
+      "search_time": 6.39
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just read about robot puppies and bartenders at CES. Imagine having a robot pet or bartender at home! Would that be cool or what?",
+      "latency_s": 4.95,
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, hi! Yes, that sounds really cool! I think having a robot puppy could be great because it would be, um, like a pet without the mess? And it wouldn't need to go outside. But... I wonder if it would feel like a real dog. \n\nAbout the robot bartender, I think that would be fun too! It could make cocktails exactly how you want. But, um, I’m not sure if it could choose the right drink for a party. Maybe it would just follow a recipe, yes? \n\nOverall, I like the idea, but I still prefer, um, real pets and people sometimes, you know? What do you think?",
+      "latency_s": 71.593,
+      "word_count": 108
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I totally get you! A robot puppy sounds super convenient, but I bet snuggling with a real dog is hard to beat. As for the bartender, do you have a favorite cocktail you'd love to teach a robot to make?",
+      "latency_s": 1.771,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Yeah, I think you’re right! Real dogs have that special feeling, right? As for cocktails, um, I really like a good mojito! It's fresh and...uh, refreshing, right? I think it would be fun to teach a robot how to make it. You know, with the mint and lime and everything. But...I wonder if it could really get the taste right? What do you think?",
+      "latency_s": 2.54,
+      "word_count": 64
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Mojitos are such a classic! I think a robot could get the basics right, but maybe the human touch adds that extra zing. Have you ever had a mojito that was made just perfectly? What was the occasion?",
+      "latency_s": 1.28,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Yes, I think so! I had a mojito once at a friend's birthday party. It was really nice! The bartender, he made it with fresh mint and lots of lime juice. I remember thinking, \"Wow, this is so refreshing!\" The atmosphere was great too, with music and people laughing. But, um, I’m not sure if I can say it was \"perfect.\" Maybe it's just because I was with friends and feeling happy? What do you think makes a mojito perfect?",
+      "latency_s": 2.039,
+      "word_count": 80
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Sounds like a fantastic time! I think the company and the vibe make any cocktail taste better. Speaking of parties, have you ever hosted one yourself? What’s your go-to party trick for making sure everyone has a blast?",
+      "latency_s": 1.303,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Oh, um, I haven't hosted a big party myself yet, but I think it would be really fun! I like the idea of, um, maybe having games or, like, a good playlist to make everyone enjoy. I think a good atmosphere is, um, super important. \n\nIf I had to do a party, I might try to make a fun drink, like, um, a non-alcoholic option, too, so everyone can enjoy. My go-to party trick, I think, would be to, um, share some funny stories or maybe play a game with, like, team challenges. What do you think makes a party really fun?",
+      "latency_s": 4.424,
+      "word_count": 102
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds like a blast! I think the right playlist can really set the mood and get everyone dancing. Have you ever been to a party where the music just made the night unforgettable? What was the vibe like?",
+      "latency_s": 1.34,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Yes, I remember one party! It was a friend's graduation party. The music was really upbeat, and everyone was dancing. I think they played a lot of pop and dance songs. The vibe was super joyful, and people were smiling, laughing, and just... having a great time. I even tried dancing, which is not my best skill! But, we all had fun together. It felt like a celebration, you know? Do you have a favorite party song that always makes you want to dance?",
+      "latency_s": 2.426,
+      "word_count": 84
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That sounds like such a joyful night! I love when the energy of the music gets everyone moving. I can't resist dancing when \"Uptown Funk\" comes on—it's just so catchy! Have you ever had a moment where you surprised yourself with your dance moves?",
+      "latency_s": 1.243,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Oh, yes! I remember a time at a wedding. I wasn't planning to dance, but then the DJ played a really popular song, um, I think it was \"Shut Up and Dance.\" Suddenly, I just felt the beat and started to move! I surprised myself because I usually feel a little shy about dancing in front of others. But it was so much fun, and everyone joined in! It felt like we were all connected through the music. Have you ever had a moment like that?",
+      "latency_s": 4.033,
+      "word_count": 86
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That's awesome! It's amazing how a good song can break us out of our shells. I once found myself leading an impromptu conga line at a party, which was wild! Have you ever done something unexpected that turned out to be a highlight of the night?",
+      "latency_s": 1.636,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Oh, wow! A conga line sounds so fun! I think... um, I once did something a bit unexpected at a friend's birthday party. So, there was karaoke, and I really didn't want to sing because I'm not very good at it. But then, my friends encouraged me, and I thought, why not? I chose a song I liked, it was, um, \"Don't Stop Believin'.\" \n\nAt first, I was so nervous, but when I started singing, everyone joined in, and it felt amazing! I didn't expect to feel so... um, happy and free. It turned into a highlight of the night because everyone was laughing and having fun together. What about you? Have you had other moments like",
+      "latency_s": 4.2,
+      "word_count": 117
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That's such a cool story! It's incredible how music can bring people together and create unforgettable memories. I once did a surprise duet at a karaoke night, and it was hilarious and bonding. Do you have any other fun party moments that just make you smile when you think about them?",
+      "latency_s": 1.546,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Oh, yes! I have another funny moment. It was at a birthday party for a friend, and we decided to play some games. We played this game called \"charades,\" where you act out words, and everyone has to guess. I was trying to act like a cat, but I... um, I ended up crawling on the floor and meowing very loudly. Everyone laughed so much! I felt a bit embarrassed, but it was also really fun. \n\nI think those moments, where you can just be silly with friends, are the best. Do you have a favorite game that you enjoy at parties?",
+      "latency_s": 2.555,
+      "word_count": 102
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That cat charade sounds hilarious! I love playing Pictionary at parties because it always ends up with some crazy drawings and lots of laughs. What's the funniest thing you've ever seen someone try to draw or act out during a game?",
+      "latency_s": 2.548,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Oh, um, let me think... I remember one time, a friend tried to draw a giraffe, but it looked more like, um, a really tall dog? Everyone was just laughing so much because, well, the neck was super long but the face was, um, so funny! And then another time, someone was acting out a toaster, which was, uh, quite tricky. They, like, pretended to pop up toast by jumping up, and it was just so silly! What about you? Do you have a funny drawing or acting story?",
+      "latency_s": 3.005,
+      "word_count": 89
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Those sound like such fun moments! I remember trying to draw a kangaroo once, but it ended up looking like a confused rabbit, and everyone cracked up. Have you ever tried a game or activity that you weren't sure about at first, but ended up really enjoying?",
+      "latency_s": 1.427,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Oh, yes! I remember a time when I tried karaoke for the first time. At first, I was really nervous because I thought I would sing badly and everyone would laugh at me. But then, when I started to sing, I actually had a lot of fun! I chose a song that I really liked, and everyone was cheering for me. It felt great to see my friends enjoying it. After that, I wanted to sing more!\n\nBut sometimes, I still feel unsure about singing in front of people. I guess it depends on the atmosphere, you know? If everyone is having fun, it makes it easier to join in. Have you ever had a similar experience where you were unsure at first but ended up loving it?",
+      "latency_s": 3.153,
+      "word_count": 128
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Jumping into karaoke like that takes guts! It's amazing how a good vibe can change everything. I once hesitated to try a dance class, but once I got moving, I couldn't stop smiling. What's something you've always wanted to try but haven't yet?",
+      "latency_s": 1.545,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Hmm, that's a great question! I've always wanted to try rock climbing. I think it looks really exciting and... um, also a bit scary, you know? I’ve seen videos of people climbing and they seem to have so much fun. But I guess I hesitate because I'm not very good with heights. \n\nI remember one time I went to a climbing gym with friends, but I only watched them. I was a bit too scared to even try, but they encouraged me a lot. Maybe one day, I will be brave enough to give it a go! What about you? Is there anything else you want to try?",
+      "latency_s": 2.361,
+      "word_count": 108
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Rock climbing seems exhilarating! It's great that your friends are so supportive; maybe they'll help you take that first step someday. I've been curious about trying surfing—catching a wave looks like an incredible rush. Have you ever been to the ocean or tried any water sports?",
+      "latency_s": 1.733,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Oh, surfing sounds amazing! I have not tried it yet, but I have been to the ocean a few times. The waves look so powerful and beautiful. I remember when I went to the beach last summer, I watched some people surfing, and it seemed really fun but also a bit scary. I thought about trying paddleboarding instead because it looks a little easier. \n\nBut, um, I wonder if surfing would be difficult to learn. Do you think it takes a long time to get the hang of it? I would love to hear more about your experience or what you think about it!",
+      "latency_s": 4.868,
+      "word_count": 104
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "The ocean can be both thrilling and a bit intimidating, right? Paddleboarding sounds like a great way to start, easing into those waves. I imagine surfing might take a while to master, but once you catch a wave, the feeling must be unforgettable. Have you ever had a moment at the beach that left a lasting impression on you?",
+      "latency_s": 1.387,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Yes, definitely! The ocean can be a bit scary, especially when the waves are big. But I find it really beautiful too. I remember one time at the beach, I was just sitting there, watching the sunset. The sky turned all these amazing colors—like orange, pink, and purple. It felt so peaceful, and I thought about how small we are compared to the ocean. \n\nI haven’t tried paddleboarding yet, but I think it would be a good way to enjoy the water without feeling too overwhelmed. Maybe I would feel more confident after that! Do you think paddleboarding is easier than surfing?",
+      "latency_s": 2.991,
+      "word_count": 102
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "That sunset sounds magical; those moments can really put things into perspective. Paddleboarding does seem more straightforward than surfing, which might make it a good starting point. Have you ever had a chance to try something new that surprised you with how much you enjoyed it?",
+      "latency_s": 1.262,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Yes, I actually tried rock climbing last summer, and it was quite surprising! At first, I thought it would be very hard and maybe a bit scary, but once I got the hang of it, I really enjoyed it. The feeling of reaching the top was so rewarding. I didn't expect to like it that much. I think it's because I love being outdoors and challenging myself. Have you ever tried rock climbing or something similar?",
+      "latency_s": 4.985,
+      "word_count": 76
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Reaching the top must have felt like conquering a mountain! I haven't tried rock climbing yet, but I've dabbled in hiking, which offers a similar thrill and challenge. What's a place you've visited that really sparked your love for the outdoors?",
+      "latency_s": 1.279,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Yes, exactly! Reaching the top was exhilarating. I felt like I could do anything. As for outdoors, I think the place that really sparked my love was a national park I visited with my family a few years ago. It was so beautiful, with tall trees and clear lakes. We went hiking, and I remember one trail led us to a waterfall. The sound of the water was... um, very relaxing. \n\nI also liked how we could see different animals, like deer and birds. It made me feel connected to nature. Have you found any places that inspire you to be outdoors?",
+      "latency_s": 2.751,
+      "word_count": 102
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "That waterfall sounds like a slice of paradise! Nature has a way of making us feel alive. I once visited a forest with towering trees that seemed to touch the sky, and it was filled with birds singing their hearts out. What's the most unforgettable animal encounter you've had in the wild?",
+      "latency_s": 1.31,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

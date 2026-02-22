@@ -1,0 +1,372 @@
+================================================================================
+系统改进完整测试
+================================================================================
+
+测试配置:
+  LLM Provider: openai
+  Speech Provider: funasr
+  Storage Backend: memory
+
+================================================================================
+测试1: 评估精细化改进
+================================================================================
+2025-12-07 05:01:55 | services.funasr | INFO     | FunASR服务初始化: model=iic/SenseVoiceSmall, language=auto
+2025-12-07 05:01:55 | core.conversation | INFO     | [start_conversation] INPUT: user_id=test_eval_differentiation
+2025-12-07 05:01:55 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A1', 'overall_score': 0.0, 'strengths': [], 'weaknesses': []}
+2025-12-07 05:01:56 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: Let's get to know you a little more! Can you tell me about your daily routine? For example, what do ...
+2025-12-07 05:01:56 | core.conversation | INFO     | [start_conversation] Generated initial question: Let's get to know you a little more! Can you tell me about your daily routine? For example, what do ...
+2025-12-07 05:01:56 | core.conversation | INFO     | [start_conversation] OUTPUT: conversation_id=0f492b41-be41-4ca2-8b04-5b4f70d9577d, state=ConversationState.IN_PROGRESS
+
+--- 测试回答 1: 简单 (简单回答，只有一句话) ---
+回答内容: I am a student.
+2025-12-07 05:01:56 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=0f492b41-be41-4ca2-8b04-5b4f70d9577d, user_response=I am a student....
+2025-12-07 05:01:56 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 1
+2025-12-07 05:01:56 | services.evaluator | INFO     | [evaluate] INPUT: round=1, response_length=15, messages_count=3
+2025-12-07 05:02:00 | services.evaluator | INFO     | [evaluate] OUTPUT: score=32.25, level=A2
+2025-12-07 05:02:00 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=32.25, level=A2
+2025-12-07 05:02:00 | core.conversation | INFO     | [process_user_response] User profile updated: 0.0->32.2, A1->A2
+2025-12-07 05:02:00 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A2', 'overall_score': 32.25, 'strengths': ['语言准确性'], 'weaknesses': ['交互深度', '词汇丰富度', '内容相关性']}
+2025-12-07 05:02:01 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: That's great! You said you are a student. What do you like to do when you are not studying? For exam...
+2025-12-07 05:02:01 | core.conversation | INFO     | [process_user_response] Generated next question: That's great! You said you are a student. What do you like to do when you are not studying? For exam...
+2025-12-07 05:02:01 | core.conversation | INFO     | [process_user_response] OUTPUT: round=1, score=32.25, level=A2
+✅ 评估完成
+   综合分数: 32.2/100
+   CEFR等级: A2
+   维度评分:
+     - 内容相关性: 2.0/5.0
+     - 语言准确性: 5.0/5.0
+     - 表达流利度: 3.0/5.0
+     - 交互深度: 1.5/5.0
+     - 词汇丰富度: 1.5/5.0
+
+--- 测试回答 2: 中等 (中等回答，3句话，有扩展) ---
+回答内容: I am a student. I like reading books. Reading helps me learn new words.
+2025-12-07 05:02:01 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=0f492b41-be41-4ca2-8b04-5b4f70d9577d, user_response=I am a student. I like reading books. Reading helps me learn new words....
+2025-12-07 05:02:01 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 2
+2025-12-07 05:02:01 | services.evaluator | INFO     | [evaluate] INPUT: round=2, response_length=71, messages_count=5
+2025-12-07 05:02:05 | services.evaluator | INFO     | [evaluate] OUTPUT: score=74.0, level=B1
+2025-12-07 05:02:05 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=74.0, level=B1
+2025-12-07 05:02:05 | core.conversation | INFO     | [process_user_response] User profile updated: 32.2->74.0, A2->B1
+2025-12-07 05:02:05 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'B1', 'overall_score': 74.0, 'strengths': ['内容相关性', '语言准确性'], 'weaknesses': ['交互深度', '词汇丰富度']}
+2025-12-07 05:02:08 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: You mentioned that reading helps you learn new words, which is really helpful for students. Speaking...
+2025-12-07 05:02:08 | core.conversation | INFO     | [process_user_response] Generated next question: You mentioned that reading helps you learn new words, which is really helpful for students. Speaking...
+2025-12-07 05:02:08 | core.conversation | INFO     | [process_user_response] OUTPUT: round=2, score=74.0, level=B1
+✅ 评估完成
+   综合分数: 74.0/100
+   CEFR等级: B1
+   维度评分:
+     - 内容相关性: 4.0/5.0
+     - 语言准确性: 4.0/5.0
+     - 表达流利度: 3.5/5.0
+     - 交互深度: 3.0/5.0
+     - 词汇丰富度: 3.0/5.0
+
+--- 测试回答 3: 复杂 (复杂回答，使用高级词汇和复杂句式) ---
+回答内容: As an avid reader, I find that immersing myself in literature not only expands my vocabulary but also enhances my linguistic proficiency. The intricate narratives and sophisticated language structures provide invaluable insights into effective communication.
+2025-12-07 05:02:08 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=0f492b41-be41-4ca2-8b04-5b4f70d9577d, user_response=As an avid reader, I find that immersing myself in literature not only expands my vocabulary but als...
+2025-12-07 05:02:08 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 3
+2025-12-07 05:02:08 | services.evaluator | INFO     | [evaluate] INPUT: round=3, response_length=258, messages_count=7
+2025-12-07 05:02:15 | services.evaluator | INFO     | [evaluate] OUTPUT: score=83.5, level=B2
+2025-12-07 05:02:15 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=83.5, level=B2
+2025-12-07 05:02:15 | core.conversation | INFO     | [process_user_response] User profile updated: 74.0->83.5, B1->B2
+2025-12-07 05:02:15 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'B2', 'overall_score': 83.5, 'strengths': ['词汇丰富度', '表达流利度', '语言准确性'], 'weaknesses': ['交互深度', '内容相关性（主题聚焦）']}
+2025-12-07 05:02:19 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: Since you enjoy reading and expanding your vocabulary, I'm curious—have you ever read about how tech...
+2025-12-07 05:02:19 | core.conversation | INFO     | [process_user_response] Generated next question: Since you enjoy reading and expanding your vocabulary, I'm curious—have you ever read about how tech...
+2025-12-07 05:02:19 | core.conversation | INFO     | [process_user_response] OUTPUT: round=3, score=83.5, level=B2
+✅ 评估完成
+   综合分数: 83.5/100
+   CEFR等级: B2
+   维度评分:
+     - 内容相关性: 4.0/5.0
+     - 语言准确性: 4.5/5.0
+     - 表达流利度: 4.5/5.0
+     - 交互深度: 3.5/5.0
+     - 词汇丰富度: 4.5/5.0
+
+--------------------------------------------------------------------------------
+评估差异化分析:
+--------------------------------------------------------------------------------
+简单回答分数: 32.2
+复杂回答分数: 83.5
+分数差异: 51.2
+✅ 评估系统能够区分不同复杂度的回答
+
+================================================================================
+测试2: 上下文对话连贯性
+================================================================================
+2025-12-07 05:02:19 | services.funasr | INFO     | FunASR服务初始化: model=iic/SenseVoiceSmall, language=auto
+2025-12-07 05:02:19 | core.conversation | INFO     | [start_conversation] INPUT: user_id=test_coherence
+2025-12-07 05:02:19 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A1', 'overall_score': 0.0, 'strengths': [], 'weaknesses': []}
+2025-12-07 05:02:23 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: Hello! Let's get to know each other. Can you tell me a little about yourself? For example: What is y...
+2025-12-07 05:02:23 | core.conversation | INFO     | [start_conversation] Generated initial question: Hello! Let's get to know each other. Can you tell me a little about yourself? For example: What is y...
+2025-12-07 05:02:23 | core.conversation | INFO     | [start_conversation] OUTPUT: conversation_id=5db320b8-5fed-4e29-8355-f86170e295a7, state=ConversationState.IN_PROGRESS
+
+初始问题: Hello! Let's get to know each other. Can you tell me a little about yourself? For example: What is your name? Where are you from? How old are you? 你可以...
+
+--- 第 1 轮对话 ---
+用户回答: I usually wake up at 7 AM. I brush my teeth and eat breakfast.
+2025-12-07 05:02:23 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=5db320b8-5fed-4e29-8355-f86170e295a7, user_response=I usually wake up at 7 AM. I brush my teeth and eat breakfast....
+2025-12-07 05:02:23 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 1
+2025-12-07 05:02:23 | services.evaluator | INFO     | [evaluate] INPUT: round=1, response_length=62, messages_count=3
+2025-12-07 05:02:27 | services.evaluator | INFO     | [evaluate] OUTPUT: score=45.5, level=A2
+2025-12-07 05:02:27 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=45.5, level=A2
+2025-12-07 05:02:27 | core.conversation | INFO     | [process_user_response] User profile updated: 0.0->45.5, A1->A2
+2025-12-07 05:02:27 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A2', 'overall_score': 45.5, 'strengths': ['表达流畅', '语言准确性'], 'weaknesses': ['交互深度', '词汇丰富度']}
+2025-12-07 05:02:28 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: Thank you for sharing your morning routine! After breakfast, what do you usually like to do in your ...
+2025-12-07 05:02:28 | core.conversation | INFO     | [process_user_response] Generated next question: Thank you for sharing your morning routine! After breakfast, what do you usually like to do in your ...
+2025-12-07 05:02:28 | core.conversation | INFO     | [process_user_response] OUTPUT: round=1, score=45.5, level=A2
+系统问题: Thank you for sharing your morning routine! After breakfast, what do you usually like to do in your free time or on weekends? For example, do you have...
+✅ 问题与之前对话有连贯性
+
+--- 第 2 轮对话 ---
+用户回答: Yes, I like healthy food. I eat fruits and vegetables every day.
+2025-12-07 05:02:28 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=5db320b8-5fed-4e29-8355-f86170e295a7, user_response=Yes, I like healthy food. I eat fruits and vegetables every day....
+2025-12-07 05:02:28 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 2
+2025-12-07 05:02:28 | services.evaluator | INFO     | [evaluate] INPUT: round=2, response_length=64, messages_count=5
+2025-12-07 05:02:34 | services.evaluator | INFO     | [evaluate] OUTPUT: score=54.25, level=B1
+2025-12-07 05:02:34 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=54.25, level=B1
+2025-12-07 05:02:34 | core.conversation | INFO     | [process_user_response] User profile updated: 45.5->54.2, A2->B1
+2025-12-07 05:02:34 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'B1', 'overall_score': 54.25, 'strengths': ['内容相关性', '语言准确性'], 'weaknesses': ['交互深度', '词汇丰富度']}
+2025-12-07 05:02:38 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: Since you enjoy eating healthy food like fruits and vegetables, I’m curious—how do you usually stay ...
+2025-12-07 05:02:38 | core.conversation | INFO     | [process_user_response] Generated next question: Since you enjoy eating healthy food like fruits and vegetables, I’m curious—how do you usually stay ...
+2025-12-07 05:02:38 | core.conversation | INFO     | [process_user_response] OUTPUT: round=2, score=54.25, level=B1
+系统问题: Since you enjoy eating healthy food like fruits and vegetables, I’m curious—how do you usually stay healthy in your daily life? For example, do you li...
+✅ 问题与之前对话有连贯性
+
+--- 第 3 轮对话 ---
+用户回答: I think exercise is important. I go jogging three times a week.
+2025-12-07 05:02:38 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=5db320b8-5fed-4e29-8355-f86170e295a7, user_response=I think exercise is important. I go jogging three times a week....
+2025-12-07 05:02:38 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 3
+2025-12-07 05:02:38 | services.evaluator | INFO     | [evaluate] INPUT: round=3, response_length=63, messages_count=7
+2025-12-07 05:02:46 | services.evaluator | INFO     | [evaluate] OUTPUT: score=63.5, level=B1
+2025-12-07 05:02:46 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=63.5, level=B1
+2025-12-07 05:02:46 | core.conversation | INFO     | [process_user_response] User profile updated: 54.2->63.5, B1->B1
+2025-12-07 05:02:46 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'B1', 'overall_score': 63.5, 'strengths': ['表达流利', '语言准确性'], 'weaknesses': ['交互深度', '词汇丰富度']}
+2025-12-07 05:02:48 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: That’s great that you go jogging three times a week to stay healthy! Besides taking care of your hea...
+2025-12-07 05:02:48 | core.conversation | INFO     | [process_user_response] Generated next question: That’s great that you go jogging three times a week to stay healthy! Besides taking care of your hea...
+2025-12-07 05:02:48 | core.conversation | INFO     | [process_user_response] OUTPUT: round=3, score=63.5, level=B1
+系统问题: That’s great that you go jogging three times a week to stay healthy! Besides taking care of your health, do you also think about taking care of the en...
+✅ 问题与之前对话有连贯性
+
+================================================================================
+测试3: 学习报告生成
+================================================================================
+2025-12-07 05:02:48 | services.funasr | INFO     | FunASR服务初始化: model=iic/SenseVoiceSmall, language=auto
+2025-12-07 05:02:48 | core.conversation | INFO     | [start_conversation] INPUT: user_id=test_report
+2025-12-07 05:02:48 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A1', 'overall_score': 0.0, 'strengths': [], 'weaknesses': []}
+2025-12-07 05:02:49 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: Let's talk about your daily activities! What do you usually do in the morning? For example, do you e...
+2025-12-07 05:02:49 | core.conversation | INFO     | [start_conversation] Generated initial question: Let's talk about your daily activities! What do you usually do in the morning? For example, do you e...
+2025-12-07 05:02:49 | core.conversation | INFO     | [start_conversation] OUTPUT: conversation_id=334616b6-faa8-4713-bff9-53f4ebddc215, state=ConversationState.IN_PROGRESS
+
+第 1 轮对话...
+2025-12-07 05:02:49 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=334616b6-faa8-4713-bff9-53f4ebddc215, user_response=I am a student. I like reading books....
+2025-12-07 05:02:49 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 1
+2025-12-07 05:02:49 | services.evaluator | INFO     | [evaluate] INPUT: round=1, response_length=37, messages_count=3
+2025-12-07 05:02:56 | services.evaluator | INFO     | [evaluate] OUTPUT: score=34.25, level=A2
+2025-12-07 05:02:56 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=34.25, level=A2
+2025-12-07 05:02:56 | core.conversation | INFO     | [process_user_response] User profile updated: 0.0->34.2, A1->A2
+2025-12-07 05:02:56 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A2', 'overall_score': 34.25, 'strengths': ['语言准确性'], 'weaknesses': ['交互深度', '词汇丰富度', '内容相关性']}
+2025-12-07 05:02:58 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: You mentioned that you like reading books. That sounds interesting! What kind of books do you enjoy ...
+2025-12-07 05:02:58 | core.conversation | INFO     | [process_user_response] Generated next question: You mentioned that you like reading books. That sounds interesting! What kind of books do you enjoy ...
+2025-12-07 05:02:58 | core.conversation | INFO     | [process_user_response] OUTPUT: round=1, score=34.25, level=A2
+
+第 2 轮对话...
+2025-12-07 05:02:58 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=334616b6-faa8-4713-bff9-53f4ebddc215, user_response=Reading helps me learn new words and improve my English skills....
+2025-12-07 05:02:58 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 2
+2025-12-07 05:02:58 | services.evaluator | INFO     | [evaluate] INPUT: round=2, response_length=63, messages_count=5
+2025-12-07 05:03:01 | services.evaluator | INFO     | [evaluate] OUTPUT: score=45.0, level=A2
+2025-12-07 05:03:01 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=45.0, level=A2
+2025-12-07 05:03:01 | core.conversation | INFO     | [process_user_response] User profile updated: 34.2->45.0, A2->A2
+2025-12-07 05:03:01 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A2', 'overall_score': 45.0, 'strengths': ['语言准确性', '表达流利度'], 'weaknesses': ['交互深度', '词汇丰富度']}
+2025-12-07 05:03:02 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: Since reading helps you learn new words and improve your English, I wonder what you like to do on we...
+2025-12-07 05:03:02 | core.conversation | INFO     | [process_user_response] Generated next question: Since reading helps you learn new words and improve your English, I wonder what you like to do on we...
+2025-12-07 05:03:02 | core.conversation | INFO     | [process_user_response] OUTPUT: round=2, score=45.0, level=A2
+
+第 3 轮对话...
+2025-12-07 05:03:02 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=334616b6-faa8-4713-bff9-53f4ebddc215, user_response=I read for about 30 minutes every day. I think it's very helpful....
+2025-12-07 05:03:02 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 3
+2025-12-07 05:03:02 | services.evaluator | INFO     | [evaluate] INPUT: round=3, response_length=65, messages_count=7
+2025-12-07 05:03:09 | services.evaluator | INFO     | [evaluate] OUTPUT: score=41.25, level=A2
+2025-12-07 05:03:09 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=41.25, level=A2
+2025-12-07 05:03:09 | core.conversation | INFO     | [process_user_response] User profile updated: 45.0->41.2, A2->A2
+2025-12-07 05:03:09 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A2', 'overall_score': 41.25, 'strengths': ['语言准确性', '表达流利度'], 'weaknesses': ['交互深度', '词汇丰富度']}
+2025-12-07 05:03:11 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: You mentioned that reading is very helpful for you. Besides reading, do you have any other hobbies o...
+2025-12-07 05:03:11 | core.conversation | INFO     | [process_user_response] Generated next question: You mentioned that reading is very helpful for you. Besides reading, do you have any other hobbies o...
+2025-12-07 05:03:11 | core.conversation | INFO     | [process_user_response] OUTPUT: round=3, score=41.25, level=A2
+
+生成学习报告...
+2025-12-07 05:03:11 | services.report | INFO     | [generate_learning_report] Generating report for user test_report
+2025-12-07 05:03:23 | services.report | INFO     | [generate_learning_report] Report generated successfully, length: 2637
+2025-12-07 05:03:23 | core.conversation | INFO     | [end_conversation] Learning report generated for conversation 334616b6-faa8-4713-bff9-53f4ebddc215
+✅ 报告生成成功
+报告长度: 2637 字符
+
+报告内容检查:
+  ✅ 包含: 能力分析
+  ✅ 包含: 进步轨迹
+  ✅ 包含: 强弱项
+  ✅ 包含: 学习建议
+  ✅ 包含: 规划
+
+✅ 报告包含主要必需部分
+
+--------------------------------------------------------------------------------
+报告预览（前500字符）:
+--------------------------------------------------------------------------------
+```markdown
+# 英语口语能力详细评估报告
+
+用户ID：test_report  
+评估时间：2024年6月  
+对话轮数：3轮  
+当前综合分数：41.25/100  
+CEFR等级：A2
+
+---
+
+## 1. 能力分析
+
+### 综合能力水平评估
+
+- **当前CEFR等级**：A2  
+- **综合分数**：41.25/100
+
+**A2等级描述**：能够理解和使用日常表达和基础句型，能进行简单信息交流，但表达内容和词汇较为有限。
+
+### 各维度表现分析
+
+- **内容相关性**：能回应问题，内容较为简单，话题拓展有限。
+- **语言准确性**：表达准确，语法错误极少，基础句型运用较为规范。
+- **表达流利度**：表达流畅，句子结构清晰，语速和逻辑适中。
+- **交互深度**：回答以简短句为主，缺乏细节，互动性和主动拓展话题能力较弱。
+- **词汇丰富度**：词汇使用偏基础，重复率高，缺乏更丰富表达和描述性词汇。
+
+### 能力水平定位（CEFR框架）
+
+- 位于A2等级中段，已具备基础交流能力，但尚未达到A2高级或B1初级水平。能够应对简单日常话题，但在细节描述...
+
+================================================================================
+测试4: 完整流程测试
+================================================================================
+2025-12-07 05:03:23 | services.funasr | INFO     | FunASR服务初始化: model=iic/SenseVoiceSmall, language=auto
+2025-12-07 05:03:23 | core.conversation | INFO     | [start_conversation] INPUT: user_id=test_complete_flow
+2025-12-07 05:03:23 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A1', 'overall_score': 0.0, 'strengths': [], 'weaknesses': []}
+2025-12-07 05:03:25 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: Let's talk about your daily activities! What do you usually do in the morning before you go out or s...
+2025-12-07 05:03:25 | core.conversation | INFO     | [start_conversation] Generated initial question: Let's talk about your daily activities! What do you usually do in the morning before you go out or s...
+2025-12-07 05:03:25 | core.conversation | INFO     | [start_conversation] OUTPUT: conversation_id=7208e3bb-6133-42e2-b8c3-d7208ed4b208, state=ConversationState.IN_PROGRESS
+/home/ubuntu/learning_english/venv/lib/python3.12/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+<unknown>:65: SyntaxWarning: invalid escape sequence '\['
+<unknown>:124: SyntaxWarning: invalid escape sequence '\['
+<unknown>:135: SyntaxWarning: invalid escape sequence '\['
+<unknown>:256: SyntaxWarning: invalid escape sequence '\['
+<unknown>:277: SyntaxWarning: invalid escape sequence '\['
+<unknown>:300: SyntaxWarning: invalid escape sequence '\['
+
+对话ID: 7208e3bb-6133-42e2-b8c3-d7208ed4b208
+初始问题: Let's talk about your daily activities! What do you usually do in the morning before you go out or start your day? For example, do you eat breakfast, ...
+
+--- 第 1 轮对话 ---
+📤 使用音频文件: test_simple.mp3
+2025-12-07 05:03:30 | services.funasr | INFO     | 正在加载FunASR模型: iic/SenseVoiceSmall
+INFO:services.funasr:正在加载FunASR模型: iic/SenseVoiceSmall
+2025-12-07 05:03:30,553 - modelscope - INFO - PyTorch version 2.9.1 Found.
+2025-12-07 05:03:30,554 - modelscope - INFO - Loading ast index from /home/ubuntu/.cache/modelscope/ast_indexer
+2025-12-07 05:03:30,592 - modelscope - INFO - Loading done! Current index file version is 1.15.0, with md5 44eb8b637472db8461a50a18fa398cb0 and a total number of 980 components indexed
+funasr version: 1.1.12.
+Check update of funasr, and it would cost few times. You may disable it by set `disable_update=True` in AutoModel
+New version is available: 1.2.7.
+Please use the command "pip install -U funasr" to upgrade.
+transformer is not installed, please install it if you want to use related modules
+Loading remote code failed: model, No module named 'model'
+2025-12-07 05:03:35 | services.funasr | INFO     | FunASR模型加载成功
+INFO:services.funasr:FunASR模型加载成功
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]100%|[34m██████████[0m| 1/1 [00:00<00:00,  2.44it/s]{'load_data': '0.072', 'extract_feat': '0.006', 'forward': '0.410', 'batch_size': '1', 'rtf': '0.137'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00,  2.44it/s]rtf_avg: 0.137: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  2.44it/s]                                                                                          rtf_avg: 0.137: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  2.44it/s]
+2025-12-07 05:03:35 | services.funasr | INFO     | 转录成功: i am a student i like reading books...
+INFO:services.funasr:转录成功: i am a student i like reading books...
+📝 转录文本: i am a student i like reading books
+2025-12-07 05:03:35 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=7208e3bb-6133-42e2-b8c3-d7208ed4b208, user_response=i am a student i like reading books...
+INFO:core.conversation:[process_user_response] INPUT: conversation_id=7208e3bb-6133-42e2-b8c3-d7208ed4b208, user_response=i am a student i like reading books...
+2025-12-07 05:03:35 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 1
+INFO:core.conversation:[process_user_response] Starting evaluation for round 1
+2025-12-07 05:03:35 | services.evaluator | INFO     | [evaluate] INPUT: round=1, response_length=35, messages_count=3
+INFO:services.evaluator:[evaluate] INPUT: round=1, response_length=35, messages_count=3
+2025-12-07 05:03:39 | services.evaluator | INFO     | [evaluate] OUTPUT: score=27.75, level=A1
+INFO:services.evaluator:[evaluate] OUTPUT: score=27.75, level=A1
+2025-12-07 05:03:39 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=27.75, level=A1
+INFO:core.conversation:[process_user_response] Evaluation completed: score=27.75, level=A1
+2025-12-07 05:03:39 | core.conversation | INFO     | [process_user_response] User profile updated: 0.0->27.8, A1->A1
+INFO:core.conversation:[process_user_response] User profile updated: 0.0->27.8, A1->A1
+2025-12-07 05:03:39 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A1', 'overall_score': 27.75, 'strengths': ['基本语法正确'], 'weaknesses': ['词汇有限', '表达深度不足', '句式简单']}
+INFO:services.generator:[generate_question] INPUT: ability_profile={'cefr_level': 'A1', 'overall_score': 27.75, 'strengths': ['基本语法正确'], 'weaknesses': ['词汇有限', '表达深度不足', '句式简单']}
+2025-12-07 05:03:40 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: That's great! You said you are a student and you like reading books. I’m curious, what kind of books...
+INFO:services.generator:[generate_question] OUTPUT: Generated question: That's great! You said you are a student and you like reading books. I’m curious, what kind of books...
+2025-12-07 05:03:40 | core.conversation | INFO     | [process_user_response] Generated next question: That's great! You said you are a student and you like reading books. I’m curious, what kind of books...
+INFO:core.conversation:[process_user_response] Generated next question: That's great! You said you are a student and you like reading books. I’m curious, what kind of books...
+2025-12-07 05:03:40 | core.conversation | INFO     | [process_user_response] OUTPUT: round=1, score=27.75, level=A1
+INFO:core.conversation:[process_user_response] OUTPUT: round=1, score=27.75, level=A1
+✅ 评估完成
+   分数: 27.8/100 | CEFR: A1
+   下一题: That's great! You said you are a student and you like reading books. I’m curious, what kind of books...
+
+--- 第 2 轮对话 ---
+📤 使用音频文件: test_medium.mp3
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]100%|[34m██████████[0m| 1/1 [00:00<00:00,  1.97it/s]{'load_data': '0.097', 'extract_feat': '0.008', 'forward': '0.507', 'batch_size': '1', 'rtf': '0.046'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00,  1.97it/s]rtf_avg: 0.046: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  1.97it/s]                                                                                          rtf_avg: 0.046: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  1.97it/s]
+2025-12-07 05:03:41 | services.funasr | INFO     | 转录成功: i am a student i like reading books very much reading helps me learn new words and improve my englis...
+INFO:services.funasr:转录成功: i am a student i like reading books very much reading helps me learn new words and improve my englis...
+📝 转录文本: i am a student i like reading books very much reading helps me learn new words and improve my english skills i read for about 30 minutes every day
+2025-12-07 05:03:41 | core.conversation | INFO     | [process_user_response] INPUT: conversation_id=7208e3bb-6133-42e2-b8c3-d7208ed4b208, user_response=i am a student i like reading books very much reading helps me learn new words and improve my englis...
+INFO:core.conversation:[process_user_response] INPUT: conversation_id=7208e3bb-6133-42e2-b8c3-d7208ed4b208, user_response=i am a student i like reading books very much reading helps me learn new words and improve my englis...
+2025-12-07 05:03:41 | core.conversation | INFO     | [process_user_response] Starting evaluation for round 2
+INFO:core.conversation:[process_user_response] Starting evaluation for round 2
+2025-12-07 05:03:41 | services.evaluator | INFO     | [evaluate] INPUT: round=2, response_length=146, messages_count=5
+INFO:services.evaluator:[evaluate] INPUT: round=2, response_length=146, messages_count=5
+2025-12-07 05:03:45 | services.evaluator | INFO     | [evaluate] OUTPUT: score=36.75, level=A2
+INFO:services.evaluator:[evaluate] OUTPUT: score=36.75, level=A2
+2025-12-07 05:03:45 | core.conversation | INFO     | [process_user_response] Evaluation completed: score=36.75, level=A2
+INFO:core.conversation:[process_user_response] Evaluation completed: score=36.75, level=A2
+2025-12-07 05:03:45 | core.conversation | INFO     | [process_user_response] User profile updated: 27.8->36.8, A1->A2
+INFO:core.conversation:[process_user_response] User profile updated: 27.8->36.8, A1->A2
+2025-12-07 05:03:45 | services.generator | INFO     | [generate_question] INPUT: ability_profile={'cefr_level': 'A2', 'overall_score': 36.75, 'strengths': ['内容相关性', '表达流利度'], 'weaknesses': ['交互深度', '词汇丰富度', '语言准确性']}
+INFO:services.generator:[generate_question] INPUT: ability_profile={'cefr_level': 'A2', 'overall_score': 36.75, 'strengths': ['内容相关性', '表达流利度'], 'weaknesses': ['交互深度', '词汇丰富度', '语言准确性']}
+2025-12-07 05:03:46 | services.generator | INFO     | [generate_question] OUTPUT: Generated question: You mentioned that reading helps you improve your English skills. That’s wonderful! Besides reading,...
+INFO:services.generator:[generate_question] OUTPUT: Generated question: You mentioned that reading helps you improve your English skills. That’s wonderful! Besides reading,...
+2025-12-07 05:03:46 | core.conversation | INFO     | [process_user_response] Generated next question: You mentioned that reading helps you improve your English skills. That’s wonderful! Besides reading,...
+INFO:core.conversation:[process_user_response] Generated next question: You mentioned that reading helps you improve your English skills. That’s wonderful! Besides reading,...
+2025-12-07 05:03:46 | core.conversation | INFO     | [process_user_response] OUTPUT: round=2, score=36.75, level=A2
+INFO:core.conversation:[process_user_response] OUTPUT: round=2, score=36.75, level=A2
+✅ 评估完成
+   分数: 36.8/100 | CEFR: A2
+   下一题: You mentioned that reading helps you improve your English skills. That’s wonderful! Besides reading,...
+
+--------------------------------------------------------------------------------
+生成最终学习报告...
+--------------------------------------------------------------------------------
+2025-12-07 05:03:46 | services.report | INFO     | [generate_learning_report] Generating report for user test_complete_flow
+INFO:services.report:[generate_learning_report] Generating report for user test_complete_flow
+2025-12-07 05:03:58 | services.report | INFO     | [generate_learning_report] Report generated successfully, length: 2453
+INFO:services.report:[generate_learning_report] Report generated successfully, length: 2453
+2025-12-07 05:03:58 | core.conversation | INFO     | [end_conversation] Learning report generated for conversation 7208e3bb-6133-42e2-b8c3-d7208ed4b208
+INFO:core.conversation:[end_conversation] Learning report generated for conversation 7208e3bb-6133-42e2-b8c3-d7208ed4b208
+✅ 报告生成成功
+报告长度: 2453 字符
+
+最终用户画像:
+   分数: 36.8/100
+   CEFR等级: A2
+   对话轮数: 2
+   强项: 内容相关性, 表达流利度
+   弱项: 交互深度, 词汇丰富度, 语言准确性
+
+================================================================================
+测试总结
+================================================================================
+
+测试1 - 评估精细化: ✅ 通过
+测试2 - 对话连贯性: ✅ 通过
+测试3 - 报告生成: ✅ 通过
+测试4 - 完整流程: ✅ 通过
+
+================================================================================
+测试完成
+================================================================================

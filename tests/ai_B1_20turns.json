@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T09:24:42.251144",
+    "level": "B1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "travel",
+        "technology",
+        "movies"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 1.509,
+    "user_avg_latency": 2.056,
+    "strategies": {
+      "summarize": 20
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hi there! 😊 Have you seen any cool technology lately that surprised you? (Feel free to answer naturally - I'll help if you need it!)",
+      "latency_s": 1.535
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Hmm... yes, I think so. Last week, my friend showed me his new smart watch. It can do many things, like, um, measure heartbeat and show messages. I was surprised because I didn’t know a watch can do so much. I think technology is changing very fast, sometimes it’s hard to keep up!",
+      "latency_s": 1.539,
+      "word_count": 53,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That’s interesting! I totally get what you mean—sometimes it feels like there’s a new gadget every week. When you saw your friend’s smart watch, how did you feel about all those features? Did it make you want one too, or do you prefer something more simple?",
+      "latency_s": 1.412,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Hmm... actually, I was a bit surprised because the smart watch can do so much. It can measure steps, heart rate, and even show messages, I think. But I'm not sure if I want one myself. I usually use my phone, so sometimes I feel like it’s enough for me. Maybe if I do more sport, it could be useful. But for now, I prefer something more simple, I think.",
+      "latency_s": 2.51,
+      "word_count": 70,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I get that! Honestly, sometimes I feel overwhelmed by all these smart gadgets too. I like how you said maybe it would be useful if you did more sport—it’s funny how technology sometimes depends on our habits, right? Have you ever tried using any tech for fitness before, like a step counter on your phone? How did that experience go for you?",
+      "latency_s": 1.444,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, yes, I tried using the step counter on my phone before. It was interesting because, uh, I didn’t know how much I walk every day. Sometimes I was surprised, like, I thought I moved a lot but the number was not so big! But, uh, after some days I forgot to check it. Maybe because I am not really so serious about exercise. I think if I want to do more fitness, maybe I will try to use it again.",
+      "latency_s": 1.575,
+      "word_count": 81,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That’s pretty relatable! I’ve had the same thing happen—I check the steps for a few days, get surprised, and then totally forget about it. What usually helps you stay motivated when you want to build a new habit, like exercising more? Is there a trick or routine that’s worked for you before?",
+      "latency_s": 1.26,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Hmm... staying motivated is not easy for me, actually. Sometimes I try to make plans, like, “Okay, I will exercise three times this week,” but then I get busy or I forget. Uh, one thing that helped me before was to do exercise with my friend. Because if we go together, it feels more fun and I don’t want to cancel. But when I am alone, it’s much harder. So I think, maybe, for me it’s better to do things with other people. Also, I read that writing goals on paper can help, but I’m not good at remembering to look at the paper!",
+      "latency_s": 2.023,
+      "word_count": 104,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, I totally get that—doing things with a friend really does make it way easier! It’s funny how just having someone there can turn exercise into something to look forward to instead of a chore. Was there a time when you and your friend did a workout or activity that was actually really fun or memorable for you? I’d love to hear about that moment!",
+      "latency_s": 2.613,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Uh, yes, actually, I remember one time last year. My friend and I went to a, uh, trampoline park? It was my first time there, so I was a little nervous. But after we started jumping, it was, um, really funny. We tried to do tricks, but we just fell down a lot and laughed so much. I didn’t feel tired, but next day, my legs hurt a lot! So, I think that was, uh, a really good memory for me.",
+      "latency_s": 1.95,
+      "word_count": 81,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Oh wow, a trampoline park! That sounds like a blast. I love how you said you kept falling and just laughed—it’s the best when you can be silly with friends and not care. What was going through your mind when you first stepped onto the trampoline? Were you excited or just thinking, “I hope I don’t fall too hard”?",
+      "latency_s": 1.679,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yeah, I think, at first I was really nervous. My friend was so confident, but me, I was just thinking, “Oh no, what if I fall in front of everyone?” But then, after a couple jumps, it was actually really fun. I was excited—but also a little scared, you know? I tried to copy my friend but I couldn’t jump so high! Still, I didn’t mind, because we were laughing a lot. I think, after some minutes, I forgot about being worried.",
+      "latency_s": 2.513,
+      "word_count": 83,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That’s so real—being nervous at first, but then just getting into it and having fun. I love how laughter made you forget your worries! Did something funny or unexpected happen while you were there that still makes you smile when you think about it?",
+      "latency_s": 1.237,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, yeah, actually—there was something really funny. So, uh, my friend wanted to try, like, a flip? She said she can do it, but, um, when she jumped, she just kind of fell on her back and bounced again, and then I started laughing so much I couldn’t stand up! And then, I also fell, so we were both just laying there, laughing. Other people were looking at us, so, I don’t know, it was embarrassing but also really funny. I still laugh when I remember that.",
+      "latency_s": 1.484,
+      "word_count": 87,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Haha, I can just picture you both lying there, laughing so hard while everyone stared! That mix of embarrassment and fun makes the best memories, honestly. When you remember that day now, does it make you want to try something new and silly again, or do you feel like, “Okay, that’s enough adventure for a while”?",
+      "latency_s": 1.504,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I think… maybe both? Like, when I remember it, I feel kind of happy and also a little shy. But sometimes, yeah, I want to try something silly again, because it was fun, you know? But not always. Sometimes I feel scared, like, what if people laugh again? So, it depends on my mood, I guess.",
+      "latency_s": 1.155,
+      "word_count": 57,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That makes so much sense—sometimes you want to jump into something silly, and other times you just want to play it safe. I totally get that mix of happy and shy feelings! Is there anything you’ve always wanted to try, but you keep hesitating because you’re not sure how it’ll go?",
+      "latency_s": 1.443,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Hmm, let me think… ah, yes! I always wanted to try, uh, singing in front of people. Like, at karaoke night or something. But I get really nervous, because I’m not sure if my voice is good. My friends say, “Just do it, it’s fun!” but I… I always wait and say maybe next time. I don’t know, maybe I worry too much, you know?",
+      "latency_s": 1.891,
+      "word_count": 65,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Oh, I totally get that nervous feeling! Singing in front of people can feel like such a big step, even if your friends are cheering you on. I think it's cool that you actually want to try it, though! Was there ever a moment when you almost grabbed the microphone but stopped yourself at the last second? What was going through your mind?",
+      "latency_s": 1.382,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Oh, yes, um, it happened once. I was with my friends at a small party, and they played a song I really like. I almost stand up and go to the microphone, but then I feel, uh, my heart beating very fast and my hands shake a bit. I was thinking, “What if my voice sounds strange? Or if I forget the words?” So, I just smiled and said, “Maybe next time!” My friends were like, “Come on, you can do it!” but I was too shy. Maybe next time I will try for real.",
+      "latency_s": 6.229,
+      "word_count": 95,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Oh wow, I can really picture that moment with your heart racing and your friends cheering! That “almost did it” feeling is so real—I think everyone has a story like that. What was the song they played? Was it one that means something special to you, or just super fun?",
+      "latency_s": 1.41,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "It was, um, “Shape of You” by Ed Sheeran! I think many people like this song, so everybody was singing. I really like the melody, it’s kind of catchy, you know? But it’s not a special song for me, just—I think it’s easy to sing and fun. I almost joined in, but then I got shy. Maybe next time I will try!",
+      "latency_s": 1.216,
+      "word_count": 62,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "That’s such a classic karaoke song—everyone always seems to know the words and gets into the mood! I totally get what you mean about a catchy melody making it feel easier to sing along. Was there ever a song that actually felt special to you, maybe one that brings back a strong memory or feeling?",
+      "latency_s": 1.302,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Uh, yes, there is a song that is special for me. It’s called “Let Her Go” by Passenger. Um, I remember I heard it a lot when I was in high school, and, uh, I always listened to it when I went home after school on the bus. It made me feel—how to say—like, calm? And sometimes a little bit sad, but in a nice way. So, when I hear this song now, I feel like I am young again, you know? Maybe it’s a little bit nostalgic.",
+      "latency_s": 2.174,
+      "word_count": 88,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Oh, I totally get that feeling—some songs just hit you with memories, right? I love that “Let Her Go” brings back those bus ride moments for you. What was it about those rides home that made the song feel so special? Did you usually listen alone and just get lost in your thoughts?",
+      "latency_s": 2.021,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Yeah, I… I usually listen alone with my headphones, you know? After school I was always tired, and the bus was noisy, but when I listen that song, um, it was like everything is quiet. I just look out the window and think about… stuff, like my friends or homework, or sometimes nothing, just dreaming. It made me feel kind of calm, I think that’s why I remember it.",
+      "latency_s": 1.708,
+      "word_count": 69,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "That’s such a vivid scene—I can almost picture you staring out the window with your headphones on, just drifting away from the noise. There’s something special about those quiet moments when everything else fades out, right? Do you still have times like that now, when a song helps you escape or just gives you space to breathe?",
+      "latency_s": 1.245,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, yeah, sometimes I still do that. But now, I think I’m more busy, so I don’t listen so much after school. Maybe at night, before bed, I put music and just relax. It helps me to stop thinking too much, you know? Sometimes I feel stressed and music makes me feel better. Uh, but not always… sometimes I just fall asleep too fast!",
+      "latency_s": 1.779,
+      "word_count": 64,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "I totally get you—music before bed really does feel like a reset button, doesn’t it? It’s kind of funny how sometimes it helps you relax, and other times you’re out like a light before the second song even ends! Is there a song or a type of music that works best for you when you want to unwind at night?",
+      "latency_s": 1.32,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Hmm, well, I think… when I want to relax at night, I like slow songs, you know? Like, ballads or soft piano. Sometimes I just search “chill music” on YouTube because I don’t know the names. I don’t really have a special song, but… um, maybe I listen to Sam Smith a lot? His songs are quiet and, uh, calming for me. But sometimes if I am too tired, it doesn’t matter, I just fall asleep in the middle!",
+      "latency_s": 1.373,
+      "word_count": 79,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I love how you use music as a way to unwind, even if you sometimes drift off before the song ends! There’s something comforting about soft piano or Sam Smith’s voice at night. Can you remember a time when a song really helped you feel better after a long or stressful day? What was that night like for you?",
+      "latency_s": 1.277,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um, yeah, I remember one night when I had a really bad day at school… I was so tired and a little bit sad too, because I, uh, I failed my math test. So, after I came home, I listened to a song, I think it was “Fix You” by Coldplay. I just laid in bed and listened, and then I felt more calm after, like the music helped my heart, you know? I think… that night, I could sleep easier because of that song.",
+      "latency_s": 1.727,
+      "word_count": 85,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "That’s honestly so powerful—sometimes it feels like a song can reach places that words from people just can’t. “Fix You” is such an emotional song too; I get why it helped you that night. What is it about that song that connects with you? Is there a part, maybe the lyrics or the melody, that stands out the most when you listen to it?",
+      "latency_s": 1.439,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Oh, um… I think, for me, the beginning part is really… peaceful? Like, the piano is very soft, and it makes me feel, uh, safe I guess. And when he sings “lights will guide you home”, I always remember it, because… hmm, sometimes I feel lost, you know? So, when I hear that, it’s like—how to say—it gives me hope a little bit. The melody, too, it’s very… how do you say… it goes slowly, but then gets stronger, so it feels like it’s helping me get better mood. Sorry, I don’t know if I say it right.",
+      "latency_s": 2.048,
+      "word_count": 98,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "Oh, I totally get what you mean—there’s something really comforting about soft piano and those hopeful lyrics, especially when you’re feeling lost. The way “Fix You” builds up slowly almost feels like it’s lifting you out of a bad mood, right? Has music ever helped you through any other tough situations, or is there another song that gives you that same feeling of hope?",
+      "latency_s": 1.551,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um, yeah, I think music helps me a lot, not just with “Fix You.” Uh, sometimes when I fight with my friends or my mom, I listen to songs. Like… oh, I like “Rise Up” by Andra Day. It’s really positive, and when I feel sad, it kind of… gives me some energy? I listen and I feel like maybe things will be okay. But sometimes… I just listen to something with no words, like just guitar, so my head can rest a bit. Do you have a song that helps you too?",
+      "latency_s": 2.065,
+      "word_count": 93,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "I love that you mentioned “Rise Up”—that song really does have an uplifting energy! And listening to just guitar sounds when you need your mind to rest, that’s such a gentle way to care for yourself. For me, when I’m feeling down or stressed, I actually listen to “Let It Be” by The Beatles. There’s something about the words “let it be” that helps me breathe and let my worries go for a while. \n\nHas there ever been a song that surprised you—like, you didn’t expect it to help, but it did?",
+      "latency_s": 1.834,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Uh… yes, actually. There was a song, um, I think it’s called “Can’t Help Falling in Love”? It’s old, from Elvis Presley. I didn’t listen to it so much before, but one time it just played on the radio, and… I don’t know why, but I felt really calm and happy. The melody is simple, and the words are kind. Uh, sometimes I listen when I feel… confused about something. It’s kind of surprising because I thought it’s just a love song, but it helps me relax. \n\nDo you have any, uh, songs like that? That are not about feeling happy, but they make you feel better?",
+      "latency_s": 2.07,
+      "word_count": 107,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "That’s so cool—you found comfort in an Elvis song without expecting it! Sometimes those gentle, classic melodies really sneak up on you, right? For me, there’s a song called “Yesterday” by The Beatles. It’s kind of sad, but the music is soft and it helps me slow down and breathe. \n\nHave you ever shared “Can’t Help Falling in Love” with someone else, or is it more like a secret comfort just for you?",
+      "latency_s": 1.52,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Um, actually, I never shared it with anyone before. I think, uh, maybe because it feels a bit private? Like, when I listen to that song, it’s only for me, you know? But sometimes I want to show my friend because she also likes old music, but I feel a bit shy. Maybe next time, I will try. \n\nOh, and I know “Yesterday”! My dad always sings it in the car. It’s sad, but nice.",
+      "latency_s": 2.087,
+      "word_count": 75,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Oh, I get that feeling—some songs just feel too personal to share, like they’re your own little world. It’s kind of special to keep something just for yourself, but I also think your friend might really appreciate it if you share, especially since she’s into old music too. What do you think would happen if you played it for her? Would you feel nervous or maybe a bit excited?",
+      "latency_s": 1.297,
+      "strategy": "summarize"
+    }
+  ]
+}

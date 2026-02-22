@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T16:16:28.998280",
+    "level": "A2",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "art",
+        "cooking",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.866,
+    "user_avg_latency": 1.756,
+    "strategies": {
+      "continue": 5
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! Nice to meet you! 😊 What kind of art do you like, or have you tried cooking a new dish recently? (You can answer in simple words or mix Chinese - I'll help!)",
+      "latency_s": 2.394,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Hello! Nice to meet you too! 😊 Um, I like... I like painting. 我喜欢画画. I like colors, they make me happy. \n\nCooking, um... I try sometimes. I make rice and vegetables, 很简单. I want to learn more, but it is not easy. What about you? 你喜欢做什么?",
+      "latency_s": 1.566,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, painting sounds lovely! 🎨 I love bright colors too! \n\nI enjoy cooking as well. I make pasta and salads. They are easy and tasty! \n\nWhat do you want to learn to cook?",
+      "latency_s": 1.804,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I want to learn... um, I want to cook Chinese food! 我想做中国菜。 Maybe fried rice? It is very good. I like, um, the taste and the smell. \n\nBut cooking is hard for me. I not know all the steps. Do you have, um, easy recipe? ",
+      "latency_s": 1.962,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, fried rice is delicious! 🍚 I can help with that! \n\nYou need rice, vegetables, eggs, and soy sauce. First, cook the rice. Then, fry the vegetables and eggs. Mix them all together with soy sauce. \n\nIt’s simple! Have you cooked rice before?",
+      "latency_s": 2.443,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, yes! I cook rice before. 我做过米饭。 But, um, I not very good. Sometimes it is too soft or too hard. 😅 \n\nDo you have tips? Like, um, how long to cook? And what vegetables is good for fried rice? I like carrots and peas. They are nice! ",
+      "latency_s": 2.055,
+      "word_count": 48,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Cooking rice can be tricky! 😅 \n\nFor fluffy rice, use 1 cup of rice and 2 cups of water. Boil for about 10-15 minutes. \n\nCarrots and peas are great! You can also add bell peppers and green onions for more flavor. \n\nDo you have a favorite dish to eat?",
+      "latency_s": 1.852,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes! I like... um, I like dumplings! 饺子. They are very tasty. I also like sweet and sour chicken, 甜酸鸡. \n\nBut, um, I not make dumplings. It is too hard for me!  Maybe I can learn later. \n\nFried rice is easier, I think. Do you like dumplings? What is your favorite food?",
+      "latency_s": 1.752,
+      "word_count": 53,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Dumplings are so good! 😋 I love them too! \n\nMy favorite food is pizza. It’s cheesy and fun to make! \n\nMaybe you can try making dumplings with a friend. That can help! Do you like to cook with others?",
+      "latency_s": 1.835,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes! I like to cook with my friend. 但是，有时候我不太会做。 We can help each other, yes? \n\nMaking dumplings together sounds fun! I can learn more. 😄 \n\nDo you cook with your friends too? ",
+      "latency_s": 1.445,
+      "word_count": 33,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Yes, cooking together is great! 😊 \n\nI often cook with my sister. We try new recipes and share ideas. It’s fun and helps us learn. \n\nWhat is your favorite recipe to make with your friend?",
+      "latency_s": 1.398,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

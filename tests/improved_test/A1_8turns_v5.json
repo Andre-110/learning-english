@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T08:52:57.734483",
+    "level": "A1",
+    "turns": 8,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "music",
+        "sports",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 2.166,
+    "user_avg_latency": 2.506,
+    "hot_search_avg_latency": 5.693,
+    "hot_content_events": 2
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "music",
+      "headline": "Buzzcocks have a new album!",
+      "search_time": 6.09
+    },
+    {
+      "turn": 2,
+      "type": "async_search",
+      "topic": "music",
+      "headline": "Hilary sings again after 10 years!",
+      "search_time": 5.3
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just read Buzzcocks have a new album for their 50th anniversary! Do you like their music?",
+      "latency_s": 3.728,
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I... I not know Buzzcocks. Is they a rock band? 50 years is a long time! I like some music, but I not hear them before. What... what kind of songs they sing?",
+      "latency_s": 3.056,
+      "word_count": 34
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Yeah, the Buzzcocks are a rock band, and they've been around for a long time! They play punk rock music, which is fast and energetic. Do you have a favorite type of music or band that you enjoy?",
+      "latency_s": 1.537,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I like... I like pop music! It is very fun. I like Taylor Swift and some songs from Ed Sheeran. They make me happy. But... I not know many bands. What about you? Do you have favorite music?",
+      "latency_s": 2.317,
+      "word_count": 39
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I totally get why you like pop music! Taylor Swift and Ed Sheeran have some really catchy songs. I enjoy listening to rock music, and I like bands like The Beatles and Queen. Their music always puts me in a good mood. What do you love most about Taylor Swift's music?",
+      "latency_s": 1.839,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I... I like Taylor Swift's music because it is very, um, emotional? Her songs tell stories, I think. I like “Love Story” and “Shake It Off.” They make me feel happy! I also like her voice. It is very, um, nice. I... I don’t know all her songs, but many are good. What about you? What you like from Taylor Swift?",
+      "latency_s": 2.699,
+      "word_count": 62
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Yes, Taylor Swift's songs are very emotional and tell great stories! Do you have a favorite song by her?",
+      "latency_s": 3.827,
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes! I... I like \"Love Story\" a lot! It is very sweet, I think. The story is about love and... um, a happy ending? I like the melody, too. Sometimes I sing it in the shower! What about you? Do you like \"Love Story\"?",
+      "latency_s": 1.99,
+      "word_count": 45
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, singing \"Love Story\" in the shower sounds fun! I do like \"Love Story\" too. It's such a romantic song, and the melody is really catchy. I love how it tells a classic love story. Do you have any other songs you love to sing along to?",
+      "latency_s": 2.182,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes! I... I like to sing \"Shake It Off\" too! It is... um, very happy song. I like the beat, and it make me feel good. I can dance a little when I sing it. I also like, um, \"You Belong With Me.\" It is about... um, being in love with a friend? Very nice story too. Do you like these songs?",
+      "latency_s": 2.529,
+      "word_count": 63
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I totally get why you enjoy those songs! \"Shake It Off\" is super fun with its upbeat vibe, and \"You Belong With Me\" has such a sweet story. I like them both too! Dancing while singing sounds like a great time. When you dance, do you have a favorite move?",
+      "latency_s": 2.165,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! I... I like to dance a little, but, um, I am not very good. My favorite move is... um, like, when I wave my hands? Yes, I wave my hands! It feels fun and makes me happy. But sometimes I feel shy to dance in front of people. Do you like to dance?",
+      "latency_s": 2.796,
+      "word_count": 55
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Waving your hands sounds like a fun dance move! 😊 I know what you mean about feeling shy dancing in front of people. I like to dance too, especially when no one is watching! It just feels freeing. What's a song that always makes you want to dance, even if you're feeling shy?",
+      "latency_s": 1.821,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think... I like \"Uptown Funk\"! It make me want to dance! The rhythm is... um, very strong and fun. I feel more... um, confident when I hear it. But, um, when people watch, I feel shy. Maybe I dance in my room? It's, um, more... comfortable. Do you have a song that makes you dance?",
+      "latency_s": 2.402,
+      "word_count": 57
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "\"Uptown Funk\" is such a great choice! It's hard not to move when that song plays. I totally get why you'd feel more comfortable dancing in your room. For me, \"Can't Stop the Feeling!\" by Justin Timberlake always gets me dancing, no matter where I am. It just has such a happy vibe! What's your favorite part about dancing to \"Uptown Funk\"?",
+      "latency_s": 2.073,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I like to... um, move my body, yes! I like the beat. The... um, rhythm make me feel happy! I like when, um, it says \"stop!\" I want to... um, stop and go. It is fun! And, um, I like to dance with my friends too, but, um, not in public. In my room is better. How about you? What part you like in \"Can't Stop the Feeling!\"?",
+      "latency_s": 2.26,
+      "word_count": 69
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I totally get why you enjoy dancing to \"Uptown Funk\" like that! The stop-and-go parts do make it exciting. 😊 In \"Can't Stop the Feeling!\", I love the part where the beat drops and everyone starts dancing together. It always makes me smile and want to join in! Do you ever create your own dance moves when you're enjoying the music?",
+      "latency_s": 1.883,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

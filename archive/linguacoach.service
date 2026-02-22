@@ -1,0 +1,24 @@
+[Unit]
+Description=LinguaCoach English Learning API Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/learning_english
+Environment="PATH=/home/ubuntu/learning_english/venv/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStart=/home/ubuntu/learning_english/venv/bin/python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=linguacoach
+
+# 环境变量（如果需要）
+# Environment="DASHSCOPE_API_KEY=your_key"
+# Environment="OPENROUTER_API_KEY=your_key"
+
+[Install]
+WantedBy=multi-user.target
+

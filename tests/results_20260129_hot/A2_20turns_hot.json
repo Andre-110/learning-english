@@ -1,0 +1,403 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T10:46:27.860446",
+    "level": "A2",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "travel",
+        "art",
+        "technology"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 2.932,
+    "user_avg_latency": 3.303,
+    "strategies": {
+      "summarize": 20
+    },
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "art",
+      "headline": "Did you hear about the new sculpture park?"
+    },
+    {
+      "turn": 1,
+      "type": "topic_detected",
+      "topic": "travel",
+      "headline": "Paris bridge turns into art cave!"
+    },
+    {
+      "turn": 2,
+      "type": "topic_detected",
+      "topic": "art",
+      "headline": "Art gets fun and playful again!"
+    },
+    {
+      "turn": 4,
+      "type": "topic_detected",
+      "topic": "technology",
+      "headline": "Lego bricks can move and light up!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! Have you heard about the new sculpture park at the Rijksmuseum? It combines art and nature! Would you like to explore it?",
+      "latency_s": 2.21,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, um, yes! I hear about the sculpture park. It sounds very interesting! I like art and nature. \n\nMaybe... I want to explore it. But, um, I not sure when I can go. Do you think it's good to visit with friends? Or maybe by myself?",
+      "latency_s": 2.085,
+      "word_count": 46,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That sounds great! I love how art and nature connect. What is your favorite type of art? Or do you have a favorite artist?",
+      "latency_s": 5.661,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "travel"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, my favorite type of art is, uh, maybe painting? I like, uh, colors and, um, the way people use, uh, brushes. Yes! \n\nI also like, um, Van Gogh. He has, uh, many beautiful paintings. Like, um, The Starry Night. It’s very, um, special. I like how it looks. \n\nWhat about you? What is your favorite art?",
+      "latency_s": 4.207,
+      "word_count": 57,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Nice! Painting is beautiful. I love the colors too. What kind of paintings do you like? Do you have a favorite artist?",
+      "latency_s": 2.996,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I like, uh, maybe landscape paintings? They have, um, trees and mountains. They make me feel, um, calm. I also like, uh, some modern art. It's, um, interesting and different. \n\nI don’t know many artists, but, um, I heard about Van Gogh. His, uh, paintings are very famous, right? I like his, um, starry night painting. It’s, uh, very beautiful! What about you? Do you have a favorite artist?",
+      "latency_s": 4.152,
+      "word_count": 70,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, I really like that you find landscape paintings calming! Nature in art can be so peaceful. Do you have a favorite landscape painting or a specific scene that inspires you?",
+      "latency_s": 2.91,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I think, uh, one favorite painting is, um, \"Starry Night\" by, um, Van Gogh? I like the, um, sky and, uh, stars. It’s very, um, beautiful and, um, different. The colors are, like, um, blue and yellow. \n\nBut, um, I also like, uh, pictures of mountains and, um, rivers. They make me feel, um, happy and, uh, calm. I enjoy, um, nature very much! Do you have, um, a favorite painting too?",
+      "latency_s": 4.732,
+      "word_count": 73,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "\"Starry Night\" is a stunning choice! The swirls in the sky are so unique. What feelings do you get when you see that painting?",
+      "latency_s": 3.391,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I feel, uh, maybe a little, um, happy? And also, um, a bit sad, too. The colors are, um, very bright, but the sky looks, um, kind of lonely. I see, um, stars and, uh, swirls, and it makes me, um, think about, um, dreams? I like the, um, feeling of, um, night.",
+      "latency_s": 2.685,
+      "word_count": 54,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That's such a thoughtful way to feel about \"Starry Night\"! The mix of happiness and sadness creates a deep emotion. What do you think dreams mean to you?",
+      "latency_s": 2.462,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, I think, uh, dreams are, um, like, uh, a window? Yes, a window to our, um, feelings and, uh, wishes. Sometimes I dream about, um, flying, and it makes me feel, um, free? But sometimes I have, uh, scary dreams, too. I think dreams can show, um, what we want or, um, what we fear? What do you think?",
+      "latency_s": 2.835,
+      "word_count": 60,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "I love how you see dreams as a window to our feelings and wishes! Dreaming about flying sounds amazing and so freeing. What do you think flying represents for you?",
+      "latency_s": 2.07,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think flying is, uh, very, um, special. It, um, represents, like, freedom? Yes, freedom! I feel, um, like, maybe I can go anywhere, you know? And, um, no limits. Also, um, it feels good to, uh, escape from, um, problems? Like, sometimes, I want to, uh, fly away from, um, stress or, um, sad things. So, uh, flying is, um, like happiness for me.",
+      "latency_s": 2.938,
+      "word_count": 66,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That's a beautiful way to see flying! It really does feel like freedom and escaping from stress. What kind of places do you imagine flying to when you think about it?",
+      "latency_s": 2.159,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I think, uh, I imagine flying to, um, like, the mountains? Yes, the mountains! They, um, look very beautiful, and, uh, I want to see, um, the trees and, uh, rivers from the sky. \n\nAlso, maybe I fly to, um, the beach? I like the, um, sun and, uh, the ocean. It, um, makes me feel happy. I can feel, um, the wind and, uh, the water. \n\nBut, um, I am not sure if I can, uh, actually fly. It is just, um, a dream?",
+      "latency_s": 3.358,
+      "word_count": 86,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "It sounds amazing to imagine flying over the mountains and the beach! Those places have such beautiful views. What do you think it would feel like to see the world from way up high?",
+      "latency_s": 2.279,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I think it would feel, uh, very, um, exciting? Yes, exciting! You can see, um, many things, like, um, the trees and rivers. I, um, would feel small, um, but also, um, happy? I can see, um, everything from up high, like, a bird? Maybe, um, I would want to, uh, fly forever! But, um, also maybe a little, um, scared? What do you think?",
+      "latency_s": 3.036,
+      "word_count": 66,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "It sounds so exciting to think about flying and seeing everything like a bird! Feeling small but happy makes sense. What do you think would be the most beautiful thing to see from up there?",
+      "latency_s": 2.235,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Uh, I think, um, the most beautiful thing would be, um, the sunrise? Yes, the sunrise! The colors, um, orange and pink, very nice. And, um, maybe, uh, the rivers? They, um, look like snakes? Yes, snakes! And, uh, also the trees, green and, um, very big. I think, um, it must feel very, um, peaceful to see all this, right?",
+      "latency_s": 2.451,
+      "word_count": 61,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds so beautiful! The colors of a sunrise can really make everything feel magical. What do you think would be your favorite place to watch a sunrise? ",
+      "latency_s": 2.338,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I think my favorite place, um, to watch a sunrise would be, uh, maybe the beach? Yes, the beach! Because, um, you can see the sun, uh, come up from the water, and it is very, um, beautiful. I like the sound of, uh, waves, too. It makes me feel, um, relaxed. \n\nBut, um, I also think, uh, a mountain could be nice? Yes, a mountain. You can see, um, far away. But I never go to the mountain for sunrise. Maybe one day! ",
+      "latency_s": 3.309,
+      "word_count": 85,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "That sounds wonderful! Watching the sunrise at the beach must be so calming with the waves. What do you think would make a perfect morning there?",
+      "latency_s": 3.759,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, I think a perfect morning, uh, at the beach would be, um, maybe having a nice breakfast? Yes, like, um, maybe some fruit and bread, and some hot tea? That would be nice! \n\nAnd, um, I like to listen to the waves, they are very, um, relaxing. I think, uh, also maybe a good book? Yes, I can read a book while I watch the sunrise. That would be perfect morning!",
+      "latency_s": 4.064,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "That sounds like a perfect morning! Enjoying breakfast with fruit, bread, and hot tea while listening to the waves is so peaceful. What kind of book would you choose to read while watching the sunrise?",
+      "latency_s": 3.901,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, I think I would read, uh, maybe a storybook? Yes, a storybook! I like, um, stories with adventure, you know? Like, uh, about animals or, um, magic. I love magic! Sometimes, uh, the stories help me, um, relax and, uh, enjoy the sunrise more. What about you? What do you like to read?",
+      "latency_s": 4.214,
+      "word_count": 54,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "I love that you enjoy adventure stories with animals and magic! They can really take you to another world. I like reading mystery books. What’s your favorite adventure story?",
+      "latency_s": 2.542,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, my favorite adventure story, uh, is \"Harry Potter.\" Yes, I like it very much! It has, uh, magic and friends and, um, school. I think the, uh, world is very exciting! Also, I like, um, animals like owls and, uh, hippogriffs? Yes, they are, um, cool! What about you? Why do you like mystery books?",
+      "latency_s": 2.773,
+      "word_count": 56,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "I love that \"Harry Potter\" is your favorite! The magic and adventures there are really amazing. I like mystery books because they keep me guessing until the end. What's your favorite magical creature from \"Harry Potter\"?",
+      "latency_s": 3.268,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, I think my favorite magical creature is, uh, the hippogriff? Yes, I like it a lot! It's, um, part horse and part eagle. Very, uh, strong and cool! I think in the book, there is a part where, um, Harry rides it? Yes, so exciting! Do you like any magical creatures?",
+      "latency_s": 4.049,
+      "word_count": 52,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I love that you like the hippogriff! It's such a fascinating creature. The part where Harry rides it is really exciting! What do you think makes the hippogriff special compared to other magical creatures?",
+      "latency_s": 3.088,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um, I think the hippogriff is special because, uh, it has the body of a horse and the wings of an eagle. Yes, very cool! It can fly high in the sky. Um, also, it's very proud, right? You must, uh, show respect to it before you can ride. I like this part because, um, it teaches us to be, uh, respectful to animals. Other magical creatures, like, um, unicorns, they are pretty too, but hippogriff is more, uh, brave and strong. ",
+      "latency_s": 2.92,
+      "word_count": 82,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "I love that you think the hippogriff teaches us to be respectful to animals! It's such an important lesson. What do you think is the most important way to show respect to animals in real life?",
+      "latency_s": 2.775,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Um, I think the most important way to show respect is, uh, to treat animals kindly? Yes, like, um, not to hurt them and give them good food. \n\nAlso, um, we need to, like, keep their home clean, like parks or forests. Yes, I think if we see an animal, we, um, should not disturb them. \n\nAnd, um, if we have pets, we should take care of them, give them love. Yes, that's important!",
+      "latency_s": 2.975,
+      "word_count": 74,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "That's such a thoughtful way to show respect to animals! Keeping their homes clean is really important. What do you love most about taking care of pets?",
+      "latency_s": 2.716,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um, I love, uh, spending time with pets. They make me happy. I like to, um, play with them, and, uh, give them food. \n\nSometimes, I feel, um, very good when I see them, uh, wag their tails or, um, purr. It’s nice to, um, take them for walks, too. But, um, I think cleaning their, uh, space is not so fun. \n\nBut, um, it’s important for them to be, uh, healthy and happy, right? Yes!",
+      "latency_s": 3.334,
+      "word_count": 76,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "It’s great that spending time with pets makes you so happy! I totally get that feeling when they wag their tails or purr. What's your favorite game to play with them?",
+      "latency_s": 2.874,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Um, I like to, uh, play fetch with my dog. He, um, runs and brings back the ball. It's very fun! But, uh, I also like to, um, play with my cat. She likes to, um, chase the string. Yes, the string! I think pets, um, they have fun too, right?",
+      "latency_s": 2.368,
+      "word_count": 51,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "That sounds really fun! Playing fetch with your dog and watching your cat chase the string must be a great time. How does it feel when your dog brings the ball back to you?",
+      "latency_s": 2.556,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Um, it feels very good! When my dog brings back the ball, I, uh, feel happy and excited. I say, \"Good boy!\" and, um, give him a treat. Sometimes, he, uh, looks very proud. I like to see that. It, um, makes me smile. Playing with him is, uh, good exercise too! I, um, run and throw the ball. It's nice to, uh, spend time together. ",
+      "latency_s": 3.577,
+      "word_count": 66,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "That sounds really joyful! It's great that your dog looks proud when he brings the ball back. What do you think he feels when you give him a treat? ",
+      "latency_s": 2.668,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

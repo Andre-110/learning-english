@@ -1,0 +1,95 @@
+================================================================================
+FunASR 语音对话测试 - 精简报告
+================================================================================
+
+📋 测试配置
+--------------------------------------------------------------------------------
+对话ID: e8fbff54-0d03-4174-b4bf-15df47c9c26d
+
+================================================================================
+📝 对话详情
+================================================================================
+
+第 1 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: 
+📝 用户输入（转录）: I usually wake up at 7 AM. I brush my teeth and eat breakfast.
+📊 评分: None/100
+🎯 CEFR等级: 
+💪 强项: 无
+⚠️  弱项: 无
+❓ 系统输出（下一题）: That sounds like a healthy morning routine! Speaking of good habits, do you try to do anything to stay healthy during the day, like exercising, eating...
+
+第 2 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: 
+📝 用户输入（转录）: Yes, I like healthy food. I eat fruits and vegetables every day.
+📊 评分: None/100
+🎯 CEFR等级: 
+💪 强项: 无
+⚠️  弱项: 无
+❓ 系统输出（下一题）: It's great that you care about eating healthy food! Besides food, some people try to protect the environment in their daily life, like using less plas...
+
+第 3 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: 
+📝 用户输入（转录）: I think exercise is important. I go jogging three times a week.
+📊 评分: None/100
+🎯 CEFR等级: 
+💪 强项: 无
+⚠️  弱项: 无
+❓ 系统输出（下一题）: You mentioned that you go jogging three times a week to stay healthy. Some people also choose sports or join clubs at school or work to make new frien...
+
+第 1 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: 
+📝 用户输入（转录）: 
+📊 评分: None/100
+🎯 CEFR等级: 
+💪 强项: 无
+⚠️  弱项: 无
+❓ 系统输出（下一题）: 
+
+第 2 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: 
+📝 用户输入（转录）: 
+📊 评分: None/100
+🎯 CEFR等级: 
+💪 强项: 无
+⚠️  弱项: 无
+❓ 系统输出（下一题）: 
+
+第 3 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: 
+📝 用户输入（转录）: 
+📊 评分: 39.75/100
+🎯 CEFR等级: 
+💪 强项: 无
+⚠️  弱项: 无
+❓ 系统输出（下一题）: 
+
+第 1 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: test_simple.mp3
+📝 用户输入（转录）: i am a student i like reading books
+📊 评分: 28.2/100
+🎯 CEFR等级: A1
+💪 强项: 无
+⚠️  弱项: 无
+❓ 系统输出（下一题）: That’s great! You like reading books. What kind of books do you enjoy? For example, do you like stor...
+
+第 2 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: test_medium.mp3
+📝 用户输入（转录）: i am a student i like reading books very much reading helps me learn new words and improve my english skills i read for about 30 minutes every day
+📊 评分: 36.5/100
+🎯 CEFR等级: A2
+💪 强项: 内容相关性
+⚠️  弱项: 语言准确性, 表达流利度, 词汇丰富度, 交互深度
+❓ 系统输出（下一题）: You said you like reading books and it helps you learn new words. That’s wonderful! Besides reading,...
+
+================================================================================
+报告生成完成
+================================================================================

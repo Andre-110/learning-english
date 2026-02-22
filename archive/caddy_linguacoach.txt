@@ -1,0 +1,59 @@
+# LinguaCoach Caddy 配置
+# 
+# 选项 1: 使用子域名（推荐）
+# 将以下内容添加到 /etc/caddy/Caddyfile
+# 需要先在 DNS 中添加 A 记录: linguacoach.usergenie.ai -> 服务器IP
+
+linguacoach.usergenie.ai {
+    # 启用日志
+    log {
+        output file /var/log/caddy/linguacoach.log
+        format json
+    }
+
+    # 启用压缩
+    encode gzip zstd
+
+    # WebSocket 端点 - 必须放在前面
+    reverse_proxy /ws/* localhost:8000 {
+        header_up Host {host}
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto {scheme}
+    }
+
+    # 所有其他请求
+    reverse_proxy localhost:8000 {
+        header_up Host {host}
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto {scheme}
+    }
+}
+
+# ============================================
+# 选项 2: 使用路径前缀（在现有域名下）
+# 将以下内容添加到现有 usergenie.ai 配置中
+# ============================================
+
+# 在 usergenie.ai { } 内添加:
+#
+#     # LinguaCoach 英语学习应用
+#     reverse_proxy /linguacoach/* localhost:8000 {
+#         header_up Host {host}
+#         header_up X-Real-IP {remote_host}
+#         header_up X-Forwarded-For {remote_host}
+#         header_up X-Forwarded-Proto {scheme}
+#     }
+
+# ============================================
+# 选项 3: 直接端口访问（最简单，但需要开放防火墙）
+# ============================================
+# 
+# 不需要修改 Caddy，直接访问:
+# http://服务器IP:8000
+# 
+# 需要在 AWS 安全组开放 8000 端口
+
+
+

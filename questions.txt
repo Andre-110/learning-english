@@ -1,0 +1,101 @@
+# 用户反馈问题分类与解决状态
+
+## 问题列表
+
+| 类别 | 问题描述 | 出现次数 | 严重程度 | 分类 | 状态 |
+|------|---------|---------|---------|------|------|
+| 交互-延迟 | 评估反馈延迟，到下一对话上一个才出来 | 3人 | 高 | 🔧 技术层面 | ✅ 已解决 |
+| 交互-截断 | 话没说完被AI打断 | 2人 | 高 | 🔧 技术层面 | ✅ 已解决 |
+| 交互-漏录 | 句子没录入/识别不出语音 | 2人 | 高 | 🔧 技术层面 | ✅ 已解决 |
+| 交互-时序 | 上一对话回答出现在下一对话开头 | 1人 | 中 | 🔧 技术层面 | ✅ 已解决 |
+| 交互-卡顿 | 卡顿明显 | 2人 | 中 | 🔧 技术层面 | ✅ 已解决 |
+| AI-无聊 | 回答无聊/AI味重 | 3人 | 高 | 📝 Prompt微调 | ✅ 已优化 |
+| AI-话题 | 话题不感兴趣/同样问题追问 | 2人 | 高 | 📝 Prompt微调 | ⚠️ 部分解决 |
+| AI-赞美 | 无论说什么都赞美 | 1人 | 中 | 📝 Prompt微调 | ✅ 已优化 |
+| AI-纠错 | 纠错栏跟不上速度 | 1人 | 中 | 🔧 技术层面 | ✅ 已解决 |
+| 功能-教学 | 缺少模仿跟读等教学功能 | 2人 | 中 | 🚀 功能拓展 | ❌ 待开发 |
+| 体验-提升 | 口语提升体感不足 | 2人 | 中 | 🚀 功能拓展 | ❌ 待设计 |
+
+---
+
+## 技术问题对照 UserGenie（完整复制）
+
+### 1. 评估反馈延迟 ✅
+
+| 对比项 | UserGenie | 本项目 |
+|--------|-----------|--------|
+| 评估异步 | 无评估模块（访谈系统） | `asyncio.create_task` 完全异步 |
+| 并发控制 | - | `Semaphore` 限制并发数 |
+| 顺序保证 | - | `order` 字段标识顺序 |
+
+### 2. 话没说完被AI打断 ✅
+
+| 对比项 | UserGenie | 本项目 |
+|--------|-----------|--------|
+| endpointing | 1000ms | 1000ms ✅ |
+| utterance_end_ms | 2000ms | 2000ms ✅ |
+| 语义完整性 | `isSemanticComplete()` | 完全复制 ✅ |
+
+**`isSemanticComplete` 完全对照：**
+- 不完整结尾词（英文）: to/for/with/in/on/at/by/from/of/about/into/and/but/or/because/so/if/when/while/although/the/a/an/can/could/will/would/shall/should/may/might/must/is/are/was/were/am/be/have/has/had/do/does/did
+- 不完整结尾词（中文）: 的/是/在/和/与/或/但/因为/所以/如果/要/想/会/能
+- 完整短语（英文）: yes/no/ok/okay/sure/right/exactly/i agree/i disagree/i don't know/thank you/thanks
+- 完整短语（中文）: 是的/不是/好的/可以/不行/谢谢/知道了/明白
+- 长度规则: 5词+标点→完整, 3词+→完整, 短句→默认完整
+
+### 3. 句子没录入 ✅
+
+| 对比项 | UserGenie | 本项目 |
+|--------|-----------|--------|
+| 音频缓冲 | `pendingAudioChunks` | `_pending_audio_buffer` ✅ |
+| 缓冲大小 | ~300 帧 | 300 帧 ✅ |
+| 重连前转录保存 | `preservedTranscriptBeforeReconnect` | `_preserved_transcript_before_reconnect` ✅ |
+| 自动重连 | 1秒后重连 | `auto_reconnect` + 最多3次 ✅ |
+
+### 4. 时序错乱 ✅
+
+| 对比项 | UserGenie | 本项目 |
+|--------|-----------|--------|
+| interim 处理 | 保存到 `lastInterimText`，不累加 | 保存到 `last_interim_text`，不累加 ✅ |
+| final 处理 | 累加到 `deepgramTranscript` | 累加到 `transcript_buffer` ✅ |
+| 显示逻辑 | buffer + interim (不重复) | buffer + interim (不重复) ✅ |
+| 兜底处理 | speech_final 时取 lastInterimText | utterance_end 时取 last_interim_text ✅ |
+
+### 5. 卡顿 ✅
+
+| 对比项 | UserGenie | 本项目 |
+|--------|-----------|--------|
+| LLM 超时 | 5000ms | 5000ms ✅ |
+| 备用服务 | Yunwu AI | `llm_backup_model` (gpt-4o-mini) ✅ |
+| 思考中提示 | 无 | 3秒后显示"AI正在思考..." (增强) |
+| TTS 超时重试 | 无 | 5秒超时 + 最多3次重试 (增强) |
+
+### 6. 纠错跟不上 ✅
+
+| 对比项 | UserGenie | 本项目 |
+|--------|-----------|--------|
+| 后端顺序 | 无评估模块 | `order` 字段 + `counter` ✅ |
+| 前端排序 | - | `evaluations.value.sort((a, b) => a.order - b.order)` ✅ |
+
+---
+
+## 代码修改清单
+
+| 文件 | 修改内容 |
+|------|---------|
+| `services/semantic_completeness.py` | 完全重写，复制 UserGenie 的 `isSemanticComplete` |
+| `services/deepgram_asr.py` | `endpointing`: 300ms → 1000ms |
+
+---
+
+## 汇总统计
+
+| 分类 | 数量 | 完成情况 |
+|------|------|---------|
+| 🔧 技术层面 | 6个 | ✅ 全部已解决 |
+| 📝 Prompt微调 | 3个 | ✅ 2个已优化，1个部分解决 |
+| 🚀 功能拓展 | 2个 | ❌ 需产品设计和开发 |
+
+---
+
+更新时间: 2026-01-25

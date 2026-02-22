@@ -1,0 +1,927 @@
+[
+  {
+    "scenario": "场景1：足球兴趣探索",
+    "turns": [
+      {
+        "turn": 1,
+        "user_input": "Hello! I want to talk about football.",
+        "transcription": "Hello, I want to talk about football.",
+        "ai_response": "That sounds exciting! Do you have a favorite team or player? (听起来很有趣！你有最喜欢的球队或球员吗？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football"
+        ],
+        "process_time": 2.7530086040496826,
+        "tts_time": 2.5761232376098633,
+        "flow_analysis": {
+          "turn_count": 1,
+          "topic_consistency": true,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": []
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "poor",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.7196626663208008,
+          "topic_management_reason": "话题跳跃"
+        },
+        "total_evaluation_time": 1.7202346324920654
+      },
+      {
+        "turn": 2,
+        "user_input": "I really like Messi. He is amazing.",
+        "transcription": "I really like Messi. He is amazing.",
+        "ai_response": "Messi is an amazing player! He was born in Argentina in 1987. (梅西是一位了不起的球员！他1987年出生于阿根廷。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi"
+        ],
+        "process_time": 4.269199848175049,
+        "tts_time": 1.2217788696289062,
+        "flow_analysis": {
+          "turn_count": 2,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 2: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "good",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.6824946403503418,
+          "topic_management_reason": "话题延续良好"
+        },
+        "total_evaluation_time": 1.6826231479644775
+      },
+      {
+        "turn": 3,
+        "user_input": "Can you tell me more about his early career?",
+        "transcription": "Can you tell me more about his early career?",
+        "ai_response": "Sure! Messi joined Barcelona's youth academy at age 13. He made his professional debut at 17. (当然！梅西13岁时加入了巴塞罗那的青训营。他17岁时完成了职业首秀。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi"
+        ],
+        "process_time": 3.404686689376831,
+        "tts_time": 1.2326931953430176,
+        "flow_analysis": {
+          "turn_count": 3,
+          "topic_consistency": false,
+          "response_relevance": false,
+          "context_awareness": true,
+          "issues": [
+            "Turn 3: AI未回应用户话题",
+            "Turn 3: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 3,
+          "grammar_errors": [],
+          "semantic_coherence": false,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "poor",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 2.761481761932373,
+          "topic_management_reason": "话题跳跃"
+        },
+        "total_evaluation_time": 2.7616522312164307
+      },
+      {
+        "turn": 4,
+        "user_input": "What about his achievements in Barcelona?",
+        "transcription": "What about his achievements in Barcelona?",
+        "ai_response": "Messi won many titles with Barcelona! He won 10 La Liga titles and 3 Champions League trophies. (梅西在巴塞罗那赢得了众多冠军！他赢得了10次西甲冠军和3次欧冠奖杯。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "Barcelona"
+        ],
+        "process_time": 4.1579179763793945,
+        "tts_time": 0.9935567378997803,
+        "flow_analysis": {
+          "turn_count": 4,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 4: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "fair",
+          "relevance_score": 100,
+          "relevance_evaluation_time": 1.4047718048095703,
+          "topic_management_reason": "话题部分延续"
+        },
+        "total_evaluation_time": 1.4049396514892578
+      },
+      {
+        "turn": 5,
+        "user_input": "I also want to know about his family life.",
+        "transcription": "I also want to know about his family life.",
+        "ai_response": "Messi has a close family! He has a wife named Antonela Roccuzzo and three sons. (梅西有一个亲密的家庭！他的妻子是安东内拉·罗塞图，他们有三个儿子。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "football",
+          "Lionel Messi",
+          "Barcelona"
+        ],
+        "process_time": 4.35513973236084,
+        "tts_time": 2.2081382274627686,
+        "flow_analysis": {
+          "turn_count": 5,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 5: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "fair",
+          "relevance_score": 100,
+          "relevance_evaluation_time": 1.4818170070648193,
+          "topic_management_reason": "话题部分延续"
+        },
+        "total_evaluation_time": 1.4819896221160889
+      }
+    ]
+  },
+  {
+    "scenario": "场景2：电影话题转换",
+    "turns": [
+      {
+        "turn": 1,
+        "user_input": "Hi! I watched a movie yesterday.",
+        "transcription": "Hi, I watched a movie yesterday.",
+        "ai_response": "That sounds interesting! What kind of movie did you watch? (听起来很有趣！你看了什么类型的电影？)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "movies"
+        ],
+        "process_time": 2.873603582382202,
+        "tts_time": 1.7849597930908203,
+        "flow_analysis": {
+          "turn_count": 1,
+          "topic_consistency": true,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": []
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "fair",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.425201654434204,
+          "topic_management_reason": "话题部分延续"
+        },
+        "total_evaluation_time": 1.425295114517212
+      },
+      {
+        "turn": 2,
+        "user_input": "It was about time travel. Very interesting.",
+        "transcription": "It was about time travel, very interesting.",
+        "ai_response": "Time travel movies are fascinating! Have you seen 'Interstellar' or 'Back to the Future'? (时间旅行电影很有趣！你看过《星际穿越》或《回到未来》吗？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "movies",
+          "time travel"
+        ],
+        "process_time": 3.566570281982422,
+        "tts_time": 1.720332145690918,
+        "flow_analysis": {
+          "turn_count": 2,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 2: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 3,
+          "grammar_errors": [],
+          "semantic_coherence": false,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "good",
+          "relevance_score": 90,
+          "relevance_evaluation_time": 1.2704331874847412,
+          "topic_management_reason": "话题延续良好"
+        },
+        "total_evaluation_time": 1.2705883979797363
+      },
+      {
+        "turn": 3,
+        "user_input": "Have you seen Interstellar?",
+        "transcription": "Have you seen Interstellar?",
+        "ai_response": "Yes, I have! 'Interstellar' is a great sci-fi film about space travel and time. (是的，我看过！《星际穿越》是一部关于太空旅行和时间的优秀科幻电影。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "movies",
+          "time travel"
+        ],
+        "process_time": 4.958845376968384,
+        "tts_time": 1.6745679378509521,
+        "flow_analysis": {
+          "turn_count": 3,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 3: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "fair",
+          "relevance_score": 100,
+          "relevance_evaluation_time": 1.5809171199798584,
+          "topic_management_reason": "话题部分延续"
+        },
+        "total_evaluation_time": 1.5810511112213135
+      },
+      {
+        "turn": 4,
+        "user_input": "I prefer science fiction movies.",
+        "transcription": "I prefer science fiction movies.",
+        "ai_response": "That's great! Do you have a favorite sci-fi movie? (很棒！你有最喜欢的科幻电影吗？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "science fiction movies"
+        ],
+        "process_time": 3.990063428878784,
+        "tts_time": 2.035494089126587,
+        "flow_analysis": {
+          "turn_count": 4,
+          "topic_consistency": false,
+          "response_relevance": false,
+          "context_awareness": true,
+          "issues": [
+            "Turn 4: AI未回应用户话题",
+            "Turn 4: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 3,
+          "grammar_errors": [],
+          "semantic_coherence": false,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "poor",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.4464387893676758,
+          "topic_management_reason": "话题跳跃"
+        },
+        "total_evaluation_time": 1.4465560913085938
+      },
+      {
+        "turn": 5,
+        "user_input": "What other sci-fi movies do you recommend?",
+        "transcription": "What other sci-fi movies do you recommend?",
+        "ai_response": "I really like 'Blade Runner' and 'The Matrix'. They're both great sci-fi films with interesting stories about the future. (我真的很喜欢《银翼杀手》和《黑客帝国》。它们都是关于未来的精彩科幻电影，有着有趣的故事。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "science fiction movies",
+          "movie recommendations"
+        ],
+        "process_time": 5.678086757659912,
+        "tts_time": 1.632416009902954,
+        "flow_analysis": {
+          "turn_count": 5,
+          "topic_consistency": true,
+          "response_relevance": false,
+          "context_awareness": true,
+          "issues": [
+            "Turn 5: AI未回应用户话题"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "poor",
+          "relevance_score": 100,
+          "relevance_evaluation_time": 1.5313374996185303,
+          "topic_management_reason": "话题跳跃"
+        },
+        "total_evaluation_time": 1.5314857959747314
+      }
+    ]
+  },
+  {
+    "scenario": "场景3：学习英语动机",
+    "turns": [
+      {
+        "turn": 1,
+        "user_input": "I want to improve my English.",
+        "transcription": "I want to improve my English.",
+        "ai_response": "That's a great goal! Want to start with something specific like speaking, writing, or vocabulary? (这是一个很棒的目标！想从口语、写作还是词汇开始呢？)",
+        "score": 35,
+        "level": "A2",
+        "interests": [
+          "English learning"
+        ],
+        "process_time": 3.3969016075134277,
+        "tts_time": 1.4125549793243408,
+        "flow_analysis": {
+          "turn_count": 1,
+          "topic_consistency": true,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": []
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "fair",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.6521470546722412,
+          "topic_management_reason": "话题部分延续"
+        },
+        "total_evaluation_time": 1.652245283126831
+      },
+      {
+        "turn": 2,
+        "user_input": "I need it for my job.",
+        "transcription": "I need it for my job.",
+        "ai_response": "That's great to hear! What kind of job do you do? (听起来很棒！你的工作是什么？)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "job-related English",
+          "workplace communication"
+        ],
+        "process_time": 4.288370132446289,
+        "tts_time": 0.9881532192230225,
+        "flow_analysis": {
+          "turn_count": 2,
+          "topic_consistency": false,
+          "response_relevance": false,
+          "context_awareness": true,
+          "issues": [
+            "Turn 2: AI未回应用户话题",
+            "Turn 2: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "poor",
+          "relevance_score": 90,
+          "relevance_evaluation_time": 2.00773286819458,
+          "topic_management_reason": "话题跳跃"
+        },
+        "total_evaluation_time": 2.007852554321289
+      },
+      {
+        "turn": 3,
+        "user_input": "I work in a technology company.",
+        "transcription": "I work in a technology company.",
+        "ai_response": "That's great! What kind of technology do you work with? (听起来很棒！你从事哪种技术工作？)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "technology",
+          "workplace communication"
+        ],
+        "process_time": 4.7938501834869385,
+        "tts_time": 0.9617023468017578,
+        "flow_analysis": {
+          "turn_count": 3,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 3: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "good",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.7450003623962402,
+          "topic_management_reason": "话题延续良好"
+        },
+        "total_evaluation_time": 1.7451188564300537
+      },
+      {
+        "turn": 4,
+        "user_input": "We have many international clients.",
+        "transcription": "We have many international clients.",
+        "ai_response": "That's great! Do you work with clients from many different countries? (听起来很棒！你和很多不同国家的客户合作吗？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "technology",
+          "international clients",
+          "workplace communication"
+        ],
+        "process_time": 3.752058982849121,
+        "tts_time": 1.1027460098266602,
+        "flow_analysis": {
+          "turn_count": 4,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 4: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "good",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.4110753536224365,
+          "topic_management_reason": "话题延续良好"
+        },
+        "total_evaluation_time": 1.4111979007720947
+      },
+      {
+        "turn": 5,
+        "user_input": "So I need to communicate better in English.",
+        "transcription": "So, I need to communicate better in English.",
+        "ai_response": "That's a great goal for your career! What specific situations at work do you want to improve? (这是一个很好的职业发展目标！你想在工作中提升哪些具体方面的沟通能力？)",
+        "score": 40,
+        "level": "A2",
+        "interests": [
+          "job-related English",
+          "workplace communication",
+          "professional development"
+        ],
+        "process_time": 4.587301254272461,
+        "tts_time": 1.1045520305633545,
+        "flow_analysis": {
+          "turn_count": 5,
+          "topic_consistency": false,
+          "response_relevance": false,
+          "context_awareness": true,
+          "issues": [
+            "Turn 5: AI未回应用户话题",
+            "Turn 5: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "poor",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.3240034580230713,
+          "topic_management_reason": "话题跳跃"
+        },
+        "total_evaluation_time": 1.3242063522338867
+      }
+    ]
+  },
+  {
+    "scenario": "场景4：兴趣爱好深入",
+    "turns": [
+      {
+        "turn": 1,
+        "user_input": "I love reading books.",
+        "transcription": "I love reading books.",
+        "ai_response": "That's wonderful! What kind of books do you enjoy reading? (这很棒！你喜欢读什么类型的书？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "reading",
+          "books"
+        ],
+        "process_time": 2.641489267349243,
+        "tts_time": 0.8769125938415527,
+        "flow_analysis": {
+          "turn_count": 1,
+          "topic_consistency": true,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": []
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "good",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.555546760559082,
+          "topic_management_reason": "话题延续良好"
+        },
+        "total_evaluation_time": 1.5556364059448242
+      },
+      {
+        "turn": 2,
+        "user_input": "Especially mystery novels.",
+        "transcription": "especially mystery novels.",
+        "ai_response": "Mystery novels are exciting! Who is your favorite detective? (神秘小说很刺激！你最喜欢的侦探是谁？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "mystery novels",
+          "reading"
+        ],
+
+        "tts_time": 0.9103009700775146,
+        "flow_analysis": {
+          "turn_count": 2,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 2: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 3,
+          "grammar_errors": [],
+          "semantic_coherence": false,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "good",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.3172948360443115,
+          "topic_management_reason": "话题延续良好"
+        },
+        "total_evaluation_time": 1.3174209594726562
+      },
+      {
+        "turn": 3,
+        "user_input": "Agatha Christie is my favorite author.",
+        "transcription": "Agatha Christie is my favorite author.",
+        "ai_response": "Agatha Christie is amazing! Her book 'Murder on the Orient Express' is very famous. (阿加莎·克里斯蒂很棒！她的《东方快车谋杀案》非常有名。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "reading",
+          "mystery novels",
+          "Agatha Christie"
+        ],
+        "process_time": 3.194061517715454,
+        "tts_time": 1.3906896114349365,
+        "flow_analysis": {
+          "turn_count": 3,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 3: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 3,
+          "grammar_errors": [],
+          "semantic_coherence": false,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "good",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.5332751274108887,
+          "topic_management_reason": "话题延续良好"
+        },
+        "total_evaluation_time": 1.5334105491638184
+      },
+      {
+        "turn": 4,
+        "user_input": "I've read almost all her books.",
+        "transcription": "I've read almost all her books.",
+        "ai_response": "That's impressive! Have you read her book 'The Murder of Roger Ackroyd'? (真厉害！你读过她的《罗杰疑案》吗？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "reading",
+          "Agatha Christie",
+          "mystery novels"
+        ],
+        "process_time": 4.632314443588257,
+        "tts_time": 0.9820528030395508,
+        "flow_analysis": {
+          "turn_count": 4,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 4: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 3,
+          "grammar_errors": [],
+          "semantic_coherence": false,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "fair",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.4237382411956787,
+          "topic_management_reason": "话题部分延续"
+        },
+        "total_evaluation_time": 1.4238674640655518
+      },
+      {
+        "turn": 5,
+        "user_input": "Can you recommend similar authors?",
+        "transcription": "Can you recommend similar authors?",
+        "ai_response": "Sure! Do you like detective stories? I can suggest some authors who write similar mysteries. (当然！你喜欢侦探故事吗？我可以推荐一些写类似悬疑小说的作家。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "mystery novels",
+          "Agatha Christie"
+        ],
+        "process_time": 4.552615642547607,
+        "tts_time": 12.332050085067749,
+        "flow_analysis": {
+          "turn_count": 5,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 5: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 3,
+          "grammar_errors": [],
+          "semantic_coherence": false,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "good",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.2864670753479004,
+          "topic_management_reason": "话题延续良好"
+        },
+        "total_evaluation_time": 1.2866089344024658
+      }
+    ]
+  },
+  {
+    "scenario": "场景5：话题跳跃测试",
+    "turns": [
+      {
+        "turn": 1,
+        "user_input": "I like playing basketball.",
+        "transcription": "I like playing basketball.",
+        "ai_response": "That sounds fun! Do you play with friends or in a team? (听起来很有趣！你是和朋友打还是在球队打？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "basketball",
+          "sports"
+        ],
+        "process_time": 2.837620735168457,
+        "tts_time": 1.0348787307739258,
+        "flow_analysis": {
+          "turn_count": 1,
+          "topic_consistency": true,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": []
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "poor",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.424729585647583,
+          "topic_management_reason": "话题跳跃"
+        },
+        "total_evaluation_time": 1.4248104095458984
+      },
+      {
+        "turn": 2,
+        "user_input": "But I also enjoy cooking.",
+        "transcription": "But I also enjoy cooking.",
+        "ai_response": "That's great! What kind of food do you like to cook? (那很棒！你喜欢做什么菜？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "cooking",
+          "basketball"
+        ],
+        "process_time": 2.9989848136901855,
+        "tts_time": 1.016003131866455,
+        "flow_analysis": {
+          "turn_count": 2,
+          "topic_consistency": false,
+          "response_relevance": false,
+          "context_awareness": true,
+          "issues": [
+            "Turn 2: AI未回应用户话题",
+            "Turn 2: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "poor",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.2945668697357178,
+          "topic_management_reason": "话题跳跃"
+        },
+        "total_evaluation_time": 1.2947006225585938
+      },
+      {
+        "turn": 3,
+        "user_input": "Actually, I'm learning to cook Italian food.",
+        "transcription": "Actually I'm learning to cook Italian food.",
+        "ai_response": "That's wonderful! What Italian dishes do you enjoy making? (那很棒！你喜欢做什么意大利菜？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "cooking",
+          "Italian cuisine",
+          "food"
+        ],
+        "process_time": 5.04421854019165,
+        "tts_time": 1.1124255657196045,
+        "flow_analysis": {
+          "turn_count": 3,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 3: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 5,
+          "grammar_errors": [],
+          "semantic_coherence": true,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "fair",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.3494319915771484,
+          "topic_management_reason": "话题部分延续"
+        },
+        "total_evaluation_time": 1.349552869796753
+      },
+      {
+        "turn": 4,
+        "user_input": "Do you know how to make pasta?",
+        "transcription": "Do you know how to make pasta?",
+        "ai_response": "Yes, I can help you with that! Pasta is a delicious Italian dish. (是的，我可以帮你！意大利面是一道美味的意大利菜。)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "cooking",
+          "Italian food",
+          "pasta"
+        ],
+        "process_time": 3.433676242828369,
+        "tts_time": 1.5993609428405762,
+        "flow_analysis": {
+          "turn_count": 4,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 4: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 3,
+          "grammar_errors": [],
+          "semantic_coherence": false,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "fair",
+          "relevance_score": 85,
+          "relevance_evaluation_time": 1.368302822113037,
+          "topic_management_reason": "话题部分延续"
+        },
+        "total_evaluation_time": 1.3684329986572266
+      },
+      {
+        "turn": 5,
+        "user_input": "I want to try making pizza next.",
+        "transcription": "I want to try making pizza next.",
+        "ai_response": "Pizza is delicious! Do you want to learn how to make it? (披萨很好吃！你想学做吗？)",
+        "score": 45,
+        "level": "A2",
+        "interests": [
+          "cooking",
+          "Italian food",
+          "pizza"
+        ],
+        "process_time": 3.2896881103515625,
+        "tts_time": 1.0799922943115234,
+        "flow_analysis": {
+          "turn_count": 5,
+          "topic_consistency": false,
+          "response_relevance": true,
+          "context_awareness": true,
+          "issues": [
+            "Turn 5: 话题跳跃"
+          ]
+        },
+        "fluency_evaluation": {
+          "fluency_score": 3,
+          "grammar_errors": [],
+          "semantic_coherence": false,
+          "response_relevance": true,
+          "naturalness": true,
+          "issues": [],
+          "topic_management": "good",
+          "relevance_score": 95,
+          "relevance_evaluation_time": 1.4832370281219482,
+          "topic_management_reason": "话题延续良好"
+        },
+        "total_evaluation_time": 1.4833598136901855
+      }
+    ]
+  }
+]

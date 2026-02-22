@@ -1,0 +1,722 @@
+[
+  {
+    "level": "A1",
+    "input": "我不会说英语，请帮帮我",
+    "description": "纯中文输入",
+    "suggestions": {
+      "score": 15,
+      "level": "A1",
+      "strengths": [],
+      "weaknesses": [
+        "No English used",
+        "Cannot express inability to speak English"
+      ],
+      "corrections": [
+        {
+          "original": "我不会说英语",
+          "corrected": "I can't speak English",
+          "explanation": "Use 'I can't speak English' to express inability to speak English."
+        },
+        {
+          "original": "请帮帮我",
+          "corrected": "Please help me",
+          "explanation": "Use 'Please help me' for polite requests."
+        }
+      ],
+      "good_expressions": [],
+      "encouragement": "Good thought! Try saying: 'I can't speak English. Please help me.'"
+    },
+    "transcription": "我不会说英语，请帮帮我。",
+    "response": "I can help you learn English! (我可以帮你学英语！) Let's start with simple words. (让我们从简单的单词开始！)",
+    "tts_time": 1.9642250537872314,
+    "omni_time": 4.5050084590911865
+  },
+  {
+    "level": "A1",
+    "input": "Hello. Yes. Good.",
+    "description": "极简单词",
+    "suggestions": {
+      "score": 30,
+      "level": "A1",
+      "strengths": [
+        "Basic greeting",
+        "Simple positive response"
+      ],
+      "weaknesses": [
+        "Incomplete sentence",
+        "Missing subject"
+      ],
+      "corrections": [
+        {
+          "original": "yes, good",
+          "corrected": "I am good",
+          "explanation": "Add a subject like 'I' to make a complete sentence."
+        }
+      ],
+      "good_expressions": [
+        "Hello",
+        "good"
+      ],
+      "encouragement": "Great start! Try saying 'I am good' to complete your sentence."
+    },
+    "transcription": "Hello, yes, good.",
+    "response": "Hello! How are you today? (你好！你今天怎么样？)",
+    "tts_time": 1.0177347660064697,
+    "omni_time": 3.556107521057129
+  },
+  {
+    "level": "A1",
+    "input": "I like 苹果. 很好吃.",
+    "description": "中英文混杂，简单词汇",
+    "suggestions": {
+      "score": 25,
+      "level": "A1",
+      "strengths": [
+        "Simple sentence structure",
+        "Basic vocabulary"
+      ],
+      "weaknesses": [
+        "Mixed languages",
+        "Incomplete English expression"
+      ],
+      "corrections": [
+        {
+          "original": "I like 苹果，很好吃。",
+          "corrected": "I like apples. They are delicious.",
+          "explanation": "In English, 'apple' is the word for '苹果'. 'They are delicious' is a natural way to say '很好吃'."
+        }
+      ],
+      "good_expressions": [
+        "I like",
+        "very delicious"
+      ],
+      "encouragement": "Good start! Try saying the full sentence in English next time: 'I like apples. They are delicious.'"
+    },
+    "transcription": "I like 苹果，很好吃。",
+    "response": "Apples are delicious! Do you prefer eating them raw or cooked? (苹果真好吃！你喜欢生吃还是煮着吃？)",
+    "tts_time": 1.2291688919067383,
+    "omni_time": 4.162133455276489
+  },
+  {
+    "level": "A1",
+    "input": "请tell me about 足球",
+    "description": "中英文混杂，简单结构",
+    "suggestions": {
+      "score": 30,
+      "level": "A1",
+      "strengths": [
+        "Attempted to use English"
+      ],
+      "weaknesses": [
+        "Incorrect word choice",
+        "Missing article"
+      ],
+      "corrections": [
+        {
+          "original": "Tell me about Fu Chou",
+          "corrected": "Tell me about Fu Chou",
+          "explanation": "The word 'Fu Chou' is likely a name, so no correction needed. However, 'Fu Chou' might be a typo or mispronunciation of 'Foucault' or another name. If you meant 'Foucault', please clarify."
+        }
+      ],
+      "good_expressions": [],
+      "encouragement": "Good attempt! Try saying 'Tell me about Foucault' if you meant the philosopher."
+    },
+    "transcription": "请 Tell me about Fu Chou",
+    "response": "Sure! Foucault was a famous French philosopher who studied power, knowledge, and society. (当然！福柯是一位著名的法国哲学家，研究权力、知识和社会。)",
+    "tts_time": 1.0162925720214844,
+    "omni_time": 4.32010817527771
+  },
+  {
+    "level": "A2",
+    "input": "I like play basketball. Yesterday I go to school.",
+    "description": "简单句有错误",
+    "suggestions": {
+      "score": 30,
+      "level": "A2",
+      "strengths": [
+        "Expressed a clear interest in basketball",
+        "Used past tense correctly with 'yesterday'"
+      ],
+      "weaknesses": [
+        "Incorrect verb form after 'like'",
+        "Missing article before 'school'"
+      ],
+      "corrections": [
+        {
+          "original": "like play",
+          "corrected": "like playing",
+          "explanation": "After 'like', use the -ing form: 'I like playing basketball'."
+        },
+        {
+          "original": "I go to school",
+          "corrected": "I went to school",
+          "explanation": "Use past tense 'went' for actions in the past, like yesterday."
+        }
+      ],
+      "good_expressions": [
+        "basketball",
+        "yesterday"
+      ],
+      "encouragement": "Good effort! Remember: 'like' + -ing form. Try: 'I like playing basketball.'"
+    },
+    "transcription": "I like play basketball. Yesterday I go to school.",
+    "response": "Playing basketball sounds like fun! Do you play in a team or just for fun? (打篮球听起来很有趣！你是和队友一起打还是随便玩玩？)",
+    "tts_time": 1.3989980220794678,
+    "omni_time": 4.513432264328003
+  },
+  {
+    "level": "A2",
+    "input": "I want to talk about 足球 with you. 梅西 is very good.",
+    "description": "中英文混杂，简单句子",
+    "suggestions": {
+      "score": 40,
+      "level": "A2",
+      "strengths": [
+        "Clear expression of interest",
+        "Good use of 'very good'"
+      ],
+      "weaknesses": [
+        "Incorrect spelling of 'Zhou Qiao' and 'Messi'"
+      ],
+      "corrections": [
+        {
+          "original": "zu qiao",
+          "corrected": "Zhou Qiao",
+          "explanation": "This is a proper name, so it should be capitalized and spelled correctly."
+        },
+        {
+          "original": "Mei xi",
+          "corrected": "Messi",
+          "explanation": "This refers to the famous football player Lionel Messi. The correct spelling is 'Messi'."
+        }
+      ],
+      "good_expressions": [
+        "I want to talk about",
+        "is very good"
+      ],
+      "encouragement": "Good attempt! Remember to check the spelling of names. Messi is a famous football player. Would you like to know more about him?"
+    },
+    "transcription": "I want to talk about zu qiao with you. Mei xi is very good.",
+    "response": "Messi is an amazing football player! He was born in Argentina in 1987. He joined Barcelona's youth academy at age 13 and became one of the greatest players in history. (梅西是一位了不起的足球运动员！他1987年出生于阿根廷。他在13岁时加入了巴塞罗那的青训营，并成为历史上最伟大的球员之一。)",
+    "tts_time": 1.4542040824890137,
+    "omni_time": 6.924662828445435
+  },
+  {
+    "level": "A2",
+    "input": "Yesterday I go to the park and see many people play 篮球",
+    "description": "中英文混杂，时态错误",
+    "suggestions": {
+      "score": 30,
+      "level": "A2",
+      "strengths": [
+        "Used past tense correctly for 'yesterday'"
+      ],
+      "weaknesses": [
+        "Verb tense error: 'go' should be 'went'",
+        "Word choice error: 'luncho' is not a real word"
+      ],
+      "corrections": [
+        {
+          "original": "I go",
+          "corrected": "I went",
+          "explanation": "Use past tense 'went' for actions that happened yesterday"
+        },
+        {
+          "original": "play luncho",
+          "corrected": "play lunch",
+          "explanation": "Did you mean 'play lunch'? But 'lunch' is a noun, not a verb. Maybe you meant 'eat lunch' or 'have lunch'?"
+        }
+      ],
+      "good_expressions": [
+        "Yesterday",
+        "many people"
+      ],
+      "encouragement": "Good attempt! Remember: 'yesterday' needs past tense verbs like 'went'."
+    },
+    "transcription": "Yesterday I go to the park and see many people play luncho.",
+    "response": "That sounds like a nice day! Did you see anyone doing something fun? (听起来很惬意！你看到有人在做有趣的事吗？)",
+    "tts_time": 2.07623553276062,
+    "omni_time": 8.31967830657959
+  },
+  {
+    "level": "A2",
+    "input": "He is a very good player, 我很like him",
+    "description": "中英文混杂，主谓一致错误",
+    "suggestions": {
+      "score": 30,
+      "level": "A2",
+      "strengths": [
+        "Clear sentence structure",
+        "Good use of descriptive words"
+      ],
+      "weaknesses": [
+        "Incorrect name: 'Wohan' likely meant 'Wuhan' or another name",
+        "Missing article: 'a very good player'",
+        "Preposition error: 'like him' should be 'likes him' for subject-verb agreement"
+      ],
+      "corrections": [
+        {
+          "original": "Wohan",
+          "corrected": "Wuhan",
+          "explanation": "Did you mean 'Wuhan'? It's a city in China. Or did you mean a person's name?"
+        },
+        {
+          "original": "He is a very good player, Wohan like him.",
+          "corrected": "He is a very good player. Wohan likes him.",
+          "explanation": "Add a period to separate sentences. Use 'likes' instead of 'like' because 'Wohan' is third person singular."
+        }
+      ],
+      "good_expressions": [
+        "very good player"
+      ],
+      "encouragement": "Good attempt! Remember: 'He likes' not 'He like'. Try saying: 'He is a very good player. Wohan likes him.'"
+    },
+    "transcription": "He is a very good player, Wohan like him.",
+    "response": "That sounds like you're talking about a player someone named Wohan admires. Do you know which sport he plays? (听起来你在说一个名叫Wohan的人喜欢的球员。你知道他踢什么运动吗？)",
+    "tts_time": 1.7283141613006592,
+    "omni_time": 7.540153741836548
+  },
+  {
+    "level": "B1",
+    "input": "I went to the cinema last weekend and watched a movie about time travel. It was very interesting.",
+    "description": "完整表达，偶有小错",
+    "suggestions": {
+      "score": 65,
+      "level": "B2",
+      "strengths": [
+        "Clear sentence structure",
+        "Good use of past tense",
+        "Appropriate vocabulary"
+      ],
+      "weaknesses": [
+        "Minor article omission: 'the cinema' is correct, but 'a movie' could be 'a film' for variety"
+      ],
+      "corrections": [],
+      "good_expressions": [
+        "went to the cinema",
+        "watched a movie",
+        "very interesting"
+      ],
+      "encouragement": "Great job! Your English is fluent and natural. Try using synonyms like 'a film' instead of 'a movie' to expand your vocabulary!"
+    },
+    "transcription": "I went to the cinema last weekend and watched a movie about time travel. It was very interesting.",
+    "response": "Time travel movies are fascinating! Have you seen 'Interstellar' or 'Back to the Future'? (时间旅行电影很有趣！你看过《星际穿越》或《回到未来》吗？)",
+    "tts_time": 2.0041046142578125,
+    "omni_time": 4.625467777252197
+  },
+  {
+    "level": "B1",
+    "input": "Last summer, I traveled to Beijing with my family. We visited the Great Wall and took many photos.",
+    "description": "有细节描述",
+    "suggestions": {
+      "score": 65,
+      "level": "B2",
+      "strengths": [
+        "Clear narrative structure",
+        "Good use of past tense",
+        "Appropriate vocabulary"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "Last summer",
+        "traveled to Beijing",
+        "visited the Great Wall",
+        "took many photos"
+      ],
+      "encouragement": "Excellent English! Your sentences are clear and natural. Keep practicing with more details!"
+    },
+    "transcription": "Last summer I traveled to Beijing with my family. We visited the Great Wall and took many photos.",
+    "response": "Beijing is such a fascinating city! The Great Wall is truly amazing to see in person. (北京是一座非常迷人的城市！亲眼看到长城真的很棒。)",
+    "tts_time": 1.6776812076568604,
+    "omni_time": 4.05452036857605
+  },
+  {
+    "level": "B1",
+    "input": "I think Messi is one of the best players in the world. 他的achievements真的很impressive.",
+    "description": "中英文混杂，但表达相对完整",
+    "suggestions": {
+      "score": 40,
+      "level": "A2",
+      "strengths": [
+        "Clear expression of opinion",
+        "Good vocabulary: 'best players', 'achievements'"
+      ],
+      "weaknesses": [
+        "Word choice error: 'Tada' instead of 'His'",
+        "Incorrect phrase: 'gender impressive' instead of 'are impressive'"
+      ],
+      "corrections": [
+        {
+          "original": "Tada achievements",
+          "corrected": "His achievements",
+          "explanation": "Use 'His' to show possession, not 'Tada' which is not English."
+        },
+        {
+          "original": "gender impressive",
+          "corrected": "are impressive",
+          "explanation": "The correct structure is 'are impressive' to describe achievements."
+        }
+      ],
+      "good_expressions": [
+        "one of the best players",
+        "in the world"
+      ],
+      "encouragement": "Good attempt! Try saying: 'I think Messi is one of the best players in the world. His achievements are impressive.'"
+    },
+    "transcription": "I think Messi is one of the best players in the world. Tada achievements gender impressive.",
+    "response": "Messi is indeed amazing! He won the Ballon d'Or eight times and led Argentina to win the 2022 World Cup. (梅西确实非常了不起！他八次获得金球奖，并带领阿根廷赢得了2022年世界杯。)",
+    "tts_time": 1.573953628540039,
+    "omni_time": 7.7679712772369385
+  },
+  {
+    "level": "B1",
+    "input": "I want to learn more about football, especially about Messi的playing style and his career.",
+    "description": "中英文混杂，有复杂结构",
+    "suggestions": {
+      "score": 65,
+      "level": "B1",
+      "strengths": [
+        "Clear expression of interest",
+        "Good use of specific terms: 'playing style', 'career'"
+      ],
+      "weaknesses": [
+        "Minor article omission: 'the football'",
+        "Could use more precise phrasing for 'playing style'"
+      ],
+      "corrections": [
+        {
+          "original": "football",
+          "corrected": "the football",
+          "explanation": "We usually say 'the football' when referring to the sport in general"
+        },
+        {
+          "original": "playing style",
+          "corrected": "playing style",
+          "explanation": "This is actually correct! 'Playing style' is the right term for how a player plays"
+        }
+      ],
+      "good_expressions": [
+        "learn more about",
+        "playing style",
+        "his career"
+      ],
+      "encouragement": "Great topic choice! You're expressing your interest clearly. Would you like to know about Messi's specific skills or his career milestones?"
+    },
+    "transcription": "I want to learn more about football, especially about Messi's playing style and his career.",
+    "response": "Messi is known for his incredible dribbling skills and vision on the field. He plays as an attacking midfielder or forward and is famous for his low center of gravity and quick changes of direction. (梅西以他出色的盘带技术和球场视野而闻名。他可以踢前腰或前锋位置，以低重心和快速变向而著称。)",
+    "tts_time": 2.0471482276916504,
+    "omni_time": 6.453569412231445
+  },
+  {
+    "level": "B2",
+    "input": "Although I was initially skeptical about the movie, I found myself captivated by its storyline and character development.",
+    "description": "复杂句式和从句",
+    "suggestions": {
+      "score": 75,
+      "level": "B2",
+      "strengths": [
+        "Complex sentence structure",
+        "Advanced vocabulary: skeptical, captivated, storyline, character development"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "initially skeptical",
+        "found myself captivated",
+        "storyline and character development"
+      ],
+      "encouragement": "Excellent use of advanced vocabulary and complex sentence structure!"
+    },
+    "transcription": "Although I was initially skeptical about the movie, I found myself captivated by its storyline and character development.",
+    "response": "That sounds like a really engaging film! What kind of storylines do you usually enjoy in movies? (听起来像一部很吸引人的电影！你通常喜欢电影中的什么故事情节？)",
+    "tts_time": 2.3075292110443115,
+    "omni_time": 3.3001644611358643
+  },
+  {
+    "level": "B2",
+    "input": "If I had known about this opportunity earlier, I would have prepared more thoroughly for the interview.",
+    "description": "虚拟语气和条件句",
+    "suggestions": {
+      "score": 75,
+      "level": "B2",
+      "strengths": [
+        "Correct use of past perfect and conditional structures",
+        "Clear expression of hypothetical situation"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "If I had known",
+        "would have prepared",
+        "more thoroughly",
+        "for the interview"
+      ],
+      "encouragement": "Excellent use of advanced grammar! Your sentence is very clear and natural."
+    },
+    "transcription": "If I had known about this opportunity earlier, I would have prepared more thoroughly for the interview.",
+    "response": "That's a great reflection on the importance of preparation! (这是一个关于准备重要性的很好的反思！) Have you had any other interviews recently that you felt were well-prepared? (你最近有参加过其他你觉得准备充分的面试吗？)",
+    "tts_time": 1.5505151748657227,
+    "omni_time": 3.8490238189697266
+  },
+  {
+    "level": "B2",
+    "input": "Messi's playing style is really unique. 他的technique和vision让很多fans都admire him.",
+    "description": "中英文混杂，但使用复杂词汇",
+    "suggestions": {
+      "score": 30,
+      "level": "A2",
+      "strengths": [
+        "Uses some advanced vocabulary like 'unique'"
+      ],
+      "weaknesses": [
+        "Incorrect word choice: 'Tada technic her vision young can do fans do admire him'",
+        "Missing articles: 'the fans'",
+        "Subject-verb agreement error: 'fans do admire him' should be 'fans admire him'"
+      ],
+      "corrections": [
+        {
+          "original": "Tada technic her vision young can do fans do admire him",
+          "corrected": "His technique and vision are admired by young fans",
+          "explanation": "The original sentence has multiple errors. 'Tada' is likely a typo for 'His'. 'technic' should be 'technique'. 'her vision' should be 'his vision'. 'young can do fans do admire him' is grammatically incorrect. The correct structure is 'young fans admire him'."
+        },
+        {
+          "original": "do admire him",
+          "corrected": "admire him",
+          "explanation": "In present simple tense, 'do' is not needed before the main verb 'admire'."
+        }
+      ],
+      "good_expressions": [
+        "playing style",
+        "really unique"
+      ],
+      "encouragement": "Good attempt! Try to focus on subject-verb agreement and correct word choices next time."
+    },
+    "transcription": "Messi's playing style is really unique. Tada technic her vision young can do fans do admire him.",
+    "response": "Messi's playing style is really unique! His technique and vision are admired by young fans. (梅西的踢球风格真的很独特！他的技术和视野受到年轻球迷的钦佩。)",
+    "tts_time": 1.6956508159637451,
+    "omni_time": 6.901546955108643
+  },
+  {
+    "level": "B2",
+    "input": "The way Messi plays football demonstrates not only his exceptional talent but also his dedication to the sport.",
+    "description": "复杂句式，高级词汇",
+    "suggestions": {
+      "score": 85,
+      "level": "C1",
+      "strengths": [
+        "Advanced vocabulary: 'demonstrates', 'exceptional talent', 'dedication'",
+        "Complex sentence structure with conjunctions ('not only... but also...')",
+        "Natural and fluent expression"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "demonstrates",
+        "exceptional talent",
+        "dedication to the sport"
+      ],
+      "encouragement": "Excellent use of sophisticated language! Your sentence is very clear and well-structured."
+    },
+    "transcription": "The way Messi plays football demonstrates not only his exceptional talent but also his dedication to the sport.",
+    "response": "Messi is truly remarkable! He's known for his incredible dribbling skills and vision on the field. (梅西确实令人惊叹！他以出色的盘带技术和球场视野著称。)",
+    "tts_time": 2.2066104412078857,
+    "omni_time": 3.9592175483703613
+  },
+  {
+    "level": "C1",
+    "input": "The proliferation of artificial intelligence has precipitated a paradigm shift in how we conceptualize human-machine interaction.",
+    "description": "高级词汇和学术表达",
+    "suggestions": {
+      "score": 85,
+      "level": "C1",
+      "strengths": [
+        "Advanced vocabulary: proliferation, precipitated, paradigm shift",
+        "Complex sentence structure with subordinate clause",
+        "Formal and academic tone"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "proliferation of artificial intelligence",
+        "precipitated a paradigm shift",
+        "conceptualize human-machine interaction"
+      ],
+      "encouragement": "Excellent use of sophisticated language! Your sentence shows strong academic English skills."
+    },
+    "transcription": "The proliferation of artificial intelligence has precipitated a paradigm shift in how we conceptualize human-machine interaction.",
+    "response": "That's a fascinating perspective! AI is indeed transforming how we interact with machines. (这是一个很有意思的观点！人工智能确实在改变我们与机器互动的方式。)",
+    "tts_time": 1.9110417366027832,
+    "omni_time": 3.551708936691284
+  },
+  {
+    "level": "C1",
+    "input": "Notwithstanding the considerable obstacles that impeded our progress, we persevered and ultimately achieved unprecedented results in our research.",
+    "description": "复杂论述和精准用词",
+    "suggestions": {
+      "score": 85,
+      "level": "C1",
+      "strengths": [
+        "Sophisticated vocabulary: 'notwithstanding', 'considerable', 'impeded', 'unprecedented'",
+        "Complex sentence structure with subordinate clause",
+        "Formal and academic tone appropriate for research context"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "notwithstanding",
+        "considerable obstacles",
+        "impeded our progress",
+        "persevered",
+        "unprecedented results"
+      ],
+      "encouragement": "Excellent use of advanced vocabulary and complex structures! This is very impressive academic English."
+    },
+    "transcription": "Notwithstanding the considerable obstacles that impeded our progress, we persevered and ultimately achieved unprecedented results in our research.",
+    "response": "That's a powerful statement about resilience in research! (这是一句关于研究中坚韧不拔的有力陈述！) What specific field of research did you achieve these results in? (你在哪个具体的研究领域取得了这些成果？)",
+    "tts_time": 2.1181843280792236,
+    "omni_time": 4.609973192214966
+  },
+  {
+    "level": "C1",
+    "input": "Messi's career exemplifies the notion that exceptional talent, when combined with relentless perseverance, can transcend conventional limitations.",
+    "description": "高级词汇，复杂结构",
+    "suggestions": {
+      "score": 85,
+      "level": "C1",
+      "strengths": [
+        "Advanced vocabulary: 'exemplifies', 'relentless perseverance', 'transcend conventional limitations'",
+        "Complex sentence structure with relative clause: 'when combined with relentless perseverance'",
+        "Formal and sophisticated expression"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "exemplifies",
+        "relentless perseverance",
+        "transcend conventional limitations"
+      ],
+      "encouragement": "Excellent use of advanced vocabulary and complex structures! Your sentence is very clear and impactful."
+    },
+    "transcription": "Messi's career exemplifies the notion that exceptional talent, when combined with relentless perseverance, can transcend conventional limitations.",
+    "response": "Messi is indeed an incredible example of talent meeting determination. He started playing football at a very young age and faced many challenges, including a growth hormone deficiency, but his perseverance helped him become one of the greatest players in history. (梅西确实是天赋与毅力结合的绝佳例子。他很小就开始踢足球，还面临许多挑战，比如生长激素缺乏症，但他的坚持帮助他成为历史上最伟大的球员之一。)",
+    "tts_time": 2.0670604705810547,
+    "omni_time": 6.641097784042358
+  },
+  {
+    "level": "C1",
+    "input": "The intricate dynamics of modern football require players to possess not merely technical proficiency but also strategic acumen and psychological resilience.",
+    "description": "学术风格，复杂论述",
+    "suggestions": {
+      "score": 65,
+      "level": "B2",
+      "strengths": [
+        "Advanced vocabulary: intricate, dynamics, strategic acumen, psychological resilience",
+        "Complex sentence structure with conjunction 'not merely... but also...' and parallel structure"
+      ],
+      "weaknesses": [
+        "Missing comma after introductory clause: 'require players to possess not merely technical proficiency, it also strategic acumen...' should be 'require players to possess not merely technical proficiency, but also strategic acumen...' (Note: 'it also' is grammatically incorrect here)"
+      ],
+      "corrections": [
+        {
+          "original": "require players to possess not merely technical proficiency, it also strategic acumen",
+          "corrected": "require players to possess not merely technical proficiency, but also strategic acumen",
+          "explanation": "After 'not merely', use 'but also' to maintain parallel structure. 'It also' is incorrect because 'it' refers to 'players', which would make the sentence illogical. The correct conjunction is 'but also'."
+        }
+      ],
+      "good_expressions": [
+        "intricate dynamics",
+        "technical proficiency",
+        "strategic acumen",
+        "psychological resilience"
+      ],
+      "encouragement": "Excellent use of advanced vocabulary and complex structure! Just remember to use 'but also' instead of 'it also' after 'not merely'."
+    },
+    "transcription": "The intricate dynamics of modern football require players to possess not merely technical proficiency, it also strategic acumen and psychological resilience.",
+    "response": "You're absolutely right about the complexity of modern football! Players need more than just skills—they must think strategically and stay mentally strong. (你说得对，现代足球的复杂性要求球员不仅要有技能，还需要有战略思维和心理韧性。)",
+    "tts_time": 2.9495012760162354,
+    "omni_time": 9.681632041931152
+  },
+  {
+    "level": "C2",
+    "input": "The epistemological underpinnings of contemporary discourse reveal a fascinating interplay between Cartesian dualism and emergent materialism.",
+    "description": "接近母语水平的深度表达",
+    "suggestions": {
+      "score": 85,
+      "level": "C1",
+      "strengths": [
+        "Advanced vocabulary: epistemological, underpinnings, interplay, dualism, materialism",
+        "Complex sentence structure with subject-verb-object and prepositional phrases",
+        "Academic tone and precise expression"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "epistemological underpinnings",
+        "fascinating interplay",
+        "Cartesian dualism",
+        "emergent materialism"
+      ],
+      "encouragement": "Excellent use of sophisticated language! Your sentence shows strong academic English skills."
+    },
+    "transcription": "The epistemological underpinnings of contemporary discourse reveal a fascinating interplay between Cartesian dualism and emergent materialism.",
+    "response": "That's a very interesting philosophical concept! Cartesian dualism, proposed by René Descartes, separates mind and body as fundamentally different substances. In contrast, emergent materialism suggests that consciousness arises from complex physical processes. Have you read any works by philosophers like Daniel Dennett or David Chalmers who explore these ideas further? (这是一个非常有趣的哲学概念！笛卡尔二元论由勒内·笛卡尔提出，将心灵和身体视为根本不同的实体。相比之下，涌现唯物主义认为意识是从复杂的物理过程中产生的。你读过丹尼尔·丹尼特或大卫·查尔莫斯等哲学家探讨这些观点的作品吗？)",
+    "tts_time": 2.275052547454834,
+    "omni_time": 9.326295375823975
+  },
+  {
+    "level": "C2",
+    "input": "Lionel Messi's unparalleled mastery of the beautiful game transcends mere athleticism, embodying a synthesis of technical virtuosity, tactical intelligence, and artistic expression that has redefined the parameters of footballing excellence.",
+    "description": "母语水平，复杂论述",
+    "suggestions": {
+      "score": 85,
+      "level": "C1",
+      "strengths": [
+        "Advanced vocabulary: 'unparalleled mastery', 'tactical intelligence', 'artistic expression'",
+        "Complex sentence structure with multiple clauses",
+        "Sophisticated phrasing: 'transcends mere athleticism', 'redefined the parameters'"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "unparalleled mastery",
+        "tactical intelligence",
+        "artistic expression",
+        "redefined the parameters"
+      ],
+      "encouragement": "Excellent use of advanced vocabulary and complex sentence structure! Your English is very close to native-level proficiency."
+    },
+    "transcription": "Lionel Messi's unparalleled mastery of the beautiful game transcends mere athleticism, embodying a synthesis of technical virtuosity, tactical intelligence, and artistic expression that has redefined the parameters of footballing excellence.",
+    "response": "Messi is truly one of the greatest footballers in history! He's known for his incredible dribbling skills and vision on the field. (梅西确实是历史上最伟大的足球运动员之一！他以出色的盘带技术和球场视野著称。)",
+    "tts_time": 3.9347646236419678,
+    "omni_time": 7.499717712402344
+  },
+  {
+    "level": "C2",
+    "input": "The multifaceted nature of linguistic competence encompasses not only grammatical accuracy but also pragmatic appropriateness, sociolinguistic awareness, and the ability to navigate subtle nuances of meaning across diverse communicative contexts.",
+    "description": "学术深度，精准表达",
+    "suggestions": {
+      "score": 85,
+      "level": "C1",
+      "strengths": [
+        "Advanced vocabulary: 'multifaceted', 'pragmatic appropriateness', 'sociolinguistic awareness'",
+        "Complex sentence structure with multiple clauses",
+        "Precise academic language"
+      ],
+      "weaknesses": [],
+      "corrections": [],
+      "good_expressions": [
+        "multifaceted nature",
+        "pragmatic appropriateness",
+        "sociolinguistic awareness",
+        "navigate subtle nuances",
+        "diverse communicative contexts"
+      ],
+      "encouragement": "Excellent use of sophisticated academic language! Your sentence structure is very advanced."
+    },
+    "transcription": "A multifaceted nature of linguistic competence encompasses not only grammatical accuracy but also pragmatic appropriateness, sociolinguistic awareness, and the ability to navigate subtle nuances of meaning across diverse communicative contexts.",
+    "response": "That's a very insightful definition of linguistic competence! (这是一个关于语言能力的非常有见地的定义！) It's fascinating how language goes beyond just grammar to include cultural understanding and context awareness. Have you studied any specific theories about sociolinguistics or pragmatics? (你有没有研究过关于社会语言学或语用学的特定理论？)",
+    "tts_time": 3.5491533279418945,
+    "omni_time": 6.046054840087891
+  }
+]

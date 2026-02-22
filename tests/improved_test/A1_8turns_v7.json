@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T09:01:14.594531",
+    "level": "A1",
+    "turns": 8,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "music",
+        "technology",
+        "movies"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 2.105,
+    "user_avg_latency": 3.055,
+    "hot_search_avg_latency": 6.185,
+    "hot_content_events": 2
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "technology",
+      "headline": "Robots can now be your friends!",
+      "search_time": 6.86
+    },
+    {
+      "turn": 6,
+      "type": "async_search",
+      "topic": "music",
+      "headline": "Hilary Duff sings again after 10 years!",
+      "search_time": 5.51
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! Did you hear? Robots can be our friends now. Imagine having a robot puppy! Would you like one?",
+      "latency_s": 4.028,
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes! I hear. Robots can be friends, very cool! I like puppy. But, um, real puppy is better? They are cute and soft. Robot puppy, um, maybe fun? I think it can play, but not really, um, hug like real one. I... I like both! What you think?",
+      "latency_s": 3.32,
+      "word_count": 49
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, you think real puppies are better? I totally get that! They are so soft and cuddly. But robot puppies might be fun too, especially if they can do cool tricks! What's your favorite thing about real puppies?",
+      "latency_s": 1.72,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, my favorite thing about real puppies is they are very friendly! They like to play, and they love people. I like when they wag their tails, very happy! Also, um, they smell good, like, um, fresh. But, robot puppies can do tricks, yes? That is cool too. Maybe they can dance or... um, play ball?",
+      "latency_s": 2.592,
+      "word_count": 56
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, you love how real puppies are friendly and playful? That's great! I can just imagine their happy tails wagging. 😊 As for robot puppies, they can definitely do tricks like dancing or playing ball, which sounds fun! If you could teach a robot puppy any trick, what would it be?",
+      "latency_s": 1.829,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I like real puppy wagging tails! It is very cute. If robot puppy, um, I teach it to... um, dance! Yes, dance! It can dance like, um, people dance in party? That is fun! I think robot puppy can make happy too. \n\nBut, um, real puppies, they can hug. I like hug puppy. It's very warm and, um, feels good. Robot puppy cannot hug. What do you think?",
+      "latency_s": 2.876,
+      "word_count": 69
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, it **sounds** like you really enjoy hugs from real puppies! I agree, they are warm and comforting. 😊 Teaching a robot puppy to dance like at a party sounds like a lot of fun! What kind of dance would you want it to learn? Maybe something with lots of energy?",
+      "latency_s": 1.87,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I think, um, maybe like... like a happy dance? Like, um, jump and move fast! I want robot puppy to, uh, spin around and, um, wiggle tail. It is, uh, funny and, um, happy! I want to... um, show my friends, yes! What do you think?",
+      "latency_s": 3.273,
+      "word_count": 47
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, it **sounds** like you want your robot puppy to have a happy dance! That would be so fun to watch, especially with the spinning and tail wiggling. 😊 Showing your friends would be a blast! Have you ever thought about what kind of music the robot puppy would dance to?",
+      "latency_s": 2.055,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes! I think, um, maybe... like... like happy music? Um, maybe... pop music? I like pop music a lot. It makes me feel, um, good and want to dance too! Um, maybe robot puppy can dance with, um, a lot of colors and lights? That would be very cool! Um, my friends will like it too, I think. What music do you like?",
+      "latency_s": 3.281,
+      "word_count": 64
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Ah, pop music **makes** you feel good and want to dance? That's awesome! 😊 I love music with a good beat too, especially when it gets you moving. Adding colors and lights to the robot puppy's dance sounds like a party! I enjoy a mix of music styles, but something with a fun rhythm always catches my ear. What's your favorite pop song right now?",
+      "latency_s": 1.858,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, my favorite pop song... um, I think it is... uh, maybe \"Bad Guy\"?  It has, um, a strong beat. I like when... um, it makes me want to dance, you know? Um, I like music with, like, um, good rhythm! Sometimes, I listen to... um, Chinese pop music too.  It is also very fun! Do you like Chinese music?",
+      "latency_s": 2.662,
+      "word_count": 60
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Oh, \"Bad Guy\" has a great beat! It really does make you want to dance. 😊 It's cool that you also enjoy Chinese pop music. I think Chinese music has some really catchy tunes and interesting sounds. What's a Chinese pop song you enjoy?",
+      "latency_s": 1.863,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, yes! I like Chinese pop music too. I think... um, maybe \"The Clown\"? It’s very... um, happy and catchy! I like the singer, um, he has a nice voice. I listen when I do homework, um, it helps me feel good. Do you know this song?",
+      "latency_s": 2.79,
+      "word_count": 47
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Oh, \"The Clown\" sounds fun and happy! 😊 Do you like to sing along to pop songs? What's your favorite part of \"The Clown\"?",
+      "latency_s": 3.611,
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yes! I like to sing along. It’s fun. My favorite part... um, I think is the part when, uh, the singer say, “Laugh and smile!” It make me feel, um, happy. I try to sing that part, but sometimes, um, it's difficult. How about you? Do you like to sing?",
+      "latency_s": 3.647,
+      "word_count": 51
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Ah, it **makes** you happy? That's great! Singing along can be so much fun, especially with songs that lift your mood. 😊 I do enjoy singing too, though I'm not the best at it! There's something special about getting into the music and just letting go. What's a song that you find easy to sing along with?",
+      "latency_s": 2.032,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

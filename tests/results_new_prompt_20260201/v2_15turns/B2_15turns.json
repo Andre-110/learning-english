@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T17:04:25.408114",
+    "level": "B2",
+    "turns": 15,
+    "user_profile": {
+      "cefr_level": "B2",
+      "interests": [
+        "sports",
+        "movies",
+        "cooking"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.83,
+    "user_avg_latency": 1.894,
+    "strategies": {
+      "continue": 15
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "What’s your favorite dish to cook, and how does it make you feel when you share it with others? 😊 Feel free to answer naturally - I'll help if needed!",
+      "latency_s": 2.278,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, my favorite dish to cook is pasta, um, because it's easy and delicious. When I share it with others, I feel really happy. It's nice to see them enjoy the food. Sometimes, I add different sauces or vegetables, which makes it special. Cooking for friends creates a warm atmosphere, um, and I love that feeling.",
+      "latency_s": 1.818,
+      "word_count": 56,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That sounds wonderful! I totally get that warm feeling when sharing food. 😊 Do you have a favorite sauce or veggie you like to add to your pasta?",
+      "latency_s": 1.31,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, yes! My favorite sauce is marinara because it's rich and tangy. I also like to add vegetables like bell peppers and spinach. They make the dish more colorful and healthy. When I eat it, um, I feel happy because it reminds me of family dinners. Sharing it with friends is even better!",
+      "latency_s": 2.235,
+      "word_count": 53,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That sounds delicious! Marinara is such a classic choice. I love how adding colorful veggies makes it more appealing. 😊 Do you have a favorite memory from a family dinner that stands out to you?",
+      "latency_s": 1.515,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, yes! I remember a family dinner last year. We all gathered for my mom's birthday, and she made her special lasagna. It was so good! Everyone was laughing and telling stories. Um, I felt really happy to be together. Food brings us closer, I think.",
+      "latency_s": 1.584,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds like a wonderful memory! 😊 Celebrating with family and sharing delicious food is the best. Lasagna is such a comforting dish, too. Do you think you'll continue that tradition for birthdays in the future?",
+      "latency_s": 1.917,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes! I definitely want to continue that tradition. Birthdays are special, and sharing food makes them even better. Lasagna is so comforting, like a warm hug. I think my mom will keep making it for our family celebrations. Do you have a favorite birthday dish?",
+      "latency_s": 1.652,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, I love that idea! 😊 For my birthday, I always look forward to chocolate cake. It feels like a real treat! I have great memories of blowing out the candles with friends and family. What's your favorite dessert to have at celebrations?",
+      "latency_s": 2.668,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I really love cheesecake at celebrations! It’s creamy and sweet, and I think it’s perfect for special moments. I remember one birthday when my aunt made a huge cheesecake, and we all enjoyed it together. It felt so nice! Do you have a favorite flavor of chocolate cake?",
+      "latency_s": 1.749,
+      "word_count": 49,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Cheesecake is such a great choice! 🎉 I love a rich chocolate cake with chocolate ganache on top. It makes it feel extra special! Do you prefer your cheesecake plain, or do you like it with fruit or other toppings?",
+      "latency_s": 1.633,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, I think I like cheesecake with fruit on top, like strawberries or blueberries. It adds a fresh taste, and it's pretty too! But, uh, sometimes I enjoy it plain because the creaminess is really nice. Chocolate ganache sounds delicious! Do you eat it often?",
+      "latency_s": 1.59,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Fruit on cheesecake is such a lovely touch! 🍓 I don't eat chocolate cake too often, but when I do, it's definitely a treat! Do you ever try making desserts yourself?",
+      "latency_s": 2.255,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I have tried making some desserts, but I'm not very experienced. I made cookies once, and they were okay, I think. I want to try making cheesecake someday, but I’m a bit scared it won’t turn out well. Do you have any tips for beginners?",
+      "latency_s": 1.937,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Oh, I totally get that! 😅 For cheesecake, I’d recommend starting with a simple recipe. Make sure to use room temperature cream cheese for a smooth texture. And don’t worry too much about it; even if it’s not perfect, it’ll still be delicious! Have you thought about what kind of cheesecake you want to make?",
+      "latency_s": 1.97,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I think I want to try a classic New York cheesecake. It sounds really rich and creamy! I’m a bit nervous about making it, though. I hope I can get the texture right. And, uh, adding some fruit on top could be nice too. What do you think about that?",
+      "latency_s": 1.928,
+      "word_count": 51,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "A classic New York cheesecake sounds amazing! 😍 The rich and creamy texture is definitely worth the effort. Adding fruit on top will give it a nice touch of freshness. Do you have a recipe in mind, or are you still looking for one?",
+      "latency_s": 1.554,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I’m still looking for a good recipe. I want something that’s not too complicated. Maybe I can find one online? The idea of adding fruit is nice! I think strawberries or blueberries would taste great on top. Do you have any suggestions for a simple cheesecake recipe?",
+      "latency_s": 2.537,
+      "word_count": 48,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Absolutely! You can find some great simple cheesecake recipes online. One popular one uses just cream cheese, sugar, eggs, and a graham cracker crust. It’s easy and delicious! Strawberries or blueberries would be perfect on top. Have you ever tried any other desserts that were easier to make?",
+      "latency_s": 1.648,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I've made brownies before. They’re quite easy, just chocolate, sugar, and eggs. I like them warm with ice cream! Uh, I also tried making cookies, which was fun. But I think cheesecake will be more challenging. I really want to succeed with it! Have you made both brownies and cheesecake?",
+      "latency_s": 1.809,
+      "word_count": 51,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "I love brownies with ice cream! 😋 They're such a comforting treat. I’ve made both brownies and cheesecake, and I agree—cheesecake can be a bit tricky, but it’s so rewarding. What do you enjoy most about baking?",
+      "latency_s": 2.412,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I really enjoy the smell of baking. It’s so nice when cookies or brownies are in the oven. Also, I like sharing what I bake with friends and family. It makes me happy to see them enjoy it! Cheesecake sounds difficult, but I want to try it someday. What’s your favorite dessert to bake?",
+      "latency_s": 1.525,
+      "word_count": 55,
+      "strategy": "continue"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "I totally get that! The aroma of baked goods is the best part. My favorite dessert to bake is chocolate chip cookies. They’re so simple, and the warm, gooey chocolate is just irresistible! Do you have a favorite recipe for brownies or cookies?",
+      "latency_s": 1.55,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, I don’t have a specific recipe, but I usually follow a simple one. I like to add nuts sometimes for extra crunch. And, um, I think chocolate chip cookies are great too! They’re fun to make and really delicious when they’re fresh from the oven. Do you have any tips for making them even better?",
+      "latency_s": 2.015,
+      "word_count": 56,
+      "strategy": "continue"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Nuts add a nice touch! For chocolate chip cookies, try chilling the dough for at least an hour before baking. It helps the flavors develop and makes them chewier. Also, don’t overbake them; they’ll continue to cook a bit after you take them out! Have you thought about trying any different flavors or ingredients in your cookies?",
+      "latency_s": 2.016,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, that’s a great tip! I didn’t know chilling the dough helps. I usually make classic chocolate chip cookies, but I’m thinking about adding peanut butter next time. It could give them a nice flavor. Also, I try to not overbake, but sometimes I do. Thanks for the advice!",
+      "latency_s": 1.863,
+      "word_count": 49,
+      "strategy": "continue"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "Peanut butter sounds like an amazing addition! I love how it makes cookies rich and creamy. Have you ever tried mixing in some chocolate chunks or even a sprinkle of sea salt on top? It really elevates the flavors! What's your favorite part about baking cookies?",
+      "latency_s": 1.357,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, I really like the smell of cookies baking in the oven. It's so warm and inviting! Mixing in chocolate chunks sounds delicious, and I love the idea of adding salt for balance. My favorite part is when the cookies come out golden and soft. I can’t wait to try new things!",
+      "latency_s": 1.586,
+      "word_count": 52,
+      "strategy": "continue"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Oh, I totally agree! The smell really fills the whole house with warmth. It’s like a cozy hug! I can imagine how satisfying it must be to see them perfectly golden. Are there any other baked goods you enjoy making, or is it mostly cookies?",
+      "latency_s": 1.958,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, I really enjoy making brownies too! They are so rich and fudgy. I like how they are easy to make, but I always worry about overbaking them. Um, I think it’s fun to experiment with different toppings, like nuts or caramel. Do you have a favorite baked good?",
+      "latency_s": 2.585,
+      "word_count": 49,
+      "strategy": "continue"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Brownies are such a treat! I love how you can customize them with different toppings. My favorite baked good has to be a classic cheesecake. It's creamy and can be flavored in so many ways! Have you ever tried making cheesecake, or is it something you’d like to do?",
+      "latency_s": 1.683,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

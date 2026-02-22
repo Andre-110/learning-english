@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T18:50:33.486435",
+    "level": "B1",
+    "turns": 10,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "travel",
+        "art",
+        "cooking"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 2.03,
+    "user_avg_latency": 2.079,
+    "strategies": {
+      "continue": 10
+    },
+    "hot_content_events": 12
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "art",
+      "headline": "Check out cool lights at Zwirner Gallery!"
+    },
+    {
+      "turn": 2,
+      "type": "search",
+      "topic": "art that uses light",
+      "headline": "Flavin's light art is like magic!"
+    },
+    {
+      "turn": 3,
+      "type": "search",
+      "topic": "music festivals",
+      "headline": "Surprise guest at Jazz in the Gardens!"
+    },
+    {
+      "turn": 3,
+      "type": "inject",
+      "topic": "art that uses light",
+      "headline": "Flavin's light art is like magic!"
+    },
+    {
+      "turn": 4,
+      "type": "search",
+      "topic": "local music scenes",
+      "headline": "Local bands light up Montana's music scene!"
+    },
+    {
+      "turn": 5,
+      "type": "search",
+      "topic": "light art exhibitions",
+      "headline": "A cat that purrs with visitors!"
+    },
+    {
+      "turn": 6,
+      "type": "inject",
+      "topic": "light installations",
+      "headline": "A cat that purrs with visitors!"
+    },
+    {
+      "turn": 7,
+      "type": "search",
+      "topic": "light art exhibitions",
+      "headline": "York's buildings in colorful light"
+    },
+    {
+      "turn": 9,
+      "type": "search",
+      "topic": "art installations",
+      "headline": "Giant inflatable art returns!"
+    },
+    {
+      "turn": 9,
+      "type": "search",
+      "topic": "pop music",
+      "headline": "Art, history, and diversity in one show!"
+    },
+    {
+      "turn": 9,
+      "type": "inject",
+      "topic": "music festivals",
+      "headline": "Surprise guest at Jazz in the Gardens!"
+    },
+    {
+      "turn": 10,
+      "type": "search",
+      "topic": "surprise guests",
+      "headline": "BLACKPINK's bold new sound!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just read about the colorful lights by Dan Flavin at David Zwirner Gallery in New York. They really brighten up winter! Have you ever seen any cool art installations like that?",
+      "latency_s": 2.481,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I haven’t seen Dan Flavin’s work, but it sounds interesting! I like art that uses light. It can make a place feel happy and warm. I remember seeing some colorful lights at a festival once. It was fun!",
+      "latency_s": 2.748,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That sounds amazing! Festivals with light displays are so magical. I once went to a lantern festival, and the colors were breathtaking. What kind of festival was it for you?",
+      "latency_s": 3.441,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I went to a music festival last summer. It had a lot of lights and live bands. The atmosphere was really fun and exciting! I enjoyed dancing and singing with friends. Festivals make me feel happy. Do you go to many festivals?",
+      "latency_s": 1.852,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That sounds like a blast! I love the energy at music festivals. I don’t go to many, but I went to one last year too. The live performances and crowd vibes are unforgettable! What was your favorite band at the festival?",
+      "latency_s": 2.125,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, my favorite band was a local group called The Waves. They played really fun songs, and the crowd was dancing a lot! I liked their energy and the way they connected with everyone. It made the festival even more special for me!",
+      "latency_s": 1.609,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds like a great experience! Oh, speaking of that, I just read about Dan Flavin's light installations. They create such a magical atmosphere, almost like being inside a rainbow. What do you think about using lights in art?",
+      "latency_s": 1.909,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "art that uses light"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I think lights in art are really interesting. They make a space feel different and special. When I see light installations, I feel happy and, um, a bit amazed. It’s like art comes alive. I can imagine being in a rainbow, like you said!",
+      "latency_s": 2.609,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I totally agree! Light can transform a space in such unique ways. It’s fascinating how it can change our mood too. Have you ever visited a light art exhibition? What was it like?",
+      "latency_s": 2.574,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes, I visited a light art exhibition last year. It was amazing! The lights changed colors and shapes, and it made me feel very happy. I loved how the space was so bright and different. It was a unique experience for sure!",
+      "latency_s": 1.841,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That sounds incredible! I can imagine how vibrant and lively it must have been. Did you have a favorite installation or moment from the exhibition that stood out to you?",
+      "latency_s": 1.516,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! My favorite moment was a room with lots of hanging lights. They moved and changed colors quickly. It felt like I was in a dream! I could just stand there and watch for a long time. It was so beautiful!",
+      "latency_s": 2.04,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That sounds so magical! I love how lights can create such an atmosphere. By the way, have you heard about the giant inflatable cat at the Bristol Light Festival? It purrs when people get close! What do you think about that idea?",
+      "latency_s": 1.668,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "light installations"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think the giant inflatable cat is a fun idea! It's interesting that it purrs when people get close. I can imagine kids would love it. Um, it’s a nice way to bring art to life and make people smile. What a creative way to attract visitors!",
+      "latency_s": 2.097,
+      "word_count": 48,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Absolutely! It’s such a playful concept. Art that interacts with people can create memorable experiences. Have you seen any other unique art installations or events that left a strong impression on you?",
+      "latency_s": 1.682,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yes! I saw an art installation with mirrors and music. It was very cool because the lights changed with the sounds. People were dancing and laughing. I liked how everyone felt happy together. It was a nice experience!",
+      "latency_s": 1.54,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That sounds amazing! I love the idea of music and lights working together to create a joyful atmosphere. It must have been fun to see everyone enjoying themselves. Do you remember what kind of music was playing?",
+      "latency_s": 1.623,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, yes! The music was very upbeat and made people want to dance. I remember some pop songs and maybe some electronic beats. It was really fun to see everyone moving and smiling. I think music really helps create a happy atmosphere!",
+      "latency_s": 2.655,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That sounds like such a fun atmosphere! Oh, speaking of music, I just read that there’s a surprise guest at Jazz in the Gardens! Imagine the excitement! What do you think about surprise guests at concerts?",
+      "latency_s": 1.401,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "music festivals"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I think surprise guests can be really exciting! It makes the concert more special, um, because you never know who will come. I remember a concert where a famous singer surprised everyone. It was amazing, and everyone screamed with joy!",
+      "latency_s": 1.794,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Wow, that sounds unforgettable! Surprise guests really can change the whole vibe. Who was the famous singer that surprised you? I bet the energy in the crowd was incredible!",
+      "latency_s": 2.363,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

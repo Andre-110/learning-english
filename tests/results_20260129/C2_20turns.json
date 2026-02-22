@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T10:27:33.723832",
+    "level": "C2",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "C2",
+      "interests": [
+        "cooking",
+        "sports",
+        "art"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 3.762,
+    "user_avg_latency": 3.691,
+    "strategies": {
+      "summarize": 20
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! 😊 What’s a recent dish you cooked that you were proud of? (Just speak naturally - let's have a real conversation!)",
+      "latency_s": 3.369
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, hi! 😊 Recently, I cooked a... um, a risotto. It was my first time making it, and I was a little nervous. I think I, uh, I followed the recipe carefully, but I had to adjust the cooking time because my rice was taking longer than expected. \n\nBut, in the end, it turned out quite creamy and flavorful! I used mushrooms and some, um, fresh herbs I had. I felt really proud when I served it to my family. They said it was delicious, so that made me happy! Have you ever made risotto?",
+      "latency_s": 4.391,
+      "word_count": 95,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Hey! That risotto sounds amazing! I love that you adjusted the cooking time to get it just right. It must have felt really rewarding to serve it to your family and hear they enjoyed it. What was the best part about making it for the first time? Did you learn anything unexpected through the process?",
+      "latency_s": 2.856,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Yes, it was really rewarding! 😊 The best part, I think, was when I realized that the rice was getting creamy and... um, I was surprised by how much stirring it needed! I didn’t expect it to be so hands-on. Also, I learned that using good broth makes a huge difference in flavor. I was a bit nervous at first, but once I got the hang of it, I really enjoyed the process. Overall, it felt like a little cooking adventure!",
+      "latency_s": 3.005,
+      "word_count": 81,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That sounds like such a fulfilling experience! I can imagine the excitement of seeing the rice transform into that creamy texture. It’s fascinating how much effort goes into making risotto compared to some other dishes. Did you find that the stirring became more enjoyable as you got into the rhythm of it? And speaking of cooking adventures, have you ever thought about trying a different type of cuisine or dish next?",
+      "latency_s": 3.615,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Yes, exactly! 😊 Once I got into the rhythm of stirring, it felt almost meditative. I could lose track of time! At first, I was a bit nervous, but then I just enjoyed the process. \n\nAs for trying new cuisines, I’ve thought about it. Maybe something like Thai or Indian? I love the flavors they use, but I haven’t cooked them yet. I think it would be a fun challenge! Do you have any recommendations for a simple dish to start with?",
+      "latency_s": 3.251,
+      "word_count": 82,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That’s such a wonderful way to describe the process! Cooking can definitely be meditative, especially when you get into a groove. 😊 \n\nFor a simple Thai dish, I’d recommend trying Pad Thai. It’s flavorful and relatively easy to make, plus you can adjust the ingredients to your taste. Have you ever enjoyed Pad Thai before? What flavors do you think would excite you most in a dish?",
+      "latency_s": 2.989,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Oh, Pad Thai sounds delicious! 😊 I think I have tried it a few times at restaurants, but I’m not sure if I remember all the flavors. I really enjoy the combination of sweet and savory. The tamarind sauce, I think, adds a special touch, right? \n\nI also love peanuts, so I would probably add a lot of those! Do you think it’s difficult to make at home? I’m a bit nervous about getting the sauce just right.",
+      "latency_s": 3.19,
+      "word_count": 78,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "It’s great to hear how much you enjoy the sweet and savory balance in flavors! The tamarind sauce really does elevate Pad Thai and gives it that unique tang. 😊 \n\nAs for making it at home, it’s actually quite manageable! The sauce might seem tricky, but once you find the right balance of tamarind, sugar, and fish sauce, you’ll get the hang of it. Many recipes allow for adjustments, so you can play around with the flavors. \n\nWhat kind of ingredients do you think you'd want to include in your version?",
+      "latency_s": 3.482,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Oh, thank you! 😊 I really love how the tanginess of tamarind complements the sweetness. For my version, I think I would like to include shrimp because I enjoy seafood. Maybe some tofu as well, for a different texture? \n\nI also like vegetables like bell peppers and bean sprouts. They add a nice crunch! But I’m not sure if I should add peanuts or not... sometimes they can be a bit overwhelming. \n\nWhat do you think? Should I try with peanuts, or is it better without?",
+      "latency_s": 2.951,
+      "word_count": 86,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "You’ve got a fantastic combination going there with shrimp, tofu, and those crunchy veggies! 😊 As for the peanuts, I think it really depends on your preference. If you love the flavor but find them overwhelming, you could try adding them sparingly at first and see how it feels. You can always add more later! \n\nWhat excites you the most about cooking this dish? Is it the flavors, the process, or maybe something else?",
+      "latency_s": 3.679,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Thank you! 😊 I think what excites me the most is definitely the flavors. I find it amazing how different ingredients come together to create something so delicious. The combination of sweet, savory, and a little bit spicy—it’s just… so satisfying! \n\nAlso, I enjoy the process of cooking itself. It's like a way to relax, you know? Sometimes, though, I feel a bit nervous about making sure I get the proportions right. Like, if I add too much sauce or, um, too many vegetables, will it still taste good? \n\nBut I suppose that’s part of the fun—experimenting and adjusting as I go! What about you? Do you have a favorite part of cooking?",
+      "latency_s": 3.05,
+      "word_count": 113,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "I love how you appreciate the magic of flavors coming together! It really is satisfying to see how sweet, savory, and spicy can create such a delightful dish. 😊 \n\nThe nervousness about proportions is totally relatable! It can feel daunting, but you’re right—experimenting is part of the joy. I find that cooking becomes a bit of an adventure that way. What’s the most surprising dish you’ve made where you ended up loving the final result?",
+      "latency_s": 5.656,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Oh, thank you! 😊 I think one of the most surprising dishes I made was a sort of fusion stir-fry. I didn't have all the ingredients for a traditional one, so I used, um, what I had on hand. I mixed some leftover rice with... um, I think it was kimchi and, uh, some chickpeas I had. \n\nAt first, I thought it would be strange, but it turned out really tasty! The spiciness of the kimchi with the creaminess of the chickpeas was unexpected and... um, very satisfying. I love when that happens! Do you have a dish like that, where you were surprised by the outcome?",
+      "latency_s": 4.198,
+      "word_count": 107,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That fusion stir-fry sounds really creative! Mixing kimchi with chickpeas is such an interesting combination—it's amazing how improvisation in cooking can lead to delightful surprises. I totally relate to that satisfying feeling when a dish turns out better than expected!\n\nOne dish that surprised me was a spicy pumpkin soup I made. I added some unexpected spices, and it turned out to have this incredible depth of flavor. What do you think is the secret ingredient that made your stir-fry shine?",
+      "latency_s": 2.96,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Thank you! 😊 I think the secret ingredient in my stir-fry was definitely the garlic. I sautéed it first to infuse the oil, and it really brought out the flavors of the kimchi and chickpeas. I was a bit worried it might overpower the other ingredients, but it balanced out nicely. \n\nI also added a splash of soy sauce and a bit of lime juice at the end, which gave it that extra zing. It felt like a little adventure in my kitchen! Do you often experiment with spices in your cooking?",
+      "latency_s": 4.836,
+      "word_count": 92,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That sounds delicious! Using sautéed garlic to infuse the oil is such a great technique—it really can elevate a dish. I love how you combined that with the zing from lime juice; it sounds like a perfect balance. \n\nI do enjoy experimenting with spices! I often find myself adding unexpected ones just to see how they change the flavor profile. What’s the most adventurous spice combination you’ve tried so far?",
+      "latency_s": 4.319,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Oh, thank you! 😊 I really appreciate your feedback. I think the most adventurous spice combination I've tried was when I added cinnamon to a chili dish. I wasn't sure if it would work, but it turned out surprisingly well! The sweetness from the cinnamon contrasted nicely with the heat. \n\nSometimes, I feel a bit hesitant to experiment too much because I worry about ruining the dish, you know? But it can be exciting to mix things up. What about you? What’s the most unexpected spice you’ve used?",
+      "latency_s": 4.869,
+      "word_count": 88,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "I love the idea of adding cinnamon to chili! That sweet and spicy contrast must have brought a unique depth to the dish. It’s interesting how a simple spice can transform a recipe. \n\nI’ve experimented with smoked paprika in unexpected dishes, like creamy pasta. It added this lovely smoky flavor that took it to another level. What do you think holds you back from experimenting more? Is it the fear of wasting ingredients, or something else?",
+      "latency_s": 4.338,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "That’s a great point! 😊 I think I sometimes hold back because I worry about, um, not getting the flavors right. Like, what if I mix too many strong spices and it becomes, you know, overwhelming? I admire those who can just throw things together and create something wonderful! \n\nBut I also realize that experimenting is part of the fun, right? I guess I’m just a bit cautious. Maybe I should try small amounts first, like a little pinch of something new, to see how it goes. Have you found any other surprising combinations that worked well for you?",
+      "latency_s": 3.346,
+      "word_count": 99,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "I totally get that feeling of wanting to experiment but also being cautious about flavors! It can be daunting to think about balancing strong spices. Starting with small amounts is a smart strategy—it allows you to gauge how they interact without risking a whole dish. \n\nAs for surprising combinations, I once added cardamom to a sweet potato mash, and it gave it such a unique twist! What do you think your next small experiment might be?",
+      "latency_s": 3.906,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Oh, that sounds interesting! Cardamom in sweet potato mash? I never thought of that. I imagine it adds a lovely warmth. \n\nFor my next experiment, maybe I’ll try adding a bit of smoked paprika to a vegetable stir-fry. I’ve heard it can give a nice depth of flavor. But, um, I worry it might overpower the other ingredients. What do you think? Is that a good idea, or should I stick to something less bold?",
+      "latency_s": 2.655,
+      "word_count": 75,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "I love that you're considering smoked paprika for your vegetable stir-fry! It can definitely add a wonderful depth, but I understand the concern about overpowering the other flavors. A little goes a long way, so starting with a small pinch could be a great way to test it out. \n\nWhat vegetables do you plan to use? I find that certain ones really complement smoked paprika well, like bell peppers or zucchini. Have you thought about any other ingredients to balance the flavors?",
+      "latency_s": 8.148,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Yes, exactly! I think starting with a small pinch is a good idea. I don’t want it to be too strong, you know? For the vegetables, I was thinking of using bell peppers and maybe some broccoli. They seem like they would go well together. \n\nBut, um, I’m not sure what other ingredients would balance the flavors. Maybe some onions? I’ve also heard garlic can enhance everything, right? What do you think? ",
+      "latency_s": 2.944,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "I love your thought process about balancing the flavors! Bell peppers and broccoli sound like a great combination for the stir-fry. Onions and garlic would definitely enhance those flavors too; they add such a lovely depth. \n\nHave you ever tried caramelizing the onions a bit before adding them? It brings out their sweetness and can really complement the smokiness of the paprika. What’s your favorite way to prepare garlic—do you prefer it minced, roasted, or something else?",
+      "latency_s": 2.716,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Yes, I agree! Caramelizing the onions sounds delicious. I think it adds a nice sweetness that would balance well with the smoked paprika. I have tried it a few times, and I really like the flavor it brings out.\n\nFor garlic, I usually prefer it minced, I think? But I've also roasted it before, and it gives a very different, softer taste. Roasted garlic is, um, quite sweet and creamy, right? I like using it in spreads or just on bread. But sometimes, when I want a stronger flavor, I stick with minced garlic. \n\nHow do you usually prepare garlic? Do you have a favorite method?",
+      "latency_s": 4.241,
+      "word_count": 106,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "It's great to hear how much you enjoy caramelizing onions! That sweetness really does enhance dishes beautifully. Roasted garlic is such a treat too—its creamy texture can elevate spreads and dips. \n\nI usually love to roast garlic, especially when I’m making a pasta dish. It adds a lovely depth without being overpowering. Do you have any favorite recipes where you like to use roasted garlic? I'd love to hear about how you incorporate it!",
+      "latency_s": 4.226,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Oh, roasted garlic! Yes, I really like it too. I think it brings such a unique flavor. I often use it in… um, maybe when I make mashed potatoes. It gives them a nice richness, you know? \n\nAnd sometimes, I blend it into soups, especially creamy ones. It adds a depth that, um, complements the other ingredients. But I haven’t tried it in pasta dishes yet. Could you recommend a recipe? I’d love to explore more ways to use it!",
+      "latency_s": 4.126,
+      "word_count": 80,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "It's wonderful to hear how you use roasted garlic in mashed potatoes and creamy soups! That richness really does elevate those dishes. For pasta, I recommend trying a roasted garlic cream sauce. \n\nJust blend roasted garlic with cream, a bit of parmesan cheese, and some sautéed spinach. It creates a luscious sauce that pairs beautifully with any pasta. What's your favorite kind of pasta to cook? I'd love to hear how you would make it your own!",
+      "latency_s": 2.991,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Oh, that roasted garlic cream sauce sounds amazing! I think I would love that. For pasta, I usually enjoy making penne or fettuccine. They have a good shape for holding sauces, I think. \n\nI often just cook the pasta, then mix it with olive oil, some vegetables, and cheese. But, um, I’ve never thought about adding roasted garlic sauce before. It seems like it would make everything richer, right? \n\nI might try it with some fresh basil on top, maybe. What do you think? Would that work well?",
+      "latency_s": 2.902,
+      "word_count": 88,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I love how you’re thinking about adding fresh basil to the roasted garlic cream sauce! Basil would definitely bring a lovely freshness that complements the richness of the sauce. It sounds like a delightful combination with penne or fettuccine!\n\nI'm curious, what kind of vegetables do you usually mix in with your pasta? Do you have a favorite that really stands out?",
+      "latency_s": 2.342,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Oh, thank you! Yes, I think basil would really add something special. For vegetables, I often like to use spinach because it wilts nicely and adds color. I also enjoy cherry tomatoes; they become sweet when cooked. Sometimes I mix in zucchini, but I’m not always sure how to prepare it well. \n\nI think my favorite combination would be spinach and cherry tomatoes with maybe some olives for a briny taste. What about you? Do you have favorite vegetables for pasta?",
+      "latency_s": 4.457,
+      "word_count": 81,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "I love your choice of spinach and cherry tomatoes! The sweetness of the tomatoes really balances well with the richness of the sauce. Olives are a great addition too; they can elevate the dish even more with that briny flavor. \n\nAs for my favorite vegetables, I enjoy using roasted bell peppers—they add a smoky sweetness. I also think artichokes bring a unique texture. Have you ever tried them in your pasta? What do you think about their flavor?",
+      "latency_s": 4.627,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Thank you! Yes, I agree that olives would add a nice touch. I like the idea of roasted bell peppers too; they sound delicious! I think the smoky flavor could really complement the cream sauce. \n\nAs for artichokes, I... um, I haven't used them much in pasta, actually. But I have had them in salads. They have a bit of a tangy taste, right? I wonder if that would work well with the other flavors. I’m curious to try it! Do you have a favorite way to cook artichokes?",
+      "latency_s": 3.584,
+      "word_count": 89,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "I love how you're exploring different flavors! Roasted bell peppers definitely add a nice smoky depth, which would pair beautifully with the cream sauce. As for artichokes, they do have that unique tangy flavor, and I think they would provide a wonderful contrast to the richness of the sauce.\n\nOne of my favorite ways to cook artichokes is to steam them and then serve them with a lemon-garlic dipping sauce. It really brings out their flavor! Have you ever tried preparing them that way? What about other methods you've considered?",
+      "latency_s": 2.728,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Oh, that sounds delicious! I’ve never tried steaming artichokes with a lemon-garlic dipping sauce, but it does sound like a great way to enjoy them. I think the acidity from the lemon would really complement the tanginess. \n\nI’ve mostly had artichokes in salads or like… in dips, but I’m curious about other methods. I once saw a recipe where they were grilled, and it seemed quite interesting, too. The smoky flavor from grilling might be nice, don’t you think? \n\nI guess I haven’t experimented much with artichokes, but I’d love to. What about you? Do you have other favorite recipes for them?",
+      "latency_s": 5.301,
+      "word_count": 102,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "I'm glad you're intrigued by the idea of steaming artichokes! The lemon-garlic dipping sauce really does enhance their flavor beautifully. Grilling them sounds fantastic too! The smoky flavor would definitely add a wonderful twist. \n\nOne of my favorite recipes is actually artichoke and spinach dip, where you mix them with cream cheese and Parmesan. It’s super comforting! Have you ever tried making dips with artichokes? What do you think makes a great dip?",
+      "latency_s": 3.746,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "That artichoke and spinach dip sounds amazing! I really like creamy dips, especially when they’re warm. I think a great dip has to have a good balance of flavors, like a little tanginess, maybe from the cheese or lemon, and a smooth texture. \n\nI haven't made dips with artichokes myself, but I’ve had some at parties. They’re really good! I also think adding some herbs could make it more interesting—like fresh basil or maybe even dill? What do you think?",
+      "latency_s": 3.37,
+      "word_count": 80,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "I love your thoughts on dips! The balance of tanginess and smooth texture is definitely key to making them irresistible. Fresh herbs like basil or dill would add such a refreshing twist! \n\nHave you ever experimented with any unique flavors or ingredients in other dips? I find that ingredients like roasted garlic or even sun-dried tomatoes can really elevate a dip. What's your take on that?",
+      "latency_s": 2.908,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Yes, I think adding unique flavors can really change a dip! I’ve tried roasted garlic once, and it was so good. It gives a deep, sweet flavor that's different from raw garlic, which can be quite strong. \n\nI also like the idea of sun-dried tomatoes! They have that intense flavor, and I believe they would work well in a creamy dip. Uh, I haven't experimented a lot, but I sometimes add a bit of cream cheese or yogurt to make it more smooth, you know? \n\nDo you have any favorite combinations? I’d love to hear more about what you like to put in your dips!",
+      "latency_s": 3.143,
+      "word_count": 105,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "I love your enthusiasm for experimenting with dips! Roasted garlic really does bring a unique sweetness, doesn’t it? And sun-dried tomatoes add such an intense flavor—great choice! \n\nOne of my favorite combinations is a roasted red pepper and feta dip. The smokiness of the peppers combined with the creaminess of the feta creates a delightful flavor profile. Have you ever tried mixing different cheeses in your dips? I think that can really elevate the taste too!",
+      "latency_s": 3.009,
+      "strategy": "summarize"
+    }
+  ]
+}

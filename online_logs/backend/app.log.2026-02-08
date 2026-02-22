@@ -1,0 +1,1 @@
+{"timestamp": "2026-02-07T16:27:32.553669Z", "level": "INFO", "logger": "lingua_coach", "user_id": "anonymous", "trace_id": "", "message": "[前端] 📱 performance: 页面性能指标 | data={'dns': 0, 'tcp': 0, 'ttfb': 206, 'domReady': 2864, 'load': 2927, 'fcp': 2910, 'fp': 2171}", "module": "main", "line": 587}

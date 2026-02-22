@@ -1,0 +1,1150 @@
+✅ 生产模块已加载
+2026-01-30 09:10:23 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] 豆包 ASR 已配置
+2026-01-30 09:10:23 | services.minimax_tts | INFO     | MiniMaxTTSService 初始化: model=speech-2.6-hd, voice=male-qn-jingying
+2026-01-30 09:10:23 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] MiniMax TTS 已初始化: voice=male-qn-jingying
+2026-01-30 09:10:23 | services.gpt4o_pipeline | INFO     | GPT-4o Pipeline 初始化完成: ASR=doubao/gpt-4o-transcribe, LLM=gpt-4o, TTS=minimax/gpt-4o-mini-tts
+2026-01-30 09:10:23 | services.content_injector | INFO     | [ContentInjector] 初始化完成
+======================================================================
+生产环境测试 | 等级: A1 | 轮次: 15
+用户兴趣: ['technology', 'art', 'music']
+======================================================================
+
+[Turn 0] 生成开场白...
+2026-01-30 09:10:23 | services.content_injector | INFO     | [ContentInjector] 开场白话题: technology, 等级: A1
+2026-01-30 09:10:23 | services.content_injector | INFO     | [ContentInjector] 搜索: latest news about technology
+2026-01-30 09:10:28 | services.content_injector | INFO     | [ContentInjector] 搜索完成, 耗时: 4.94s, 结果长度: 519
+2026-01-30 09:10:30 | services.content_injector | INFO     | [ContentInjector] 开场白内容: Google made a fun new tool!
+  🔥 热点话题: technology (6.65s)
+  📰 Google made a fun new tool!
+2026-01-30 09:10:31 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey! I just read Google made a...
+2026-01-30 09:10:32 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:10:32 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第1/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:10:32 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey! I just read Google made a...
+2026-01-30 09:10:33 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:10:33 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第2/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:10:33 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey! I just read Google made a...
+2026-01-30 09:10:33 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:10:33 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第3/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:10:33 | services.gpt4o_pipeline | ERROR    | [TTS/minimax] 所有3次尝试都失败
+2026-01-30 09:10:33 | services.gpt4o_pipeline | ERROR    | [InitialQ+Content] 失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+  🤖 AI: Hey! I just read Google made a fun new tool to create your own worlds. Want to try it together?
+  ⏱️ AI延迟: 3.83s
+
+[Turn 1]
+  👤 User: Uh, yes! I want to try. Create... my own world sounds very fun! Um, how it works? Can we make like, um, a big city or a small village? I not sure what to do. How about you?
+  ⏱️ User延迟: 8.59s
+2026-01-30 09:10:42 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 2 条, ~66 tokens
+2026-01-30 09:10:42 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 2 条, 预览: assistant: Hey! I just read Google made a fun new tool to cre..., user: Uh, yes! I want to try. Create... my own world sou...
+2026-01-30 09:10:42 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=2, tokens≈1807 (system:1698, history:66, user:43)
+2026-01-30 09:10:42 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Uh, yes! I want to try. Create... my own world sou...
+2026-01-30 09:10:43 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.03s 
+2026-01-30 09:10:44 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.52s, 回复: Oh, you’re not sure what to do? I think creating a...
+2026-01-30 09:10:44 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=2, tokens≈1807, latency=1523ms
+  🤖 AI: Oh, you’re not sure what to do? I think creating a big city or a small village sounds really cool! Maybe we could add some fun places like a park or a market. What kind of world would you enjoy living in?
+  ⏱️ AI延迟: 1.52s
+
+[Turn 2]
+  👤 User: Um, I think... I like the idea of big city! A big city have many people, many shops, and maybe tall buildings. I want a park too, for relax and play. 
+
+Hmm, maybe we can add a market? I like buy food, um, good food! And... some fun places, like a cinema or a zoo? I don’t know... what do you think?
+  ⏱️ User延迟: 6.94s
+2026-01-30 09:10:51 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 4 条, ~191 tokens
+2026-01-30 09:10:51 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 4 条, 预览: user: Uh, yes! I want to try. Create... my own world sou..., assistant: Oh, you’re not sure what to do? I think creating a..., user: Um, I think... I like the idea of big city! A big ...
+2026-01-30 09:10:51 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=4, tokens≈1963 (system:1698, history:191, user:74)
+2026-01-30 09:10:51 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think... I like the idea of big city! A big ...
+2026-01-30 09:10:52 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.00s 
+2026-01-30 09:10:52 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.78s, 回复: Oh, you like the idea of a big city with a park an...
+2026-01-30 09:10:52 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=4, tokens≈1963, latency=1775ms
+  🤖 AI: Oh, you like the idea of a big city with a park and market? That sounds exciting! I love the idea of adding a cinema or a zoo too. What's a fun place you enjoy visiting in a city?
+  ⏱️ AI延迟: 1.78s
+
+[Turn 3]
+  👤 User: Um, yes! I like cinema. I watch movies there. Very fun! Many people go to cinema with friends. Also, I like park. I can sit, relax, and see... um, the trees and flowers. It is nice! 
+
+Zoo too is good! I see many animals. Lions, monkeys, and... um, elephants! I like elephants very much. 
+
+What about you? What place you like in city?
+  ⏱️ User延迟: 2.10s
+2026-01-30 09:10:54 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 6 条, ~318 tokens
+2026-01-30 09:10:54 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 6 条, 预览: user: Um, I think... I like the idea of big city! A big ..., assistant: Oh, you like the idea of a big city with a park an..., user: Um, yes! I like cinema. I watch movies there. Very...
+2026-01-30 09:10:54 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=6, tokens≈2099 (system:1698, history:318, user:83)
+2026-01-30 09:10:54 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! I like cinema. I watch movies there. Very...
+2026-01-30 09:10:55 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.95s 
+2026-01-30 09:10:56 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.85s, 回复: Ah, it **makes** you happy to be at the cinema wit...
+2026-01-30 09:10:56 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=6, tokens≈2099, latency=1853ms
+  🤖 AI: Ah, it **makes** you happy to be at the cinema with friends! I love that feeling too. In a city, I really enjoy visiting the park. Sitting under the trees and watching people go by is so relaxing. What's a special memory you have from visiting the zoo or the cinema?
+  ⏱️ AI延迟: 1.85s
+
+[Turn 4]
+  👤 User: Um, yes! I go to cinema with my friends last time. We watch a... um, how you say, superhero movie? It very exciting! We eat popcorn and laugh a lot. 
+
+Zoo, um, I go many times, but I like the panda! They are cute! I remember one time, the panda is eating bamboo. So funny! 
+
+I feel happy in both places. Cinema and zoo, they have fun!
+  ⏱️ User延迟: 3.03s
+2026-01-30 09:10:59 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~467 tokens
+2026-01-30 09:10:59 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Um, yes! I like cinema. I watch movies there. Very..., assistant: Ah, it **makes** you happy to be at the cinema wit..., user: Um, yes! I go to cinema with my friends last time....
+2026-01-30 09:10:59 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2248 (system:1698, history:467, user:83)
+2026-01-30 09:10:59 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! I go to cinema with my friends last time....
+2026-01-30 09:11:00 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.01s 
+2026-01-30 09:11:01 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.92s, 回复: Ah, superhero movies are so exciting, aren't they?...
+2026-01-30 09:11:01 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2248, latency=1918ms
+  🤖 AI: Ah, superhero movies are so exciting, aren't they? I love how they can be fun and full of action. Eating popcorn with friends makes it even better! And pandas are really cute, especially when they eat bamboo. What's a superhero you enjoy watching, or is there an animal at the zoo that always makes you smile?
+  ⏱️ AI延迟: 1.92s
+
+[Turn 5]
+  👤 User: Um, I like... um, Spider-Man! He is very cool. He swing in city and help people. I feel happy when I watch him. 
+
+And, um, I also like... um, panda at zoo! They eat bamboo, so cute! I smile when I see them. Do you like panda too?
+  ⏱️ User延迟: 2.62s
+2026-01-30 09:11:04 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 10 条, ~601 tokens
+2026-01-30 09:11:04 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 10 条, 预览: user: Um, yes! I go to cinema with my friends last time...., assistant: Ah, superhero movies are so exciting, aren't they?..., user: Um, I like... um, Spider-Man! He is very cool. He ...
+2026-01-30 09:11:04 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=10, tokens≈2356 (system:1698, history:601, user:57)
+2026-01-30 09:11:04 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I like... um, Spider-Man! He is very cool. He ...
+2026-01-30 09:11:05 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.11s 
+2026-01-30 09:11:06 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.82s, 回复: Oh, I love pandas too! They're so cute when they m...
+2026-01-30 09:11:06 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=10, tokens≈2356, latency=1821ms
+  🤖 AI: Oh, I love pandas too! They're so cute when they munch on bamboo. Watching them always makes me smile as well. And Spider-Man is definitely cool! I like how he swings around the city helping people. Do you remember a favorite Spider-Man scene that you really enjoyed?
+  ⏱️ AI延迟: 1.82s
+
+[Turn 6]
+  👤 User: Um, yes! I, um, like when Spider-Man fight with bad guys. He use his, um, web to catch them. Very, um, exciting! And, um, I like when he, uh, save people from falling. It make me feel, um, happy and, um, like him more. Do you have favorite scene?
+  ⏱️ User延迟: 4.04s
+2026-01-30 09:11:10 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 12 条, ~728 tokens
+2026-01-30 09:11:10 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 12 条, 预览: user: Um, I like... um, Spider-Man! He is very cool. He ..., assistant: Oh, I love pandas too! They're so cute when they m..., user: Um, yes! I, um, like when Spider-Man fight with ba...
+2026-01-30 09:11:10 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=12, tokens≈2487 (system:1698, history:728, user:61)
+2026-01-30 09:11:10 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! I, um, like when Spider-Man fight with ba...
+2026-01-30 09:11:11 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.03s 
+2026-01-30 09:11:11 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.68s, 回复: Oh, it **makes** you feel happy when Spider-Man sa...
+2026-01-30 09:11:11 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=12, tokens≈2487, latency=1677ms
+  🤖 AI: Oh, it **makes** you feel happy when Spider-Man saves people! I think that's one of the best parts about him. My favorite scene is when he swings through the city at night, with all the lights and buildings around him. It's like flying! What about you—do you like the idea of swinging high above the city like Spider-Man?
+  ⏱️ AI延迟: 1.68s
+
+[Turn 7]
+  👤 User: Um, yes! I like, um, swinging high. It look very fun and, um, exciting! Spider-Man go so fast. I think I feel... um, like bird? But, um, I also feel a little scared. What if I fall? But, um, I like the city lights. They are very beautiful! Do you like, um, swinging too?
+  ⏱️ User延迟: 8.76s
+2026-01-30 09:11:20 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:11:20 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 11 条, ~758 tokens
+2026-01-30 09:11:20 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 11 条, 预览: user: Um, yes! I, um, like when Spider-Man fight with ba..., assistant: Oh, it **makes** you feel happy when Spider-Man sa..., user: Um, yes! I like, um, swinging high. It look very f...
+2026-01-30 09:11:20 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=11, tokens≈2523 (system:1698, history:758, user:67)
+2026-01-30 09:11:20 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! I like, um, swinging high. It look very f...
+2026-01-30 09:11:21 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.96s 
+2026-01-30 09:11:22 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.22s, 回复: Oh, it **looks** like swinging high would be very ...
+2026-01-30 09:11:22 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=11, tokens≈2523, latency=2216ms
+  🤖 AI: Oh, it **looks** like swinging high would be very fun and exciting, just like you said! I totally get feeling like a bird up there. And the thought of the city lights below is so beautiful. As for me, I think swinging like that would be thrilling! But maybe a little scary too, just like you mentioned. Have you ever tried something exciting like that, maybe a roller coaster or something similar?
+  ⏱️ AI延迟: 2.22s
+
+[Turn 8]
+  👤 User: Um, I, uh, never try roller coaster. I think it look, um, very scary! But, um, I want to try one day. I, uh, like fast things, but not too, um, much. I like, um, feeling safe too. 
+
+Maybe, um, I can try with friends. I feel better with friends. Do you like, um, roller coasters?
+  ⏱️ User延迟: 8.22s
+2026-01-30 09:11:31 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:11:31 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 10 条, ~725 tokens
+2026-01-30 09:11:31 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 10 条, 预览: user: Um, yes! I like, um, swinging high. It look very f..., assistant: Oh, it **looks** like swinging high would be very ..., user: Um, I, uh, never try roller coaster. I think it lo...
+2026-01-30 09:11:31 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=10, tokens≈2492 (system:1698, history:725, user:69)
+2026-01-30 09:11:31 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I, uh, never try roller coaster. I think it lo...
+2026-01-30 09:11:32 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.05s 
+2026-01-30 09:11:33 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.13s, 回复: Oh, you **never tried** a roller coaster? I totall...
+2026-01-30 09:11:33 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=10, tokens≈2492, latency=2131ms
+  🤖 AI: Oh, you **never tried** a roller coaster? I totally get that! They can look really scary. It's great that you want to try it one day, especially with friends. Friends can make it feel safer and more fun! As for me, I do enjoy roller coasters. The thrill is exciting, but I always feel safe knowing I'm with friends too. What's something else exciting you'd like to try someday?
+  ⏱️ AI延迟: 2.13s
+
+[Turn 9]
+  👤 User: Um, I think, uh, maybe I want to try, um, skydiving? It look very, um, exciting and, uh, free! But, um, I feel a little bit scared too. I like, um, see the sky and the clouds. Maybe I do it with friends, yes? Also, um, I want to try, um, cooking new food. I like eat different food! What about you? What do you want to try?
+  ⏱️ User延迟: 9.88s
+2026-01-30 09:11:43 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:11:43 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 10 条, ~750 tokens
+2026-01-30 09:11:43 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 10 条, 预览: user: Um, I, uh, never try roller coaster. I think it lo..., assistant: Oh, you **never tried** a roller coaster? I totall..., user: Um, I think, uh, maybe I want to try, um, skydivin...
+2026-01-30 09:11:43 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=10, tokens≈2528 (system:1698, history:750, user:80)
+2026-01-30 09:11:43 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think, uh, maybe I want to try, um, skydivin...
+2026-01-30 09:11:44 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.81s 
+2026-01-30 09:11:46 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 3.44s, 回复: Oh, you **want to try** skydiving? That sounds so ...
+2026-01-30 09:11:46 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=10, tokens≈2528, latency=3440ms
+  🤖 AI: Oh, you **want to try** skydiving? That sounds so exciting and free! I can imagine the view of the sky and clouds must be amazing. Doing it with friends would definitely make it more fun and less scary. As for cooking new food, that's a wonderful idea! Trying different dishes can be a great adventure too. As for me, I think I'd like to try scuba diving one day. The ocean seems so mysterious and beautiful. What kind of new food would you love to cook first?
+  ⏱️ AI延迟: 3.44s
+
+[Turn 10]
+  👤 User: Um, I, uh, maybe want to cook, um, pasta first? I think pasta is, um, very nice and, uh, easy. I like, um, cheese and tomato sauce. But, um, I not very good at cooking. I, uh, sometimes, um, burn food. Hehe. 
+
+Uh, skydiving with friends, yes! I think it will be fun! And, um, maybe I can see, um, big mountains and rivers? That will be, um, beautiful! 
+
+What about you? What food you want to cook?
+  ⏱️ User延迟: 2.59s
+2026-01-30 09:11:49 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:11:49 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~764 tokens
+2026-01-30 09:11:49 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Um, I think, uh, maybe I want to try, um, skydivin..., assistant: Oh, you **want to try** skydiving? That sounds so ..., user: Um, I, uh, maybe want to cook, um, pasta first? I ...
+2026-01-30 09:11:49 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2561 (system:1698, history:764, user:99)
+2026-01-30 09:11:49 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I, uh, maybe want to cook, um, pasta first? I ...
+2026-01-30 09:11:50 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.05s 
+2026-01-30 09:11:51 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.76s, 回复: Oh, you're **not very good** at cooking, huh? That...
+2026-01-30 09:11:51 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2561, latency=2763ms
+  🤖 AI: Oh, you're **not very good** at cooking, huh? That's okay! Pasta with cheese and tomato sauce sounds delicious and is a great start. I often burn food too, so you're not alone! 😊 As for skydiving, seeing big mountains and rivers from the sky must be breathtaking. 
+
+For me, I’d love to try cooking sushi. It looks like a fun and creative process. What's your favorite pasta dish to eat?
+  ⏱️ AI延迟: 2.76s
+
+[Turn 11]
+  👤 User: Um, I think, uh, my favorite pasta is, um, spaghetti, yes! I like, uh, spaghetti with, um, meat sauce. It is very, um, tasty! But I, uh, never cook it well. I, um, always make too much, or, um, I forget the salt. 
+
+Sushi, uh, looks very hard to make. I, um, not sure I can do that. But I, uh, want to try one day! What, um, sushi do you like?
+  ⏱️ User延迟: 3.25s
+2026-01-30 09:11:55 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:11:55 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~737 tokens
+2026-01-30 09:11:55 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Um, I, uh, maybe want to cook, um, pasta first? I ..., assistant: Oh, you're **not very good** at cooking, huh? That..., user: Um, I think, uh, my favorite pasta is, um, spaghet...
+2026-01-30 09:11:55 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2520 (system:1698, history:737, user:85)
+2026-01-30 09:11:55 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think, uh, my favorite pasta is, um, spaghet...
+2026-01-30 09:11:56 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.10s 
+2026-01-30 09:11:57 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.09s, 回复: Oh, you **don't cook it well**? That's okay, pract...
+2026-01-30 09:11:57 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2520, latency=2086ms
+  🤖 AI: Oh, you **don't cook it well**? That's okay, practice makes perfect! Spaghetti with meat sauce is really tasty, and it's easy to make too much sometimes. For sushi, I really like tuna sushi. It's fresh and delicious! What do you think makes sushi look hard to make for you?
+  ⏱️ AI延迟: 2.09s
+
+[Turn 12]
+  👤 User: Um, I think sushi look, um, very hard because, uh, the rice is, um, sticky? And, uh, you need to, um, cut fish very nice. I, uh, don’t know how to, um, roll it, yes? I see videos, and it, um, look so, um, fast and, uh, clean. But, um, maybe one day I can, uh, try? I like, um, sushi too, but I, um, usually buy at restaurant.
+  ⏱️ User延迟: 4.98s
+2026-01-30 09:12:02 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:12:02 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~787 tokens
+2026-01-30 09:12:02 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Um, I think, uh, my favorite pasta is, um, spaghet..., assistant: Oh, you **don't cook it well**? That's okay, pract..., user: Um, I think sushi look, um, very hard because, uh,...
+2026-01-30 09:12:02 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2566 (system:1698, history:787, user:81)
+2026-01-30 09:12:02 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think sushi look, um, very hard because, uh,...
+2026-01-30 09:12:03 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.05s 
+2026-01-30 09:12:06 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 3.88s, 回复: Oh, you **don't know** how to roll sushi? That's u...
+2026-01-30 09:12:06 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2566, latency=3879ms
+  🤖 AI: Oh, you **don't know** how to roll sushi? That's understandable! It does look tricky with the sticky rice and precise fish cuts. Those videos make it seem so effortless, right? 😊 Buying sushi at a restaurant is a great way to enjoy it without the hassle. What's your favorite sushi place like?
+  ⏱️ AI延迟: 3.88s
+
+[Turn 13]
+  👤 User: Um, I think, uh, my favorite sushi place is, um, near my home. It is, uh, very good! They have, um, salmon sushi and, uh, shrimp sushi, I like them. The rice is, um, very tasty too! 
+
+But, um, it is a little expensive. I, uh, go there, um, sometimes, maybe, uh, once a month? I like to eat with, um, my friend. We, uh, share different sushi, yes! What about you? Do you have favorite sushi place?
+  ⏱️ User延迟: 2.27s
+2026-01-30 09:12:08 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:12:08 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~796 tokens
+2026-01-30 09:12:08 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Um, I think sushi look, um, very hard because, uh,..., assistant: Oh, you **don't know** how to roll sushi? That's u..., user: Um, I think, uh, my favorite sushi place is, um, n...
+2026-01-30 09:12:08 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2593 (system:1698, history:796, user:99)
+2026-01-30 09:12:08 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think, uh, my favorite sushi place is, um, n...
+2026-01-30 09:12:09 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.99s 
+2026-01-30 09:12:10 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.84s, 回复: Oh, you **don't know** my favorite sushi place? Le...
+2026-01-30 09:12:10 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2593, latency=1843ms
+  🤖 AI: Oh, you **don't know** my favorite sushi place? Let me tell you! There's a cozy spot I love visiting. They make amazing eel sushi and have this special roll with avocado that I can't resist. Eating sushi with friends sounds fun! What's a memorable moment you've had at your favorite sushi place?
+  ⏱️ AI延迟: 1.84s
+
+[Turn 14]
+  👤 User: Um, I, uh, remember one time at my, um, favorite sushi place. I, um, eat with my friends. We, uh, try many types of sushi, um, like salmon and, um, tuna? It was, uh, very good! 
+
+But, um, I think the, uh, best moment was when we, um, eat the, um, big sushi roll. We share it, um, and laugh a lot. I, um, make a mess with soy sauce, heh. It was, um, very fun! 
+
+Do you, uh, have a, um, special moment too?
+  ⏱️ User延迟: 3.44s
+2026-01-30 09:12:13 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:12:13 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~775 tokens
+2026-01-30 09:12:13 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Um, I think, uh, my favorite sushi place is, um, n..., assistant: Oh, you **don't know** my favorite sushi place? Le..., user: Um, I, uh, remember one time at my, um, favorite s...
+2026-01-30 09:12:13 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2574 (system:1698, history:775, user:101)
+2026-01-30 09:12:13 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I, uh, remember one time at my, um, favorite s...
+2026-01-30 09:12:14 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.14s 
+2026-01-30 09:12:15 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.19s, 回复: Oh, making a mess with soy sauce sounds like a fun...
+2026-01-30 09:12:15 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2574, latency=2186ms
+  🤖 AI: Oh, making a mess with soy sauce sounds like a fun memory! 😊 I have a special sushi moment too. Once, I went to a sushi place with friends, and we tried a new kind of sushi with spicy sauce. It was so spicy, we all laughed and drank a lot of water! What do you enjoy most about eating sushi with friends?
+  ⏱️ AI延迟: 2.19s
+
+[Turn 15]
+  👤 User: Um, I like, uh, eating sushi with friends because, um, it is fun! We, uh, share different sushi, yes? And, um, I like the taste, um, very much. Sometimes, I, uh, try new sushi like, um, with, uh, avocado or, um, shrimp. It is, uh, exciting! 
+
+But, um, I, uh, not like too much wasabi. It is very, uh, spicy for me. When I eat sushi with friends, we, um, laugh a lot, yes? It is, uh, happy time! What about you? Do you, um, like spicy sushi?
+  ⏱️ User延迟: 3.84s
+2026-01-30 09:12:19 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:12:19 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~766 tokens
+2026-01-30 09:12:19 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Um, I, uh, remember one time at my, um, favorite s..., assistant: Oh, making a mess with soy sauce sounds like a fun..., user: Um, I like, uh, eating sushi with friends because,...
+2026-01-30 09:12:19 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2574 (system:1698, history:766, user:110)
+2026-01-30 09:12:19 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I like, uh, eating sushi with friends because,...
+2026-01-30 09:12:20 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.05s 
+2026-01-30 09:12:21 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.11s, 回复: Ah, you **don't like** too much wasabi? I totally ...
+2026-01-30 09:12:21 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2574, latency=2114ms
+  🤖 AI: Ah, you **don't like** too much wasabi? I totally get that! Wasabi can be really spicy. 😊 I like a little spice, but not too much. Trying new sushi like avocado or shrimp sounds exciting! Do you have a favorite type of sushi that you always go back to, even after trying new ones?
+  ⏱️ AI延迟: 2.11s
+
+======================================================================
+统计
+======================================================================
+AI 平均延迟: 2.22s
+User 平均延迟: 4.97s
+热点搜索平均延迟: 6.65s
+
+🔥 热点注入事件:
+  - Turn 0: [greeting] technology (6.65s)
+
+✅ 保存到 /home/ubuntu/learning_english/tests/improved_results/A1_15turns.json
+✅ 生产模块已加载
+2026-01-30 09:12:23 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] 豆包 ASR 已配置
+2026-01-30 09:12:23 | services.minimax_tts | INFO     | MiniMaxTTSService 初始化: model=speech-2.6-hd, voice=male-qn-jingying
+2026-01-30 09:12:23 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] MiniMax TTS 已初始化: voice=male-qn-jingying
+2026-01-30 09:12:23 | services.gpt4o_pipeline | INFO     | GPT-4o Pipeline 初始化完成: ASR=doubao/gpt-4o-transcribe, LLM=gpt-4o, TTS=minimax/gpt-4o-mini-tts
+2026-01-30 09:12:23 | services.content_injector | INFO     | [ContentInjector] 初始化完成
+======================================================================
+生产环境测试 | 等级: A2 | 轮次: 15
+用户兴趣: ['technology', 'reading', 'cooking']
+======================================================================
+
+[Turn 0] 生成开场白...
+2026-01-30 09:12:23 | services.content_injector | INFO     | [ContentInjector] 开场白话题: reading, 等级: A2
+2026-01-30 09:12:23 | services.content_injector | INFO     | [ContentInjector] 搜索: latest news about reading
+2026-01-30 09:12:29 | services.content_injector | INFO     | [ContentInjector] 搜索完成, 耗时: 5.91s, 结果长度: 379
+2026-01-30 09:12:30 | services.content_injector | INFO     | [ContentInjector] 开场白内容: Oldest rock art found in a cave!
+  🔥 热点话题: reading (7.03s)
+  📰 Oldest rock art found in a cave!
+2026-01-30 09:12:31 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hi! I just read that some cave...
+2026-01-30 09:12:32 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:12:32 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第1/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:12:32 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hi! I just read that some cave...
+2026-01-30 09:12:33 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:12:33 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第2/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:12:33 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hi! I just read that some cave...
+2026-01-30 09:12:34 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:12:34 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第3/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:12:34 | services.gpt4o_pipeline | ERROR    | [TTS/minimax] 所有3次尝试都失败
+2026-01-30 09:12:34 | services.gpt4o_pipeline | ERROR    | [InitialQ+Content] 失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+  🤖 AI: Hi! I just read that some cave art in Indonesia is over 67,000 years old. Isn't that amazing? What do you think those early artists were drawing about?
+  ⏱️ AI延迟: 3.75s
+
+[Turn 1]
+  👤 User: Wow, 67,000 years old! That is very amazing! I think early artists... um, maybe they draw animals? Like big animals, yes? Maybe they draw people too, or their life. I think they want to tell stories, yes? Maybe about hunting or... um, family? It is interesting to think about what they see and feel. What do you think?
+  ⏱️ User延迟: 2.41s
+2026-01-30 09:12:36 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 2 条, ~116 tokens
+2026-01-30 09:12:36 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 2 条, 预览: assistant: Hi! I just read that some cave art in Indonesia is..., user: Wow, 67,000 years old! That is very amazing! I thi...
+2026-01-30 09:12:36 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=2, tokens≈1895 (system:1700, history:116, user:79)
+2026-01-30 09:12:36 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Wow, 67,000 years old! That is very amazing! I thi...
+2026-01-30 09:12:37 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.86s 
+2026-01-30 09:12:38 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.82s, 回复: Oh, they probably did draw big animals and scenes ...
+2026-01-30 09:12:38 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=2, tokens≈1895, latency=1820ms
+  🤖 AI: Oh, they probably did draw big animals and scenes from their life! It's fascinating to imagine them telling stories through their art, like about hunting or family. Do you think if you lived back then, you'd be an artist too? What kind of stories would you want to tell through your drawings?
+  ⏱️ AI延迟: 1.82s
+
+[Turn 2]
+  👤 User: Hmm, if I lived back then... I think I want to be an artist! Yes! I like to draw animals, like... um, big lions or elephants. I want to tell stories about hunting, maybe. Or... maybe stories about family, like togetherness? 
+
+I think I would draw a big family with a fire and food. That is nice, yes? I want people to see happiness in my drawings. But, um, I am not sure if people would like my art. What do you think?
+  ⏱️ User延迟: 4.41s
+2026-01-30 09:12:42 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 4 条, ~293 tokens
+2026-01-30 09:12:42 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 4 条, 预览: user: Wow, 67,000 years old! That is very amazing! I thi..., assistant: Oh, they probably did draw big animals and scenes ..., user: Hmm, if I lived back then... I think I want to be ...
+2026-01-30 09:12:42 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=4, tokens≈2097 (system:1700, history:293, user:104)
+2026-01-30 09:12:42 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Hmm, if I lived back then... I think I want to be ...
+2026-01-30 09:12:43 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.00s 
+2026-01-30 09:12:44 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.53s, 回复: Drawing a big family with a fire and food sounds s...
+2026-01-30 09:12:44 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=4, tokens≈2097, latency=1533ms
+  🤖 AI: Drawing a big family with a fire and food sounds so warm and full of life! I think people would love seeing happiness in your art. 😊 What do you think it would feel like to sit around that fire with your family?
+  ⏱️ AI延迟: 1.53s
+
+[Turn 3]
+  👤 User: Um, I think... it would feel very nice and warm. Yes, warm! I can see my family, maybe my mom and dad and my sister. We talk and laugh. I feel happy, like... um, safe? 
+
+Maybe we eat good food, like... um, meat and some vegetables. I like that! And the fire makes light, so we can see each other. It's cozy. 
+
+But, I also think maybe it could be sad if someone is not there. Like, maybe a friend or a grandparent. I want to draw this feeling too!
+  ⏱️ User延迟: 2.70s
+2026-01-30 09:12:46 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 6 条, ~456 tokens
+2026-01-30 09:12:46 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 6 条, 预览: user: Hmm, if I lived back then... I think I want to be ..., assistant: Drawing a big family with a fire and food sounds s..., user: Um, I think... it would feel very nice and warm. Y...
+2026-01-30 09:12:46 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=6, tokens≈2267 (system:1700, history:456, user:111)
+2026-01-30 09:12:46 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think... it would feel very nice and warm. Y...
+2026-01-30 09:12:48 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.16s 
+2026-01-30 09:12:48 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.81s, 回复: Imagining that cozy scene with your family sounds ...
+2026-01-30 09:12:48 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=6, tokens≈2267, latency=1806ms
+  🤖 AI: Imagining that cozy scene with your family sounds heartwarming! It's lovely that you want to capture both the happiness and the feeling of someone missing. How do you think you'd show those emotions in your drawing? Would you use different colors or something else to show the happy and sad parts?
+  ⏱️ AI延迟: 1.81s
+
+[Turn 4]
+  👤 User: Um, I think... maybe I use colors! Happy color, like bright yellow or... um, light blue? And for sad, maybe dark blue or gray, yes? 
+
+I want to show, like... a big smile for happy people. Maybe, um, my mom's smile is bright, but... if someone missing, maybe a little shadow? 
+
+I can draw a picture of, um, my family together, but then, maybe a space empty, so people see someone is not there. 
+
+Yes, I think that can show happy and sad together!
+  ⏱️ User延迟: 3.75s
+2026-01-30 09:12:52 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~641 tokens
+2026-01-30 09:12:52 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Um, I think... it would feel very nice and warm. Y..., assistant: Imagining that cozy scene with your family sounds ..., user: Um, I think... maybe I use colors! Happy color, li...
+2026-01-30 09:12:52 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2452 (system:1700, history:641, user:111)
+2026-01-30 09:12:52 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think... maybe I use colors! Happy color, li...
+2026-01-30 09:12:53 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.92s 
+2026-01-30 09:12:54 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.66s, 回复: Using colors to show emotions in your drawings sou...
+2026-01-30 09:12:54 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2452, latency=1664ms
+  🤖 AI: Using colors to show emotions in your drawings sounds like a beautiful idea! I love how you thought about using bright colors for happiness and shadows or empty spaces for sadness. 🎨 What do you think it would be like to share this picture with your family? How do you think they'd react to seeing both the happy and sad parts?
+  ⏱️ AI延迟: 1.66s
+
+[Turn 5]
+  👤 User: Um, I think... my family would like it a lot! They always say my drawings are nice. If they see happy colors, they feel happy, yes? But for sad parts, maybe they feel a little... um, confused? Or sad too? I want to tell them my feelings, but I don't want to make them sad. 
+
+Maybe I explain it? Like, I say, "This part is... um, for when I feel lonely," and "This part is for happy times with you!" I hope they understand. I want them to see all my feelings.
+  ⏱️ User延迟: 2.74s
+2026-01-30 09:12:56 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~799 tokens
+2026-01-30 09:12:56 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Um, I think... maybe I use colors! Happy color, li..., assistant: Using colors to show emotions in your drawings sou..., user: Um, I think... my family would like it a lot! They...
+2026-01-30 09:12:56 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2613 (system:1700, history:799, user:114)
+2026-01-30 09:12:56 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think... my family would like it a lot! They...
+2026-01-30 09:12:57 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.06s 
+2026-01-30 09:12:58 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.68s, 回复: It sounds like you've really thought about how to ...
+2026-01-30 09:12:58 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2613, latency=1684ms
+  🤖 AI: It sounds like you've really thought about how to express your feelings through your art, which is wonderful! 😊 I think explaining your drawing to your family will help them understand both the happy and lonely parts. How do you feel when you're drawing? Does it help you express your emotions more clearly?
+  ⏱️ AI延迟: 1.68s
+
+[Turn 6]
+  👤 User: Um, yes! When I draw, I feel... um, very happy! It is nice to see colors on paper. I can... um, put my feelings there. Sometimes I feel lonely too, but when I draw, I feel better. It helps me... um, express my emotions. 
+
+I think drawing is like... um, telling a story, but with pictures. My family sees my drawings and they smile, and I feel good. I want to show them my happy feelings and also... um, the sad feelings. It’s like... um, a way to share my heart.
+  ⏱️ User延迟: 4.44s
+2026-01-30 09:13:03 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~734 tokens
+2026-01-30 09:13:03 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Um, I think... my family would like it a lot! They..., assistant: It sounds like you've really thought about how to ..., user: Um, yes! When I draw, I feel... um, very happy! It...
+2026-01-30 09:13:03 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2549 (system:1700, history:734, user:115)
+2026-01-30 09:13:03 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! When I draw, I feel... um, very happy! It...
+2026-01-30 09:13:04 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.27s 
+2026-01-30 09:13:05 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.26s, 回复: Ah, it **makes** you happy to draw? That's wonderf...
+2026-01-30 09:13:05 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2549, latency=2263ms
+  🤖 AI: Ah, it **makes** you happy to draw? That's wonderful! 😊 Drawing sounds like such a powerful way for you to share your heart and stories. Do you remember a specific drawing that felt especially meaningful to you? What was the story behind it?
+  ⏱️ AI延迟: 2.26s
+
+[Turn 7]
+  👤 User: Um, yes! I remember one drawing. It was... um, a big tree. I draw it because my grandma loves trees. She says trees make us feel calm, like a... um, a hug from nature. 
+
+I use green and brown colors. I think it looks nice! I feel happy when I think about my grandma. She likes to sit under trees and drink tea. Um, I want people to feel... um, happy too when they see my drawing. 
+
+It was special for me because it is like a memory of her. I hope she likes it!
+  ⏱️ User延迟: 5.26s
+2026-01-30 09:13:10 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~746 tokens
+2026-01-30 09:13:10 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Um, yes! When I draw, I feel... um, very happy! It..., assistant: Ah, it **makes** you happy to draw? That's wonderf..., user: Um, yes! I remember one drawing. It was... um, a b...
+2026-01-30 09:13:10 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2561 (system:1700, history:746, user:115)
+2026-01-30 09:13:10 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! I remember one drawing. It was... um, a b...
+2026-01-30 09:13:11 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.05s 
+2026-01-30 09:13:12 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.85s, 回复: Ah, it **sounds** like your drawing of the tree is...
+2026-01-30 09:13:12 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2561, latency=1849ms
+  🤖 AI: Ah, it **sounds** like your drawing of the tree is very special! 🌳 I love how it's a memory of your grandma and her love for nature. How did your grandma react when she saw the drawing? Did it remind her of her own special moments under the trees?
+  ⏱️ AI延迟: 1.85s
+
+[Turn 8]
+  👤 User: Um, yes! My grandma... um, she was very happy! She smiled a lot when she see the drawing. She say, “Oh, this tree is so beautiful!” I think it remind her of when she play outside with her friends. 
+
+She tell me stories about... um, climbing trees, and having picnics. I like to listen to her stories. It makes me feel warm inside. Um, I hope I can draw more things for her.
+  ⏱️ User延迟: 2.77s
+2026-01-30 09:13:15 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~715 tokens
+2026-01-30 09:13:15 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Um, yes! I remember one drawing. It was... um, a b..., assistant: Ah, it **sounds** like your drawing of the tree is..., user: Um, yes! My grandma... um, she was very happy! She...
+2026-01-30 09:13:15 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2508 (system:1700, history:715, user:93)
+2026-01-30 09:13:15 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! My grandma... um, she was very happy! She...
+2026-01-30 09:13:16 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.06s 
+2026-01-30 09:13:16 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.64s, 回复: Oh, it **sounds** like your grandma really loved t...
+2026-01-30 09:13:16 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2508, latency=1644ms
+  🤖 AI: Oh, it **sounds** like your grandma really loved the drawing! 😊 Listening to her stories must be so special. What's one of your favorite stories she's told you about her adventures outside?
+  ⏱️ AI延迟: 1.65s
+
+[Turn 9]
+  👤 User: Um, yes! My grandma tell me... um, she tell me a story about when she was young. She go to a big mountain with her friends. They, um, they climb the mountain! It was very高 (tall). She say they see many animals, like birds and rabbits. 
+
+And, um, they have picnic at the top. She say the view was很美 (very beautiful). I like this story because it makes me想象 (imagine) the mountain and the nice food. 
+
+I want to go to a mountain too, um, someday!
+  ⏱️ User延迟: 2.98s
+2026-01-30 09:13:19 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~792 tokens
+2026-01-30 09:13:19 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Um, yes! My grandma... um, she was very happy! She..., assistant: Oh, it **sounds** like your grandma really loved t..., user: Um, yes! My grandma tell me... um, she tell me a s...
+2026-01-30 09:13:19 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2603 (system:1700, history:792, user:111)
+2026-01-30 09:13:19 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! My grandma tell me... um, she tell me a s...
+2026-01-30 09:13:20 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.06s 
+2026-01-30 09:13:21 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.49s, 回复: Climbing a big mountain sounds like such an advent...
+2026-01-30 09:13:21 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2603, latency=1489ms
+  🤖 AI: Climbing a big mountain sounds like such an adventure! 🌄 Your grandma's story is full of excitement. What do you think you would see or do if you could climb a mountain one day?
+  ⏱️ AI延迟: 1.49s
+
+[Turn 10]
+  👤 User: Um, yes! If I climb a mountain, I think I see many, um, trees and maybe some animals. Like, um, birds and... maybe a deer? I want to take many photos because it is very beautiful, I think. 
+
+Also, I want to, um, feel the wind. I hear mountain wind is very fresh! And, um, maybe I can bring food and eat at the top. That sounds fun! But, um, I not sure if I can climb very high. It seems difficult!
+  ⏱️ User延迟: 2.71s
+2026-01-30 09:13:24 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~745 tokens
+2026-01-30 09:13:24 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Um, yes! My grandma tell me... um, she tell me a s..., assistant: Climbing a big mountain sounds like such an advent..., user: Um, yes! If I climb a mountain, I think I see many...
+2026-01-30 09:13:24 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2544 (system:1700, history:745, user:99)
+2026-01-30 09:13:24 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! If I climb a mountain, I think I see many...
+2026-01-30 09:13:25 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.57s 
+2026-01-30 09:13:26 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.45s, 回复: Ah, it **seems** climbing high might be a bit toug...
+2026-01-30 09:13:26 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2544, latency=2452ms
+  🤖 AI: Ah, it **seems** climbing high might be a bit tough! But just imagine reaching the top and feeling that fresh mountain wind. 🌬️ What kind of food do you think you'd bring for a picnic up there? Something special you love?
+  ⏱️ AI延迟: 2.45s
+
+[Turn 11]
+  👤 User: Um, yes! I think picnic food... um, maybe sandwiches? I like, um, peanut butter and jelly. It's very good! Also, maybe some fruit, like apple or, um, banana. 
+
+And maybe, um, some chips for crunchy sound! I can share with friends. I think that is nice. What do you think? What food you like?
+  ⏱️ User延迟: 2.22s
+2026-01-30 09:13:28 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 10 条, ~757 tokens
+2026-01-30 09:13:28 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 10 条, 预览: user: Um, yes! If I climb a mountain, I think I see many..., assistant: Ah, it **seems** climbing high might be a bit toug..., user: Um, yes! I think picnic food... um, maybe sandwich...
+2026-01-30 09:13:28 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=10, tokens≈2529 (system:1700, history:757, user:72)
+2026-01-30 09:13:28 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, yes! I think picnic food... um, maybe sandwich...
+2026-01-30 09:13:29 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.93s 
+2026-01-30 09:13:31 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.31s, 回复: Oh, you **don't know** if you can climb very high?...
+2026-01-30 09:13:31 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=10, tokens≈2529, latency=2313ms
+  🤖 AI: Oh, you **don't know** if you can climb very high? That's okay! Your picnic sounds delicious. 😊 Peanut butter and jelly sandwiches are a classic! I love bringing sandwiches too. I usually like a turkey and cheese sandwich with some crunchy veggies. What's your favorite fruit to eat on a picnic?
+  ⏱️ AI延迟: 2.31s
+
+[Turn 12]
+  👤 User: Um, thank you! I like, um, peanut butter and jelly very much. But, um, for fruit, I think I like, um, apples? They are, um, crunchy and sweet. Also, I like, um, watermelon! It's, um, very refreshing. What about you? What fruit do you like?
+  ⏱️ User延迟: 4.94s
+2026-01-30 09:13:35 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 10 条, ~714 tokens
+2026-01-30 09:13:35 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 10 条, 预览: user: Um, yes! I think picnic food... um, maybe sandwich..., assistant: Oh, you **don't know** if you can climb very high?..., user: Um, thank you! I like, um, peanut butter and jelly...
+2026-01-30 09:13:35 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=10, tokens≈2473 (system:1700, history:714, user:59)
+2026-01-30 09:13:35 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, thank you! I like, um, peanut butter and jelly...
+2026-01-30 09:13:36 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.83s 
+2026-01-30 09:13:37 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.54s, 回复: Ah, you **don't know**? I really like apples too! ...
+2026-01-30 09:13:37 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=10, tokens≈2473, latency=1535ms
+  🤖 AI: Ah, you **don't know**? I really like apples too! They're so crunchy. 🍏 Watermelon is perfect on a hot day, so refreshing! As for me, I love strawberries. They're sweet and juicy. They're great for picnics too! What do you love most about apples?
+  ⏱️ AI延迟: 1.54s
+
+[Turn 13]
+  👤 User: Um, I think apples... um, they are very nice! I like, um, the crunch sound when I bite. It's, um, very satisfying. And, um, they are good for health, right? I like to eat apples with, um, some peanut butter too. It’s, um, a good snack. What do you think about that?
+  ⏱️ User延迟: 6.67s
+2026-01-30 09:13:44 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 11 条, ~780 tokens
+2026-01-30 09:13:44 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 11 条, 预览: user: Um, thank you! I like, um, peanut butter and jelly..., assistant: Ah, you **don't know**? I really like apples too! ..., user: Um, I think apples... um, they are very nice! I li...
+2026-01-30 09:13:44 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=11, tokens≈2546 (system:1700, history:780, user:66)
+2026-01-30 09:13:44 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think apples... um, they are very nice! I li...
+2026-01-30 09:13:45 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.12s 
+2026-01-30 09:13:46 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.86s, 回复: Oh yes, apples are definitely good for health! Eat...
+2026-01-30 09:13:46 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=11, tokens≈2546, latency=1855ms
+  🤖 AI: Oh yes, apples are definitely good for health! Eating them with peanut butter sounds like a delicious combo. I love that idea; it's both crunchy and creamy. 🎯 How did you start pairing apples with peanut butter? Was it a family favorite or something you discovered on your own?
+  ⏱️ AI延迟: 1.86s
+
+[Turn 14]
+  👤 User: Um, I think I, uh, saw it on, um, a video? Yes! A cooking video. They, um, put peanut butter on apples. I, uh, never think about it before. But now, I, um, really like it! Um, my family, they also like it. But, um, sometimes, I eat it alone. It’s, um, very good snack! Crunchy and sweet!
+  ⏱️ User延迟: 8.88s
+  🔍 检测到话题: cooking，后台搜索热点...
+2026-01-30 09:13:54 | services.content_injector | INFO     | [ContentInjector] 被动触发: cooking, 等级: A2
+2026-01-30 09:13:54 | services.gpt4o_pipeline | INFO     | [LLM] ⚠️ 历史截断: 保留最近 6 轮
+2026-01-30 09:13:54 | services.content_injector | INFO     | [ContentInjector] 搜索: latest interesting news about cooking
+2026-01-30 09:13:54 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 11 条, ~780 tokens
+2026-01-30 09:13:54 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 11 条, 预览: user: Um, I think apples... um, they are very nice! I li..., assistant: Oh yes, apples are definitely good for health! Eat..., user: Um, I think I, uh, saw it on, um, a video? Yes! A ...
+2026-01-30 09:13:54 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=11, tokens≈2551 (system:1700, history:780, user:71)
+2026-01-30 09:13:54 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Um, I think I, uh, saw it on, um, a video? Yes! A ...
+2026-01-30 09:13:56 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.12s 
+2026-01-30 09:13:56 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.55s, 回复: That sounds like a great discovery from a cooking ...
+2026-01-30 09:13:56 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=11, tokens≈2551, latency=1550ms
+  🤖 AI: That sounds like a great discovery from a cooking video! 🍎 I'm glad you and your family enjoy it. Do you watch a lot of cooking videos? What other interesting snack ideas have you found from them?
+  ⏱️ AI延迟: 1.55s
+
+[Turn 15]
+2026-01-30 09:14:00 | services.content_injector | INFO     | [ContentInjector] 搜索完成, 耗时: 5.40s, 结果长度: 473
+2026-01-30 09:14:01 | services.content_injector | INFO     | [ContentInjector] 话题内容: Peeps has new crazy flavors!
+  [后台] ✅ 热点就绪: Peeps has new crazy flavors!... (6.83s)
+  👤 User: Um, yes! I, uh, watch cooking videos sometimes. They are very fun! I like, um, quick snacks ideas. 
+
+I, um, saw one video about, uh, making banana pancakes? It looks easy! Just, um, mashed banana and eggs. 
+
+Also, um, I like the one with, uh, yogurt and fruit. You put, um, some nuts on top, very nice! 
+
+I want to try more, um, healthy snacks. What about you? Do you have, um, favorite snack ideas?
+  ⏱️ User延迟: 9.14s
+2026-01-30 09:14:06 | services.minimax_tts | INFO     | [MiniMax TTS Stream] 开始流式合成: voice=male-qn-jingying, speed=1.0x, text=Cooking videos are great for n...
+2026-01-30 09:14:07 | services.minimax_tts | WARNING  | [MiniMax TTS Stream] Attempt 1/3 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:07 | services.minimax_tts | INFO     | [MiniMax TTS Stream] 100ms 后重试...
+2026-01-30 09:14:08 | services.minimax_tts | WARNING  | [MiniMax TTS Stream] Attempt 2/3 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:08 | services.minimax_tts | INFO     | [MiniMax TTS Stream] 100ms 后重试...
+2026-01-30 09:14:09 | services.minimax_tts | WARNING  | [MiniMax TTS Stream] Attempt 3/3 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:09 | services.minimax_tts | ERROR    | [MiniMax TTS Stream] 所有 3 次尝试均失败
+2026-01-30 09:14:09 | services.gpt4o_pipeline | ERROR    | [TTS Stream Sync] 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:09 | services.gpt4o_pipeline | ERROR    | [Response+Content] 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+  🤖 AI: Cooking videos are great for new ideas! Do you have a favorite snack recipe you learned from a video? 🍿
+  ⏱️ AI延迟: 3.56s 🔥[cooking]
+
+======================================================================
+统计
+======================================================================
+AI 平均延迟: 1.94s
+User 平均延迟: 4.40s
+热点搜索平均延迟: 6.93s
+
+🔥 热点注入事件:
+  - Turn 0: [greeting] reading (7.03s)
+  - Turn 15: [async_search] cooking (6.83s)
+
+✅ 保存到 /home/ubuntu/learning_english/tests/improved_results/A2_15turns.json
+✅ 生产模块已加载
+2026-01-30 09:14:10 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] 豆包 ASR 已配置
+2026-01-30 09:14:10 | services.minimax_tts | INFO     | MiniMaxTTSService 初始化: model=speech-2.6-hd, voice=male-qn-jingying
+2026-01-30 09:14:10 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] MiniMax TTS 已初始化: voice=male-qn-jingying
+2026-01-30 09:14:10 | services.gpt4o_pipeline | INFO     | GPT-4o Pipeline 初始化完成: ASR=doubao/gpt-4o-transcribe, LLM=gpt-4o, TTS=minimax/gpt-4o-mini-tts
+2026-01-30 09:14:10 | services.content_injector | INFO     | [ContentInjector] 初始化完成
+======================================================================
+生产环境测试 | 等级: B1 | 轮次: 15
+用户兴趣: ['movies', 'reading', 'travel']
+======================================================================
+
+[Turn 0] 生成开场白...
+2026-01-30 09:14:10 | services.content_injector | INFO     | [ContentInjector] 开场白话题: travel, 等级: B1
+2026-01-30 09:14:10 | services.content_injector | INFO     | [ContentInjector] 搜索: latest news about travel
+2026-01-30 09:14:15 | services.content_injector | INFO     | [ContentInjector] 搜索完成, 耗时: 5.22s, 结果长度: 406
+2026-01-30 09:14:16 | services.content_injector | INFO     | [ContentInjector] 开场白内容: Free wine from a fountain in Italy!
+  🔥 热点话题: travel (6.36s)
+  📰 Free wine from a fountain in Italy!
+2026-01-30 09:14:18 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey there! I heard about a fou...
+2026-01-30 09:14:18 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:18 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第1/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:18 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey there! I heard about a fou...
+2026-01-30 09:14:19 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:19 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第2/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:19 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey there! I heard about a fou...
+2026-01-30 09:14:20 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:20 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第3/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:20 | services.gpt4o_pipeline | ERROR    | [TTS/minimax] 所有3次尝试都失败
+2026-01-30 09:14:20 | services.gpt4o_pipeline | ERROR    | [InitialQ+Content] 失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+  🤖 AI: Hey there! I heard about a fountain in Italy that gives free wine every day. Wouldn't it be awesome to visit? What do you think about traveling there someday?
+  ⏱️ AI延迟: 3.77s
+
+[Turn 1]
+  👤 User: Oh, yes! I think it would be really amazing to visit Italy. I love Italian food and culture, and, um, free wine is a big bonus! I imagine the fountain is beautiful, too. 
+
+Traveling there someday sounds like a dream, but I am not sure how to save money for it. Maybe I can plan a trip with friends. Do you think it is better to go in summer or autumn? I heard summer is very hot, but autumn has nice colors. What do you think?
+  ⏱️ User延迟: 3.30s
+  🔍 检测到话题: travel，后台搜索热点...
+2026-01-30 09:14:23 | services.content_injector | INFO     | [ContentInjector] 被动触发: travel, 等级: B1
+2026-01-30 09:14:23 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 2 条, ~145 tokens
+2026-01-30 09:14:23 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 2 条, 预览: assistant: Hey there! I heard about a fountain in Italy that ..., user: Oh, yes! I think it would be really amazing to vis...
+2026-01-30 09:14:23 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=2, tokens≈1952 (system:1701, history:145, user:106)
+2026-01-30 09:14:23 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Oh, yes! I think it would be really amazing to vis...
+2026-01-30 09:14:23 | services.content_injector | INFO     | [ContentInjector] 搜索: latest interesting news about travel
+2026-01-30 09:14:24 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.79s 
+2026-01-30 09:14:25 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.50s, 回复: Oh, I totally get the excitement about visiting It...
+2026-01-30 09:14:25 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=2, tokens≈1952, latency=1502ms
+  🤖 AI: Oh, I totally get the excitement about visiting Italy! I think autumn might be a lovely time to go. The cooler weather and beautiful fall colors could make exploring so pleasant. Plus, it might be less crowded than in the summer. Planning with friends sounds like a great idea, too! Have you thought about any specific places in Italy you'd like to visit?
+  ⏱️ AI延迟: 1.50s
+
+[Turn 2]
+  👤 User: Yes, I think autumn is nice for visiting! I like the idea of beautiful colors. I have thought about some places, um, like Florence because of the art, and Venice for the canals. I also want to see Rome for the history, like the Colosseum and, um, the Vatican. I’m not sure which place to go first, maybe I should ask my friends too. What do you think?
+  ⏱️ User延迟: 3.20s
+2026-01-30 09:14:28 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 4 条, ~320 tokens
+2026-01-30 09:14:28 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 4 条, 预览: user: Oh, yes! I think it would be really amazing to vis..., assistant: Oh, I totally get the excitement about visiting It..., user: Yes, I think autumn is nice for visiting! I like t...
+2026-01-30 09:14:28 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=4, tokens≈2108 (system:1701, history:320, user:87)
+2026-01-30 09:14:28 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I think autumn is nice for visiting! I like t...
+2026-01-30 09:14:28 | services.content_injector | INFO     | [ContentInjector] 搜索完成, 耗时: 4.74s, 结果长度: 446
+2026-01-30 09:14:29 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.74s 
+2026-01-30 09:14:30 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.39s, 回复: Oh, I love that you're thinking about visiting Flo...
+2026-01-30 09:14:30 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=4, tokens≈2108, latency=1389ms
+  🤖 AI: Oh, I love that you're thinking about visiting Florence, Venice, and Rome! Each city has its own unique charm. Maybe you could start with Rome to dive into its rich history, then head to Florence for the art, and end with a relaxing gondola ride in Venice. How do your friends feel about those places?
+  ⏱️ AI延迟: 1.39s
+
+[Turn 3]
+2026-01-30 09:14:30 | services.content_injector | INFO     | [ContentInjector] 话题内容: Iceland's party under the solar eclipse!
+  [后台] ✅ 热点就绪: Iceland's party under the solar eclipse!... (6.68s)
+  👤 User: Oh, yes! My friends also think these cities are really nice. I told them about Rome and its history, like the Colosseum and the Vatican. They say they want to see that, too. Florence is famous for art, right? I love the idea of seeing the, um, the Uffizi Gallery. And Venice, with the gondolas, it sounds so romantic! 
+
+But, um, I’m not sure if my friends want to go all together. Some of them like beaches more. I hope we can all agree on one place because I really want to see these cities!
+  ⏱️ User延迟: 4.86s
+2026-01-30 09:14:36 | services.minimax_tts | INFO     | [MiniMax TTS Stream] 开始流式合成: voice=male-qn-jingying, speed=1.0x, text=Rome's history is truly fascin...
+2026-01-30 09:14:36 | services.minimax_tts | WARNING  | [MiniMax TTS Stream] Attempt 1/3 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:36 | services.minimax_tts | INFO     | [MiniMax TTS Stream] 100ms 后重试...
+2026-01-30 09:14:38 | services.minimax_tts | WARNING  | [MiniMax TTS Stream] Attempt 2/3 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:38 | services.minimax_tts | INFO     | [MiniMax TTS Stream] 100ms 后重试...
+2026-01-30 09:14:38 | services.minimax_tts | WARNING  | [MiniMax TTS Stream] Attempt 3/3 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:38 | services.minimax_tts | ERROR    | [MiniMax TTS Stream] 所有 3 次尝试均失败
+2026-01-30 09:14:38 | services.gpt4o_pipeline | ERROR    | [TTS Stream Sync] 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:14:38 | services.gpt4o_pipeline | ERROR    | [Response+Content] 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+  🤖 AI: Rome's history is truly fascinating! Have you thought about what landmarks you want to see there first? Maybe the Colosseum or the Vatican?
+  ⏱️ AI延迟: 4.02s 🔥[travel]
+
+[Turn 4]
+  👤 User: Yes, I’ve thought about the Colosseum! I think it is very impressive. I want to see the big building and take photos. The Vatican is also important, right? I heard there are many beautiful paintings and the Sistine Chapel. But I'm not sure if I can see everything in one day! What do you think? Should I choose only a few places?
+  ⏱️ User延迟: 6.91s
+2026-01-30 09:14:45 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~634 tokens
+2026-01-30 09:14:45 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Oh, yes! My friends also think these cities are re..., assistant: Rome's history is truly fascinating! Have you thou..., user: Yes, I’ve thought about the Colosseum! I think it ...
+2026-01-30 09:14:45 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2417 (system:1701, history:634, user:82)
+2026-01-30 09:14:45 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I’ve thought about the Colosseum! I think it ...
+2026-01-30 09:14:46 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.05s 
+2026-01-30 09:14:48 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.17s, 回复: Oh, you're right, the Colosseum is definitely impr...
+2026-01-30 09:14:48 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2417, latency=2174ms
+  🤖 AI: Oh, you're right, the Colosseum is definitely impressive! And yes, the Vatican is full of beautiful art, especially the Sistine Chapel. Trying to see everything in just one day might be a bit rushed, though. Maybe you could focus on a few key places to really enjoy the experience. What are you most excited to see or do first?
+  ⏱️ AI延迟: 2.17s
+
+[Turn 5]
+  👤 User: Yes, I think the Sistine Chapel is very famous! I want to see the ceiling, it looks amazing. But, um, I’m not sure if I can see everything in one day. I want to enjoy the places, not just rush. Maybe I will focus on the Colosseum and the Vatican first, then see some smaller places after. I also want to try some Italian food, like pizza or pasta! What do you think I should do?
+  ⏱️ User延迟: 3.99s
+2026-01-30 09:14:51 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~770 tokens
+2026-01-30 09:14:51 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Yes, I’ve thought about the Colosseum! I think it ..., assistant: Oh, you're right, the Colosseum is definitely impr..., user: Yes, I think the Sistine Chapel is very famous! I ...
+2026-01-30 09:14:51 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2565 (system:1701, history:770, user:94)
+2026-01-30 09:14:51 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I think the Sistine Chapel is very famous! I ...
+2026-01-30 09:14:52 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.95s 
+2026-01-30 09:14:53 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.53s, 回复: Oh, it sounds like you have a great plan! Focusing...
+2026-01-30 09:14:53 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2565, latency=1527ms
+  🤖 AI: Oh, it sounds like you have a great plan! Focusing on the Colosseum and the Vatican first is smart, so you can really enjoy those amazing places. And trying Italian food is a must! I've heard that the pizza in Rome is delicious. Do you have any specific Italian dishes you're excited to try?
+  ⏱️ AI延迟: 1.53s
+
+[Turn 6]
+  👤 User: Yes, I think trying Italian food is very important! I want to eat pizza, of course, but also pasta. I heard spaghetti carbonara is very good. And, um, maybe gelato for dessert? I love sweets! But I’m not sure about other dishes. Can you suggest some? I want to try many things!
+  ⏱️ User延迟: 2.34s
+2026-01-30 09:14:55 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~717 tokens
+2026-01-30 09:14:55 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Yes, I think the Sistine Chapel is very famous! I ..., assistant: Oh, it sounds like you have a great plan! Focusing..., user: Yes, I think trying Italian food is very important...
+2026-01-30 09:14:55 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2487 (system:1701, history:717, user:69)
+2026-01-30 09:14:55 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I think trying Italian food is very important...
+2026-01-30 09:14:56 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.86s 
+2026-01-30 09:14:57 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.61s, 回复: Oh, gelato for dessert sounds perfect! Spaghetti c...
+2026-01-30 09:14:57 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2487, latency=1609ms
+  🤖 AI: Oh, gelato for dessert sounds perfect! Spaghetti carbonara is indeed delicious. You might also want to try bruschetta as a starter—it's a tasty bread with tomatoes and basil. For something a bit different, maybe try risotto or gnocchi. What do you think? Do any of those sound interesting to you?
+  ⏱️ AI延迟: 1.61s
+
+[Turn 7]
+  👤 User: Hmm, yes! Gelato sounds really good. I love ice cream. And I think bruschetta is interesting too! I like tomatoes and bread. 
+
+Spaghetti carbonara, I heard it's very rich and creamy, right? I want to try that. 
+
+Risotto is also nice, but I never eat it before. Gnocchi, I don't know much about it... is it like pasta? 
+
+Maybe I should try all of them if I have time!
+  ⏱️ User延迟: 3.86s
+2026-01-30 09:15:01 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 10 条, ~795 tokens
+2026-01-30 09:15:01 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 10 条, 预览: user: Yes, I think trying Italian food is very important..., assistant: Oh, gelato for dessert sounds perfect! Spaghetti c..., user: Hmm, yes! Gelato sounds really good. I love ice cr...
+2026-01-30 09:15:01 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=10, tokens≈2587 (system:1701, history:795, user:91)
+2026-01-30 09:15:01 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Hmm, yes! Gelato sounds really good. I love ice cr...
+2026-01-30 09:15:02 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.86s 
+2026-01-30 09:15:03 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.65s, 回复: Oh, you **don't know** much about gnocchi? It's ac...
+2026-01-30 09:15:03 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=10, tokens≈2587, latency=2652ms
+  🤖 AI: Oh, you **don't know** much about gnocchi? It's actually quite interesting! Gnocchi are small dumplings made from potatoes, flour, and sometimes cheese. They are soft and a bit chewy, different from pasta but equally delicious. Trying all those dishes sounds like a great food adventure! Do you have any special plans for when you'll try them?
+  ⏱️ AI延迟: 2.65s
+
+[Turn 8]
+  👤 User: Oh, gnocchi sounds very nice! I didn’t know they are made from potatoes. I think I will try them too! 
+
+For my food adventure, maybe I will go to an Italian restaurant next weekend. I want to eat pizza and pasta, and if they have gnocchi, I will definitely order that. I also want to try gelato, of course. 
+
+I am a little nervous about trying new foods, but I think it will be fun! Do you have any suggestions for a good Italian restaurant?
+  ⏱️ User延迟: 3.06s
+2026-01-30 09:15:07 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 10 条, ~792 tokens
+2026-01-30 09:15:07 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 10 条, 预览: user: Hmm, yes! Gelato sounds really good. I love ice cr..., assistant: Oh, you **don't know** much about gnocchi? It's ac..., user: Oh, gnocchi sounds very nice! I didn’t know they a...
+2026-01-30 09:15:07 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=10, tokens≈2603 (system:1701, history:792, user:110)
+2026-01-30 09:15:07 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Oh, gnocchi sounds very nice! I didn’t know they a...
+2026-01-30 09:15:07 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.86s 
+2026-01-30 09:15:08 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.54s, 回复: Oh, trying new foods can definitely be exciting! I...
+2026-01-30 09:15:08 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=10, tokens≈2603, latency=1536ms
+  🤖 AI: Oh, trying new foods can definitely be exciting! I don't have a specific Italian restaurant in mind, but I suggest looking for places known for their authentic dishes. Reading reviews online might help too. What part of trying new foods makes you feel nervous? Maybe we can find a way to make it even more fun!
+  ⏱️ AI延迟: 1.54s
+
+[Turn 9]
+  👤 User: Yes, I like trying new foods, but sometimes I feel nervous because, um, I don’t know if I will like the taste. Also, I worry about ordering food in a restaurant. What if I don’t understand the menu? It’s a little scary, but I want to be brave! Maybe I can bring a friend with me? That could make it more fun! What do you think?
+  ⏱️ User延迟: 3.17s
+2026-01-30 09:15:11 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~753 tokens
+2026-01-30 09:15:11 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Oh, gnocchi sounds very nice! I didn’t know they a..., assistant: Oh, trying new foods can definitely be exciting! I..., user: Yes, I like trying new foods, but sometimes I feel...
+2026-01-30 09:15:11 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2535 (system:1701, history:753, user:81)
+2026-01-30 09:15:11 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I like trying new foods, but sometimes I feel...
+2026-01-30 09:15:12 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.85s 
+2026-01-30 09:15:13 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.41s, 回复: Bringing a friend sounds like a great idea! It can...
+2026-01-30 09:15:13 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2535, latency=1408ms
+  🤖 AI: Bringing a friend sounds like a great idea! It can definitely make the experience more enjoyable and less stressful. Plus, you can share dishes and get their opinion on the menu too. Have you thought about who you'd like to bring along for this food adventure?
+  ⏱️ AI延迟: 1.41s
+
+[Turn 10]
+  👤 User: Yes, I think I will invite my friend Maria. She loves Italian food, and she always has good suggestions. I feel more relaxed when I am with her, so I can try new things. Um, we both like to share dishes, and then we can taste many different flavors. I hope she is free next weekend because I want to go soon! What about you? Do you have a favorite Italian dish?
+  ⏱️ User延迟: 3.59s
+2026-01-30 09:15:16 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~742 tokens
+2026-01-30 09:15:16 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Yes, I like trying new foods, but sometimes I feel..., assistant: Bringing a friend sounds like a great idea! It can..., user: Yes, I think I will invite my friend Maria. She lo...
+2026-01-30 09:15:16 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2533 (system:1701, history:742, user:90)
+2026-01-30 09:15:16 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I think I will invite my friend Maria. She lo...
+2026-01-30 09:15:17 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.82s 
+2026-01-30 09:15:18 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.03s, 回复: Oh, I hope Maria is free next weekend too! Sharing...
+2026-01-30 09:15:18 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2533, latency=2028ms
+  🤖 AI: Oh, I hope Maria is free next weekend too! Sharing dishes and trying different flavors sounds like a fun way to explore Italian cuisine together. As for me, I really love lasagna. There's something about the layers of pasta, cheese, and sauce that's just so comforting. What's one Italian dish you're most excited to try?
+  ⏱️ AI延迟: 2.03s
+
+[Turn 11]
+  👤 User: Hmm, I think I am most excited to try... um, maybe risotto? I heard it is creamy and, um, very tasty. I like rice dishes, and I want to see how they make it so, um, smooth and delicious. I also want to try tiramisu for dessert because, you know, it has coffee and chocolate, and I love those flavors! What about you? Do you have other favorite Italian dishes?
+  ⏱️ User延迟: 2.99s
+2026-01-30 09:15:21 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~768 tokens
+2026-01-30 09:15:21 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Yes, I think I will invite my friend Maria. She lo..., assistant: Oh, I hope Maria is free next weekend too! Sharing..., user: Hmm, I think I am most excited to try... um, maybe...
+2026-01-30 09:15:21 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2558 (system:1701, history:768, user:89)
+2026-01-30 09:15:21 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Hmm, I think I am most excited to try... um, maybe...
+2026-01-30 09:15:22 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.01s 
+2026-01-30 09:15:23 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.89s, 回复: Risotto and tiramisu sound like delicious choices!...
+2026-01-30 09:15:23 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2558, latency=1893ms
+  🤖 AI: Risotto and tiramisu sound like delicious choices! I love how risotto is so creamy and comforting, and tiramisu definitely has those amazing coffee and chocolate flavors. Besides lasagna, I also really enjoy gnocchi. There's something about those little potato dumplings with sauce that I find irresistible. Have you ever tried making any Italian dishes at home?
+  ⏱️ AI延迟: 1.89s
+
+[Turn 12]
+  👤 User: Oh, yes! I, um, I have tried to make spaghetti once. It was not too hard, but I think I put too much, um, sauce. It was a little too wet, you know? But I really enjoyed cooking it. I want to try, um, making risotto too, but it seems a bit... complicated? I heard it needs a lot of stirring, right? Gnocchi sounds interesting! I never made that, but I think it could be fun. Have you made gnocchi before?
+  ⏱️ User延迟: 3.32s
+2026-01-30 09:15:26 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~782 tokens
+2026-01-30 09:15:26 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Hmm, I think I am most excited to try... um, maybe..., assistant: Risotto and tiramisu sound like delicious choices!..., user: Oh, yes! I, um, I have tried to make spaghetti onc...
+2026-01-30 09:15:26 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2583 (system:1701, history:782, user:100)
+2026-01-30 09:15:26 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Oh, yes! I, um, I have tried to make spaghetti onc...
+2026-01-30 09:15:28 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.06s 
+2026-01-30 09:15:28 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.87s, 回复: Oh, you **don't know**? Making gnocchi can be quit...
+2026-01-30 09:15:28 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2583, latency=1868ms
+  🤖 AI: Oh, you **don't know**? Making gnocchi can be quite fun and rewarding! I have tried making it before, and it's actually not too complicated once you get the hang of it. The trick is to get the right texture so they're light and fluffy. What part of cooking do you enjoy the most? Is it the creativity, the process, or maybe the tasting?
+  ⏱️ AI延迟: 1.87s
+
+[Turn 13]
+  👤 User: Hmm, I think I enjoy, um, the tasting part the most! It's so nice to try the food after cooking, and I feel happy when it tastes good. But I also like the creativity because, um, I can try different ingredients and make my own recipes. 
+
+The cooking process can be, uh, a little stressful sometimes, especially if I am not sure what to do. Like when I made spaghetti, I was worried about the sauce! But when everything is done, I feel proud. What about you? What do you like most in cooking?
+  ⏱️ User延迟: 8.94s
+2026-01-30 09:15:37 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~720 tokens
+2026-01-30 09:15:37 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Oh, yes! I, um, I have tried to make spaghetti onc..., assistant: Oh, you **don't know**? Making gnocchi can be quit..., user: Hmm, I think I enjoy, um, the tasting part the mos...
+2026-01-30 09:15:37 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2543 (system:1701, history:720, user:122)
+2026-01-30 09:15:37 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Hmm, I think I enjoy, um, the tasting part the mos...
+2026-01-30 09:15:38 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.00s 
+2026-01-30 09:15:39 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.88s, 回复: Ah, it **makes** you happy when the food tastes go...
+2026-01-30 09:15:39 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2543, latency=1881ms
+  🤖 AI: Ah, it **makes** you happy when the food tastes good! I totally get that, tasting is such a rewarding part of cooking. For me, I really love the creativity too—it's exciting to experiment with flavors and try new things. There's something magical about turning raw ingredients into a delicious meal. Do you have any favorite ingredients or spices you like to use in your cooking adventures?
+  ⏱️ AI延迟: 1.88s
+
+[Turn 14]
+  👤 User: Yes, I think I like, um, garlic a lot! It's very good in many dishes, like pasta or, um, stir-fry. I also enjoy using, hmm, cumin and paprika because they have strong flavors. But, I am not so sure about, um, using too many spices. Sometimes I think I add too much and it is not good. 
+
+I like to try new things too, but I am a little scared it will not taste nice. Do you have, um, any favorite recipes with garlic or spices?
+  ⏱️ User延迟: 4.46s
+2026-01-30 09:15:44 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~768 tokens
+2026-01-30 09:15:44 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Hmm, I think I enjoy, um, the tasting part the mos..., assistant: Ah, it **makes** you happy when the food tastes go..., user: Yes, I think I like, um, garlic a lot! It's very g...
+2026-01-30 09:15:44 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2575 (system:1701, history:768, user:106)
+2026-01-30 09:15:44 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I think I like, um, garlic a lot! It's very g...
+2026-01-30 09:15:45 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.02s 
+2026-01-30 09:15:46 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.27s, 回复: Garlic is such a versatile ingredient! I love usin...
+2026-01-30 09:15:46 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2575, latency=2269ms
+  🤖 AI: Garlic is such a versatile ingredient! I love using it in various dishes too. One of my favorite recipes with garlic is roasted garlic mashed potatoes. The roasted garlic gives it a nice, mellow flavor that's really comforting. As for spices, I enjoy making a cumin and paprika-spiced chicken—it has a nice kick to it! What do you enjoy most about experimenting with new flavors?
+  ⏱️ AI延迟: 2.27s
+
+[Turn 15]
+  👤 User: Oh, um, I think experimenting with new flavors is very exciting! I like, uh, trying different spices because they can change the whole taste of the food, you know? Sometimes I’m not sure how much to use, but it’s fun to, um, discover new combinations. Like, once I tried adding, um, ginger to a chicken stir-fry, and it was, uh, really nice! I also enjoy when flavors are, um, surprising, like sweet and salty together. What about you? Do you have a favorite flavor combination?
+  ⏱️ User延迟: 2.58s
+2026-01-30 09:15:48 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 7 条, ~722 tokens
+2026-01-30 09:15:48 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 7 条, 预览: user: Yes, I think I like, um, garlic a lot! It's very g..., assistant: Garlic is such a versatile ingredient! I love usin..., user: Oh, um, I think experimenting with new flavors is ...
+2026-01-30 09:15:48 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=7, tokens≈2542 (system:1701, history:722, user:119)
+2026-01-30 09:15:48 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Oh, um, I think experimenting with new flavors is ...
+2026-01-30 09:15:49 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.89s 
+2026-01-30 09:15:50 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.73s, 回复: Oh, I love that you find experimenting with new fl...
+2026-01-30 09:15:50 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=7, tokens≈2542, latency=1727ms
+  🤖 AI: Oh, I love that you find experimenting with new flavors exciting! Sweet and salty combinations are some of my favorites too. There's something about that unexpected balance that's really satisfying. One of my favorite flavor combinations is chocolate with a hint of chili—it's got that sweet heat that just works so well. Have you ever tried anything like that?
+  ⏱️ AI延迟: 1.73s
+
+======================================================================
+统计
+======================================================================
+AI 平均延迟: 1.97s
+User 平均延迟: 4.04s
+热点搜索平均延迟: 6.52s
+
+🔥 热点注入事件:
+  - Turn 0: [greeting] travel (6.36s)
+  - Turn 3: [async_search] None (6.68s)
+
+✅ 保存到 /home/ubuntu/learning_english/tests/improved_results/B1_15turns.json
+✅ 生产模块已加载
+2026-01-30 09:15:51 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] 豆包 ASR 已配置
+2026-01-30 09:15:52 | services.minimax_tts | INFO     | MiniMaxTTSService 初始化: model=speech-2.6-hd, voice=male-qn-jingying
+2026-01-30 09:15:52 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] MiniMax TTS 已初始化: voice=male-qn-jingying
+2026-01-30 09:15:52 | services.gpt4o_pipeline | INFO     | GPT-4o Pipeline 初始化完成: ASR=doubao/gpt-4o-transcribe, LLM=gpt-4o, TTS=minimax/gpt-4o-mini-tts
+2026-01-30 09:15:52 | services.content_injector | INFO     | [ContentInjector] 初始化完成
+======================================================================
+生产环境测试 | 等级: B2 | 轮次: 15
+用户兴趣: ['cooking', 'travel', 'movies']
+======================================================================
+
+[Turn 0] 生成开场白...
+2026-01-30 09:15:52 | services.content_injector | INFO     | [ContentInjector] 开场白话题: cooking, 等级: B2
+2026-01-30 09:15:52 | services.content_injector | INFO     | [ContentInjector] 搜索: latest news about cooking
+2026-01-30 09:15:57 | services.content_injector | INFO     | [ContentInjector] 搜索完成, 耗时: 5.86s, 结果长度: 405
+2026-01-30 09:15:59 | services.content_injector | INFO     | [ContentInjector] 开场白内容: Swangy flavors are the new cooking trend!
+  🔥 热点话题: cooking (7.15s)
+  📰 Swangy flavors are the new cooking trend!
+2026-01-30 09:16:00 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey there! I just read that 's...
+2026-01-30 09:16:01 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:01 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第1/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:01 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey there! I just read that 's...
+2026-01-30 09:16:02 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:02 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第2/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:02 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey there! I just read that 's...
+2026-01-30 09:16:03 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:03 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第3/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:03 | services.gpt4o_pipeline | ERROR    | [TTS/minimax] 所有3次尝试都失败
+2026-01-30 09:16:03 | services.gpt4o_pipeline | ERROR    | [InitialQ+Content] 失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+  🤖 AI: Hey there! I just read that 'swangy' flavors are trending in cooking, mixing spicy, sweet, and tangy. Sounds like a fun twist, right? Would you try it in your dishes?
+  ⏱️ AI延迟: 3.84s
+
+[Turn 1]
+  👤 User: Yes, it sounds very interesting! I think I would like to try swangy flavors in my cooking. I enjoy spicy food, and mixing it with sweet and tangy could create, um, a really unique experience. 
+
+I sometimes worry about making dishes too complicated, but I believe I can experiment. Maybe I can start with something simple, like a spicy mango salsa? Do you have any suggestions for a recipe or dish that would be good to try this swangy trend?
+  ⏱️ User延迟: 4.56s
+  🔍 检测到话题: cooking，后台搜索热点...
+2026-01-30 09:16:07 | services.content_injector | INFO     | [ContentInjector] 被动触发: cooking, 等级: B2
+2026-01-30 09:16:07 | services.content_injector | INFO     | [ContentInjector] 搜索: latest interesting news about cooking
+2026-01-30 09:16:07 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 2 条, ~151 tokens
+2026-01-30 09:16:07 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 2 条, 预览: assistant: Hey there! I just read that 'swangy' flavors are t..., user: Yes, it sounds very interesting! I think I would l...
+2026-01-30 09:16:07 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=2, tokens≈1962 (system:1701, history:151, user:110)
+2026-01-30 09:16:07 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, it sounds very interesting! I think I would l...
+2026-01-30 09:16:08 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.94s 
+2026-01-30 09:16:09 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.91s, 回复: Starting with a spicy mango salsa sounds like a gr...
+2026-01-30 09:16:09 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=2, tokens≈1962, latency=1909ms
+  🤖 AI: Starting with a spicy mango salsa sounds like a great idea! It's a simple way to experiment with swangy flavors without getting too complicated. You could try adding some lime juice and chili powder to really bring out the tangy and spicy elements. How do you feel about the balance between sweet and spicy? Do you have a favorite dish that combines those flavors?
+  ⏱️ AI延迟: 1.91s
+
+[Turn 2]
+2026-01-30 09:16:12 | services.content_injector | INFO     | [ContentInjector] 搜索完成, 耗时: 4.93s, 结果长度: 418
+  👤 User: I think the balance between sweet and spicy is really important in cooking. If one flavor is too strong, it can... um, overpower the other. I like dishes where you can taste both, like sweet chili chicken. The sweetness from the chili sauce with the spicy kick is, you know, very nice. 
+
+For mango salsa, I believe adding lime juice will help with the freshness and acidity, which is also good. I’m excited to try it! Do you have any tips for making it?
+  ⏱️ User延迟: 3.57s
+2026-01-30 09:16:13 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 4 条, ~355 tokens
+2026-01-30 09:16:13 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 4 条, 预览: user: Yes, it sounds very interesting! I think I would l..., assistant: Starting with a spicy mango salsa sounds like a gr..., user: I think the balance between sweet and spicy is rea...
+2026-01-30 09:16:13 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=4, tokens≈2169 (system:1701, history:355, user:113)
+2026-01-30 09:16:13 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: I think the balance between sweet and spicy is rea...
+2026-01-30 09:16:14 | services.content_injector | INFO     | [ContentInjector] 话题内容: Exciting twist in cooking: Swangy flavors!
+  [后台] ✅ 热点就绪: Exciting twist in cooking: Swangy flavor... (6.38s)
+2026-01-30 09:16:14 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.09s 
+2026-01-30 09:16:14 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.71s, 回复: I love your enthusiasm for trying new recipes! For...
+2026-01-30 09:16:14 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=4, tokens≈2169, latency=1708ms
+  🤖 AI: I love your enthusiasm for trying new recipes! For making mango salsa, a key tip is to let it sit for a bit after mixing all the ingredients. This helps the flavors to blend together nicely. You could also add a pinch of salt to enhance the taste. What's your favorite occasion to serve something like mango salsa?
+  ⏱️ AI延迟: 1.71s
+
+[Turn 3]
+  👤 User: Thank you! Yes, I think letting it sit is a good idea. It makes the flavors better, right? My favorite occasion to serve mango salsa would probably be at a barbecue. I like outdoor parties with friends and family. The weather is usually nice, and... um, people enjoy fresh and colorful dishes. 
+
+I also think it’s nice to serve it with grilled chicken or fish. It adds a, um, different taste. What do you think? Do you have a favorite occasion for mango salsa, too?
+  ⏱️ User延迟: 2.60s
+2026-01-30 09:16:18 | services.minimax_tts | INFO     | [MiniMax TTS Stream] 开始流式合成: voice=male-qn-jingying, speed=1.0x, text=Absolutely! Letting it sit all...
+2026-01-30 09:16:19 | services.minimax_tts | WARNING  | [MiniMax TTS Stream] Attempt 1/3 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:19 | services.minimax_tts | INFO     | [MiniMax TTS Stream] 100ms 后重试...
+2026-01-30 09:16:20 | services.minimax_tts | WARNING  | [MiniMax TTS Stream] Attempt 2/3 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:20 | services.minimax_tts | INFO     | [MiniMax TTS Stream] 100ms 后重试...
+2026-01-30 09:16:21 | services.minimax_tts | WARNING  | [MiniMax TTS Stream] Attempt 3/3 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:21 | services.minimax_tts | ERROR    | [MiniMax TTS Stream] 所有 3 次尝试均失败
+2026-01-30 09:16:21 | services.gpt4o_pipeline | ERROR    | [TTS Stream Sync] 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:16:21 | services.gpt4o_pipeline | ERROR    | [Response+Content] 失败: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+  🤖 AI: Absolutely! Letting it sit allows the flavors to meld together nicely. Mango salsa is one of my favorites too. Have you tried adding lime juice or cilantro for an extra kick?
+  ⏱️ AI延迟: 3.95s 🔥[cooking]
+
+[Turn 4]
+  👤 User: Yes, I have tried lime juice! It adds a nice tanginess that I really enjoy. But I’m not sure about cilantro. Sometimes I think it has a strong taste, maybe too strong for me? I guess it depends on how much you use. Do you think it’s necessary for the salsa?
+  ⏱️ User延迟: 2.15s
+2026-01-30 09:16:23 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~656 tokens
+2026-01-30 09:16:23 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Thank you! Yes, I think letting it sit is a good i..., assistant: Absolutely! Letting it sit allows the flavors to m..., user: Yes, I have tried lime juice! It adds a nice tangi...
+2026-01-30 09:16:23 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2421 (system:1701, history:656, user:64)
+2026-01-30 09:16:23 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I have tried lime juice! It adds a nice tangi...
+2026-01-30 09:16:24 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.27s 
+2026-01-30 09:16:25 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.89s, 回复: I totally get what you mean about cilantro! It can...
+2026-01-30 09:16:25 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2421, latency=1891ms
+  🤖 AI: I totally get what you mean about cilantro! It can be quite strong, and not everyone loves it. I think it's not absolutely necessary for mango salsa, but it can add a fresh, herbal note if used in moderation. Have you ever experimented with other herbs or ingredients in your salsa to see how they change the flavor?
+  ⏱️ AI延迟: 1.89s
+
+[Turn 5]
+  👤 User: Yes, I agree! Cilantro can be very strong. I think if you use a little, it can be nice, but too much is... overwhelming? I haven’t tried many other herbs in my salsa yet. I think maybe basil could be interesting? I like the flavor of basil a lot. But I’m not sure how it would taste with mango. Have you tried it? Also, I sometimes add a bit of garlic for depth, but it can be strong too. What do you think?
+  ⏱️ User延迟: 2.95s
+2026-01-30 09:16:28 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~795 tokens
+2026-01-30 09:16:28 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Yes, I have tried lime juice! It adds a nice tangi..., assistant: I totally get what you mean about cilantro! It can..., user: Yes, I agree! Cilantro can be very strong. I think...
+2026-01-30 09:16:28 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2597 (system:1701, history:795, user:101)
+2026-01-30 09:16:28 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I agree! Cilantro can be very strong. I think...
+2026-01-30 09:16:29 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.15s 
+2026-01-30 09:16:30 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.81s, 回复: Basil with mango salsa sounds intriguing! 🍃 I have...
+2026-01-30 09:16:30 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2597, latency=1806ms
+  🤖 AI: Basil with mango salsa sounds intriguing! 🍃 I haven't tried it myself, but it could add a lovely aromatic twist. Garlic definitely adds depth, but you're right—it can be quite strong. Maybe roasted garlic could be a softer option? What's been your favorite combination so far?
+  ⏱️ AI延迟: 1.81s
+
+[Turn 6]
+  👤 User: Yes, roasted garlic is a good idea! I think it would be milder and more sweet. My favorite combination so far... Hmm, I really like mango salsa with a bit of lime juice and, um, some jalapeño for heat. It’s fresh and spicy, but not too much! I also tried it with avocado once, and that was creamy and delicious. How about you? Do you have a favorite combination?
+  ⏱️ User延迟: 2.95s
+2026-01-30 09:16:33 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~753 tokens
+2026-01-30 09:16:33 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Yes, I agree! Cilantro can be very strong. I think..., assistant: Basil with mango salsa sounds intriguing! 🍃 I have..., user: Yes, roasted garlic is a good idea! I think it wou...
+2026-01-30 09:16:33 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2544 (system:1701, history:753, user:90)
+2026-01-30 09:16:33 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, roasted garlic is a good idea! I think it wou...
+2026-01-30 09:16:34 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.90s 
+2026-01-30 09:16:35 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.90s, 回复: Oh, roasted garlic definitely adds a sweet touch! ...
+2026-01-30 09:16:35 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2544, latency=1897ms
+  🤖 AI: Oh, roasted garlic definitely adds a sweet touch! I love your combination of mango salsa with lime juice and jalapeño—it sounds like the perfect balance of fresh and spicy. 😋 As for me, I really enjoy adding a bit of pineapple and red onion to my mango salsa. It brings a nice sweetness and a bit of crunch, which I find really delightful. Have you tried pineapple in your salsa before?
+  ⏱️ AI延迟: 1.90s
+
+[Turn 7]
+  👤 User: I think pineapple in salsa is a great idea! I haven't tried it yet, but I can imagine the sweetness mixing well with mango and lime. The crunch from the red onion also sounds nice. I usually just stick to mango, lime, and jalapeño, but I’m curious to experiment more. Maybe I will try adding pineapple next time! Do you have any other recipe tips for salsa?
+  ⏱️ User延迟: 3.17s
+2026-01-30 09:16:38 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~747 tokens
+2026-01-30 09:16:38 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: Yes, roasted garlic is a good idea! I think it wou..., assistant: Oh, roasted garlic definitely adds a sweet touch! ..., user: I think pineapple in salsa is a great idea! I have...
+2026-01-30 09:16:38 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2537 (system:1701, history:747, user:89)
+2026-01-30 09:16:38 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: I think pineapple in salsa is a great idea! I have...
+2026-01-30 09:16:39 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.19s 
+2026-01-30 09:16:40 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.96s, 回复: I'm glad you're excited to experiment with your sa...
+2026-01-30 09:16:40 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2537, latency=1960ms
+  🤖 AI: I'm glad you're excited to experiment with your salsa! Pineapple could definitely add a unique sweetness. If you're looking for other tips, have you thought about adding a bit of cucumber for extra freshness and crunch? It pairs wonderfully with mango and lime! What's inspired you to explore more with your recipes?
+  ⏱️ AI延迟: 1.96s
+
+[Turn 8]
+  👤 User: Oh, cucumber! That's an interesting idea. I think it could add a nice texture, yes. I haven't thought about that before. 
+
+What inspires me? Well, I really enjoy cooking and trying new flavors. Sometimes, I watch cooking shows or look at recipes online. And when I have friends over, I like to impress them with something different. I want to make food that is not just tasty but also beautiful. 
+
+Also, I think experimenting is fun! It’s like... a little adventure in the kitchen. Do you have any other suggestions for ingredients?
+  ⏱️ User延迟: 5.25s
+2026-01-30 09:16:45 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 9 条, ~800 tokens
+2026-01-30 09:16:45 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 9 条, 预览: user: I think pineapple in salsa is a great idea! I have..., assistant: I'm glad you're excited to experiment with your sa..., user: Oh, cucumber! That's an interesting idea. I think ...
+2026-01-30 09:16:45 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=9, tokens≈2634 (system:1701, history:800, user:133)
+2026-01-30 09:16:45 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Oh, cucumber! That's an interesting idea. I think ...
+2026-01-30 09:16:46 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.13s 
+2026-01-30 09:16:47 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.27s, 回复: Experimenting in the kitchen really does sound lik...
+2026-01-30 09:16:47 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=9, tokens≈2634, latency=2265ms
+  🤖 AI: Experimenting in the kitchen really does sound like an adventure! 🌟 I love how you aim to make food that's both tasty and beautiful—it's such a great way to impress friends. If you're looking for more ingredient suggestions, have you tried adding mint or cilantro to your salsa? They can bring a refreshing twist. What's the most adventurous dish you've tried making so far?
+  ⏱️ AI延迟: 2.27s
+
+[Turn 9]
+  👤 User: Yes, I think adding mint or cilantro sounds really refreshing! I love herbs in food. I haven't tried it yet, but I think it would be a great combination with pineapple. 
+
+As for the most adventurous dish... hmmm, I would say making homemade sushi? It was quite challenging! I had to prepare the rice perfectly and cut the fish very carefully. I was nervous at first, but it turned out better than I expected. My friends liked it a lot! 
+
+What about you? Do you have any favorite adventurous dishes?
+  ⏱️ User延迟: 3.00s
+2026-01-30 09:16:50 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 8 条, ~773 tokens
+2026-01-30 09:16:50 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 8 条, 预览: user: Oh, cucumber! That's an interesting idea. I think ..., assistant: Experimenting in the kitchen really does sound lik..., user: Yes, I think adding mint or cilantro sounds really...
+2026-01-30 09:16:50 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=8, tokens≈2598 (system:1701, history:773, user:124)
+2026-01-30 09:16:50 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I think adding mint or cilantro sounds really...
+2026-01-30 09:16:52 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.31s 
+2026-01-30 09:16:53 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.48s, 回复: Making homemade sushi sounds like such an exciting...
+2026-01-30 09:16:53 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=8, tokens≈2598, latency=2479ms
+  🤖 AI: Making homemade sushi sounds like such an exciting challenge! I admire how you tackled preparing the rice and cutting the fish—it must have felt like quite the accomplishment with your friends enjoying it. 😊 As for adventurous dishes, I once tried making a paella from scratch. Balancing the flavors and cooking the seafood perfectly was tricky, but it was incredibly rewarding. What's a dish you dream of trying next?
+  ⏱️ AI延迟: 2.48s
+
+[Turn 10]
+  👤 User: Oh, paella sounds amazing! I think seafood is quite challenging to cook perfectly, but very rewarding too. 
+
+For me, I dream of trying to make homemade ramen. I love the flavors and the broth. It seems... um, very complex? Yes, I know I need to prepare the broth for a long time and the noodles have to be just right. 
+
+Also, I want to learn about all the toppings—like soft-boiled eggs and bamboo shoots. It feels like a journey—like, so many steps to create one bowl! Have you made ramen before?
+  ⏱️ User延迟: 2.67s
+2026-01-30 09:16:55 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 7 条, ~746 tokens
+2026-01-30 09:16:55 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 7 条, 预览: user: Yes, I think adding mint or cilantro sounds really..., assistant: Making homemade sushi sounds like such an exciting..., user: Oh, paella sounds amazing! I think seafood is quit...
+2026-01-30 09:16:55 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=7, tokens≈2571 (system:1701, history:746, user:124)
+2026-01-30 09:16:55 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Oh, paella sounds amazing! I think seafood is quit...
+2026-01-30 09:16:56 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.02s 
+2026-01-30 09:16:58 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.45s, 回复: Oh, homemade ramen sounds like such a delicious ad...
+2026-01-30 09:16:58 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=7, tokens≈2571, latency=2447ms
+  🤖 AI: Oh, homemade ramen sounds like such a delicious adventure! You're right—getting the broth and noodles just right is quite a challenge, but I bet it'll be so satisfying. I haven't tried making ramen myself, but I'm intrigued by how all the toppings come together to create something special. What toppings are you most excited about experimenting with?
+  ⏱️ AI延迟: 2.45s
+
+[Turn 11]
+  👤 User: Yes, I agree! I think the broth is very important for ramen, and I want to try making a rich pork or chicken broth. For toppings, I’m excited about using soft-boiled eggs because they look so nice and taste great! Also, I want to add some green onions and maybe some nori. I’m not sure about the other toppings yet, like maybe bamboo shoots or spicy paste. I feel like there are so many options! What about you? Do you have any favorite toppings for ramen?
+  ⏱️ User延迟: 2.77s
+2026-01-30 09:17:01 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 7 条, ~779 tokens
+2026-01-30 09:17:01 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 7 条, 预览: user: Oh, paella sounds amazing! I think seafood is quit..., assistant: Oh, homemade ramen sounds like such a delicious ad..., user: Yes, I agree! I think the broth is very important ...
+2026-01-30 09:17:01 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=7, tokens≈2594 (system:1701, history:779, user:114)
+2026-01-30 09:17:01 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I agree! I think the broth is very important ...
+2026-01-30 09:17:02 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.09s 
+2026-01-30 09:17:03 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.55s, 回复: Oh, I love the idea of using soft-boiled eggs and ...
+2026-01-30 09:17:03 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=7, tokens≈2594, latency=2553ms
+  🤖 AI: Oh, I love the idea of using soft-boiled eggs and green onions as toppings for ramen! They add such great texture and flavor. Personally, I enjoy adding a touch of spicy paste to my ramen—it gives it a nice kick! Nori is always a lovely touch too. Your ramen plans sound delicious. What inspired you to start exploring homemade ramen?
+  ⏱️ AI延迟: 2.55s
+
+[Turn 12]
+  👤 User: Thank you! Soft-boiled eggs and green onions really do make a difference, I think. I love the idea of a spicy paste too; it sounds exciting! 
+
+Hmm, what inspired me? Well, I was watching a cooking show, and the chef made the ramen look so simple but delicious. It seemed like a fun challenge to try making it at home. Plus, I enjoy cooking and experimenting with flavors. But, um, I’m not so confident yet with the broth. I worry I might not get it right. Do you have any tips for making a good broth?
+  ⏱️ User延迟: 3.23s
+2026-01-30 09:17:06 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 7 条, ~761 tokens
+2026-01-30 09:17:06 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 7 条, 预览: user: Yes, I agree! I think the broth is very important ..., assistant: Oh, I love the idea of using soft-boiled eggs and ..., user: Thank you! Soft-boiled eggs and green onions reall...
+2026-01-30 09:17:06 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=7, tokens≈2587 (system:1701, history:761, user:125)
+2026-01-30 09:17:06 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Thank you! Soft-boiled eggs and green onions reall...
+2026-01-30 09:17:08 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.53s 
+2026-01-30 09:17:09 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.42s, 回复: Oh, making broth can be a bit tricky, but it's def...
+2026-01-30 09:17:09 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=7, tokens≈2587, latency=2418ms
+  🤖 AI: Oh, making broth can be a bit tricky, but it's definitely worth the effort! I think the key is to let it simmer for a long time to really develop those rich flavors. Using bones and aromatics like garlic, ginger, and onions can add depth to the broth. Have you tried experimenting with any specific ingredients yet? Or maybe there's a particular flavor you're aiming for?
+  ⏱️ AI延迟: 2.42s
+
+[Turn 13]
+  👤 User: Yes, I think simmering is very important! I haven't tried making broth yet, but I want to. I have some ideas about ingredients. I love the flavors of garlic and ginger. They are so strong and delicious! 
+
+But, um, I'm not sure about using bones. I usually just buy broth from the store. Do you think it's very different? I want to make a broth that is rich and a little bit spicy, like with some chili or pepper. But, sometimes I worry about making it too spicy. 
+
+Have you ever tried making a spicy ramen broth? What do you recommend?
+  ⏱️ User延迟: 3.46s
+2026-01-30 09:17:12 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 7 条, ~758 tokens
+2026-01-30 09:17:12 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 7 条, 预览: user: Thank you! Soft-boiled eggs and green onions reall..., assistant: Oh, making broth can be a bit tricky, but it's def..., user: Yes, I think simmering is very important! I haven'...
+2026-01-30 09:17:12 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=7, tokens≈2592 (system:1701, history:758, user:133)
+2026-01-30 09:17:12 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I think simmering is very important! I haven'...
+2026-01-30 09:17:13 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.01s 
+2026-01-30 09:17:15 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.55s, 回复: Oh, using bones can definitely create a richer, mo...
+2026-01-30 09:17:15 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=7, tokens≈2592, latency=2550ms
+  🤖 AI: Oh, using bones can definitely create a richer, more flavorful broth compared to store-bought ones, but both can be delicious in their own ways! If you're aiming for a spicy ramen broth, you could start by adding a bit of chili oil or a small amount of your favorite spicy paste. You can always adjust the spice level as you go to find the balance you like. As for making spicy ramen broth, I usually start with a basic recipe and gradually add chili or pepper until it hits the right level of heat. What's your favorite type of spicy food? Maybe that could inspire your broth!
+  ⏱️ AI延迟: 2.55s
+
+[Turn 14]
+  👤 User: I think I really enjoy spicy food, especially, um, Thai and Indian cuisine. They have so many flavors! I like curries that are, you know, creamy and spicy at the same time. But, I’m not sure how spicy I can handle when it comes to ramen. Maybe I should start with just a little chili oil, like you said. 
+
+And, um, I believe my favorite spicy dish is probably green curry. It’s, like, spicy but also has a nice coconut flavor. Do you think I could use that kind of inspiration for my broth? I want to experiment, but I’m a bit nervous about making it too hot!
+  ⏱️ User延迟: 4.48s
+2026-01-30 09:17:19 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 6 条, ~716 tokens
+2026-01-30 09:17:19 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 6 条, 预览: user: Yes, I think simmering is very important! I haven'..., assistant: Oh, using bones can definitely create a richer, mo..., user: I think I really enjoy spicy food, especially, um,...
+2026-01-30 09:17:19 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=6, tokens≈2556 (system:1701, history:716, user:139)
+2026-01-30 09:17:19 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: I think I really enjoy spicy food, especially, um,...
+2026-01-30 09:17:20 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.03s 
+2026-01-30 09:17:21 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 1.97s, 回复: Oh, using green curry as inspiration for your rame...
+2026-01-30 09:17:21 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=6, tokens≈2556, latency=1974ms
+  🤖 AI: Oh, using green curry as inspiration for your ramen broth sounds like a fun twist! The creamy coconut flavor could add a unique richness to your ramen. You could try adding a little coconut milk to balance the spiciness and see how it turns out. I totally get being cautious about the heat level, though! What's the story behind your love for Thai and Indian cuisine? Did you have a memorable experience with them?
+  ⏱️ AI延迟: 1.97s
+
+[Turn 15]
+  👤 User: Yes, I think the coconut milk idea is great! It can really balance the spicy flavor, like you said. Um, as for my love for Thai and Indian food, it started when I traveled to Thailand a few years ago. I tried this spicy noodle dish, and I remember feeling like, wow, it's so different but also delicious! 
+
+Then, my friend introduced me to Indian cuisine. I had butter chicken for the first time, and I was amazed by the rich flavors and spices. I think I was a bit overwhelmed at first, but I really enjoyed how everything was so aromatic. 
+
+Now, I try to cook these dishes at home. Sometimes I make a, um, simple curry or a stir-fry, but I still
+  ⏱️ User延迟: 8.90s
+  🔍 检测到话题: travel，后台搜索热点...
+2026-01-30 09:17:30 | services.content_injector | INFO     | [ContentInjector] 被动触发: travel, 等级: B2
+2026-01-30 09:17:30 | services.content_injector | INFO     | [ContentInjector] 搜索: latest interesting news about travel
+2026-01-30 09:17:30 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 6 条, ~772 tokens
+2026-01-30 09:17:30 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 6 条, 预览: user: I think I really enjoy spicy food, especially, um,..., assistant: Oh, using green curry as inspiration for your rame..., user: Yes, I think the coconut milk idea is great! It ca...
+2026-01-30 09:17:30 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=6, tokens≈2634 (system:1701, history:772, user:161)
+2026-01-30 09:17:30 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Yes, I think the coconut milk idea is great! It ca...
+2026-01-30 09:17:31 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 1.16s 
+2026-01-30 09:17:35 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 4.48s, 回复: Oh, I love how travel can open up new culinary pas...
+2026-01-30 09:17:35 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=6, tokens≈2634, latency=4476ms
+  🤖 AI: Oh, I love how travel can open up new culinary passions! Trying a spicy noodle dish in Thailand sounds like such an exciting experience. And butter chicken... the aromas can be so captivating! Have you had any memorable moments while cooking these dishes at home? Maybe a time when everything turned out just right, or a funny mishap in the kitchen?
+  ⏱️ AI延迟: 4.48s
+
+======================================================================
+统计
+======================================================================
+AI 平均延迟: 2.42s
+User 平均延迟: 3.71s
+热点搜索平均延迟: 6.77s
+
+🔥 热点注入事件:
+  - Turn 0: [greeting] cooking (7.15s)
+  - Turn 2: [async_search] cooking (6.38s)
+
+✅ 保存到 /home/ubuntu/learning_english/tests/improved_results/B2_15turns.json
+✅ 生产模块已加载
+2026-01-30 09:17:36 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] 豆包 ASR 已配置
+2026-01-30 09:17:36 | services.minimax_tts | INFO     | MiniMaxTTSService 初始化: model=speech-2.6-hd, voice=male-qn-jingying
+2026-01-30 09:17:36 | services.gpt4o_pipeline | INFO     | [GPT4oPipeline] MiniMax TTS 已初始化: voice=male-qn-jingying
+2026-01-30 09:17:36 | services.gpt4o_pipeline | INFO     | GPT-4o Pipeline 初始化完成: ASR=doubao/gpt-4o-transcribe, LLM=gpt-4o, TTS=minimax/gpt-4o-mini-tts
+2026-01-30 09:17:36 | services.content_injector | INFO     | [ContentInjector] 初始化完成
+======================================================================
+生产环境测试 | 等级: C1 | 轮次: 15
+用户兴趣: ['movies', 'cooking', 'travel']
+======================================================================
+
+[Turn 0] 生成开场白...
+2026-01-30 09:17:36 | services.content_injector | INFO     | [ContentInjector] 开场白话题: cooking, 等级: C1
+2026-01-30 09:17:36 | services.content_injector | INFO     | [ContentInjector] 搜索: latest news about cooking
+2026-01-30 09:17:42 | services.content_injector | INFO     | [ContentInjector] 搜索完成, 耗时: 5.51s, 结果长度: 517
+2026-01-30 09:17:43 | services.content_injector | INFO     | [ContentInjector] 开场白内容: Garum's making a comeback in the culinary scene!
+  🔥 热点话题: cooking (6.86s)
+  📰 Garum's making a comeback in the culinary scene!
+2026-01-30 09:17:45 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey! I just read that garum, a...
+2026-01-30 09:17:46 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:17:46 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第1/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:17:46 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey! I just read that garum, a...
+2026-01-30 09:17:46 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:17:46 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第2/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:17:47 | services.minimax_tts | INFO     | [MiniMax TTS] 合成: voice=male-qn-jingying, speed=1.0x, text=Hey! I just read that garum, a...
+2026-01-30 09:17:47 | services.minimax_tts | ERROR    | [MiniMax TTS] 合成失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:17:47 | services.gpt4o_pipeline | WARNING  | [TTS Retry] 第3/3次失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+2026-01-30 09:17:47 | services.gpt4o_pipeline | ERROR    | [TTS/minimax] 所有3次尝试都失败
+2026-01-30 09:17:47 | services.gpt4o_pipeline | ERROR    | [InitialQ+Content] 失败: WebSocket 错误: received 1000 (OK) the server closed the connection; then sent 1000 (OK) the server closed the connection
+  🤖 AI: Hey! I just read that garum, an ancient Roman fish sauce, is making a comeback with chefs using mushrooms and cheese for unique twists. Ever tried it?
+  ⏱️ AI延迟: 4.03s
+
+[Turn 1]
+  👤 User: Oh, garum! I think I’ve heard about it before. It’s quite interesting how something so ancient is becoming popular again. I haven’t tried it myself, but I imagine the combination with mushrooms and cheese could create a very complex flavor. 
+
+Um, I wonder... does it taste similar to any modern sauces? Or is it completely different? I’m curious about how chefs are using it in, um, contemporary dishes. Have you tried it? What does it taste like?
+  ⏱️ User延迟: 10.74s
+2026-01-30 09:17:58 | services.gpt4o_pipeline | INFO     | [LLM] ✂️ Token 截断后: 2 条, ~148 tokens
+2026-01-30 09:17:58 | services.gpt4o_pipeline | INFO     | [LLM] 对话历史: 2 条, 预览: assistant: Hey! I just read that garum, an ancient Roman fish..., user: Oh, garum! I think I’ve heard about it before. It’...
+2026-01-30 09:17:58 | services.gpt4o_pipeline | INFO     | [LLM] 📊 上下文分析: history_len=2, tokens≈1963 (system:1704, history:148, user:111)
+2026-01-30 09:17:58 | services.gpt4o_pipeline | INFO     | [LLM] 请求: 2 条消息, 用户输入: Oh, garum! I think I’ve heard about it before. It’...
+2026-01-30 09:17:59 | services.gpt4o_pipeline | INFO     | [LLM] 首字延迟 (TTFT): 0.80s 
+2026-01-30 09:18:01 | services.gpt4o_pipeline | INFO     | [LLM] 流式完成, 总耗时: 2.53s, 回复: Oh, you haven't tried it yet? I haven't either, bu...
+2026-01-30 09:18:01 | services.gpt4o_pipeline | INFO     | [LLM] ⏱️ 延迟分析: history_len=2, tokens≈1963, latency=2525ms

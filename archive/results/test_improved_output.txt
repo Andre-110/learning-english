@@ -1,0 +1,661 @@
+================================================================================
+测试 qwen-omni 模型的 prompt 遵循能力
+重点：中英文识别、建议质量、中英文转录准确性
+================================================================================
+
+2025-12-17 10:30:16 | services.qwen_omni_audio | INFO     | Qwen-Omni Audio 服务初始化: audio_model=qwen3-omni-flash
+2025-12-17 10:30:16 | services.unified_processor | INFO     | 统一处理器初始化: 使用 qwen-omni 服务
+初始化 TTS 服务（使用 OpenAI TTS）...
+⚠️  注意：OpenAI TTS 不支持中文，中文部分可能发音不准确
+⚠️  但 prompt 已优化，模型应能识别拼音化的中文并修正
+
+✅ TTS 服务初始化完成
+
+
+================================================================================
+测试用例 1/20
+================================================================================
+用户输入: I want to talk some thing about 足球player with you
+
+⏳ 生成音频...
+✅ 音频生成完成 (62592 bytes, 2.16s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:30:19 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 62592 bytes
+2025-12-17 10:30:24 | services.unified_processor | INFO     | [解析成功] 转录: I want to talk some thing abou...
+✅ 处理完成 (5.05s)
+
+📝 转录结果:
+  原文: I want to talk some thing about 足球player with you
+  转录: I want to talk some thing about zu qiu player with you.
+  ⚠️  中文部分未保留: ['缺失: 足球']
+  ⚠️  中文转录错误: ['缺失: 足球']
+
+📊 评估结果:
+  分数: 35 (A2)
+
+✏️  修正建议:
+  1. some thing → something
+     说明: Use 'something' as one word when referring to an unspecified thing.
+  2. zu qiu → soccer
+     说明: The Chinese word 'zu qiu' means 'soccer' in English. Use 'soccer' or 'football' depending on your region.
+  3. player → a soccer player
+     说明: Use 'a' before singular countable nouns like 'player'.
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Try saying: 'I want to talk about something about a soccer player with you.'
+
+
+================================================================================
+测试用例 2/20
+================================================================================
+用户输入: 请继续详细地介绍一下Messi的故事
+
+⏳ 生成音频...
+✅ 音频生成完成 (48000 bytes, 1.88s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:30:26 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48000 bytes
+2025-12-17 10:30:31 | services.unified_processor | INFO     | [解析成功] 转录: 请继续详细地介绍一下messi的故事...
+✅ 处理完成 (5.20s)
+
+📝 转录结果:
+  原文: 请继续详细地介绍一下Messi的故事
+  转录: 请继续详细地介绍一下messi的故事
+
+📊 评估结果:
+  分数: 35 (A2)
+
+✏️  修正建议:
+  1. messi → Messi
+     说明: Names of people should be capitalized
+  2. 故事 → life
+     说明: For famous people, 'life' or 'career' is more natural than 'story'
+  ⚠️  冗余修正: 1个
+
+💬 鼓励语:
+  Good attempt! Try saying: 'Please continue to introduce Messi's life in detail.'
+
+
+================================================================================
+测试用例 3/20
+================================================================================
+用户输入: I play for 土豆and 番茄because they are delicious
+
+⏳ 生成音频...
+✅ 音频生成完成 (64128 bytes, 1.99s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:30:33 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 64128 bytes
+2025-12-17 10:30:38 | services.unified_processor | INFO     | [解析成功] 转录: I play for potato and fancy it...
+✅ 处理完成 (5.16s)
+
+📝 转录结果:
+  原文: I play for 土豆and 番茄because they are delicious
+  转录: I play for potato and fancy it because they are delicious.
+  ⚠️  中文部分未保留: ['缺失: 土豆', '缺失: 番茄']
+  ⚠️  中文转录错误: ['缺失: 土豆', '缺失: 番茄']
+
+📊 评估结果:
+  分数: 30 (A1)
+
+✏️  修正建议:
+  1. I play for potato → I like potato
+     说明: Use 'like' or 'prefer' when talking about food preferences, not 'play for'
+  2. fancy it → like it
+     说明: 'Fancy' is not commonly used in this context; 'like' is more natural
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Try saying: 'I like potato because it's delicious.'
+
+
+================================================================================
+测试用例 4/20
+================================================================================
+用户输入: 这个football player真的很amazing，我想知道more about him
+
+⏳ 生成音频...
+✅ 音频生成完成 (65664 bytes, 2.18s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:30:40 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 65664 bytes
+2025-12-17 10:30:49 | services.unified_processor | INFO     | [解析成功] 转录: 这个 football player 真的很 amazing...
+✅ 处理完成 (8.93s)
+
+📝 转录结果:
+  原文: 这个football player真的很amazing，我想知道more about him
+  转录: 这个 football player 真的很 amazing，我想知道 more about him。
+
+📊 评估结果:
+  分数: 40 (A2)
+
+✏️  修正建议:
+  1. 这个 football player → This football player
+     说明: Start with English subject 'This football player' instead of Chinese '这个'
+  2. 真的很 amazing → is really amazing
+     说明: Add verb 'is' and use 'really' instead of '很' for natural English
+  3. 我想知道 more about him → I want to know more about him
+     说明: Use 'I want to know' instead of '我想知道', and 'more' doesn't need 'about' when used this way
+
+💬 鼓励语:
+  Good effort! Try saying: 'This football player is really amazing. I want to know more about him.'
+
+
+================================================================================
+测试用例 5/20
+================================================================================
+用户输入: Yesterday I go to the park and see many people play 篮球
+
+⏳ 生成音频...
+✅ 音频生成完成 (53760 bytes, 1.86s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:30:51 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 53760 bytes
+2025-12-17 10:30:55 | services.unified_processor | INFO     | [解析成功] 转录: Yesterday I go to the park and...
+✅ 处理完成 (3.74s)
+
+📝 转录结果:
+  原文: Yesterday I go to the park and see many people play 篮球
+  转录: Yesterday I go to the park and see many people play lan chio.
+  ⚠️  中文部分未保留: ['缺失: 篮球']
+  ⚠️  中文转录错误: ['缺失: 篮球']
+
+📊 评估结果:
+  分数: 30 (A1)
+
+✏️  修正建议:
+  1. I go → I went
+     说明: Use past tense 'went' for actions that happened yesterday
+  2. lan chio → basketball
+     说明: The correct spelling is 'basketball' (篮球)
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good effort! Remember: 'go' becomes 'went' in past tense. Try saying: 'Yesterday I went to the park and saw many people playing basketball.'
+
+
+================================================================================
+测试用例 6/20
+================================================================================
+用户输入: 请tell me more about Messi的achievements
+
+⏳ 生成音频...
+✅ 音频生成完成 (52224 bytes, 1.21s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:30:56 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 52224 bytes
+2025-12-17 10:31:02 | services.unified_processor | INFO     | [解析成功] 转录: qing tell me more about messi ...
+✅ 处理完成 (5.97s)
+
+📝 转录结果:
+  原文: 请tell me more about Messi的achievements
+  转录: qing tell me more about messi the achievements
+  ⚠️  中文部分未保留: ['缺失: 请', '缺失: 的']
+  ⚠️  中文转录错误: ['缺失: 请', '缺失: 的']
+
+📊 评估结果:
+  分数: 30 (A1)
+
+✏️  修正建议:
+  1. qing → can
+     说明: Did you mean 'can' as in 'can you tell me more about...'? 'qing' is not standard English.
+  2. messi the achievements → Messi's achievements
+     说明: Use possessive form 'Messi's' to show ownership, and 'achievements' is plural.
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Try: 'Can you tell me more about Messi's achievements?'
+
+
+================================================================================
+测试用例 7/20
+================================================================================
+用户输入: I think this story tell me how to face 困难
+
+⏳ 生成音频...
+✅ 音频生成完成 (62592 bytes, 2.05s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:31:04 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 62592 bytes
+2025-12-17 10:31:08 | services.unified_processor | INFO     | [解析成功] 转录: I think this story tell me how...
+✅ 处理完成 (4.38s)
+
+📝 转录结果:
+  原文: I think this story tell me how to face 困难
+  转录: I think this story tell me how to face quinnan.
+  ⚠️  中文部分未保留: ['缺失: 困难']
+  ⚠️  中文转录错误: ['缺失: 困难']
+
+📊 评估结果:
+  分数: 35 (A2)
+
+✏️  修正建议:
+  1. story tell me → story tells me
+     说明: Third person singular requires 'tells' not 'tell'
+  2. quinnan → difficulties
+     说明: Did you mean 'difficulties'? 'quinnan' sounds like '困难' in Chinese, which means 'difficulties' in English
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good idea! Try saying: 'I think this story tells me how to face difficulties.'
+
+
+================================================================================
+测试用例 8/20
+================================================================================
+用户输入: 我想了解more about football，特别是about Messi
+
+⏳ 生成音频...
+✅ 音频生成完成 (71424 bytes, 1.37s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:31:10 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 71424 bytes
+2025-12-17 10:31:18 | services.unified_processor | INFO     | [解析成功] 转录: I want to了解 more about footbal...
+✅ 处理完成 (8.22s)
+
+📝 转录结果:
+  原文: 我想了解more about football，特别是about Messi
+  转录: I want to了解 more about football, 特别是about Messi.
+  ⚠️  中文部分未保留: ['缺失: 我想了解']
+  ⚠️  中文转录错误: ['缺失: 我想了解']
+
+📊 评估结果:
+  分数: 35 (A2)
+
+✏️  修正建议:
+  1. I want to了解 → I want to learn about
+     说明: Use 'learn about' instead of '了解' when speaking English. '了解' is Chinese for 'learn about' or 'understand'.
+  2. about football → football
+     说明: After 'learn about', you can use the noun directly without 'about'.
+  3. especially about Messi → especially Messi
+     说明: After 'especially', use the noun directly. 'about' is not needed.
+
+💬 鼓励语:
+  Good attempt! Try saying: 'I want to learn about football, especially Messi.'
+
+
+================================================================================
+测试用例 9/20
+================================================================================
+用户输入: He is a very good player, 我很like him
+
+⏳ 生成音频...
+✅ 音频生成完成 (45696 bytes, 1.73s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:31:20 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 45696 bytes
+2025-12-17 10:31:23 | services.unified_processor | INFO     | [解析成功] 转录: He is a very good player, wuha...
+✅ 处理完成 (3.28s)
+
+📝 转录结果:
+  原文: He is a very good player, 我很like him
+  转录: He is a very good player, wuhan like him.
+  ⚠️  中文部分未保留: ['缺失: 我很']
+  ⚠️  中文转录错误: ['缺失: 我很']
+
+📊 评估结果:
+  分数: 30 (A1)
+
+✏️  修正建议:
+  1. wuhan → we all
+     说明: Did you mean 'we all like him'? 'wuhan' is a city name, not a pronoun.
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Remember: 'we all' means everyone likes him.
+
+
+================================================================================
+测试用例 10/20
+================================================================================
+用户输入: 请continue介绍Messi的childhood，我想知道more details
+
+⏳ 生成音频...
+✅ 音频生成完成 (67968 bytes, 1.46s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:31:24 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 67968 bytes
+2025-12-17 10:31:31 | services.unified_processor | INFO     | [解析成功] 转录: 请继续介绍梅西的 childhood，我想知道 more d...
+✅ 处理完成 (6.31s)
+
+📝 转录结果:
+  原文: 请continue介绍Messi的childhood，我想知道more details
+  转录: 请继续介绍梅西的 childhood，我想知道 more details
+  ⚠️  中文转录错误: ['多余: 请继续介绍梅西的']
+  ⚠️  英文转录错误: ['缺失或错误: continue', '缺失或错误: Messi']
+
+📊 评估结果:
+  分数: 35 (A2)
+
+✏️  修正建议:
+  (无修正)
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Try saying: 'Please continue to introduce Messi's childhood. I want to know more details.'
+
+
+================================================================================
+测试用例 11/20
+================================================================================
+用户输入: I want to tell some 运动with you
+
+⏳ 生成音频...
+✅ 音频生成完成 (35328 bytes, 2.08s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:31:33 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 35328 bytes
+2025-12-17 10:31:37 | services.unified_processor | INFO     | [解析成功] 转录: I want to tell some in dong wi...
+✅ 处理完成 (4.24s)
+
+📝 转录结果:
+  原文: I want to tell some 运动with you
+  转录: I want to tell some in dong with you.
+  ⚠️  中文部分未保留: ['缺失: 运动']
+  ⚠️  中文转录错误: ['缺失: 运动']
+
+📊 评估结果:
+  分数: 30 (A1)
+
+✏️  修正建议:
+  1. tell some in dong → tell you something
+     说明: Use 'tell you something' to mean '分享一些事情给你'
+  2. in dong → something
+     说明: The word 'in dong' is not English. Did you mean 'something'?
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Try saying 'I want to tell you something.'
+
+
+================================================================================
+测试用例 12/20
+================================================================================
+用户输入: 这个player真的很great，他的story很inspiring
+
+⏳ 生成音频...
+✅ 音频生成完成 (59520 bytes, 1.50s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:31:38 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 59520 bytes
+2025-12-17 10:31:43 | services.unified_processor | INFO     | [解析成功] 转录: 这个player真的很great，他的story很inspi...
+✅ 处理完成 (4.74s)
+
+📝 转录结果:
+  原文: 这个player真的很great，他的story很inspiring
+  转录: 这个player真的很great，他的story很inspiring。
+
+📊 评估结果:
+  分数: 40 (A2)
+
+✏️  修正建议:
+  1. 这个player → this football player
+     说明: Use 'football player' or 'soccer player' instead of just 'player' for clarity in context
+  2. 他的story → his story
+     说明: Use 'his story' to match the possessive pronoun 'his'
+
+💬 鼓励语:
+  Good attempt! Try using more specific terms like 'football player' for clarity.
+
+
+================================================================================
+测试用例 13/20
+================================================================================
+用户输入: Yesterday I see a movie about football, 它was very interesting
+
+⏳ 生成音频...
+✅ 音频生成完成 (64896 bytes, 1.39s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:31:45 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 64896 bytes
+2025-12-17 10:31:49 | services.unified_processor | INFO     | [解析成功] 转录: Yesterday, I see a movie about...
+✅ 处理完成 (4.93s)
+
+📝 转录结果:
+  原文: Yesterday I see a movie about football, 它was very interesting
+  转录: Yesterday, I see a movie about football. Tao was very interesting.
+  ⚠️  中文部分未保留: ['缺失: 它']
+  ⚠️  中文转录错误: ['缺失: 它']
+
+📊 评估结果:
+  分数: 35 (A2)
+
+✏️  修正建议:
+  1. I see → I saw
+     说明: Use past tense 'saw' for actions completed yesterday
+  2. Tao was → It was
+     说明: Probably meant 'it' (the movie) was interesting
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Remember: 'saw' for past actions, 'it' for things. Try: 'Yesterday I saw a movie about football. It was very interesting!'
+
+
+================================================================================
+测试用例 14/20
+================================================================================
+用户输入: 请explain more about Messi的playing style
+
+⏳ 生成音频...
+✅ 音频生成完成 (85632 bytes, 1.66s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:31:51 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 85632 bytes
+2025-12-17 10:31:56 | services.unified_processor | INFO     | [解析成功] 转录: Explain more about Messi the p...
+✅ 处理完成 (4.48s)
+
+📝 转录结果:
+  原文: 请explain more about Messi的playing style
+  转录: Explain more about Messi the playing style.
+  ⚠️  中文部分未保留: ['缺失: 请', '缺失: 的']
+  ⚠️  中文转录错误: ['缺失: 请', '缺失: 的']
+
+📊 评估结果:
+  分数: 45 (A2)
+
+✏️  修正建议:
+  1. Messi the playing style → Messi's playing style
+     说明: Use possessive form 'Messi's' to show ownership of the style
+  2. Explain more about → Tell me more about
+     说明: For personal requests, 'tell me more' sounds more natural than 'explain more'
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Try saying 'Tell me more about Messi's playing style.'
+
+
+================================================================================
+测试用例 15/20
+================================================================================
+用户输入: I think football is a very good sport, 我喜欢to watch it
+
+⏳ 生成音频...
+✅ 音频生成完成 (64128 bytes, 1.40s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:31:57 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 64128 bytes
+2025-12-17 10:32:01 | services.unified_processor | INFO     | [解析成功] 转录: I think football is a very goo...
+✅ 处理完成 (4.12s)
+
+📝 转录结果:
+  原文: I think football is a very good sport, 我喜欢to watch it
+  转录: I think football is a very good sport. 我喜欢 watch it.
+
+📊 评估结果:
+  分数: 40 (A2)
+
+✏️  修正建议:
+  1. I like watch it → I like watching it
+     说明: After 'like', use the gerund form 'watching', not the base form 'watch'
+  2. I like watch it → I like watching it
+     说明: The correct structure is 'like + verb-ing' for activities
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Remember: 'like' is followed by a verb ending in -ing, like 'watching'.
+
+
+================================================================================
+测试用例 16/20
+================================================================================
+用户输入: 我想知道more about Messi的family life
+
+⏳ 生成音频...
+✅ 音频生成完成 (55296 bytes, 1.40s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:32:02 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 55296 bytes
+2025-12-17 10:32:08 | services.unified_processor | INFO     | [解析成功] 转录: 我想知道 more about Messi the fami...
+✅ 处理完成 (5.61s)
+
+📝 转录结果:
+  原文: 我想知道more about Messi的family life
+  转录: 我想知道 more about Messi the family life.
+  ⚠️  中文部分未保留: ['缺失: 的']
+  ⚠️  中文转录错误: ['缺失: 的']
+
+📊 评估结果:
+  分数: 40 (A2)
+
+✏️  修正建议:
+  1. more about → more details about
+     说明: Use 'more details about' for specific information
+  2. Messi the family life → Messi's family life
+     说明: Use possessive form 'Messi's' and 'family life' as a noun phrase
+  3. the family life → family life
+     说明: No article needed before abstract noun 'family life'
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good try! Try saying: 'I want to know more details about Messi's family life.'
+
+
+================================================================================
+测试用例 17/20
+================================================================================
+用户输入: He play football very well, 我很admire him
+
+⏳ 生成音频...
+✅ 音频生成完成 (64896 bytes, 2.26s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:32:10 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 64896 bytes
+2025-12-17 10:32:15 | services.unified_processor | INFO     | [解析成功] 转录: He play football very well. Wo...
+✅ 处理完成 (4.41s)
+
+📝 转录结果:
+  原文: He play football very well, 我很admire him
+  转录: He play football very well. Wo han admire him.
+  ⚠️  中文部分未保留: ['缺失: 我很']
+  ⚠️  中文转录错误: ['缺失: 我很']
+
+📊 评估结果:
+  分数: 30 (A1)
+
+✏️  修正建议:
+  1. He play → He plays
+     说明: Third person singular requires 'plays' not 'play'
+  2. Wo han admire him → I admire him
+     说明: Corrected Chinese pinyin to English: 'Wo han' → 'I'
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good attempt! Remember: 'He plays' not 'He play'. Try saying: 'He plays football very well. I admire him.'
+
+
+================================================================================
+测试用例 18/20
+================================================================================
+用户输入: 请继续talk about Messi的career，特别是his early years
+
+⏳ 生成音频...
+✅ 音频生成完成 (82560 bytes, 1.85s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:32:17 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 82560 bytes
+2025-12-17 10:32:22 | services.unified_processor | INFO     | [解析成功] 转录: 请继续详细地介绍一下梅西的职业生涯，特别是他的早期岁月。...
+✅ 处理完成 (4.91s)
+
+📝 转录结果:
+  原文: 请继续talk about Messi的career，特别是his early years
+  转录: 请继续详细地介绍一下梅西的职业生涯，特别是他的早期岁月。
+  ⚠️  中文转录错误: ['多余: 请继续详细地介绍一下梅西的职业生涯', '多余: 特别是他的早期岁月']
+  ⚠️  英文转录错误: ['缺失或错误: talk', '缺失或错误: about', '缺失或错误: Messi', '缺失或错误: career', '缺失或错误: early', '缺失或错误: years']
+
+📊 评估结果:
+  分数: 25 (A1)
+
+✏️  修正建议:
+  1. 请继续详细地介绍一下梅西的职业生涯，特别是他的早期岁月。 → Please continue to introduce in detail about Messi's career, especially his early years.
+     说明: Try expressing your request in English next time!
+
+💬 鼓励语:
+  Good thought! Try saying this in English: 'Please continue to introduce in detail about Messi's career, especially his early years.'
+
+
+================================================================================
+测试用例 19/20
+================================================================================
+用户输入: I want to learn English better so I can talk about 运动
+
+⏳ 生成音频...
+✅ 音频生成完成 (52224 bytes, 1.95s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:32:23 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 52224 bytes
+2025-12-17 10:32:29 | services.unified_processor | INFO     | [解析成功] 转录: I want to learn English better...
+✅ 处理完成 (5.11s)
+
+📝 转录结果:
+  原文: I want to learn English better so I can talk about 运动
+  转录: I want to learn English better so I can talk about yundong.
+  ⚠️  中文部分未保留: ['缺失: 运动']
+  ⚠️  中文转录错误: ['缺失: 运动']
+
+📊 评估结果:
+  分数: 35 (A2)
+
+✏️  修正建议:
+  1. yundong → sports
+     说明: The Chinese word '运动' translates to 'sports' or 'exercise' in English. 'Yundong' is the pinyin pronunciation, not the English word.
+  2. talk about yundong → talk about sports
+     说明: Use 'sports' when referring to physical activities like soccer, basketball, etc. 'Talk about' is correct for discussing topics.
+  ⚠️  未处理中文部分
+
+💬 鼓励语:
+  Good effort! Remember to use the correct English words. 'Sports' is the word for activities like soccer or basketball.
+
+
+================================================================================
+测试用例 20/20
+================================================================================
+用户输入: 这个player的achievements真的很impressive，我想知道how he did it
+
+⏳ 生成音频...
+✅ 音频生成完成 (71424 bytes, 2.02s)
+⏳ Qwen-Omni 处理音频中...
+2025-12-17 10:32:31 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 71424 bytes
+2025-12-17 10:32:37 | services.unified_processor | INFO     | [解析成功] 转录: 这个player的achievements真的很impres...
+✅ 处理完成 (6.73s)
+
+📝 转录结果:
+  原文: 这个player的achievements真的很impressive，我想知道how he did it
+  转录: 这个player的achievements真的很impressive，我想知道how he did it。
+
+📊 评估结果:
+  分数: 40 (A2)
+
+✏️  修正建议:
+  1. 这个player → this footballer
+     说明: In sports context, 'footballer' or 'soccer player' is more accurate than 'player'
+  2. 这个player的achievements → this footballer's achievements
+     说明: Use possessive form 'footballer's' to show ownership
+  3. how he did it → how he achieved them
+     说明: Use 'achieved' for accomplishments, and 'them' to refer to achievements
+
+💬 鼓励语:
+  Good attempt! Try using 'footballer' instead of 'player' for more accuracy.
+
+
+================================================================================
+测试完成！结果已保存到: qwen_omni_prompt_following_results.json
+================================================================================
+
+📈 统计摘要:
+  成功处理: 20/20
+
+转录质量:
+  中文保留率: 7/20 (35.0%)
+  中英文混杂保留率: 8/20 (40.0%)
+
+建议质量:
+  总修正数: 41
+  冗余修正: 1
+  中文处理率: 6/20 (30.0%)
+
+评分:
+  平均分数: 34.8
+  分数范围: 25 - 45

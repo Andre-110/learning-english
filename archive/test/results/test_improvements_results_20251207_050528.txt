@@ -1,0 +1,177 @@
+
+================================================================================
+测试1: 评估精细化改进
+================================================================================
+2025-12-07 05:05:28 | services.funasr | INFO     | FunASR服务初始化: model=iic/SenseVoiceSmall, language=auto
+
+--- 测试回答 1: 简单 (简单回答，只有一句话) ---
+回答内容: I am a student.
+✅ 评估完成
+   综合分数: 32.2/100
+   CEFR等级: A2
+   维度评分:
+     - 内容相关性: 2.5/5.0
+     - 语言准确性: 5.0/5.0
+     - 表达流利度: 3.0/5.0
+     - 交互深度: 1.5/5.0
+     - 词汇丰富度: 2.0/5.0
+
+--- 测试回答 2: 中等 (中等回答，3句话，有扩展) ---
+回答内容: I am a student. I like reading books. Reading helps me learn new words.
+✅ 评估完成
+   综合分数: 55.5/100
+   CEFR等级: B1
+   维度评分:
+     - 内容相关性: 4.0/5.0
+     - 语言准确性: 4.0/5.0
+     - 表达流利度: 3.5/5.0
+     - 交互深度: 3.0/5.0
+     - 词汇丰富度: 3.0/5.0
+
+--- 测试回答 3: 复杂 (复杂回答，使用高级词汇和复杂句式) ---
+回答内容: As an avid reader, I find that immersing myself in literature not only expands my vocabulary but also enhances my linguistic proficiency. The intricate narratives and sophisticated language structures provide invaluable insights into effective communication.
+✅ 评估完成
+   综合分数: 84.0/100
+   CEFR等级: B2
+   维度评分:
+     - 内容相关性: 4.0/5.0
+     - 语言准确性: 4.5/5.0
+     - 表达流利度: 4.5/5.0
+     - 交互深度: 3.5/5.0
+     - 词汇丰富度: 4.5/5.0
+
+--------------------------------------------------------------------------------
+评估差异化分析:
+--------------------------------------------------------------------------------
+简单回答分数: 32.2
+复杂回答分数: 84.0
+分数差异: 51.8
+✅ 评估系统能够区分不同复杂度的回答
+
+================================================================================
+测试2: 上下文对话连贯性
+================================================================================
+2025-12-07 05:05:54 | services.funasr | INFO     | FunASR服务初始化: model=iic/SenseVoiceSmall, language=auto
+
+初始问题: Let's talk about your daily activities. What do you usually do in the morning? For example, do you eat breakfast, go to school, or do something else? ...
+
+--- 第 1 轮对话 ---
+用户回答: I usually wake up at 7 AM. I brush my teeth and eat breakfast.
+系统问题: That sounds like a healthy morning routine! Speaking of good habits, do you try to do anything to stay healthy during the day, like exercising, eating...
+✅ 问题与之前对话有连贯性
+
+--- 第 2 轮对话 ---
+用户回答: Yes, I like healthy food. I eat fruits and vegetables every day.
+系统问题: It's great that you care about eating healthy food! Besides food, some people try to protect the environment in their daily life, like using less plas...
+✅ 问题与之前对话有连贯性
+
+--- 第 3 轮对话 ---
+用户回答: I think exercise is important. I go jogging three times a week.
+系统问题: You mentioned that you go jogging three times a week to stay healthy. Some people also choose sports or join clubs at school or work to make new frien...
+✅ 问题与之前对话有连贯性
+
+================================================================================
+测试3: 学习报告生成
+================================================================================
+2025-12-07 05:06:18 | services.funasr | INFO     | FunASR服务初始化: model=iic/SenseVoiceSmall, language=auto
+
+第 1 轮对话...
+
+第 2 轮对话...
+
+第 3 轮对话...
+
+生成学习报告...
+✅ 报告生成成功
+报告长度: 3139 字符
+
+报告内容检查:
+  ✅ 包含: 能力分析
+  ✅ 包含: 进步轨迹
+  ✅ 包含: 强弱项
+  ✅ 包含: 学习建议
+  ✅ 包含: 规划
+
+✅ 报告包含主要必需部分
+
+--------------------------------------------------------------------------------
+报告预览（前500字符）:
+--------------------------------------------------------------------------------
+```markdown
+# LinguaCoach 英语口语能力评估与个性化学习报告
+
+---
+
+## 1. 能力分析
+
+### 1.1 综合能力水平评估
+
+- **当前CEFR等级**：A2（基础水平）
+- **综合分数**：39.75/100
+
+### 1.2 各维度表现分析
+
+| 维度           | 表现情况         | 说明                                                         |
+| --------------- | ---------------- | ------------------------------------------------------------ |
+| 内容相关性     | 有待提升         | 回答往往泛泛而谈，与问题的关联度不够，缺乏具体细节和个人见解。                  |
+| 语言准确性     | 较好             | 基本语法和句型结构正确，错误较少，能表达基本意思。                           ...
+
+================================================================================
+测试4: 完整流程测试
+================================================================================
+2025-12-07 05:06:58 | services.funasr | INFO     | FunASR服务初始化: model=iic/SenseVoiceSmall, language=auto
+
+对话ID: e8fbff54-0d03-4174-b4bf-15df47c9c26d
+初始问题: Hello! Let’s get to know each other. Can you tell me your name, where you are from, and one thing you like to do every day? 你可以介绍一下自己，比如名字、来自哪里，还有你每天喜...
+
+--- 第 1 轮对话 ---
+📤 使用音频文件: test_simple.mp3
+2025-12-07 05:07:05 | services.funasr | INFO     | 正在加载FunASR模型: iic/SenseVoiceSmall
+funasr version: 1.1.12.
+Check update of funasr, and it would cost few times. You may disable it by set `disable_update=True` in AutoModel
+New version is available: 1.2.7.
+Please use the command "pip install -U funasr" to upgrade.
+transformer is not installed, please install it if you want to use related modules
+Loading remote code failed: model, No module named 'model'
+2025-12-07 05:07:11 | services.funasr | INFO     | FunASR模型加载成功
+2025-12-07 05:07:11 | services.funasr | INFO     | 转录成功: i am a student i like reading books...
+📝 转录文本: i am a student i like reading books
+✅ 评估完成
+   分数: 28.2/100 | CEFR: A1
+   下一题: That’s great! You like reading books. What kind of books do you enjoy? For example, do you like stor...
+
+--- 第 2 轮对话 ---
+📤 使用音频文件: test_medium.mp3
+2025-12-07 05:07:18 | services.funasr | INFO     | 转录成功: i am a student i like reading books very much reading helps me learn new words and improve my englis...
+📝 转录文本: i am a student i like reading books very much reading helps me learn new words and improve my english skills i read for about 30 minutes every day
+✅ 评估完成
+   分数: 36.5/100 | CEFR: A2
+   下一题: You said you like reading books and it helps you learn new words. That’s wonderful! Besides reading,...
+
+--------------------------------------------------------------------------------
+生成最终学习报告...
+--------------------------------------------------------------------------------
+✅ 报告生成成功
+报告长度: 3386 字符
+
+最终用户画像:
+   分数: 36.5/100
+   CEFR等级: A2
+   对话轮数: 2
+   强项: 内容相关性
+   弱项: 语言准确性, 表达流利度, 词汇丰富度, 交互深度
+
+================================================================================
+测试总结
+================================================================================
+
+测试1 - 评估精细化: ✅ 通过
+测试2 - 对话连贯性: ✅ 通过
+测试3 - 报告生成: ✅ 通过
+测试4 - 完整流程: ✅ 通过
+
+================================================================================
+测试完成
+================================================================================
+
+测试日志已保存到: test_improvements_results_20251207_050528.txt

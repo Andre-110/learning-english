@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaCoach - AI 英语学习助手</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .agent-thinking {
+            animation: pulse-soft 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex h-screen font-sans text-gray-800">
+
+    <aside class="w-64 bg-[#1e1e2d] text-white flex flex-col">
+        <div class="p-6">
+            <button class="w-full bg-[#36b37e] hover:bg-[#2d9a6c] text-white py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center gap-2">
+                <i class="fas fa-plus"></i> 新对话
+            </button>
+        </div>
+        <nav class="flex-1 overflow-y-auto px-4">
+            <p class="text-xs text-gray-500 uppercase tracking-wider mb-4 px-2">每日内容</p>
+            <div class="space-y-1 mb-6">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 bg-gray-700/50 rounded-md text-sm border-l-4 border-[#36b37e]">
+                    <i class="fas fa-newspaper text-xs"></i> 每日快讯
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-700/50 rounded-md text-sm transition text-gray-400 hover:text-white">
+                    <i class="fas fa-bookmark text-xs"></i> 我的收藏
+                </a>
+            </div>
+            <p class="text-xs text-gray-500 uppercase tracking-wider mb-4 px-2">历史对话</p>
+            <div class="space-y-2 opacity-60">
+                <div class="px-3 py-2 text-sm truncate">如何结交朋友的建议...</div>
+                <div class="px-3 py-2 text-sm truncate">今天很累，需要休息...</div>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="flex-1 flex flex-col overflow-hidden bg-white">
+        <header class="h-16 border-b flex items-center justify-between px-8">
+            <h2 class="font-bold text-lg">Daily Discovery <span class="text-sm font-normal text-gray-400 ml-2">Dec 28, 2025</span></h2>
+            <div class="flex gap-4 text-sm text-gray-500">
+                <span class="px-3 py-1 bg-gray-100 rounded-full cursor-pointer hover:bg-gray-200"># 科技</span>
+                <span class="px-3 py-1 bg-gray-100 rounded-full cursor-pointer hover:bg-gray-200"># 职场</span>
+                <span class="px-3 py-1 bg-gray-100 rounded-full cursor-pointer hover:bg-gray-200"># 旅游</span>
+            </div>
+        </header>
+
+        <div class="flex-1 overflow-y-auto p-8">
+            
+            <div id="feed-section">
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <div class="group border rounded-xl overflow-hidden hover:shadow-xl transition duration-300 cursor-pointer">
+                        <div class="h-40 bg-gray-200 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="AI">
+                            <span class="absolute top-3 right-3 bg-[#36b37e] text-white text-xs px-2 py-1 rounded">B2 Level</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold mb-2 group-hover:text-[#36b37e] transition">The Future of AI in Medicine</h3>
+                            <p class="text-sm text-gray-500 line-clamp-2">How generative AI is helping doctors diagnose diseases faster than ever...</p>
+                        </div>
+                    </div>
+                    <div class="group border rounded-xl overflow-hidden hover:shadow-xl transition duration-300 cursor-pointer" onclick="startLoading()">
+                        <div class="h-40 bg-gray-200 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Travel">
+                            <span class="absolute top-3 right-3 bg-blue-500 text-white text-xs px-2 py-1 rounded">A2 Level</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold mb-2 group-hover:text-blue-500 transition">Minimalist Travel: Guide for 2026</h3>
+                            <p class="text-sm text-gray-500 line-clamp-2">Why traveling light is the new luxury for modern nomads...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center justify-center py-10 border-2 border-dashed border-gray-100 rounded-2xl bg-gray-50/50">
+                    <p class="text-gray-400 mb-4 text-sm">想看点别的？让 AI 为你即时生成</p>
+                    <button onclick="startLoading()" class="bg-white border px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition shadow-sm">
+                        <i class="fas fa-sync-alt mr-2 text-[#36b37e]"></i> 获取最新定制内容
+                    </button>
+                </div>
+            </div>
+
+            <div id="loading-section" class="hidden flex flex-col items-center justify-center h-full space-y-8 py-20">
+                <div class="relative w-20 h-20">
+                    <div class="absolute inset-0 border-4 border-[#36b37e]/20 rounded-full"></div>
+                    <div class="absolute inset-0 border-4 border-[#36b37e] rounded-full border-t-transparent animate-spin"></div>
+                </div>
+                <div class="max-w-md w-full">
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-[#36b37e] font-medium">
+                            <i class="fas fa-check-circle"></i> 正在连接全球新闻 API...
+                        </li>
+                        <li id="step-2" class="flex items-center gap-3 text-gray-400">
+                            <i class="fas fa-circle-notch animate-spin"></i> 正在根据你的“兴趣标签”筛选...
+                        </li>
+                        <li id="step-3" class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-circle"></i> 正在将难度调整为 B2 级别...
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 border-t bg-white">
+            <div class="flex gap-4 max-w-4xl mx-auto bg-gray-100 p-2 rounded-2xl shadow-inner">
+                <button class="w-10 h-10 flex items-center justify-center rounded-xl bg-white text-gray-400 hover:text-[#36b37e]">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <input type="text" placeholder="针对内容提问，或开始自由对话..." class="flex-1 bg-transparent border-none focus:outline-none text-sm">
+                <button class="bg-[#36b37e] text-white px-4 py-2 rounded-xl text-sm font-medium">发送</button>
+            </div>
+        </div>
+    </main>
+
+    <aside class="w-80 bg-gray-50 border-l flex flex-col p-6">
+        <h3 class="font-bold mb-6 flex items-center gap-2">
+            <i class="fas fa-chart-line text-[#36b37e]"></i> 评估反馈
+        </h3>
+        <div class="space-y-6">
+            <div class="bg-white p-4 rounded-xl border shadow-sm">
+                <p class="text-xs text-gray-400 mb-1">当前词汇量等级</p>
+                <p class="text-xl font-bold text-gray-800">Intermediate <span class="text-[#36b37e]">B2</span></p>
+            </div>
+            <div class="space-y-3 text-sm">
+                <p class="font-medium text-gray-600">待提升要点</p>
+                <div class="p-3 bg-orange-50 text-orange-700 rounded-lg text-xs">
+                    <b>语法：</b> 虚拟语气使用较少
+                </div>
+                <div class="p-3 bg-blue-50 text-blue-700 rounded-lg text-xs">
+                    <b>词汇：</b> 建议多使用 Academic Words
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <script>
+        function startLoading() {
+            document.getElementById('feed-section').classList.add('hidden');
+            document.getElementById('loading-section').classList.remove('hidden');
+            
+            // 模拟进度流
+            setTimeout(() => {
+                document.getElementById('step-2').className = "flex items-center gap-3 text-[#36b37e] font-medium transition-all duration-500";
+                document.getElementById('step-2').innerHTML = '<i class="fas fa-check-circle"></i> 发现 3 篇相关博文...';
+            }, 1500);
+
+            setTimeout(() => {
+                document.getElementById('step-3').className = "flex items-center gap-3 text-[#36b37e] font-medium transition-all duration-500";
+                document.getElementById('step-3').innerHTML = '<i class="fas fa-check-circle"></i> 内容重写与难度分级完成！';
+            }, 3000);
+
+            setTimeout(() => {
+                alert("内容已加载！现在你可以开始围绕新话题进行对话了。");
+                // 这里可以重新切换回 feed 或直接进入对话模式
+            }, 4000);
+        }
+    </script>
+</body>
+</html>

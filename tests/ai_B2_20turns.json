@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T09:26:03.318007",
+    "level": "B2",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "B2",
+      "interests": [
+        "music",
+        "reading",
+        "cooking"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 1.806,
+    "user_avg_latency": 2.071,
+    "strategies": {
+      "summarize": 20
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! 😊 What’s the most fun thing you’ve cooked lately? (Feel free to answer naturally - I’ll help if you need it!)",
+      "latency_s": 2.218
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Hmm, let me think... Actually, last weekend I tried to cook lasagna for the first time. It was really fun but also a bit stressful because there are so many steps! I wasn’t sure if I was doing it right, but in the end it tasted pretty good. I think my sauce was a little bit too salty, though. Next time I’ll be more careful with that. Have you made lasagna before?",
+      "latency_s": 1.791,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I totally get how lasagna can be stressful—there’s so much layering and timing! I’ve tried making it a few times, and my first attempt was kind of messy too. What was the trickiest part for you? Did anything funny or unexpected happen while you were cooking?",
+      "latency_s": 1.701,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Hmm, I think the hardest part for me was actually making the béchamel sauce. I wasn’t sure if it was thick enough, and I kept stirring and waiting... I probably overcooked it a little bit. Also, when I tried to layer everything, I realized my baking dish was too small! So I had to kind of squish the pasta sheets to fit, which made the lasagna a bit uneven. And, um, at one point I dropped a spoon and got sauce on the floor, so that was a bit funny—my cat came over immediately to investigate!",
+      "latency_s": 1.798,
+      "word_count": 96,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Haha, your cat sounds like such a curious little helper! I can totally picture them sniffing around the sauce. That whole scene must’ve made the kitchen feel lively. What’s the funniest thing your cat has ever done while you were cooking?",
+      "latency_s": 1.628,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Oh, that’s a good question! Um, let me think… I guess the funniest thing was when I was chopping vegetables, and my cat suddenly jumped on the counter and tried to steal a piece of zucchini. She doesn’t usually eat vegetables but she just grabbed it and ran away. I had to chase her around the living room to get it back! She makes cooking more… uh, interesting, I guess. Sometimes I get distracted by her, but it’s also kind of fun.",
+      "latency_s": 2.705,
+      "word_count": 82,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Haha, I can totally picture you chasing your cat around with a piece of zucchini—what a scene! It must make cooking a bit unpredictable with her around. Has she ever actually eaten something really unusual, like a vegetable or something you would never expect a cat to like?",
+      "latency_s": 1.673,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Oh, um, actually yes! She once tried to eat a piece of lettuce that fell on the floor—can you believe it? I was really surprised because I always thought cats only liked meat or, you know, fish. But she just sniffed it and then started chewing! I don’t think she liked it very much, though… she kind of spat it out after a second. She’s so weird sometimes! Have you ever heard of a cat eating vegetables before?",
+      "latency_s": 1.414,
+      "word_count": 78,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Haha, your cat really has her own personality! I’ve actually heard of some cats being curious about veggies, but it’s pretty rare for them to eat them, especially lettuce. It must have looked so funny when she tried to chew it and then spit it out. What’s the weirdest thing she’s ever gotten into besides food?",
+      "latency_s": 1.647,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Oh, let me think… Yeah, food is her main thing, but one time she got super interested in my headphones! I left them on the sofa, and when I came back, she was just sitting there, like, chewing on the cord. I guess she thought it was some kind of string to play with? Luckily, she didn’t break them, but there were some tiny bite marks. She’s always curious about things that move or dangle, not just food—I never know what she will choose next!",
+      "latency_s": 2.629,
+      "word_count": 85,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That’s hilarious! Headphones really do look like the perfect toy for a mischievous cat. I love that she’s always keeping you on your toes. Has she ever messed with something really important, like papers or your phone? I can imagine her causing a bit of chaos sometimes!",
+      "latency_s": 2.257,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Oh, uh, yeah—actually my cat once knocked my phone off the table! I was kind of worried because it made a loud sound, but luckily it didn’t break. She also sometimes tries to sit on my papers if I’m working. It’s cute, but sometimes annoying when I need to concentrate. So, yeah, she does cause some chaos, but I think I’m used to it now!",
+      "latency_s": 2.501,
+      "word_count": 65,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Haha, I can totally see how that would be both cute and a little frustrating! It’s like she wants to be part of whatever you’re doing, even if it means causing a bit of trouble. How do you handle it when she decides to sit right in the middle of your work? Do you have any tricks to distract her, or do you just let her stay and hope she moves soon?",
+      "latency_s": 1.791,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Haha, yeah, honestly, sometimes I just let her stay there because she looks so comfortable. If I really need to do something important, I try to distract her with her favorite toy, like, um, this little ball with a bell inside. But to be honest, sometimes she just ignores it and stays on my keyboard anyway. So, I end up waiting for her to move—it's not the best solution, but I don't want to disturb her too much. Do you have pets that do the same thing?",
+      "latency_s": 2.167,
+      "word_count": 87,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Oh, I totally get what you mean—sometimes their comfort is just too cute to disturb! I used to have a dog who loved lying on my lap while I tried to read or work. If I moved even a little, she’d give me this dramatic look, like I’d just ruined her day. What’s the funniest way your cat has reacted when you tried to move her?",
+      "latency_s": 1.916,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Oh, that’s so funny! My cat actually does something similar. Like, if I try to pick her up or just shift her a little, she does this really big sigh, and she stretches super long, like she’s so tired. And sometimes she gives me this look—uh, like, almost offended? I don’t know how to explain, but it’s like she’s saying, “Why would you do that to me?” Actually, one time she pretended she was stuck and wouldn’t move at all, even though I knew she could! It’s kind of dramatic, but also really cute. Does your dog still do that?",
+      "latency_s": 2.025,
+      "word_count": 100,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Haha, your cat sounds like such a character! I love that dramatic “offended” look—pets are so good at making us feel guilty for disturbing them. My dog doesn’t do it anymore since she’s older and less stubborn, but when she was younger, she’d sigh loudly and sometimes flop over like she was completely exhausted by my actions. What’s the funniest or most dramatic thing your cat has ever done to get your attention?",
+      "latency_s": 1.538,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Oh, that’s a good question! Let me think… Okay, one time, I was working on my laptop and my cat jumped on the table, like usual. But this time, she sat right on the keyboard and just looked at me, almost like she was saying, “This is enough, pay attention to me now.” When I tried to move her, she actually pushed the laptop with her paw, and I almost spilled my coffee! I guess she really wanted me to stop working. She does things like that a lot—sometimes she’ll even pretend to be asleep on my notebook, but when I try to pick her up, she suddenly wakes up and meows really loudly. It’s kind of dramatic, but… I have to",
+      "latency_s": 2.042,
+      "word_count": 122,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Haha, your cat really knows how to get your attention! That moment with the paw pushing the laptop sounds hilarious—I can picture her looking so serious about it. How do you usually react when she pulls off these dramatic moves? Do you end up giving in and playing with her, or do you try to finish your work first?",
+      "latency_s": 1.834,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Honestly, it depends on what I’m doing. Sometimes, if I’m really busy, I try to ignore her for a little bit and finish my task. But, uh, usually I can’t resist for long—she’s just too cute! I end up playing with her, or at least petting her for a while. It’s funny because she knows exactly how to get my attention, like if I don’t react, she’ll start meowing or doing something else, like sitting on my keyboard. So, yeah, most of the time she wins!",
+      "latency_s": 1.997,
+      "word_count": 86,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Haha, I totally get that—cats really know how to take control! It’s like they have their own tricks to make us pay attention. I’m curious, has your cat ever done anything so clever or sneaky to get what she wants that it really surprised you? Tell me about one of those moments!",
+      "latency_s": 1.636,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Oh, yes, definitely! My cat is really smart, I think. Once, she wanted to go outside, but the door was closed and I was on the phone, so I couldn’t open it for her right away. She started meowing a bit, but then—this was so clever—she went to the window and actually knocked the small plant off the shelf! It made a loud sound, so I got surprised and went to check. When I came, she ran to the door and looked at me like, “See? Open it now!” I was really surprised because I never thought a cat could do something like that just to get my attention. So, yeah, she’s pretty sneaky sometimes!",
+      "latency_s": 2.247,
+      "word_count": 115,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Oh wow, your cat really has some clever tricks up her sleeve! Knocking over a plant just to get your attention—that’s next-level sneaky. How did you feel in that moment? Did you end up laughing or were you a bit annoyed at first?",
+      "latency_s": 1.54,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Honestly, at first I was a bit annoyed, because I had just cleaned the floor in the morning, and then there was dirt everywhere again. But after that, I just started laughing because she looked so proud of herself, you know? I guess I couldn’t stay mad for long. I think cats really know how to get what they want—sometimes I feel like she understands me better than I understand her!",
+      "latency_s": 1.705,
+      "word_count": 71,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Haha, I totally get that feeling! It’s like cats have this secret way of making us forgive them so quickly. That moment when she looked proud must have been hilarious! Has she ever done something so funny or surprising that you just couldn’t stop laughing? I’d love to hear about another wild story!",
+      "latency_s": 1.392,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Oh, yes, there was one time that was really funny! So, I was eating yogurt and my cat jumped on the table, which she knows is not allowed, but she looked at me like, “What, I’m not doing anything.” Then suddenly she tried to lick the spoon, but missed and got yogurt all over her nose. She froze for a second, looking so confused, and then she started sneezing. I laughed so much, I couldn’t breathe. I almost felt bad for her, but she just kept coming back for more yogurt! Sometimes I wonder if she actually understands what’s going on, or if she just likes making me laugh.",
+      "latency_s": 1.791,
+      "word_count": 109,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "Haha, that yogurt story is hilarious! I can just picture her with yogurt all over her nose, totally confused—cats really have a way of making life interesting, don’t they? I’m curious, what’s the funniest thing she’s done that actually made you change the rules or your routine at home?",
+      "latency_s": 1.923,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Hmm, let me think… Oh! There was one time when she figured out how to open the cupboard where I keep her food. I was so surprised! I came home and saw dry food all over the kitchen floor, and she was just sitting there, looking guilty but also proud. After that, I had to buy these child locks for all the cupboards. So, basically, my cat taught me to make my kitchen more secure—like, I never imagined I’d need that just for a pet! It was kind of annoying at first, but now I laugh about it.",
+      "latency_s": 1.844,
+      "word_count": 98,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "That’s so funny—child locks for a cat! She sounds like a real little mastermind. I love how her cleverness actually changed the way you organize your home. Did locking up the cupboards finally stop her, or did she try to outsmart you again? I’m curious if she ever found a new way to get into trouble!",
+      "latency_s": 1.562,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Actually, locking the cupboards did work for a while, but she’s very determined. After that, she started focusing on the fridge! She figured out how to pull the door a little, but luckily she isn’t strong enough to open it all the way. I had to put a heavy chair in front of it for some time. Sometimes I wonder if she’s really a cat or some kind of small burglar! She always finds something new to try, like tearing open bags of food or climbing onto high shelves. I guess I have to keep inventing new ways to stay ahead of her.",
+      "latency_s": 1.409,
+      "word_count": 103,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Haha, your cat sounds like a real escape artist! I love how you called her a “small burglar”—that’s such a funny way to put it. What’s the craziest thing she’s managed to steal or get into so far? I bet you have some wild stories!",
+      "latency_s": 2.591,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Yeah, actually, there’s one story that comes to mind right away. So, one day I was cooking and I left a bag of bread on the counter—just for, like, two minutes. When I turned around, the bread was gone! I thought I was going crazy, but then I saw her dragging the bag across the floor, trying to hide it under the sofa. I have no idea how she managed to carry the whole thing, it was almost as big as her! She looked so proud of herself, too. Since then I always need to check where she is if there’s food around. Honestly, she’s smarter than I expected… or maybe I’m just too careless!",
+      "latency_s": 2.098,
+      "word_count": 115,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Haha, that bread story is priceless! I can totally picture her sneaking off with the whole bag, looking super proud. It’s wild how pets always seem to surprise us. What’s the funniest place you’ve ever found her hiding or stashing her “treasures”?",
+      "latency_s": 1.737,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Oh, that’s a good question! Let me think… Actually, once I found her inside the laundry basket. I had no idea how she even got there, because the lid was almost closed. She was lying right on top of my clean shirts and had hidden some of her toy mice and even a bread crust with her! I was really surprised, because I never thought she could open the basket at all. \n\nUm, sometimes she also hides things under the sofa, but the laundry basket one was the funniest for me. I guess she just likes to have her own little “secret” places.",
+      "latency_s": 1.878,
+      "word_count": 103,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "That’s hilarious! I love the image of her hiding with her toys and a piece of bread—like she’s building her own little fort. It must be a challenge to keep track of what she’s collected! How do you feel when you discover her secret stash spots? Do you ever find anything surprising mixed in with her treasures?",
+      "latency_s": 1.779,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Yeah, honestly, every time I find her little “collections,” I never know what to expect! Sometimes it’s just socks and toys, but once I found my watch in there—I was looking for it everywhere and didn’t imagine it would be with her stuff! I usually feel surprised, but also I can’t help laughing. She’s so sneaky! I guess I’m also a bit worried sometimes, because she hides things I actually need. But mostly, I just think it’s funny… and a bit impressive how clever she is.",
+      "latency_s": 3.431,
+      "word_count": 86,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Oh wow, your watch ended up in her stash? That’s so unexpected—she really is clever! I love how you find it both funny and a little worrying. Has she ever hidden something super important that caused a bit of chaos for you? I’m curious what your reaction was in that moment!",
+      "latency_s": 2.158,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Yeah, actually, she once took my house keys—I guess she thought they were shiny or interesting. I was in a hurry to leave for work, and when I couldn’t find them, I started searching everywhere. At first, I blamed myself for being forgetful, but then I saw her peeking out from under the bed, looking all innocent. I finally found the keys behind her favorite cushion, but honestly, I was almost late because of her! I couldn’t even be angry though, because she looked so proud of her \"treasure.\" It was kind of frustrating, but also pretty cute… I just have to be more careful now!",
+      "latency_s": 1.675,
+      "word_count": 106,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "That’s such a classic pet move—she sounds like a real character! I can imagine the mix of panic and laughter you must have felt searching for your keys. Has her sneaky side ever gotten you into any other funny or tricky situations? I’m curious if there’s a story where her cleverness really surprised you!",
+      "latency_s": 1.785,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Hmm, let me think after the keys... Oh! There after that in the after from after into the after in from into the my from into from in into from into from afterd after in in from into from with from after into after after for from after... \n\nfrom after from my into using from using after from into from from for from from from from from into from from at after at from into from at with at when after from in at with after into from to from with at from to from afterer in at with forer iner after after in from into from for from into from at with from at for from at with at with at from at from at after at with at from at from at after at with at from at from",
+      "latency_s": 2.284,
+      "word_count": 141,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Oops, I think your message got a bit jumbled there! No worries, that happens to me sometimes too. Maybe your mind was wandering while thinking about all those sneaky pet stories? If you remember another funny moment with your clever little collector, I’d love to hear it! Or we can chat about something else if you want—what’s on your mind these days?",
+      "latency_s": 2.035,
+      "strategy": "summarize"
+    }
+  ]
+}

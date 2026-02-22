@@ -1,0 +1,546 @@
+================================================================================
+测试 qwen-omni 模型的指令遵循能力
+================================================================================
+
+2025-12-17 09:30:02 | services.qwen_omni_audio | INFO     | Qwen-Omni Audio 服务初始化: audio_model=qwen3-omni-flash
+2025-12-17 09:30:02 | services.unified_processor | INFO     | 统一处理器初始化: 使用 qwen-omni 服务
+
+================================================================================
+测试用例 1/20
+================================================================================
+用户输入: I want to talk some thing about foot player with you
+
+2025-12-17 09:30:05 | services.unified_processor | INFO     | [解析成功] 转录: I want to talk some thing abou...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 2/20
+================================================================================
+用户输入: 请继续详细地介绍一下梅西的故事
+
+2025-12-17 09:30:08 | services.unified_processor | INFO     | [解析成功] 转录: 请继续详细地介绍一下梅西的故事...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 3/20
+================================================================================
+用户输入: I play for potato and tomato because they are delicious
+
+2025-12-17 09:30:09 | services.unified_processor | WARNING  | JSON 解析失败: Expecting ',' delimiter: line 12 column 144 (char 469)
+2025-12-17 09:30:09 | services.unified_processor | INFO     | [正则提取] response: That's a fun reason to play! I love how you connec...
+2025-12-17 09:30:09 | services.unified_processor | INFO     | [正则提取] 转录: I play for potato and tomato b...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  (无)
+
+⚠️  弱项:
+  (无)
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 4/20
+================================================================================
+用户输入: 这个football player真的很amazing，我想知道more about him
+
+2025-12-17 09:30:11 | services.unified_processor | INFO     | [解析成功] 转录: 这个football player真的很amazing，我想...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 5/20
+================================================================================
+用户输入: Yesterday I go to the park and see many people play basketball
+
+2025-12-17 09:30:13 | services.unified_processor | INFO     | [解析成功] 转录: Yesterday I go to the park and...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+  - Simple grammar
+
+✏️  修正建议:
+  • Yesterday I went to the park and saw many people playing basketball.
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 6/20
+================================================================================
+用户输入: 请tell me more about Messi的achievements
+
+2025-12-17 09:30:15 | services.unified_processor | INFO     | [解析成功] 转录: 请tell me more about Messi的achi...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 7/20
+================================================================================
+用户输入: I think this story tell me how to face difficulty
+
+2025-12-17 09:30:17 | services.unified_processor | INFO     | [解析成功] 转录: I think this story tell me how...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 8/20
+================================================================================
+用户输入: 我想了解more about football，特别是about Messi
+
+2025-12-17 09:30:19 | services.unified_processor | INFO     | [解析成功] 转录: 我想了解more about football，特别是abo...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 9/20
+================================================================================
+用户输入: He is a very good player, I like him very much
+
+2025-12-17 09:30:20 | services.unified_processor | INFO     | [解析成功] 转录: He is a very good player, I li...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 10/20
+================================================================================
+用户输入: 请continue介绍Messi的childhood，我想知道more details
+
+2025-12-17 09:30:23 | services.unified_processor | INFO     | [解析成功] 转录: 请continue介绍Messi的childhood，我想知...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 11/20
+================================================================================
+用户输入: I want to tell some sports with you
+
+2025-12-17 09:30:24 | services.unified_processor | INFO     | [解析成功] 转录: I want to tell some sports wit...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 12/20
+================================================================================
+用户输入: 这个player真的很great，他的story很inspiring
+
+2025-12-17 09:30:26 | services.unified_processor | INFO     | [解析成功] 转录: 这个player真的很great，他的story很inspi...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 13/20
+================================================================================
+用户输入: Yesterday I see a movie about football, it was very interesting
+
+2025-12-17 09:30:28 | services.unified_processor | INFO     | [解析成功] 转录: Yesterday I see a movie about ...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+  - Grammar error: 'I see' should be 'I saw'
+
+✏️  修正建议:
+  • Yesterday I saw a movie about football, it was very interesting.
+
+🌟 好的表达:
+  - 'It was very interesting' is a good expression
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 14/20
+================================================================================
+用户输入: 请explain more about Messi的playing style
+
+2025-12-17 09:30:31 | services.unified_processor | WARNING  | JSON 解析失败: Expecting ',' delimiter: line 12 column 404 (char 729)
+2025-12-17 09:30:31 | services.unified_processor | INFO     | [正则提取] response: Lionel Messi is known for his incredible dribbling...
+2025-12-17 09:30:31 | services.unified_processor | INFO     | [正则提取] 转录: 请explain more about Messi的play...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  (无)
+
+⚠️  弱项:
+  (无)
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 15/20
+================================================================================
+用户输入: I think football is a very good sport, I like to watch it
+
+2025-12-17 09:30:33 | services.unified_processor | INFO     | [解析成功] 转录: I think football is a very goo...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 16/20
+================================================================================
+用户输入: 我想知道more about Messi的family life
+
+2025-12-17 09:30:35 | services.unified_processor | INFO     | [解析成功] 转录: 我想知道more about Messi的family li...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 17/20
+================================================================================
+用户输入: He play football very well, I admire him
+
+2025-12-17 09:30:37 | services.unified_processor | INFO     | [解析成功] 转录: He play football very well, I ...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+  - Subject-verb agreement error
+
+✏️  修正建议:
+  • He plays football very well, I admire him.
+
+🌟 好的表达:
+  - I admire him
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 18/20
+================================================================================
+用户输入: 请继续talk about Messi的career，特别是his early years
+
+2025-12-17 09:30:39 | services.unified_processor | INFO     | [解析成功] 转录: 请继续talk about Messi的career，特别是...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 19/20
+================================================================================
+用户输入: I want to learn English better so I can talk about sports
+
+2025-12-17 09:30:41 | services.unified_processor | WARNING  | JSON 解析失败: Expecting ',' delimiter: line 12 column 161 (char 464)
+2025-12-17 09:30:41 | services.unified_processor | INFO     | [正则提取] response: That's a great goal! Learning English to talk abou...
+2025-12-17 09:30:41 | services.unified_processor | INFO     | [正则提取] 转录: I want to learn English better...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  (无)
+
+⚠️  弱项:
+  (无)
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试用例 20/20
+================================================================================
+用户输入: 这个player的achievements真的很impressive，我想知道how he did it
+
+2025-12-17 09:30:43 | services.unified_processor | INFO     | [解析成功] 转录: 这个player的achievements真的很impres...
+📊 评估结果:
+  分数: 40
+  等级: A2
+
+✅ 强项:
+  - Clear expression
+
+⚠️  弱项:
+  - Short sentences
+
+✏️  修正建议:
+  (无修正)
+
+🌟 好的表达:
+  (无)
+
+💬 鼓励语:
+  Keep practicing!
+
+
+================================================================================
+测试完成！结果已保存到: qwen_omni_test_results.json
+================================================================================
+
+📈 统计摘要:
+  成功处理: 20/20
+  平均分数: 40.0
+  总修正数: 3
+  有修正的用例: 3/20
+  无修正的用例: 17/20

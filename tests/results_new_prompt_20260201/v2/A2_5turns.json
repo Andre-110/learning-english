@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T16:27:32.814624",
+    "level": "A2",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "art",
+        "technology",
+        "cooking"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.86,
+    "user_avg_latency": 1.96,
+    "strategies": {
+      "continue": 5
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "What is your favorite dish to cook, and how does it make you feel when you create it? 😊 (You can answer in simple words or mix Chinese - I'll help!)",
+      "latency_s": 2.565,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Uh, my favorite dish to cook is 蔬菜炒饭 (vegetable fried rice). I like it because it is简单 (simple) and好吃 (delicious). \n\nWhen I cook it, I feel很高兴 (very happy). I put in很多 (a lot) of vegetables, like carrots and peas. Sometimes I add鸡蛋 (eggs) too. \n\nI like to smell the rice when it cooks. It makes我想吃 (makes me want to eat) it! I feel proud when it looks好 (good) and tastes好 (good). \n\nDo you like炒饭 (fried rice) too?",
+      "latency_s": 2.057,
+      "word_count": 77,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That sounds delicious! I love how you put in many vegetables. It’s great that cooking makes you feel happy! 😊 \n\nI enjoy fried rice too, especially with egg. What other dishes do you like to cook?",
+      "latency_s": 1.527,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "I also like to cook pasta, um, spaghetti. I think it is很容易 (very easy) to make. I put in tomato sauce and some肉 (meat) sometimes. It is好吃 (delicious)! \n\nI like to try new recipes too, but sometimes it is困难 (difficult) for me. I also like to cook soup, like chicken soup. It makes me feel warm and happy. \n\nWhat about you? What other dishes do you like?",
+      "latency_s": 2.44,
+      "word_count": 67,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Spaghetti is great! I love how you make it with tomato sauce and meat. It sounds yummy! \n\nI like to cook stir-fry too. It’s quick and I can use many vegetables. Do you have a favorite new recipe you want to try?",
+      "latency_s": 2.198,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Uh, yes! I want to try做 (make) a new recipe for fried noodles. I see it in a video. It look很美味 (very delicious). I think I need to buy soy sauce and some meat, maybe chicken or beef. \n\nUm, I like fried noodles because it is快 (fast) to cook. Do you have a recipe for fried noodles? ",
+      "latency_s": 1.616,
+      "word_count": 57,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds exciting! Fried noodles are so good! I don't have a specific recipe, but you can start with cooked noodles, soy sauce, and your favorite meat. \n\nYou can add vegetables too, like bell peppers or broccoli. It cooks quickly! What kind of meat do you think you will use?",
+      "latency_s": 1.745,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I think I want to use chicken. I like chicken. It is好吃 (delicious)! But maybe I can also use beef, or, um, shrimp? I not very sure. \n\nI like bell peppers too. They are colorful! I will try to find some vegetables. \n\nUh, do you have some tips for, um, cooking the fried noodles? I don't want it to be too oily.",
+      "latency_s": 1.67,
+      "word_count": 63,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Chicken is a great choice! Shrimp sounds good too. Bell peppers will add nice color! 😄 \n\nFor fried noodles, try using a little oil. Start with the meat first, then add vegetables. Cook them quickly, so they stay crunchy. \n\nDon't add too much soy sauce at once. You can always add more if needed. What vegetables are you thinking of using?",
+      "latency_s": 2.157,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes! I think I want to use bell peppers, like you say. They are very colorful, and I like the taste. Maybe I also use carrots? Carrots are crunchy and好吃! \n\nI’m not sure how many vegetables to use. Maybe... um, two or three? What do you think? \n\nAnd, um, do I need to cut the vegetables small or big? I think small is better for炒面 (fried noodles), right? ",
+      "latency_s": 2.018,
+      "word_count": 69,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Carrots will be great! They add nice crunch and sweetness. Two or three different vegetables sound perfect! \n\nFor cutting, small pieces are better for fried noodles. They cook quickly and mix well with the noodles. \n\nDo you have a favorite way to cook carrots?",
+      "latency_s": 1.673,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

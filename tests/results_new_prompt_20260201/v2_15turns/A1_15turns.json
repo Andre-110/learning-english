@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T17:01:20.114311",
+    "level": "A1",
+    "turns": 15,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "art",
+        "technology",
+        "sports"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.587,
+    "user_avg_latency": 1.473,
+    "strategies": {
+      "continue": 15
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "What artistic activities make you feel happy? 😊 You can answer in simple words or mix Chinese - I'll help!",
+      "latency_s": 2.756,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I like... um, drawing. 画画 makes me happy. Uh, also singing. 你呢?",
+      "latency_s": 1.286,
+      "word_count": 13,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, drawing and singing sound fun! 🎨 I enjoy painting sometimes. It helps me relax. What do you like to draw?",
+      "latency_s": 1.454,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I like... um, drawing cats. 还有花. They are cute. 你喜欢画什么?",
+      "latency_s": 1.357,
+      "word_count": 11,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Cats and flowers are so cute! 🐱🌸 I like painting landscapes. They can be very colorful and beautiful. Do you like to paint too?",
+      "latency_s": 1.616,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I... um, not paint. 我喜欢画 cats and flowers. 画画 is fun!",
+      "latency_s": 1.737,
+      "word_count": 12,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That's great! Cats and flowers are lovely subjects. 😄 Do you have a favorite color to use when you draw?",
+      "latency_s": 1.629,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I like... um, blue. 蓝色 is nice for flowers. 你呢?",
+      "latency_s": 1.213,
+      "word_count": 11,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Blue is a beautiful color! 💙 I really like green. It reminds me of nature and trees. What do you like about blue?",
+      "latency_s": 1.421,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I like... um, blue sky. 蓝天 is nice. It makes me happy!",
+      "latency_s": 1.44,
+      "word_count": 13,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "The blue sky is so calming! ☀️ I feel the same way. It’s nice to see when you go outside. Do you enjoy spending time outdoors?",
+      "latency_s": 1.758,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! I like... um, outside. 有很多树和花. It's nice!",
+      "latency_s": 1.339,
+      "word_count": 9,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "I love that! Being outside with trees and flowers feels refreshing. 🌳🌸 What activities do you like to do when you're outside?",
+      "latency_s": 1.442,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I like... um, walking. 走路 is nice. And... um, take photos. 照片好看!",
+      "latency_s": 1.437,
+      "word_count": 13,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That sounds wonderful! Walking lets you see a lot of beautiful things. 📸 What do you like to take photos of?",
+      "latency_s": 1.244,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I like... um, take photos of... uh, flowers and trees. 还有动物, they are cute!",
+      "latency_s": 1.287,
+      "word_count": 15,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Oh, cute animals are the best! 🐾 Do you have a favorite animal to photograph?",
+      "latency_s": 1.479,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I like... um, cats. 它们很可爱! And... um, dogs too. 你呢?",
+      "latency_s": 1.398,
+      "word_count": 11,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "I love cats and dogs too! 🐱🐶 They are so playful. I also like watching birds. They can be very colorful! Do you have any pets?",
+      "latency_s": 1.834,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I have... um, a cat. 它很可爱! I... um, love my cat. What about you?",
+      "latency_s": 1.256,
+      "word_count": 15,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That's so nice! Cats are wonderful pets. 🐱 I don't have a pet right now, but I used to have a dog. He was very friendly! What does your cat like to do?",
+      "latency_s": 1.591,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, my cat... um, likes to sleep. 它爱睡觉! And... um, play with toys. 你呢?",
+      "latency_s": 1.314,
+      "word_count": 14,
+      "strategy": "continue"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "That sounds cute! Cats really enjoy their naps. 😺 I like to draw and listen to music in my free time. What kind of toys does your cat like?",
+      "latency_s": 1.403,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, my cat... um, likes balls and... um, fluffy toys. 它喜欢这些! What about your hobbies?",
+      "latency_s": 1.418,
+      "word_count": 15,
+      "strategy": "continue"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "That sounds fun! I enjoy painting and watching movies too. 🎨 What's your favorite toy for your cat?",
+      "latency_s": 1.403,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, my cat... um, likes the... uh, feather toy. 它喜欢这个! What about your favorite movie?",
+      "latency_s": 1.651,
+      "word_count": 15,
+      "strategy": "continue"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "Oh, the feather toy sounds great! 😄 My favorite movie is \"The Lion King.\" I love the story and the music. What's your favorite movie?",
+      "latency_s": 2.494,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, I like... uh, \"Frozen.\" 它很好看! I like the songs... um, very nice.",
+      "latency_s": 2.475,
+      "word_count": 13,
+      "strategy": "continue"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Oh, \"Frozen\" is a great choice! ❄️ I love the songs too! Do you have a favorite song from the movie?",
+      "latency_s": 1.396,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, I like... um, \"Let It Go.\" 很好听! I sing... uh, in the shower.",
+      "latency_s": 1.49,
+      "word_count": 14,
+      "strategy": "continue"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Singing in the shower sounds fun! 🎤 I bet you sound amazing! Do you sing other songs too?",
+      "latency_s": 1.64,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T17:59:39.986757",
+    "level": "B1",
+    "turns": 12,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "reading",
+        "movies",
+        "music"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 1.624,
+    "user_avg_latency": 1.728,
+    "strategies": {
+      "continue": 12
+    },
+    "hot_content_events": 6
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "reading",
+      "headline": "Libraries are hosting cool reading challenges!"
+    },
+    {
+      "turn": 3,
+      "type": "topic_detected",
+      "topic": "fantasy books",
+      "headline": "Largest blanket fort ever built!"
+    },
+    {
+      "turn": 3,
+      "type": "topic_detected",
+      "topic": "fantasy books",
+      "headline": "Magic and secrets mix in thrilling fantasy."
+    },
+    {
+      "turn": 10,
+      "type": "topic_detected",
+      "topic": "unicorns",
+      "headline": "Magic world of light and shadow returns!"
+    },
+    {
+      "turn": 11,
+      "type": "topic_detected",
+      "topic": "treasure hunting",
+      "headline": "Girl gets a unicorn license!"
+    },
+    {
+      "turn": 11,
+      "type": "topic_detected",
+      "topic": "treasure hunting",
+      "headline": "Solve clues for a gold treasure!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just read about these amazing reading challenges at libraries where you can read under a blanket fort and even win prizes. Would you want to join me for some fun?",
+      "latency_s": 2.842,
+      "has_hot_content": true,
+      "hot_topic": "reading"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, that sounds really fun! I like reading, and um, winning prizes is cool too. I think I’d enjoy building a blanket fort. It’s nice to have a cozy place to read. Yes, I would like to join you!",
+      "latency_s": 1.476,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That’s awesome! A cozy blanket fort sounds perfect for getting lost in a good book. What type of books do you like to read? 📚",
+      "latency_s": 1.392,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I really like fantasy books. They take me to different worlds, you know? I enjoy stories with magic and adventure. Sometimes I also read mystery books because they are exciting. What about you? What do you like to read?",
+      "latency_s": 1.75,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, I totally get that! Fantasy books are like a gateway to new worlds. I enjoy reading sci-fi and thrillers. They keep me on the edge of my seat! Have you read any good fantasy or mystery books lately?",
+      "latency_s": 1.552,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I recently read a fantasy book called \"The Hobbit.\" It was really great! There were dragons and adventures, which I love. I also like mystery books, but I haven’t read any recently. Do you have a favorite sci-fi book?",
+      "latency_s": 1.402,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds like such an exciting adventure! Oh, speaking of blankets, I just read about kids in South Carolina who built the largest blanket fort ever and donated the blankets to those in need. What do you think about that idea?",
+      "latency_s": 1.781,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "building a blanket fort"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I think that's a really nice idea! Building a blanket fort is fun, and helping people in need is important. It shows that kids can make a difference. I wish I could be part of something like that!",
+      "latency_s": 1.529,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That’s really wonderful! Helping people while having fun is a great combination. Oh, speaking of fantasy, I just read 'A Vow in Vengeance,' which mixes magic with mystery and revenge. What do you think about stories that have magical twists like that?",
+      "latency_s": 2.166,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "fantasy books"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I think stories with magic are really interesting! They can make you feel excited and curious. When magic is in a story, it adds surprises, and I like that. I also enjoy trying to guess what will happen next. It’s fun!",
+      "latency_s": 1.445,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Absolutely! I love that feeling of anticipation in a story. It’s like a puzzle you want to solve. Do you have any favorite magical books or movies where you tried to guess the ending?",
+      "latency_s": 1.4,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, I really like \"Harry Potter.\" It's full of magic and surprises. I remember trying to guess who was good or bad. The story kept me excited! Also, I enjoyed \"The Chronicles of Narnia\" because it has interesting worlds. Do you have a favorite magical story?",
+      "latency_s": 1.559,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Oh, I love both of those too! \"Harry Potter\" has such a rich world, and the characters are amazing. I also really enjoy \"The Hobbit.\" It’s full of adventure and has magical creatures. What do you think makes the worlds in those stories so captivating?",
+      "latency_s": 1.409,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think the worlds in those stories are captivating because they are very detailed. The magic and adventures make me feel like I can escape reality. Also, the characters are relatable, so I care about what happens to them. It’s fun to imagine being in those worlds!",
+      "latency_s": 2.805,
+      "word_count": 48,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "I completely agree! The way those worlds are built really draws you in. It's like you can almost feel the excitement and danger. Have you ever imagined what it would be like to live in one of those worlds? What would you want to do there? 🌟",
+      "latency_s": 1.577,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I think living in a magical world would be amazing! I would want to learn spells and maybe fly on a broomstick. It would be so exciting to explore new places and meet interesting creatures. I imagine every day would be an adventure!",
+      "latency_s": 1.548,
+      "word_count": 44,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That sounds incredible! Learning spells and flying would be such a thrill. Imagine discovering hidden lands and making friends with magical creatures! What kind of creatures do you think you’d want to meet? 🦄",
+      "latency_s": 1.454,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I think I would love to meet unicorns! They are so beautiful and magical. Also, maybe dragons, because they are powerful and can fly. I imagine going on adventures with them and exploring new places. It would be really fun!",
+      "latency_s": 1.356,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Unicorns and dragons would make for an amazing adventure team! 🦄🐉 I can just picture soaring through the skies on a dragon's back or galloping through enchanted forests with a unicorn. What kind of adventures do you think you’d go on with them?",
+      "latency_s": 1.736,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I think we could go on a treasure hunt! I would search for hidden gold and magical gems. Also, maybe we could help people in trouble, like saving a village from a monster. That would be exciting!",
+      "latency_s": 2.607,
+      "word_count": 38,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "A treasure hunt sounds like so much fun! Imagine all the magical gems you could find! Oh, speaking of that, I just read about a fantasy card game called 'Lorwyn Eclipsed.' It’s fascinating how light and shadow play together. Have you ever tried a fantasy card game?",
+      "latency_s": 1.496,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "magical worlds"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I haven’t tried a fantasy card game before. It sounds interesting! I like the idea of light and shadow in games. It must be fun to play with friends. Maybe I can try 'Lorwyn Eclipsed' one day! What do you think about playing card games?",
+      "latency_s": 1.572,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Playing card games can be a blast! 🎴 I love how they bring friends together for some fun and strategy. It’s exciting to see how each game can be different, depending on who you play with. Do you enjoy any other types of games?",
+      "latency_s": 1.702,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, I like board games too! They are fun because you can play with many people. My friends and I often play Monopoly. It’s exciting to trade and build houses. Sometimes, it can get very competitive! Do you have a favorite board game?",
+      "latency_s": 1.681,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "That’s so true! Board games are great for bringing people together. Oh, speaking of games, I just read about a treasure hunt where you solve clues to find real gold! How cool would it be to go on a real treasure hunt? What do you think?",
+      "latency_s": 1.827,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "treasure hunting"
+    }
+  ]
+}

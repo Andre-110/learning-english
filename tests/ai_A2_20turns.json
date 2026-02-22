@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T09:23:28.153260",
+    "level": "A2",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "movies",
+        "music",
+        "technology"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 1.447,
+    "user_avg_latency": 1.85,
+    "strategies": {
+      "summarize": 20
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hi there! 😊 I noticed you like technology—have you used any cool apps or gadgets lately? (You can answer in simple words or even mix some Chinese - I'll help you!)",
+      "latency_s": 1.694
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "嗯… I think yes. I use 微信, WeChat, every day. It’s 很方便的. I talk with my family and朋友. Also, I try some new app… 叫Duolingo? It helps me learn English, but有点难。I also want a new手机, but我的手机 okay now. 你有推荐什么app吗?",
+      "latency_s": 2.289,
+      "word_count": 39,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I use WeChat too! It's really easy for staying in touch. Duolingo can be hard sometimes, but I think you’re doing great. I like an app called Spotify for music. What kind of apps do you enjoy most? (for example, games, books, or something else)",
+      "latency_s": 1.256,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "嗯… I think I like music apps too, but I don’t have Spotify. I use QQ音乐—oh, QQ music. I listen to Jay Chou songs. I also…嗯…play one game, it’s called 王者荣耀…ah, sorry, Honor of Kings. But sometimes I play too much, my mum说 stop, haha. I think…聊天 apps and music apps is my favorite. Books app, not too much, because reading English很难。",
+      "latency_s": 1.789,
+      "word_count": 62,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Haha, I get it—games can be so fun, it’s hard to stop! Jay Chou has so many good songs. Is there one Jay Chou song that means a lot to you? (for example, maybe it reminds you of a special time)",
+      "latency_s": 1.644,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "嗯… I think… yes, 有一个歌, uh, “稻香”—Dao Xiang. I like it because, um, it makes me feel happy. The song is about family and childhood, 对吧? When I听, I remember my家—my home. Also, the music is 很好听的…啊, how to say… relaxing? Yes! I listen when I感觉 not开心.",
+      "latency_s": 1.522,
+      "word_count": 47,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, I know that song! Dao Xiang really does feel relaxing, and it has a special warmth. It’s nice that it reminds you of home. Can you tell me about a memory from your childhood that comes to your mind when you hear it? (It could be a small moment, like playing outside or being with family.)",
+      "latency_s": 1.934,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Uh… when I listen Dao Xiang, I remember, um, when I was little, my grandma—奶奶—she cook rice in kitchen. The smell, 很香… so good. I play with my cousin in yard, run around, catch bugs, haha. We laugh a lot. The song make me think about that time. Very simple, very happy. I miss it.",
+      "latency_s": 2.467,
+      "word_count": 55,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh wow, that sounds so warm and fun! I can almost smell the rice and hear you laughing with your cousin. What was your favorite game to play together in the yard? (For example, maybe a game with running or something you made up.)",
+      "latency_s": 1.335,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Ah… in yard… 我们—me and my cousin—we play 跑步, uh, running. Sometimes, um, we do hide and seek. I like hide and seek more, because… it is fun, you can hide behind tree or…那个… bush. Sometimes I hide in chicken house, but it is smelly, haha. My cousin always find me fast!",
+      "latency_s": 1.364,
+      "word_count": 52,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Haha, hiding in the chicken house sounds wild! I bet you laughed a lot when your cousin found you. What was the funniest place you ever tried to hide? (For example, maybe somewhere your cousin never expected.)",
+      "latency_s": 1.001,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um… one time, I think, I hide in the—uh—closet, 衣柜. My cousin cannot find me! He, uh, look everywhere, in kitchen, under table, but not in closet. I stay very quiet, but… I feel want to laugh, haha. Then, my cousin say, “你不见了！” He think I go home! Very funny.",
+      "latency_s": 2.383,
+      "word_count": 50,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Haha, that’s such a great story! I can imagine how hard it was to hold your laugh in the closet. What did you and your cousin do after he finally found you?",
+      "latency_s": 1.397,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Uh… after he, uh, find me, we, uh, laugh so much! I—uh—we both so happy. My cousin say, “你太厉害了!” Umm… then we go to eat, uh, watermelon. It is summer, so hot, so watermelon 很好吃. Uh… then we play other games, like, um, tag. Uh, I always run very fast!",
+      "latency_s": 1.406,
+      "word_count": 50,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Oh, summer watermelon after running around sounds perfect! I can just imagine how sweet it tasted when you were hot and tired. What do you remember most about those summer days with your cousin? (For example, maybe a sound, a smell, or a feeling.)",
+      "latency_s": 1.373,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Uh, I think… the smell? Uh, the smell of, um, cut watermelon—很香, very good! And, uh, the sun… 很晒, very hot. We… we always play outside. Sometimes, ah, I remember, many bugs, 很多虫子. Um, and I feel, uh, very happy, just…自由? Free! Yes. I like that.",
+      "latency_s": 1.906,
+      "word_count": 46,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Oh, I love that feeling of being free in summer! The mix of sweet watermelon, sunshine, and even bugs makes it so real. Was there a special game or moment with your cousin that you still remember clearly? (Maybe something funny or exciting?)",
+      "latency_s": 1.383,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Uh… let me think… Oh! One time, uh, my cousin and me, we, um, try to catch dragonfly—蜻蜓, uh, but so hard! We run, run, but always fly away, haha… My cousin say, “You almost catch!” but I never, uh, catch one… Only, only touch one time. It feel, um… 怎么说? Like soft, and small. Very funny! I—uh—we laugh so loud!",
+      "latency_s": 2.471,
+      "word_count": 61,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Haha, that sounds like such a fun memory! I can picture you both running and laughing so hard. What did you love most about chasing dragonflies back then?",
+      "latency_s": 1.39,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um… I think, I like, uh, running with my cousin. We, uh, laugh so much, 很开心! The dragonfly fly very fast, so we run, run, but cannot catch. It’s funny. Uh… sometimes we fall down, and the grass is very soft, so not痛. I think… I just like play outside with family.",
+      "latency_s": 1.232,
+      "word_count": 52,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds so sweet! Soft grass and big laughs with family—those are the best days. Was there ever a time when you got a little hurt or scared, but your cousin helped you feel better?",
+      "latency_s": 1.314,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, yes, I remember one time, uh, I fall down—跌倒了—on the grass. My knee, uh, have small伤口… ah, cut. It hurt, but my cousin, she say, “不要哭, don’t cry,” and, um, hold my hand. She, uh, help me go home. I feel better with her. She is very… nice, 很好.",
+      "latency_s": 1.92,
+      "word_count": 50,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Oh, that’s really touching! It’s so good to have someone who helps when you feel hurt. How did you two spend time together after that? Did you do anything special at home?",
+      "latency_s": 2.098,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um… after that, we, uh, go home together. My cousin, she help me put, uh, yào膏… medicine cream on my knee. Then, uh, we eat ice cream! 很好吃! We watch, uh, cartoon. I like, um, 喜羊羊—ah, “Pleasant Goat.” My cousin too. We laugh, uh, again. Uh, no special thing, just, um, happy time at home.",
+      "latency_s": 1.611,
+      "word_count": 55,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "That sounds so cozy—ice cream and cartoons always make things better! I loved watching cartoons too when I was little. What was your favorite part of watching “Pleasant Goat” with your cousin?",
+      "latency_s": 1.604,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um… I think, uh, my favorite part is when the goat—羊羊—he, uh, play trick on the wolf. The wolf always want catch him, but goat is very smart, haha! Uh, I like the funny part… sometimes they, uh, do silly things. My cousin always laugh, so I laugh too. Uh… sometimes I don’t understand all, but it’s fun, 很好玩.",
+      "latency_s": 2.849,
+      "word_count": 59,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "Haha, those silly tricks sound so fun! I love when a show makes people laugh together. Was there ever a joke or moment in “Pleasant Goat” that really made you and your cousin laugh a lot? (Maybe a time you couldn’t stop laughing!)",
+      "latency_s": 1.739,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um… yes, yes! One time, the wolf, uh, he try to catch goat, but he, uh, fall in big hole. Uh… he say something funny, like, \"我要吃羊!\" And then… he, uh, get stuck. Me and my cousin, we laugh so much, ha ha. I think, uh, goat very smart, always trick wolf. We repeat that part many time, because, uh, it’s very funny.",
+      "latency_s": 2.422,
+      "word_count": 63,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Haha, I can picture you both laughing so hard at that scene! It’s fun to watch something over and over when it’s really funny. What does your cousin do that makes you laugh the most? (For example, maybe she copies the goat, or says silly things?)",
+      "latency_s": 1.541,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um… my cousin, she, uh… sometimes she, she jump like the goat—she say “I am 羊羊!” and, uh, she make funny face. I think… she is very cute. Sometimes… she try talk like the wolf, but her voice is, uh, 很小 (very small), not scary! Then I laugh, because she look, um, very silly.",
+      "latency_s": 1.407,
+      "word_count": 54,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Haha, that sounds so cute! I can imagine her pretending to be the goat and making you laugh. What’s your favorite memory with your cousin? (Maybe a time you did something fun together?)",
+      "latency_s": 1.061,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um… favorite memory… let me think… Oh! One time, we go park together, and we, uh, play on the slide. She, uh, she go very fast, and then I scared, so I go slow. She say, “不要怕!” Uh, she help me, and we laugh. After, we eat ice cream—chocolate! Very happy, I like that day.",
+      "latency_s": 1.718,
+      "word_count": 55,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Oh, that’s such a sweet memory! I love how your cousin helped you when you were scared. How did you feel when she said “不要怕!” and helped you go down the slide?",
+      "latency_s": 1.267,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Um… I feel, uh, not so scared after she say “不要怕!” She, she hold my hand, so I feel better. I… I think I was happy, because I go down the slide and she say “good job!” Uh… yeah, I think she is very nice. Sometimes I still afraid, but she help me.",
+      "latency_s": 1.168,
+      "word_count": 53,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "That’s really sweet! It sounds like your cousin gives you a lot of courage. I’m curious—what do you do to help her when she feels scared or sad? (For example, maybe you cheer her up or play with her?)",
+      "latency_s": 1.233,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Uh… when she sad, I… I give her hug, and I… sometimes I buy her milk tea. She like milk tea very much. And, um, I say, uh, “没关系,” like, it’s okay. I… try to make her laugh, sometimes tell joke, but my joke not always funny… uh, but she still笑.",
+      "latency_s": 1.634,
+      "word_count": 51,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "That’s really kind of you! I love that you try to cheer her up, even if your jokes aren’t perfect. What’s one silly joke you tried to tell her before? (It can be in any language!)",
+      "latency_s": 1.283,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Um… I, I tell her joke, but, uh, is not very funny… I say, “Why the tomato blush?” Uh… she say, “Why?” I say, “Because it see the salad dressing!” Hahaha… She, she laugh but maybe is not real funny… 我的笑话有点傻。I think next time I try better joke.",
+      "latency_s": 1.834,
+      "word_count": 48,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "Haha, I like that joke! Sometimes silly jokes are the best, even if they make us laugh just a little. What kind of jokes make you laugh the most? (For example, do you like jokes about animals, food, or something else?)",
+      "latency_s": 1.597,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Uh… I think, I like, um… jokes about food. Food很有意思. Sometimes I hear, uh, chicken joke, is funny. Like, like “Why chicken cross the road?” I don’t… I don’t understand all, but I think is silly. I also like animal joke, but sometimes is hard… 有时候听不懂. My friend tell me, but I just laugh, 不知道为什么.",
+      "latency_s": 1.618,
+      "word_count": 55,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Haha, I know what you mean! Some animal jokes are so silly, they just make you laugh even if you don’t get them fully. Has there ever been a joke that really made you laugh hard? (Maybe one your friend told you?)",
+      "latency_s": 1.488,
+      "strategy": "summarize"
+    }
+  ]
+}

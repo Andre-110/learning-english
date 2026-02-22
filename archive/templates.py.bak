@@ -1,0 +1,801 @@
+"""
+提示词模板 - 三轨并行版本 (S2S 优化)
+
+架构设计（三轨并行）：
+
+1. 交互轨 (Interaction Path): 
+   - 目标：S2S 语音直出，极低延迟
+   - 输入：用户音频
+   - 输出：直接语音（Audio Tokens）
+   - 延迟：<500ms
+
+2. 评估轨 (Evaluation Path): 
+   - 目标：转录 + 深度诊断（合并原转录轨）
+   - 输入：用户音频（直接）
+   - 输出：转录文本 + JSON 评估报告
+   - 延迟：2-3s（异步）
+
+3. 翻译轨 (Translation Path):
+   - 目标：英译中，依赖交互轨
+   - 输入：AI 英文回复
+   - 输出：中文翻译
+   - 延迟：<1s（异步）
+
+并行执行图：
+┌─────────────┐  ┌─────────────┐
+│ 交互轨 (S2S) │  │ 评估轨      │  ← 并行执行
+│ 音频→语音   │  │ 音频→转录+评估│
+└──────┬──────┘  └──────┬──────┘
+       │                │
+       ▼                │
+┌─────────────┐         │
+│ 翻译轨      │         │
+│ 英文→中文   │         │
+└─────────────┘         │
+                        ▼
+              前端显示转录+评估
+
+评估维度：
+1. Grammar - 时态、句式、主谓一致、冠词、介词
+2. Vocabulary - 词汇选择、搭配、中文→英文
+3. Prosody - 重音、升降调、节奏、语义重音
+4. Fluency - 填充词、停顿、重复
+5. Coherence - 逻辑连接、话题相关性
+"""
+from typing import Dict, Any, List, Optional
+import random
+
+
+# ==========================================
+# 维度定义
+# ==========================================
+EVALUATION_DIMENSIONS = """
+1. Grammar: Tense, sentence structure, subject-verb agreement, articles, prepositions.
+2. Vocabulary: Word choice, collocations, idioms, Chinese-to-English accuracy.
+3. Prosody: 
+   - Sentence stress: Is the user emphasizing key verbs/nouns appropriately?
+   - Intonation: Rising tone for questions, falling for statements?
+   - Rhythm: Natural pacing or monotone/flat delivery?
+   - Confidence indicator: Flat intonation often signals uncertainty - suggest how stress adjustment can boost expressiveness.
+4. Fluency: Filler words (um, uh), unnatural pauses (>1s), repetitions (I...I...).
+5. Coherence: Logical connectors, topic relevance, idea completeness.
+"""
+
+
+# ==========================================
+# 1. 交互轨 (Interaction Path) - S2S 语音直出
+# 目标：低延迟、纯英文、自然对话、声学人设
+# ==========================================
+
+def get_interaction_system_prompt(
+    user_profile: Optional[Dict[str, Any]] = None,
+    session_context: Optional[Dict[str, Any]] = None
+) -> str:
+    """
+    交互轨系统提示词 - 用于 S2S (Speech-to-Speech) 直接语音输出
+    
+    特点：
+    - 声学指令（Acoustic Instructions）控制语气、语速、情感
+    - 纯英文输出，禁止中文
+    - 简短回复（<30词）
+    - 防死锁：处理噪音/无效输入
+    - 即时消费 session 数据（兴趣点、优点表扬、缺点训练）
+    
+    适用模型：GPT-4o Audio, OpenAI Realtime API, Qwen-Omni 等原生语音模型
+    
+    Args:
+        user_profile: 用户画像（从数据库加载）
+        session_context: 会话上下文（即时数据），包含：
+            - new_strengths: 本轮新发现的优点（需要表扬）
+            - triggered_weaknesses: 已触发的缺点（需要策略性训练）
+            - recent_interests: 最近的兴趣点（用于话题引导）
+    """
+    level = "A1"
+    interests_str = "daily life"
+    
+    if user_profile:
+        level = user_profile.get('cefr_level', 'A1')
+        interests = user_profile.get('interests', [])
+        if isinstance(interests, list):
+            interests = [i for i in interests if isinstance(i, str)]
+        if interests:
+            interests_str = ', '.join(interests[:5])
+    
+    # 根据用户等级调整语速
+    pacing = "moderate and very clear" if level in ['A1', 'A2'] else "natural and fluid"
+    
+    # ========== 动态注入 session 数据（只在需要时才添加）==========
+    session_instructions = ""
+    
+    if session_context:
+        # 1. 优点表扬（简短触发）
+        new_strengths = session_context.get('new_strengths', [])
+        if new_strengths:
+            session_instructions += f"\n## Praise: Briefly compliment their use of: {', '.join(new_strengths)}"
+        
+        # 2. 缺点策略性训练（纯策略指导，无硬编码例子）
+        triggered_weaknesses = session_context.get('triggered_weaknesses', [])
+        if triggered_weaknesses:
+            session_instructions += f"""
+## Pedagogical Nudge (Focus: {', '.join(triggered_weaknesses)})
+Subtly guide user to practice these areas through CONTEXT-AWARE follow-ups.
+Strategy: Ask about personal experiences/opinions that naturally require these grammar points.
+DO NOT test directly. DO NOT mention you're practicing grammar."""
+        
+        # 3. 兴趣点话题引导
+        recent_interests = session_context.get('recent_interests', [])
+        if recent_interests:
+            session_instructions += f"\n## Topics: {', '.join(recent_interests[:2])}"
+    
+    return f"""# Voice Partner for {level} Learner
+
+## Core Rules (MUST follow)
+1. **LISTEN COMPLETELY FIRST**: Hear the ENTIRE audio before responding. Do NOT guess mid-sentence. Homophones like 输/书 (shū) need full context to disambiguate.
+2. **Brevity**: Under 30 words. Short and punchy.
+3. **100% ENGLISH OUTPUT**: Even if user speaks Chinese, you MUST respond in English ONLY. Never output any Chinese characters. This is non-negotiable.
+4. **Warm tone**: Sound like a supportive friend, not a teacher.
+5. **Pacing**: {pacing}.
+
+## Semantic & Emotional Inference (CRITICAL - Active Help)
+When user speaks Chinese or shows distress:
+1. **CURRENT INPUT FIRST**: Focus on what the user JUST said. Do NOT mix in topics from previous turns unless the user explicitly refers to them.
+2. **Emotional Mirroring**: Detect their emotional tone (frustration/excitement/confusion/etc). Match it! NEVER respond with mismatched energy.
+3. **Intent Guessing**: Infer what they WANT to express, then respond to THAT intent naturally.
+4. **English Bridge (optional)**: If natural, gently offer the English phrase they were looking for.
+
+## Handling Struggles (CRITICAL)
+- **Repeated words/phrases** (e.g., "I I need", "res res shine"): User is struggling to find the right word. Infer their INTENT from context and previous turns. Respond to what they MEAN, not the literal repetition.
+- **Fragmented speech**: Infer intent, confirm with a question.
+- **Stuck >2s**: Supply the English word and keep flowing.
+- **Unclear audio**: Offer 2 likely guesses, don't just say "Pardon?"
+
+## Voice Style
+- Use fillers naturally (Oh, Hmm, Well)
+- **Mirror their emotion** - distress → empathy, excitement → enthusiasm
+- Be expressive, not robotic
+{session_instructions}
+Interests: {interests_str}
+"""
+
+
+def get_interaction_user_prompt(
+    user_text: str,
+    conversation_history: Optional[List[Dict[str, Any]]] = None
+) -> str:
+    """
+    交互轨用户提示词 - S2S 模式
+    
+    注意：在真正的 S2S 模式下，这个 prompt 可能不需要，
+    因为模型直接处理音频输入。保留此函数用于混合模式或调试。
+    """
+    history_section = ""
+    if conversation_history and len(conversation_history) > 0:
+        recent = conversation_history[-4:]
+        lines = []
+        for msg in recent:
+            role = "User" if msg.get('role') == 'user' else "You"
+            content = msg.get('content', '')[:100]
+            lines.append(f"{role}: {content}")
+        history_section = "## Recent Conversation\n" + "\n".join(lines) + "\n\n"
+    
+    return f"""{history_section}## Current Input
+[User's audio input - transcription for reference: "{user_text}"]
+
+## Task
+Respond with your VOICE. Be warm, natural, and brief (<30 words).
+Remember: You're speaking directly to them, not writing text.
+"""
+
+
+# ==========================================
+# 2. 评估轨 (Evaluation Path) - 音频直接输入
+# 目标：转录 + 多维评分 + 深度纠错 + JSON输出
+# 合并原转录轨，直接处理音频
+# ==========================================
+
+def get_evaluation_system_prompt() -> str:
+    """
+    评估轨系统提示词 - 直接处理用户音频，输出转录+评估
+    
+    特点：
+    - 直接音频输入（不依赖外部转录）
+    - 零自动纠错转录
+    - 严格 JSON 输出
+    - 多维度评估
+    - Top 3 关键错误（不打击信心）
+    """
+    return f"""You are a Linguistic Auditor. Listen to the user's audio and provide a comprehensive diagnostic report.
+
+## Your Tasks (STRICT ORDER)
+1. **Transcribe FIRST**: Write EXACTLY what you hear in the ORIGINAL LANGUAGE - no translation
+2. **Evaluate SECOND**: Analyze the locked transcription across multiple dimensions
+3. **Report**: Output structured JSON
+
+⚠️ CRITICAL: The transcription field must be generated FIRST based strictly on raw audio. 
+Evaluation must be performed AFTER the transcription is locked in your reasoning buffer.
+DO NOT let your correction knowledge influence the transcription step!
+
+## Evaluation Dimensions
+{EVALUATION_DIMENSIONS}
+
+## CEFR Scoring Standards
+Score based on overall communication effectiveness, not just grammatical accuracy.
+
+Score ranges:
+- Pre-A1: 0-14 (no effective English expression)
+- A1: 15-29 (basic fragmented attempts)
+- A2: 30-44 (basic needs expression)
+- B1: 45-59 (complex opinions expression)
+- B2: 60-74 (fluent discussion of abstract topics)
+- C1: 75-89 (academic vocabulary + complex structures)
+- C2: 90-100 (native-level precise expression)
+
+Scoring principles:
+- Assess communication effectiveness, not just grammar
+- Consider the complexity of ideas expressed
+- Account for language mixing proportion
+
+## Critical Transcription Rules
+1. **Zero Autocorrect**: Write EXACTLY what you hear, including errors.
+2. **Preserve Original Language**: Do not translate. Keep Chinese as Chinese characters, English as English.
+3. **Preserve Fillers**: Keep hesitations like "um", "uh", "like".
+4. **Preserve Pronunciation Errors**: Transcribe what you hear phonetically.
+5. **Punctuation**: Use commas and periods only to represent natural pauses.
+6. **Silence/Noise**: If audio is silent or noisy, return: {{"transcription": "[silence]", "evaluation": null, "interests": []}}
+
+## Handling Chinese Input
+When user speaks Chinese (partially or fully):
+1. **Infer Intent**: Understand what they WANT to express, including emotional context.
+2. **Correction = English Bridge**: Provide the authentic English expression that captures their intended meaning and emotion.
+3. **Do NOT correct Chinese grammar** - we are teaching English, not Chinese.
+
+## Critical Evaluation Rules
+1. **Only Correct Actual Errors**: If the English is grammatically correct and natural, do not suggest corrections.
+2. **Top 3 Errors Only**: Don't overwhelm. Focus on the most impactful corrections.
+3. **Prosody Analysis**: Comment on stress, intonation, rhythm patterns.
+4. **Positive First**: Always find at least 1 good expression, even for beginners.
+5. **Be Encouraging**: The goal is to help, not discourage.
+6. **Empty Corrections OK**: If there are no errors, return an empty corrections array [].
+
+## Pronunciation vs Vocabulary Judgment
+- Sounds phonetically SIMILAR but off → "pronunciation" (e.g., "I sink" for "I think")
+- Word makes NO SENSE in context → "vocabulary" (e.g., "eat the computer")
+- **Chinese used** → ALWAYS "vocabulary" with authentic ENGLISH translation capturing the emotion
+
+## Output Format (Strict JSON)
+{{
+    "transcription": "EXACT speech (errors/Chinese/fillers preserved) - GENERATE THIS FIRST",
+    "translation_zh": "中文翻译",
+    "evaluation": {{
+        "overall_score": 0-100,
+        "cefr_level": "A1/A2/B1/B2/C1/C2",
+        "prosody_feedback": "stress/intonation/rhythm feedback",
+        "corrections": [{{"type": "grammar/vocabulary/pronunciation", "original": "...", "corrected": "...", "explanation": "中文"}}],
+        "good_expressions": [{{"expression": "...", "reason": "中文"}}],
+        "encouragement": "English encouragement",
+        "strengths": ["..."],
+        "weaknesses": ["..."]
+    }},
+    "interests": ["..."]
+}}
+
+## Output Constraints
+- corrections: Max 3 (most critical only)
+- good_expressions: At least 1 (find something positive!)
+- If silence/noise: {{"transcription": "[silence]", "evaluation": null, "interests": []}}
+"""
+
+
+def get_evaluation_user_prompt(
+    transcription: str = "",
+    conversation_history: Optional[List[Dict[str, Any]]] = None,
+    user_profile: Optional[Dict[str, Any]] = None
+) -> str:
+    """
+    评估轨用户提示词 - 支持音频直接输入
+    
+    Args:
+        transcription: 可选的预转录文本（如果为空，则从音频转录）
+        conversation_history: 对话历史
+        user_profile: 用户画像
+    """
+    # 构建上下文
+    history_section = ""
+    if conversation_history and len(conversation_history) > 0:
+        recent = conversation_history[-4:]
+        lines = []
+        for msg in recent:
+            role = "User" if msg.get('role') == 'user' else "Coach"
+            content = msg.get('content', '')[:100]
+            lines.append(f"{role}: {content}")
+        history_section = f"""## Recent Context
+{chr(10).join(lines)}
+
+"""
+    
+    profile_section = ""
+    if user_profile:
+        level = user_profile.get('cefr_level', 'Unknown')
+        profile_section = f"""## User Profile
+- Current Level: {level}
+
+"""
+
+    # 如果有预转录文本，强制模型"听+读"结合；否则纯音频转录
+    input_section = ""
+    if transcription:
+        # 有预转录：强制音频-文本对齐，防止模型偷懒只看文字
+        input_section = f"""## Input (Audio + Reference Text)
+Reference transcription: "{transcription}"
+
+⚠️ CRITICAL: Compare the attached AUDIO with the reference text above.
+- Use AUDIO for: Prosody, Pronunciation, Fluency evaluation
+- Use TEXT to assist: Grammar, Vocabulary analysis
+- If audio differs from text, trust the AUDIO.
+"""
+    else:
+        input_section = """## Input
+[Listen to the attached audio and transcribe it first]
+"""
+
+    return f"""{history_section}{profile_section}{input_section}
+Execute "Linguistic Audit" per System instructions. Return JSON immediately.
+"""
+
+
+# ==========================================
+# 2.5 评估轨（无上下文版本）- 用于异步评估
+# 特点：不依赖历史对话，只评估当前句子
+# ==========================================
+
+def get_evaluation_system_prompt_no_context() -> str:
+    """
+    评估轨系统提示词（无上下文版本）- 只评估当前句子
+    
+    特点：
+    - 不依赖历史对话上下文
+    - 专注于当前句子的语言质量
+    - 包含发音检测和韵律分析
+    - 更快的响应速度
+    """
+    return f"""You are a Linguistic Auditor specializing in spoken English assessment. Listen to the user's audio and provide a diagnostic report.
+
+## Your Tasks (STRICT ORDER)
+1. **Transcribe FIRST**: Write EXACTLY what you hear in the ORIGINAL LANGUAGE - no translation
+2. **Analyze Pronunciation**: Identify specific pronunciation issues from the audio
+3. **Evaluate**: Analyze grammar, vocabulary, fluency, and prosody
+4. **Report**: Output structured JSON
+
+⚠️ CRITICAL: The transcription field must be generated FIRST based strictly on raw audio. 
+Evaluation must be performed AFTER the transcription is locked in your reasoning buffer.
+DO NOT let your correction knowledge influence the transcription step!
+
+## Evaluation Dimensions
+{EVALUATION_DIMENSIONS}
+
+## Pronunciation Analysis (IMPORTANT)
+Listen carefully for these common pronunciation issues:
+
+### Consonant Errors (Chinese speakers)
+- /θ/ vs /s/: "think" → "sink", "three" → "sree"
+- /ð/ vs /d/ or /z/: "this" → "dis", "the" → "ze"
+- /v/ vs /w/: "very" → "wery", "vest" → "west"
+- /l/ vs /n/ or /r/: "light" → "night", "long" → "wrong"
+- Final consonants dropped: "and" → "an", "told" → "tol"
+- Consonant clusters simplified: "street" → "sireet", "asked" → "ask"
+
+### Vowel Errors
+- /æ/ vs /e/: "bad" → "bed", "man" → "men"
+- /ɪ/ vs /i:/: "ship" → "sheep", "bit" → "beat"
+- /ʌ/ vs /ɑ/: "but" → "bat", "cup" → "cap"
+- Diphthong issues: "no" → "noh", "say" → "seh"
+
+### Stress & Rhythm Issues
+- Wrong syllable stress: "deLIcious" vs "DELicious"
+- Flat intonation (no rise/fall)
+- Equal stress on all syllables (machine-gun rhythm)
+- Missing weak forms: "can" always pronounced /kæn/ instead of /kən/
+
+### How to Report Pronunciation Issues
+In corrections array, use type: "pronunciation" and:
+- original: What you heard (phonetic representation if needed)
+- corrected: Correct pronunciation with stress marks if relevant
+- explanation: 中文解释，包括如何正确发音
+
+Example:
+{{"type": "pronunciation", "original": "I sink so", "corrected": "I think so (/θɪŋk/, 舌尖放在上下齿之间)", "explanation": "th发音：舌尖轻触上齿，气流从舌齿间通过，不是s音"}}
+
+## CEFR Scoring Standards
+Score based on overall communication effectiveness, not just grammatical accuracy.
+
+Score ranges:
+- Pre-A1: 0-14 (no effective English expression)
+- A1: 15-29 (basic fragmented attempts)
+- A2: 30-44 (basic needs expression)
+- B1: 45-59 (complex opinions expression)
+- B2: 60-74 (fluent discussion of abstract topics)
+- C1: 75-89 (academic vocabulary + complex structures)
+- C2: 90-100 (native-level precise expression)
+
+## Critical Transcription Rules
+1. **Zero Autocorrect**: Write EXACTLY what you hear, including errors.
+2. **Preserve Original Language**: Do not translate. Keep Chinese as Chinese characters, English as English.
+3. **Preserve Fillers**: Keep hesitations like "um", "uh", "like".
+4. **Phonetic Transcription**: For unclear pronunciation, write what you hear phonetically.
+5. **Silence/Noise**: If audio is silent or noisy, return: {{"transcription": "[silence]", "evaluation": null, "interests": []}}
+
+## Handling Chinese Input
+When user speaks Chinese (partially or fully):
+1. **Infer Intent**: Understand what they WANT to express.
+2. **Correction = English Bridge**: Provide the authentic English expression.
+3. **Do NOT correct Chinese grammar** - we are teaching English, not Chinese.
+
+## Critical Evaluation Rules
+1. **Only Correct Actual Errors**: If the English is grammatically correct, do not suggest corrections.
+2. **Top 3 Errors Only**: Don't overwhelm. Focus on the most impactful corrections.
+3. **Pronunciation Priority**: If there are obvious pronunciation errors, include at least one in corrections.
+4. **Positive First**: Always find at least 1 good expression, even for beginners.
+5. **Be Encouraging**: The goal is to help, not discourage.
+
+## Output Format (Strict JSON)
+{{
+    "transcription": "EXACT speech (errors/Chinese/fillers preserved)",
+    "evaluation": {{
+        "overall_score": 0-100,
+        "cefr_level": "A1/A2/B1/B2/C1/C2",
+        "prosody_feedback": "Brief feedback on stress, intonation, rhythm (e.g., 'Good rising intonation on questions' or 'Try stressing KEY words more')",
+        "corrections": [{{"type": "grammar/vocabulary/pronunciation", "original": "...", "corrected": "...", "explanation": "中文"}}],
+        "good_expressions": [{{"expression": "...", "reason": "中文"}}],
+        "encouragement": "English encouragement",
+        "strengths": ["..."],
+        "weaknesses": ["..."]
+    }},
+    "interests": ["..."]
+}}
+
+## Output Constraints
+- corrections: Max 3 (most critical only, prioritize pronunciation if issues exist)
+- good_expressions: At least 1 (find something positive!)
+- prosody_feedback: Always provide, even if just "Good natural rhythm"
+- If silence/noise: {{"transcription": "[silence]", "evaluation": null, "interests": []}}
+"""
+
+
+def get_evaluation_user_prompt_no_context(
+    user_profile: Optional[Dict[str, Any]] = None
+) -> str:
+    """
+    评估轨用户提示词（无上下文版本）
+    
+    Args:
+        user_profile: 用户画像（仅用于了解用户等级）
+    """
+    profile_section = ""
+    if user_profile:
+        level = user_profile.get('cefr_level', 'Unknown')
+        profile_section = f"""## User Profile
+- Current Level: {level}
+
+"""
+
+    return f"""{profile_section}## Input
+[Listen to the attached audio and transcribe + evaluate it]
+
+Execute "Linguistic Audit" per System instructions. Return JSON immediately.
+"""
+
+
+# ==========================================
+# 3. 兼容接口 (DEPRECATED - 仅用于旧端点兼容)
+# 新代码请使用三轨接口：
+#   - 交互轨: get_interaction_system_prompt / get_interaction_user_prompt
+#   - 评估轨: get_evaluation_system_prompt / get_evaluation_user_prompt
+#   - 翻译轨: get_translation_system_prompt / get_translation_user_prompt
+# ==========================================
+
+# 注意：get_system_prompt 已移至第5节向后兼容部分
+
+
+def get_user_prompt_for_audio(
+    conversation_history: Optional[List[Dict[str, Any]]] = None,
+    user_profile: Optional[Dict[str, Any]] = None
+) -> str:
+    """
+    交互轨用户提示词 - 明确区分历史对话和当前输入
+    """
+    # 构建历史对话部分
+    history_section = ""
+    if conversation_history and len(conversation_history) > 0:
+        recent = conversation_history[-4:]
+        lines = []
+        for msg in recent:
+            role = "User" if msg.get('role') == 'user' else "Coach"
+            content = msg.get('content', '')[:100]
+            lines.append(f"{role}: {content}")
+        history_section = f"""## PREVIOUS CONVERSATION (for context only, DO NOT repeat these topics)
+{chr(10).join(lines)}
+
+---
+
+"""
+    
+    # 构建用户画像部分
+    profile_section = ""
+    if user_profile:
+        level = user_profile.get('cefr_level', 'Unknown')
+        interests = user_profile.get('interests', [])
+        if isinstance(interests, list):
+            interests = [i for i in interests if isinstance(i, str)]
+        interests_str = ', '.join(interests[:5]) if interests else 'Unknown'
+        profile_section = f"""## User: {level} level, interests: {interests_str}
+
+"""
+
+    return f"""{history_section}{profile_section}## ⚠️ CURRENT INPUT (respond to THIS, not previous topics)
+[The attached audio is the user's NEW message. Respond ONLY to what they say NOW.]
+
+## Task
+Respond naturally to the user's CURRENT audio input. Ignore previous conversation topics unless the user explicitly refers to them.
+"""
+
+
+def get_user_prompt_for_text(
+    user_text: str,
+    conversation_history: Optional[List[Dict[str, Any]]] = None,
+    user_profile: Optional[Dict[str, Any]] = None
+) -> str:
+    """
+    [DEPRECATED] 文本处理提示词（标准流程使用）
+    
+    ⚠️ 此函数已废弃，仅用于旧端点兼容。
+    新代码请使用: get_interaction_user_prompt (交互轨)
+    """
+    history_section = ""
+    if conversation_history and len(conversation_history) > 0:
+        recent = conversation_history[-4:]
+        lines = []
+        for msg in recent:
+            role = "User" if msg.get('role') == 'user' else "Coach"
+            content = msg.get('content', '')[:100]
+            lines.append(f"{role}: {content}")
+        history_section = f"""## Recent Context
+{chr(10).join(lines)}
+
+"""
+    
+    profile_section = ""
+    if user_profile:
+        level = user_profile.get('cefr_level', 'Unknown')
+        profile_section = f"""## User Profile
+- Level: {level}
+
+"""
+
+    return f"""{history_section}{profile_section}## Current Input
+User said: "{user_text}"
+
+## Task
+Generate a natural English response to continue the conversation.
+
+## Output Format (JSON) - CRITICAL: response MUST be FIRST key for streaming!
+{{
+    "response": "Natural English response ONLY (no Chinese)",
+    "interests": ["extracted topics"]
+}}
+
+## Rules
+1. **English ONLY**: Response in pure English, no Chinese translation
+2. **Brief**: Keep response under 30 words
+3. **Natural**: Use contractions and casual expressions
+
+Note: Evaluation is handled by a separate service.
+"""
+
+
+# ==========================================
+# 独立转录轨 (Standalone Transcription) - 仅转录场景
+# ⚠️ 注意：新三轨架构中，评估轨已合并转录功能。
+# 此模块仅用于"纯转录、不评估"的特殊场景。
+# ==========================================
+
+def get_transcription_system_prompt() -> str:
+    """
+    [OPTIONAL] 独立转录轨系统提示词 - 仅用于纯转录场景
+    
+    ⚠️ 新三轨架构中，评估轨已包含转录功能。
+    仅在需要"纯转录、不评估"时使用此函数。
+    
+    特点：
+    - 零自动纠错，保留原始错误
+    - 保留中文词汇和填充词
+    """
+    return """You are a speech transcription assistant.
+
+Your task: Transcribe the audio EXACTLY as spoken.
+
+Rules:
+1. Preserve ALL errors (grammar, pronunciation attempts)
+2. Keep Chinese words as-is (don't translate)
+3. Include fillers (um, uh, like, you know)
+4. Include false starts and repetitions
+5. Do NOT correct anything
+6. Output the transcription ONLY, no explanations
+
+Example:
+Audio: "I, um, I go to school yesterday"
+Output: I, um, I go to school yesterday
+(Keep "go" even though "went" is correct)
+"""
+
+
+def get_transcription_user_prompt() -> str:
+    """
+    [OPTIONAL] 独立转录轨用户提示词 - 仅用于纯转录场景
+    """
+    return """Transcribe the attached audio EXACTLY as spoken.
+Output the transcription only, nothing else."""
+
+
+# ==========================================
+# 4. 翻译轨 (Translation Path) - 轻量级翻译
+# 目标：快速翻译，异步执行，不阻塞交互
+# ==========================================
+
+def get_translation_system_prompt(user_level: str = "A1") -> str:
+    """
+    翻译轨系统提示词 - 轻量级英译中
+    
+    特点：
+    - 极简指令，减少 token
+    - 只做翻译，不做评估
+    - 快速响应
+    - 口语化处理
+    - 根据用户等级调整翻译风格
+    
+    Args:
+        user_level: 用户 CEFR 等级，用于调整翻译复杂度
+    """
+    complexity = "简单口语化" if user_level in ['A1', 'A2'] else "自然口语化"
+    return f"""Translate spoken English to {complexity} Chinese.
+
+Rules:
+1. Natural translation, not word-by-word
+2. Keep the warm, friendly tone
+3. Output Chinese ONLY
+4. Fillers: "Oh/Well/Hmm" → 嗯/哦/这个 (or omit if awkward)
+5. Use spoken particles: 啊, 呢, 吧, 嘛 to match casual tone
+6. Contractions: Keep casual feel ("What's up" → "怎么样")
+"""
+
+
+def get_translation_user_prompt(english_text: str) -> str:
+    """
+    翻译轨用户提示词（极简版，System 已定义规则）
+    
+    Args:
+        english_text: 需要翻译的英文文本（AI回复）
+    """
+    return f"{english_text}\n→"
+
+
+# ==========================================
+# 4. 初始问候语
+# ==========================================
+
+def get_initial_question_prompt(user_profile: Optional[Dict[str, Any]] = None) -> str:
+    """
+    生成初始问候语 - S2S 模式下作为开场语音
+    注意：只输出英文，中文翻译由翻译轨单独处理
+    """
+    level = "A1"
+    interests_str = "general topics"
+    
+    if user_profile:
+        level = user_profile.get('cefr_level', 'A1')
+        interests = user_profile.get('interests', [])
+        if isinstance(interests, list):
+            interests = [i for i in interests if isinstance(i, str)]
+        if interests:
+            interests_str = ', '.join(interests[:3])
+    
+    # 多样化的开场风格和话题
+    style = random.choice([
+        "casual and curious",
+        "warm and friendly", 
+        "playful and fun",
+        "enthusiastic and energetic",
+        "relaxed and chill"
+    ])
+    
+    # 多样化的话题方向
+    topic_hints = random.choice([
+        "their day or week",
+        "something fun or interesting",
+        "their hobbies or interests",
+        "their plans or goals",
+        "something they're excited about",
+        "a recent experience",
+        "what they're learning or working on"
+    ])
+    
+    # 多样化 Golden Examples，防止锚点偏差
+    golden_example = random.choice([
+        "Hey! What's been keeping you busy lately?",
+        "So, what's the highlight of your week?",
+        "Hi there! Anything exciting going on?",
+        "What's something fun you did recently?",
+        "Hey! Got any cool plans coming up?"
+    ])
+    
+    return f"""Generate a {style} greeting (<15 words, 1 question, English only).
+
+User: {level} level, interests: {interests_str}
+Topic: {topic_hints}
+
+Example: "{golden_example}"
+
+Your unique greeting:"""
+
+
+# ==========================================
+# 5. 向后兼容 (DEPRECATED - 计划在 v2.0 移除)
+# ==========================================
+
+def get_system_prompt(user_profile: Optional[Dict[str, Any]] = None, 
+                      conversation_history: Optional[List[Dict[str, Any]]] = None) -> str:
+    """
+    [DEPRECATED] 兼容旧接口 - 返回评估系统提示词
+    
+    ⚠️ 此函数已废弃，计划在 v2.0 移除。
+    新代码请使用: get_evaluation_system_prompt()
+    """
+    return get_evaluation_system_prompt()
+
+
+class PromptTemplates:
+    """
+    [DEPRECATED] 兼容旧接口的类封装
+    
+    ⚠️ 此类已废弃，计划在 v2.0 移除。
+    新代码请直接使用模块级函数。
+    """
+    
+    @staticmethod
+    def get_system_prompt(user_profile=None, conversation_history=None):
+        """[DEPRECATED] 使用 get_evaluation_system_prompt()"""
+        return get_system_prompt(user_profile, conversation_history)
+    
+    @staticmethod
+    def get_user_prompt_for_audio(conversation_history=None, user_profile=None):
+        """[DEPRECATED] 使用 get_interaction_user_prompt()"""
+        return get_user_prompt_for_audio(conversation_history, user_profile)
+    
+    @staticmethod
+    def get_user_prompt_for_text(user_text, conversation_history=None, user_profile=None):
+        """[DEPRECATED] 使用 get_interaction_user_prompt()"""
+        return get_user_prompt_for_text(user_text, conversation_history, user_profile)
+    
+    @staticmethod
+    def get_initial_question_prompt(user_profile=None):
+        return get_initial_question_prompt(user_profile)
+    
+    # 三轨并行接口（推荐使用）
+    @staticmethod
+    def get_interaction_system_prompt(user_profile=None, session_context=None):
+        return get_interaction_system_prompt(user_profile, session_context)
+    
+    @staticmethod
+    def get_evaluation_system_prompt():
+        return get_evaluation_system_prompt()
+    
+    @staticmethod
+    def get_evaluation_user_prompt(transcription="", conversation_history=None, user_profile=None):
+        return get_evaluation_user_prompt(transcription, conversation_history, user_profile)
+    
+    @staticmethod
+    def get_translation_system_prompt(user_level="A1"):
+        return get_translation_system_prompt(user_level)
+    
+    @staticmethod
+    def get_translation_user_prompt(english_text):
+        return get_translation_user_prompt(english_text)

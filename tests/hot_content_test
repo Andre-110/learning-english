@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T17:42:29.503737",
+    "level": "B1",
+    "turns": 10,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "travel",
+        "technology",
+        "music"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 1.731,
+    "user_avg_latency": 1.844,
+    "strategies": {
+      "continue": 10
+    },
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "technology",
+      "headline": "Foldable phones are back, like the old flip phones!"
+    },
+    {
+      "turn": 1,
+      "type": "topic_detected",
+      "topic": "foldable phones",
+      "headline": "Samsung's phone unfolds twice!"
+    },
+    {
+      "turn": 3,
+      "type": "topic_detected",
+      "topic": "stronger phone screens",
+      "headline": "Transparent wood for stronger phones!"
+    },
+    {
+      "turn": 4,
+      "type": "topic_detected",
+      "topic": "wooden phone screens",
+      "headline": "Wood for phone screens?"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just read that foldable phones are coming back, just like those cool flip phones we used to have! Would you be excited to get a new one?",
+      "latency_s": 2.236,
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I think foldable phones are interesting! They look so cool and, uh, I like the idea of having a bigger screen. But, I'm not sure if I really need one. Maybe if the price is good, I would think about getting it.",
+      "latency_s": 2.205,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I totally agree! Foldable phones are really cool. Oh, speaking of that, I just read about Samsung's new phone that unfolds twice into a big screen! It’s like a mini tablet in your pocket. What do you think about phones like that?",
+      "latency_s": 2.156,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "foldable phones"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I think a phone that unfolds twice is amazing! It sounds very useful for watching videos or working. But I wonder if it's too big for my pocket. Also, I worry about how strong the screen is. What do you think?",
+      "latency_s": 1.818,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I get what you mean! It would be great for watching movies. I think the size might take some getting used to, but it could be a fun experience. As for the screen, they've been working on making them tougher. Have you ever had a phone that broke easily?",
+      "latency_s": 1.69,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, yes! I had a phone that broke easily. It was so frustrating when it fell. I think stronger screens are important because we use our phones a lot. It would be nice to have a phone that lasts longer. Do you think they will make them even tougher?",
+      "latency_s": 1.679,
+      "word_count": 49,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I understand how frustrating that can be! Oh, speaking of stronger screens, I just read they're testing transparent wood for phone screens. It’s way stronger than glass! Imagine not worrying about drops anymore. What do you think about having a wooden phone screen?",
+      "latency_s": 2.107,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "stronger phone screens"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I think a wooden phone screen is interesting! It could be very strong and light, but I’m not sure about the look. Would it feel nice in my hand? I hope it doesn't get dirty easily. That would be a problem!",
+      "latency_s": 2.15,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I see what you mean! That would make it tough to use. Oh, speaking of that, I just read they're making wood transparent for phone screens! It's supposed to be super strong and eco-friendly. What do you think about having a wooden screen?",
+      "latency_s": 2.074,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "wooden phone screens"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I think a wooden screen is really cool! It sounds strong and good for the environment. But I wonder if it feels nice to touch. Also, will it work well with touch features? I’m curious about that!",
+      "latency_s": 1.586,
+      "word_count": 38,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That’s a good point! I wonder how it would feel too. Maybe they can make it smooth so it feels nice in our hands. As for the touch features, I think they’d need to test that a lot. Have you ever tried any eco-friendly tech?",
+      "latency_s": 1.779,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, I’ve tried some eco-friendly tech like solar chargers. They are interesting and help save energy. But I think sometimes they are a bit slow. I want to try more, like eco-friendly phones or headphones. It would be nice to see more options available.",
+      "latency_s": 2.717,
+      "word_count": 44,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That's cool! Solar chargers are a great way to save energy. I agree, it would be nice to see more eco-friendly options. Have you looked into any specific brands or models for eco-friendly phones or headphones?",
+      "latency_s": 1.411,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I haven't looked much into brands yet. I know there are some eco-friendly headphones, like the ones made from recycled materials. They sound interesting, but I need to do more research. It would be nice to find good ones!",
+      "latency_s": 1.86,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That sounds like a smart plan! Researching can really help you find the best options. I’ve seen some brands that focus on sustainability and good sound quality. Do you have a favorite type of music you’d listen to with those headphones?",
+      "latency_s": 1.467,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I like listening to pop music a lot. It’s fun and makes me happy. I think good headphones are important for good sound. I want to enjoy every beat and melody when I listen. Do you like any specific music?",
+      "latency_s": 1.475,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I totally get that! Pop music has such a great energy. I enjoy a mix of genres, but I often find myself listening to indie and rock. It's nice to discover new beats and melodies. Have you seen any live concerts recently?",
+      "latency_s": 1.487,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I haven't been to a live concert lately. I would love to go, though! I think it would be exciting to hear my favorite songs live. Maybe soon, I will check if there are any concerts near me. Do you go to concerts often?",
+      "latency_s": 1.444,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Oh, I get that! There's something special about live music. I try to go to concerts a few times a year. The atmosphere is electric! Do you have a favorite artist or band you'd love to see live?",
+      "latency_s": 1.528,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I really like Ed Sheeran! His songs are so nice and emotional. I think it would be amazing to see him live because his voice is beautiful. I also like the way he connects with the audience. It must feel great!",
+      "latency_s": 1.51,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Oh, I agree! Ed Sheeran has such a unique way of telling stories through his music. I love how he mixes different styles too. Have you listened to his latest album? What’s your favorite song from him?",
+      "latency_s": 1.612,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

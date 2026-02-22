@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T09:52:13.176327",
+    "level": "A2",
+    "turns": 2,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "reading",
+        "movies",
+        "technology"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 6.348,
+    "user_avg_latency": 7.041,
+    "strategies": {
+      "summarize": 2
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! 😊 What's a book or movie that made you really think recently? (You can answer in simple words or even mix some Chinese - I'll help you!)",
+      "latency_s": 11.396
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Hmm... I think...最近我看了一部电影,叫 \"The Pursuit of Happyness\". It made me think about努力 and how... life can be very hard, but if you keep trying, you can find hope. Maybe, I like it because I also feel sometimes like things are difficult, but... I don't give up!",
+      "latency_s": 6.907,
+      "word_count": 46,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That's such a powerful movie! It really shows how hard life can be, but also the importance of not giving up. I'm curious, what part of the movie stood out to you the most? Was there a moment that really stuck with you?",
+      "latency_s": 6.084,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Hmm... I think the part when... when he didn't give up even though everything was so hard. He was sleeping in the bathroom, but still... still tried so hard to get the job. It made me feel... like, I can try more in my life too. \n\nAlso, when his son said... \"You got a dream, you gotta protect it.\" That part... it's very strong for me.",
+      "latency_s": 7.175,
+      "word_count": 66,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Wow, that moment really is powerful! It shows how strong the will to succeed can be, even in the toughest times. How do you think that part with the son’s words connects to your own dreams? Does it make you think differently about your goals?",
+      "latency_s": 6.612,
+      "strategy": "summarize"
+    }
+  ]
+}

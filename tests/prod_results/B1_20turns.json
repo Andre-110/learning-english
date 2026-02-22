@@ -1,0 +1,365 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T04:05:36.970260",
+    "level": "B1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "movies",
+        "art",
+        "music"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 2.04,
+    "user_avg_latency": 2.738,
+    "hot_search_avg_latency": 5.176,
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "movies",
+      "headline": "Laika's new movie sounds amazing!",
+      "search_time": 6.85
+    },
+    {
+      "turn": 4,
+      "type": "async_search",
+      "topic": null,
+      "headline": "Butter sculpture turned into energy!",
+      "search_time": 7.45
+    },
+    {
+      "turn": 9,
+      "type": "async_search",
+      "topic": "movies",
+      "headline": "Bond movies on Netflix now!",
+      "search_time": 6.4
+    },
+    {
+      "turn": 18,
+      "type": "async_search",
+      "topic": "art",
+      "headline": "Butter sculpture turned into energy!",
+      "search_time": 0.0
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just read Laika's new movie 'Wildwood' is coming in 2026. It's from the creators of 'Coraline'—love their work! Are you into stop-motion films?",
+      "latency_s": 3.514,
+      "has_hot_content": true,
+      "hot_topic": "movies"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, hi! Yes, I really like stop-motion films. I think they are very interesting because, um, they take a lot of time to make. Coraline, um, it was a bit spooky but very creative! I like the characters and the story. \n\nI also watched \"The Nightmare Before Christmas\" and, um, I think it's very fun. But, I don’t know much about stop-motion technique. Do you have a favorite stop-motion movie?",
+      "latency_s": 3.878,
+      "word_count": 70
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I totally get why you'd find stop-motion films fascinating! They do take a lot of time and effort to create, which makes them so special. \"Coraline\" and \"The Nightmare Before Christmas\" are both classics. I really enjoyed \"Kubo and the Two Strings\"—it's visually stunning and has a touching story. What do you think makes a stop-motion film stand out for you?",
+      "latency_s": 1.549,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Yes, I think \"Kubo and the Two Strings\" is very beautiful! The animation is really amazing, and the story is, um, very emotional. I like when stop-motion films have deep stories and, um, strong characters. It makes me feel more connected to the film. \n\nFor me, what makes a stop-motion film stand out is the, um, craftsmanship. You can see the little details in every frame, and it feels like, um, each scene is like a work of art. Also, I enjoy the unique style. It’s different from, um, computer animation, which is more common now. Do you have a favorite stop-motion film?",
+      "latency_s": 2.703,
+      "word_count": 103
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I love how you appreciate the craftsmanship and unique style of stop-motion films! It's true—each frame feels like a mini masterpiece. My favorite would be \"Fantastic Mr. Fox.\" The quirky characters and the witty dialogue always make me smile. Have you seen it? What did you think of its style?",
+      "latency_s": 1.985,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Oh, yes! I have seen \"Fantastic Mr. Fox.\" I think it is very funny, and the characters are, um, very interesting and unique. The style is, like, different from other animations because it looks a bit rough, but in a good way! The colors are, um, very warm and nice. \n\nI also like how the animals act like people. It makes the story more funny and, um, relatable. I remember the scenes with the, well, the three farmers—they are so silly! Did you have a favorite character in the film?",
+      "latency_s": 2.451,
+      "word_count": 90
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I love how you've described \"Fantastic Mr. Fox\"! The way the animals act like people is definitely one of the film’s charms. My favorite character has to be Ash, Mr. Fox's son. His quirky personality and determination make him really memorable. What about you? Do you have a favorite character in the film?",
+      "latency_s": 1.482,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Yes, I like Ash too! He is very... um, interesting character. I like how he is kind of awkward but also brave. He tries to be cool, but sometimes he fails, and that makes him funny. I also like his relationship with Mr. Fox, because, you know, it’s complicated. Ash wants to impress his father, but he also wants to be himself. Do you have other favorite characters?",
+      "latency_s": 2.543,
+      "word_count": 68
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Yes, Ash is a unique character! His awkwardness makes him relatable and funny. What do you think about how he tries to prove himself to his family?",
+      "latency_s": 3.872,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I think Ash really wants to be, like, accepted by his family, you know? He feels, uh, a lot of pressure to be like his dad, Mr. Fox. I feel sorry for him sometimes because he tries really hard, but he, um, makes mistakes too. It’s funny but also a bit sad. I think this makes him, uh, more real, like people in real life. We all want to, um, show our best side, but sometimes it doesn't work out. What do you think?",
+      "latency_s": 2.847,
+      "word_count": 85
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I completely agree with you about Ash. His struggle to gain acceptance and be like his dad makes him feel very human. It's interesting how those pressures can lead to both funny and sad moments. I think that’s what makes his character so relatable—everyone has moments where they try hard but things don’t go as planned. Have you ever had a moment like that, where you tried hard but it didn’t quite work out?",
+      "latency_s": 2.061,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes, I think I can understand that feeling. There was a time when I, um, tried to join a school club, like a drama club, because I wanted to be more social and, um, maybe try acting. But, I was really nervous, and I forgot my lines during the tryouts. I felt, like, embarrassed, you know? I tried really hard but, um, it didn’t go well. It was, uh, sad but also funny later when I think about it. I learned that it’s okay to make mistakes and, um, not everything goes as you want. Have you had moments like that too?",
+      "latency_s": 2.98,
+      "word_count": 103
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Oh, I can totally relate to that feeling! It's tough when things don't go as planned, but it sounds like you learned something valuable from that experience. I remember once I tried something similar, like speaking in front of a group, and I got so nervous I mixed up my words. It was quite embarrassing at the time, but now I can laugh about it. What made you want to try acting in the first place?",
+      "latency_s": 1.639,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, yes, I think acting is, like, very interesting because, you know, you can be different characters and tell stories. I always liked, um, watching movies and, uh, plays, so I wanted to, um, try it myself. But when I was on stage, I felt really scared, like, my heart was beating very fast! I wanted to express myself, but it was hard to remember my lines. I was, um, worried people would laugh at me. But even though it was, like, really tough, I think it helped me be more confident, you know?",
+      "latency_s": 2.247,
+      "word_count": 94
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Wow, it sounds like acting really pushed you out of your comfort zone! It's amazing how facing that fear helped boost your confidence. What kinds of stories or characters are you most drawn to when you watch movies or plays?",
+      "latency_s": 1.427,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I think I really like stories that have, um, strong emotions or, like, adventures. I enjoy characters who, you know, struggle but then they, um, find their strength in the end. For example, um, movies where people, like, overcome their fears or fight for something they believe in are, um, really inspiring to me. \n\nI also like, um, characters that are, like, very different from me, because it helps me understand, um, other perspectives. But sometimes, I, um, also enjoy comedies because they make me laugh and, um, feel good. What about you? What kind of stories or characters do you like?",
+      "latency_s": 2.647,
+      "word_count": 103
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I love how you appreciate stories with strong emotions and adventures; they can be so inspiring! I'm really drawn to stories where characters are on a journey of self-discovery or are faced with tough choices. Those moments can be really powerful. I also enjoy stories with unexpected twists or mysteries that keep you guessing. What’s a movie or play that really stuck with you because of its emotional impact or adventure?",
+      "latency_s": 1.697,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I think one movie that really, um, stuck with me is \"The Pursuit of Happyness.\" It's about a man who, like, struggles a lot but never gives up on his dreams. I feel, um, very touched by his journey because he faces many challenges, like being homeless with his son. \n\nAnd, um, I also really like \"Inception\" because it has many twists and, um, it makes you think a lot. I was, like, surprised by the end! The emotions are strong too, and I enjoy movies that make me feel. What about you? What movie do you like?",
+      "latency_s": 2.667,
+      "word_count": 99
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "\"The Pursuit of Happyness\" is so inspiring! Chris Gardner's journey is full of emotions and challenges. What did you like most about the movie?",
+      "latency_s": 4.272,
+      "has_hot_content": true,
+      "hot_topic": "movies"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I think what I liked most about the movie is, um, how Chris never gave up, even when things were really hard for him. He had many problems, like, being homeless and trying to take care of his son. I, uh, felt really connected to his struggle because it shows how important it is to keep trying, you know? And also, um, the relationship between him and his son was very touching. It made me feel a lot of emotions, like happiness and sadness at the same time.",
+      "latency_s": 3.009,
+      "word_count": 89
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "It's amazing how Chris Gardner's perseverance and his bond with his son can touch us so deeply! The mix of happiness and sadness really makes the story unforgettable. What do you think is the most important lesson from their relationship?",
+      "latency_s": 1.458,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I think the most important lesson from their relationship is, um, about love and support. Even when they had very little money, Chris always tried to be there for his son. It shows that, um, being a good parent is not just about money, but also about, um, time and attention. They were, um, very close, and I think that made them stronger together. \n\nAlso, it teaches us that, um, you can face big problems, but if you have someone who believes in you, it makes it easier. So, um, I think love and belief are very important in hard times. What do you think?",
+      "latency_s": 2.88,
+      "word_count": 106
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "I love how you highlight the importance of love and belief in overcoming challenges. It's true, having someone who believes in you can make a huge difference. It reminds me of how support and encouragement can be powerful motivators. Have you ever experienced a moment when someone's belief in you helped you through a tough time?",
+      "latency_s": 1.804,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, yes, I have experienced that. I remember, um, when I was preparing for an exam, I felt very stressed and, um, I wasn't sure if I could do it. But, my friend, she, um, kept telling me that I could succeed and she helped me study. \n\nSo, I think her belief in me made me feel more confident, and I did better than I expected. I really appreciated her support. It’s like, um, when you feel alone, but then someone believes in you, it can change everything, right?",
+      "latency_s": 2.313,
+      "word_count": 89
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Oh, I love how your friend's support helped you through a stressful time! It's amazing how having someone believe in you can boost your confidence and change your perspective. What was the exam about? Was it a subject you enjoyed, or was it challenging for you?",
+      "latency_s": 1.479,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, thank you! Yes, my friend's support was really helpful. The exam, um, it was about math, and, um, I have to say, math is not my favorite subject. Sometimes I find it very challenging, especially with the, um, complicated problems. I remember I studied a lot, but I was not sure if I would pass. But then my friend, um, he helped me with practice questions, and it made me feel much better. I think, um, having someone to study with is very important. Do you think studying with others helps to understand better?",
+      "latency_s": 2.904,
+      "word_count": 95
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "I totally get how having someone to study with can make a big difference! It can be really helpful to talk through problems and find different ways to understand them. Plus, it makes studying feel less lonely, right? Have you ever found a particular study trick or method that really works for you?",
+      "latency_s": 1.536,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, yes, I think studying with someone is very good. I feel more motivated, and, um, sometimes I can explain things better. For study tricks, I like using flashcards. They help me remember important words or formulas. Also, I try to explain the topic to my friend, um, because when I teach, I understand better too. \n\nBut, um, sometimes I forget to take breaks, and then I feel tired, you know? So I think it’s important to balance studying and resting. Do you have any good study methods?",
+      "latency_s": 2.954,
+      "word_count": 88
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "I totally agree with you about balancing study and rest—it's so important to avoid burnout! Flashcards are great for memorization, and explaining topics to someone else is such a smart method. I love using mind mapping because it helps me connect different ideas visually. It makes things easier to remember. Have you tried mind mapping before, or is there another method you're curious about?",
+      "latency_s": 2.005,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, I think mind mapping sounds interesting! I haven't tried it yet, but I, um, I like the idea of connecting ideas visually, yes. I usually just write notes or highlight things in my books. I feel it's, um, sometimes difficult to organize my thoughts, so maybe mind mapping can help. \n\nAnd, um, explaining topics to others, yes, I think it's good because, um, it helps me remember better when I teach someone else. I have a friend who asks me questions, and I, uh, try to explain things to her. It’s, um, a bit challenging, but I think it’s useful! What about you? Do you use mind mapping often?",
+      "latency_s": 3.401,
+      "word_count": 110
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I think you'll find mind mapping really helpful for organizing your thoughts! It's like creating a visual guide that connects everything, which can make studying more fun and less confusing. I do use mind mapping, especially when I need to brainstorm or plan something complex. It helps me see the bigger picture. Have you ever had a moment when explaining something to your friend just clicked, and you understood it even better yourself?",
+      "latency_s": 1.942,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um, yes, I think I have had moments like that. Sometimes when I explain something to my friend, I, um, I realize I understand it better too. It’s like, um, talking about it makes the ideas clearer in my mind. \n\nI remember one time I tried to explain, uh, a grammar rule to my friend, and while I was explaining, I, um, I found some examples that helped me remember it better. It was kind of surprising!\n\nDo you think mind mapping could help with, um, explaining things to friends too?",
+      "latency_s": 2.402,
+      "word_count": 91
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "That's such an interesting experience! It’s amazing how teaching others can make things clearer in your own mind. Mind mapping could definitely help with explaining things to friends. By visually laying out ideas, it becomes easier to see connections and simplify complex topics. Have you ever tried using mind mapping for a subject that you find challenging? What do you think would be the most challenging aspect to map out?",
+      "latency_s": 2.05,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Um, I think I haven’t used mind mapping yet, but I can imagine it would help a lot. Maybe for subjects like, um, math or science because there are many ideas and connections to see. \n\nI find math challenging because, um, sometimes I forget the steps or how to solve problems. If I make a mind map, I could maybe, um, write down important formulas and examples. That could help me remember better. \n\nThe most challenging aspect, I think, would be, um, deciding how to organize the information. Sometimes I get confused about what goes where, you know? But I really want to try it and see if it helps me explain things better to my friends.",
+      "latency_s": 2.924,
+      "word_count": 117
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "I love your enthusiasm for trying out mind mapping! It sounds like it could really help you with math, especially with organizing formulas and examples. The organizing part can be tricky at first, but once you get the hang of it, it becomes easier. What's one math topic you'd like to try mind mapping first? Maybe there's one that's been particularly challenging or interesting for you.",
+      "latency_s": 1.721,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um, yes, I think I would like to try mind mapping for... um, maybe geometry? I find it a bit challenging because of all the different shapes and formulas. Sometimes I get confused with the angles and theorems. I think if I organize everything in a map, it might help me see the connections better, you know? \n\nBut, um, I'm also interested in algebra because of the equations. However, maybe starting with geometry could be good. What do you think?",
+      "latency_s": 2.327,
+      "word_count": 80
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Geometry can be tricky! Mind mapping might help you see the connections better. Have you used any other strategies for studying geometry?",
+      "latency_s": 3.705,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Um, yes, I have tried some other strategies. I usually, like, use flashcards for important terms and formulas. It helps me remember, but sometimes I mix them up. I also watch videos online, which are really good because they explain things in a different way. \n\nBut, um, I still find some concepts hard to understand, like proofs. I think mind mapping could help me organize my thoughts better for that. Do you think that would work?",
+      "latency_s": 2.052,
+      "word_count": 76
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "I totally get why proofs can be challenging; they're like puzzles sometimes! Mind mapping might really help you break them down step by step and see how each part connects. Have you ever tried creating a mind map for another subject, or would this be your first go with geometry?",
+      "latency_s": 1.596,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Um, I think this will be my first go with geometry, but I have made mind maps for, um, history before. It was helpful because I could see, like, important events and how they connect. But, um, geometry is different, right? I hope I can, like, organize my thoughts better because sometimes I get confused with all the shapes and rules. So, yeah, I really want to try it!",
+      "latency_s": 2.636,
+      "word_count": 69
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "That's great that you've already used mind maps for history! It's interesting how they can help with different subjects. Geometry does have its unique challenges, but mind mapping might help you visualize those shapes and rules more clearly. What was the most memorable part of using mind maps for history? Maybe there's something from that experience you can apply to geometry!",
+      "latency_s": 1.516,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

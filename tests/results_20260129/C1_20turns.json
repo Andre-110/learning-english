@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T10:24:59.916515",
+    "level": "C1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "C1",
+      "interests": [
+        "cooking",
+        "art",
+        "sports"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 6.293,
+    "user_avg_latency": 4.234,
+    "strategies": {
+      "summarize": 20
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! 😊 What's one dish you've recently enjoyed cooking? (Just speak naturally - let's have a real conversation!)",
+      "latency_s": 3.71
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, hi! 😊 Recently, I cooked, um, a classic risotto, actually. I’ve always found it a bit daunting, you know, because it requires constant stirring and… patience. But this time, I really enjoyed the process. I used, um, mushrooms and some fresh herbs, like thyme and parsley. \n\nI think the most challenging part was getting the rice to the right, um, creaminess without overcooking it. But I think I managed quite well! What about you? Do you enjoy cooking too?",
+      "latency_s": 4.647,
+      "word_count": 80,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, that's wonderful! It sounds like you really embraced the process of making risotto this time. The idea of constant stirring can definitely be a challenge. How did the herbs you used enhance the flavor? I find that fresh herbs can really elevate a dish. \n\nAs for me, I do enjoy cooking! I love experimenting with different cuisines. What's your favorite type of cuisine to cook?",
+      "latency_s": 4.997,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Yes, exactly! The constant stirring is, um, part of the charm, I think. For the herbs, I used fresh thyme and a little bit of parsley. They really added, um, a brightness to the dish, you know? \n\nAs for my favorite cuisine, I would say I have a soft spot for Italian food. I love how it combines simple ingredients to create something so delicious. But I also enjoy trying out, um, Asian cuisines, like Thai or Japanese. The flavors can be so vibrant and exciting! What about you? What’s your favorite cuisine to experiment with?",
+      "latency_s": 4.657,
+      "word_count": 96,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I totally get what you mean about the charm of constant stirring! It does create a wonderful connection to the dish. Fresh thyme and parsley must have brought such a lovely brightness to your risotto. \n\nItalian cuisine is fantastic for its simplicity and flavor! I enjoy experimenting with Mediterranean dishes, especially with fresh ingredients like olives and tomatoes. What’s a memorable dish you’ve made from either Italian or Asian cuisine that really stood out to you?",
+      "latency_s": 25.029,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Oh, thank you! Yes, the fresh herbs definitely added, um, a brightness. For Italian cuisine, I once made a, um, homemade pasta, actually. It was a bit of a challenge, but very rewarding! I remember the, uh, process of kneading the dough—it was quite therapeutic, in a way. \n\nAs for Asian cuisine, I, um, really enjoy making sushi. I think it stands out because of the, um, precision required, you know? Rolling the sushi perfectly takes some practice, but when it turns out well, it feels like an accomplishment! Do you have, um, a favorite dish you like to make?",
+      "latency_s": 8.315,
+      "word_count": 100,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, I love that you found kneading the pasta therapeutic! There’s something so satisfying about working with your hands and creating something from scratch. How did you feel when you finally cooked and enjoyed that homemade pasta? \n\nAs for sushi, I totally agree about the precision. It can feel like an art form! I enjoy making stir-fried dishes because they’re so quick and flavorful. What’s your favorite type of sushi to make?",
+      "latency_s": 3.998,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Oh, yes! When I finally cooked and enjoyed that homemade pasta, it was, um, really rewarding. I felt a sense of achievement, like I had created something special. The texture was just right, and the flavors, oh, they were amazing! \n\nAs for sushi, I find it quite challenging, but I enjoy making, um, nigiri, I think? It’s simple yet elegant. I like how you have to be careful with the rice and the fish. But I must admit, my favorite type of sushi to eat is, um, maki rolls! They are so colorful and packed with flavors. \n\nWhat about you? Do you have a favorite sushi to make or eat?",
+      "latency_s": 3.362,
+      "word_count": 110,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "It sounds like that moment of enjoying your homemade pasta was truly special! I love how cooking can give us such a sense of accomplishment. Nigiri is indeed elegant and requires such a delicate touch—it's impressive that you tackle that! \n\nAs for sushi, I enjoy making salmon nigiri; there's something about the freshness and simplicity that I find delightful. What’s your favorite part about making sushi, and have you ever experimented with any unique toppings for your nigiri?",
+      "latency_s": 6.063,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Oh, thank you! I really appreciate your encouragement. Um, my favorite part about making sushi is probably the, um, assembly, you know? It feels like an art form, and when everything comes together, it’s... it's very satisfying. \n\nI've tried a few different toppings for nigiri, but I often stick to traditional ones like wasabi and, um, a bit of soy sauce. I did experiment once with, uh, avocado and a sprinkle of sesame seeds. It was, um, interesting, but I think I prefer the classic flavors. \n\nWhat about you? Do you have a favorite topping or any, um, unique combinations that you enjoy?",
+      "latency_s": 4.959,
+      "word_count": 103,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I love how you describe the assembly of sushi as an art form! There's something magical about watching it all come together beautifully. Sticking to traditional toppings like wasabi and soy sauce definitely has its charm, but your avocado and sesame seed experiment sounds intriguing! \n\nFor my sushi, I enjoy a little twist by adding a slice of jalapeño on top of my salmon nigiri for a kick. Have you ever thought about trying any unconventional toppings or flavors?",
+      "latency_s": 6.903,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Oh, that's interesting! A jalapeño on salmon nigiri sounds like a bold choice. I, um, I haven't tried that before, but I think it could be exciting! Sometimes I wonder if, um, adding something unexpected can enhance the flavor, you know? \n\nFor my sushi, I experimented with mango slices once. It was, uh, quite sweet, and maybe a bit too much, but it was a fun experience! I would like to try, um, maybe a spicy tuna mix with a little cream cheese next time. I think the creaminess might balance the spiciness nicely. \n\nDo you have any other favorite toppings that, um, you think work well together?",
+      "latency_s": 4.886,
+      "word_count": 108,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "It's great to hear your thoughts on experimenting with flavors! Your idea of a spicy tuna mix with cream cheese sounds delicious; that creaminess could really complement the heat. I totally get the excitement of trying something unexpected in sushi—it can lead to some surprising and delightful combinations!\n\nAnother topping I enjoy is a sprinkle of furikake, a Japanese seasoning blend. It adds a lovely umami burst. Have you ever tried using any unique seasonings or garnishes in your sushi creations?",
+      "latency_s": 3.129,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Oh, yes! I completely agree about experimenting. The furikake sounds really interesting; I think I’ve seen it in stores but never used it. Um, I usually just go with simple seasonings like soy sauce or maybe a bit of wasabi. \n\nBut, I love the idea of adding something unique! I once tried a sprinkle of sesame seeds on top of my sushi rolls, but I haven’t done much beyond that. I guess I stick to traditional flavors most of the time, which could be a bit boring. \n\nDo you have any other suggestions for, um, interesting seasonings or toppings? I want to be more adventurous with my sushi!",
+      "latency_s": 5.583,
+      "word_count": 108,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "I love your enthusiasm for experimenting with flavors! Furikake can definitely elevate your sushi with its unique blend of umami and texture. It’s interesting that you’ve tried sesame seeds; they add a nice crunch! \n\nIf you're looking for more adventurous toppings, have you considered using pickled ginger or even a drizzle of sriracha for some heat? Both can add a delightful twist. What do you think you’d be most excited to try next?",
+      "latency_s": 4.286,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Oh, thank you! Yes, um, I think furikake really does add a lot of flavor. I’ve heard about pickled ginger, and it seems like a nice contrast, um, to the fish. I like the idea of sriracha too! I enjoy spicy food, but sometimes I worry it might overpower the delicate flavors of the sushi. \n\nMaybe I would try the pickled ginger first. I think it could balance the umami of the salmon nicely. What do you think? Do you have a favorite topping for sushi?",
+      "latency_s": 4.081,
+      "word_count": 86,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "It sounds like you’re really considering how to enhance the flavors in your sushi, which is fantastic! Pickled ginger is a great choice—it really does provide that refreshing contrast. I understand your concern about balancing spiciness, though; sometimes it can overshadow the more subtle flavors.\n\nOne of my favorite toppings is actually a drizzle of sweet soy sauce. It adds a nice sweetness without being too overpowering. Have you ever thought about trying sweet elements like that? What kind of sushi do you think would pair best with pickled ginger?",
+      "latency_s": 12.597,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Oh, yes! I think sweet soy sauce is a brilliant idea. It must add a lovely depth to the dish without overwhelming it. Um, I haven’t really thought about sweet elements like that before, but I would love to try it. \n\nAs for pickled ginger, I think it pairs best with sushi that has a stronger flavor, like spicy tuna or, um, maybe eel? The pickled ginger can help cleanse the palate between bites. But I’m not sure if it would go with sweeter sushi, like, uh, California rolls? What do you think?",
+      "latency_s": 3.64,
+      "word_count": 93,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "I love how you’re thinking about the balance of flavors! Sweet soy sauce really does bring a nice depth without overpowering everything. As for pickled ginger, you're spot on—it pairs beautifully with bold flavors like spicy tuna or eel. \n\nCalifornia rolls have a milder sweetness to them, so pickled ginger might not be as complementary there. Have you ever tried adding a touch of mango or avocado to your rolls? Those could add a lovely sweetness and work well with the pickled ginger! What do you think?",
+      "latency_s": 2.945,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Oh, thank you! Yes, I really like the idea of using mango or avocado. They have such a nice creaminess, um, and I think they could balance the flavors well. I haven’t tried that with sushi before, but it sounds delicious. \n\nFor California rolls, maybe the sweetness from the mango would complement the crab? I’m not sure, but it seems like it could work. Do you have any favorite combinations with those ingredients?",
+      "latency_s": 2.846,
+      "word_count": 73,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "I love how you're exploring the balance of flavors with mango and avocado! They do bring such a lovely creaminess that can elevate your sushi experience. You’re absolutely right—the sweetness of mango could pair beautifully with the crab in California rolls. \n\nOne of my favorite combinations is actually avocado with spicy tuna; the creaminess of the avocado really helps mellow out the heat. Have you thought about trying that combo, or is there another type of sushi you’re curious to experiment with?",
+      "latency_s": 2.686,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Oh, yes! The avocado with spicy tuna sounds fantastic. I love the idea of how the creaminess can tone down the spiciness. I haven't tried that yet, but I would love to. \n\nI usually stick to the more traditional sushi, like salmon nigiri or cucumber rolls. But, um, I think experimenting with different combinations could be really fun! Maybe I could even try, like, adding some sesame seeds or a drizzle of spicy mayo on top? \n\nWhat do you think? Do you have any other suggestions for sushi combinations that might work well together?",
+      "latency_s": 4.678,
+      "word_count": 94,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "It sounds like you're really open to experimenting with your sushi! The combination of avocado and spicy tuna is definitely a winner. Adding sesame seeds or a drizzle of spicy mayo could elevate it even more. \n\nHave you ever thought about trying a sushi burrito? It’s a fun twist where you can combine all your favorite ingredients in a large roll. What do you think about that idea?",
+      "latency_s": 3.181,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Oh, a sushi burrito sounds really interesting! I haven't thought about it before. I like the idea of combining all the ingredients in one big roll. It must be very convenient to eat. \n\nI imagine you could put a lot of different things inside, like, um, maybe some vegetables and sauces, too? It seems like a good way to experiment more with flavors. I might try making one at home. Do you have any suggestions for ingredients that go well together in a sushi burrito?",
+      "latency_s": 4.332,
+      "word_count": 85,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "I'm so glad you're excited about the sushi burrito idea! It really is a fun way to mix flavors and textures. You could definitely add a variety of ingredients. For example, try combining some grilled chicken or shrimp with fresh veggies like cucumber, bell peppers, and avocados for a nice crunch. \n\nA drizzle of spicy mayo or teriyaki sauce can add fantastic flavor. Have you thought about what kind of sauces you might want to use? And do you have a favorite protein or vegetable that you'd want to include?",
+      "latency_s": 4.383,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "That's a great suggestion! I really like the idea of adding grilled chicken or shrimp. They both have such distinct flavors. Um, I think I would definitely want some avocado for creaminess, and maybe cucumber for, like, a refreshing crunch? \n\nAs for sauces, I love spicy mayo, but I’m not sure about teriyaki. It can be a bit sweet, right? Maybe I could try a mix, like, a little bit of spicy mayo and something tangy? \n\nHmm, favorite proteins… I think I would lean towards shrimp because it’s, um, light and has a nice texture. Do you think that combination would work well together?",
+      "latency_s": 3.132,
+      "word_count": 104,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "I love how you've thought this through! The combination of grilled shrimp, avocado, and cucumber sounds fantastic—so fresh and balanced. You're right about teriyaki being on the sweeter side; mixing spicy mayo with something tangy would definitely give it an exciting kick! \n\nWhat kind of tangy sauce are you thinking about? And have you ever experimented with different types of sushi rice, or do you usually stick to traditional white rice?",
+      "latency_s": 3.164,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "I appreciate your enthusiasm! For the tangy sauce, I was thinking maybe a ponzu sauce? It has that citrusy flavor, which could complement the shrimp and avocado nicely. But I’m not entirely sure if it would be too overpowering. \n\nAs for sushi rice, I usually stick to the traditional white rice because, um, I feel it pairs well with most flavors. But I’ve heard about, uh, black rice or even quinoa being used. I’m curious, but I’ve never tried making sushi with them. Do you think they could work?",
+      "latency_s": 3.705,
+      "word_count": 89,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "I love your idea of using ponzu sauce! The citrus notes would definitely enhance the shrimp and avocado without overpowering them. It sounds refreshing! \n\nAs for using black rice or quinoa, they could add a unique flavor and texture to your sushi. Black rice has a nutty taste and a beautiful color, while quinoa offers a slightly chewy consistency. Have you thought about what kind of sushi you might want to try with those alternatives?",
+      "latency_s": 3.847,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Thank you! Yes, I think both black rice and quinoa could be interesting. Um, for black rice, maybe I would like to try a sushi roll with, uh, some spicy tuna and avocado. The colors would look really nice together, right? \n\nAnd for quinoa, I was thinking of maybe a vegetarian sushi, like with, um, roasted vegetables and a bit of, uh, cream cheese? I’m not sure if that’s traditional, but it sounds good to me. \n\nWhat do you think? Is cream cheese common in sushi, or is it more of a fusion thing?",
+      "latency_s": 4.348,
+      "word_count": 94,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I'm glad you're excited about trying both black rice and quinoa! The idea of a sushi roll with spicy tuna and avocado sounds fantastic—the colors will definitely pop. As for cream cheese, it's more common in fusion sushi, like the Philadelphia roll. It adds a creamy texture that can balance out spicy flavors.\n\nHave you thought about any specific seasonings or toppings to enhance those vegetarian rolls with roasted vegetables?",
+      "latency_s": 20.559,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Yes, I think the colors will be beautiful! For the vegetarian rolls, um, I was considering maybe using some, uh, sesame seeds on top for crunch and flavor. And, uh, perhaps a drizzle of teriyaki sauce? It could add a sweet element that complements the roasted vegetables. \n\nAlso, maybe some green onions or pickled ginger as a garnish? I’m not sure if that would be too much, though. What do you think?",
+      "latency_s": 2.994,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "That sounds like a delicious combination! The sesame seeds will definitely add that nice crunch, and the teriyaki sauce is a great choice for a sweet contrast to the roasted vegetables. \n\nGreen onions will add a fresh kick, and pickled ginger is a classic garnish that can elevate the whole dish. I don’t think it’ll be too much at all! Have you thought about any other vegetables you want to include in those rolls?",
+      "latency_s": 3.376,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Yes, I agree! The pickled ginger will definitely enhance the flavors. Um, for other vegetables, I was thinking maybe bell peppers, because they have a nice crunch and sweetness, right? And maybe some avocado for creaminess. I’m not sure if that’s too many ingredients, but I think they could work well together. What do you think?",
+      "latency_s": 2.638,
+      "word_count": 56,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "I love your idea of adding bell peppers! Their sweetness and crunch will definitely complement the creamy avocado beautifully. It sounds like you're creating a really flavorful and textured roll. \n\nI'm curious, what inspired you to experiment with these ingredients? Do you often try to blend traditional sushi with your own creative twists?",
+      "latency_s": 3.562,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Thank you! Yes, I like the idea of mixing different flavors and textures in my cooking. It makes it more interesting, I think. Um, I’ve always enjoyed sushi, but sometimes I feel like it can be a bit... repetitive? So, I try to add my own touch. \n\nI often experiment with ingredients I have at home. Like, last week I made sushi with mango and spicy sauce, which was quite unexpected but delicious! I think food should be fun and creative. \n\nDo you think it’s important to stick to traditional recipes, or is it better to mix and match? I’m curious about your opinion on this!",
+      "latency_s": 4.123,
+      "word_count": 106,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "I love your approach to cooking! Mixing flavors and textures can really elevate a dish. Your sushi with mango and spicy sauce sounds intriguing—what was that like? \n\nAs for traditional recipes, I think there's beauty in both sticking to them and experimenting. Traditions hold cultural significance, but creativity can lead to amazing new discoveries. What do you enjoy most about experimenting in the kitchen?",
+      "latency_s": 4.066,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Thank you! The sushi with mango and spicy sauce was quite a delightful experience. The sweetness of the mango balanced the heat of the sauce really well. It was… um, a bit of an adventure, I must say, because I wasn’t sure how they would complement each other at first.\n\nAs for experimenting in the kitchen, I really enjoy the freedom it gives me. I can, like, put together unexpected ingredients and see what happens. Sometimes it works, and sometimes... well, it doesn’t turn out as I imagined. But that’s okay! \n\nI think the process of trying new combinations is very exciting. It helps me learn about flavors more deeply and also, um, improves my cooking skills. What about you? Do you have",
+      "latency_s": 4.266,
+      "word_count": 123,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "That sounds like such a fun culinary adventure! I love how the sweetness of the mango could balance the spice—it must have created a really unique flavor profile. \n\nI totally agree with you about the freedom of experimenting in the kitchen. It’s fascinating how those unexpected combinations can lead to new discoveries. What’s been one of your most surprising successes or failures in the kitchen?",
+      "latency_s": 2.766,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Yes, absolutely! The combination of flavors can sometimes create magic. Hmm, one of my most surprising successes was when I tried making a savory cheesecake with herbs and cheese. I thought it would be strange, but it turned out to be really delicious! \n\nOn the other hand, I had a major failure with a chocolate soufflé. I followed the recipe, but it... it collapsed very quickly after I took it out of the oven. I think I didn’t whip the egg whites enough, or maybe the oven temperature was too high? It was quite disappointing, but I learned a lot from it. \n\nHave you ever had a memorable success or failure in your cooking?",
+      "latency_s": 3.489,
+      "word_count": 114,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Your savory cheesecake sounds intriguing! I can totally see how the blend of herbs and cheese could create a unique flavor experience. What inspired you to try that combination? \n\nAs for memorable moments in my cooking, I once attempted to make homemade pasta. It was quite the adventure—some pieces turned out beautifully, while others were a bit of a disaster! But the process was so rewarding. Have you tried making any dishes from scratch that stand out to you?",
+      "latency_s": 4.314,
+      "strategy": "summarize"
+    }
+  ]
+}

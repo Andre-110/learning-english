@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T17:55:40.265605",
+    "level": "B1",
+    "turns": 10,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "sports",
+        "travel",
+        "music"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 1.598,
+    "user_avg_latency": 1.561,
+    "strategies": {
+      "continue": 10
+    },
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "music",
+      "headline": "Hilary Duff's back in music!"
+    },
+    {
+      "turn": 2,
+      "type": "topic_detected",
+      "topic": "kelly clarkson",
+      "headline": "Hilary Duff's album is about real life emotions!"
+    },
+    {
+      "turn": 3,
+      "type": "topic_detected",
+      "topic": "britney spears",
+      "headline": "Clarkson adds new Las Vegas dates!"
+    },
+    {
+      "turn": 8,
+      "type": "topic_detected",
+      "topic": "beach games",
+      "headline": "O Beach Ibiza's new music residency"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just read that Hilary Duff is releasing a new album soon after ten years! What’s your favorite song from her earlier music?",
+      "latency_s": 2.215,
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I really like \"So Yesterday.\" It has a catchy tune and fun lyrics. When I listen to it, I feel nostalgic about my teenage years. I think her music always makes me happy! Do you like her earlier songs?",
+      "latency_s": 1.469,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I totally get that! \"So Yesterday\" brings back memories for many people. I enjoy her song \"Come Clean\" too; it has a great vibe! What other artists from that time make you feel the same way?",
+      "latency_s": 1.671,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I think artists like Kelly Clarkson and Britney Spears also have great songs. Their music really takes me back to my childhood. I love the energy and the feelings they bring. It's fun to listen to them again!",
+      "latency_s": 1.76,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I totally agree! Their songs have such a special vibe. I love Kelly Clarkson's \"Since U Been Gone\"—it's so empowering! Do you have a favorite song from Britney? ",
+      "latency_s": 1.599,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I really like \"Toxic\" by Britney Spears. The beat is amazing, and I feel energetic when I hear it. Um, it’s fun to dance to, and the lyrics are catchy. I think it's one of her best songs!",
+      "latency_s": 1.728,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Absolutely! \"Toxic\" has such a strong beat; it's hard not to move when it plays! I love how it mixes pop and a bit of mystery. Have you ever danced to it at a party?",
+      "latency_s": 1.498,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes! I danced to \"Toxic\" at a party last year. It was really fun! Everyone was dancing, and the energy was amazing. I think it's one of those songs that makes you feel free and happy. Do you like dancing too?",
+      "latency_s": 1.706,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds like such a great time! I love dancing, especially when the music is upbeat like that. It really lifts your spirits! Do you have any other favorite songs that get you dancing?",
+      "latency_s": 1.423,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yeah! I also like \"Uptown Funk\" by Mark Ronson. The rhythm is super catchy, and it makes me want to dance. I played it at my friend’s birthday party, and everyone enjoyed it too! Dancing with friends is the best!",
+      "latency_s": 1.571,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That sounds awesome! \"Uptown Funk\" really gets everyone moving! I love how it brings such a fun vibe to any party. Do you have any memorable moments from that birthday party?",
+      "latency_s": 1.805,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! At the party, everyone was singing along to \"Uptown Funk.\" I remember my friend doing funny dance moves, and we all laughed a lot. It was great to see everyone happy and having fun together. I want to have a party like that again!",
+      "latency_s": 1.524,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That sounds like such a joyful experience! It's great when everyone can come together and share those moments. If you could plan your perfect party, what would you include? Any special themes or activities?",
+      "latency_s": 1.319,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think my perfect party would have a beach theme. We could have fun games like beach volleyball and maybe a barbecue. I would also play music, like \"Uptown Funk,\" so everyone can dance and enjoy. It would be really fun to celebrate together!",
+      "latency_s": 1.449,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "A beach theme sounds amazing! 😄 Beach volleyball and a barbecue would create such a fun atmosphere. Do you have a favorite beach you’d want to host it at?",
+      "latency_s": 1.657,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I think my favorite beach is Sunny Cove. It has soft sand and clear water. I can imagine people playing games and having fun there. Also, there are good places to eat nearby, which is nice for a barbecue!",
+      "latency_s": 1.472,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Sunny Cove sounds like the perfect spot for a party! 🌊 Soft sand and clear water make everything better. What kind of food would you love to have at the barbecue? Any favorite dishes?",
+      "latency_s": 1.489,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I really love burgers at barbecues. They are tasty and easy to eat. Maybe we can have some grilled vegetables too, like corn and peppers. I think they taste great with burgers. What do you think?",
+      "latency_s": 1.315,
+      "word_count": 37,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Burgers and grilled veggies sound delicious! 🍔 I love how they complement each other. Corn adds a nice sweetness too! Do you have a favorite way to season the burgers or any special toppings you enjoy?",
+      "latency_s": 2.053,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I really like seasoning with salt and pepper. It’s simple but good. For toppings, I love cheese and pickles. Maybe some ketchup too! Sometimes, I also add grilled onions. They make the burgers taste even better!",
+      "latency_s": 1.619,
+      "word_count": 37,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds tasty! 🧀 I love grilled onions on burgers too; they add a nice flavor. Do you prefer your burgers well-done or medium? And what drink would you have with them at the barbecue?",
+      "latency_s": 1.467,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

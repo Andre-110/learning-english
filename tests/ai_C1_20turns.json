@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T09:27:33.892864",
+    "level": "C1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "C1",
+      "interests": [
+        "sports",
+        "music",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 2.02,
+    "user_avg_latency": 2.352,
+    "strategies": {
+      "summarize": 20
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! 😊 If you could travel anywhere right now, where would you go and why? (Just speak naturally - let's have a real conversation!)",
+      "latency_s": 1.863
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "That's a really good question. Um, I think I would choose Japan. I've always been fascinated by Japanese culture, you know—the mix of tradition and modernity. Plus, I've heard the food is incredible. I’d love to visit Tokyo and maybe Kyoto as well, just to see the temples and cherry blossoms. Actually, I'm not sure if it's the best time for cherry blossoms, but still, I think it would be an amazing experience. Have you ever been there?",
+      "latency_s": 2.475,
+      "word_count": 78,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I love how you described that mix of tradition and modernity—Japan really does seem to have this unique vibe where ancient temples sit right next to neon-lit skyscrapers. I haven’t been there myself, but I’ve always wanted to see Kyoto in spring. What draws you more: the peaceful temples or the bustling city life in Tokyo? And have you tried any Japanese food that really left an impression on you?",
+      "latency_s": 2.026,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Honestly, it’s hard to choose—I think both sides really appeal to me. On one hand, I love the idea of wandering around those quiet temples, maybe in the early morning when everything feels calm. But at the same time, Tokyo’s energy sounds so exhilarating, especially with all the quirky neighborhoods and the crazy pace of life. If I had to pick, maybe I’d lean just slightly toward the peaceful side—the temples and the gardens—because I think I’d find it quite grounding.\n\nAs for food, I did try authentic sushi once at a Japanese restaurant in my city, and it was on a completely different level from the supermarket sushi I’d had before. The flavors were so delicate—like, I didn’t expect raw fish to taste",
+      "latency_s": 1.858,
+      "word_count": 124,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That’s such a vivid picture—the idea of wandering through serene temples in the early morning feels almost meditative. I get what you mean about needing something grounding, especially if life feels too hectic sometimes.\n\nAnd your sushi experience sounds fantastic! It’s funny how real sushi can be so subtle and surprising. Was there a particular piece or flavor that really stuck with you? What did that moment feel like?",
+      "latency_s": 1.524,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Hmm, let me think... Actually, yes! I remember trying uni for the first time—sea urchin?—and I have to admit, I was a bit nervous because it looked kind of strange. But when I tasted it, it was so much creamier and richer than I expected. It almost melted in my mouth. I guess the flavor was a bit ocean-like, but not in a bad way, if that makes sense? It was, um, delicate but really memorable.\n\nThat moment was almost like—well, I don’t know how to explain it exactly, but I just felt really present? Like, I was suddenly aware of how different food could be if you’re open to new things. It made the whole trip",
+      "latency_s": 1.959,
+      "word_count": 117,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That’s such a powerful description! I totally get what you mean about feeling present—sometimes a surprising taste can just snap you into the moment. It’s almost like food becomes an experience, not just a meal. I’m curious, has there been another time—maybe with a different cuisine or dish—when you felt that same kind of “wake-up” sensation? What was that like for you?",
+      "latency_s": 1.962,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Let me think... Actually, yes, there was another time! I was in Italy and tried truffle pasta for the first time—honestly, I kind of expected it to just taste like regular mushrooms, but it was so different. The flavor was surprisingly intense and earthy, almost kind of mysterious? I remember suddenly paying more attention to each bite, like wanting to really understand what I was tasting. It’s funny how certain foods can sort of force you to slow down and be more aware, isn’t it? I guess I didn’t expect food to make me feel so... curious, almost.",
+      "latency_s": 2.077,
+      "word_count": 98,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That’s such an interesting way to put it—mysterious flavors really can pull you into the moment and make you question your assumptions. It’s almost like food becomes a little adventure for your senses. Have you ever found yourself chasing that feeling again, maybe by trying something totally unfamiliar or a bit out of your comfort zone? What was that experience like for you?",
+      "latency_s": 2.039,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Absolutely, I think I’m always kind of chasing that thrill, though not on purpose, you know? I guess it’s partly curiosity and partly wanting to relive that sense of surprise. There was this one time in Japan—I tried natto, the fermented soybeans. Honestly, I’d read about it a lot, but I didn’t expect the texture to be so… challenging. It was sticky and, I don’t know, almost stringy? At first, I hesitated because the smell was so strong, but I told myself, “You’re here, just go for it.” I can’t say I loved it, but I was proud I tried it, and afterwards I felt like I’d expanded my comfort zone a bit.\n\n",
+      "latency_s": 1.853,
+      "word_count": 113,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That’s such a relatable feeling—sometimes just pushing through that hesitation feels like an achievement in itself. I love how you described being both curious and a little apprehensive; it’s like the adventure is as much about your mindset as the food itself. Looking back, do you think trying natto changed the way you approach other new experiences, even outside of food? How has that sense of expanding your comfort zone shown up in other parts of your life?",
+      "latency_s": 2.215,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Hmm, that's a good question. I think natto was kind of a turning point for me, actually. Before that, I tended to stick to what I knew, not just with food but with a lot of things—like meeting new people or even trying different hobbies. But after I made myself taste natto, and realized it wasn't as bad as I expected, I started to feel a bit more willing to try things that seemed intimidating at first.\n\nFor example, last year I joined a public speaking club, even though the idea of speaking in front of strangers terrified me. I guess I told myself, “If I can survive natto, I can survive this!” And, honestly, I think pushing my boundaries with food helped me trust that",
+      "latency_s": 2.167,
+      "word_count": 126,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That’s such an insightful connection—you turned a challenging food experience into a kind of personal metaphor! I love the idea of “if I can survive natto, I can survive this.” Joining a public speaking club takes real guts, especially if it used to feel intimidating. What was your first speech like? Did you have a moment where you realized you were growing, or was it more gradual?",
+      "latency_s": 2.107,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "My first speech—oh wow, it was definitely nerve-racking. I remember my hands were shaking a little, and I kept worrying that my pronunciation would trip me up. I spent ages preparing, but once I was actually up there, everything kind of blurred together. I think I talked way too fast! But, surprisingly, afterwards I had this sense of relief, almost like, “Okay, that wasn’t as bad as I thought.” I wouldn’t say there was one big “aha” moment, though. It’s been more of a slow process, like each time I speak, I notice I’m just a bit more comfortable than before. Sometimes I still get anxious, but it feels manageable now.",
+      "latency_s": 2.314,
+      "word_count": 111,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That’s such a vivid description—I can almost feel that rush of nerves and relief with you. It’s interesting how growth can sneak up on you, isn’t it? Sometimes it’s not about a dramatic breakthrough, but those subtle shifts each time. Was there ever a moment, maybe after a particular speech, where you realized you were handling things differently than when you first started?",
+      "latency_s": 2.022,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Yes, actually, there was a moment like that. I think it was maybe my third or fourth speech in the class—nothing especially big, just a kind of book review. But, uh, I remember standing in front of everyone and halfway through, I suddenly realized I wasn’t obsessing about my pronunciation or worrying so much about if I’d forget my lines. Instead, I was just… talking, you know? Like I was actually communicating, not performing. That was a pretty big shift for me, even though I didn’t notice it at first. It was only afterwards that I caught myself thinking, “Wait, did I just do that without panicking?” So, yeah, maybe growth is quieter than we expect sometimes.",
+      "latency_s": 1.884,
+      "word_count": 117,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That’s such a powerful realization—actually communicating instead of performing. It’s fascinating how that shift sneaks up on you, almost without warning. I’m curious, did that feeling of just “talking” change the way you approached other situations where you might’ve felt pressure before, like conversations outside the club? Or was it something unique to being on stage?",
+      "latency_s": 1.811,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "That’s a really interesting question. I think, in a way, that feeling did spill over into other situations. For example, before, even casual conversations with new people made me a bit anxious—I’d worry about saying something silly or not expressing myself clearly. But after I realized I could just focus on the message, not how “perfect” I sounded, I started feeling less self-conscious.\n\nIt wasn’t an overnight change, though. I guess I still sometimes get nervous, especially in group settings, but it’s less about performing now and more about connecting. The stage definitely accelerated that shift for me, but I think it’s become a part of how I approach communication in general. Actually, I’d say I’m still working on it—it",
+      "latency_s": 1.973,
+      "word_count": 120,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That’s such an honest reflection—I really relate to the idea of focusing on connection instead of perfection. It takes a lot of self-awareness to even notice that shift happening. I’m curious, has this new approach changed how you listen to others, too? Sometimes, when we stop obsessing over our own words, we end up connecting more deeply with what people are saying. What’s your experience been like with that?",
+      "latency_s": 2.119,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Actually, yes, I think that shift has influenced the way I listen, too—though maybe not as dramatically as with speaking. I mean, before, I was so focused on how I would respond that I sometimes barely really took in what the other person was saying. Now, I find myself really trying to pay attention, not just to their words but also, like, the feeling behind what they’re saying. It’s interesting because I sometimes notice smaller details in conversations or pick up on things that I might have missed before.\n\nBut to be honest, it’s still something I have to remind myself to do. Old habits die hard, you know? There are moments when I catch myself drifting back to thinking about my own English or how I’m",
+      "latency_s": 2.536,
+      "word_count": 127,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "I totally get what you mean about those old habits—it’s like your brain wants to go back to its comfort zone, even when you know there’s a better way. Trying to catch those moments when you’re not fully present is actually a huge step, though. Has there ever been a conversation where you suddenly realized you were really tuned in, like you picked up on something subtle that surprised you?",
+      "latency_s": 1.904,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Oh, absolutely—I can actually think of a specific moment. It was during a group discussion at work, and normally I’m a bit anxious, so I tend to focus on what I’m going to say next rather than really listening. But this time, I noticed a colleague’s tone shift just slightly, almost like she was hesitating or unsure, and I picked up on it without even meaning to. I remember pausing and asking her if she wanted to add something, and she looked really relieved. I guess that subtle cue would’ve flown right past me before. It felt kind of rewarding to be that present—although, honestly, I don’t manage it all the time. Sometimes I still drift off or get caught up in my own thoughts",
+      "latency_s": 2.089,
+      "word_count": 125,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "That’s such a vivid example, and honestly, I love how you described catching that subtle shift in your colleague’s tone. It’s fascinating how much is happening beneath the surface in conversations—sometimes those small cues say more than words. When you noticed her relief, did it change the way the discussion went afterwards? I’m curious what that moment taught you about the group dynamic, or even about yourself.",
+      "latency_s": 1.805,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Yes, it definitely did shape the rest of the discussion. I think once I noticed her relief—well, actually, I’m not sure if “relief” is exactly the right word, maybe more like a release of tension? Anyway, after that, the whole group seemed to loosen up a bit. People started to share their opinions more openly, and the atmosphere got less formal, almost warmer.\n\nIt made me realize how sensitive the group was to emotional cues, even if nobody mentioned them aloud. As for myself, I guess I learned that I’m more attuned to those subtle shifts than I thought. Sometimes I worry I over-analyze, but in this case, it helped me respond in a way that encouraged others. It’s funny",
+      "latency_s": 1.641,
+      "word_count": 120,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "That’s such an insightful reflection—there’s something almost invisible about the way one person’s mood or reaction can ripple through a whole group. I get what you mean about questioning whether you’re over-analyzing; honestly, though, it sounds like you have a real knack for reading the room. Have you always had that sensitivity to group energy, or is it something you’ve noticed more as you’ve become more self-aware?",
+      "latency_s": 2.693,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "That's a great question—I’m not completely sure, to be honest. I think I did have some degree of sensitivity even when I was younger, but I didn’t have the words for it back then. Maybe it’s something I developed more intentionally as I got older and had more experiences in group settings, especially at work. I’ve noticed that as I’ve become more self-aware—like, through reflecting on interactions or getting feedback from others—I've started to pick up on these dynamics more consciously. Sometimes I wonder if being an English learner actually contributed to it, because I had to pay extra attention to nonverbal cues, you know? It’s definitely something I’m still learning about myself.",
+      "latency_s": 2.143,
+      "word_count": 113,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "That’s such a thoughtful insight—especially the part about language learning making you more attuned to nonverbal cues. I’ve heard that when people are operating in a second language, they often become more observant about gestures, facial expressions, and tone. Has there ever been a time when picking up on those nonverbal signals helped you navigate a tricky situation, either at work or elsewhere? I’m curious what that experience felt like.",
+      "latency_s": 2.045,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Actually, yes, there was a situation at work that comes to mind. It was during a project meeting with colleagues from different departments, and things got a bit tense when we were discussing deadlines. I struggled a little to follow everything in English—especially because people were speaking quickly—but I could tell from people’s expressions and the way they sort of… shifted in their seats, that some were uncomfortable or maybe even annoyed.\n\nI remember one coworker in particular—he didn’t say much, but I noticed he kept glancing at his watch and sighing quietly. That pretty much clued me in that he wanted to finish quickly, even though he wasn’t voicing that directly. So, I tried to summarize the discussion and suggest concrete next steps",
+      "latency_s": 2.707,
+      "word_count": 124,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "That’s a really sharp observation—sometimes those subtle signals, like someone glancing at their watch, say everything words can’t. It sounds like you took the initiative to steer things in a more practical direction, which probably eased the tension a bit. How did your colleagues react when you summarized and suggested next steps? Was there a change in the mood of the room after that?",
+      "latency_s": 1.806,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Yes, I’d say there was a noticeable shift, actually. When I summarized what we had discussed and tried to clarify what we needed to do next, people seemed—well, not exactly relieved, but maybe more focused? A couple of my colleagues even nodded, like they appreciated having some concrete direction. I wouldn’t say the atmosphere became totally relaxed, but the tension definitely eased a bit. I guess it showed me how valuable it can be to just, you know, step back and help the group regroup when things feel stuck. \n\nI’m not always confident doing that, though. Sometimes I worry I’m overstepping, or maybe it’s not really my place. But in that moment, I think it helped.",
+      "latency_s": 2.156,
+      "word_count": 116,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "That’s such an honest reflection—I really relate to that uncertainty about “stepping in” during group situations. It takes a certain courage to guide things when you’re not sure how it’ll be received. I’m curious, how did you feel afterwards? Did the experience change the way you approach similar situations now, or does that self-doubt still creep in sometimes?",
+      "latency_s": 2.082,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "That’s a good question. I guess, in the moment right after, I felt a bit awkward—like, was I too direct? Did I misread the situation? But as time passed, I realized I was actually proud of myself for trying to move things forward. Since then, I think I do feel a little more confident speaking up, though honestly, that self-doubt hasn’t disappeared completely. It’s sort of… less intense, maybe? I still find myself hesitating sometimes, especially if the group is very outspoken. But now, I try to remind myself that it’s okay to take initiative, even if it feels a bit uncomfortable.",
+      "latency_s": 2.054,
+      "word_count": 102,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "I really appreciate how honestly you describe that mix of awkwardness and pride—those emotions can be so tangled, can’t they? It’s interesting how the self-doubt never totally vanishes, but gets quieter as you build up more experiences like this. Have you ever found that taking initiative in one area of life makes it easier in others? Or does that confidence stay pretty much tied to work situations for you?",
+      "latency_s": 1.743,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "That's a fascinating point. I think, for me, confidence kind of \"spills over\" a little when I take initiative in one area. Like, if I manage to speak up at work, I might feel a bit braver about sharing an idea with friends, too. Although, it doesn’t always transfer seamlessly—sometimes I still hesitate in social situations, especially if I’m not as comfortable with the group. I guess it depends on whether I really believe in what I’m saying, or if I’m just sort of “faking confidence.” Sometimes I wonder if other people notice that, or if it’s just me overthinking. Do you think people can tell when someone’s unsure, even if they seem confident?",
+      "latency_s": 2.849,
+      "word_count": 114,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "I love how you described confidence “spilling over”—that image really resonates with me. Honestly, I think most people are less perceptive about others’ insecurities than we imagine. Sometimes, even if someone is “faking confidence,” others just see the effort, not the self-doubt behind it. Have you ever had a moment where you assumed someone was totally self-assured, but later learned they felt the same uncertainty you did?",
+      "latency_s": 2.464,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Absolutely, I can think of a few times, actually. One that stands out was during a group presentation at university—I remember thinking one of my classmates was so effortlessly articulate and poised. I even found myself kind of envying how she seemed to just... command attention without any apparent nerves. But later on, we bumped into each other in the hallway and she admitted she’d felt like she was almost trembling inside the whole time. It really surprised me, but also made me realize just how skilled people can be at masking what’s going on internally. I guess it’s reassuring, in a way, to know that uncertainty isn’t as obvious as it feels when you’re experiencing it yourself.",
+      "latency_s": 5.597,
+      "word_count": 118,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "That’s such a powerful realization—how we often admire others’ composure without seeing their hidden nerves. It almost makes you wonder how many people are quietly battling their own insecurities, even as they project total confidence. Have you ever found yourself “performing” confidence for the sake of others? I’m curious—what helps you get through those moments when you feel uncertain but need to act self-assured anyway?",
+      "latency_s": 2.096,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Oh, definitely—I think I \"perform\" confidence quite a lot, actually. It’s kind of like… I know I’m nervous inside, but I sort of put on a mask so I can get through whatever I need to do. For example, in meetings, I might speak up even if I’m unsure, just because I know people expect me to be decisive.\n\nAs for what helps… hmm, let me think. I guess I try to focus on my breathing, and I remind myself that everyone else probably has doubts too, like you said. Sometimes I just force myself to smile or make eye contact—it’s almost like tricking my own brain into believing I belong there. And, if I really don’t know what to say,",
+      "latency_s": 2.609,
+      "word_count": 121,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "That’s such an honest way to describe it—almost like putting on a costume that helps you step into a different role. I find it fascinating how something as simple as making eye contact or forcing a smile can actually shift your mindset, even if just a little. Have you ever had a moment where that “fake it till you make it” approach ended up changing how you felt, not just how you acted?",
+      "latency_s": 1.875,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Hmm, that’s a really interesting question. I think—yes, actually, there was one time. I remember I had to lead a workshop for the first time at university, and I was absolutely terrified. But I’d read somewhere that if you stand straight and keep your voice steady, people will believe you know what you’re doing—even if you don’t. So, I tried to do all that, and I guess after a few minutes, I stopped thinking about how nervous I was. It’s like, by acting confident, I sort of tricked myself into feeling it for real. Not completely, but it definitely helped. I wonder if that works for everyone or if I just got lucky that day!",
+      "latency_s": 2.09,
+      "word_count": 115,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "I love how you described that shift—from feeling terrified to actually starting to believe in your own confidence just by changing your posture and voice. It’s fascinating how our bodies can sort of “hack” our minds like that! Do you remember a specific moment during that workshop when you realized, “Hey, maybe I can actually do this”? What was going through your head at that point?",
+      "latency_s": 2.063,
+      "strategy": "summarize"
+    }
+  ]
+}

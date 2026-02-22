@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T10:14:14.315927",
+    "level": "A1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "sports",
+        "art",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 2.302,
+    "user_avg_latency": 2.682,
+    "strategies": {
+      "summarize": 20
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! 😊 What's one place you dream of traveling to, and why? (You can answer in simple words or even mix some Chinese - I'll help you!)",
+      "latency_s": 2.537
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Umm... I dream to travel to 日本 (Japan). Because I like sushi and... umm... cherry blossoms. I see many pictures, they very pretty! I want to see the temples too. I think it will be fun and... umm... different from my country. I want to practice my English and learn more about culture. ",
+      "latency_s": 2.877,
+      "word_count": 53,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, that sounds amazing! The cherry blossoms are so beautiful in Japan. What do you think would be the most exciting thing to see or do at the temples?",
+      "latency_s": 1.798,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Umm... I think... maybe see the... umm... big Buddha statue? Or... umm, take pictures with the cherry blossoms, too. I want to learn about... umm... the history and... maybe pray? I not sure, but... it look very peaceful. I like quiet places.",
+      "latency_s": 2.541,
+      "word_count": 42,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That sounds really peaceful! The big Buddha statue must be impressive. What do you think it would feel like to be there and see it in person?",
+      "latency_s": 2.028,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Umm... I think it would feel very... umm... calm? And maybe... umm... happy? The big Buddha is so big, so I feel small. I want to take many pictures and... umm... just... sit and relax. I also think... maybe hear the birds, and smell flowers. It sounds nice, right? ",
+      "latency_s": 2.44,
+      "word_count": 49,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds really peaceful and beautiful! I can imagine the calm atmosphere and the lovely smells of flowers. What's your favorite flower?",
+      "latency_s": 2.253,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Umm... my favorite flower is... umm... rose? Yes, rose! I like... the color, umm... red and... it smell very... umm... nice? I think rose is... very beautiful. But, umm, I also like... umm... sunflower? Because it is... umm... big and yellow, very happy!",
+      "latency_s": 2.663,
+      "word_count": 43,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, I love that you like roses and sunflowers! They both have such beautiful colors. What do you love most about roses? Is it the smell or the way they look?",
+      "latency_s": 2.088,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Umm... I think I love... umm... both! The smell, it is very... umm... nice? And the color, red is very pretty. I like when... umm... I see roses in the garden. They look... umm... happy? Yes, happy! But sometimes, umm... they have thorns. Thorns are... umm... not good. But I still love them! What about you? What do you love about roses?",
+      "latency_s": 2.44,
+      "word_count": 62,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I love that you think roses look happy! Their colors really can brighten up a garden. I enjoy their smell too; it's so sweet and nice. What do you feel when you see a garden full of roses?",
+      "latency_s": 2.847,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Umm... when I see... umm... a garden full of roses, I feel... umm... happy? Yes! Happy! Because... umm... the colors are very bright and... umm... it is pretty. I like... umm... to smell them too. The smell is... umm... sweet, like... umm... candy? Yes, candy! I feel... umm... relaxed, and I want to... umm... take a picture. I think, umm... roses make me smile a lot!",
+      "latency_s": 3.173,
+      "word_count": 66,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "It’s so nice that roses make you feel happy and relaxed! I love that you compare their smell to candy. What’s the best picture you’ve taken of roses?",
+      "latency_s": 2.258,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Umm... I think... the best picture? Hmm... it was... umm... last summer? Yes! I took a picture in a park. The roses, they were... very big and... umm... colorful! I like the pink one and... umm... white too. I feel... umm... happy when I see it. I try to... umm... take good photo, but... not always good. Sometimes... umm... my hand shake! So... umm... not clear. But I still like the picture!",
+      "latency_s": 3.838,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "It's great that you took such a colorful picture of the roses! I can imagine how happy it makes you feel. What do you think makes a photo really special for you?",
+      "latency_s": 2.258,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Umm... I think... a special photo? It need... umm... good colors, yes! And... umm... happy moments? Like... my friends and family? Yes! If I see a... umm... smile, I feel... umm... happy again. \n\nAlso, maybe... the place? If it is beautiful, like... umm... the beach or a park with... umm... trees? Yes! That make the photo special for me.",
+      "latency_s": 3.293,
+      "word_count": 59,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I love how you see special photos as a mix of good colors and happy moments! It sounds like being with friends and family makes the picture even better. Do you have a favorite memory at the beach or in a park?",
+      "latency_s": 2.25,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Umm... yes, I... I have a memory at the beach. It was... umm... last year? I go with my family. We play... umm... sandcastle! Yes, sandcastle! And... umm... the water is very cold, but we swim. \n\nI take many pictures. Umm... I see... my sister, she laugh a lot. I feel... umm... happy. Maybe... it was my favorite memory? Yes! Beach is fun!",
+      "latency_s": 4.151,
+      "word_count": 63,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That sounds like such a joyful day at the beach! Building sandcastles with your family must have been really fun. What was your favorite part about making the sandcastle?",
+      "latency_s": 3.326,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Umm... my favorite part? I... I think it was... umm... when we make big castle, yes! We use... umm... shells and sticks for... umm... decoration? It look very nice! I feel... umm... happy because family together, yes. But... umm... sometimes, waves come... and destroy our castle! Then we... umm... laugh a lot!",
+      "latency_s": 2.549,
+      "word_count": 52,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds like such a fun day! I love how you decorated the sandcastle with shells and sticks. What was the funniest moment when the waves came?",
+      "latency_s": 2.198,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Umm... the funniest moment? I... I remember! The wave... umm... it came very fast. My little brother, he... he was building and then... umm... the wave... it took his sandcastle! Yes! He was very surprised! His face... it was... umm... funny! We all... we all laugh a lot. And then we help him to... umm... build again.",
+      "latency_s": 2.622,
+      "word_count": 57,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "That sounds so funny! I can imagine your brother's surprised face when the wave took his sandcastle. What did you all build together after that?",
+      "latency_s": 1.971,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Umm... after that, we... we build a big... umm... a big tower! Yes, a tower! We use... umm... lots of sand and water. My sister, she help too! We... we make it very tall, but... umm... not strong. It... it fall down again! Hahaha! But we have fun.",
+      "latency_s": 2.193,
+      "word_count": 48,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "That sounds like a great teamwork moment with your sister! Building a tall sand tower must have been exciting, even if it fell down. What did you all do after the tower fell? Did you try to build something different?",
+      "latency_s": 2.347,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Umm... yes! After the tower... umm... it fell down, we... we feel sad. But then, my brother say, \"Let’s build a... umm... a castle! Yes!\" So we try to build a... umm... big sand castle with... with... umm... shells and sticks. It was... umm... very fun! But the waves... they come again, and... umm... the castle also... umm... fell down. So, we... we play in the water after. It was funny!",
+      "latency_s": 2.716,
+      "word_count": 71,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "That sounds like such a fun day! I love how your brother suggested building a sandcastle after the tower fell. What was the best part about playing in the water after?",
+      "latency_s": 2.398,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Umm... the best part, I think, is... umm... we splash water! Yes! We splash each other. My sister, she laugh a lot! And... umm... we find some... umm... small seashells in the water. They are pretty. I like seashells! We make... umm... a game to find more seashells, it was fun! But sometimes, the water is too cold. I say, \"Brr!\" and my sister say, \"No more!\" Haha.",
+      "latency_s": 2.576,
+      "word_count": 68,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "That sounds like such a fun time splashing water and playing with seashells! I think finding seashells is always exciting. What do you like most about seashells? Do you have a favorite one?",
+      "latency_s": 2.731,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Umm... I like seashells, umm... they are very pretty. I like the colors, yes! Some are, umm... pink and white. My favorite... I think it is big one! Big and smooth. I find it on the beach. Umm... I want to collect more seashells, but I need a big box. Do you like seashells too?",
+      "latency_s": 2.036,
+      "word_count": 55,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I love that you find seashells pretty! The pink and white ones sound beautiful. What do you want to do with your seashell collection? ",
+      "latency_s": 2.807,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Umm... I want to, umm... keep them safe. Yes! They are my treasures. I think I can... umm... make a, umm... picture with them? Or maybe, umm... put them in a nice box. I like that, yes! What do you think?",
+      "latency_s": 2.159,
+      "word_count": 41,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "That's a lovely idea! Keeping your seashells safe makes them even more special. What kind of picture do you want to make with them?",
+      "latency_s": 2.529,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Umm... I want to, umm... make a picture with the seashells, yes. Maybe, like, a big heart? Or, umm... a sun? I think they are, umm... good shapes. I want to, umm... glue them on paper. Yes, glue! It can be very nice. What do you think?",
+      "latency_s": 2.445,
+      "word_count": 47,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "That sounds like such a creative idea! A big heart made of seashells would look beautiful. What colors do you think you would use for the paper?",
+      "latency_s": 2.125,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Umm... I think I can use, umm... maybe blue and white, yes. Blue like the sea, and white like... like the shells? Maybe I can, umm... add some pink too? Pink is, umm... pretty. It can be like, love, umm... heart love! What do you think?",
+      "latency_s": 2.936,
+      "word_count": 46,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "I love your color choices! Blue and white will look great, and pink adds a nice touch for love. What made you think of using those colors?",
+      "latency_s": 2.016,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Umm, I think... blue is, umm... like the ocean, yes. And white is, umm... like the sand, very pretty. Pink is... umm... for love, yes. I feel happy with these colors. Maybe... also happy colors, yes?",
+      "latency_s": 1.868,
+      "word_count": 36,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "I love how you connect colors to feelings! Blue and white really do remind me of the ocean and sand. What other colors make you feel happy?",
+      "latency_s": 1.758,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Umm... I think, umm... yellow is very happy color, yes? Like the sun, very bright and warm. And, umm... green too! Green like, umm... trees and grass, make me feel fresh and, umm... peaceful, I think. What about you? What colors make you happy?",
+      "latency_s": 2.118,
+      "word_count": 44,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "I totally agree! Yellow is such a bright and cheerful color, and green really does feel refreshing. I love blue too; it reminds me of the sky and calmness. What do you think about using these colors in your art?",
+      "latency_s": 2.049,
+      "strategy": "summarize"
+    }
+  ]
+}

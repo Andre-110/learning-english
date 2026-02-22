@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaCoach - 英语对话学习系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .panel {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        .control-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .control-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .control-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-danger {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c0392b;
+        }
+
+        .btn-success {
+            background: #27ae60;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #229954;
+        }
+
+        .btn-record {
+            background: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .btn-record:hover {
+            background: #c0392b;
+        }
+
+        .btn-record.recording {
+            background: #27ae60;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .status.info {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .status.success {
+            background: #e8f5e9;
+            color: #388e3c;
+        }
+
+        .status.error {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .status.warning {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+
+        .conversation-log {
+            max-height: 400px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.user {
+            background: #e3f2fd;
+            margin-left: 20%;
+            text-align: right;
+        }
+
+        .message.assistant {
+            background: #f5f5f5;
+            margin-right: 20%;
+        }
+
+        .message-header {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #667eea;
+        }
+
+        .assessment-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .score-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .score-item {
+            text-align: center;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .score-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .score-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .profile-item {
+            margin-bottom: 10px;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .profile-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-right: 10px;
+        }
+
+        .interests-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .interest-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎤 LinguaCoach</h1>
+            <p>智能英语对话学习系统 - 实时语音交互</p>
+        </div>
+
+        <div class="main-content">
+            <!-- 左侧：控制面板 -->
+            <div class="panel">
+                <h2>控制面板</h2>
+                
+                <div class="control-group">
+                    <label for="userId">用户ID</label>
+                    <input type="text" id="userId" placeholder="输入用户ID（例如: user123）" value="user123">
+                </div>
+
+                <div class="control-group">
+                    <button class="btn btn-primary" id="startBtn" onclick="startConversation()">开始对话</button>
+                    <button class="btn btn-danger" id="endBtn" onclick="endConversation()" disabled>结束对话</button>
+                </div>
+
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="streamModeCheck" onchange="toggleStreamMode()">
+                        使用流式WebSocket模式（实时响应）
+                    </label>
+                </div>
+
+                <div id="status" class="status info hidden"></div>
+
+                <div class="control-group">
+                    <button class="btn btn-record" id="recordBtn" onclick="toggleRecording()" disabled>
+                        🎤 点击开始录音
+                    </button>
+                </div>
+
+                <div class="control-group">
+                    <h3>当前状态</h3>
+                    <div id="currentState">
+                        <p>等待开始对话...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：对话和评估 -->
+            <div class="panel">
+                <h2>对话记录</h2>
+                <div id="conversationLog" class="conversation-log">
+                    <p style="color: #999; text-align: center; padding: 20px;">对话记录将显示在这里</p>
+                </div>
+
+                <div id="assessmentCard" class="assessment-card hidden">
+                    <h3>最新评估</h3>
+                    <div id="assessmentContent"></div>
+                </div>
+
+                <div id="profileCard" class="profile-card hidden">
+                    <h3>用户画像</h3>
+                    <div id="profileContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局变量
+        let conversationId = null;
+        let userId = null;
+        let isRecording = false;
+        let mediaRecorder = null;
+        let audioChunks = [];
+        let websocket = null;
+        let audioContext = null;
+        let audioQueue = [];
+        let isPlayingAudio = false;
+
+        const API_BASE = window.location.origin;
+        const WS_BASE = API_BASE.replace('http://', 'ws://').replace('https://', 'wss://');
+        let useStreamMode = false; // 是否使用流式WebSocket模式
+
+        // DOM元素
+        const startBtn = document.getElementById('startBtn');
+        const endBtn = document.getElementById('endBtn');
+        const recordBtn = document.getElementById('recordBtn');
+        const statusDiv = document.getElementById('status');
+        const conversationLog = document.getElementById('conversationLog');
+        const assessmentCard = document.getElementById('assessmentCard');
+        const assessmentContent = document.getElementById('assessmentContent');
+        const profileCard = document.getElementById('profileCard');
+        const profileContent = document.getElementById('profileContent');
+
+        // 显示状态消息
+        function showStatus(message, type = 'info') {
+            statusDiv.textContent = message;
+            statusDiv.className = `status ${type}`;
+            statusDiv.classList.remove('hidden');
+        }
+
+        // 开始对话
+        async function startConversation() {
+            userId = document.getElementById('userId').value.trim();
+            if (!userId) {
+                showStatus('请输入用户ID', 'error');
+                return;
+            }
+
+            try {
+                showStatus('正在开始对话...', 'info');
+                startBtn.disabled = true;
+
+                const response = await fetch(`${API_BASE}/voice-chat/start?user_id=${userId}&return_audio=true`);
+                const data = await response.json();
+
+                if (response.ok) {
+                    conversationId = data.conversation_id;
+                    showStatus(`对话已开始 (ID: ${conversationId})`, 'success');
+                    
+                    // 启用录音按钮
+                    recordBtn.disabled = false;
+                    endBtn.disabled = false;
+                    startBtn.disabled = true;
+
+                    // 添加初始问题到对话记录
+                    addMessage('assistant', data.initial_question);
+
+                    // 播放初始问题的音频
+                    if (data.audio_base64) {
+                        playAudio(data.audio_base64, data.audio_format || 'mp3');
+                    }
+
+                    // 显示用户画像
+                    if (data.user_profile) {
+                        updateProfile(data.user_profile);
+                    }
+
+                    // 如果启用流式模式，连接WebSocket
+                    if (useStreamMode) {
+                        connectStreamWebSocket();
+                    }
+                } else {
+                    showStatus(`错误: ${data.detail || '未知错误'}`, 'error');
+                    startBtn.disabled = false;
+                }
+            } catch (error) {
+                showStatus(`连接失败: ${error.message}`, 'error');
+                startBtn.disabled = false;
+            }
+        }
+
+        // 结束对话
+        async function endConversation() {
+            if (!conversationId) return;
+
+            try {
+                showStatus('正在结束对话...', 'info');
+                
+                const response = await fetch(`${API_BASE}/voice-chat/${conversationId}/end?return_audio=true`);
+                const data = await response.json();
+
+                if (response.ok) {
+                    showStatus('对话已结束', 'success');
+                    
+                    // 显示最终报告
+                    if (data.report) {
+                        displayReport(data.report);
+                    }
+
+                    // 播放报告音频
+                    if (data.report_audio_base64) {
+                        playAudio(data.report_audio_base64, data.audio_format || 'mp3');
+                    }
+
+                    // 重置状态
+                    resetConversation();
+                } else {
+                    showStatus(`错误: ${data.detail || '未知错误'}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`结束对话失败: ${error.message}`, 'error');
+            }
+        }
+
+        // 重置对话状态
+        function resetConversation() {
+            conversationId = null;
+            recordBtn.disabled = true;
+            endBtn.disabled = false;
+            startBtn.disabled = false;
+            isRecording = false;
+            recordBtn.textContent = '🎤 点击开始录音';
+            recordBtn.classList.remove('recording');
+            
+            if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+                mediaRecorder.stop();
+            }
+            
+            if (websocket) {
+                websocket.close();
+                websocket = null;
+            }
+        }
+
+        // 连接WebSocket（流式模式）
+        function connectStreamWebSocket() {
+            if (!conversationId) return;
+
+            const wsUrl = `${WS_BASE}/voice-stream/${conversationId}`;
+            websocket = new WebSocket(wsUrl);
+
+            websocket.onopen = () => {
+                console.log('WebSocket连接已建立');
+            };
+
+            websocket.onmessage = (event) => {
+                const message = JSON.parse(event.data);
+                handleWebSocketMessage(message);
+            };
+
+            websocket.onerror = (error) => {
+                console.error('WebSocket错误:', error);
+                showStatus('WebSocket连接错误', 'error');
+            };
+
+            websocket.onclose = () => {
+                console.log('WebSocket连接已关闭');
+            };
+        }
+
+        // 处理WebSocket消息
+        function handleWebSocketMessage(message) {
+            switch (message.type) {
+                case 'connected':
+                    console.log('WebSocket已连接');
+                    showStatus('WebSocket连接成功', 'success');
+                    break;
+                case 'transcription':
+                    addMessage('user', message.text || message.normalized_text);
+                    break;
+                case 'assessment':
+                    if (message.data) {
+                        displayAssessment(message.data.assessment);
+                        if (message.data.user_profile) {
+                            updateProfile(message.data.user_profile);
+                        }
+                        if (message.data.next_question) {
+                            addMessage('assistant', message.data.next_question);
+                        }
+                    }
+                    break;
+                case 'audio':
+                    // 流式音频数据
+                    if (message.data) {
+                        playAudio(message.data, message.format || 'mp3');
+                    }
+                    break;
+                case 'report':
+                    if (message.data) {
+                        displayReport(message.data);
+                    }
+                    break;
+                case 'error':
+                    showStatus(`错误: ${message.message}`, 'error');
+                    break;
+            }
+        }
+
+        // 通过WebSocket发送音频（流式模式）
+        async function sendAudioViaWebSocket(audioBlob) {
+            if (!websocket || websocket.readyState !== WebSocket.OPEN) {
+                showStatus('WebSocket未连接，使用HTTP模式', 'warning');
+                await sendAudioToServer(audioBlob);
+                return;
+            }
+
+            try {
+                // 将音频Blob转换为ArrayBuffer
+                const arrayBuffer = await audioBlob.arrayBuffer();
+                // 发送二进制数据
+                websocket.send(arrayBuffer);
+                showStatus('音频已发送，等待处理...', 'info');
+            } catch (error) {
+                showStatus(`发送音频失败: ${error.message}`, 'error');
+                // 降级到HTTP模式
+                await sendAudioToServer(audioBlob);
+            }
+        }
+
+        // 切换录音状态
+        async function toggleRecording() {
+            if (!conversationId) {
+                showStatus('请先开始对话', 'warning');
+                return;
+            }
+
+            if (!isRecording) {
+                // 开始录音
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                    mediaRecorder = new MediaRecorder(stream);
+                    audioChunks = [];
+
+                    mediaRecorder.ondataavailable = (event) => {
+                        if (event.data.size > 0) {
+                            audioChunks.push(event.data);
+                        }
+                    };
+
+                    mediaRecorder.onstop = async () => {
+                        const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+                        if (useStreamMode && websocket && websocket.readyState === WebSocket.OPEN) {
+                            // 使用WebSocket流式模式
+                            await sendAudioViaWebSocket(audioBlob);
+                        } else {
+                            // 使用HTTP上传模式
+                            await sendAudioToServer(audioBlob);
+                        }
+                        stream.getTracks().forEach(track => track.stop());
+                    };
+
+                    mediaRecorder.start(1000); // 每1秒收集一次数据
+                    isRecording = true;
+                    recordBtn.textContent = '⏹️ 点击停止录音';
+                    recordBtn.classList.add('recording');
+                    showStatus('正在录音...', 'info');
+
+                    // 通过WebSocket发送开始信号
+                    if (websocket && websocket.readyState === WebSocket.OPEN) {
+                        websocket.send(JSON.stringify({ type: 'start' }));
+                    }
+                } catch (error) {
+                    showStatus(`无法访问麦克风: ${error.message}`, 'error');
+                }
+            } else {
+                // 停止录音
+                if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+                    mediaRecorder.stop();
+                }
+                isRecording = false;
+                recordBtn.textContent = '🎤 点击开始录音';
+                recordBtn.classList.remove('recording');
+                showStatus('录音已停止，正在处理...', 'info');
+
+                // 通过WebSocket发送停止信号
+                if (websocket && websocket.readyState === WebSocket.OPEN) {
+                    websocket.send(JSON.stringify({ type: 'stop' }));
+                }
+            }
+        }
+
+        // 发送音频到服务器
+        async function sendAudioToServer(audioBlob) {
+            if (!conversationId) return;
+
+            try {
+                const formData = new FormData();
+                formData.append('audio_file', audioBlob, 'recording.webm');
+
+                const response = await fetch(`${API_BASE}/voice-chat/${conversationId}/speak?return_audio=true`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    // 显示转录文本
+                    if (data.transcribed_text) {
+                        addMessage('user', data.transcribed_text);
+                    }
+
+                    // 显示评估结果
+                    if (data.assessment) {
+                        displayAssessment(data.assessment);
+                    }
+
+                    // 显示用户画像
+                    if (data.user_profile) {
+                        updateProfile(data.user_profile);
+                    }
+
+                    // 显示下一个问题
+                    if (data.next_question) {
+                        addMessage('assistant', data.next_question);
+                    }
+
+                    // 播放音频回复
+                    if (data.audio_base64) {
+                        playAudio(data.audio_base64, data.audio_format || 'mp3');
+                    }
+                } else {
+                    showStatus(`处理失败: ${data.detail || '未知错误'}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`发送音频失败: ${error.message}`, 'error');
+            }
+        }
+
+        // 获取下一个问题的音频
+        async function fetchNextQuestionAudio(text) {
+            try {
+                const response = await fetch(`${API_BASE}/tts/text-to-speech`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text: text })
+                });
+
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const reader = new FileReader();
+                    reader.onloadend = () => {
+                        const base64 = reader.result.split(',')[1];
+                        playAudio(base64, 'mp3');
+                    };
+                    reader.readAsDataURL(blob);
+                }
+            } catch (error) {
+                console.error('获取音频失败:', error);
+            }
+        }
+
+        // 播放音频
+        function playAudio(base64Data, format = 'mp3') {
+            const audio = new Audio(`data:audio/${format};base64,${base64Data}`);
+            audio.play().catch(error => {
+                console.error('播放音频失败:', error);
+            });
+        }
+
+        // 添加消息到对话记录
+        function addMessage(role, content) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            
+            const headerDiv = document.createElement('div');
+            headerDiv.className = 'message-header';
+            headerDiv.textContent = role === 'user' ? '👤 你' : '🤖 助手';
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.textContent = content;
+            
+            messageDiv.appendChild(headerDiv);
+            messageDiv.appendChild(contentDiv);
+            
+            conversationLog.appendChild(messageDiv);
+            conversationLog.scrollTop = conversationLog.scrollHeight;
+
+            // 如果对话记录为空提示，移除它
+            const emptyMsg = conversationLog.querySelector('p[style*="color: #999"]');
+            if (emptyMsg) {
+                emptyMsg.remove();
+            }
+        }
+
+        // 显示评估结果
+        function displayAssessment(assessment) {
+            assessmentCard.classList.remove('hidden');
+            
+            const html = `
+                <div class="score-grid">
+                    <div class="score-item">
+                        <div class="score-value">${assessment.overall_score || 0}</div>
+                        <div class="score-label">总分</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-value">${assessment.cefr_level || 'N/A'}</div>
+                        <div class="score-label">CEFR等级</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-value">${assessment.grammar_score || 0}</div>
+                        <div class="score-label">语法</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-value">${assessment.vocabulary_score || 0}</div>
+                        <div class="score-label">词汇</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-value">${assessment.fluency_score || 0}</div>
+                        <div class="score-label">流利度</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-value">${assessment.pronunciation_score || 0}</div>
+                        <div class="score-label">发音</div>
+                    </div>
+                </div>
+                ${assessment.feedback ? `<p style="margin-top: 15px;"><strong>反馈:</strong> ${assessment.feedback}</p>` : ''}
+                ${assessment.strengths && assessment.strengths.length > 0 ? `<p style="margin-top: 10px;"><strong>优势:</strong> ${assessment.strengths.join(', ')}</p>` : ''}
+                ${assessment.weaknesses && assessment.weaknesses.length > 0 ? `<p style="margin-top: 10px;"><strong>待改进:</strong> ${assessment.weaknesses.join(', ')}</p>` : ''}
+            `;
+            
+            assessmentContent.innerHTML = html;
+        }
+
+        // 更新用户画像
+        function updateProfile(profile) {
+            profileCard.classList.remove('hidden');
+            
+            const interestsHtml = profile.interests && profile.interests.length > 0
+                ? `<div class="interests-tags">
+                    ${profile.interests.map(i => `<span class="interest-tag">${i.category || i}</span>`).join('')}
+                   </div>`
+                : '<p style="color: #999;">暂无兴趣标签</p>';
+            
+            const html = `
+                <div class="profile-item">
+                    <span class="profile-label">CEFR等级:</span>
+                    <span>${profile.cefr_level || 'N/A'}</span>
+                </div>
+                <div class="profile-item">
+                    <span class="profile-label">总分:</span>
+                    <span>${profile.overall_score || 0}</span>
+                </div>
+                <div class="profile-item">
+                    <span class="profile-label">对话次数:</span>
+                    <span>${profile.conversation_count || 0}</span>
+                </div>
+                <div class="profile-item">
+                    <span class="profile-label">优势:</span>
+                    <span>${profile.strengths && profile.strengths.length > 0 ? profile.strengths.join(', ') : '暂无'}</span>
+                </div>
+                <div class="profile-item">
+                    <span class="profile-label">待改进:</span>
+                    <span>${profile.weaknesses && profile.weaknesses.length > 0 ? profile.weaknesses.join(', ') : '暂无'}</span>
+                </div>
+                <div class="profile-item">
+                    <span class="profile-label">兴趣标签:</span>
+                    ${interestsHtml}
+                </div>
+            `;
+            
+            profileContent.innerHTML = html;
+        }
+
+        // 切换流式模式
+        function toggleStreamMode() {
+            useStreamMode = document.getElementById('streamModeCheck').checked;
+            if (useStreamMode && conversationId) {
+                connectStreamWebSocket();
+            } else if (websocket) {
+                websocket.close();
+                websocket = null;
+            }
+        }
+
+        // 显示最终报告
+        function displayReport(report) {
+            const reportHtml = `
+                <div class="assessment-card">
+                    <h3>📊 最终学习报告</h3>
+                    <div class="score-grid">
+                        <div class="score-item">
+                            <div class="score-value">${report.overall_score || 0}</div>
+                            <div class="score-label">最终总分</div>
+                        </div>
+                        <div class="score-item">
+                            <div class="score-value">${report.cefr_level || 'N/A'}</div>
+                            <div class="score-label">CEFR等级</div>
+                        </div>
+                    </div>
+                    ${report.summary ? `<p style="margin-top: 15px;"><strong>总结:</strong> ${report.summary}</p>` : ''}
+                    ${report.recommendations && report.recommendations.length > 0 
+                        ? `<p style="margin-top: 10px;"><strong>学习建议:</strong></p><ul style="margin-left: 20px; margin-top: 5px;">${report.recommendations.map(r => `<li>${r}</li>`).join('')}</ul>` 
+                        : ''}
+                </div>
+            `;
+            
+            conversationLog.insertAdjacentHTML('beforeend', reportHtml);
+        }
+    </script>
+</body>
+</html>
+

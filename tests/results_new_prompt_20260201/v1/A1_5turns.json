@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T16:16:55.941022",
+    "level": "A1",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "cooking",
+        "sports",
+        "movies"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.499,
+    "user_avg_latency": 1.899,
+    "strategies": {
+      "continue": 5
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! Nice to meet you! 😊 What kind of food do you love to cook, or what's your favorite movie to watch? (You can answer in simple words or mix Chinese - I'll help!)",
+      "latency_s": 2.211,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Hello! Nice to meet you too! 😊 I like to cook... um, I like to cook rice and vegetables. 也喜欢吃饺子! My favorite movie... um, I think is \"Kung Fu Panda.\" I love the panda! It is very funny. What's your favorite food?",
+      "latency_s": 1.979,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I love dumplings too! 😋 My favorite food is pizza. It's so tasty! I can eat it every week. Do you like pizza?",
+      "latency_s": 1.778,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Umm, yes! I like pizza. 🍕 It’s very good! I like cheese and... um, maybe pepperoni? But I not eat it every week. I eat it sometimes. My friend say pizza have many kinds! Do you like other food too?",
+      "latency_s": 1.681,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, pepperoni is great! 😋 I also like tacos. They are spicy and fun to eat! Do you like spicy food?",
+      "latency_s": 1.416,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, spicy food... I not sure. I eat spicy sometimes. 辣的食物有点太多! 😅 I like, um, some spicy but not too much. It make me... um, hot? Yes, hot in my mouth! Do you think tacos very spicy? ",
+      "latency_s": 1.516,
+      "word_count": 37,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I see! 😄 Tacos can be spicy, but you can make them less spicy too. I like them with mild salsa. What do you like on your tacos?",
+      "latency_s": 1.433,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I like taco with... um, meat. Maybe beef? Yes, beef! And I like lettuce and, um, tomato. I not like too much spicy sauce. Maybe just a little. I think it good!  Do you like more? ",
+      "latency_s": 1.588,
+      "word_count": 37,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, that sounds yummy! 😋 I love tacos with chicken too! Chicken is so tasty with lettuce and cheese. Do you like cheese on your tacos?",
+      "latency_s": 1.469,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, cheese... I not sure. I like cheese, but sometimes too much is too... um, oily? Yes, oily! I like a little cheese on taco, maybe like... um, sprinkle? Not too much. How about you? You like a lot cheese? ",
+      "latency_s": 2.73,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I get that! 😊 A little cheese is perfect. I like cheese, but not too much either. Just enough to make it tasty! Do you like other toppings on your tacos?",
+      "latency_s": 1.4,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

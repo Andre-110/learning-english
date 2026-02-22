@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T17:03:17.574616",
+    "level": "B1",
+    "turns": 15,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "technology",
+        "music",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.558,
+    "user_avg_latency": 1.676,
+    "strategies": {
+      "continue": 15
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "What’s a memorable travel experience that made you feel excited or happy? 😊 Feel free to answer naturally - I'll help if needed!",
+      "latency_s": 2.164,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, one memorable trip was to the beach last summer. I felt really happy because the sun was shining, and I swam in the sea. I also enjoyed eating ice cream with my friends. It was a fun time, and I remember laughing a lot!",
+      "latency_s": 1.889,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That sounds amazing! Swimming in the sea is such a great way to enjoy the sun. What flavor of ice cream did you have? 🍦",
+      "latency_s": 1.754,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I had chocolate ice cream. It was really delicious! I love ice cream, especially in hot weather. I also tried a bit of my friend’s strawberry flavor, and it was nice too. Eating ice cream by the beach made the day even better!",
+      "latency_s": 1.946,
+      "word_count": 44,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Chocolate ice cream is such a classic choice! 🍫 I love how refreshing it is on a hot day. Do you usually have a favorite spot for ice cream, or do you like to try new places?",
+      "latency_s": 1.408,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I usually go to the same ice cream shop near my house. They have many flavors, and I like the atmosphere. But sometimes, I enjoy trying new places, especially when I travel. It's fun to discover different flavors!",
+      "latency_s": 1.383,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds great! It's nice to have a favorite spot that feels cozy. 🌟 Do you have a flavor you've discovered while traveling that surprised you or became your new favorite?",
+      "latency_s": 1.754,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes! I tried mango ice cream when I was in Thailand. It was really different and very sweet. I didn't expect to like it so much. Now, I think mango ice cream is one of my favorites! It's a nice change from chocolate.",
+      "latency_s": 1.533,
+      "word_count": 44,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Mango ice cream sounds delicious! 🍧 I love how travel can introduce us to new flavors. Did you have any other unique foods while you were in Thailand that you really enjoyed?",
+      "latency_s": 1.25,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes! I tried pad Thai, and it was amazing. The flavors were really different, and it was spicy. I also had mango sticky rice, which was sweet and so good. I liked eating street food a lot because it was cheap and tasty!",
+      "latency_s": 1.859,
+      "word_count": 44,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Street food is such a fun way to experience a culture! 🌍 I love how you can find so many unique dishes. Did you have a favorite street vendor or market where you got your food?",
+      "latency_s": 1.425,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! I really liked a small market in Bangkok. They had many vendors with different foods. One vendor made the best spring rolls. They were crispy and fresh. I ate them every day! It was so good to try local food there.",
+      "latency_s": 1.567,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That sounds amazing! Fresh spring rolls every day must have been such a treat! 😋 I love how local markets have that special vibe. Did you try making any of those dishes at home after your trip?",
+      "latency_s": 1.584,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I tried making spring rolls at home, but they didn’t taste the same. I think it’s hard to find the right ingredients. The fresh herbs and sauces are important. I still enjoy making them, though! It reminds me of my trip.",
+      "latency_s": 1.997,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "I totally understand! Finding the right ingredients can be tricky. 🌿 It's great that you still enjoy making them, though! Cooking can really bring back those travel memories. Have you tried making any other dishes from your trips?",
+      "latency_s": 1.469,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yes! I also tried making Pad Thai. It was fun, but, um, it didn’t taste like in Thailand. I think the sauce is different. I really miss those flavors! Cooking helps me remember my travels. Do you like cooking dishes from other countries?",
+      "latency_s": 1.581,
+      "word_count": 44,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I do enjoy cooking dishes from other countries! It’s like a little trip in the kitchen. 🌍 I once made Italian risotto, and it reminded me of my time in Italy. What do you think makes a dish really special? Is it the ingredients or the cooking method?",
+      "latency_s": 1.759,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I think both ingredients and cooking method make a dish special. Fresh ingredients are important, but the way you cook also matters. For example, I used too much water in my risotto, and it was not creamy like it should be. I want to improve!",
+      "latency_s": 1.522,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "I totally get that! Cooking really is a balance of technique and quality ingredients. 😅 It sounds like you're already learning from your experiences! Do you have any specific dishes in mind that you want to master next?",
+      "latency_s": 1.468,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I want to master making pizza next. I love pizza! I think it looks fun to make the dough and add toppings. I also want to try different sauces. What do you think?",
+      "latency_s": 1.477,
+      "word_count": 34,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds amazing! 🍕 Making your own dough is such a fun process. You can really get creative with toppings too! Do you have a favorite topping or sauce you want to try first?",
+      "latency_s": 1.618,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I really like pepperoni and mushrooms. I think they taste great together. Also, I want to try a white sauce instead of red sauce. It sounds interesting! What do you think?",
+      "latency_s": 1.372,
+      "word_count": 32,
+      "strategy": "continue"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Pepperoni and mushrooms are a classic combo! 🍄 I love how they add so much flavor together. A white sauce sounds delicious and creamy! Have you thought about any other unique toppings or ingredients you’d like to experiment with?",
+      "latency_s": 1.474,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, I haven't thought much about unique toppings yet. Maybe some spinach or artichoke? I think they could be interesting. Also, um, I want to try different cheeses like mozzarella and feta. It sounds fun to mix flavors!",
+      "latency_s": 1.655,
+      "word_count": 38,
+      "strategy": "continue"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Spinach and artichoke would add a nice twist! 🌱 Mixing cheeses is a great idea too; mozzarella is so stretchy, while feta brings a nice saltiness. Have you ever tried making any other dishes where you mixed different flavors?",
+      "latency_s": 1.41,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, I sometimes mix flavors when I cook. I like to put chicken with lemon and herbs. It tastes fresh and nice! I also enjoy making pasta with different veggies. It’s fun to experiment! Do you have any favorite dishes with mixed flavors?",
+      "latency_s": 1.737,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "That sounds delicious! I love the freshness of lemon with chicken. 🍋 One of my favorites is tacos with different fillings, like spicy shrimp and avocado. It’s fun to mix textures and flavors! What kind of veggies do you like to add to your pasta?",
+      "latency_s": 1.523,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, I really like to add broccoli and bell peppers to my pasta. They add nice color and crunch. I think vegetables make the dish better, um, and more healthy too! Sometimes, I add some cherry tomatoes for sweetness. What about you?",
+      "latency_s": 2.27,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Those are great choices! I love the crunch of bell peppers and the taste of cherry tomatoes. 🍅 I usually add spinach and zucchini to my pasta for a bit of freshness. Do you have a favorite pasta sauce to go with those veggies?",
+      "latency_s": 1.952,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, I really like tomato sauce with my pasta. It’s simple and... um, it tastes good with vegetables. Sometimes, I add garlic for more flavor. I think garlic makes everything better! What about you?",
+      "latency_s": 1.346,
+      "word_count": 34,
+      "strategy": "continue"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I totally agree! Garlic adds such a nice depth of flavor. I enjoy making a creamy garlic sauce for my pasta sometimes; it feels so rich and comforting. 🧄 Do you ever try making your own sauces, or do you stick to store-bought?",
+      "latency_s": 1.518,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

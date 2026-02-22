@@ -1,0 +1,403 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T10:52:35.265550",
+    "level": "B2",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "B2",
+      "interests": [
+        "cooking",
+        "technology",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 3.281,
+    "user_avg_latency": 3.567,
+    "strategies": {
+      "summarize": 20
+    },
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "technology",
+      "headline": "AI is becoming more like real-life gadgets!"
+    },
+    {
+      "turn": 1,
+      "type": "topic_detected",
+      "topic": "technology",
+      "headline": "AI now mimics pets and helps in factories!"
+    },
+    {
+      "turn": 2,
+      "type": "topic_detected",
+      "topic": "art",
+      "headline": "Wes Anderson exhibition in London"
+    },
+    {
+      "turn": 3,
+      "type": "topic_detected",
+      "topic": "reading",
+      "headline": "Books unite communities in surprising ways!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just read something cool about technology. Did you know AI is becoming part of things like robot puppies and self-driving cars? What do you think about having a robot bartender?",
+      "latency_s": 2.426,
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, wow! Robot puppies and self-driving cars sound amazing! I think having a robot bartender could be interesting, but I'm not sure if it would be the same as a real human bartender. \n\nI mean, robots can mix drinks perfectly, right? But they might not understand the, um, the atmosphere or the feelings of the customers. Like, a human bartender can make jokes or, uh, chat with you, which is nice. \n\nBut on the other hand, a robot can work faster and maybe serve more people. It’s, um, kind of exciting to think about how technology is changing our lives. What do you think? Would you enjoy a drink from a robot?",
+      "latency_s": 3.544,
+      "word_count": 112,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That sounds fun! A robot bartender could mix drinks perfectly every time. What kind of drinks would you have them make? And do you think you'd trust a robot to serve you?",
+      "latency_s": 4.01,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "I think I would ask the robot bartender to make some classic cocktails, like a mojito or a margarita. They are refreshing and tasty! Maybe also some non-alcoholic drinks, like a fruity smoothie or a lemonade. \n\nBut, about trusting a robot… I mean, it’s a little strange, right? I think I would be a bit nervous at first. I’d wonder if the robot would know how to make my drink exactly how I like it. But if it could learn my preferences, then maybe I would trust it more. What do you think? Would you trust a robot bartender?",
+      "latency_s": 3.628,
+      "word_count": 99,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Mojitos and margaritas are great choices! Do you have a favorite cocktail experience or a story about enjoying one?",
+      "latency_s": 5.148,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Hmm, I think I have a good story! Last summer, I went to a beach party with my friends. We ordered mojitos, and I remember the fresh mint smell. It was so refreshing on a hot day! \n\nBut, um, there was one funny moment. I tried to mix one myself, and I accidentally put too much sugar. It was really sweet, almost like a dessert! Everyone laughed, and they said I invented a new cocktail. I think I will call it \"sweet mojito.\" \n\nWhat about you? Do you have a favorite cocktail story?",
+      "latency_s": 2.939,
+      "word_count": 93,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds like a blast! What was the best part of the beach party? Did you have a favorite moment with your friends?",
+      "latency_s": 2.909,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "reading"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Yes, it was really fun! I think the best part was when we played beach volleyball. Everyone was so excited, and we laughed a lot. I remember one moment when my friend, she jumped to hit the ball, but she missed and fell into the sand! It was so funny. \n\nAlso, we had a big bonfire at night, and we roasted marshmallows. I love s'mores! I think that moment, sitting around the fire, talking and sharing stories, was special. What about you? Do you have a favorite beach memory?",
+      "latency_s": 3.552,
+      "word_count": 89,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds like such a fun day! Playing beach volleyball must have been a great way to enjoy the sun and laugh together. I love the idea of sitting around a bonfire and sharing stories too. \n\nOne of my favorite beach memories is when my friends and I watched the sunrise after a night of camping. We made breakfast on the beach, and it felt magical. What’s your favorite part about making s'mores?",
+      "latency_s": 5.419,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Oh, that sounds really magical! Watching the sunrise is such a beautiful experience. I think my favorite part about making s'mores is the combination of flavors. You know, the graham crackers, chocolate, and marshmallows all together. \n\nBut, um, I also like the process of roasting the marshmallows over the fire. Sometimes they catch fire, and it’s funny to see everyone trying to blow them out! I remember at the beach party, we made some s'mores too, and we all ended up with sticky hands. It was a little messy, but really fun! \n\nDo you have a favorite flavor of s'mores? Or do you ever try different things?",
+      "latency_s": 6.047,
+      "word_count": 107,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I love how you described making s'mores! It really does sound like a fun and messy experience. I think my favorite flavor combination would be adding peanut butter to the classic s'mores. Have you ever tried any unique twists on the traditional recipe?",
+      "latency_s": 2.297,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Oh, I have never tried peanut butter in s'mores, but it sounds really delicious! I usually just stick to the classic recipe with chocolate and marshmallows. But, um, I did once try adding some caramel sauce. It was super sweet, maybe too sweet for some people, but I liked it a lot! \n\nI think experimenting with flavors can make cooking more fun. Do you have any other suggestions for different s'mores?",
+      "latency_s": 3.868,
+      "word_count": 71,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "I love how you enjoy experimenting with flavors! Caramel in s'mores sounds like a fun twist, even if it’s a bit sweet. Have you ever thought about adding something like fruit, maybe bananas or strawberries? They could add a nice freshness to the mix! What do you think?",
+      "latency_s": 3.503,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Oh, yes! I think adding fruit could be really nice. Bananas... they are soft and sweet, and strawberries, too! I like the idea of having... um, a mix of flavors, you know? The sweetness from the marshmallow and caramel, then the freshness from the fruit. \n\nBut I’m not sure if they would melt... Maybe it’s better to add them after? What do you think? Have you tried adding fruit before? I think it sounds like a fun idea!",
+      "latency_s": 3.631,
+      "word_count": 78,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "I love how you’re thinking about mixing flavors! Bananas and strawberries would definitely add a nice touch. I think adding them after roasting is a great idea—this way, you keep their freshness. \n\nHave you ever thought about other desserts that could use that same fruity twist?",
+      "latency_s": 3.833,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Hmm, yes, I think many desserts could be better with fruit! Like, um, I really like cakes, and I have seen some that use fruit, like, uh, a strawberry shortcake! It has layers of cake and whipped cream, and then the strawberries... they make it more refreshing, I think. \n\nAlso, ice cream! I love when they add fruits like mango or berry. It makes the ice cream taste so vibrant, you know? \n\nBut, um, sometimes I wonder, can you add fruit to, like, brownies? I think that could be interesting, too. Maybe cherries or raspberries? What do you think?",
+      "latency_s": 3.542,
+      "word_count": 99,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I love how you’re diving into all these fruity dessert ideas! Strawberry shortcake is such a classic, and it really does bring a refreshing touch. Adding fruit to brownies sounds intriguing! Cherries could add a nice tartness. Have you ever tasted brownies with a fruit swirl or topping? It could be a fun experiment!",
+      "latency_s": 3.967,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Oh, yes! Brownies with cherries sound really interesting! I think the tartness would make it very nice. I... I have not tried brownies with fruit before, just maybe with nuts or chocolate chips. But I imagine it could be very delicious! \n\nMaybe, um, a swirl of cherry jam or even fresh cherries on top would be good? I like the idea of trying something new in baking. Have you ever made brownies like that? What do you think?",
+      "latency_s": 3.572,
+      "word_count": 78,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That sounds like a delicious idea! A swirl of cherry jam could add a nice sweetness along with the tartness of the fresh cherries. I haven't made brownies like that before, but I think it would be a fun experiment! What other flavors do you think would go well with cherries in baking?",
+      "latency_s": 2.365,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Hmm, I think cherries could pair well with almonds! Maybe almond extract in the brownies would create a nice flavor. And, um, I also wonder about chocolate. Dark chocolate with cherries is a classic combination, right? It makes it rich but still fruity. \n\nAnd... maybe even some orange zest? I read that citrus can brighten desserts, so that could be interesting too! What do you think? Do you have any favorite combinations?",
+      "latency_s": 2.417,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "I love how you're thinking about all these flavor combinations! Dark chocolate and cherries really are a classic duo—so rich and delicious. I think almond extract would add a lovely depth, too! Have you ever tried using lemon zest in desserts? It can really brighten things up, just like orange zest!",
+      "latency_s": 2.444,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Oh, yes! I think lemon zest could really make desserts more refreshing. I haven’t used it much, but I’ve heard it can balance sweetness. Maybe in something like a lemon cheesecake or a fruit tart? I also like how orange zest can add a warm flavor, especially in chocolate desserts. \n\nBut, um, I’m still not very sure about how much zest to use. Do you have any tips on that? I wouldn’t want to make it too sour.",
+      "latency_s": 2.711,
+      "word_count": 78,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "I totally get that! Lemon zest can really brighten up desserts without overpowering them. When it comes to using zest, a good rule of thumb is to start with about half a teaspoon for smaller recipes and adjust to taste. Have you thought about trying it in a specific dessert, like a cheesecake or tart?",
+      "latency_s": 3.16,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Oh, yes! I think lemon zest would be great in a cheesecake. It could add a nice, fresh flavor. I’ve never made cheesecake before, though. I’m a bit nervous because it seems complicated. I usually stick to simpler desserts like brownies or cookies. But I really want to try! Maybe I can start with just a small cheesecake, like a mini one? What do you think?",
+      "latency_s": 6.793,
+      "word_count": 66,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "It sounds like you're really excited to try making a cheesecake! Starting with a mini version is a great idea—it can be less intimidating and still delicious. What kind of toppings do you think you might want to add to your cheesecake?",
+      "latency_s": 2.776,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Yes, I think mini cheesecakes are less scary! For toppings, um, I really like berries, maybe strawberries or blueberries? They are sweet and colorful. Also, I was thinking about using some whipped cream on top, too. But, I’m not sure if I should add anything crunchy, like nuts, or just keep it soft. What do you think?",
+      "latency_s": 3.025,
+      "word_count": 57,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "I love that you’re thinking about berries for your mini cheesecakes! Strawberries and blueberries will definitely add a sweet pop of color. As for the crunch, adding some crushed nuts could give a nice texture contrast, but you could also keep it smooth with just the whipped cream. Have you thought about any other fruits or flavors you might want to try?",
+      "latency_s": 2.596,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Oh, yes! I think crushed nuts could be really good for the texture. I like almonds and maybe walnuts. But, um, I’m not sure if they go well with cheesecake. It’s a bit tricky. \n\nFor fruits, I was thinking about, like, maybe raspberries? They are tart, so they could balance the sweetness. Or... maybe even some tropical fruits like mango. I heard mangos can be nice in desserts. What do you think?",
+      "latency_s": 3.258,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "I love that you're considering different textures and flavors for your cheesecake! Almonds and walnuts could definitely add a nice crunch, and I think raspberries would be a fantastic choice with their tartness. Have you ever tried using mango in desserts? It can add a really refreshing flavor! What do you think about mixing the raspberries and mango together?",
+      "latency_s": 2.71,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Oh, mixing raspberries and mango sounds interesting! I think the tartness of the raspberries and the sweetness of the mango could work well together. I haven’t used mango in desserts much, but I’ve had mango in other dishes, like salads. It’s very refreshing! \n\nI wonder, um, if I should cook the mango first or just use it fresh? Because I think fresh mango might keep the dessert light. What do you think?",
+      "latency_s": 3.461,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I love that you're exploring the balance of flavors! Fresh mango would definitely keep the dessert light and refreshing. Cooking it might change the texture and sweetness, which could be nice, but I think using it fresh would be perfect for your cheesecake. \n\nWhat other dishes have you tried mango in? It sounds like you have some interesting ideas!",
+      "latency_s": 3.327,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Yes, I agree! Fresh mango really makes it light. I have tried mango in a few dishes. Once, I made a mango salsa with tomatoes and cilantro. It was very refreshing! I also like mango smoothies, they are so creamy and sweet. \n\nBut I haven’t tried it in many desserts. I think I would like to experiment more, maybe with mango pudding? Do you think that would work well together? I feel like there are so many possibilities!",
+      "latency_s": 2.532,
+      "word_count": 78,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Wow, mango salsa sounds delicious and refreshing! I think mango pudding would be a great idea too; it can be so smooth and creamy. Have you thought about what flavors you might mix in with the pudding? Maybe a hint of coconut or a sprinkle of lime could really enhance it!",
+      "latency_s": 2.688,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Yes, mango pudding is really nice! I think adding coconut would be a good idea. Coconut has that, um, tropical taste, right? And lime, yes, it could add a bit of zing! I wonder... maybe even a little bit of ginger could work too. But I’m not sure if that might be too much. What do you think? Do you have a favorite flavor to add to mango pudding?",
+      "latency_s": 2.201,
+      "word_count": 69,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "I love your ideas for the mango pudding! Coconut definitely brings that tropical vibe, and lime would add a refreshing zing. Ginger could be a fun twist, but just a little bit since it can be strong. \n\nWhat’s your favorite dessert to make, aside from the mango pudding?",
+      "latency_s": 3.525,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Hmm, let's see... I think my favorite dessert to make is chocolate mousse. It’s, um, quite simple but so rich and creamy! I love the texture when it’s fluffy. I usually use dark chocolate, because it has that deep flavor, you know? \n\nSometimes I add a little bit of orange zest to it, which gives a nice contrast. But, to be honest, I’m still learning to make it perfect. I often worry it will be too sweet or too bitter. What about you? Do you have a favorite dessert you like to make?",
+      "latency_s": 3.733,
+      "word_count": 93,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Chocolate mousse sounds amazing! I love how dark chocolate can really elevate the flavor. Adding orange zest is such a clever idea; it must add a lovely brightness to it!\n\nI usually enjoy making fruit tarts. There’s something satisfying about the combination of a buttery crust and fresh fruits. What do you find most challenging about perfecting your mousse?",
+      "latency_s": 3.429,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Yes, I agree! The dark chocolate really makes it richer. I think the orange zest adds, um, a nice contrast with the sweetness. \n\nAs for the mousse, I find that the most challenging part is getting the texture just right. Sometimes it can be too airy or, um, too dense. I try to fold the egg whites carefully, but it’s not always easy to get that perfect balance. \n\nFruit tarts sound delicious too! I like how they look so beautiful with all the colors. Is it, um, difficult to make the crust? I imagine it takes practice to get it just right.",
+      "latency_s": 4.518,
+      "word_count": 102,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "I totally get that! Getting the texture of chocolate mousse just right can be tricky; it really takes practice to master the folding technique. \n\nAs for the crust of fruit tarts, it can be a bit challenging too! I usually make a shortcrust pastry, and it helps to have cold ingredients and not overwork the dough. Have you ever tried making a tart or pie crust before?",
+      "latency_s": 2.809,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Oh, yes! I have tried making a pie crust, but, um, it didn’t turn out very well. I think I overworked the dough, and it became tough. I remember it was quite frustrating! \n\nBut I heard that using cold butter and chilling the dough is really important, right? I want to try again, especially for a fruit tart. Maybe I could use, um, fresh berries or apples. Have you made any tarts recently?",
+      "latency_s": 2.361,
+      "word_count": 73,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "It's great that you're eager to try making a pie crust again! Using cold butter and chilling the dough really does make a huge difference in texture. Fresh berries or apples would be such a delicious choice for a fruit tart! \n\nI haven't made any tarts recently, but I did bake some cookies. What's your favorite fruit to use in desserts?",
+      "latency_s": 2.699,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

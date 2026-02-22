@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T08:51:24.419796",
+    "level": "A1",
+    "turns": 8,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "sports",
+        "art",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 2.043,
+    "user_avg_latency": 2.548,
+    "hot_search_avg_latency": 7.2,
+    "hot_content_events": 2
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "sports",
+      "headline": "Hockey game in sunny Miami!",
+      "search_time": 6.42
+    },
+    {
+      "turn": 3,
+      "type": "async_search",
+      "topic": null,
+      "headline": "Fans throw teddy bears on ice",
+      "search_time": 7.98
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! Did you hear they played hockey in sunny Miami? Ice and sun together, isn't that cool? Have you ever seen anything like that?",
+      "latency_s": 9.104,
+      "has_hot_content": true,
+      "hot_topic": "sports"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes! I hear about hockey in Miami. It very strange, I think. Ice and sun, uh... different. I not see hockey, but I see many sports on TV. \n\nUh, I like to watch football and basketball. Do you like hockey? It's cool, yes?",
+      "latency_s": 2.56,
+      "word_count": 44
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Hockey in Miami does sound different, right? I think it's quite interesting! I do like hockey, but I also enjoy watching basketball. There's something exciting about the fast pace. What do you love most about watching football and basketball?",
+      "latency_s": 1.771,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, yes! I like football and basketball. Football... uh, it have many players, yes? I like teamwork, very good. Basketball is fast, um, many points, yes? I like when players jump and shoot. \n\nI not sure which one I love most. Maybe basketball? It very exciting! But football have many strategy, too. I like both, I think. What about you?",
+      "latency_s": 2.234,
+      "word_count": 60
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I totally get that! Basketball's fast pace and high energy are really exciting, and the teamwork in football is amazing too. Personally, I enjoy the strategy in football a lot. What's a memorable moment you've seen while watching either sport?",
+      "latency_s": 1.9,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, yes! I remember one game... uh, football game. My team score last minute goal! I very excited! Everyone scream, uh, fans very happy. It was very... um, amazing moment! I like when team work together. \n\nBasketball also have good moments, like... um, dunks! Very cool! But I not see many games. I want to watch more! What about you? Do you have favorite moment?",
+      "latency_s": 3.059,
+      "word_count": 65
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That's amazing! Last-minute goals are so thrilling! Do you play football or just like watching?",
+      "latency_s": 3.65,
+      "has_hot_content": true,
+      "hot_topic": "sports"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I play football sometimes. Not very good, but I try! I play with my friends in park. We have fun! But, um, I also like watching football on TV. I learn many things, yes. Do you play football?",
+      "latency_s": 2.434,
+      "word_count": 39
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds like a lot of fun! Playing with friends in the park makes for great memories. I enjoy watching football more than playing it, but I love the excitement of the game. What's one thing you've learned from watching football on TV?",
+      "latency_s": 2.19,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I learn many things from football TV. I learn about, um, teamwork! Team work is very important. And I see players, uh, they pass ball good. I try to do that when I play. Also, I learn some rules, like offside. But sometimes I confuse, uh, offside is little difficult. I think watching helps me a lot!",
+      "latency_s": 2.48,
+      "word_count": 58
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Teamwork is such an important part of football, and it's great that you're learning about it! Passing is definitely a skill that takes practice. What do you find most challenging about learning the offside rule?",
+      "latency_s": 1.52,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, offside rule... it very confusing for me. I think, um, when player, uh, goes in front of defender, yes? But sometimes, I not sure when is offside. I see in TV, they use VAR? What is VAR? It help, I think. \n\nI try to remember, but my brain go like, uh, \"too many rules!\" I need more practice to understand better. Maybe I can learn with my friends too, yes? We can practice together!",
+      "latency_s": 2.422,
+      "word_count": 75
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "I totally get that! The offside rule can be tricky. VAR stands for Video Assistant Referee, and it helps referees make better decisions by using video technology. It's like having extra eyes on the field! Practicing with your friends sounds like a great idea. What do you enjoy most about playing football with them?",
+      "latency_s": 1.707,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I like playing football with my friends because, um, it is fun! We laugh a lot. I like, um, scoring goals. But sometimes I miss the goal, and it make me sad. \n\nAlso, we have teamwork! We pass the ball to each other. I try to practice, um, making good passes. I think that is important for the game. \n\nAnd, um, after the game, we eat snacks together. I like that part too! So, um, I enjoy many things about football.",
+      "latency_s": 2.936,
+      "word_count": 82
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "It sounds like you have a blast playing football with your friends! Scoring goals must feel amazing, and I get the sadness when you miss. But it's great that you enjoy the teamwork and passing too. I'm curious, what's your favorite snack you all enjoy after the game?",
+      "latency_s": 1.598,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yes! After game, we like eat snacks. I think, um, my favorite snack is, uh, chips. Yes, potato chips! We also have, um, some drinks, like cola or, uh, orange juice. Sometimes we eat, um, sandwiches too. We sit together and laugh about game, it very fun! What about you? What snack do you like?",
+      "latency_s": 2.256,
+      "word_count": 56
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Oh, potato chips and drinks sound like a perfect way to relax after a game! I really enjoy having cookies or a nice bowl of fruit as a snack. It's great how snacks bring everyone together to share laughs and stories. What's the funniest moment you've had with your friends after a game?",
+      "latency_s": 2.011,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T10:49:45.484540",
+    "level": "B1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "art",
+        "technology",
+        "music"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 4.065,
+    "user_avg_latency": 3.774,
+    "strategies": {
+      "summarize": 20
+    },
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "art",
+      "headline": "Hey, check out Wes Anderson stuff in London!"
+    },
+    {
+      "turn": 1,
+      "type": "topic_detected",
+      "topic": "movies",
+      "headline": "Sequel brings new thrills to classic horror series!"
+    },
+    {
+      "turn": 11,
+      "type": "topic_detected",
+      "topic": "cooking",
+      "headline": "Breakfast ramen is a morning twist!"
+    },
+    {
+      "turn": 12,
+      "type": "topic_detected",
+      "topic": "travel",
+      "headline": "Travel through snacks and drinks!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just found out there's a Wes Anderson exhibition in London showing his movie props like Margot's coat! How cool is that? Would you want to check it out together?",
+      "latency_s": 2.457,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, wow! That sounds really interesting! I like Wes Anderson's movies, they are very unique, um, with the colors and the style. I think it would be cool to see Margot's coat. I remember it was, um, very colorful, right? \n\nI would love to check it out together! But is it, um, expensive to go? And when is it? I need to think about my schedule too.",
+      "latency_s": 2.608,
+      "word_count": 67,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That's awesome you like his movies! They really have a special style. What's your favorite Wes Anderson film? I'd love to hear what you like about it!",
+      "latency_s": 19.455,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "movies"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Hmm, that's a tough question! I think my favorite is \"The Grand Budapest Hotel.\" I really like the colors and the way he tells the story. It's so, um, whimsical, I guess? The characters are really funny and, um, a bit strange too, but in a good way! \n\nAnd the setting is beautiful, like, um, a fairy tale? I also love the music, it fits the scenes very well. What about you? What's your favorite Wes Anderson film?",
+      "latency_s": 2.744,
+      "word_count": 78,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I totally get why you love \"The Grand Budapest Hotel\"! The whimsical style and unique characters really make it special. I think the music adds so much to the atmosphere too. My favorite Wes Anderson film is \"Moonrise Kingdom.\" I love the adventure and the way it captures the feeling of young love. What do you think is the most memorable scene in \"The Grand Budapest Hotel\"?",
+      "latency_s": 3.868,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Oh, yes! The music is very good! I think it makes the movie feel more magical. For me, the most memorable scene is when, uh, M. Gustave and Zero are trying to escape on the, um, motorcycle. It is very exciting and funny at the same time! I like how they, um, work together and have this special friendship. Also, the way the colors look in that scene is really beautiful. What about you? What scene do you like most in \"Moonrise Kingdom\"?",
+      "latency_s": 3.273,
+      "word_count": 83,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I love that scene too! It really highlights their friendship and the humor in the movie. In \"Moonrise Kingdom,\" I think one of my favorite scenes is when Sam and Suzy meet in the woods and dance together. It feels so magical and captures the innocence of young love. What do you think makes the friendship between M. Gustave and Zero so special?",
+      "latency_s": 2.72,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Yes, I think that scene in \"Moonrise Kingdom\" is very sweet! It feels very pure and innocent. \n\nAbout M. Gustave and Zero, their friendship is special because they trust each other a lot. M. Gustave is like a father figure for Zero, and he teaches him many things. Also, I think their relationship shows how people can care for each other even when they are very different. \n\nMaybe another thing is that they have funny moments together, which makes their bond stronger. What do you think?",
+      "latency_s": 3.437,
+      "word_count": 86,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I love how you describe M. Gustave and Zero's friendship! Their trust and support for each other really shine through the story. It’s interesting how their differences actually bring them closer together. What do you think are some lessons we can learn from their relationship?",
+      "latency_s": 2.56,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Yes, I agree! Their friendship is very special. I think one lesson we can learn is to accept people who are different from us. M. Gustave is very fancy and Zero is more...simple? But they help each other, and it shows that friendship can be strong even with differences. \n\nAlso, they trust each other a lot, which is very important. It’s like when you have a friend who you can tell anything, right? I think this makes their bond really strong. \n\nMaybe another lesson is to always support your friends, even in difficult times. I mean, they go through many challenges together, and they never give up on each other. What do you think?",
+      "latency_s": 3.451,
+      "word_count": 114,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I really like how you highlighted the importance of accepting differences in friendships! It’s so true that trust and support can make a bond even stronger. Have you ever had a friendship that taught you a big lesson like that? What happened?",
+      "latency_s": 4.122,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Yes, I think I had a friendship that taught me a big lesson. Um, it was with my best friend in high school. At first, we were very different because she liked sports and I liked art. I didn't understand her, and sometimes I thought she was too loud or too competitive. \n\nBut, over time, we started to support each other. I went to her games, and she came to my art shows. I saw how hard she worked, and she saw my passion for art. It helped me to appreciate her more. \n\nSo, I learned that even if we are different, we can still be good friends. Trust and support are very important for this. I think it made our friendship much stronger!",
+      "latency_s": 6.162,
+      "word_count": 124,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Wow, that’s such a meaningful experience! It’s great how you both found ways to support each other despite your differences. How did it feel for you to see her dedication in sports and for her to appreciate your art? Did that change your view on friendship?",
+      "latency_s": 2.768,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "It felt really nice to see her dedication in sports because she worked so hard. I think, um, it inspired me a lot. I remember watching her practice, and I was like, \"Wow, she really loves this!\" For my art, she was always very supportive too, like when I showed her my drawings, she gave me good feedback, and she said nice things. \n\nI think it changed my view on friendship because I saw that even if we are different, we can still understand and appreciate each other. It was not only about what we liked but about being there for one another. It made our friendship stronger, I think. So, it’s like, um, we learned from each other, which is really important.",
+      "latency_s": 2.957,
+      "word_count": 123,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "It’s really cool how you found inspiration in her dedication! Watching someone work hard can be so motivating. I love that you both supported each other's passions. How did you feel when she gave you feedback on your drawings? Did that help you grow as an artist?",
+      "latency_s": 2.85,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I felt really happy when she gave me feedback on my drawings. I remember, um, she said some things I didn’t see before, like, uh, the colors and the shapes. Her comments were very helpful because, um, I could improve and try new ideas. But sometimes, I was a little nervous to show her my work because I wanted her to like it. \n\nOver time, I became more confident, and I think her support made me enjoy drawing even more. I learned a lot from her, not just about art but also about being open to criticism. It was a good experience!",
+      "latency_s": 4.308,
+      "word_count": 103,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "It’s wonderful to hear how her feedback helped you become more confident! It's tough to share your work, especially when you want others to like it. How did you feel when you started trying out those new ideas in your drawings? Did any of those changes lead to a piece you were really proud of?",
+      "latency_s": 3.637,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Yes, um, when I started trying new ideas, I felt a bit nervous at first because I wasn't sure if they would look good. I remember, uh, I changed the colors and tried different styles, like more abstract. \n\nAt first, some of my drawings didn't look how I wanted, but then, there was one piece, um, it was a landscape, I think? I used bright colors and, um, it felt really alive. I was proud of it because I felt I took risks, and it showed my own style a bit more. \n\nSo, yeah, it was nice to see my progress, even if not all changes were good. But, um, it made me want to keep experimenting!",
+      "latency_s": 5.21,
+      "word_count": 117,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "It's awesome how you pushed yourself to try new styles and colors! That landscape sounds beautiful, and it's great that you felt it showed your own style. What was the process like when you took those risks? Did you have any moments where you really surprised yourself with the outcome?",
+      "latency_s": 4.489,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, thank you! The process, it was a little, um, difficult sometimes. At first, I was not sure if I should, uh, use bright colors or, like, different shapes. I remember, um, I just started mixing colors that I usually don’t use. \n\nOne moment that surprised me was when I, um, painted a sky with, like, purple and orange. I thought it would look bad, but, um, when I finished, I felt really happy because it looked unique. I wasn’t expecting that, you know? It showed my, um, personality more than before. \n\nSo, I guess taking risks, it helped me find new things I like. What about you? Have you taken risks",
+      "latency_s": 3.484,
+      "word_count": 112,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "It’s great to hear how mixing those unexpected colors made you feel happy and showed your personality! That purple and orange sky sounds really striking and unique. I totally get that feeling of surprise when something turns out better than expected. \n\nI’ve taken some risks too, like trying new hobbies. What’s the most surprising thing you discovered about yourself during your art journey?",
+      "latency_s": 4.74,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, thank you! Yes, the colors were really surprising for me, and it made me feel, um, more confident. I think the most surprising thing I discovered about myself is that I can be, um, more creative than I thought. \n\nBefore, I usually stick to safe choices, like, um, blue and green. But now, I enjoy mixing colors and trying different techniques. It’s like I can express my feelings better through my art. Sometimes, I still feel a bit scared to try new things, but I, um, push myself. \n\nI think trying new hobbies is important too! What about you? What did you discover about yourself?",
+      "latency_s": 2.961,
+      "word_count": 106,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "It sounds like those surprising colors really helped boost your confidence! I can imagine how exciting that must have been. What’s the next project you want to try?",
+      "latency_s": 1.951,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "cooking"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, thank you! Yes, it was very exciting. For my next project, I think I want to try, um, maybe painting a big mural. I’ve seen some really nice ones in my city, and they look very colorful and, um, creative. I want to express, like, my feelings and, uh, maybe use more bright colors again. But I’m not sure how to start... I need to plan better, I think. What do you think?",
+      "latency_s": 2.537,
+      "word_count": 74,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Wow, painting can really challenge you, but it’s great that you’re still excited! What kind of painting are you thinking about for your next project? I’d love to hear more!",
+      "latency_s": 2.44,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "travel"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, I think I want to try, uh, acrylic painting? I heard it’s, um, easier for beginners, and you can, like, make many layers. I really like, um, bright colors, so maybe I will paint, uh, flowers or landscapes. But, I’m not sure yet. It’s, um, a little scary to think about! What do you think?",
+      "latency_s": 3.71,
+      "word_count": 56,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "It's awesome that you're thinking about trying acrylic painting! The layering technique sounds really fun, especially for bright colors. What kind of flowers or landscapes do you have in mind? I can imagine how exciting it would be to bring your ideas to life!",
+      "latency_s": 3.638,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, thank you! Yes, I think flowers are, um, very nice for painting. Maybe, uh, like sunflowers or, uh, roses? I like bright colors a lot, so, um, I want to try to make them very, um, colorful. But, I’m not sure about landscapes yet. Maybe, um, a sunset or a small garden? I hope I can, uh, learn the layering technique well. It sounds fun!",
+      "latency_s": 4.07,
+      "word_count": 66,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "It's so nice to hear that you love flowers like sunflowers and roses! Those bright colors will really pop in your painting. What do you think it is about flowers that inspires you the most? Do you have a favorite memory connected to them?",
+      "latency_s": 4.263,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, I think flowers are, uh, very beautiful and they make me feel happy. I like, um, the colors and shapes, you know? Sunflowers are, um, very bright and they look like, um, they are smiling at you! \n\nMy favorite memory is, um, when I was a child, my mother took me to, um, a garden. There were so many flowers, and I remember, uh, picking some and making a little bouquet. It was, um, a nice summer day. I felt so, um, free and happy with the flowers around me. \n\nSo, yes, flowers remind me of, uh, good times and, um, nature's beauty!",
+      "latency_s": 3.981,
+      "word_count": 104,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "I love how flowers can bring back such joyful memories! Your childhood experience in the garden sounds really special. What do you think you would feel if you painted those sunflowers that remind you of happy times?",
+      "latency_s": 3.305,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um, I think if I painted, uh, those sunflowers, I would feel, um, very happy and maybe a little bit nostalgic? Because, uh, they remind me of, um, playing in the garden with my family. I remember, um, the sunlight and, uh, the smell of flowers. \n\nSo, when I paint them, I think I would feel, um, calm and, uh, joyful too. Maybe I could, uh, use bright colors like yellow and, um, orange to make it, um, really lively. It would be, uh, nice to capture those, um, good memories on paper.",
+      "latency_s": 6.321,
+      "word_count": 93,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Your feelings about painting those sunflowers sound really beautiful! Capturing memories like that can definitely bring a sense of calm and joy. I love how you mentioned the sunlight and the smell of flowers. What do you think you would feel when you actually start painting? Would it be different from just thinking about it?",
+      "latency_s": 2.312,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Um, I think when I start painting, I would feel, uh, a little nervous but also very excited. Because, um, when I think about it, it's like, uh, I can see the colors and the shapes in my mind. But when I actually, um, paint, it might be different. Maybe I will feel, um, more focused, like I need to, uh, concentrate on the details. \n\nAnd, um, I think the smell of the flowers and the brightness of the sunlight would, like, help me feel more relaxed. But sometimes, I worry that my painting, um, will not look good, so maybe I will feel a bit, um, stressed too. It's a mix of feelings, I",
+      "latency_s": 2.707,
+      "word_count": 115,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "It sounds like you have a lot of mixed emotions about painting! That excitement and nervousness can really make the experience special. I'm curious, how do you usually deal with those feelings when you're creating art? Do you have any tricks to help you focus or relax?",
+      "latency_s": 2.924,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um, yes, I think, uh, when I feel nervous, I try to, uh, take a deep breath. It helps me to, um, calm down a little bit. And, um, I also listen to music sometimes because it makes me feel more, um, relaxed and inspired. \n\nBut, I, um, still have trouble focusing sometimes. I can, uh, get distracted by, um, other things, like my phone or, uh, noise around me. So maybe I need to, um, find a quiet place or, um, set a timer. That could help me to, um, concentrate better. \n\nWhat about you? Do you have some tricks too?",
+      "latency_s": 3.501,
+      "word_count": 102,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "It's great that you have those techniques to calm your nerves, like deep breathing and listening to music! Music can really set the mood, can't it? When you get distracted, have you noticed if certain types of music help you focus better than others?",
+      "latency_s": 2.54,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Um, yes, I think music is very important for me when I want to focus. I usually listen to, uh, instrumental music or, um, some soft pop. Because when there are no words, I can, uh, concentrate better on what I'm doing. But, sometimes, if the music is too loud, it can also, like, distract me. So, I have to find the right volume, I guess? \n\nAnd, um, I noticed that, like, when I listen to classical music, it makes me feel more relaxed. But if I listen to, um, fast music, it makes me, uh, a little anxious or, like, too energetic. So, yeah, I think different types of music can",
+      "latency_s": 5.131,
+      "word_count": 112,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "I totally get what you mean about music! Finding the right volume can really make a difference. I'm curious, do you have a favorite instrumental song or artist that helps you focus best? ",
+      "latency_s": 2.781,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Um, yes, I think I really like, uh, Ludovico Einaudi. He, um, makes beautiful piano music, and it helps me to concentrate. Sometimes, I listen to, uh, soundtracks from movies too, like the ones from, uh, Hans Zimmer. They are, um, very inspiring, I think. \n\nBut, um, sometimes I also like to listen to nature sounds, like rain or, um, waves. It’s, uh, calming and makes me feel good. Do you have a favorite, um, type of music for focus?",
+      "latency_s": 2.921,
+      "word_count": 80,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "I love Ludovico Einaudi too! His music really creates such a calm atmosphere. Nature sounds are great for focus as well; they can really help you feel connected and relaxed. \n\nFor me, I enjoy listening to acoustic guitar music when I need to concentrate. It has a nice flow without being too distracting. Do you find that listening to soundtracks helps you get into a certain mood for your art?",
+      "latency_s": 3.932,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

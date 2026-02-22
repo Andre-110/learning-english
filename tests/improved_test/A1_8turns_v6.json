@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T08:54:34.064131",
+    "level": "A1",
+    "turns": 8,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "art",
+        "technology",
+        "music"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 2.504,
+    "user_avg_latency": 3.161,
+    "hot_search_avg_latency": 6.597,
+    "hot_content_events": 3
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "art",
+      "headline": "Wes Anderson stuff at London museum!",
+      "search_time": 7.58
+    },
+    {
+      "turn": 3,
+      "type": "async_search",
+      "topic": "art",
+      "headline": "Hilary Duff is back!",
+      "search_time": 6.02
+    },
+    {
+      "turn": 4,
+      "type": "async_search",
+      "topic": "art",
+      "headline": "Cool flower art is everywhere now!",
+      "search_time": 6.2
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hi! I heard there's a cool Wes Anderson show in London with movie stuff. Do you like his films?",
+      "latency_s": 4.548,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, hello! Yes, um, I like Wes Anderson films. They are...very colorful? And funny. I watch, um, \"The Grand Budapest Hotel.\" It’s very nice. I like the style, um, very unique. \n\nBut I...not see many films. Sometimes the stories are, um, strange for me. Do you like his films?",
+      "latency_s": 2.533,
+      "word_count": 49
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, \"The Grand Budapest Hotel\" is such a fun movie! I love how colorful and detailed his films are too. I do enjoy Wes Anderson's work because of his unique style. His stories can be a bit quirky, which makes them interesting to me. What's a movie or story that you really enjoyed, even if it was a bit strange?",
+      "latency_s": 1.908,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I think... I like \"Moonrise Kingdom.\" It is very... um, sweet? And about, um, kids? They run away together. It feel a little strange, but it is nice. I like the colors too! Um, I like the music in the film. It makes me feel happy. Do you like \"Moonrise Kingdom\" too?",
+      "latency_s": 4.257,
+      "word_count": 53
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, I really like \"Moonrise Kingdom\" too! The story of the kids running away is so sweet and adventurous. The music is great—it's like it adds a magical feeling to the whole movie. What's your favorite part of \"Moonrise Kingdom\"?",
+      "latency_s": 1.86,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, my favorite part... I think it is when, um, the kids meet in the forest? They have, uh, secret plans and they... um, dance? Yes, they dance. It is very cute! And the music is nice, yes. I feel, um, happy when I watch this part. What about you? What is your favorite part?",
+      "latency_s": 2.866,
+      "word_count": 55
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, I love that part too! The secret plans and the dance are so charming. My favorite part is when they're on the beach, building their little camp. It feels like such an adventurous escape for them. The whole scene captures the magic of childhood so well. What do you think makes their adventure special?",
+      "latency_s": 1.57,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes! The beach part is, uh, very nice. I think their adventure is special because, um, they are free? They do what they want, and it is... uh, fun. They have, um, friendship too. Like, um, they help each other. And, um, the nature is very beautiful. I like the trees and the... um, sea? It makes me feel happy. What about you? What makes it special for you?",
+      "latency_s": 3.043,
+      "word_count": 70
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Yes, their adventure is so special! They are brave kids. Do you like other movies about adventure?",
+      "latency_s": 3.713,
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes! I like, um, adventure movies. They are fun! I like, uh, movies with, um, treasure and, um, pirates. Pirates are very, um, cool. I watch one movie, um, with a big ship and, um, treasure map. It is very, um, exciting! Do you like, um, treasure movies?",
+      "latency_s": 3.169,
+      "word_count": 49
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Treasure movies are fun! Pirates, maps, and secret places are exciting. Do you have a favorite treasure movie?",
+      "latency_s": 3.988,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, I think, uh, my favorite treasure movie is, um, \"Pirates of the Caribbean.\" It's, um, very exciting! I like, uh, Captain Jack Sparrow. He is, um, funny and, uh, clever. The, um, sea and the, um, ships, they are very nice too. I like the, um, adventure and the, um, treasure maps. But, um, I am not sure about the, um, story. It is, um, a little confusing. What about you? Do you have a favorite?",
+      "latency_s": 3.33,
+      "word_count": 77
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Oh, I totally get that! Captain Jack Sparrow is such an interesting character, isn't he? He's always getting into tricky situations but somehow finds a way out. I think that's what makes him so fun to watch. As for my favorite, I really enjoy \"The Goonies.\" It's got that treasure hunt vibe with a group of kids discovering hidden secrets. What do you think makes treasure hunts so exciting in movies?",
+      "latency_s": 2.042,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, yes! I think treasure hunts are, um, very exciting because, um, they have, like, adventure and, um, surprises. I, uh, like when they find, um, maps and, uh, go to, um, secret places. It is, um, fun to see, uh, what they find. I like, um, teamwork too, like, um, friends help each other. \n\nIn \"Pirates of the Caribbean,\" um, Jack Sparrow and his friends, they, um, have many problems, but they, um, find treasure! It is, uh, very cool! What do you think?",
+      "latency_s": 3.404,
+      "word_count": 85
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "I love how treasure hunts are full of surprises and teamwork! It's like every step is an adventure where friends need each other. In \"Pirates of the Caribbean,\" Jack Sparrow and his crew always find a way through their problems, which makes it exciting to watch. Do you have a favorite scene where their teamwork really shines?",
+      "latency_s": 2.76,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yes! I, um, love the scene when, uh, Jack and his crew, they, um, have to fight the other pirates. It is, um, very action and, uh, funny too! They, um, work together to, like, steal the ship back. I, um, think teamwork is, uh, very important in that scene. And, um, they trust each other, yes? What do you think?",
+      "latency_s": 2.687,
+      "word_count": 62
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That scene is great! The mix of action and humor really shows how well they work together. It's amazing how they trust each other even in tough times. I think that's what makes it so exciting. Have you ever been in a situation where teamwork was really important?",
+      "latency_s": 2.188,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T09:21:05.823601",
+    "level": "A2",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "reading",
+        "cooking",
+        "movies"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 1.566,
+    "user_avg_latency": 2.071,
+    "strategies": {
+      "summarize": 4,
+      "continue": 1
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hi! 😊 If you could cook any dish tonight, what would you choose? (You can answer in simple words or even mix some Chinese - I'll help you!)",
+      "latency_s": 1.589
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um... I think maybe 炒饭? Fried rice. Because it is easy, yes, and I can put egg and tomato... 还有一点肉。I like it, but sometimes my rice, hmm, too wet? Not perfect... Is it ok?",
+      "latency_s": 1.703,
+      "word_count": 34,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I get that! Fried rice is great because you can add so many things. Wet rice happens to me too sometimes—it's normal! What was your best fried rice ever like? (For example, did you cook it for someone special or try a new ingredient?)",
+      "latency_s": 1.94,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um... my best fried rice... I think is last year, with my妈妈. We put很多 vegetables, like carrot, and green豆...嗯，and I try put一点点虾, shrimp? It’s very好吃! My妈妈say it’s香. But I think maybe too salty, haha. I want try put pineapple next time, but我不确定… maybe taste strange?",
+      "latency_s": 3.457,
+      "word_count": 45,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh wow, cooking with your mom sounds really special! I love that you tried adding shrimp—so creative. How did you feel when your mom said it was 香? Did you two laugh about the salty taste?",
+      "latency_s": 1.302,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Haha, yes, we laugh! My妈妈说，呃，\"下次少放一点盐,\" because it was a little咸, but she still吃很多. I feel很开心, because she say it is香 and好吃. I like做饭 with my妈妈, we always聊天 and sometimes听 music. I think…um…it is a good memory.",
+      "latency_s": 1.641,
+      "word_count": 36,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds so warm and happy! Cooking with music and chatting must make the kitchen a fun place. What kind of music do you and your mom like to listen to when you cook together?",
+      "latency_s": 1.238,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um... sometimes we listen old歌, like, uh, Jay Chou? My妈妈喜欢他的歌。But, um, sometimes I want English music, like Taylor Swift. My mom说听不懂, but she say melody好听. Uh, we sing a little, but not很好，哈哈. I like cooking time with music, feel not累.",
+      "latency_s": 1.726,
+      "word_count": 40,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds so fun! Singing while you cook, even if you’re not perfect, makes everything better. Do you remember one time when you and your mom laughed a lot while singing? What happened?",
+      "latency_s": 1.252,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Hmm... yes, I remember one time! 我们在做饭，然后Jay Chou的歌开始放。My妈唱得很大声，但是她唱错歌词了。I笑很大声，她也笑。然后我们都忘记做菜，那个菜有点糊了，呃，black color... but we还是吃了！很开心，哈哈。",
+      "latency_s": 1.826,
+      "word_count": 11,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Oh wow, that’s such a funny story! I can imagine you both laughing so hard in the kitchen. What did the food taste like after it got a little burnt? Did you make any jokes about it?",
+      "latency_s": 2.099,
+      "strategy": "continue"
+    }
+  ]
+}

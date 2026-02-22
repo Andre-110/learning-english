@@ -1,0 +1,351 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T04:01:48.837473",
+    "level": "A1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "technology",
+        "movies",
+        "music"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 1.974,
+    "user_avg_latency": 2.884,
+    "hot_search_avg_latency": 7.293,
+    "hot_content_events": 2
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "music",
+      "headline": "Hilary Duff's new album is coming soon!",
+      "search_time": 7.06
+    },
+    {
+      "turn": 4,
+      "type": "async_search",
+      "topic": "music",
+      "headline": "Big bands say goodbye together!",
+      "search_time": 7.53
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! Guess what? Hilary Duff's new album is coming soon—it's her first in 10 years! Are you excited to hear her music again?",
+      "latency_s": 3.912,
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes! I, uh, very excited. I like her song, um, \"So Yesterday.\" It’s fun! But, um, I not know many new songs. I hope her new album is good. Do you like Hilary Duff?",
+      "latency_s": 2.641,
+      "word_count": 35
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, \"So Yesterday\" is such a catchy song! I do like Hilary Duff; her music always brings back good memories. I'm curious, what kind of songs or music do you usually enjoy?",
+      "latency_s": 1.514,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I like, uh, pop music. It is, um, very happy! I also like, uh, some hip hop. But, um, I not understand all the words, haha. I listen to, um, Taylor Swift too. Her songs, um, they tell stories. I like stories! \n\nSometimes I listen to Chinese songs too, um, like Jay Chou. His music is, uh, very nice. Do you like, um, any other music?",
+      "latency_s": 2.496,
+      "word_count": 67
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, I love how music can tell stories, just like Taylor Swift's songs! Jay Chou has a wonderful way of mixing traditional and modern sounds. As for me, I enjoy a mix of different genres. Sometimes I listen to rock or even a little bit of jazz. What’s a song that recently made you feel something special?",
+      "latency_s": 2.482,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I, uh, like Taylor Swift too! Her songs, um, make me feel, um, happy or, uh, sad. I think, um, \"Love Story\" is very nice. It, um, tell about love. \n\nBut, um, Jay Chou, I, uh, not listen much. I, uh, hear one song, um, \"青花瓷\" (Qing Hua Ci), it, um, very beautiful. I, uh, like the music and, um, the story. \n\nUm, sometimes, I listen to a song and, uh, feel, um, same feeling. Do you know, um, \"Someone Like You\"? It is, um, very touching.",
+      "latency_s": 2.893,
+      "word_count": 88
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I totally get those feelings from Taylor Swift's songs! \"Love Story\" is a classic, and it's so full of emotion. Oh, and \"Someone Like You\" by Adele is indeed very touching and powerful. It's amazing how music can make us feel so much. I'm curious, is there a particular moment or memory that comes to mind when you hear these songs?",
+      "latency_s": 1.896,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I think, uh, \"Love Story\" is very, um, romantic. It make me, uh, think of, uh, happy times with friends. I remember, um, dancing at a party, um, and singing together. It is, um, fun! \n\nBut \"Someone Like You,\" um, is, uh, more sad. It make me, uh, think of, um, lost things. Like, um, friends who move away. I feel, um, a bit, um, crying when I hear it. Music, um, it is very strong feeling!",
+      "latency_s": 2.52,
+      "word_count": 78
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "\"Love Story\" is very romantic! Happy times are the best. Do you have a favorite Taylor Swift song?",
+      "latency_s": 3.913,
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I, uh, like \"Blank Space\" too! It is, um, very catchy and, uh, fun. I, um, like the part when she, uh, says \"got a long list of ex-lovers.\" It make me, um, laugh. I think, um, the song is, uh, about love and, um, problems too? Do you, um, like \"Blank Space\"?",
+      "latency_s": 2.802,
+      "word_count": 54
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "\"Blank Space\" is indeed very catchy and fun! I like how it plays with the idea of love and the ups and downs that come with it. It's quite clever and makes you think, doesn't it? What do you love most about Taylor Swift's music?",
+      "latency_s": 1.539,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! I think, uh, Taylor Swift's music is, um, very relatable. I, um, love her lyrics. Sometimes, I feel, uh, like she talks about my, um, feelings. I, uh, like when she, um, sings about, uh, love and, um, heartache. It make me, um, think about, uh, my own life. \n\nAnd, um, her voice is, uh, very nice too! I, uh, like to sing along, even if I, um, make mistakes. Do you like to, um, sing her songs?",
+      "latency_s": 2.667,
+      "word_count": 80
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "I totally get that! Singing along to Taylor Swift's songs is so much fun, even with mistakes. Her lyrics really do connect with our feelings. I enjoy singing her songs too, especially when they tell a story. What's a Taylor Swift song that makes you feel the most connected to your own life?",
+      "latency_s": 1.693,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think \"Love Story\" is, uh, very connected to my life. It, um, talks about love and, uh, happy endings. I, um, like the story in the song. Sometimes, I feel like, uh, love is, um, like a fairy tale, you know? But, um, also, I like \"Shake It Off\" because it, uh, makes me feel, um, happy and, um, not care about, uh, what other people think. What about you? Which song, um, you like?",
+      "latency_s": 2.76,
+      "word_count": 77
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "I love that you feel a connection with \"Love Story\" and enjoy the carefree vibe of \"Shake It Off\"! For me, I really like \"All Too Well\" because the storytelling is so vivid and emotional. It makes me think about memories and moments in life. Do you have any favorite memories that come to mind when you listen to Taylor Swift's songs?",
+      "latency_s": 1.876,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yeah! I, um, have some favorite memories. When I, um, listen to \"Shake It Off,\" I, uh, think about, um, my friends and, um, dancing at parties. We, uh, have fun and, um, forget problems. It's, um, very happy time!\n\nAnd, um, when I hear \"Love Story,\" I, uh, remember my, uh, first crush. It, um, was nice and, um, a little bit shy. I, um, feel warm inside when I, um, think about it. Do you, um, have more favorite memories?",
+      "latency_s": 3.183,
+      "word_count": 83
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Oh, those sound like wonderful memories! Dancing with friends and forgetting problems is such a great feeling. And remembering your first crush with \"Love Story\" must be so sweet! For me, one favorite memory is listening to music with my family during road trips. We would sing along and laugh a lot. What do you love most about dancing with your friends?",
+      "latency_s": 2.191,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I, uh, love dancing with friends because it, um, make me happy! We, uh, laugh a lot and, um, feel free. I, um, like when we, uh, dance together and, um, sing songs. Sometimes, I, uh, forget my, um, problems. It, um, feel good to, uh, be with friends. I, um, also like when we, uh, try new dances. It is, uh, fun! What about you? Do you, um, dance with friends too?",
+      "latency_s": 2.982,
+      "word_count": 74
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Dancing with friends sounds like such a joyful experience! I do enjoy dancing with friends too. It’s a great way to have fun and share laughs. Trying out new dances always brings some hilarious moments. Do you have a favorite dance move you like to do with your friends?",
+      "latency_s": 1.677,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, yeah! I, uh, like to do the, um, \"moonwalk.\" It, um, very fun! My friends, they, uh, laugh and try to do it too. Sometimes, um, it's not easy, but we, uh, have a good time. I also, um, like to do the, um, \"robot\" dance. It, uh, funny and looks cool! Do you, um, like to dance too? What is your, uh, favorite dance?",
+      "latency_s": 3.255,
+      "word_count": 66
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "The moonwalk and the robot dance sound like so much fun! I bet those moments are full of laughter. I do enjoy dancing too! My favorite might be just having a freestyle dance session with friends. It's all about feeling the music and having fun. What's the most fun part for you when trying out new dances with friends?",
+      "latency_s": 2.347,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I think the most fun part is, um, learning new moves with my friends. We, uh, help each other, and, um, sometimes we laugh when we, uh, make mistakes. I, um, like when the music is, uh, very fast! It, um, makes me feel excited and, um, want to dance more. I also, um, like when we can, uh, make our own moves and, um, be silly together!",
+      "latency_s": 2.129,
+      "word_count": 69
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Learning new dance moves with friends sounds like a blast, especially when you can laugh and be silly together! Fast music does make everything more exciting, doesn't it? It must be so fun to create your own moves. What kind of music do you love dancing to the most?",
+      "latency_s": 1.757,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, yes! I, uh, like fast music! It, um, makes me feel happy. I, uh, dance to pop music, like, um, Justin Bieber and, uh, some K-pop too. I, um, like the dancing in K-pop. So, um, cool! My friends and I, we, uh, try to, um, copy their moves. But, um, sometimes it is, uh, very hard! I, um, just keep practicing, yeah? What, um, music do you like?",
+      "latency_s": 3.413,
+      "word_count": 70
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Fast music can really lift your spirits! I love that you're into K-pop; those dance moves are indeed impressive. It must be exciting to try and copy them with your friends! I enjoy different types of music, but I think upbeat pop songs are great for dancing. What’s the most challenging K-pop dance move you’ve tried?",
+      "latency_s": 2.154,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, yes! K-pop dance, very hard sometimes. I, uh, try to do, um, \"Butter\" by BTS. The, um, arm moves, they are, uh, difficult! I, um, practice with my friends. We, uh, laugh a lot when we, um, make mistakes. But, um, it’s fun! And, um, I like the, uh, rhythm. How about you? Do you, um, dance K-pop too?",
+      "latency_s": 2.252,
+      "word_count": 60
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "Wow, trying to dance to \"Butter\" sounds like a lot of fun! Those arm moves do look tricky. I haven't danced K-pop myself, but I love watching the videos and seeing how creative and energetic the routines are. It must feel amazing when you and your friends finally nail a move! What do you find most rewarding about practicing K-pop dances with your friends?",
+      "latency_s": 2.185,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, yes! I, uh, like when I, um, practice with my friends. It, um, very fun! We, um, laugh a lot and, um, help each other. Sometimes, I feel, um, happy when we, uh, get the moves right. But, um, sometimes it hard, and I feel, uh, frustrated. I, um, like to see my friends smile when we, uh, dance together. It's, um, nice to, um, share it!",
+      "latency_s": 3.002,
+      "word_count": 68
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "It sounds like you have a great time dancing with your friends! Laughing and helping each other sounds like a wonderful way to practice. When you feel frustrated, what helps you keep going and not give up?",
+      "latency_s": 1.697,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, yes! When I, uh, feel frustrated, I, um, listen music. Music help me feel better. I, um, also watch videos, you know, of dancers. I, uh, see how they move. It, um, give me ideas for my dance. And, um, my friends! They, uh, say good things and, um, encourage me. I, um, like when we, uh, say “you can do it!” to each other. It, um, make me happy and, um, want to try more.",
+      "latency_s": 2.835,
+      "word_count": 77
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "It sounds like music and your friends really keep you motivated and happy! Watching dancer videos for inspiration is a great idea too. What's one dance move you've seen in a video that you really want to learn?",
+      "latency_s": 1.838,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um, yes! I, uh, see a dance move, um, called the \"moonwalk.\" It, um, looks very cool! I, um, want to learn it because, um, my friend can do it. He, um, makes it look easy, but, um, I think it is hard. I, um, practice in my room, but I, uh, not good yet. Do you, um, like the moonwalk?",
+      "latency_s": 3.632,
+      "word_count": 61
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Oh, the moonwalk is such a classic move! It looks so smooth and effortless when done well. I think it's amazing that you're practicing it! How does it feel when you try to do it? Do you have a favorite song you like to practice the moonwalk to?",
+      "latency_s": 1.639,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Um, I, uh, feel happy when I try to do moonwalk. It, um, feels funny but, uh, good! I, um, sometimes trip, but I, uh, just keep, um, trying. My favorite song to practice is, um, \"Billie Jean.\" I, uh, like the beat. It, um, makes me want to dance more!",
+      "latency_s": 4.206,
+      "word_count": 51
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "Practicing the moonwalk to \"Billie Jean\" sounds like so much fun! The beat really does make you want to move. What’s the funniest moment you’ve had while practicing your dance moves?",
+      "latency_s": 1.886,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um, I, uh, remember one time when I, um, try to moonwalk, but I, uh, fall down! I, um, was in my living room, and, uh, my dog, um, look at me very confused. It, um, was funny! I, uh, laugh a lot. Um, I try to do it again, but, uh, I still, um, fall. I, um, think my dog, uh, want to dance too! It, um, was fun practice.",
+      "latency_s": 2.416,
+      "word_count": 71
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Oh wow, that sounds like such a funny moment with your dog watching you! I can just imagine your dog trying to join in. What's it like having a dance partner like that? Do you ever try to teach your dog any dance moves?",
+      "latency_s": 1.667,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Um, yes! My dog, uh, likes to jump when I dance. I, um, think he, uh, wants to dance too! Sometimes I, uh, try to teach him, um, like spin or, uh, shake paw. He, um, don’t understand very well. But, uh, he is very cute! I, um, feel happy when he, uh, jumps around. It, um, makes me laugh! Do you, uh, have a dog?",
+      "latency_s": 2.96,
+      "word_count": 66
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "Your dog sounds like such a fun and playful dance partner! I don't have a dog, but I can imagine how much joy and laughter they bring, especially when they're trying to join in on the fun. What do you love most about having your dog around?",
+      "latency_s": 1.79,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Um, I, uh, love my dog, uh, very much! He, um, make me happy. When I, uh, come home, he, uh, wag his tail a lot. I, um, like to play fetch with him. Um, he, uh, run fast and bring back the ball. It, um, is fun!\n\nAnd, uh, sometimes he, um, cuddle with me on the couch. I, um, feel warm and, uh, nice. I, um, think my dog, uh, is my good friend!",
+      "latency_s": 2.641,
+      "word_count": 76
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Your dog sounds like such a wonderful friend! It must be so nice to come home to that wagging tail and to have those cozy cuddles on the couch. What’s your favorite memory with your dog?",
+      "latency_s": 1.75,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

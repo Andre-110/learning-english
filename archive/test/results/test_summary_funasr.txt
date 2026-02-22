@@ -1,0 +1,82 @@
+================================================================================
+FunASR 语音对话测试 - 精简报告
+================================================================================
+
+📋 测试配置
+--------------------------------------------------------------------------------
+语音服务: funasr
+FunASR模型: iic/SenseVoiceSmall
+对话ID: 2a836c5d-4077-41a1-bbf6-cdaf1292b4c2
+
+================================================================================
+📝 对话详情
+================================================================================
+
+第 1 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: test_simple.mp3
+📝 用户输入（转录）: i am a student i like reading books
+📊 评分: 75.0/100
+🎯 CEFR等级: B1
+💪 强项: 词汇丰富, 表达流畅
+⚠️  弱项: 语法准确性, 复杂句式
+❓ 系统输出（下一题）: Many people are trying to live a greener life these days. Can you describe some actions you or your ...
+⏱️  耗时: 转录: 9.99秒 | 评估: 4.06秒
+
+第 2 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: test_medium.mp3
+📝 用户输入（转录）: i am a student i like reading books very much reading helps me learn new words and improve my english skills i read for about 30 minutes every day
+📊 评分: 75.0/100
+🎯 CEFR等级: B1
+💪 强项: 词汇丰富, 表达流畅
+⚠️  弱项: 语法准确性, 复杂句式
+❓ 系统输出（下一题）: Let’s talk about healthy living! What are some habits you think are important for staying healthy, a...
+⏱️  耗时: 转录: 0.82秒 | 评估: 3.90秒
+
+第 3 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: test_mixed.mp3
+📝 用户输入（转录）: i am a student wu shuan du shu reading helps me learn new words
+📊 评分: 75.0/100
+🎯 CEFR等级: B1
+💪 强项: 词汇丰富, 表达流畅
+⚠️  弱项: 语法准确性, 复杂句式
+❓ 系统输出（下一题）: Many people try to live a more environmentally friendly life. Can you describe some habits or action...
+⏱️  耗时: 转录: 0.48秒 | 评估: 3.62秒
+
+第 4 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: test_advanced.mp3
+📝 用户输入（转录）: as an avid reader i find that immersing myself in literature not only expands my vocabulary but also enhances my linguistic proficiency the intricate narratives and sophisticated language structures provide invaluable insights into effective communication
+📊 评分: 75.0/100
+🎯 CEFR等级: B1
+💪 强项: 词汇丰富, 表达流畅
+⚠️  弱项: 语法准确性, 复杂句式
+❓ 系统输出（下一题）: Many people try to live a more eco-friendly life nowadays. Can you describe some changes you have ma...
+⏱️  耗时: 转录: 1.20秒 | 评估: 3.89秒
+
+================================================================================
+👤 最终用户画像
+================================================================================
+用户ID: test_user_funasr_complete
+综合分数: 75.0/100
+CEFR等级: B1
+对话轮数: 4
+强项: 词汇丰富, 表达流畅
+弱项: 语法准确性, 复杂句式
+
+================================================================================
+📊 性能统计
+================================================================================
+总转录时间: 12.49秒
+平均转录时间: 3.12秒/轮
+总处理时间: 15.46秒
+平均处理时间: 3.87秒/轮
+分数范围: 75.0 - 75.0
+平均分数: 75.0
+最新分数: 75.0
+
+================================================================================
+报告生成完成
+================================================================================

@@ -1,0 +1,401 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T08:11:08.663612",
+    "model": "gpt-4o-mini",
+    "base_url": "https://api.tu-zi.com/v1",
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "reading",
+        "movies",
+        "music"
+      ],
+      "overall_score": 50
+    },
+    "total_turns": 20,
+    "design": "前5轮短答 → 6-12轮正常 → 13-20轮长答"
+  },
+  "summary": {
+    "ai_avg_latency_s": 1.726,
+    "ai_min_latency_s": 1.231,
+    "ai_max_latency_s": 2.26,
+    "user_avg_latency_s": 1.425,
+    "ai_total_tokens": 49630,
+    "user_total_tokens": 2693,
+    "strategy_distribution": {
+      "lighten": 1,
+      "switch_topic": 4,
+      "summarize": 15
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! If you could go to a concert for any artist, who would you want to see? (You can answer in simple words or even mix some Chinese!)",
+      "latency_s": 1.259,
+      "tokens": 306,
+      "rhythm_strategy": "initial"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "I don't know.",
+      "latency_s": 0.825,
+      "tokens": 114,
+      "rhythm_strategy": "lighten",
+      "consecutive_short": 1,
+      "response_length": "short"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That's okay! Is there something specific you're thinking about? Maybe I can help!",
+      "latency_s": 1.38,
+      "tokens": 1967,
+      "rhythm_strategy": "lighten"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "I don't know.",
+      "latency_s": 0.914,
+      "tokens": 96,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 2,
+      "response_length": "short"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Got it! How about we switch topics? Would you rather talk about music or movies?",
+      "latency_s": 1.634,
+      "tokens": 2052,
+      "rhythm_strategy": "switch_topic"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "OK",
+      "latency_s": 0.852,
+      "tokens": 95,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 3,
+      "response_length": "short"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Great! Would you like to talk about your favorite music or a movie you recently watched?",
+      "latency_s": 1.549,
+      "tokens": 2105,
+      "rhythm_strategy": "switch_topic"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "OK",
+      "latency_s": 0.749,
+      "tokens": 95,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 4,
+      "response_length": "short"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I see! How about we talk about food? Would you rather share a favorite dish or a meal you like to cook?",
+      "latency_s": 1.471,
+      "tokens": 2154,
+      "rhythm_strategy": "switch_topic"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "OK",
+      "latency_s": 0.8,
+      "tokens": 102,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 5,
+      "response_length": "short"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Got it! How about we talk about travel? Would you rather share a place you've visited or a place you'd love to go?",
+      "latency_s": 1.659,
+      "tokens": 2168,
+      "rhythm_strategy": "switch_topic"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "I would love to share a place I'd love to go! I really want to visit Japan because I am interested in the culture and the food there.",
+      "latency_s": 1.053,
+      "tokens": 106,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That sounds exciting! What part of Japanese culture interests you the most? Is it the traditions, the art, or something else?",
+      "latency_s": 1.674,
+      "tokens": 2236,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "I really like Japanese art, especially the traditional paintings and calligraphy. They have beautiful colors and detailed designs that tell interesting stories!",
+      "latency_s": 1.321,
+      "tokens": 102,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "I love that! Traditional Japanese art really does have a unique beauty. Do you have a favorite artist or a specific painting that inspires you?",
+      "latency_s": 2.238,
+      "tokens": 2299,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Yes, I really like Hokusai! His painting \"The Great Wave off Kanagawa\" is amazing. I love the colors and the movement in the water. In my daily life, I enjoy drawing and sometimes try to make art inspired by his style.",
+      "latency_s": 1.156,
+      "tokens": 130,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That’s so cool! It sounds like Hokusai really inspires your own art. What kind of things do you like to draw when you're creating something inspired by him?",
+      "latency_s": 1.231,
+      "tokens": 2439,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "I like to draw waves and mountains, just like Hokusai. I really enjoy using bright colors to make my art more lively!",
+      "latency_s": 1.68,
+      "tokens": 111,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That sounds beautiful! Using bright colors must really bring your waves and mountains to life. How do you feel when you create your art?",
+      "latency_s": 1.601,
+      "tokens": 2416,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "I feel very happy and relaxed when I create my art. It’s like a fun escape from my daily life, and I love to express my feelings with colors!",
+      "latency_s": 1.173,
+      "tokens": 110,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds wonderful! It's amazing how art can be such a great escape and help you express yourself. Do you have a favorite memory or moment when you created something special?",
+      "latency_s": 2.2,
+      "tokens": 2445,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Yes, I have a favorite memory! I once painted a landscape of my hometown, and it made me feel so proud. Art helps me relax after a busy day.",
+      "latency_s": 0.928,
+      "tokens": 118,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "That’s such a special memory! It’s great that painting helps you relax. What do you love the most about your hometown that you wanted to capture in your artwork?",
+      "latency_s": 1.652,
+      "tokens": 2423,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "I love the beautiful parks in my hometown. They are so peaceful and green, and I enjoy painting the flowers and trees there.",
+      "latency_s": 1.05,
+      "tokens": 110,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "It sounds like those parks really inspire you! Painting flowers and trees must be so calming. Do you have a favorite flower or tree that you love to paint the most?",
+      "latency_s": 2.26,
+      "tokens": 2412,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Yes, they really do inspire me! My favorite flower to paint is the sunflower. I remember the first time I saw a field full of sunflowers; they were so bright and cheerful, turning their faces toward the sun. I spent the whole afternoon painting them, and it made me feel very peaceful and happy. I love how the yellow color stands out against the blue sky, and it always reminds me of summer days spent outdoors. Painting them brings back those lovely memories!",
+      "latency_s": 1.602,
+      "tokens": 178,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "Wow, that sounds so beautiful! Sunflowers really do have a way of brightening up a painting. What do you think makes painting those summer memories so special for you?",
+      "latency_s": 1.645,
+      "tokens": 2621,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "I think painting summer memories is special because it helps me remember the good times I had with my family. Last summer, we went to a big sunflower field, and I felt so happy surrounded by all the bright yellow flowers. I painted that scene, and every time I look at it, I remember the warm sun on my skin and the laughter we shared. It also reminds me to appreciate nature and the beauty around us, especially during the summer months.",
+      "latency_s": 1.57,
+      "tokens": 175,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "That’s so heartwarming! It sounds like those memories with your family are really precious to you. Do you think painting helps you connect with nature in other ways too?",
+      "latency_s": 1.572,
+      "tokens": 2731,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Yes, I believe painting really helps me connect with nature in many ways. For example, last summer, I painted a beautiful sunset at the beach with my family. As I mixed the colors on my canvas, I felt the warm sand under my feet and listened to the waves crashing. This experience made me appreciate the beauty around me even more. When I look at that painting now, it reminds me not just of the sunset, but also of the laughter and joy we shared that day.",
+      "latency_s": 2.485,
+      "tokens": 181,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "That sounds amazing! Mixing colors while feeling the sand and hearing the waves must have made a beautiful memory. Do you plan to paint more beach scenes this summer?",
+      "latency_s": 2.147,
+      "tokens": 2881,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Yes, I definitely plan to paint more beach scenes this summer! Last year, I visited a beach with my family, and it was so inspiring. I remember the bright blue sky, the golden sand, and the way the waves danced on the shore. I brought my sketchbook and painted the view while listening to the sound of the seagulls. It was a peaceful moment, and I can't wait to capture more beautiful memories like that this summer!",
+      "latency_s": 2.469,
+      "tokens": 172,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "That sounds so lovely! I can imagine how peaceful it must have been to paint while listening to the seagulls. What do you hope to capture in your next beach painting?",
+      "latency_s": 2.151,
+      "tokens": 2866,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Thank you! I really hope to capture the beautiful colors of the sunset in my next beach painting. Last summer, I went to the beach with my family, and we stayed until the sun set. The sky turned bright orange and pink, and the waves reflected those colors. I remember feeling so calm and happy, just watching the water and listening to the seagulls. I want to bring that feeling of peace and joy into my painting, so people can feel it too.",
+      "latency_s": 1.598,
+      "tokens": 181,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "That sounds beautiful! Capturing those bright colors and feelings of peace will make a wonderful painting. Do you have a special place in mind for your next beach trip?",
+      "latency_s": 1.735,
+      "tokens": 2880,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Yes, I do have a special place in mind! I want to go back to a beach I visited last summer called Long Beach. The sand is so soft, and the water is a beautiful blue. I remember sitting on the beach with my friends, watching the sunset. It felt so peaceful, and we even built a big sandcastle together! I want to capture that moment in my painting, especially the colors of the sky as the sun sets.",
+      "latency_s": 2.906,
+      "tokens": 173,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Long Beach sounds like a perfect spot for painting! Building a sandcastle with friends must have been so much fun. What was the most memorable part of that day at the beach?",
+      "latency_s": 1.58,
+      "tokens": 2862,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Yes, Long Beach was amazing! The most memorable part of that day was when my friends and I decided to have a sandcastle contest. We each built our own castles, and mine was the biggest! I decorated it with seashells and seaweed. When we finished, we took a lot of pictures and laughed together. It was so much fun to see everyone's creativity!",
+      "latency_s": 1.525,
+      "tokens": 161,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "It sounds like such a fun day with your friends! I love how you decorated your sandcastle with seashells and seaweed. Did you take any special pictures that you still look back on?",
+      "latency_s": 1.722,
+      "tokens": 2829,
+      "rhythm_strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Yes, we took a lot of pictures! One of my favorite moments was when we all posed in front of the sandcastle, making funny faces. I also have a close-up photo of the seashells we collected; some of them were really colorful. After building the castle, we had a picnic on the beach with sandwiches and fruit. It was such a beautiful day, and whenever I look at the pictures, I remember all the laughter and fun we had!",
+      "latency_s": 1.851,
+      "tokens": 183,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "That sounds like such a joyful day! I can imagine the fun in making those funny faces in the photos. What kind of sandwiches did you have for your picnic?",
+      "latency_s": 1.429,
+      "tokens": 2844,
+      "rhythm_strategy": "summarize"
+    }
+  ]
+}

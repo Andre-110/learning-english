@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-31T04:03:16.858148",
+    "level": "B1",
+    "turns": 15,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "travel",
+        "movies",
+        "reading"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 1.489,
+    "user_avg_latency": 3.406,
+    "hot_search_avg_latency": 5.935,
+    "hot_content_events": 2
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "movies",
+      "headline": "Netflix has a new romantic comedy!",
+      "search_time": 5.95
+    },
+    {
+      "turn": 3,
+      "type": "async_search",
+      "topic": "travel",
+      "headline": "Luxury cruises in Japan's rivers!",
+      "search_time": 5.92
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just heard Netflix has a new romantic comedy called 'People We Meet on Vacation.' It’s about best friends traveling together. Fancy watching it together sometime?",
+      "latency_s": 3.761,
+      "has_hot_content": true,
+      "hot_topic": "movies"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Oh, hi! Yes, I heard about that movie too! It sounds really fun. I like romantic comedies. They make me feel good. \n\nUh, watching it together sounds nice! But... um, when do you think we can do that? I have some homework and, you know, other things to do. \n\nBut I really want to see it! Do you like traveling? I think traveling makes good stories for movies.",
+      "latency_s": 8.412,
+      "word_count": 68
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Romantic comedies are the best mood boosters! I totally love traveling; it's like opening a book full of adventures. Do you have a favorite travel memory or a place you dream about visiting?",
+      "latency_s": 1.341,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Oh, yes! I have a few travel memories. One time, I went to the beach with my family. It was sunny, and we built sandcastles. I remember we ate ice cream every day! It was so nice. \n\nI also dream about visiting Japan. I think it’s very interesting with the culture and food. I want to see the cherry blossoms in spring; I heard they are beautiful. What about you? Do you have a favorite place?",
+      "latency_s": 2.28,
+      "word_count": 76
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That beach trip sounds amazing, especially with the daily ice cream treat! Japan is on my bucket list too; the cherry blossoms must be magical. I love the idea of exploring Italy—imagine wandering through Rome and tasting authentic pasta! What's your favorite ice cream flavor from those beach days?",
+      "latency_s": 1.272,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Oh, thank you! Yes, the beach was so nice, and the ice cream was... um, very delicious! My favorite flavor is chocolate. I remember eating it every day! It was hot, and chocolate ice cream helped cool down. \n\nJapan sounds beautiful; I want to see the cherry blossoms too! I heard they are very pretty. And Italy, yes, I want to eat real pasta! I think... I like the idea of tasting different foods in every country. What about you? Do you have a favorite food from your travels?",
+      "latency_s": 2.09,
+      "word_count": 89
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "My favorite ice cream flavor is chocolate! What's yours? Speaking of beaches, do you have a dream destination you'd love to visit next?",
+      "latency_s": 3.445,
+      "has_hot_content": true,
+      "hot_topic": "travel"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Oh, I like chocolate ice cream too! But my favorite flavor is... um, maybe strawberry? It's sweet and fresh! \n\nFor a dream destination, I think I would love to visit... hmm, maybe Hawaii? I see many pictures of beautiful beaches and, um, volcanoes. And I want to try surfing, but I never did it before! What about you? Do you have a favorite travel place?",
+      "latency_s": 2.306,
+      "word_count": 65
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Strawberry ice cream is a classic choice! Hawaii sounds incredible, especially with the chance to catch some waves. I've always been curious about exploring Thailand, with its vibrant street markets and stunning islands. Have you ever tried any adventurous activities on your trips?",
+      "latency_s": 1.331,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Oh, Thailand sounds amazing! I want to go there too. I love street markets, they have so much food and... um, colors! \n\nAbout adventurous activities, yes, I have tried some. One time, I went to a zip line in the forest. It was very exciting but also a little scary, because I was high up! I also went snorkeling once, and I saw many fish. They were so colorful, like… um, a rainbow! \n\nWhat kind of activities you like to do when you travel?",
+      "latency_s": 2.366,
+      "word_count": 84
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Zip lining through the forest sounds thrilling! I enjoy hiking when I travel, exploring new landscapes and finding hidden gems. Once, I hiked up to a breathtaking waterfall in Costa Rica. What's the most memorable thing you've seen on your adventures?",
+      "latency_s": 1.445,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Oh, that sounds so beautiful! A waterfall in Costa Rica must be amazing. Um, let me think... I remember when I went to a big park in my city. There was a really nice lake with ducks and flowers. I took many photos, and it was very relaxing. Also, once I saw a street artist making a huge painting. It was so colorful and, um, I just watched for a long time. I think art makes travel special, yes? What about you? Have you seen any art on your hikes?",
+      "latency_s": 6.74,
+      "word_count": 90
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Street artists can really add magic to a place! On hikes, I sometimes come across rock cairns or sculptures made from natural materials, and they always surprise me. Have you ever tried creating some art yourself while traveling or at home?",
+      "latency_s": 1.523,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think art is very interesting! I, uh, haven’t really made art while traveling, but I like to draw at home sometimes. I don’t think I’m very good, but it’s fun. I usually draw nature, like trees or flowers. \n\nI remember one time when I was at the beach, I made a sandcastle! It was not very big, but my friends helped me, and we made it together. It was really fun! I think street artists are amazing because they can make beautiful things with just spray paint or, um, other materials. Have you ever tried making art like them?",
+      "latency_s": 2.836,
+      "word_count": 101
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Drawing nature sounds relaxing, and making a sandcastle with friends must have been a blast! I've tried my hand at street art once, but it's harder than it looks! What's your favorite thing about drawing trees and flowers?",
+      "latency_s": 1.361,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Oh, um, I really like drawing trees because they are very, um, different shapes and sizes. Sometimes, I like to, uh, pay attention to the leaves, like how they change color in the seasons, you know? And flowers are nice too! They have so many colors and, um, details. I think it's fun to try to capture that. But, um, I get a bit nervous about making it perfect, so I just, uh, focus on enjoying the process. What about you? Do you have a favorite thing when you draw?",
+      "latency_s": 2.203,
+      "word_count": 90
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Capturing the changing colors of leaves sounds lovely! I enjoy sketching animals; they have such unique personalities. It's relaxing to focus on the process rather than perfection. Do you have a favorite season for drawing, with all its colors and vibes?",
+      "latency_s": 1.356,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I think my favorite season for drawing is, uh, autumn. The colors are, um, really beautiful, like orange, red, and yellow. I like how the leaves, um, fall down and cover the ground. It gives a nice, um, atmosphere. \n\nIn spring, it's nice too because of the flowers, but, um, autumn feels more, um, cozy for me. I sometimes draw, uh, the trees with their colorful leaves and, um, it makes me feel, uh, calm. What about you? Do you have a favorite season for sketching?",
+      "latency_s": 2.394,
+      "word_count": 87
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Autumn's cozy vibe is so inspiring! I love spring for sketching because everything feels fresh and alive with new colors. Have you ever tried drawing outside when the leaves are falling? I bet it adds to the cozy feeling!",
+      "latency_s": 1.453,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, yes, I try to draw outside in autumn sometimes. It’s, uh, really nice to feel the fresh air and, um, see the leaves falling. I think it makes the drawing more special. But I, um, sometimes I feel a bit cold, so I wear a warm jacket. Do you, uh, have a favorite place to draw in spring?",
+      "latency_s": 2.919,
+      "word_count": 59
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds so refreshing! In spring, I love finding a quiet spot in a park, especially near blossoming trees. It’s great for people-watching too! Have you ever sketched people or animals in your drawings?",
+      "latency_s": 1.275,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, yes, I, uh, sometimes sketch people, but it's, um, a bit difficult for me. I like to, uh, draw animals more because they, um, don’t move as much, you know? I can, um, take my time to capture their, um, features. \n\nBut sketching people is, um, interesting! I try to, uh, draw them when they're sitting or, um, talking with friends. It’s, uh, fun to see their expressions. Have you, um, drawn many people in your sketches?",
+      "latency_s": 4.089,
+      "word_count": 78
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "It's great that you enjoy capturing expressions! I find sketching people fascinating, especially when they’re deep in conversation—it’s like telling a story through their gestures. Have you ever had a funny or memorable moment while drawing outside?",
+      "latency_s": 1.11,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, yes, I think once I was drawing a man who was, uh, talking with his dog. The dog was, um, doing funny things, like, uh, chasing its tail and, um, jumping around. I, uh, tried to capture that moment, but it was, uh, hard because the dog kept moving! \n\nI, um, remember laughing a little because the man was, uh, so serious while his dog was, um, so silly. It made me feel, uh, happy to see that, you know? Have you ever drawn something funny like that?",
+      "latency_s": 2.919,
+      "word_count": 89
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "That sounds like such a fun scene to sketch! Animals can be real comedians sometimes. I once tried drawing a squirrel that was stealing snacks from a picnic—it was hilarious! Do you have a favorite animal you like to draw?",
+      "latency_s": 1.478,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, yes, I really like to draw, um, cats. They are, uh, very interesting animals because they, like, have many expressions and, um, positions. Sometimes they are, uh, sleeping, and sometimes they are, you know, playing with, uh, small things. I think it's, um, fun to capture their, um, personalities. Do you like to draw cats, too?",
+      "latency_s": 3.774,
+      "word_count": 57
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "Cats are definitely fun to draw with all their quirky personalities! I love their curiosity and how they can turn anything into a toy. Have you ever had a cat do something unexpected while you were drawing it?",
+      "latency_s": 1.218,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, yes! One time, I was drawing my friend's cat, and it, uh, suddenly jumped on the table. It knocked over my pencils, and, um, I was surprised! The cat started playing with the pencils like they were toys. It was, um, very funny and also a bit, uh, difficult to draw because it was moving so much. I, uh, tried to capture the moment, but it was, um, challenging. Cats are, uh, such playful animals! Do you have a cat?",
+      "latency_s": 2.641,
+      "word_count": 81
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "That sounds like a hilarious moment! Cats are full of surprises, aren't they? I don't have a cat, but I love visiting friends with cats and watching their antics. What's the funniest thing you've seen a cat do?",
+      "latency_s": 1.484,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, yes! I think one of the funniest things I saw was when, uh, a cat was chasing its own tail. It was, like, spinning in circles and, um, then it just fell over! It looked so confused, like, \"What just happened?\" I was laughing a lot! \n\nAlso, my friend's cat, um, likes to jump into boxes. Even if the box is small, the cat will try to fit in. It's, like, so funny because it doesn't always fit. Have you seen something like that?",
+      "latency_s": 3.126,
+      "word_count": 85
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Cats squeezing into tiny boxes is like watching a live comedy show! It's amazing how determined they are. Have you ever been inspired by these funny moments to create a drawing or sketch that captures their antics?",
+      "latency_s": 1.251,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

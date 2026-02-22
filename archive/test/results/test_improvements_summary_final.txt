@@ -1,0 +1,69 @@
+================================================================================
+FunASR 语音对话测试 - 精简报告
+================================================================================
+
+📋 测试配置
+--------------------------------------------------------------------------------
+对话ID: 7208e3bb-6133-42e2-b8c3-d7208ed4b208
+
+================================================================================
+📝 对话详情
+================================================================================
+
+第 1 轮对话
+📋 测试场景: 上下文对话连贯性
+--------------------------------------------------------------------------------
+📤 音频文件: (文本输入)
+📝 用户输入（转录）: I usually wake up at 7 AM. I brush my teeth and eat breakfast.
+📊 评分: 45.5/100
+🎯 CEFR等级: A2
+💪 强项: 表达流畅, 语言准确性
+⚠️  弱项: 交互深度, 词汇丰富度
+❓ 系统输出（下一题）: Thank you for sharing your morning routine! After breakfast, what do you usually like to do in your free time or on weekends? For example, do you have...
+
+第 2 轮对话
+📋 测试场景: 上下文对话连贯性
+--------------------------------------------------------------------------------
+📤 音频文件: (文本输入)
+📝 用户输入（转录）: Yes, I like healthy food. I eat fruits and vegetables every day.
+📊 评分: 54.25/100
+🎯 CEFR等级: B1
+💪 强项: 内容相关性, 语言准确性
+⚠️  弱项: 交互深度, 词汇丰富度
+❓ 系统输出（下一题）: Since you enjoy eating healthy food like fruits and vegetables, I’m curious—how do you usually stay healthy in your daily life? For example, do you li...
+
+第 3 轮对话
+📋 测试场景: 完整流程测试
+--------------------------------------------------------------------------------
+📤 音频文件: (文本输入)
+📝 用户输入（转录）: I think exercise is important. I go jogging three times a week.
+📊 评分: 63.5/100
+🎯 CEFR等级: B1
+💪 强项: 语言准确性, 表达流利度
+⚠️  弱项: 交互深度, 词汇丰富度
+❓ 系统输出（下一题）: That’s great that you go jogging three times a week to stay healthy! Besides taking care of your health, do you also think about taking care of the en...
+
+第 1 轮对话
+📋 测试场景: 完整流程测试
+--------------------------------------------------------------------------------
+📤 音频文件: test_simple.mp3
+📝 用户输入（转录）: i am a student i like reading books
+📊 评分: 27.75/100
+🎯 CEFR等级: A1
+💪 强项: 基本语法正确
+⚠️  弱项: 词汇有限, 表达深度不足, 句式简单
+❓ 系统输出（下一题）: That's great! You said you are a student and you like reading books. I’m curious, what kind of books...
+
+第 2 轮对话
+--------------------------------------------------------------------------------
+📤 音频文件: test_medium.mp3
+📝 用户输入（转录）: i am a student i like reading books very much reading helps me learn new words and improve my english skills i read for about 30 minutes every day
+📊 评分: 36.75/100
+🎯 CEFR等级: A2
+💪 强项: 内容相关性, 表达流利度
+⚠️  弱项: 交互深度, 词汇丰富度, 语言准确性
+❓ 系统输出（下一题）: You mentioned that reading helps you improve your English skills. That’s wonderful! Besides reading,...
+
+================================================================================
+报告生成完成
+================================================================================

@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T03:50:17.050797",
+    "level": "A1",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "sports",
+        "movies",
+        "music"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 2.14,
+    "user_avg_latency": 2.535,
+    "hot_search_avg_latency": 7.305,
+    "hot_content_events": 2
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "music",
+      "headline": "Thundercat has a new song!",
+      "search_time": 8.08
+    },
+    {
+      "turn": 3,
+      "type": "async_search",
+      "topic": "music",
+      "headline": "Hilary Duff is back with music!",
+      "search_time": 6.53
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I heard Thundercat has a new song with Lil Yachty about love and tech. Do you like his music?",
+      "latency_s": 3.663,
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I... I not know Thundercat. But I like, um, music with good beat. Love and tech, mmm, sound interesting! Lil Yachty, I know him! He have, uh, fun songs. You like their song? What it about?",
+      "latency_s": 4.534,
+      "word_count": 37
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I think you'll like Thundercat's style if you enjoy music with a good beat! Their song with Lil Yachty is about how love and technology mix in our lives. It's got a fun vibe, and the lyrics are quite interesting. What kind of beats do you enjoy the most in music?",
+      "latency_s": 1.787,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I like, uh, beats that are happy and, um, make me want to dance. I like, hmm, pop music and sometimes hip-hop. The bass is, uh, very good! I not like slow music, um, too boring for me. Do you like happy beats too?",
+      "latency_s": 1.878,
+      "word_count": 45
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, I love happy beats too! They always lift my mood and make me want to move. Pop and hip-hop have such great energy. Do you have a favorite song or artist that really gets you dancing?",
+      "latency_s": 1.752,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I... I like, uh, Dua Lipa. Her song, um, \"Don't Start Now\" is very good! It make me want to dance a lot. I also like, um, Ed Sheeran, he has some happy songs too. But, um, I not remember all names. I just feel good when I hear them. What about you? What is your favorite song?",
+      "latency_s": 1.876,
+      "word_count": 59
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Dua Lipa's \"Don't Start Now\" is great! Her music is so fun. Do you have any other favorite pop singers or songs?",
+      "latency_s": 4.015,
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I, uh, like, um, Ariana Grande. Her song, um, \"Thank U, Next\" is very good too! I like her voice, um, it's very nice. And, uh, I, um, also like Ed Sheeran, um, \"Shape of You\" is, um, very popular, yes? It make me feel happy. Do you, um, like these singers?",
+      "latency_s": 1.94,
+      "word_count": 53
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I really enjoy both Ariana Grande and Ed Sheeran too! Their music always brings a smile. \"Thank U, Next\" and \"Shape of You\" are such catchy songs. What do you like most about Ariana Grande's music?",
+      "latency_s": 1.621,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I... I like Ariana Grande's music because, um, her voice is very nice. And, uh, her songs make me feel happy. I like the beat, um, it makes me want to sing. I also like, um, her lyrics. They are, um, powerful? I think? Yes! And, um, I like when she, uh, do the high notes. It's very impressive! Do you like her high notes?",
+      "latency_s": 2.447,
+      "word_count": 66
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Her high notes are amazing! They really show off her incredible talent. I love how her music can be both powerful and fun. Is there a song where you think her high notes really shine?",
+      "latency_s": 1.526,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

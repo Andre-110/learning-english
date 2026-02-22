@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T16:17:56.228687",
+    "level": "C1",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "C1",
+      "interests": [
+        "cooking",
+        "music",
+        "technology"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.834,
+    "user_avg_latency": 2.15,
+    "strategies": {
+      "continue": 5
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! Nice to meet you! 😊 What’s been the most exciting dish you’ve cooked recently, or is there a song that’s been stuck in your head? (Just speak naturally - let's have a real conversation!)",
+      "latency_s": 2.504,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Hello! Nice to meet you too! 😊 Hmm, let me think... Recently, I cooked a dish called risotto. It's a bit complicated, but I really enjoyed it. I used mushrooms and a bit of white wine, which made it very flavorful. \n\nAs for a song, yes! There's a song by Adele that's been in my head lately. I think it's called \"Someone Like You.\" It's so emotional, and I love her voice. \n\nWhat about you? Have you cooked anything interesting or have a favorite song right now?",
+      "latency_s": 1.973,
+      "word_count": 87,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Wow, risotto sounds delicious! I love the richness that mushrooms and white wine can bring to a dish. I tried making a seafood risotto once, and it was a bit of a challenge, but so rewarding! \n\nAdele's voice is indeed captivating. I’ve been listening to \"Rolling in the Deep\" lately. What do you enjoy most about cooking?",
+      "latency_s": 2.664,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Oh, seafood risotto sounds amazing! I can imagine it must be quite tricky with the timing and everything. I think what I enjoy most about cooking is the creativity it allows. You can, um, experiment with different flavors and ingredients, and it feels like an art, in a way. \n\nBut sometimes, I feel a bit overwhelmed, especially when there are many steps involved. Like, with risotto, you have to stir constantly, right? It’s a bit, um, stressful but also rewarding when you see the final dish come together. \n\nAs for Adele, I love her voice too! \"Rolling in the Deep\" has such a powerful vibe. I enjoy listening to music while cooking; it makes the process feel more enjoyable.",
+      "latency_s": 2.594,
+      "word_count": 119,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Absolutely! Cooking really is like an art form. I totally get that feeling of being overwhelmed, especially with dishes that require a lot of attention. The constant stirring can be a workout! 😅 \n\nListening to music while cooking creates such a nice atmosphere. Do you have a specific playlist, or do you just play whatever feels right at the moment?",
+      "latency_s": 1.562,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Yes, I completely agree! Cooking does feel like an art. Hmm, I usually play music that... um, matches my mood in that moment. Sometimes, I prefer something upbeat, like jazz or... uh, pop music, because it makes me feel more energetic. Other times, I listen to classical music when I want to focus more. \n\nBut, to be honest, I often get distracted by the music! 😅 I can lose track of time while chopping vegetables or stirring the pot. Do you have a favorite genre or artist you like to listen to while cooking?",
+      "latency_s": 2.259,
+      "word_count": 94,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I totally understand! Getting lost in the music can be such a fun distraction. I enjoy listening to indie and acoustic music while I cook; it creates a nice, calming vibe for me. \n\nHave you ever tried cooking with a specific theme in mind, like a certain cuisine?",
+      "latency_s": 1.876,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Oh, yes! I think cooking with a theme can be very interesting. Sometimes I try to cook Italian food, like pasta or pizza, and I play Italian music in the background. It makes me feel like I'm in Italy! But, um, I haven't really experimented with other cuisines much yet. Maybe I should try cooking Thai or Mexican next time. I hear those flavors are very vibrant and exciting. Do you have a favorite cuisine you like to cook?",
+      "latency_s": 1.912,
+      "word_count": 79,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds delightful! Italian cuisine really does have a way of transporting you. I love cooking Mexican food; the bold flavors and spices are so invigorating! Tacos and enchiladas are favorites of mine. Have you ever tried making your own tortillas? It’s quite an experience!",
+      "latency_s": 1.482,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Oh, yes! Mexican food is so flavorful! I haven’t made my own tortillas yet, but I’ve seen videos online. It looks fun, but also a bit... um, complicated? I usually just buy them from the store. I love tacos as well! My favorite is, um, al pastor, with the pineapple and everything. Do you have a special recipe for your tortillas?",
+      "latency_s": 2.012,
+      "word_count": 61,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Making tortillas is definitely a bit of a process, but it’s worth it! I usually mix masa harina with water and a pinch of salt, then knead it until smooth. It’s satisfying to press them out and cook them on a hot skillet. Have you ever tried any special toppings for your tacos?",
+      "latency_s": 1.587,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

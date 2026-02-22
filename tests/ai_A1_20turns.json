@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T09:22:19.388303",
+    "level": "A1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "sports",
+        "cooking",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 1.203,
+    "user_avg_latency": 1.774,
+    "strategies": {
+      "continue": 1,
+      "summarize": 19
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hi! 😊 If you could travel anywhere this year, where would you go? (You can answer in simple words or even mix some Chinese - I'll help you!)",
+      "latency_s": 2.08
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Uh... I think... I want go Japan. 去日本。I like... sushi. Maybe see cherry blossom? Is good place, I think.",
+      "latency_s": 1.979,
+      "word_count": 19,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh wow, Japan sounds amazing! Cherry blossoms must be so beautiful. What makes sushi special for you? (For example, is there a memory or a favorite taste?)",
+      "latency_s": 1.16,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Uh... sushi... I like because... it’s fresh? And um... rice is soft, fish is good. My first time eat sushi, with my family. 我妈妈喜欢吃。I think... soy sauce is tasty. I don’t know, just... I feel happy eat sushi!",
+      "latency_s": 1.902,
+      "word_count": 38,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, that’s lovely! Eating sushi with your family sounds special. Can you tell me about that first time? (For example, where were you, what was the mood?)",
+      "latency_s": 0.88,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Ah, okay... first time... eat sushi is with my mama and baba. Uh, we go... restaurant. I think... Japanese restaurant? I feel... a little scared, because I never eat raw fish. Um... but my mama say, try, is good. So I eat... with soy sauce. The mood... hmm, happy, but I am nervous. After, I like, I think, '好吃!' Uh, very good.",
+      "latency_s": 1.382,
+      "word_count": 62,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I love that story! Trying something new can feel scary, but it’s great your mama helped you. What’s another food you tried for the first time and felt nervous? (For example, maybe a dish from another country?)",
+      "latency_s": 0.891,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um... another food... I think... pizza? Uh, first time is... maybe, uh...小学, primary school. I feel... a little scared, because... cheese, I don’t eat before. But after, pizza is...很好吃, very good! I like pizza now.",
+      "latency_s": 1.817,
+      "word_count": 35,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, I get that feeling! Trying cheese for the first time can be strange. What do you love most about pizza now? (For example, is it the toppings or the taste?)",
+      "latency_s": 1.031,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um... I think... I like pizza...嗯... cheese, 很好吃, very good. Also, tomato, uh, sauce. Taste is... sweet? And... sometimes have meat, like...嗯... ham. I like all, 很多东西 on pizza. Uh... is fun to eat!",
+      "latency_s": 1.342,
+      "word_count": 34,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I get it! Pizza really has so many flavors together. That mix of cheese, tomato, and ham sounds tasty. Can you remember a time when you ate pizza with friends or family? What was that moment like?",
+      "latency_s": 1.055,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Uh... yes, I remember, um... last year, I eat pizza with...朋友, friends. We go, uh, pizza shop, 很开心, very happy. We talk, and... eat pizza, big pizza. My friend like...吃很多, eat a lot. I eat...两片, two slice. It...taste good! We laugh, 很多, much laugh. I like that time.",
+      "latency_s": 1.262,
+      "word_count": 48,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That sounds so fun! Eating pizza and laughing with friends is the best. What made that day so special for you? (For example, was there a funny moment or something you remember?)",
+      "latency_s": 1.019,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um... special...因为, uh, my friend, 他很有趣, he... make joke, tell joke, uh... we all laugh, 很大声, very loud. And... I, uh, first time eat pizza with, uh, many friends. So... I feel happy. We take photo, also. Um... I like that day.",
+      "latency_s": 1.882,
+      "word_count": 42,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That sounds like such a happy memory! I love that you all laughed so much and took photos together. What is your favorite photo from that day? (For example, what are you doing or who is in it?)",
+      "latency_s": 1.189,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Uh... my favorite photo... is, um, me and my朋友, friend, we... hold pizza. I, uh, smile, my friend—he do funny face, uh... like, uh, big mouth, 很夸张, very funny. In photo, uh, pizza is very big, bigger than my头, head. I like this photo, 很好玩, um... very good.",
+      "latency_s": 1.94,
+      "word_count": 48,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Haha, that sounds so funny! Big pizza, big smiles, and your friend making silly faces—what a great memory. What do you like most about looking at that photo now? Does it make you laugh every time?",
+      "latency_s": 1.516,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Uh... yes, I laugh, every time, I see photo. My friend, he...做鬼脸, uh, make funny face, so I remember, uh, good time. I like... pizza too. We eat, talk, 很开心, um... happy, happy day. I like look photo, feel...happy again.",
+      "latency_s": 1.842,
+      "word_count": 40,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "I love how that photo brings back all the happy feelings for you! It’s cool how just looking at one picture can make you smile again. What other photos do you have that make you feel this way? (For example, maybe with family or from a trip?)",
+      "latency_s": 2.047,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Uh... I have, uh, photo with my妈妈, mom, and爸爸, dad. We... in公园, park, uh... picnic, and eat, uh, watermelon. My dad, he... wear hat, very funny, uh, color—红色, red. We all笑, laugh. I like this photo... because, um, family together, 很开心, very happy.",
+      "latency_s": 2.029,
+      "word_count": 43,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds so nice! I can picture your dad wearing that bright red hat—it must look funny. What do you remember most about that picnic? (For example, was there a special moment or something funny that happened?)",
+      "latency_s": 1.009,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Uh… um, I remember… we eat, uh, sandwich and水果… fruit, yeah. My爸爸, he… uh, try open juice, but… juice, uh, spill! Haha,妈妈 laugh, I laugh. My clothes, uh, all wet. Very funny, uh… but cold!",
+      "latency_s": 1.141,
+      "word_count": 35,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Haha, that sounds so funny! Getting all wet from juice—what a memory. How did you warm up after that? Did your mom help you change clothes, or did you just laugh it off?",
+      "latency_s": 1.052,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Uh…妈妈, she… uh, gave me, uh, new衣服… clothes, yes. I wet, so she… uh, help me change. And… I cold, little cold, but then… we laugh, and, uh, play again. It…很有趣, very funny.",
+      "latency_s": 2.193,
+      "word_count": 33,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "That sounds so sweet! I love how your mom helped you and then you all just kept playing. What games did you play together in the park? (For example, maybe tag or something else?)",
+      "latency_s": 0.823,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Uh… games… we play… um, hide and seek! I, uh, hide behind tree. My姐姐, she找… uh, look for me. Then… we also, um, play ball, like… throw ball, catch ball. Uh, I not good, the ball always fall, haha. It’s fun!",
+      "latency_s": 1.172,
+      "word_count": 41,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "That sounds like a good time! I always liked hiding behind trees too. Was there a time you almost got caught in hide and seek, but escaped? Tell me about that moment!",
+      "latency_s": 1.249,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Uh… yes! One time, I… I hide, um, behind big tree… and my姐姐, she… she come close, very close! I… I very scared, I think, uh, maybe she see me. But… she look other way! She not find me. I… I quiet, not move. Then… she go, I win! Uh… 很开心… happy, yes.",
+      "latency_s": 4.503,
+      "word_count": 53,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Oh wow, that sounds exciting! I can imagine how scary it feels when someone almost finds you. What do you like most about playing hide and seek?",
+      "latency_s": 2.933,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Uh… I think… um, I like, uh, when I… I hide and nobody can find me… 很有意思… uh, very fun! I… I feel, uh, like ninja! And, uh, sometimes… I laugh, but must not laugh, shh… quiet! I like… play with姐姐, with朋友… uh, friends. Everyone, um, run, and look, and… hide. Is good game!",
+      "latency_s": 1.587,
+      "word_count": 54,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Haha, feeling like a ninja is the best! It’s so hard not to laugh when you’re hiding, right? What’s the funniest thing that ever happened when you played hide and seek?",
+      "latency_s": 1.472,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Uh… funny…? I think… one time, my妹妹, she hide under桌子… table, yeah, but… but her脚… her foot, uh, outside! We all see! She say, \"No, you can't find me!\" Very funny, haha. I… I记得, remember, we all laugh, 很大声… uh, very loud!",
+      "latency_s": 1.219,
+      "word_count": 42,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Haha, that’s a great story! I can picture everyone laughing so loud. What do you remember most about playing games with your sisters? (For example, was there a time you all worked together or had a funny fight?)",
+      "latency_s": 0.926,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Uh… I remember… um, one time we… we play, uh, catch? My两个妹妹, two妹妹, they run fast, very fast! I, uh, fall down… but not痛, not hurt. We… all一起laugh, laugh very big! Sometimes we… fight a little, but… um, 很快, quickly say sorry. We happy again!",
+      "latency_s": 1.875,
+      "word_count": 45,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "That sounds so fun! I love how you all laugh together, even after someone falls or you fight a little. What makes playing with your sisters special for you? (For example, is there something you only do when you are with them?)",
+      "latency_s": 0.975,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um… special…? Uh, I think… with妹妹, I can… I can be… funny, uh, not shy! When爸爸妈妈, parents, in room, I not so…mm, loud. But with妹妹, I shout! Uh, we跳 on bed, and… and, uh, sing歌, sing song, but not good, hahaha. Only with妹妹, I do this. With朋友, I… I shy.",
+      "latency_s": 1.575,
+      "word_count": 50,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Oh, I love that! It’s so cool how you can be loud and silly with your sisters. What’s your favorite song to sing together? (It can be any song you remember!)",
+      "latency_s": 0.778,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Uh… song… I think… um, “两只老虎”… but, uh, in English? I don’t know, maybe “Two Tigers”？We sing, uh, Chinese, but…I try, “Two tigers, two tigers, run fast, run fast…” Uh, I forget… words in English, haha! But we laugh, 很开心, very happy!",
+      "latency_s": 1.358,
+      "word_count": 42,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "Haha, that’s so fun! Singing and laughing with your sisters sounds like a happy memory. What’s the funniest thing that happened when you sang together? (For example, did someone forget the words or make a silly sound?)",
+      "latency_s": 0.879,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Uh… one time, 妹妹… she sing “Two Tigers” and… uh… she say “one has no tail, one has no… ear!” Uh, but she笑, laugh, and say, “No, no, not ear, tail!” We all… um, laugh很多, so funny! Uh… sometimes I forget words too… and just la la la!",
+      "latency_s": 1.469,
+      "word_count": 48,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Haha, that story made me smile! I love how you all just laugh and sing, even when you forget the words. What do you feel when you think about these funny times with your sister?",
+      "latency_s": 1.178,
+      "strategy": "summarize"
+    }
+  ]
+}

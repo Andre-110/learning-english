@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaCoach - 流式语音对话</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>🎤 LinguaCoach</h1>
+            <p class="subtitle">智能英语口语对话测评系统</p>
+        </header>
+
+        <!-- 连接状态 -->
+        <div class="status-bar" id="statusBar">
+            <span class="status-indicator" id="statusIndicator"></span>
+            <span class="status-text" id="statusText">未连接</span>
+        </div>
+
+        <!-- 主内容区 -->
+        <div class="main-content">
+            <!-- 左侧：对话区域 -->
+            <div class="conversation-panel">
+                <div class="panel-header">
+                    <h2>当前对话</h2>
+                    <button class="btn btn-secondary" id="clearBtn">清空</button>
+                </div>
+                <div class="conversation-list" id="conversationList">
+                    <div class="empty-state">
+                        <p>对话将在这里显示</p>
+                    </div>
+                </div>
+                
+                <!-- 历史对话列表 -->
+                <div class="history-panel">
+                    <div class="history-header" id="historyHeader">
+                        <h3>📚 历史对话</h3>
+                        <span class="history-toggle" id="historyToggle">▼</span>
+                    </div>
+                    <div class="history-list" id="historyList" style="display: none;">
+                        <div class="empty-state">
+                            <p>暂无历史对话</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：控制面板 -->
+            <div class="control-panel">
+                <!-- 用户信息 -->
+                <div class="user-section">
+                    <!-- 登录/注册表单 -->
+                    <div id="authSection">
+                        <div class="auth-tabs">
+                            <button class="auth-tab active" id="loginTab">登录</button>
+                            <button class="auth-tab" id="registerTab">注册</button>
+                        </div>
+                        
+                        <!-- 登录表单 -->
+                        <div id="loginForm" class="auth-form">
+                            <label for="loginUsername">用户名或邮箱:</label>
+                            <input type="text" id="loginUsername" placeholder="输入用户名或邮箱">
+                            <label for="loginPassword">密码:</label>
+                            <input type="password" id="loginPassword" placeholder="输入密码">
+                            <button class="btn btn-primary" id="loginBtn" style="width: 100%;">登录</button>
+                        </div>
+                        
+                        <!-- 注册表单 -->
+                        <div id="registerForm" class="auth-form" style="display: none;">
+                            <label for="registerUsername">用户名:</label>
+                            <input type="text" id="registerUsername" placeholder="至少3个字符" minlength="3">
+                            <label for="registerEmail">邮箱 (可选):</label>
+                            <input type="email" id="registerEmail" placeholder="example@email.com">
+                            <label for="registerPassword">密码:</label>
+                            <input type="password" id="registerPassword" placeholder="至少6个字符" minlength="6">
+                            <label for="registerPasswordConfirm">确认密码:</label>
+                            <input type="password" id="registerPasswordConfirm" placeholder="再次输入密码">
+                            <button class="btn btn-primary" id="registerBtn" style="width: 100%;">注册</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 用户信息显示 -->
+                    <div id="userInfoSection" style="display: none;">
+                        <div class="user-info-display">
+                            <div class="user-info-header">
+                                <span class="user-icon">👤</span>
+                                <span id="currentUsername"></span>
+                                <button class="btn btn-link" id="logoutBtn">退出</button>
+                            </div>
+                            <div class="user-stats" id="userStats"></div>
+                        </div>
+                        <button class="btn btn-primary" id="startBtn" style="width: 100%; margin-top: 10px;">开始新对话</button>
+                    </div>
+                </div>
+
+                <!-- 处理模式选择 -->
+                <div class="mode-section" style="margin-bottom: 15px;">
+                    <label style="font-size: 12px; color: #6c757d; display: block; margin-bottom: 5px;">处理模式:</label>
+                    <select id="processingMode" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                        <option value="standard">标准模式 (STT→LLM→TTS)</option>
+                        <option value="gpt4o-audio">GPT-4o Audio (直接音频处理)</option>
+                    </select>
+                    <p class="help-text" style="font-size: 11px; color: #888; margin-top: 5px;">
+                        GPT-4o Audio模式可以直接处理语音，无需先转录，可能有更好的理解效果。
+                    </p>
+                </div>
+                
+                <!-- 录音控制 -->
+                <div class="recording-section">
+                    <button class="btn btn-record" id="recordBtn" disabled>
+                        <span class="record-icon">🎤</span>
+                        <span class="record-text">开始录音</span>
+                    </button>
+                    <div class="recording-status" id="recordingStatus"></div>
+                    <!-- 实时转录显示 -->
+                    <div class="realtime-transcription" id="realtimeTranscription" style="display: none;">
+                        <div class="transcription-label">实时转录:</div>
+                        <div class="transcription-text" id="realtimeTranscriptionText"></div>
+                    </div>
+                </div>
+
+                <!-- 用户画像 -->
+                <div class="profile-section">
+                    <h3>用户画像</h3>
+                    <p class="help-text" style="font-size: 12px; color: #6c757d; margin-bottom: 10px;">
+                        每次对话后自动更新，显示用户的综合分数、CEFR等级和对话轮数。
+                    </p>
+                    <div class="profile-content" id="profileContent">
+                        <p class="empty-text">暂无数据</p>
+                    </div>
+                </div>
+
+                <!-- 评估结果 -->
+                <div class="assessment-section">
+                    <h3>最新评估</h3>
+                    <p class="help-text" style="font-size: 12px; color: #6c757d; margin-bottom: 10px;">
+                        每次用户回答后自动更新，显示本次回答的评分、CEFR等级、强项和弱项。
+                    </p>
+                    <div class="assessment-content" id="assessmentContent">
+                        <p class="empty-text">暂无评估</p>
+                    </div>
+                </div>
+
+                <!-- 性能测试 -->
+                <div class="performance-section">
+                    <h3>性能测试</h3>
+                    <p class="help-text" style="font-size: 12px; color: #6c757d; margin-bottom: 10px;">
+                        测量语音对话各阶段的响应时间，包括录音、转录、评估、问题生成和TTS等环节的耗时。
+                    </p>
+                    <button class="btn btn-secondary" id="performanceTestBtn" style="width: 100%; margin-bottom: 10px;">
+                        🚀 开始性能测试
+                    </button>
+                    <div class="performance-content" id="performanceContent" style="display: none;">
+                        <div class="performance-metrics" id="performanceMetrics"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 音频播放器（隐藏） -->
+        <audio id="audioPlayer" autoplay></audio>
+    </div>
+
+    <script src="static/app.js"></script>
+</body>
+</html>
+

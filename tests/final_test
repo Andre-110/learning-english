@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T18:01:15.634205",
+    "level": "B1",
+    "turns": 12,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "music",
+        "reading",
+        "technology"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 1.896,
+    "user_avg_latency": 1.697,
+    "strategies": {
+      "continue": 12
+    },
+    "hot_content_events": 5
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "reading",
+      "headline": "UK's reading year in 2026!"
+    },
+    {
+      "turn": 2,
+      "type": "topic_detected",
+      "topic": "pride and prejudice",
+      "headline": "Olivia Colman's exciting role!"
+    },
+    {
+      "turn": 3,
+      "type": "topic_detected",
+      "topic": "olivia colman",
+      "headline": "The word 'set' has 430 meanings!"
+    },
+    {
+      "turn": 6,
+      "type": "topic_detected",
+      "topic": "language",
+      "headline": "Did you know 'Fleabag' began on stage?"
+    },
+    {
+      "turn": 10,
+      "type": "topic_detected",
+      "topic": "paris",
+      "headline": "Dogs and coffee together in Paris!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just read that 2026 is going to be the UK's National Year of Reading! Isn’t that exciting? Any books you’re planning to dive into?",
+      "latency_s": 2.486,
+      "has_hot_content": true,
+      "hot_topic": "reading"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes, that sounds exciting! I want to read some classic novels, like, maybe \"Pride and Prejudice\" or \"1984.\" I think they are important, and I have heard a lot about them. Reading them could be fun and, um, help my English too!",
+      "latency_s": 1.535,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Those are great choices! I think \"Pride and Prejudice\" has such interesting characters. Have you read any other classics before? And how do you feel about reading in English?",
+      "latency_s": 2.504,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I read \"The Great Gatsby\" last year. It was interesting but a bit difficult. Reading in English is fun, but sometimes I struggle with new words. I want to improve my vocabulary. Do you have any tips for that?",
+      "latency_s": 1.765,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I totally understand; some classics can be challenging! Oh, speaking of that, I just read that Olivia Colman is in a new adaptation of \"Pride and Prejudice.\" She's such a talented actress! What do you think about her playing a role in it?",
+      "latency_s": 1.463,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "pride and prejudice"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I think Olivia Colman is a great actress! I've seen her in other shows, and she is very talented. I believe she can bring a fresh feeling to \"Pride and Prejudice.\" It will be interesting to see her interpretation of the character.",
+      "latency_s": 1.66,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I agree! Olivia Colman has such a unique style. I loved her in \"The Crown.\" What other shows or movies have you seen her in? Do you have a favorite?",
+      "latency_s": 2.34,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I also saw Olivia Colman in \"Fleabag\" and \"The Favourite.\" I think she is really funny in \"Fleabag.\" It's a different style, but I like it. Um, it makes me laugh a lot! Do you have a favorite scene from \"The Crown\"?",
+      "latency_s": 2.053,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, \"Fleabag\" is such a great show! I love how it breaks the fourth wall. In \"The Crown,\" I really enjoyed the scenes where Queen Elizabeth navigates her relationships with her family. They’re so emotional and powerful! What do you think makes \"Fleabag\" so funny?",
+      "latency_s": 2.156,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I think \"Fleabag\" is funny because of the character's honesty. She talks directly to the audience, and it feels very real. Also, the situations are often awkward, which makes me laugh. I enjoy how she deals with her problems, even if it's messy!",
+      "latency_s": 1.581,
+      "word_count": 44,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "You're right! The honesty in \"Fleabag\" makes it so relatable. Oh, speaking of interesting words, I just read that 'set' has over 430 meanings! Isn’t that wild? What do you think makes a word versatile like that?",
+      "latency_s": 1.589,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "improving vocabulary"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, I think it's wild! A word like \"set\" can describe many things, like putting something down or a group of items. This versatility is interesting because it shows how language changes and adapts. I like learning new meanings, but it can be confusing too!",
+      "latency_s": 1.677,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Absolutely! Language is so fascinating. I love how a single word can create different images in our minds. It can be tricky at times, though! Do you have any favorite words or phrases that you find particularly interesting?",
+      "latency_s": 1.451,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I really like the word \"serendipity.\" It sounds nice and means finding something good by chance. I think it's interesting because life can surprise us. Also, \"wanderlust\" is cool; it makes me think of travel and adventure!",
+      "latency_s": 1.517,
+      "word_count": 38,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "\"Serendipity\" is such a beautiful word! It really captures those unexpected joys in life. And \"wanderlust\" is perfect for anyone who loves to explore! Have you had any serendipitous moments while traveling? ",
+      "latency_s": 1.595,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yes! I had a serendipitous moment when I got lost in Paris. I found a small café that had the best pastries. It was a surprise, and I felt really happy. It made my trip special!",
+      "latency_s": 1.627,
+      "word_count": 37,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Wow, that sounds like a lovely surprise! Finding a hidden gem like that in a city as beautiful as Paris must be amazing. Oh, speaking of surprises, did you know \"Fleabag\" started as a one-woman play? What do you think about its journey to becoming a TV show?",
+      "latency_s": 1.77,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "fleabag"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I think it’s really interesting how \"Fleabag\" changed from a play to a TV show. It’s amazing to see how one idea can grow. I really like the humor and the way it talks about life. It feels real and funny at the same time.",
+      "latency_s": 1.803,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "I totally agree! The way \"Fleabag\" blends humor with real-life struggles is so refreshing. Phoebe Waller-Bridge has such a unique voice. Do you have a favorite scene or moment from the show that really stood out to you?",
+      "latency_s": 1.97,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, yes! One moment I love is when Fleabag talks to the camera. It feels very personal, and I can relate to her thoughts. Also, the part where she just admits her mistakes is funny but sad. It shows her character very well, I think.",
+      "latency_s": 1.468,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "I love that too! Those moments really create a connection between her and the audience. It’s like she’s letting us into her world. Do you find yourself relating to her experiences in your own life?",
+      "latency_s": 2.684,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, yes! I can relate to her feelings about love and family. Sometimes, I feel lost too, just like Fleabag. It’s nice to see those struggles on screen. It makes me feel like I'm not alone in my problems.",
+      "latency_s": 1.658,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "I can understand that feeling; it’s tough sometimes. Oh, speaking of feelings, have you heard about a café in Paris where dogs can enjoy treats with their owners? It sounds like a fun way to relax! What do you think about that?",
+      "latency_s": 1.796,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "paris"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, that sounds really cute! I think it's nice for dogs to enjoy treats with their owners. It could be a fun way to spend time together. I love dogs, so I would like to go there. Do you like dogs?",
+      "latency_s": 2.021,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Oh, I definitely like dogs! They’re so playful and loving. I think having a dog can really brighten your day. Do you have a dog, or is there a breed you really like? 🐶",
+      "latency_s": 1.435,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

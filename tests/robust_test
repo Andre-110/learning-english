@@ -1,0 +1,279 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T18:11:26.006253",
+    "level": "B1",
+    "turns": 12,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "technology",
+        "music",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 1.681,
+    "user_avg_latency": 1.7,
+    "strategies": {
+      "continue": 12
+    },
+    "hot_content_events": 6
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "technology",
+      "headline": "Guess what? Apple's making a foldable iPhone!"
+    },
+    {
+      "turn": 2,
+      "type": "topic_detected",
+      "topic": "smartwatches",
+      "headline": "Smooth screens in foldable phones!"
+    },
+    {
+      "turn": 3,
+      "type": "topic_detected",
+      "topic": "smartwatches",
+      "headline": "New smartwatch by Motorola and Polar!"
+    },
+    {
+      "turn": 6,
+      "type": "topic_detected",
+      "topic": "batman",
+      "headline": "New LEGO Batman game combines all movie eras!"
+    },
+    {
+      "turn": 8,
+      "type": "topic_detected",
+      "topic": "lego batman",
+      "headline": "Elfman's magic touch in new movie!"
+    },
+    {
+      "turn": 12,
+      "type": "topic_detected",
+      "topic": "harry potter",
+      "headline": "Harry Potter stars reunite after 19 years!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just read that Apple plans to launch a foldable iPhone soon—pretty cool, right? Do you think you'd like to try a phone that folds?",
+      "latency_s": 2.263,
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I think a foldable iPhone is interesting! It would save space, and maybe it’s fun to use. But, I wonder if it is strong enough. I’m not sure if I would buy one, but I would like to try it first. What do you think?",
+      "latency_s": 1.787,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I agree! The idea of saving space is great. I also wonder about its durability. It would be nice to see how it feels in real life. If it’s sturdy enough, I might consider it! Have you had any experiences with other new tech that surprised you?",
+      "latency_s": 2.368,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I remember when I tried a smartwatch. It was cool because it tracked my steps and messages. But, I was surprised how quickly the battery died! I think new tech can be fun, but also has problems sometimes. What about you?",
+      "latency_s": 1.654,
+      "word_count": 42,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That sounds like a fun experience! I bet it made staying active easier. Oh, speaking of that, I just read that Apple's foldable iPhone will have a super smooth screen with no creases! Would you like to try a foldable phone like that?",
+      "latency_s": 2.148,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "foldable iphone"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I think a foldable phone with a smooth screen sounds amazing! It would be great to use. But, I wonder if it would break easily. I like the idea of having a bigger screen that folds. Uh, it could be really fun for watching videos too!",
+      "latency_s": 1.776,
+      "word_count": 47,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Absolutely! Watching videos on a bigger screen would be awesome. I love how technology is making entertainment more portable. Have you watched any good shows or movies recently that you'd enjoy on a bigger screen?",
+      "latency_s": 1.526,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes! I recently watched a movie called \"The Batman.\" It was so exciting with great action scenes. I think it would look amazing on a bigger screen. Also, the colors were very nice, and I liked the music a lot. Did you see it?",
+      "latency_s": 2.237,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I haven’t seen it yet, but I’ve heard great things! The action scenes sound intense. What did you think of the main actor's performance? Did he bring something new to the character?",
+      "latency_s": 1.437,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I think the main actor was really good! He brought a darker feeling to Batman, which I liked. His acting felt real and intense. It was different from other Batmans I have seen before. I think he made the character more interesting!",
+      "latency_s": 1.606,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That’s such a cool perspective! I love when an actor can bring a fresh take to a character. It really adds depth to the story. Did you have a favorite scene that showcased his performance?",
+      "latency_s": 1.969,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! My favorite scene was when Batman confronted the villain. It was very tense and showed his emotions well. I felt nervous but excited at the same time. The music was also really good there! It added to the whole feeling of the moment.",
+      "latency_s": 1.537,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That sounds like an incredible scene! I love when music enhances the emotions in a film. It can really pull you into the moment. Did you listen to the soundtrack after watching the movie?",
+      "latency_s": 1.343,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, yes! I listened to the soundtrack after the movie. It was really good and made me feel the emotions again. I think music is important for movies. It helps tell the story better, you know?",
+      "latency_s": 1.578,
+      "word_count": 36,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That’s awesome! Soundtracks can really deepen the experience. Oh, speaking of that, I just read about a new LEGO Batman game that combines all the movie eras! Imagine playing as LEGO Batman with all those characters. Does that sound fun to you?",
+      "latency_s": 1.794,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "the batman"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yes! That sounds fun! I think playing as LEGO Batman could be really exciting. I like the idea of having many characters. It would be cool to see how they work together in the game. I want to try it!",
+      "latency_s": 1.377,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That sounds like a blast! I love the idea of mixing different characters and seeing their unique abilities. Have you played any LEGO games before? They're usually so much fun with their humor and creativity!",
+      "latency_s": 1.577,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, yes! I played LEGO games before, like LEGO Harry Potter. They are really fun! I like the humor and how you can build things. It’s cool to explore different worlds. I want to try LEGO Batman next!",
+      "latency_s": 1.441,
+      "word_count": 38,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That’s great to hear! LEGO Harry Potter is such a fun adventure. I enjoy the creativity in those games too. Do you have a favorite character or moment from LEGO Harry Potter? ",
+      "latency_s": 1.568,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I think my favorite character is Hermione. She is really smart and helps everyone. I like the part when they go to the Yule Ball. It was funny and magical. The music and dance were great too! What about you?",
+      "latency_s": 2.009,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Hermione is such a fantastic choice! I love how clever she is. The Yule Ball scene is memorable for sure! I think my favorite character is Ron; he always brings some funny moments. Do you have a favorite scene from the movies?",
+      "latency_s": 1.388,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I really like the scene in the library when Hermione helps Harry with the spell book. It's funny and exciting! Also, the part when they fight the troll is cool because it shows their friendship. I think those moments are very memorable.",
+      "latency_s": 1.682,
+      "word_count": 43,
+      "strategy": "continue"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Those moments really highlight their friendship! I love how they all come together in tough situations. Speaking of exciting scenes, do you have a favorite moment from any other movies? Maybe something that really stuck with you?",
+      "latency_s": 1.419,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, I think my favorite moment is in \"The Lion King.\" When Simba returns home, it’s really powerful. He faces his fears and takes back his place. I feel inspired by that. It shows how important family and courage are.",
+      "latency_s": 1.713,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "That moment is so powerful! It really shows Simba’s growth. Oh, speaking of that, I just read that Rupert Grint and Afshan Azad recently met up and talked about their Yule Ball scene after 19 years! What do you think about movie friendships lasting so long?",
+      "latency_s": 1.63,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "yule ball"
+    }
+  ]
+}

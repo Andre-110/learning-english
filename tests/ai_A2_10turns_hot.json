@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T08:46:21.549001",
+    "model": "gpt-4o-mini",
+    "base_url": "https://api.tu-zi.com/v1",
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "movies",
+        "music",
+        "travel"
+      ],
+      "overall_score": 50
+    },
+    "total_turns": 10,
+    "design": "前5轮短答 → 6-12轮正常 → 13-20轮长答",
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency_s": 2.692,
+    "ai_min_latency_s": 2.064,
+    "ai_max_latency_s": 3.444,
+    "user_avg_latency_s": 1.193,
+    "ai_total_tokens": 21952,
+    "user_total_tokens": 1022,
+    "strategy_distribution": {
+      "lighten": 1,
+      "switch_topic": 4,
+      "summarize": 5
+    },
+    "hot_content_events": 3
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "music",
+      "headline": "Mariah Carey celebrates every day, not just birthdays!"
+    },
+    {
+      "turn": 5,
+      "type": "topic_detected",
+      "topic": "music",
+      "headline": "Taylor's new video is a hit!"
+    },
+    {
+      "turn": 8,
+      "type": "topic_detected",
+      "topic": "food",
+      "headline": "Tiramisu is dessert of the year!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just heard that Mariah Carey thinks every day is special, not just her birthday! Do you celebrate every day like that too?",
+      "latency_s": 1.086,
+      "tokens": 277,
+      "rhythm_strategy": "initial",
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Not really.",
+      "latency_s": 1.069,
+      "tokens": 108,
+      "rhythm_strategy": "lighten",
+      "consecutive_short": 1,
+      "response_length": "short"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Could you tell me a bit more about what you mean? I'm curious!",
+      "latency_s": 2.384,
+      "tokens": 1965,
+      "rhythm_strategy": "lighten",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Sure!",
+      "latency_s": 0.791,
+      "tokens": 93,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 2,
+      "response_length": "short"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Got it! What’s something fun you did recently?",
+      "latency_s": 2.439,
+      "tokens": 2038,
+      "rhythm_strategy": "switch_topic",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "I went to the park.",
+      "latency_s": 0.999,
+      "tokens": 93,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 3,
+      "response_length": "short"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I see! What did you enjoy most about your time at the park? Or would you rather talk about your favorite season?",
+      "latency_s": 3.131,
+      "tokens": 2097,
+      "rhythm_strategy": "switch_topic",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "I liked the flowers.",
+      "latency_s": 0.955,
+      "tokens": 106,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 4,
+      "response_length": "short"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Got it! Flowers are beautiful. Would you rather talk about your favorite type of flower or something else you enjoy, like music?",
+      "latency_s": 3.444,
+      "tokens": 2167,
+      "rhythm_strategy": "switch_topic",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Maybe music.",
+      "latency_s": 1.374,
+      "tokens": 105,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 5,
+      "response_length": "short"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Great! What kind of music do you like? Do you have a favorite song or artist?",
+      "latency_s": 2.602,
+      "tokens": 2129,
+      "rhythm_strategy": "switch_topic",
+      "has_hot_content": true,
+      "hot_topic": "music"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "I like pop music a lot! My favorite artist is Ed Sheeran because his songs are so beautiful and easy to sing along with.",
+      "latency_s": 1.06,
+      "tokens": 96,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Ed Sheeran has such a unique style! What's your favorite song of his? Do you remember a special moment when you listened to it?",
+      "latency_s": 3.106,
+      "tokens": 2241,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "I really like \"Shape of You\"! I remember listening to it while cooking dinner with my friends, and we all started singing along. It was so much fun!",
+      "latency_s": 1.399,
+      "tokens": 111,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That sounds like such a fun time! Cooking and singing with friends makes everything better. Do you often have friends over for dinner? What's your go-to dish to make?",
+      "latency_s": 3.044,
+      "tokens": 2315,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Yes, I love having friends over! My go-to dish is pasta because it's easy to make and everyone loves it.",
+      "latency_s": 1.012,
+      "tokens": 108,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Pasta is a great choice! What kind of pasta do you like to make? Do you have a favorite sauce?",
+      "latency_s": 2.58,
+      "tokens": 2290,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "food"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "I like to make spaghetti because it’s easy and fun! My favorite sauce is tomato sauce with lots of herbs.",
+      "latency_s": 1.747,
+      "tokens": 97,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Tomato sauce with herbs sounds delicious! Do you have a favorite herb you like to add? And do you ever try different pasta dishes?",
+      "latency_s": 2.123,
+      "tokens": 2358,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Yes, I really like basil! It adds a nice flavor to pasta. I enjoy trying different pasta dishes, especially with different sauces.",
+      "latency_s": 1.526,
+      "tokens": 105,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Basil really does add a great touch! What's the most unique pasta dish or sauce you've tried so far? I’d love to hear about it!",
+      "latency_s": 2.064,
+      "tokens": 2352,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

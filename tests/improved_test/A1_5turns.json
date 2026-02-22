@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T06:56:55.323759",
+    "level": "A1",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "reading",
+        "music",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 2.212,
+    "user_avg_latency": 3.067,
+    "hot_search_avg_latency": 6.525,
+    "hot_content_events": 2
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "reading",
+      "headline": "Did you know books are cool now?",
+      "search_time": 6.49
+    },
+    {
+      "turn": 2,
+      "type": "async_search",
+      "topic": null,
+      "headline": "Old cave art is cool!",
+      "search_time": 6.56
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I heard books are cool now because TikTok makes them popular. Do you like reading too?",
+      "latency_s": 3.721,
+      "has_hot_content": true,
+      "hot_topic": "reading"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, hi! Yes, I like reading. It is, um, good for learning. I read, uh, some books, but not many. I like, um, stories and, uh, sometimes comics. TikTok, yes, it show many books, and, um, I want to read them. What about you? Do you like reading?",
+      "latency_s": 2.637,
+      "word_count": 48
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Hey! I love reading too. There's something about getting lost in a good story that's just amazing. What kind of stories do you like the most? Any favorite comics or books from TikTok that you want to read?",
+      "latency_s": 1.726,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I like, uh, stories with, um, adventure and, uh, magic! They are fun! I not have many favorite, but I see some, um, comics on TikTok. I think, uh, one is about, um, a girl who, uh, go to different world? It looks very interesting! Do you, um, have favorite too?",
+      "latency_s": 3.848,
+      "word_count": 52
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Adventure and magic stories are so exciting! The comic about a girl going to a different world sounds fascinating. I really enjoy fantasy novels with epic quests and magical creatures. One of my favorites is about a young wizard discovering his powers. Do you have a favorite character from the comics or stories you've read?",
+      "latency_s": 2.254,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I... I like characters who are, um, brave and, uh, funny! I think, uh, maybe my favorite character is, um, a dragon. Yes, a dragon! He is, um, very cool and, uh, helps the hero. I not remember name, but he, um, very nice. \n\nI also like, uh, wizards because they have, um, magic. Magic is, um, interesting! Do you have, um, a favorite character?",
+      "latency_s": 2.562,
+      "word_count": 66
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, brave and funny characters are the best! They make stories exciting and fun. Do you have a favorite book or movie with those characters?",
+      "latency_s": 3.977,
+      "has_hot_content": true,
+      "hot_topic": "reading"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I, uh, like, um, the movie, uh, \"Harry Potter\"! Uh, Harry is, um, brave and, uh, funny, I think. And, um, Ron is also, um, funny! They have, um, adventures with magic and, uh, friends. I like the, um, magic school and, uh, spells! It is very, um, exciting. Do you, um, like Harry Potter too?",
+      "latency_s": 3.291,
+      "word_count": 57
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I love Harry Potter too! The magic school and spells are really fascinating. There's something so special about the friendships and adventures they have. What's your favorite scene or spell from the movies?",
+      "latency_s": 1.333,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, my favorite scene, uh, is when, um, they have, uh, the first Quidditch game. Uh, it's very exciting! Harry, um, he is flying, um, on the broom. \n\nAnd, uh, I like the spell, um, \"Expelliarmus.\" It's, um, funny, and it, uh, makes people drop, um, their wands! \n\nI think, uh, friends, they help Harry a lot, um, in the movie. Uh, yes!",
+      "latency_s": 2.995,
+      "word_count": 63
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Oh, the first Quidditch game is so thrilling! Watching Harry fly on his broom is really exciting. And \"Expelliarmus\" is such a clever spell! It's amazing how much his friends support him throughout the story. What's something about the magic school that you find really interesting?",
+      "latency_s": 1.771,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

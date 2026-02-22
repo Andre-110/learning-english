@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T08:18:49.534889",
+    "level": "A1",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "cooking",
+        "technology",
+        "movies"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 1.844,
+    "user_avg_latency": 10.136,
+    "hot_search_avg_latency": 7.363,
+    "hot_content_events": 1
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "technology",
+      "headline": "Have you seen robot puppies?",
+      "search_time": 7.36
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just heard about robot puppies and butlers. Isn't it awesome they can help us at home? Would you like a robot friend?",
+      "latency_s": 3.914,
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes! I think... uh, robot friend is very cool. I like puppies. They are, um, cute and fun. But, uh, I don’t know if I want a robot friend. Maybe it is good for help, but no real feeling, right? \n\nI like real dog more. They can, um, play and, uh, love me. But if robot puppy can do this, maybe it is okay? What do you think?",
+      "latency_s": 14.416,
+      "word_count": 69
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I totally get what you're saying! Real dogs have that special way of showing love and being playful. It’s hard to imagine a robot having those real feelings. But who knows, maybe one day they’ll make robot puppies that are super fun to play with! What do you love most about having a real dog?",
+      "latency_s": 2.154,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I think, uh, I love real dogs because they are very nice. They, um, wag tail and, uh, make me happy. When I come home, my dog is, uh, always excited, yes! I like to play ball with my dog. It is, um, fun and we, uh, run a lot. Robot puppies can not do this, I think. They no have real feeling, right? But, um, maybe one day they can be, uh, more like real dogs. That would be... interesting!",
+      "latency_s": 8.212,
+      "word_count": 82
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That sounds like such a joyful moment when you come home and your dog is so excited to see you! Playing ball and running around together must be a lot of fun. What's one of your favorite memories with your dog?",
+      "latency_s": 2.012,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, my favorite memory... um, is when I play ball with my dog. We go to park, yes! Um, my dog, he runs very fast and, uh, I throw ball. He bring back! Um, I feel happy when he, uh, looks at me with big eyes. And sometimes, um, he jumps and, uh, barks. It is so funny! I love it!",
+      "latency_s": 12.788,
+      "word_count": 61
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds like such a fun time at the park with your dog! It's wonderful how he looks at you with those big eyes. Dogs have such a special way of making us laugh and feel happy. What else do you enjoy doing with your dog?",
+      "latency_s": 1.719,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes! I like, uh, take my dog for walk. We walk, um, maybe in morning or evening. It is, um, good time! My dog, he, uh, sniff many things. He like to, um, smell grass and trees. Sometimes, um, he see other dogs and, uh, play with them. \n\nAlso, I like to, um, teach my dog tricks. He can, um, sit and, uh, shake paw. I, um, give him snack when he do good! It makes me happy. What do you, um, like to do with dogs?",
+      "latency_s": 10.734,
+      "word_count": 88
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Walking your dog sounds like such a peaceful and fun time, especially when he meets other dogs! Teaching him tricks must be so rewarding, too. I love playing fetch with dogs and seeing them run excitedly to get the ball. What's the most impressive trick your dog can do?",
+      "latency_s": 1.717,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, my dog, he can, uh, sit! Yes, he sit when I say. Very good! Um, also, he can, uh, shake paw. I say \"shake,\" and he, um, give me paw. Um, I try teach him more tricks, but it is, uh, little hard. He, um, sometimes sleepy! But when we play fetch, he run fast! I, uh, throw ball, and he go get. It is very fun! Um, I want him to, um, learn more tricks.",
+      "latency_s": 4.531,
+      "word_count": 77
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "It sounds like your dog is really smart with sitting and shaking paws! Teaching tricks can be a bit challenging, especially when they're sleepy. What's a new trick you'd like your dog to learn? Maybe something fun or useful?",
+      "latency_s": 1.619,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

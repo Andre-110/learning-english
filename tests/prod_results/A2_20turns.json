@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-30T04:03:49.146002",
+    "level": "A2",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "cooking",
+        "travel",
+        "reading"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 1.992,
+    "user_avg_latency": 3.491,
+    "hot_search_avg_latency": 5.373,
+    "hot_content_events": 1
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "travel",
+      "headline": "A couple fell in love on a lonely island!",
+      "search_time": 5.37
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just heard about a couple who fell in love on a lonely island in Yemen. Isn't that wild? Have you ever had a trip go wrong like that?",
+      "latency_s": 3.852,
+      "has_hot_content": true,
+      "hot_topic": "travel"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I, uh, never have a trip go wrong like that. But I remember a time, um, I go to, uh, the beach with my friends. We, uh, forget the sunscreen and, um, we get sunburn! Very, uh, painful! \n\nBut, uh, falling in love on a lonely island sound, um, very romantic. Do you think, uh, it's easy to fall in love there?",
+      "latency_s": 3.169,
+      "word_count": 63
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh wow, that sunburn story sounds painful! I can imagine it must have been tough without sunscreen. As for falling in love on a lonely island, I think the peaceful and beautiful surroundings might make it feel like a fairytale. What do you think would be special about falling in love in a place like that?",
+      "latency_s": 2.078,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, yes, I think it can be special, uh, because the place is quiet and, um, beautiful. Maybe, you can, uh, talk a lot and see stars at night. It feels like, um, just you and, uh, the person you love. \n\nBut, um, I think also it can be, uh, hard because if there is no food or, uh, water, it can be, um, difficult. So, it is a little bit, uh, risky too, right? But, um, it sounds like a movie or a story!",
+      "latency_s": 3.028,
+      "word_count": 85
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "It really does sound like a movie or a story! I love how you mentioned talking and seeing stars at night. That sounds so romantic. Do you have a favorite story or movie where love happens in a beautiful place like that?",
+      "latency_s": 1.368,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, yes! I like a movie called \"The Notebook.\" It is about, um, two people who, uh, fall in love in a, um, beautiful place. They go to the lake and, uh, it is very, very romantic! \n\nI also like, um, stories where people, you know, have special moments, like in the rain or, um, under the stars. It makes me feel happy and, um, sometimes a little sad too because, um, love can be hard. \n\nDo you have a favorite movie like that?",
+      "latency_s": 3.252,
+      "word_count": 84
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, \"The Notebook\" is such a classic! Those moments by the lake are really beautiful. I love how you mentioned special moments in the rain or under the stars—they really do make love stories magical! One of my favorites is \"Pride and Prejudice.\" The way Elizabeth and Mr. Darcy slowly fall in love is so captivating. What about those moments in the rain or under the stars speaks to you the most?",
+      "latency_s": 1.744,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes, I think, uh, moments in the rain are very, um, special. It is like, uh, everything is, um, romantic. When, uh, people kiss in the rain, it looks very, um, beautiful. Also, um, under the stars is, like, very calm and peaceful. I feel, um, happy when I see stars. It, uh, makes me think of, um, love and dreams. \n\nI, uh, like when stories show, um, those moments. It feels, um, real. Do you like, um, moments in the rain or under stars too?",
+      "latency_s": 3.241,
+      "word_count": 87
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I totally get what you mean about those moments in the rain and under the stars being so special! There's something magical about them, right? I really enjoy those scenes too. They make everything feel more alive and dreamy. Have you ever experienced a moment like that in real life, where the rain or the stars made it feel extra special?",
+      "latency_s": 1.895,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes! I, uh, remember one time, I go outside with my friends. It was raining, um, but we stay outside. We, uh, dance in the rain, and it was very fun! I feel, um, happy and free. \n\nBut, uh, I not see stars that night. It was, um, cloudy. I think stars are, uh, very beautiful. I like to, um, see them at night. Do you have, um, special moments like that?",
+      "latency_s": 3.798,
+      "word_count": 73
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Dancing in the rain sounds so fun and freeing! I can imagine how happy that must have made you feel. I've had special moments like that too. Once, I went camping with friends, and we stayed up late watching the stars. It was so peaceful and made me feel connected to everything around me. What about the stars do you find most beautiful?",
+      "latency_s": 2.018,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! I, uh, think stars are very beautiful. They, um, shine so bright, and there are many of them, like, um, little点点 (dots) in the sky. I like when, uh, they twinkle. It makes me feel, um, happy and, uh, small, like, in a big world. \n\nI remember one time, um, I look at the stars with my family. We lay on the grass and, um, count the stars. I think we count, uh, twenty or more! It was fun! \n\nBut, um, I don’t know many star names. What about you? What is your favorite star?",
+      "latency_s": 4.066,
+      "word_count": 97
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Oh, I love how you described the stars as little dots in the sky! Counting stars with your family sounds like such a wonderful memory. One of my favorite stars is Polaris, the North Star. It's special because it always points north, which people have used to find their way for centuries. Have you ever wished upon a star? I always find that idea so magical!",
+      "latency_s": 2.206,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, yes! I, uh, remember when I was small, I wish on a star, but I, um, don’t remember what I wish. It was, um, a long time ago. Sometimes I look at stars and I feel happy, uh, like I can, um, dream big. Polaris is, uh, special! I not know much about it, but it, um, helps people find way, right? I think that is very cool. Do you, uh, have a favorite star?",
+      "latency_s": 2.665,
+      "word_count": 76
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "It's great that you connect stars with dreaming big! They really do make the sky feel magical. Polaris is indeed very cool for guiding people. As for me, I like Sirius, the Dog Star. It's the brightest star in the night sky, and it always catches my eye. Have you ever spotted Sirius or any other bright stars in the sky?",
+      "latency_s": 1.97,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, yes! I, uh, think Sirius is very bright. I like, um, the name \"Dog Star.\" I, uh, haven’t seen Sirius, but I, um, see some bright stars. I, um, remember one star, very big and bright. Maybe it’s Sirius? I, um, want to learn more about stars. It’s, um, interesting! Do you, uh, see stars often?",
+      "latency_s": 2.065,
+      "word_count": 57
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Sirius really does have a cool name! It's great that you're interested in learning more about stars. I try to look at the stars whenever I can, especially on clear nights. It's amazing how they seem to tell stories. What's something you'd like to know about stars or space? Maybe there's a specific part that fascinates you!",
+      "latency_s": 1.854,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, yes! I, uh, like stars a lot. I want to know, um, why some stars are very bright and some are not bright. Is it, um, something about the size? Or, um, the distance? I think it's, uh, interesting how stars are far away but we can see them. And, um, I want to learn about black holes too! I, uh, heard they are very strange.",
+      "latency_s": 2.216,
+      "word_count": 67
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Oh, stars are fascinating, aren't they? The brightness of stars can depend on both their size and distance. Some stars are big and close to us, so they appear very bright. Others might be farther away or smaller. It's amazing how light can travel such long distances! And black holes are indeed very strange and mysterious. They have such strong gravity that even light can't escape them. What do you find most intriguing about black holes?",
+      "latency_s": 2.136,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, yes! I think, uh, black holes are very strange. They, um, pull everything in, right? Even light! I, uh, find it amazing but also a little scary. I want to know, um, how black holes form. Like, do stars just become black holes? It's, um, so interesting! What do you think?",
+      "latency_s": 2.222,
+      "word_count": 52
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Black holes really are fascinating and a bit mysterious, aren't they? It's true that they pull everything in, even light, which makes them so intriguing! As for how they form, it's usually when a massive star runs out of fuel and collapses under its own gravity. This collapse can lead to the formation of a black hole. It's amazing how something so powerful can come from a star, right? What do you find most exciting or mysterious about space?",
+      "latency_s": 2.067,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, yes! I think, uh, it is very interesting. I, um, like how black holes, they, um, change space. Like, everything is so different near them. I find it, uh, exciting that they can, um, pull light. It’s like, um, magic! \n\nAlso, I am curious about, uh, what happens inside a black hole. Do you think, um, people can ever see inside? I, uh, wonder if there is, um, another world or, um, something strange inside. Space is very, um, mysterious!",
+      "latency_s": 2.698,
+      "word_count": 81
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Wow, black holes really do seem like magic, don't they? The idea that they can pull in light and change the space around them is just so fascinating. As for seeing inside a black hole, it's a big mystery! Scientists think that once something is inside a black hole, we can't see it or know what happens. Some people imagine there could be another world or something strange inside, but it's all theories for now. What do you think might be inside a black hole?",
+      "latency_s": 1.988,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, I think inside black hole, maybe, um, there are... I don't know, maybe stars or some weird things. Like, maybe another world? I see in movies, it’s like a portal, um, to other places. It is very exciting! But also, um, very scary. I feel like it is, uh, too much for people to understand. What do you think?",
+      "latency_s": 4.226,
+      "word_count": 60
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "It's so cool how movies can make black holes seem like portals to other worlds, isn't it? The idea of finding something completely different inside is both exciting and a bit mind-boggling! I wonder what it would be like if we could actually explore inside one. Do you think you'd be brave enough to go on an adventure through a black hole if it were possible?",
+      "latency_s": 2.079,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, wow, um, adventure in black hole? That is... very scary! I think, uh, I am not brave enough. \n\nMaybe, um, if I go, I see many strange things, yes? But it is also... dark and maybe dangerous. I like idea of exploring, but, um, I prefer to stay on Earth. \n\nI think it is fun to think about, but I feel, um, nervous too! What do you think? Would you go inside black hole?",
+      "latency_s": 7.389,
+      "word_count": 75
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "I totally get why you'd feel nervous about the idea of exploring a black hole! It's exciting but also quite unknown and mysterious. If I had the chance, I think I'd be curious but also a bit scared like you. Maybe I'd prefer to explore space from a safe distance, like through a telescope or something. What about exploring other parts of space, like the moon or Mars? Does that sound interesting to you?",
+      "latency_s": 2.725,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, yes, uh, exploring moon or Mars sounds interesting! I think moon is, um, a bit close to Earth, yes? We can see it at night. Mars is, um, red planet, right? I like idea of, um, walking on the moon. \n\nBut, uh, I don't know if I want to go there. Maybe too far. Space, um, so big and, um, maybe dangerous. I like looking at pictures of Mars. They are very... um, colorful and strange! \n\nDo you think people will go to Mars one day?",
+      "latency_s": 8.891,
+      "word_count": 87
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "The idea of exploring the moon or Mars is really fascinating, isn't it? The moon feels so close, yet still so mysterious. And yes, Mars is the red planet! People are working on ways to visit Mars in the future, which is really exciting. It might take some time, but the idea of actually walking on another planet is amazing. What do you find most interesting about Mars or the moon?",
+      "latency_s": 1.767,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, yes! I think, uh, moon is very special. It is, um, bright in the night sky. I like to see it. Mars, hmm, it is red and, um, very different from Earth. I think maybe, um, Mars has, uh, big mountains and, um, maybe water. \n\nI find it interesting, um, to think about, uh, what life can live there. Do you think there are, um, aliens on Mars? That is, um, very exciting idea! I want to learn more about, uh, Mars and moon.",
+      "latency_s": 2.716,
+      "word_count": 85
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "The moon really is special, isn't it? It's like a bright friend in the night sky! As for Mars, it's fascinating to think about the possibility of life there. The idea of aliens on Mars is exciting! Scientists are still searching for signs of life. It would be amazing if we discovered something. What do you imagine aliens on Mars might be like?",
+      "latency_s": 1.865,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um, yes! I think, uh, aliens on Mars, maybe they are, um, green? Or maybe they are, uh, small and have big eyes? I, uh, imagine they can, um, fly or, or they can talk with, um, mind. It is, um, exciting to think about it! \n\nBut, uh, I am not sure if, um, they are friendly or not. Maybe they can, uh, help us with, um, science? I hope they are nice. What do you think, um, aliens are like?",
+      "latency_s": 2.317,
+      "word_count": 81
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Imagining aliens is so much fun! I love your idea of them being green or having big eyes. The thought of them communicating with their minds is cool too! If they were real, I'd like to think they'd be friendly and curious, just like us. Maybe they'd be excited to learn about us and share their knowledge. What would you want to ask them if you met an alien?",
+      "latency_s": 2.139,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Um, I think I want to ask, um, many things! Maybe, uh, where they come from? Like, um, their planet. And, uh, what they eat? Is it, um, different from us? I want to know, um, if they have, uh, cool technology. \n\nAlso, I want to ask about, um, their animals. Do they have pets like us? And, um, can they see our world from their planet? I think that, um, will be very interesting!",
+      "latency_s": 2.973,
+      "word_count": 75
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "Wow, those are some great questions you'd ask an alien! I'm really curious about their animals too. Imagine if they had creatures that could fly or glow in the dark! What kind of alien animal do you think would be the coolest to see?",
+      "latency_s": 1.947,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um, I think, uh, maybe a flying animal, yes? Like, um, a big bird, but with, uh, colorful feathers? Or maybe something like, um, a fish but in the sky? That would be, uh, cool! \n\nAnd, um, if it glows in the dark, it would be very beautiful! I think I want to see, um, a creature that, um, can change color, like a chameleon. It can, um, hide from other aliens. What do you think?",
+      "latency_s": 2.547,
+      "word_count": 76
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Wow, a flying creature with colorful feathers or like a sky fish sounds amazing! The idea of it glowing in the dark and changing colors like a chameleon is so magical. I can imagine it lighting up the sky at night! What would you name such a fantastic creature?",
+      "latency_s": 1.659,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Um, I think I would name it, um, \"Sky Light Bird?\" Maybe? Or, um, \"Color Change Fish?\" I like the idea of it, um, glowing and changing colors. \n\nIt would be, uh, very pretty! Um, I imagine it flying in the night sky, and all the people look up and say, \"Wow!\" It would make them happy, yes? \n\nUm, maybe it eats, uh, stars or something special? What do you think?",
+      "latency_s": 2.468,
+      "word_count": 71
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "Wow, \"Sky Light Bird\" and \"Color Change Fish\" are such creative names! I love the idea of it glowing and changing colors in the night sky. Imagining people looking up and feeling happy is a beautiful thought. Eating stars sounds so magical! Maybe it could also eat things like stardust or comets. What kind of adventures do you think this creature might go on in the sky?",
+      "latency_s": 1.967,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Um, I think, uh, this creature, maybe it, uh, flies to different places in the sky? Like, um, it can visit, uh, the moon and, um, dance with stars? Or, um, it can find, uh, comets and, um, play with them? I like the idea of, um, it making friends with, uh, other flying animals, too! \n\nAnd maybe, um, it helps people, um, feel happy when they look up at night? They can see, um, the Sky Light Bird and, uh, smile. It makes, um, the sky very beautiful. I think the adventures, um, could be very fun and, um, magical! What do",
+      "latency_s": 3.872,
+      "word_count": 103
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "Oh wow, the idea of the Sky Light Bird visiting the moon and dancing with stars is so magical! I love how it could make friends with comets and other flying animals. It must be such a beautiful sight, bringing happiness to people who look up at night. What do you think its favorite place to visit in the sky would be?",
+      "latency_s": 2.372,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

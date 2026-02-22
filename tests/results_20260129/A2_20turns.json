@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T10:16:13.112511",
+    "level": "A2",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "technology",
+        "cooking",
+        "movies"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "real_prompts_direct_api"
+  },
+  "summary": {
+    "ai_avg_latency": 2.826,
+    "user_avg_latency": 2.919,
+    "strategies": {
+      "summarize": 20
+    }
+  },
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! 😊 What's your favorite dish to cook or eat? (You can answer in simple words or even mix some Chinese - I'll help you!)",
+      "latency_s": 2.479
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, hello! 😊 I like to eat 米饭 (mǐfàn) and 炒菜 (chǎocài), yes, stir-fried vegetables. I think it’s very tasty! \n\nTo cook, I like... um, cook pasta. Easy and quick! I put some sauce and maybe chicken. \n\nWhat about you? What is your favorite dish?",
+      "latency_s": 2.408,
+      "word_count": 45,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Hey! 😊 I'm glad you shared that! Rice and stir-fried vegetables sound delicious. I love pasta too! \n\nWhat kind of sauce do you like to use when you cook pasta?",
+      "latency_s": 2.197,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I... I like tomato sauce. It's very好吃 (hǎo chī), very tasty! I also like... um, maybe cream sauce? It's, uh, smooth and good. But I not cook pasta a lot. I usually cook米饭 and炒菜. Do you like to cook pasta?",
+      "latency_s": 2.522,
+      "word_count": 41,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Tomato sauce and cream sauce sound really good! I do like cooking pasta sometimes. \n\nWhat's your favorite dish to make with米饭 and炒菜? I’d love to hear more about it!",
+      "latency_s": 2.283,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, my favorite dish with米饭 and炒菜 is maybe... um, fried rice? Yes,炒饭 (chǎofàn)! I like to put鸡蛋 (jīdàn), egg, and some蔬菜 (shūcài), vegetables. And maybe一点点 (yī diǎn diǎn) chicken or shrimp. \n\nI like to make it because it’s easy and快 (kuài), fast! And it’s very好吃 (hǎo chī), yes! Sometimes I put soy sauce too. Do you like炒饭?",
+      "latency_s": 3.24,
+      "word_count": 57,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Fried rice sounds delicious! I like that you add eggs and vegetables. What do you enjoy most about cooking fried rice? ",
+      "latency_s": 3.176,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I... I like cooking fried rice because it is... it is easy! And I can use many东西 (dōngxī), like vegetables and肉 (ròu). I like when it is hot and smells好 (hǎo). \n\nAlso, when I cook, I... I feel happy! Maybe I can try new ingredients too, like... um, mushrooms or... or shrimp? Yes, shrimp! I think it will be very好吃 (hǎo chī).",
+      "latency_s": 2.346,
+      "word_count": 63,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I love that cooking makes you feel happy! Trying new ingredients like mushrooms or shrimp sounds exciting. What dish do you think you will make first with those?",
+      "latency_s": 2.118,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I think... maybe I will make fried rice with mushrooms first. I... I like mushrooms, they are very好吃 (hǎo chī). And, um, I can try with shrimp too, but maybe... I never cook shrimp before. \n\nI will find a recipe online, or ask my mom. I want to make it tasty! Um, what do you think? Is it good idea?",
+      "latency_s": 3.411,
+      "word_count": 61,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That sounds like a great idea! Fried rice with mushrooms will be delicious. What do you think will be the best way to cook the shrimp when you try it?",
+      "latency_s": 3.042,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, I think... the best way to cook shrimp is maybe... um, first, I will... um, wash the shrimp? Yes, wash. Then I can... um, maybe fry them in a pan with some oil? I like oil. \n\nUm, also, I can add some garlic, yes, garlic! It makes the shrimp very... um, tasty. What do you think? Is that good?",
+      "latency_s": 2.685,
+      "word_count": 60,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That sounds like a delicious plan! Washing the shrimp and frying them with garlic will make them very tasty. Have you cooked with garlic before? What do you like to make with it?",
+      "latency_s": 2.352,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, yes! I cook with garlic sometimes. I like... um, to make stir-fry with garlic. It is, um, very nice smell, yes? I also like garlic with... um, chicken. I think garlic makes food more... um, tasty. But, um, I need to practice more cooking. What do you think?",
+      "latency_s": 3.026,
+      "word_count": 49,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Oh, I love the smell of garlic in cooking! Stir-frying with garlic and chicken sounds delicious. What's your favorite chicken dish to cook?",
+      "latency_s": 3.824,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, my favorite chicken dish... um, I think is, uh, chicken stir-fry. Yes! I like to cook with... um, vegetables like, uh, broccoli and carrots. Sometimes I add... um, soy sauce. It is, um, very tasty! But I need to practice more because, um, I want it to be... um, better, you know?",
+      "latency_s": 2.278,
+      "word_count": 53,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That sounds really tasty! Chicken stir-fry with broccoli and carrots is such a great choice. What do you enjoy most about cooking stir-fry?",
+      "latency_s": 2.615,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I enjoy... um, the colors! Yes, the vegetables are very colorful. And, um, I like when they are crunchy. I also like to... um, choose different sauces. Sometimes I use soy sauce, or... um, oyster sauce. It makes the food very... um, tasty. Cooking stir-fry is... um, fun because it is quick! I can eat fast.",
+      "latency_s": 2.659,
+      "word_count": 57,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That’s great! I love how colorful stir-fry can be. What's your favorite sauce to use when cooking? ",
+      "latency_s": 4.551,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, my favorite sauce... I think is, uh, soy sauce. Yes! I like soy sauce. It is, um, salty and, uh, good flavor. But sometimes, I also use, um, oyster sauce. It makes, um, the chicken very tasty! Do you like soy sauce too?",
+      "latency_s": 3.116,
+      "word_count": 44,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "I see you really enjoy soy sauce! It adds such a nice flavor. What do you like to cook with oyster sauce?",
+      "latency_s": 2.696,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, I... I like to use oyster sauce with, um, vegetables! Yes, like broccoli and, um, mushrooms. It makes them very, uh, tasty. And sometimes I use it with chicken. It is, um, very good! Do you like oyster sauce too?",
+      "latency_s": 1.972,
+      "word_count": 41,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Oh, that sounds delicious! I like how oyster sauce can really enhance the flavors of vegetables. What’s your favorite dish with broccoli and mushrooms?",
+      "latency_s": 3.775,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, my favorite dish, I think, is stir-fry! Yes, stir-fry with broccoli and mushrooms. I also like, um, some chicken or tofu inside. It is, uh, very tasty! I like to add, um, garlic and a little bit of soy sauce too. Very good! Do you like stir-fry?",
+      "latency_s": 2.218,
+      "word_count": 48,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Oh, stir-fry sounds so good! I love that you add garlic and soy sauce for flavor. What do you enjoy most about making stir-fry?",
+      "latency_s": 2.901,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, I enjoy, um, cooking stir-fry because it is very quick! Yes, very fast to make. I like to, um, cut the vegetables, they are colorful, like green and, um, orange. I also like the smells, um, when garlic cooks, it smells so good! And, um, I enjoy eating it with rice. It is, um, very tasty! Sometimes I, uh, try new vegetables, too, like, um, bell peppers or even, um, carrots.",
+      "latency_s": 3.036,
+      "word_count": 72,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "It sounds like you really enjoy the colors and smells of cooking stir-fry! What’s your favorite new vegetable you’ve tried adding?",
+      "latency_s": 1.828,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, my favorite new vegetable, I think, is bell pepper! Yes, bell pepper. It is, um, very colorful and sweet. I like the red and yellow ones more. They make the stir-fry look nice, and taste good too! I also like how they, um, crunch when I eat. I want to try more vegetables. Maybe, um, zucchini? What do you think?",
+      "latency_s": 2.73,
+      "word_count": 61,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Oh, bell peppers are such a great choice! I love how they add color and sweetness to dishes. Crunchy vegetables like that can really make your stir-fry special. What other vegetables are you excited to try?",
+      "latency_s": 3.003,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, I want to try, uh, broccoli! Yes, broccoli. I think it is very good for health. It is, um, green and has good, um, vitamins. I also want to try, um, carrots! Carrots are, um, crunchy too and they are, uh, sweet. I like sweet vegetables. What do you think? Do you like broccoli?",
+      "latency_s": 3.11,
+      "word_count": 55,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Broccoli is a great choice! It's really healthy and has lots of vitamins. I enjoy it too, especially when it's steamed. What’s your favorite way to cook vegetables?",
+      "latency_s": 2.313,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um, I like, uh, stir-fry vegetables. Yes, stir-fry! It is quick and, um, very tasty. I think, uh, I can add, um, soy sauce and, uh, garlic. It make vegetables more, um, yummy! But, I also like, um, steam vegetables too. It is healthy. What about you? Do you like, um, steam or stir-fry?",
+      "latency_s": 2.604,
+      "word_count": 54,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "I love stir-fry too! It’s so quick and full of flavor. Adding soy sauce and garlic sounds delicious! What’s your favorite stir-fry combination?",
+      "latency_s": 3.048,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Um, my favorite stir-fry, uh, combination is, um, chicken and, uh, bell peppers. Yes, bell peppers! They are, um, sweet and, uh, crunchy. I like to add, um, soy sauce, and, um, maybe some ginger? I think ginger is good! But, um, I also like, uh, broccoli in stir-fry. It is, um, very healthy! What about you? What is your favorite?",
+      "latency_s": 2.952,
+      "word_count": 61,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "Oh, that sounds delicious! Chicken and bell peppers with soy sauce and ginger must be so tasty! I really enjoy adding broccoli to my stir-fry too. What's your favorite part about cooking with ginger?",
+      "latency_s": 3.158,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um, I think ginger is, uh, very good for flavor. It makes food, um, spicy and, uh, warm. I like when, um, ginger is fresh. Yes, fresh ginger! It smells, um, nice too. I, uh, sometimes put ginger in soup, uh, or tea. But, um, I not use too much because it is, um, strong flavor. Do you, uh, cook often with ginger?",
+      "latency_s": 3.355,
+      "word_count": 63,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "I totally agree! Fresh ginger has such a wonderful smell and adds great warmth to dishes. I love using it in soups too! What’s your favorite soup to make with ginger?",
+      "latency_s": 2.481,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Um, my favorite soup, I think, is, uh, chicken soup. Yes, chicken soup! I like to put, um, ginger and garlic, uh, for flavor. It makes the soup, um, warm and, uh, nice smell. I also like, um, vegetable soup with ginger. It’s, um, healthy! Do you like chicken soup?",
+      "latency_s": 3.572,
+      "word_count": 50,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "Chicken soup with ginger and garlic sounds so comforting! I really enjoy the warm smell too. What do you love most about making chicken soup?",
+      "latency_s": 2.442,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Um, what I love most about making chicken soup is, uh, the process, I think. It is, um, very relaxing. I like to, um, cut the chicken and vegetables. Carrots, um, and maybe onions, yes. \n\nAnd, um, when I cook, the smell is, uh, very nice. It makes my home feel, um, warm and happy. I also like to, uh, share with my family. They, um, enjoy eating it. \n\nSometimes, I think I put too much salt, but, um, I try to be careful. Yes, cooking is fun!",
+      "latency_s": 5.149,
+      "word_count": 88,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "I love that cooking makes you feel relaxed and happy! It’s great that you enjoy sharing your chicken soup with your family. What’s a fun memory you have of cooking together?",
+      "latency_s": 2.724,
+      "strategy": "summarize"
+    }
+  ]
+}

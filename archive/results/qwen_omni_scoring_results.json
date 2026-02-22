@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "input": "Hello. Yes. Good.",
+    "expected_range": [
+      15,
+      25
+    ],
+    "expected_level": "A1",
+    "actual_score": 15,
+    "actual_level": "A1",
+    "in_range": true
+  },
+  {
+    "id": 2,
+    "input": "Hello! I want to talk about football.",
+    "expected_range": [
+      30,
+      45
+    ],
+    "expected_level": "A2",
+    "actual_score": 40,
+    "actual_level": "A2",
+    "in_range": true
+  },
+  {
+    "id": 3,
+    "input": "Can you tell me more about his early career?",
+    "expected_range": [
+      45,
+      60
+    ],
+    "expected_level": "B1",
+    "actual_score": 65,
+    "actual_level": "B2",
+    "in_range": false
+  },
+  {
+    "id": 4,
+    "input": "Although Messi faced many challenges in his early career, he never gave up and eventually became one of the greatest players.",
+    "expected_range": [
+      60,
+      80
+    ],
+    "expected_level": "B2",
+    "actual_score": 75,
+    "actual_level": "B2",
+    "in_range": true
+  },
+  {
+    "id": 5,
+    "input": "The proliferation of artificial intelligence has precipitated a paradigm shift in how we conceptualize human-machine interaction.",
+    "expected_range": [
+      80,
+      92
+    ],
+    "expected_level": "C1",
+    "actual_score": 92,
+    "actual_level": "C2",
+    "in_range": true
+  },
+  {
+    "id": 6,
+    "input": "The epistemological underpinnings of contemporary discourse reveal a fascinating interplay between Cartesian dualism and emergent materialism.",
+    "expected_range": [
+      92,
+      100
+    ],
+    "expected_level": "C2",
+    "actual_score": 95,
+    "actual_level": "C2",
+    "in_range": true
+  },
+  {
+    "id": 7,
+    "input": "Can you explain can you tell me more about his career",
+    "expected_range": [
+      20,
+      35
+    ],
+    "expected_level": "A1-A2",
+    "actual_score": 20,
+    "actual_level": "A1",
+    "in_range": true
+  }
+]

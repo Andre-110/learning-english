@@ -1,0 +1,711 @@
+[
+  {
+    "input": "I want to talk some thing about 足球player with you",
+    "suggestions": {
+      "score": 30,
+      "level": "A1",
+      "strengths": [
+        "Attempted to express interest in a topic"
+      ],
+      "weaknesses": [
+        "Word choice error: 'some thing' should be 'something'",
+        "Incorrect word: 'zu ge' is not a known English word; likely meant 'soccer' or 'football'"
+      ],
+      "corrections": [
+        {
+          "original": "some thing",
+          "corrected": "something",
+          "explanation": "'Something' is one word when used as a pronoun or noun. 'Some thing' is incorrect."
+        },
+        {
+          "original": "zu ge player",
+          "corrected": "soccer player",
+          "explanation": "'Zu ge' sounds like 'soccer' or 'football'. 'Soccer player' is the correct term in American English."
+        }
+      ],
+      "good_expressions": [],
+      "encouragement": "Good effort! Try saying: 'I want to talk about soccer players with you.'"
+    },
+    "transcription": "I want to talk some thing about zu ge player with you.",
+    "response": "Sure! Do you have a favorite soccer player? (当然！你有最喜欢的足球运动员吗？)",
+    "tts_time": 2.3693480491638184,
+    "omni_time": 4.100170850753784
+  },
+  {
+    "input": "请继续详细地介绍一下Messi的故事",
+    "suggestions": {
+      "score": 25,
+      "level": "A1",
+      "strengths": [
+        "Attempted to express interest in Messi's story"
+      ],
+      "weaknesses": [
+        "Mixed Chinese/English",
+        "Missing article",
+        "Incorrect word order"
+      ],
+      "corrections": [
+        {
+          "original": "messi",
+          "corrected": "Messi",
+          "explanation": "Proper nouns like names should be capitalized."
+        },
+        {
+          "original": "介绍一下",
+          "corrected": "introduce",
+          "explanation": "Use 'introduce' for English expression. '介绍' is Chinese."
+        },
+        {
+          "original": "故事",
+          "corrected": "story",
+          "explanation": "Use 'story' for English expression. '故事' is Chinese."
+        }
+      ],
+      "good_expressions": [],
+      "encouragement": "Good attempt! Try saying: 'Please continue to introduce Messi's story in detail.'"
+    },
+    "transcription": "请继续详细地介绍一下messi的故事。",
+    "response": "Sure! Messi is an amazing football player. He was born in Argentina in 1987. (当然！梅西是一位了不起的足球运动员。他1987年出生于阿根廷。)",
+    "tts_time": 1.5695397853851318,
+    "omni_time": 4.21908164024353
+  },
+  {
+    "input": "I play for 土豆and 番茄because they are delicious",
+    "suggestions": {
+      "score": 30,
+      "level": "A1",
+      "strengths": [
+        "Simple sentence structure",
+        "Clear reason given"
+      ],
+      "weaknesses": [
+        "Incorrect preposition",
+        "Possible word confusion"
+      ],
+      "corrections": [
+        {
+          "original": "play for Tudo and Funche",
+          "corrected": "prefer Tudo and Funche",
+          "explanation": "Use 'prefer' when talking about liking food, not 'play for'. 'Play for' is used for teams or organizations."
+        },
+        {
+          "original": "they are delicious",
+          "corrected": "they are delicious",
+          "explanation": "This part is correct!"
+        }
+      ],
+      "good_expressions": [
+        "delicious",
+        "because they are delicious"
+      ],
+      "encouragement": "Good attempt! Remember: 'prefer' means 'like more'. Try saying 'I prefer Tudo and Funche because they are delicious.'"
+    },
+    "transcription": "I play for Tudo and Funche because they are delicious.",
+    "response": "Tudo and Funche sound interesting! What kind of food are they? (Tudo和Funche听起来很有趣！它们是什么类型的食物？)",
+    "tts_time": 1.8260917663574219,
+    "omni_time": 4.415083408355713
+  },
+  {
+    "input": "这个football player真的很amazing，我想知道more about him",
+    "suggestions": {
+      "score": 40,
+      "level": "A2",
+      "strengths": [
+        "Good attempt to use English",
+        "Clear meaning"
+      ],
+      "weaknesses": [
+        "Mixed language use",
+        "Incomplete sentence structure"
+      ],
+      "corrections": [
+        {
+          "original": "这个足球运动员真的很 amazing",
+          "corrected": "This football player is really amazing",
+          "explanation": "Use 'This' instead of '这个' and 'amazing' instead of 'amazing' (English spelling)"
+        },
+        {
+          "original": "我想知道 more about him",
+          "corrected": "I want to know more about him",
+          "explanation": "Use 'I want to know' instead of '我想知道' and 'more' instead of 'more' (English word)"
+        }
+      ],
+      "good_expressions": [
+        "amazing",
+        "more about him"
+      ],
+      "encouragement": "Good effort! Try to use full English sentences next time. You're doing well!"
+    },
+    "transcription": "这个足球运动员真的很 amazing，我想知道 more about him。",
+    "response": "He is Lionel Messi! He is a famous football player from Argentina. He plays as a forward and is known for his amazing skills. (他是里奥·梅西！他是一位来自阿根廷的著名足球运动员。他踢前锋位置，以出色的技能而闻名。)",
+    "tts_time": 1.7132301330566406,
+    "omni_time": 7.081943511962891
+  },
+  {
+    "input": "Yesterday I go to the park and see many people play 篮球",
+    "suggestions": {
+      "score": 35,
+      "level": "A2",
+      "strengths": [
+        "Used past tense correctly for 'yesterday'",
+        "Good vocabulary: 'park', 'many people', 'play'"
+      ],
+      "weaknesses": [
+        "Incorrect verb form: 'go' should be 'went'",
+        "Incorrect verb form: 'see' should be 'saw'",
+        "Missing article: 'lan qiu' should be 'lanqiu' or 'basketball'"
+      ],
+      "corrections": [
+        {
+          "original": "I go",
+          "corrected": "I went",
+          "explanation": "Use past tense 'went' for actions that happened yesterday"
+        },
+        {
+          "original": "see",
+          "corrected": "saw",
+          "explanation": "Past tense of 'see' is 'saw', not 'see'"
+        },
+        {
+          "original": "lan qiu",
+          "corrected": "basketball",
+          "explanation": "The correct English term is 'basketball'. 'Lan qiu' is Chinese for basketball"
+        }
+      ],
+      "good_expressions": [
+        "Yesterday",
+        "many people"
+      ],
+      "encouragement": "Good attempt! Remember: 'yesterday' needs past tense verbs like 'went' and 'saw'."
+    },
+    "transcription": "Yesterday I go to the park and see many people play lan qiu.",
+    "response": "Basketball is a fun sport! Did you play or just watch others? (篮球是一项有趣的运动！你是去玩还是只是看别人打球？)",
+    "tts_time": 2.011108160018921,
+    "omni_time": 8.535938262939453
+  },
+  {
+    "input": "请tell me more about Messi的achievements",
+    "suggestions": {
+      "score": 30,
+      "level": "A2",
+      "strengths": [
+        "Clear topic: Messi's achievements"
+      ],
+      "weaknesses": [
+        "Incorrect verb form: 'Show to me' should be 'Show me'",
+        "Missing article: 'Messi the achievements' should be 'Messi's achievements'"
+      ],
+      "corrections": [
+        {
+          "original": "Show to me",
+          "corrected": "Show me",
+          "explanation": "'Show' is a transitive verb that directly takes an object. 'Show me' is correct; 'Show to me' is redundant."
+        },
+        {
+          "original": "Messi the achievements",
+          "corrected": "Messi's achievements",
+          "explanation": "Use the possessive form 'Messi's' to show ownership of achievements."
+        }
+      ],
+      "good_expressions": [
+        "more",
+        "achievements"
+      ],
+      "encouragement": "Good attempt! Try saying: 'Show me more of Messi's achievements.'"
+    },
+    "transcription": "Show to me more Messi the achievements",
+    "response": "Sure! Messi has won many awards, including eight Ballon d'Or titles. He also scored over 800 career goals. (当然！梅西赢得了许多奖项，包括八次金球奖。他还打进了超过800个职业生涯进球。)",
+    "tts_time": 2.3779733180999756,
+    "omni_time": 5.804079532623291
+  },
+  {
+    "input": "I think this story tell me how to face 困难",
+    "suggestions": {
+      "score": 35,
+      "level": "A2",
+      "strengths": [
+        "Meaningful content",
+        "Good vocabulary: face"
+      ],
+      "weaknesses": [
+        "Subject-verb agreement error",
+        "Incorrect word choice",
+        "Missing article"
+      ],
+      "corrections": [
+        {
+          "original": "story tell me",
+          "corrected": "story tells me",
+          "explanation": "Third person singular requires 'tells' not 'tell'"
+        },
+        {
+          "original": "face quinnan",
+          "corrected": "face challenges",
+          "explanation": "Quinnan is not a standard English word. Did you mean 'challenges' or 'difficulties'?"
+        },
+        {
+          "original": "this story",
+          "corrected": "this story",
+          "explanation": "Consider adding 'the' for natural phrasing: 'the story'"
+        }
+      ],
+      "good_expressions": [
+        "face",
+        "how to face"
+      ],
+      "encouragement": "Good attempt! Remember: 'tells' for third person, and 'challenges' for difficulties."
+    },
+    "transcription": "I think this story tell me how to face quinnan.",
+    "response": "Stories often teach us valuable lessons! Do you have a favorite story that helped you through tough times? (故事常常教会我们宝贵的经验！你有没有一个帮助你度过难关的最喜欢的故事？)",
+    "tts_time": 2.6047747135162354,
+    "omni_time": 6.0121378898620605
+  },
+  {
+    "input": "我想了解more about football，特别是about Messi",
+    "suggestions": {
+      "score": 30,
+      "level": "A1",
+      "strengths": [
+        "Attempted to express interest in football and Messi"
+      ],
+      "weaknesses": [
+        "Mixed Chinese/English",
+        "Incorrect word choice"
+      ],
+      "corrections": [
+        {
+          "original": "I want to了解",
+          "corrected": "I want to learn about",
+          "explanation": "Use 'learn about' instead of '了解' when speaking English. '了解' is Chinese."
+        },
+        {
+          "original": "football,特别是about Messi",
+          "corrected": "football, especially Messi",
+          "explanation": "Use 'especially' instead of '特别是about' when speaking English. 'about' is redundant here."
+        }
+      ],
+      "good_expressions": [],
+      "encouragement": "Good attempt! Try saying: 'I want to learn about football, especially Messi.'"
+    },
+    "transcription": "I want to了解 more about football,特别是about Messi.",
+    "response": "Sure! Messi is an amazing player. He was born in Argentina in 1987. He joined Barcelona's youth academy at age 13 and became one of the greatest footballers ever. (当然！梅西是一位了不起的球员。他1987年出生于阿根廷。13岁时加入了巴塞罗那的青训营，成为历史上最伟大的足球运动员之一。)",
+    "tts_time": 2.764796018600464,
+    "omni_time": 5.181676864624023
+  },
+  {
+    "input": "He is a very good player, 我很like him",
+    "suggestions": {
+      "score": 35,
+      "level": "A2",
+      "strengths": [
+        "Clear sentence structure",
+        "Good vocabulary: 'very good player'"
+      ],
+      "weaknesses": [
+        "Subject-verb agreement error",
+        "Incorrect use of 'like' for third person singular"
+      ],
+      "corrections": [
+        {
+          "original": "Wuhan like him",
+          "corrected": "Wuhan likes him",
+          "explanation": "Third person singular requires 'likes' not 'like'"
+        }
+      ],
+      "good_expressions": [
+        "He is a very good player"
+      ],
+      "encouragement": "Good attempt! Remember: 'he/she/it' needs the verb ending in 's'."
+    },
+    "transcription": "He is a very good player. Wuhan like him.",
+    "response": "He is a very good player! (他是一位非常优秀的运动员！) Do you know which sport he plays? (你知道他踢什么运动吗？)",
+    "tts_time": 2.4703919887542725,
+    "omni_time": 4.199042558670044
+  },
+  {
+    "input": "请continue介绍Messi的childhood，我想知道more details",
+    "suggestions": {
+      "score": 40,
+      "level": "A2",
+      "strengths": [
+        "Clear topic",
+        "Good attempt at English"
+      ],
+      "weaknesses": [
+        "Missing article before 'childhood'",
+        "Word choice: 'more details' is correct but could be more natural"
+      ],
+      "corrections": [
+        {
+          "original": "Messi 的 childhood",
+          "corrected": "Messi's childhood",
+          "explanation": "Use possessive form 'Messi's' instead of Chinese '的'"
+        },
+        {
+          "original": "I want to know more details",
+          "corrected": "I want to know more details",
+          "explanation": "Consider using 'learn more about' for more natural expression"
+        }
+      ],
+      "good_expressions": [
+        "childhood",
+        "more details"
+      ],
+      "encouragement": "Good attempt! Try saying: 'I want to learn more about Messi's childhood.'"
+    },
+    "transcription": "请继续介绍 Messi 的 childhood 我想知道 more details",
+    "response": "Messi was born in Rosario, Argentina in 1987. He grew up in a modest family where football was his favorite activity. (梅西1987年出生于阿根廷罗萨里奥。他在一个普通家庭长大，足球是他最喜欢的活动。)",
+    "tts_time": 1.9574956893920898,
+    "omni_time": 4.809386968612671
+  },
+  {
+    "input": "I want to tell some 运动with you",
+    "suggestions": {
+      "score": 30,
+      "level": "A2",
+      "strengths": [
+        "Clear intent to communicate",
+        "Uses 'tell' correctly"
+      ],
+      "weaknesses": [
+        "Incorrect phrase: 'tell some in dong'",
+        "Missing article: 'some' should be 'some information'"
+      ],
+      "corrections": [
+        {
+          "original": "tell some in dong",
+          "corrected": "tell some information",
+          "explanation": "Use 'tell someone something' structure. 'In dong' is not a standard English phrase. 'Information' is the correct noun to use here."
+        },
+        {
+          "original": "some in dong",
+          "corrected": "some information",
+          "explanation": "'Information' is the correct noun form. 'In dong' is likely a mispronunciation of 'information'."
+        }
+      ],
+      "good_expressions": [
+        "want to tell",
+        "with you"
+      ],
+      "encouragement": "Good attempt! Try saying 'I want to tell you some information.'"
+    },
+    "transcription": "I want to tell some in dong with you.",
+    "response": "Sure! What information would you like to share with me? (当然！你想和我分享什么信息呢？)",
+    "tts_time": 1.623852014541626,
+    "omni_time": 4.601958513259888
+  },
+  {
+    "input": "这个player真的很great，他的story很inspiring",
+    "suggestions": {
+      "score": 35,
+      "level": "A2",
+      "strengths": [
+        "Good vocabulary: great, inspiring",
+        "Clear expression of admiration"
+      ],
+      "weaknesses": [
+        "Word choice error",
+        "Missing articles",
+        "Mixed language use"
+      ],
+      "corrections": [
+        {
+          "original": "这个 player",
+          "corrected": "this player",
+          "explanation": "Use 'this' instead of '这个' when referring to someone in English."
+        },
+        {
+          "original": "他的 story",
+          "corrected": "his story",
+          "explanation": "Use 'his' instead of '他的' when referring to someone in English."
+        },
+        {
+          "original": "很 great",
+          "corrected": "really great",
+          "explanation": "Use 'really' instead of '很' for natural English expression."
+        }
+      ],
+      "good_expressions": [
+        "great",
+        "inspiring"
+      ],
+      "encouragement": "Good attempt! Try saying: 'This player is really great. His story is very inspiring.'"
+    },
+    "transcription": "这个 player 真的很 great，他的 story 很 inspiring。",
+    "response": "That's a great choice! Do you have a favorite player whose story inspires you? (这是个很棒的选择！你有没有一个故事激励你的最喜欢的球员？)",
+    "tts_time": 1.9631671905517578,
+    "omni_time": 6.074767112731934
+  },
+  {
+    "input": "Yesterday I see a movie about football, 它was very interesting",
+    "suggestions": {
+      "score": 35,
+      "level": "A2",
+      "strengths": [
+        "Clear topic: movie about football",
+        "Used past tense correctly for 'was very interesting'"
+      ],
+      "weaknesses": [
+        "Verb tense error: 'I see' should be 'I saw'"
+      ],
+      "corrections": [
+        {
+          "original": "I see",
+          "corrected": "I saw",
+          "explanation": "Use past tense 'saw' because the action happened yesterday"
+        }
+      ],
+      "good_expressions": [
+        "a movie about football",
+        "That was very interesting"
+      ],
+      "encouragement": "Good attempt! Remember to match verb tense with time words like 'yesterday'."
+    },
+    "transcription": "Yesterday I see a movie about football. That was very interesting.",
+    "response": "That sounds like a great movie! Did you enjoy the football scenes? (听起来很棒的电影！你喜欢里面的足球场面吗？)",
+    "tts_time": 4.889341592788696,
+    "omni_time": 4.720397233963013
+  },
+  {
+    "input": "请explain more about Messi的playing style",
+    "suggestions": {
+      "score": 45,
+      "level": "A2",
+      "strengths": [
+        "Clear topic",
+        "Good use of 'playing style'"
+      ],
+      "weaknesses": [
+        "Missing article before 'Messi'"
+      ],
+      "corrections": [
+        {
+          "original": "Messi",
+          "corrected": "Messi",
+          "explanation": "No correction needed - 'Messi' is a proper noun and doesn't require an article."
+        }
+      ],
+      "good_expressions": [
+        "explain more",
+        "playing style"
+      ],
+      "encouragement": "Good attempt! Try saying: 'Ching, please explain more about Lionel Messi's playing style.'"
+    },
+    "transcription": "Ching, explain more about Messi the playing style.",
+    "response": "Sure! Lionel Messi is known for his incredible dribbling skills, quick footwork, and ability to change direction rapidly. He often uses his body to shield the ball from defenders and can make unexpected passes or shots from tight spaces. His playing style is very fluid and creative, making him one of the most exciting players to watch. (当然！里奥·梅西以其出色的控球技巧、快速的脚步和迅速改变方向的能力而闻名。他经常用身体护球，可以从狭窄的空间中做出意想不到的传球或射门。他的踢球风格非常流畅且富有创造力，使他成为最令人兴奋的球员之一。)",
+    "tts_time": 2.534212827682495,
+    "omni_time": 5.98582649230957
+  },
+  {
+    "input": "I think football is a very good sport, 我喜欢to watch it",
+    "suggestions": {
+      "score": 35,
+      "level": "A2",
+      "strengths": [
+        "Clear expression of opinion",
+        "Good vocabulary: football, sport"
+      ],
+      "weaknesses": [
+        "Missing article before 'sport'",
+        "Incorrect verb form after 'like'"
+      ],
+      "corrections": [
+        {
+          "original": "a very good sport",
+          "corrected": "a very good sport",
+          "explanation": "No correction needed - 'a very good sport' is grammatically correct."
+        },
+        {
+          "original": "I like watch it",
+          "corrected": "I like watching it",
+          "explanation": "After 'like', use the gerund form 'watching', not the base form 'watch'."
+        }
+      ],
+      "good_expressions": [
+        "I think football is a very good sport"
+      ],
+      "encouragement": "Good attempt! Remember: 'like' is followed by a gerund (-ing form)."
+    },
+    "transcription": "I think football is a very good sport. 我喜欢 watch it.",
+    "response": "Football is exciting to watch! Do you have a favorite team or player? (足球比赛很精彩！你有最喜欢的球队或球员吗？)",
+    "tts_time": 2.644996404647827,
+    "omni_time": 6.492831468582153
+  },
+  {
+    "input": "我想知道more about Messi的family life",
+    "suggestions": {
+      "score": 40,
+      "level": "A2",
+      "strengths": [
+        "Attempted to express interest in Messi's family life"
+      ],
+      "weaknesses": [
+        "Mixed language use",
+        "Missing article",
+        "Word choice error"
+      ],
+      "corrections": [
+        {
+          "original": "more about Messi",
+          "corrected": "more about Lionel Messi",
+          "explanation": "Use full name 'Lionel Messi' for clarity, or 'Messi' with context"
+        },
+        {
+          "original": "的 family life",
+          "corrected": "family life",
+          "explanation": "Remove '的' as it's not needed in English; 'family life' is a noun phrase"
+        }
+      ],
+      "good_expressions": [],
+      "encouragement": "Good attempt! Try saying: 'I want to know more about Lionel Messi's family life.'"
+    },
+    "transcription": "我想知道 more about Messi 的 family life.",
+    "response": "Lionel Messi comes from a close-knit family in Argentina. His parents, Jorge and Celia, raised him with strong values. His younger brother, Matías, is also involved in football. (梅西来自阿根廷一个亲密的家庭。他的父母豪尔赫和西莉亚以坚定的价值观抚养他。他的弟弟马蒂亚斯也从事足球运动。)",
+    "tts_time": 2.30450177192688,
+    "omni_time": 4.421828985214233
+  },
+  {
+    "input": "He play football very well, 我很admire him",
+    "suggestions": {
+      "score": 30,
+      "level": "A2",
+      "strengths": [
+        "Clear subject and object",
+        "Good vocabulary: football"
+      ],
+      "weaknesses": [
+        "Subject-verb agreement error",
+        "Missing article",
+        "Incorrect verb form"
+      ],
+      "corrections": [
+        {
+          "original": "He play",
+          "corrected": "He plays",
+          "explanation": "Third person singular requires 'plays' not 'play'"
+        },
+        {
+          "original": "Wuhan admire him",
+          "corrected": "Wuhan admires him",
+          "explanation": "Third person singular requires 'admires' not 'admire'"
+        },
+        {
+          "original": "football",
+          "corrected": "football",
+          "explanation": "Consider adding 'the' before 'football' for specificity: 'the football' or 'football' as a sport name"
+        }
+      ],
+      "good_expressions": [
+        "very well",
+        "admire him"
+      ],
+      "encouragement": "Good attempt! Remember: 'he plays' and 'he admires'. Try saying: 'He plays football very well. Wuhan admires him.'"
+    },
+    "transcription": "He play football very well. Wuhan admire him.",
+    "response": "He plays football very well. Wuhan admires him. (他足球踢得很好。武汉很欣赏他。)",
+    "tts_time": 1.6657307147979736,
+    "omni_time": 5.228339910507202
+  },
+  {
+    "input": "请继续talk about Messi的career，特别是his early years",
+    "suggestions": {
+      "score": 35,
+      "level": "A2",
+      "strengths": [
+        "Attempted to express interest in Messi's career",
+        "Used some English vocabulary"
+      ],
+      "weaknesses": [
+        "Incorrect article usage ('the career')",
+        "Missing possessive form ('his early years' is correct but 'his' should be capitalized if starting sentence)"
+      ],
+      "corrections": [
+        {
+          "original": "Messi the career",
+          "corrected": "Messi's career",
+          "explanation": "Use the possessive form 'Messi's' to show ownership, not 'the'."
+        },
+        {
+          "original": "his early years",
+          "corrected": "his early years",
+          "explanation": "This part is correct, but note that 'his' should be capitalized if it starts the sentence."
+        }
+      ],
+      "good_expressions": [
+        "talk about",
+        "early years"
+      ],
+      "encouragement": "Good attempt! Remember to use 'Messi's career' instead of 'Messi the career'."
+    },
+    "transcription": "请继续 talk about Messi the career, 特别是his early years.",
+    "response": "Sure! Messi's early years were truly remarkable. Born in Rosario, Argentina in 1987, he showed extraordinary talent from a young age. At just 13, he joined FC Barcelona's famed youth academy, La Masia, after Barcelona's medical staff discovered his growth hormone deficiency and offered to cover his treatment costs. This move marked the beginning of his legendary journey with the club. (当然！梅西的早年生涯确实非常非凡。他1987年出生于阿根廷罗萨里奥，从小就展现出非凡的天赋。13岁时，他加入了巴塞罗那著名的青训营拉玛西亚，当时巴塞罗那的医疗团队发现他患有生长激素缺乏症，并提出承担他的治疗费用。这一举动标志着他传奇生涯的开始。)",
+    "tts_time": 2.4020519256591797,
+    "omni_time": 6.619232416152954
+  },
+  {
+    "input": "I want to learn English better so I can talk about 运动",
+    "suggestions": {
+      "score": 35,
+      "level": "A2",
+      "strengths": [
+        "Clear purpose statement",
+        "Good use of 'better' for comparison"
+      ],
+      "weaknesses": [
+        "Word choice error: 'yundong' is Chinese for 'sports'"
+      ],
+      "corrections": [
+        {
+          "original": "yundong",
+          "corrected": "sports",
+          "explanation": "Use 'sports' instead of 'yundong' when speaking English"
+        }
+      ],
+      "good_expressions": [
+        "learn English better",
+        "so I can talk about"
+      ],
+      "encouragement": "Good effort! Remember: 'sports' is the English word for '运动'."
+    },
+    "transcription": "I want to learn English better so I can talk about yundong.",
+    "response": "Great idea! Sports are a fun topic to practice English. (好主意！运动是练习英语的有趣话题。)",
+    "tts_time": 2.3912622928619385,
+    "omni_time": 4.66901707649231
+  },
+  {
+    "input": "这个player的achievements真的很impressive，我想知道how he did it",
+    "suggestions": {
+      "score": 40,
+      "level": "A2",
+      "strengths": [
+        "Uses English words like 'achievements', 'impressive', 'how he did it'"
+      ],
+      "weaknesses": [
+        "Mixed Chinese/English - '这个player的achievements' should be fully in English",
+        "Missing article: 'the player's achievements'",
+        "Word choice: 'how he did it' is informal, better to say 'how he achieved them'"
+      ],
+      "corrections": [
+        {
+          "original": "这个player的achievements",
+          "corrected": "the player's achievements",
+          "explanation": "Use 'the' before 'player's achievements' and write 'achievements' in English only"
+        },
+        {
+          "original": "how he did it",
+          "corrected": "how he achieved them",
+          "explanation": "'Achieved them' is more natural when referring to accomplishments"
+        }
+      ],
+      "good_expressions": [
+        "impressive",
+        "how he did it"
+      ],
+      "encouragement": "Good attempt! Try to use full English sentences next time. For example: 'The player's achievements are really impressive. I want to know how he achieved them.'"
+    },
+    "transcription": "这个player的achievements真的很impressive. 我想知道how he did it.",
+    "response": "That's a great question! Many successful players work hard every day. (这是一个很好的问题！许多成功的球员每天都努力训练。)",
+    "tts_time": 1.8654298782348633,
+    "omni_time": 5.7958292961120605
+  }
+]

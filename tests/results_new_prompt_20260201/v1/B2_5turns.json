@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T16:17:24.876429",
+    "level": "B2",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "B2",
+      "interests": [
+        "cooking",
+        "technology",
+        "sports"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.582,
+    "user_avg_latency": 1.95,
+    "strategies": {
+      "continue": 5
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! Nice to meet you! 😊 What’s your favorite dish to cook, and how does it make you feel when you prepare it? (Feel free to answer naturally - I'll help if needed!)",
+      "latency_s": 2.707,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Hello! Nice to meet you too! 😊 My favorite dish to cook is... um, I think it’s pasta! I really like to make spaghetti with tomato sauce and basil. \n\nWhen I prepare it, I feel... uh, very relaxed and happy. Cooking helps me to forget my stress, you know? Sometimes I listen to music while I cook, and it makes the experience even better. \n\nBut, sometimes, I am a bit nervous about getting the sauce right. I don’t want it to be too salty or too bland. Do you like cooking too?",
+      "latency_s": 2.473,
+      "word_count": 92,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I love pasta too! It's such a versatile dish. 😊 I totally understand the stress about getting the sauce just right; it can be tricky! I enjoy cooking as well, especially when I experiment with different flavors. What music do you like to listen to while cooking?",
+      "latency_s": 1.635,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Oh, yes! Cooking pasta can be a bit... um, challenging with the sauce. I sometimes worry if it will taste good. \n\nWhen I cook, I like to listen to music, especially pop music! It makes me feel more relaxed and happy. I also enjoy some classical music, um, because it helps me focus. Do you have any favorite songs or artists that you listen to while you cook?",
+      "latency_s": 1.671,
+      "word_count": 68,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I get that! Sometimes it’s hard to find the right taste. 🎶 I love listening to a mix of everything, but lately, I've been into indie music while I cook. It gives a nice vibe! Do you have a go-to pop song that always puts you in a good mood?",
+      "latency_s": 1.499,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Oh, indie music sounds great! I think it really creates a nice atmosphere. For pop songs, um, let me think... I really like \"Happy\" by Pharrell Williams! It always makes me smile and feel positive. 😊 I also enjoy listening to Taylor Swift. Her songs are... um, very catchy and tell good stories. \n\nDo you have a favorite indie song? I would love to know!",
+      "latency_s": 2.208,
+      "word_count": 65,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "\"Nice choices! 'Happy' is such a feel-good song, and Taylor Swift's storytelling is amazing! 🎶 One of my favorite indie songs is 'Dog Days Are Over' by Florence + the Machine. It always lifts my spirits! What’s your favorite dish to make while listening to music?\"",
+      "latency_s": 1.608,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Oh, I really like making... um, stir-fry! It’s so quick and, um, you can add many vegetables and proteins, like chicken or tofu. I usually listen to pop music, but sometimes I put on indie songs, too. I think the energy of the music makes cooking more fun! Do you have a favorite dish to cook while listening to your music?",
+      "latency_s": 1.703,
+      "word_count": 61,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Stir-fry sounds delicious and so colorful! I love how you can mix and match ingredients. I often make tacos when I’m cooking with music; it’s fun to build them just the way I like. What’s your favorite vegetable to add in stir-fry?",
+      "latency_s": 1.545,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Oh, tacos are really fun to make! I think my favorite vegetable for stir-fry is bell peppers. They are so crunchy and, um, add a nice sweetness. Also, I like broccoli because it’s healthy and looks good with colors! Sometimes I add carrots, too, for some extra crunch. What about you? Do you have a favorite ingredient for your tacos?",
+      "latency_s": 1.695,
+      "word_count": 60,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Bell peppers and broccoli are great choices! I love adding avocado to my tacos; it makes them creamy and delicious! 🌮 I also like some spicy salsa for an extra kick. Do you prefer your stir-fry spicy or mild?",
+      "latency_s": 1.621,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

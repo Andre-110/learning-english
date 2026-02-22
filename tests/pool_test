@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T18:39:01.762843",
+    "level": "B1",
+    "turns": 10,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "music",
+        "cooking",
+        "technology"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 1.682,
+    "user_avg_latency": 1.739,
+    "strategies": {
+      "continue": 10
+    },
+    "hot_content_events": 11
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "cooking",
+      "headline": "Cookies with no mess!"
+    },
+    {
+      "turn": 2,
+      "type": "topic_detected",
+      "topic": "baking cookies",
+      "headline": "Air fryer trick makes baking easier!"
+    },
+    {
+      "turn": 3,
+      "type": "topic_injection",
+      "topic": "air-fryer baking",
+      "headline": "Air fryer trick makes baking easier!"
+    },
+    {
+      "turn": 4,
+      "type": "topic_detected",
+      "topic": "oatmeal raisin cookies",
+      "headline": "Crumbl Cookies' new flavors are surprising!"
+    },
+    {
+      "turn": 4,
+      "type": "topic_detected",
+      "topic": "air fryer liners",
+      "headline": "Oatmeal cookies have their own special day!"
+    },
+    {
+      "turn": 5,
+      "type": "topic_detected",
+      "topic": "air fryer liners",
+      "headline": "Bake cakes easily in air fryers!"
+    },
+    {
+      "turn": 6,
+      "type": "topic_injection",
+      "topic": "baking cookies",
+      "headline": "Crumbl Cookies' new flavors are surprising!"
+    },
+    {
+      "turn": 7,
+      "type": "topic_detected",
+      "topic": "baking cookies",
+      "headline": "Silicone mats are kitchen game-changers!"
+    },
+    {
+      "turn": 8,
+      "type": "topic_detected",
+      "topic": "crumbl cookies",
+      "headline": "Cookie Fries with chocolate dip!"
+    },
+    {
+      "turn": 9,
+      "type": "topic_detected",
+      "topic": "unique cookie flavors",
+      "headline": "New Girl Scouts cookie flavor coming!"
+    },
+    {
+      "turn": 9,
+      "type": "topic_injection",
+      "topic": "oatmeal raisin cookies",
+      "headline": "Oatmeal cookies have their own special day!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just read that you can use air-fryer liners to bake cookies without any mess. How cool is that? Have you ever tried baking cookies that way?",
+      "latency_s": 1.633,
+      "has_hot_content": true,
+      "hot_topic": "cooking"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I haven't tried baking cookies with air-fryer liners. It sounds interesting, though! I usually bake cookies in the oven, but this method seems easier. Maybe I should give it a go sometime. Do you think it really makes less mess?",
+      "latency_s": 1.383,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I think it definitely helps! The liners catch any drips and keep your air fryer clean. I’ve used them for other things, and it’s so much easier to just throw the liner away. What kind of cookies do you usually bake? 🍪",
+      "latency_s": 1.441,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I usually bake chocolate chip cookies because they are my favorite! I like how they are sweet and chewy. Sometimes, I try new recipes, but chocolate chip is the best for me! Do you have a favorite cookie?",
+      "latency_s": 1.633,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Chocolate chip cookies are such a classic! I love how they melt in your mouth. I’m a big fan of oatmeal raisin cookies, though. They have that chewy texture too! Have you ever tried making them?",
+      "latency_s": 1.635,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I haven't made oatmeal raisin cookies yet. They sound good, though! I like chewy cookies, too. Maybe I will try to make them soon. Do you have a good recipe for oatmeal raisin cookies? That would be helpful!",
+      "latency_s": 1.458,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Chewy cookies are the best! Oh, speaking of that, I just read that people are using air fryer liners to line cake pans for baking. It's a clever way to save time and keep everything clean. Have you tried that yet?",
+      "latency_s": 1.971,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "air-fryer baking"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I haven't tried air fryer liners yet. They sound useful! I usually just use baking paper. It keeps the pan clean, but maybe I should try the liners, too. It might save me some time when I bake.",
+      "latency_s": 1.518,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Baking paper is definitely a classic choice! The liners can be super handy, especially for quick clean-ups. Have you ever thought about trying any other baking gadgets? There are so many fun tools out there!",
+      "latency_s": 1.519,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I haven't thought much about other gadgets. But, I saw a silicone mat that looks interesting! I think it can help with sticking. Do you have a favorite gadget? I like simple tools for baking.",
+      "latency_s": 2.441,
+      "word_count": 36,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Silicone mats are great! They really help with sticking and are reusable, which is awesome. I love using a good whisk; it makes mixing so much easier! What do you usually bake the most?",
+      "latency_s": 1.578,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, I usually bake cookies the most. They are fun to make and taste good! I like trying different flavors, like chocolate chip or peanut butter. Sometimes, I bake cakes for birthdays, too. It feels nice to share them with friends and family. What about you?",
+      "latency_s": 1.829,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Cookies are such a treat to bake! That reminds me of something interesting—have you heard about Crumbl Cookies' new flavors? They have one called 'Dubai Biscoff Brownie.' It's fun to see what unique ideas they come up with! What do you think?",
+      "latency_s": 1.549,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "baking cookies"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think Crumbl Cookies is cool! The 'Dubai Biscoff Brownie' sounds delicious, but I haven't tried it. I like when places create new flavors. It makes baking more exciting! I wonder how it tastes. Do you think it’s very sweet?",
+      "latency_s": 1.904,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That flavor sounds like a sweet adventure! I imagine it must be rich with the Biscoff cookies and brownie mix. I think it could be sweet, but the cookie flavor might balance it out. Have you ever created a unique flavor yourself?",
+      "latency_s": 2.301,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I haven't created a unique flavor yet, but I would like to try! Maybe something with chocolate and peanut butter? That sounds really good to me. I enjoy mixing different flavors, um, I think it could be fun! What about you? Have you made your own flavor?",
+      "latency_s": 1.541,
+      "word_count": 48,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "That sounds like a delicious combination! I've tried making a cookie with oatmeal, chocolate chips, and a hint of cinnamon. It was a nice twist! Mixing flavors can lead to some great surprises. If you did try your chocolate and peanut butter idea, what would you add to make it extra special?",
+      "latency_s": 1.768,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I think I would add some sea salt on top! It would make the chocolate and peanut butter flavor even better. Maybe, uh, some crushed nuts for crunch too. That sounds really good to me!",
+      "latency_s": 1.904,
+      "word_count": 36,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That sounds amazing! The sea salt would really bring out the flavors. By the way, have you heard about National Oatmeal Raisin Cookie Day on April 30th? It’s a fun excuse to bake and share them. Have you ever tried making oatmeal cookies?",
+      "latency_s": 1.423,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "oatmeal raisin cookies"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I think I have made oatmeal cookies before, but it was a long time ago. I remember they were chewy and sweet. I would like to try them again, maybe with raisins and some nuts. It sounds fun to bake on that special day!",
+      "latency_s": 1.783,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds like a great plan! Chewy oatmeal cookies with raisins and nuts can be so comforting. Do you have a favorite recipe you remember, or would you look for a new one?",
+      "latency_s": 1.633,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

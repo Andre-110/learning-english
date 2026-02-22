@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T16:26:21.583802",
+    "level": "B2",
+    "turns": 5,
+    "user_profile": {
+      "cefr_level": "B2",
+      "interests": [
+        "music",
+        "sports",
+        "movies"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": false
+  },
+  "summary": {
+    "ai_avg_latency": 1.704,
+    "user_avg_latency": 2.71,
+    "strategies": {
+      "continue": 5
+    },
+    "hot_content_events": 0
+  },
+  "hot_content_events": [],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "What's a movie that made you feel really inspired recently? 😊 Feel free to answer naturally - I'll help if needed!",
+      "latency_s": 2.443,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, I think a movie that really inspired me recently is \"The Pursuit of Happyness.\" It’s about a man who struggles a lot but never gives up on his dreams. I like how he, um, faces so many challenges, but he keeps trying, even when it’s really hard. \n\nI remember one scene where he is, uh, sleeping in a subway station with his son, and it made me feel, like, really emotional. It shows the love between them and how important it is to believe in yourself. \n\nSometimes I think about my own challenges, and this movie helps me feel more positive. Do you have a favorite movie that inspires you too?",
+      "latency_s": 2.747,
+      "word_count": 112,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, I love \"The Pursuit of Happyness\"! That scene is so powerful and really shows the bond between father and son. \n\nOne movie that inspires me is \"Dead Poets Society.\" It encourages people to follow their passions and think outside the box. Have you ever felt inspired to chase a dream after watching a movie?",
+      "latency_s": 1.634,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Yes, I think \"Dead Poets Society\" is very inspiring too! The way the teacher encourages students to, um, seize the day and pursue their passions is really moving. It makes me think about my own dreams. \n\nI remember feeling motivated about my language learning after watching it. Sometimes, I feel, um, a bit scared to speak English, but that movie reminds me to, you know, take risks and not be afraid to fail. \n\nWhat about you? Have you ever had a dream you wanted to follow because of a movie?",
+      "latency_s": 3.518,
+      "word_count": 90,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I totally understand that! Movies can really push us to chase our dreams. For me, after watching \"The Secret Life of Walter Mitty,\" I felt inspired to travel and try new adventures. It made me think about stepping out of my comfort zone. \n\nWhat kind of adventures would you like to try?",
+      "latency_s": 1.593,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Oh, I think traveling is definitely something I want to do more. I would love to go to places like Japan or Italy. The culture, food, and history are really fascinating to me. \n\nUm, I also want to try things like hiking in the mountains or maybe even skydiving, but I am a little scared of heights, so I’m not sure. \n\nI guess it’s about finding the courage to try new things, right? What about you? Do you have any adventures you want to experience?",
+      "latency_s": 2.088,
+      "word_count": 85,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Absolutely, finding courage is key! I’d love to explore places like New Zealand or Peru. The landscapes there look incredible! \n\nHiking sounds amazing—there's something so refreshing about being in nature. If you ever decide to try skydiving, it could be an unforgettable experience! What do you think makes travel so exciting for you?",
+      "latency_s": 1.784,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Yes, I agree! I think travel is really exciting because it’s a chance to see new places and meet new people. I love trying different foods, too. It’s like, every country has its own culture, and it’s interesting to learn about it. \n\nHiking in beautiful places sounds amazing! I haven’t done much hiking yet, but I want to try. Skydiving... hmm, that’s a bit scary for me! I think it would be thrilling, but also, I’m not sure if I have the courage. \n\nI guess what makes travel exciting for me is the adventure and discovering things that are different from home. What about you? What do you find most exciting when you travel?",
+      "latency_s": 2.646,
+      "word_count": 114,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I totally get that! For me, the most exciting part of travel is the unexpected moments. You know, those little surprises that can happen, like stumbling upon a hidden café or meeting someone interesting. \n\nTrying local foods is also a highlight! Have you ever had a dish that surprised you during your travels?",
+      "latency_s": 1.703,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Yes, I think those unexpected moments are special! Once, when I was in Italy, I found this small restaurant that was not in any guidebook. The food was amazing! I had pasta with... um, I think it was truffles? Yes, truffles! I didn't expect to like it so much, but it was so rich and flavorful. \n\nI also remember trying street food in Thailand. I was a bit nervous at first, but then I had this, um, spicy noodle dish, and it was so delicious! I couldn't believe how different it was from what I usually eat. I think trying new foods really adds to the experience of traveling. \n\nHave you had any surprising foods on your travels?",
+      "latency_s": 2.552,
+      "word_count": 118,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Wow, that sounds amazing! Truffles are such a luxurious ingredient, and I can imagine how rich that pasta must have been. Street food in Thailand must be so vibrant! \n\nI once tried a dish called “poutine” in Canada. It’s fries topped with cheese curds and gravy. I was surprised by how comforting and tasty it was! What’s your favorite dish from your travels so far?",
+      "latency_s": 1.808,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

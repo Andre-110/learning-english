@@ -1,0 +1,471 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T09:07:37.636642",
+    "model": "gpt-4o-mini",
+    "base_url": "https://api.tu-zi.com/v1",
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "movies",
+        "music",
+        "travel"
+      ],
+      "overall_score": 50
+    },
+    "total_turns": 20,
+    "design": "前5轮短答 → 6-12轮正常 → 13-20轮长答",
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency_s": 1.203,
+    "ai_min_latency_s": 0.858,
+    "ai_max_latency_s": 1.698,
+    "user_avg_latency_s": 1.388,
+    "ai_total_tokens": 48845,
+    "user_total_tokens": 2601,
+    "strategy_distribution": {
+      "lighten": 1,
+      "switch_topic": 4,
+      "summarize": 15
+    },
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "movies",
+      "headline": "Netflix has a new romance movie!"
+    },
+    {
+      "turn": 4,
+      "type": "topic_detected",
+      "topic": "food",
+      "headline": "Bamboo shoots are healthy and tasty!"
+    },
+    {
+      "turn": 5,
+      "type": "topic_detected",
+      "topic": "technology",
+      "headline": "A robot panda helps people!"
+    },
+    {
+      "turn": 7,
+      "type": "topic_detected",
+      "topic": "movies",
+      "headline": "New movie on Netflix!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just saw that Netflix has a new romance movie! It’s really funny and about two friends. Do you want to watch it together?",
+      "latency_s": 1.242,
+      "tokens": 267,
+      "rhythm_strategy": "initial",
+      "has_hot_content": true,
+      "hot_topic": "movies"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "OK",
+      "latency_s": 0.821,
+      "tokens": 107,
+      "rhythm_strategy": "lighten",
+      "consecutive_short": 1,
+      "response_length": "short"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "How about sharing something fun you did recently? I'm curious!",
+      "latency_s": 0.858,
+      "tokens": 1960,
+      "rhythm_strategy": "lighten",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "I went to the park.",
+      "latency_s": 0.847,
+      "tokens": 94,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 2,
+      "response_length": "short"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Got it! What do you like to do at the park? Or would you rather talk about your favorite music?",
+      "latency_s": 1.149,
+      "tokens": 2048,
+      "rhythm_strategy": "switch_topic",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "I like the park.",
+      "latency_s": 0.789,
+      "tokens": 104,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 3,
+      "response_length": "short"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I see! Parks are nice. Would you rather talk about your favorite food or a movie you like?",
+      "latency_s": 0.957,
+      "tokens": 2114,
+      "rhythm_strategy": "switch_topic",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Favorite food.",
+      "latency_s": 0.801,
+      "tokens": 100,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 4,
+      "response_length": "short"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "What food do you like the most? Is there a special meal that makes you happy?",
+      "latency_s": 0.965,
+      "tokens": 2108,
+      "rhythm_strategy": "switch_topic",
+      "has_hot_content": true,
+      "hot_topic": "food"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Pizza makes me happy.",
+      "latency_s": 1.122,
+      "tokens": 99,
+      "rhythm_strategy": "switch_topic",
+      "consecutive_short": 5,
+      "response_length": "short"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Pizza is great! What do you like on your pizza? Do you have a favorite topping?",
+      "latency_s": 0.98,
+      "tokens": 2123,
+      "rhythm_strategy": "switch_topic",
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "I like pizza with cheese and pepperoni! I also enjoy making pizza at home with my friends on the weekends.",
+      "latency_s": 1.01,
+      "tokens": 92,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That sounds so fun! Making pizza with friends must be a great way to spend the weekend. What's your favorite memory from making pizza together?",
+      "latency_s": 1.059,
+      "tokens": 2205,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "My favorite memory is when we made a big pizza and added all kinds of toppings. We laughed a lot and ate it while watching a movie together!",
+      "latency_s": 1.22,
+      "tokens": 108,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That sounds like a perfect night! What movie did you watch while eating the pizza?",
+      "latency_s": 0.922,
+      "tokens": 2214,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "movies"
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "I watched a funny comedy movie! I love watching comedies because they make me laugh and help me relax after a long day.",
+      "latency_s": 1.099,
+      "tokens": 93,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Comedies are the best for relaxing! Do you have a favorite comedy movie that you can watch over and over again?",
+      "latency_s": 1.226,
+      "tokens": 2312,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Yes, I really like the movie \"The Hangover.\" I can watch it many times because it always makes me laugh!",
+      "latency_s": 1.256,
+      "tokens": 99,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "I get that! \"The Hangover\" has some really funny moments. What scene always makes you laugh the most?",
+      "latency_s": 1.1,
+      "tokens": 2326,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "I really like the scene when they find the baby in their hotel room. It's so unexpected and funny! I enjoy watching comedies like that in my free time.",
+      "latency_s": 1.126,
+      "tokens": 107,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That scene is hilarious! It really catches you off guard. Do you have any other favorite comedies that surprise you like that?",
+      "latency_s": 1.066,
+      "tokens": 2333,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "I like comedies that have unexpected twists! One of my favorites is \"The Office\" because it always makes me laugh and surprises me with funny moments.",
+      "latency_s": 1.257,
+      "tokens": 107,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "That's great! \"The Office\" has so many funny moments and characters. Do you have a favorite character from the show that always makes you laugh?",
+      "latency_s": 1.698,
+      "tokens": 2363,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "I really like Jim! His jokes and pranks are so funny. I enjoy watching the show after work to relax and laugh a little!",
+      "latency_s": 1.399,
+      "tokens": 108,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Jim is such a fun character! His pranks definitely keep the show interesting. How do you feel after watching an episode? Does it help you unwind?",
+      "latency_s": 1.197,
+      "tokens": 2379,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "I really enjoy watching the show, especially because of Jim's funny pranks. After an episode, I feel happy and relaxed. One time, I watched an episode after a long day at school, and I laughed so much that I forgot about my stress. It was nice to just sit back and enjoy the fun moments. Watching the show helps me unwind and makes me look forward to the next episode!",
+      "latency_s": 1.696,
+      "tokens": 161,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "It sounds like \"The Office\" really helps you relax after a long day! I love how laughter can make everything feel better. Are there any specific episodes or moments that stand out to you as the funniest?",
+      "latency_s": 1.358,
+      "tokens": 2553,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Yes, \"The Office\" really helps me relax! One of my favorite moments is when Jim puts Dwight's stapler in Jello. I remember watching that scene after a long day at school, and I couldn't stop laughing. It was so funny to see Dwight's reaction, and it made me forget about my stress. I also love the part where Michael Scott tries to create a fun atmosphere in the office, even if it doesn’t always work. Those moments always make me smile!",
+      "latency_s": 2.054,
+      "tokens": 189,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Those moments really do bring so much joy! Jim's prank with the stapler is a classic. It’s interesting how Michael tries to make the office fun, even if it's a bit awkward sometimes. What do you think makes a good office atmosphere?",
+      "latency_s": 1.59,
+      "tokens": 2745,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "I think a good office atmosphere is very important for everyone to feel happy and work well. For me, when I worked in a small team, we had a fun tradition where we would celebrate each person's birthday with a small party. It made everyone feel special and connected. We brought snacks, played games, and shared funny stories. These moments helped us relax and enjoy our time together, just like Jim's pranks make the office more fun!",
+      "latency_s": 1.992,
+      "tokens": 188,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "That sounds like such a great tradition! Celebrating birthdays really brings people closer together. Do you have a favorite memory from one of those birthday parties?",
+      "latency_s": 1.393,
+      "tokens": 2877,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Yes, I have a favorite memory from my birthday party last year. I invited my friends over, and we played games and ate cake. My best friend surprised me with a big chocolate cake that had my favorite cartoon character on it. We all sang and danced together, and it was so much fun! I felt very happy and loved that day.",
+      "latency_s": 1.586,
+      "tokens": 149,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "That sounds like such a wonderful birthday! A big chocolate cake with your favorite cartoon character is such a nice surprise. What games did you play with your friends?",
+      "latency_s": 1.291,
+      "tokens": 2837,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Thank you! Yes, my birthday was really fun! We played many games, but my favorite was musical chairs. We all danced around the chairs, and when the music stopped, we had to sit down quickly. I remember my friend Sarah fell down laughing when she missed a chair! After that, we played a treasure hunt in the garden. It was exciting to find all the hidden treats!",
+      "latency_s": 1.757,
+      "tokens": 160,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "It sounds like you had a blast! Musical chairs can be so funny, especially with moments like Sarah falling down. I love treasure hunts too! What kinds of treats did you hide for the treasure hunt?",
+      "latency_s": 1.486,
+      "tokens": 2797,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Yes, we had so much fun! For the treasure hunt, I hid some chocolate coins, gummy bears, and small toys. I remember one time when I organized a treasure hunt for my birthday. I put clues around my house, and my friends had to solve them to find the treats. It was so funny when one of my friends thought the treasure was in the fridge because he was very hungry! We all laughed a lot, and in the end, we enjoyed eating the treats together.",
+      "latency_s": 2.085,
+      "tokens": 189,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "It sounds like you really know how to plan a fun party! Using clues is such a creative idea for a treasure hunt. Did you have a favorite clue or moment from that hunt?",
+      "latency_s": 1.364,
+      "tokens": 2815,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Thank you! I really enjoyed planning the treasure hunt for my friend’s birthday party. One of my favorite clues was a riddle that led everyone to the garden. It said, \"Where flowers bloom and the sun shines bright, look for the treasure hidden in plain sight.\" When my friend found the treasure, which was a box of chocolates, everyone cheered! It was such a fun moment, and I loved seeing everyone work together to solve the clues.",
+      "latency_s": 1.977,
+      "tokens": 178,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "That riddle is so clever! I can imagine everyone getting excited when they solved it. Do you think you’ll plan another treasure hunt for a future birthday?",
+      "latency_s": 1.262,
+      "tokens": 2861,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Yes, I would love to plan another treasure hunt for a future birthday! Last year, for my friend's birthday, I organized a treasure hunt in the park. I hid clues in different places, like under a bench and near a tree. Everyone had so much fun running around and solving the clues together. At the end, I surprised them with a picnic. It was a great day and I think my friends would enjoy doing it again!",
+      "latency_s": 1.871,
+      "tokens": 169,
+      "rhythm_strategy": "summarize",
+      "consecutive_short": 0,
+      "response_length": "long"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "That sounds like such a fun day! A picnic after the treasure hunt is a great idea. What kind of food or drinks did you have for the picnic?",
+      "latency_s": 1.141,
+      "tokens": 2875,
+      "rhythm_strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

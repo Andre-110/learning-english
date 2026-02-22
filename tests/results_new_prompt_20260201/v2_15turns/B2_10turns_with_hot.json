@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T17:18:55.969400",
+    "level": "B2",
+    "turns": 10,
+    "user_profile": {
+      "cefr_level": "B2",
+      "interests": [
+        "technology",
+        "sports",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 1.693,
+    "user_avg_latency": 1.843,
+    "strategies": {
+      "continue": 10
+    },
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "travel",
+      "headline": "Guess what? You can sleep by Uluru now!"
+    },
+    {
+      "turn": 1,
+      "type": "topic_detected",
+      "topic": "cooking",
+      "headline": "Top grocery store in the U.S. revealed!"
+    },
+    {
+      "turn": 2,
+      "type": "topic_detected",
+      "topic": "movies",
+      "headline": "Sam Mendes' Beatles film to offer new insights"
+    },
+    {
+      "turn": 3,
+      "type": "topic_detected",
+      "topic": "cooking",
+      "headline": "Top grocery store in the U.S. revealed!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just read that you can now sleep under the stars by Uluru in Australia. Isn’t that amazing? Would you ever want to experience that?",
+      "latency_s": 1.764,
+      "has_hot_content": true,
+      "hot_topic": "travel"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes, that sounds amazing! I think sleeping under the stars would be a unique experience. I love nature, and Uluru is so beautiful. It must be great to see all the stars in the night sky. I would definitely want to try it someday!",
+      "latency_s": 1.433,
+      "word_count": 45,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Oh, that reminds me! Speaking of unique experiences, have you ever gone camping or stargazing somewhere special? I think it must be magical to see all those stars! 🌌",
+      "latency_s": 1.557,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "cooking"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, yes! I have gone camping in the mountains a few times. It was really beautiful at night. The stars, um, they looked so bright and clear. I felt peaceful, just lying there and watching them. I wish I could do it more often! Do you like camping or stargazing?",
+      "latency_s": 1.641,
+      "word_count": 50,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Wow, camping in the mountains sounds incredible! I bet the stars were breathtaking. Did you have any special moments while you were out there, like a campfire story or something memorable?",
+      "latency_s": 1.817,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "movies"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, yes! We had a campfire one night, and it was so cozy. We told funny stories, and I remember laughing a lot. Uh, there was also a moment when I saw a shooting star. It felt magical! I wished for something special, but I can't remember what it was now. It was just a great time with friends.",
+      "latency_s": 2.278,
+      "word_count": 59,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds like such a fun time! Campfire stories are the best. Did you have a favorite story from that night?",
+      "latency_s": 2.654,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "cooking"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, yes! I think my favorite story was about a ghost in the woods. It was really scary, and my friend told it well. Everyone was nervous and excited at the same time. I love stories that make you feel something, you know? That night was full of laughter and a little bit of fear!",
+      "latency_s": 1.729,
+      "word_count": 55,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That sounds thrilling! A good ghost story can really set the mood. I love when stories create that mix of excitement and suspense. Have you ever thought about sharing your own scary story?",
+      "latency_s": 1.483,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, yes! I’ve thought about sharing my own story. I have one about a dark forest and strange sounds. It happened when I was camping with friends. It was really spooky! I felt so scared but excited at the same time. Maybe I will tell it next time! Do you like hearing scary stories too?",
+      "latency_s": 1.787,
+      "word_count": 55,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Oh, I definitely enjoy scary stories! There's something about the suspense that makes it exciting. Your camping experience sounds perfect for a ghost story. What kind of strange sounds did you hear in the forest?",
+      "latency_s": 1.509,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, there were these odd, rustling sounds, like something moving in the bushes. It was really creepy! Sometimes, I heard whispers too, but I couldn’t see anyone. My friends were scared, and we all laughed nervously. I think that makes a good ghost story, right? It’s amazing how the forest can feel so alive at night!",
+      "latency_s": 1.531,
+      "word_count": 56,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "That sounds super eerie! The whispers must have added a lot to the atmosphere. I agree, those little details really make a ghost story memorable. Do you think you would ever go camping again after that experience?",
+      "latency_s": 1.6,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think I would be careful about camping again. That experience was really scary. But, um, I also love nature and the outdoors, so maybe I would try it again. I’d just bring a friend and, uh, make sure we have good supplies. It would be fun to share stories by the campfire!",
+      "latency_s": 2.799,
+      "word_count": 54,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "That sounds like a good plan! Camping with friends can make it more enjoyable and less scary. Plus, sharing stories by the campfire is such a classic experience! What's your favorite thing to do in nature besides camping?",
+      "latency_s": 1.33,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I really love hiking! It's nice to be in nature and see beautiful views. Um, I also enjoy taking photos of plants and animals. Sometimes, I feel very relaxed when I'm outside. It’s a good way to escape from stress. Do you like hiking too?",
+      "latency_s": 1.478,
+      "word_count": 46,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I totally get that! Hiking is such a great way to unwind and connect with nature. I love how you can discover new places and take amazing photos along the way. Do you have a favorite hiking spot or trail?",
+      "latency_s": 1.453,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, yes! My favorite hiking spot is in the mountains near my home. The views are really beautiful, especially at sunrise. I like to go there to relax and, um, take photos of the scenery. It feels peaceful, and I can hear the birds singing. I also enjoy the fresh air. Do you have a favorite hiking place too?",
+      "latency_s": 1.665,
+      "word_count": 59,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That sounds absolutely lovely! I can imagine how peaceful it must be at sunrise with the birds singing. I enjoy hiking in a national park nearby. There are some amazing trails with waterfalls and great views too! Have you ever hiked during a sunrise?",
+      "latency_s": 1.933,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I haven’t hiked during a sunrise yet, but it sounds amazing! I would love to see the sky change colors. I usually go in the afternoon when it’s warmer. Uh, the national park sounds fantastic! Waterfalls and trails must be so nice. I hope to try hiking at sunrise one day!",
+      "latency_s": 2.091,
+      "word_count": 52,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Hiking in the afternoon has its charm too! The warmth can make the experience really enjoyable. I think witnessing the sunrise would feel magical, though. What do you think would be the best part about hiking at that time?",
+      "latency_s": 1.594,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

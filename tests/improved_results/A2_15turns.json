@@ -1,0 +1,283 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-31T04:01:51.898759",
+    "level": "A2",
+    "turns": 15,
+    "user_profile": {
+      "cefr_level": "A2",
+      "interests": [
+        "movies",
+        "art",
+        "travel"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "test_type": "production_modules"
+  },
+  "summary": {
+    "ai_avg_latency": 1.551,
+    "user_avg_latency": 3.676,
+    "hot_search_avg_latency": 5.628,
+    "hot_content_events": 3
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "art",
+      "headline": "Wes Anderson fans, check this out!",
+      "search_time": 6.65
+    },
+    {
+      "turn": 3,
+      "type": "async_search",
+      "topic": null,
+      "headline": "A book becomes a movie on Netflix!",
+      "search_time": 5.06
+    },
+    {
+      "turn": 11,
+      "type": "async_search",
+      "topic": "art",
+      "headline": "Art loves human touch again!",
+      "search_time": 5.17
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just heard the Design Museum in London has a Wes Anderson exhibition. They even have Margot's coat from 'The Royal Tenenbaums.' Are you a fan?",
+      "latency_s": 3.528,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes! I know Wes Anderson. He is... very special? I like his movies. They are colorful and funny. I not see 'The Royal Tenenbaums', but I hear it is good. \n\nMargot's coat, it is very famous, yes? I think it is interesting to see in real life. Do you like Wes Anderson? What's your favorite movie?",
+      "latency_s": 2.201,
+      "word_count": 57
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I love his style! \"The Grand Budapest Hotel\" is my favorite. Which Wes Anderson movie do you like most?",
+      "latency_s": 1.247,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I think... I like \"Moonrise Kingdom\" very much. It is... um, sweet story? And the kids, they are funny! I like their adventure. The colors are nice too. But I also like \"The Grand Budapest Hotel\" because it is... um, very interesting and, uh, the hotel looks so beautiful. What about you? Why do you like that movie?",
+      "latency_s": 2.417,
+      "word_count": 59
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I love \"The Grand Budapest Hotel\" for its quirky characters and stunning visuals. Have you ever dreamed of having an adventure like in \"Moonrise Kingdom\"?",
+      "latency_s": 1.068,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, yes! I... I think it would be very fun to have adventure like in \"Moonrise Kingdom.\" The kids, they go to forest and... um, find treasure? I like nature very much. Maybe I want to go camping with friends, um, and see stars at night. It looks very beautiful! \n\nBut I am not sure if I can be brave like them. I am... a little scared of dark. But adventure... it sounds exciting! Do you like camping?",
+      "latency_s": 2.25,
+      "word_count": 78
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, that sounds like a fun adventure! Speaking of movies, have you ever thought about going to a film festival? They're great to see movies from different places. Have you been to one?",
+      "latency_s": 3.867,
+      "has_hot_content": true,
+      "hot_topic": "movies"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I... I think film festival? That sounds very interesting! I... I not go to one. I see some videos about them. Many movies from... um, different countries, yes? I like to watch movies from other places. Maybe, one day, I can go to a film festival. It would be... um, exciting! Have you been to a film festival? What was it like?",
+      "latency_s": 4.557,
+      "word_count": 63
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Film festivals are amazing! I went to one and saw films from all over the world. What's a movie from another country you liked?",
+      "latency_s": 1.114,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I... I like movies from Japan. Maybe \"Spirited Away\"? It is a... um, anime film. Very beautiful and... and I like the story. The girl, she... she goes to a spirit world. I think it is very interesting! Do you like that movie?",
+      "latency_s": 4.776,
+      "word_count": 44
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "\"Spirited Away\" is amazing! The spirit world is so magical. Have you watched other anime films that made you feel the same way?",
+      "latency_s": 1.077,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! I... I watch some other anime films. Maybe \"My Neighbor Totoro\"? It is very sweet and... um, the characters are cute. I feel happy when I watch it. Also, I like \"Your Name.\" The story is... um, very touching. I, uh, feel many feelings! Do you like anime too?",
+      "latency_s": 7.594,
+      "word_count": 51
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "I love anime! \"Your Name\" has such an emotional story. What other types of stories make you feel many feelings?",
+      "latency_s": 1.052,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I... I like stories with, um, strong feelings. Maybe, um, romance or adventure? They make me feel happy or, um, sometimes sad. I also like... um, stories about friendship. They are very, um, good for my heart! \n\nAnd, um, sometimes I watch, uh, movies that make me think a lot. Like, um, mystery stories? They are exciting! But I... I don’t understand everything, um, sometimes. What about you? What stories do you like?",
+      "latency_s": 4.813,
+      "word_count": 74
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "I love adventure stories that take you on a journey. Do you have a favorite adventure movie or book that made you really excited?",
+      "latency_s": 1.047,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I think... I like \"The Lord of the Rings.\" It is very exciting! Um, the journey is long and... um, many characters, yes? I like Frodo and Sam. They are very good friends. \n\nAnd, um, I also like \"Harry Potter.\" It is magical and... um, full of adventure. Harry, Ron, and Hermione go on many journeys together. Um, I feel very happy when I watch or read these stories. \n\nWhat about you? Do you have a favorite adventure?",
+      "latency_s": 3.117,
+      "word_count": 79
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "I love how Harry, Ron, and Hermione stick together through everything. Have you ever gone on a fun adventure with friends?",
+      "latency_s": 1.264,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, yes! I, uh, went hiking with my friends last year. It was, um, very fun! We, um, went to a big mountain. The view was, um, beautiful. We took many, uh, pictures. But, um, it was also hard, you know? We, uh, got tired but we helped each other. I feel, um, happy to have friends like that. Do you like hiking?",
+      "latency_s": 2.538,
+      "word_count": 63
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "That sounds amazing! I enjoy hiking too, especially when the view is worth it. What's your favorite part of hiking with friends?",
+      "latency_s": 1.399,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, my favorite part of hiking with friends is, uh, when we have lunch on the top of the mountain. We eat, um, sandwiches and snacks. It's, uh, very nice to sit together and, um, talk. The view is also very beautiful! We take many photos. Sometimes we, um, laugh a lot. It's, uh, a happy time. What about you?",
+      "latency_s": 1.952,
+      "word_count": 60
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "Lunch with friends on a mountain sounds perfect! I love sharing stories and laughter. Have you ever tried any new snack or food on these hikes?",
+      "latency_s": 1.606,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, yes! I, uh, tried some new snacks. Last time, I brought, um, beef jerky and fruit. The beef jerky was, um, very yummy! But, uh, I think the fruit is better. We had apples and, um, bananas. They were fresh and, uh, good for hiking. \n\nI want to try, um, sandwiches next time. I think it will be fun! Do you have, um, any good snack ideas for hiking?",
+      "latency_s": 6.145,
+      "word_count": 70
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "Beef jerky and fruit sound like a tasty mix! Do you often try new snacks when hiking? What's your favorite snack to bring along?",
+      "latency_s": 3.607,
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, yes, I try new snacks, um, sometimes. I like to bring, uh, nuts and granola bars too. They, um, are easy to carry. My favorite snack is, um, maybe trail mix? It's, uh, very yummy with nuts and, um, dried fruit. I also like chocolate, um, but it melts, so I, uh, don’t bring it often. What about you? What snacks do you like?",
+      "latency_s": 5.825,
+      "word_count": 65
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "Trail mix is delicious and easy to carry! I love nuts and dried fruit too. What's the best trail mix moment you remember from a hike?",
+      "latency_s": 1.12,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, okay. Best moment... I think it was last summer. I go hiking with my friends, um, in the mountains. We, uh, sit on a rock and eat trail mix. It was so hot that day, but the, um, nuts and raisins were very, very good. We laugh a lot and take pictures. I feel happy, you know? Um, I also share my trail mix with my friend. She, um, didn't bring any snacks. That was nice moment!",
+      "latency_s": 2.319,
+      "word_count": 78
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "Sounds like a perfect day! Sharing snacks and laughter on a hot day makes amazing memories. What's your favorite hiking spot for those fun days?",
+      "latency_s": 1.288,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, my favorite hiking spot, um, is, uh, in the local park. It has, um, big trees and nice views, uh, of the city. I go there with my friends, uh, sometimes. We like to, um, sit and eat snacks, um, maybe take pictures too. It's very, um, relaxing and fun. I like the fresh air, um, and the sound of birds. What about you? Do you have a favorite place?",
+      "latency_s": 2.32,
+      "word_count": 71
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "Your park sounds peaceful and beautiful! I love hiking in the hills near my home, where the views are amazing. What's your favorite photo from your park visits?",
+      "latency_s": 1.375,
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, my favorite photo, uh, is one with my friends. We are, um, standing by the big tree, and, uh, the sun is, um, shining. It's very bright! We all smile, um, big smiles. I like it because, um, it, uh, reminds me of happy times. We eat snacks after hiking, um, and it's fun! \n\nI, um, also like the photo with the, uh, sunset. The sky is, um, orange and pink. Very pretty! I want to take more photos next time, um, maybe with, uh, more friends.",
+      "latency_s": 2.319,
+      "word_count": 88
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "Your photos sound lovely and full of joy! What's your favorite snack to enjoy while watching a sunset?",
+      "latency_s": 1.13,
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

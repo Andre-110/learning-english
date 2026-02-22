@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-01T17:57:48.498608",
+    "level": "B1",
+    "turns": 10,
+    "user_profile": {
+      "cefr_level": "B1",
+      "interests": [
+        "cooking",
+        "technology",
+        "music"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 1.583,
+    "user_avg_latency": 1.661,
+    "strategies": {
+      "continue": 10
+    },
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "technology",
+      "headline": "AI can feel your emotions now!"
+    },
+    {
+      "turn": 2,
+      "type": "topic_detected",
+      "topic": "spaghetti",
+      "headline": "AI sings lullabies in South Korea!"
+    },
+    {
+      "turn": 3,
+      "type": "topic_detected",
+      "topic": "pop music",
+      "headline": "Why Mississippi loves spaghetti so much!"
+    },
+    {
+      "turn": 9,
+      "type": "topic_detected",
+      "topic": "growing herbs",
+      "headline": "Chefs love surprising herb mixes!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey there! I just read that AI can actually sense our emotions and help us relax when we're stressed. Isn't that fascinating? Have you ever used an AI assistant before?",
+      "latency_s": 2.124,
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes, I have used an AI assistant before. It was, uh, helpful for finding information and reminders. I think it's interesting how technology can, um, understand our feelings. It might help us feel better when we are stressed.",
+      "latency_s": 1.702,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That’s great! AI assistants can be super handy. I once used one to help me organize my cooking recipes. It's amazing how technology can help in daily life. Do you have a favorite recipe or dish you like to cook?",
+      "latency_s": 1.514,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I really like to cook spaghetti. It's, uh, simple and delicious. I add tomato sauce and cheese. Sometimes I make a salad too. Cooking makes me feel relaxed and happy. Do you like pasta?",
+      "latency_s": 1.816,
+      "word_count": 35,
+      "strategy": "continue"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I love pasta! Spaghetti is such a classic choice. I enjoy making fettuccine alfredo sometimes. It feels like a special treat! What do you like to listen to while you cook?",
+      "latency_s": 2.062,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I like to listen to music while I cook. It makes me feel relaxed and happy. I usually choose pop or some soft songs. Sometimes I sing along, too! Cooking with music is, uh, more fun for me.",
+      "latency_s": 1.336,
+      "word_count": 39,
+      "strategy": "continue"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "That sounds nice! Listening to music while cooking can really set the mood. Oh, speaking of that, I just read that in South Korea, AI assistants can sing lullabies to help people relax at bedtime. Isn't that cool? What do you think about that?",
+      "latency_s": 1.607,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "ai assistants"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I think that’s really cool! AI assistants singing lullabies could help people relax. It’s interesting how technology can help us sleep better. I wonder if it works well for everyone, though. I like the idea of soft music at night.",
+      "latency_s": 1.491,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That’s a great idea! Music really adds to the cooking experience. Oh, speaking of that, I just read that Mississippi has a special love for spaghetti. It’s the favorite pasta shape for many there! What do you think makes spaghetti so loved?",
+      "latency_s": 1.522,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "spaghetti"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I think spaghetti is loved because it’s easy to cook and very tasty. People can add many sauces and toppings, like meatballs or vegetables. It’s also fun to eat! I really enjoy spaghetti with tomato sauce. What about you?",
+      "latency_s": 1.524,
+      "word_count": 40,
+      "strategy": "continue"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I totally agree! Spaghetti is so versatile. I love it with pesto or a creamy garlic sauce too. It really brings out different flavors. Have you ever tried making your own sauce from scratch?",
+      "latency_s": 1.734,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, yes! I tried making my own sauce once. I used tomatoes, garlic, and some herbs. It was fun but a bit messy. I think homemade sauce tastes better than store-bought. Do you make your own sauce often?",
+      "latency_s": 1.939,
+      "word_count": 38,
+      "strategy": "continue"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "I love making my own sauce! It's so satisfying to use fresh ingredients. Sometimes, I add a bit of red wine for extra flavor. Do you have a favorite herb you like to use in your sauce?",
+      "latency_s": 1.439,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I really like basil. It has a nice smell and taste. Sometimes, I also use oregano, but basil is my favorite. When I add it, my sauce feels fresh and delicious. Cooking with fresh herbs is fun!",
+      "latency_s": 1.395,
+      "word_count": 38,
+      "strategy": "continue"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Basil is such a great choice! It really does brighten up a dish. I love how fresh herbs can change the whole flavor. Have you ever tried growing your own herbs? It’s super rewarding!",
+      "latency_s": 1.488,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I have never grown my own herbs. But I think it sounds interesting! I would like to try it one day. It must be nice to have fresh herbs right at home. Do you grow herbs?",
+      "latency_s": 1.769,
+      "word_count": 37,
+      "strategy": "continue"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Yeah, I do grow a few herbs! I have basil, mint, and parsley. It's amazing to just step outside and pick them fresh. It really adds something special to the dishes. If you could grow any herb, which one would you choose first? 🌱",
+      "latency_s": 1.472,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I think I would choose mint. I really like its fresh taste in drinks and desserts. It’s nice to imagine picking it right from my garden. Also, um, mint tea sounds really good! I would like to try that someday.",
+      "latency_s": 2.103,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Mint is such a refreshing choice! It really adds a nice touch to drinks and desserts. Oh, speaking of that, I just read about chefs mixing herbs like basil and ginger for unique flavors. Have you ever thought about trying new herb combinations in your cooking?",
+      "latency_s": 1.633,
+      "strategy": "continue",
+      "has_hot_content": true,
+      "hot_topic": "cooking with fresh herbs"
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, I haven’t tried mixing herbs much. I usually stick with one or two. But, it sounds fun! I think basil and ginger could be good together. I like when flavors are unique, maybe I will experiment in my cooking soon!",
+      "latency_s": 1.53,
+      "word_count": 41,
+      "strategy": "continue"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "That sounds exciting! Experimenting can really open up new flavors. I once tried rosemary and lemon together, and it was amazing! Do you have a favorite dish that you love to cook?",
+      "latency_s": 1.361,
+      "strategy": "continue",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

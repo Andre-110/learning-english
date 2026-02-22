@@ -1,0 +1,75 @@
+1 如何感兴趣的聊
+2 中英文混杂问题
+3 调研已有的系统，接入访谈做不同层次的建议
+4 建议要有语音评价的部分
+5 模型的及时救助服务---> 部分更改
+6 支持打断
+
+
+
+关于 Temperature： 在输出这种强格式 JSON 时，请务必在 API 调用时将 temperature 设置为 0 或 0.1。否则你的 JSON 格式会经常崩溃（即使有 Schema）。
+
+
+
+
+事实向量 (Identity Facts)：用户固有的、不随对话轻易改变的客观属性（职业、家庭、所在地、固定社交关系）。
+意图向量 (Dynamic Goals)：用户当前阶段的驱动力（考试目标、职业发展需求、特定场景的补强计划）。
+语言 DNA (Linguistic DNA)：通过算法统计出的语言行为特征（CEFR等级、发音指纹、高频错误模式、掌握的高级词汇库）。
+语义重心 (Semantic Interests)：用户在对话中表现出的高情感权重话题（长期兴趣点与短期关注热点）。
+
+
+
+
+动态评估
+
+   并行调用	交互轨和评估轨需要同时调用，降低延迟	后端使用 asyncio.gather() 并行调用两个模型
+2. 响应排序	交互轨回复应先返回播放，评估轨异步推送	前端先播放语音，评估结果异步渲染到 UI
+3. 长时记忆	interests 字段必须从数据库读取并实时更新	后端从 Supabase 读取 user_profile，每次对话更新
+4. 语音 Token	原生语音模型需要特殊的 Audio Token 指令	如使用 GPT-4o-audio，需调整 API 调用方式
+5. 发音检测	Prosody 分析依赖模型对音频的理解能力	需要使用支持音频输入的模型（如 Qwen-Omni）
+6. 流式 TTS	交互轨回复需要边生成边播放	后端实现流式 TTS，前端流式播放
+7. 前端 UI 适配	corrections 格式变化，需要前端适配	修改 ConversationPanel.vue 解析新格式
+8. 双轨调用时机	何时调用交互轨 vs 评估轨	音频结束后并行调用，或先交互后评估
+
+与数据库的对接
+
+模型的选取
+
+
+关于 Context History： 你的代码里直接切片 recent = conversation_history[-6:]。这会导致模型失去更早之前的兴趣标签。建议在 user_profile 中维护一个持久化的 long_term_interests 字段，而不是指望模型从 6 轮对话中现场提取。
+
+Few-Shot 的重要性： 你的示例（Example Output）写得不错，但建议给 2-3 个不同等级（A1 一个，B2 一个）的例子，让模型学会区分评分的边界感。
+流式输出优化： 如果必须每轮反馈，请将 response 放在 JSON 的最前面，或者干脆不要用 JSON 格式返回给语音端，以降低感知延迟。
+具象化指令： 改为“Listen for the rising intonation in questions”或“Detect unnatural silences longer than 2 seconds”。
+引入 Prosody（韵律）： 增加对重音、语调起伏、连读（Linking sounds）的评估，这些是文本模型绝对做不到但语音模型擅长的。
+Task 1 (Transcribe): 既然是语音模型，它内部已经完成了对音频的解码。显式要求它写出 transcription 会消耗不必要的 Token，且容易让模型陷入“文字纠错”逻辑，而忽略了“语音表现”。
+Task 4 (Respond): 你的响应格式 English (中文翻译) 极度破坏语音交互体验。想象一下，一个语音助手跟你说话时，先把英文说一遍，再把中文翻译说一遍，这在听觉上是极其冗长且愚蠢的。
+砍掉实时 JSON： 如果是为了语音 App，建议对话阶段只返回文本和必要的评估标记，完整的 5 维度 JSON 建议通过异步任务在后台处理。
+区分“读”与“显”： 你的 response 字段必须分为 spoken_text（模型说出来的）和 display_text（界面显示的翻译和纠错）。永远不要让模型在语音交互中朗读括号里的中文。
+不要在 Prompt 里塞中文翻译： 异步评估时，中文翻译是给 UI 看的，不是给嘴读的。
+强制设置 Response 优先级： 如果不分两个任务，必须确保 JSON 结构的第一个键是 response。
+利用语音特有的维度： 既然是语音模型，在异步评估里加入 Energy Level（能量值/自信度）和 Speech Rhythm（语调节奏）的评价，这会让你的产品显得比那些只做文本纠错的高级得多。
+最后批评一点： 你原 Prompt 里的 Task 1: Transcribe。在异步架构下，这个任务应该交给专门的 STT 模块或者让评估模型顺带输出，绝对不要让对话模型去干，因为它会为了“写对文字”而思考很久，拖慢它的说话速度。
+为了让用户感觉“每次对话都有评估”，你需要在 UI/UX 上做配合，利用异步的时间差：
+T+0ms: 用户说话结束。
+T+500ms: 语音模型开始播放回复（快路径）。用户正在听回复，此时他的注意力在“听”上。
+T+1500ms: 后台异步评估完成（慢路径）。
+T+2000ms: 当用户听完回复的那一刻，界面轻轻滑出一张“本轮表现报告”卡片。
+
+
+这种“视觉滞后于听觉”的设计，是目前顶级 AI 英语教学产品的标配。
+消除语音模态下的“幻觉听写”
+语音模型在转录时，容易自动纠正用户的错误。例如用户说了 "I goes to school"，模型可能自动听写成 "I go to school"。
+算法对策：在 Evaluation Prompt 中加入强指令："Verify audio tokens against common ESL errors. Do NOT autocorrect the transcription."（对比音频 Token 与常见的二语习得错误，严禁自动修正听写内容）。
+处理中英混合（Code-switching）
+这是最难的点。
+算法对策：如果使用的是 GPT-4o 或 Gemini 语音模态，它们具备极强的跨语言理解力。你需要告诉模型："The user is a Chinese learner. Treat Chinese words as intentional placeholders for missing vocabulary, not as noise."（将中文视为由于词汇缺失而产生的占位符，而不是噪音）。
+异步触发机制
+用户松开录音键瞬间，同时发出两个请求。
+Interaction Path 设置 temperature=0.7（增加聊天趣味性）。
+Evaluation Path 设置 temperature=0.1（保证评分稳定性）。
+前端先通过 Webview 或 WebSocket 播放语音回复，同时在后台静默等待 JSON。JSON 到达后，以“即时消息”或“纠错气泡”的形式弹出。
+评估逻辑的“人性化”
+不要全量纠错：如果用户一句话里有 5 个错，全揪出来会摧毁学习信心。
+算法逻辑：要求 Evaluation Model 只输出 top_2_critical_errors。剩下的错误忽略掉，这就是所谓的 “有效负反馈阈值”。
+归纳一下你给出的这些建议

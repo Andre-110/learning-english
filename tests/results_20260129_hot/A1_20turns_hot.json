@@ -1,0 +1,403 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-29T10:43:50.818501",
+    "level": "A1",
+    "turns": 20,
+    "user_profile": {
+      "cefr_level": "A1",
+      "interests": [
+        "art",
+        "music",
+        "technology"
+      ],
+      "overall_score": 50,
+      "strengths": [],
+      "weaknesses": []
+    },
+    "hot_content_enabled": true
+  },
+  "summary": {
+    "ai_avg_latency": 4.42,
+    "user_avg_latency": 3.653,
+    "strategies": {
+      "summarize": 20
+    },
+    "hot_content_events": 4
+  },
+  "hot_content_events": [
+    {
+      "turn": 0,
+      "type": "greeting",
+      "topic": "technology",
+      "headline": "Lego makes smart bricks now!"
+    },
+    {
+      "turn": 1,
+      "type": "topic_detected",
+      "topic": "art",
+      "headline": "Art is fun and real now!"
+    },
+    {
+      "turn": 5,
+      "type": "topic_detected",
+      "topic": "travel",
+      "headline": "Iceland has a big party for the eclipse!"
+    },
+    {
+      "turn": 6,
+      "type": "topic_detected",
+      "topic": "sports",
+      "headline": "Bad Bunny at Super Bowl!"
+    }
+  ],
+  "conversation": [
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "Hey! I just heard that Lego makes smart bricks now! They can talk to each other. Isn’t that cool? Would you want to try building with those?",
+      "latency_s": 4.252,
+      "has_hot_content": true,
+      "hot_topic": "technology"
+    },
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "Um, yes, very cool! I like Lego. I build many things. But... smart bricks? How they talk? Is it like... um, robot? I want to try! Maybe... I can make a house or a car. That sounds fun! But, um, I not sure how to use smart things. Can you help me?",
+      "latency_s": 3.603,
+      "word_count": 52,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Smart bricks use sensors and Bluetooth to connect. They can send signals to each other and make sounds! What's the best thing you have built with Lego?",
+      "latency_s": 8.958,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "art"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "Um, I build many things with Lego. I build a big house and a car. The house have, um, two floors and a garden. I like the garden. It have flowers and a tree. \n\nBut, best thing... maybe the car? The car can move! I use wheels and some, um, special pieces. But it not very fast. Haha! \n\nWhat about you? You build something with Lego?",
+      "latency_s": 3.249,
+      "word_count": 66,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, that sounds really fun! I like how you made a big house with a garden. What kind of flowers did you build? \n\nI used to build a spaceship with Lego. It had cool details! Have you ever made something like that?",
+      "latency_s": 1.99,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "Um, I build flowers... um, I think, um, red and yellow flowers. They very pretty! I not build spaceship, but I like spaceship. Maybe I can try to build one. \n\nDo you like to build with Lego too? What your favorite thing you build?",
+      "latency_s": 2.612,
+      "word_count": 44,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Oh, red and yellow flowers sound so pretty! I can picture them in your Lego garden. \n\nI love building with Lego too! My favorite thing was a big castle with towers. What kind of spaceship would you like to build?",
+      "latency_s": 2.184,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "Um, I... I think I want build a spaceship, um, with big, um, wings! And, um, maybe some... some lights, like, um, blue and green lights. I not sure how make it look like, maybe round? \n\nDo you like spaceships, too? How your castle? It very big, I think?",
+      "latency_s": 2.352,
+      "word_count": 49,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Oh, a spaceship with big wings and blue and green lights sounds amazing! I love that idea! \n\nMy castle was really big, with tall towers and a drawbridge. What kind of things do you want to put inside your spaceship?",
+      "latency_s": 3.512,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "Um, I... I want put, um, a big chair, um, and maybe some, um, computers. I think... I think I want also a, um, window to see the stars! And, um, maybe some, um, food too. Like, um, snacks for, um, space travel!",
+      "latency_s": 3.892,
+      "word_count": 43,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That sounds cool! A big chair and computers in your spaceship will be great! What will you use the computers for?",
+      "latency_s": 3.23,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "travel"
+    },
+    {
+      "turn": 6,
+      "role": "user",
+      "content": "Um, I... I use the computers for, um, control? Yes, control spaceship! And, um, maybe play games, um, when I fly. Also, um, look at stars! I want, um, see many stars and planets, um, very beautiful.",
+      "latency_s": 1.952,
+      "word_count": 37,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 6,
+      "role": "assistant",
+      "content": "Using computers to control the spaceship and play games sounds fun! What games do you want to play in your spaceship?",
+      "latency_s": 2.884,
+      "strategy": "summarize",
+      "has_hot_content": true,
+      "hot_topic": "sports"
+    },
+    {
+      "turn": 7,
+      "role": "user",
+      "content": "Um, I think... I want to play, um, racing games? Yes! Like, um, fast cars. And maybe, um, some... um, shooting games too? I like, um, action games. But, um, I also like, uh, puzzle games! They make me think, um, very hard. And, um, do you like games?",
+      "latency_s": 3.374,
+      "word_count": 49,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 7,
+      "role": "assistant",
+      "content": "Oh, I see! Racing games with fast cars sound exciting! I like action games too, but puzzle games are great for thinking. What’s a puzzle game you really enjoy?",
+      "latency_s": 2.855,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 8,
+      "role": "user",
+      "content": "Um, I, uh, I like... um, I like Tetris! Yes, Tetris is fun. You, um, put blocks together, and, um, it is... um, difficult but good. I... I play Tetris with, um, my friends. We, uh, try to, um, get high score. What about you? Do you like Tetris?",
+      "latency_s": 15.152,
+      "word_count": 49,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 8,
+      "role": "assistant",
+      "content": "Tetris is a classic! I like that it makes you think fast. What's the highest score you've gotten with your friends?",
+      "latency_s": 3.175,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 9,
+      "role": "user",
+      "content": "Um, I, uh, I think my high score is... um, 5000? Yes, I play with my friends, and we, um, have fun. Sometimes I, um, lose, but sometimes I win! My friend, um, she very good at Tetris. She got, um, 8000 points! I want to get better. Do you, um, play Tetris too?",
+      "latency_s": 3.539,
+      "word_count": 54,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 9,
+      "role": "assistant",
+      "content": "Wow, 5000 points is a great score! It sounds like you have fun playing with your friends. How does it feel when you win or lose?",
+      "latency_s": 2.928,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 10,
+      "role": "user",
+      "content": "Um, when I win, I feel very happy! Yes, I, uh, I smile a lot. My friends also cheer, and we, um, celebrate. But when I lose, um, I feel a little sad. I think, \"Oh no!\" But it's okay, um, I just try again. We laugh and, um, play again. It’s fun with friends!",
+      "latency_s": 2.59,
+      "word_count": 55,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 10,
+      "role": "assistant",
+      "content": "It sounds like you have a great time playing Tetris with your friends! Celebrating wins must feel so nice. What’s the funniest moment you’ve had while playing together?",
+      "latency_s": 2.132,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 11,
+      "role": "user",
+      "content": "Um, the funniest moment, uh, I think is... one time, my friend, he, um, he lost very fast. Like, very, very fast! And, um, we all laugh a lot. He, uh, he said, \"Why I so bad?\" and we, um, we tease him. It was, um, very funny! \n\nAlso, sometimes, we make, uh, silly faces when we play. I think that is very fun too! My friend, she, um, she make a funny face, and we all, uh, laugh. Playing is, um, good time!",
+      "latency_s": 3.221,
+      "word_count": 84,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 11,
+      "role": "assistant",
+      "content": "It sounds like you all have such a fun time together! I love the idea of making silly faces while playing. What's the funniest face someone has made during your games?",
+      "latency_s": 2.616,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 12,
+      "role": "user",
+      "content": "Um, yes! My friend, uh, he make a very funny face. His eyes, uh, big like this (makes big eyes with hands), and his mouth, um, like a, uh, big O. It was so, um, funny! We all laugh a lot. It, um, made the game more fun. I try to make, um, funny face too, but I, uh, not so good. Maybe next time I try more!",
+      "latency_s": 2.302,
+      "word_count": 68,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 12,
+      "role": "assistant",
+      "content": "It sounds like your friend's funny face really made everyone laugh! I think trying to make funny faces is a great idea. What other fun things do you do while playing games with your friends?",
+      "latency_s": 1.99,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 13,
+      "role": "user",
+      "content": "Um, we, uh, we play many games. Like, um, card games. Yes! We play, uh, cards and we, um, talk and laugh. One game, um, is “Uno.” Very fun! \n\nAlso, we, um, we play, uh, video games too. Sometimes, we, uh, play together online. It is, um, exciting! But sometimes I lose, and my friend, he laugh very much. \n\nAnd, um, we also, uh, eat snacks! Like, um, chips and, uh, cookies. It is, um, nice to have food while playing.",
+      "latency_s": 2.85,
+      "word_count": 81,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 13,
+      "role": "assistant",
+      "content": "It sounds like you have a great time with your friends playing games and eating snacks! I love the idea of playing Uno—what's your favorite part about that game?",
+      "latency_s": 3.735,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 14,
+      "role": "user",
+      "content": "Um, yes! Uno, uh, is very fun! My favorite part, um, is when I, uh, say \"Uno!\" before I win. It make me feel, um, excited! And, uh, I like when, um, my friends, they have to pick many cards. Ha ha! It's funny! But, um, sometimes I, uh, lose and I feel a little sad. But, um, we always laugh together!",
+      "latency_s": 2.288,
+      "word_count": 62,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 14,
+      "role": "assistant",
+      "content": "It sounds like saying \"Uno!\" is such a fun moment for you! I can imagine the excitement when you win. What do you think makes playing games with friends so special?",
+      "latency_s": 3.589,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 15,
+      "role": "user",
+      "content": "Um, I think, uh, playing games with friends is special because we, um, laugh a lot. Yes! We, uh, talk and have fun together. Sometimes, um, we, we tease each other, like, um, I say \"you lose!\" and they say \"no!\" It is very funny! \n\nAlso, um, I like to, uh, share snacks. Snacks make, um, the game better! We eat, uh, chips and drink soda. It feel, um, happy time. \n\nAnd, um, when I play, I feel, um, it is good to, uh, be with friends. We make good, um, memories.",
+      "latency_s": 4.95,
+      "word_count": 92,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 15,
+      "role": "assistant",
+      "content": "It sounds like you have such a great time with your friends! I love that you share snacks while playing games. What's your favorite snack to enjoy during game time?",
+      "latency_s": 3.28,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 16,
+      "role": "user",
+      "content": "Um, my favorite snack, uh, is chips! I like, um, potato chips very much. They are, uh, crunchy and salty. I also like, um, fruit like, uh, apples or bananas. They are, um, healthy! When we play, we, um, eat snacks together and, uh, it makes fun time more fun! What about you? What is your favorite snack?",
+      "latency_s": 3.506,
+      "word_count": 58,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 16,
+      "role": "assistant",
+      "content": "Oh, I love that you enjoy crunchy potato chips! They are such a tasty snack. I really like popcorn; it's light and fun to eat while watching movies. What's your favorite way to enjoy chips? Do you have a special dip or just eat them plain?",
+      "latency_s": 4.158,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 17,
+      "role": "user",
+      "content": "Um, I... I like chips plain, um, very simple. But sometimes I, uh, eat with dip. Um, maybe, uh, salsa? Yes, salsa! It’s, um, spicy and good. I eat chips, um, when I watch movies too. But, um, no popcorn for me! I like chips more. What about you? Do you eat chips?",
+      "latency_s": 3.213,
+      "word_count": 53,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 17,
+      "role": "assistant",
+      "content": "I get it! Chips are such a great snack, especially with spicy salsa. I enjoy chips too, but I really like them with guacamole! What's your favorite movie to watch while eating chips?",
+      "latency_s": 3.568,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 18,
+      "role": "user",
+      "content": "Um, my favorite movie... I think is, um, \"The Lion King.\" I like the, um, music and the, uh, animals. It is, um, very nice. I can, uh, watch it again and again. I eat chips, um, when I watch it. What about you? What movie you like?",
+      "latency_s": 2.452,
+      "word_count": 48,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 18,
+      "role": "assistant",
+      "content": "Oh, \"The Lion King\" is such a classic! I love the music too, especially \"Circle of Life.\" What part of the movie makes you feel the most?",
+      "latency_s": 27.472,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 19,
+      "role": "user",
+      "content": "Um, I think, uh, the part when, um, Simba, he, uh, come back to Pride Rock. Um, and he see the, uh, his family and friends. I feel, um, very happy. And, uh, the music is, um, very strong. It make me, uh, feel good. What about you?",
+      "latency_s": 3.604,
+      "word_count": 48,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 19,
+      "role": "assistant",
+      "content": "Oh, I totally understand! That moment when Simba returns is so powerful and emotional. The music really adds to the feeling! What do you think makes that music so strong for you?",
+      "latency_s": 2.298,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    },
+    {
+      "turn": 20,
+      "role": "user",
+      "content": "Um, I think the music is, uh, very... um, it make me feel, uh, excited and, um, happy. And, um, when the, uh, animals come together, the music is very, um, strong. I like the, um, drums and, uh, singing. It feel like, um, family and, uh, home. And, um, I remember my, uh, family when I hear it. ",
+      "latency_s": 2.352,
+      "word_count": 59,
+      "strategy": "summarize"
+    },
+    {
+      "turn": 20,
+      "role": "assistant",
+      "content": "That’s really touching! The way music brings back memories of family is special. What do you remember most about those times with your family?",
+      "latency_s": 1.852,
+      "strategy": "summarize",
+      "has_hot_content": false,
+      "hot_topic": null
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+====================================================================================================
+100轮对话测试 - 处理时间趋势深度分析
+====================================================================================================
+
+2025-12-17 11:11:17 | services.qwen_omni_audio | INFO     | Qwen-Omni Audio 服务初始化: audio_model=qwen3-omni-flash
+2025-12-17 11:11:17 | services.unified_processor | INFO     | 统一处理器初始化: 使用 qwen-omni 服务
+初始化 TTS 服务...
+✅ TTS 服务初始化完成
+
+开始100轮对话测试...
+预计时间: 约8.3分钟
+
+[  1/100] Hello! I want to talk about football.... 2025-12-17 11:11:19 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 40320 bytes
+2025-12-17 11:11:22 | services.unified_processor | INFO     | [解析成功] 转录: Hello, I want to talk about fo...
+✅ 2.84s (历史: 2条)
+[  2/100] I really like Messi. He is amazing.... 2025-12-17 11:11:23 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 49920 bytes
+2025-12-17 11:11:28 | services.unified_processor | INFO     | [解析成功] 转录: I really like Messi. He's amaz...
+✅ 4.81s (历史: 4条)
+[  3/100] Can you tell me more about his early career?... 2025-12-17 11:11:29 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 34560 bytes
+2025-12-17 11:11:33 | services.unified_processor | INFO     | [解析成功] 转录: Can you tell me more about his...
+✅ 4.70s (历史: 6条)
+[  4/100] What about his achievements in Barcelona?... 2025-12-17 11:11:34 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 43392 bytes
+2025-12-17 11:11:38 | services.unified_processor | INFO     | [解析成功] 转录: What about his achievements in...
+✅ 3.48s (历史: 8条)
+[  5/100] I also want to know about his family life.... 2025-12-17 11:11:39 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36096 bytes
+2025-12-17 11:11:43 | services.unified_processor | INFO     | [解析成功] 转录: I also want to know about his ...
+✅ 3.90s (历史: 10条)
+[  6/100] How did he start playing football?... 2025-12-17 11:11:44 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 28800 bytes
+2025-12-17 11:11:49 | services.unified_processor | INFO     | [解析成功] 转录: How did he start playing footb...
+✅ 5.32s (历史: 12条)
+[  7/100] What was his first club?... 2025-12-17 11:11:51 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 26496 bytes
+2025-12-17 11:12:48 | services.unified_processor | INFO     | [解析成功] 转录: What was his first club?...
+✅ 57.78s (历史: 14条)
+[  8/100] When did he join Barcelona?... 2025-12-17 11:12:50 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 28800 bytes
+2025-12-17 11:12:55 | services.unified_processor | INFO     | [解析成功] 转录: When did he join Barcelona?...
+✅ 5.22s (历史: 16条)
+[  9/100] How many goals did he score for Barcelona?... 2025-12-17 11:12:57 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 40320 bytes
+2025-12-17 11:13:01 | services.unified_processor | INFO     | [解析成功] 转录: How many goals did he score fo...
+✅ 3.89s (历史: 18条)
+[ 10/100] What about his international career?... 2025-12-17 11:13:02 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 31488 bytes
+2025-12-17 11:13:07 | services.unified_processor | INFO     | [解析成功] 转录: What about his international c...
+✅ 5.48s (历史: 20条)
+
+  📊 进度: 10/100 (10%)
+  ⏱️  最近10轮平均: 9.74s
+  ⏱️  总耗时: 1.8分钟, 预计剩余: 16.5分钟
+
+[ 11/100] Did he win the World Cup?... 2025-12-17 11:13:09 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 23424 bytes
+2025-12-17 11:13:15 | services.unified_processor | INFO     | [解析成功] 转录: Did he win the World Cup?...
+✅ 5.53s (历史: 22条)
+[ 12/100] What year did he win it?... 2025-12-17 11:13:16 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 23424 bytes
+2025-12-17 11:13:22 | services.unified_processor | INFO     | [解析成功] 转录: What year did he win it...
+✅ 6.16s (历史: 24条)
+[ 13/100] Who were his teammates?... 2025-12-17 11:13:24 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 26496 bytes
+2025-12-17 11:13:29 | services.unified_processor | INFO     | [解析成功] 转录: Who were his teammates?...
+✅ 5.64s (历史: 26条)
+[ 14/100] What about his playing style?... 2025-12-17 11:13:31 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 27264 bytes
+2025-12-17 11:13:35 | services.unified_processor | INFO     | [解析成功] 转录: What about his playing style?...
+✅ 4.35s (历史: 28条)
+[ 15/100] Is he still playing professionally?... 2025-12-17 11:13:36 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 37632 bytes
+2025-12-17 11:13:41 | services.unified_processor | INFO     | [解析成功] 转录: Is he still playing profession...
+✅ 4.70s (历史: 30条)
+[ 16/100] Where does he play now?... 2025-12-17 11:13:42 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 22656 bytes
+2025-12-17 11:13:52 | services.unified_processor | INFO     | [解析成功] 转录: Where does he play now?...
+✅ 10.02s (历史: 32条)
+[ 17/100] How old is he now?... 2025-12-17 11:13:53 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 21888 bytes
+2025-12-17 11:13:57 | services.unified_processor | INFO     | [解析成功] 转录: How old is he now?...
+✅ 4.11s (历史: 34条)
+[ 18/100] What are his hobbies?... 2025-12-17 11:13:58 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 21120 bytes
+2025-12-17 11:14:04 | services.unified_processor | INFO     | [解析成功] 转录: What are his hobbies?...
+✅ 5.72s (历史: 36条)
+[ 19/100] Does he have any charity work?... 2025-12-17 11:14:06 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 28032 bytes
+2025-12-17 11:14:11 | services.unified_processor | INFO     | [解析成功] 转录: Does he have any charity work?...
+✅ 4.83s (历史: 38条)
+[ 20/100] Can you tell me more about his legacy?... 2025-12-17 11:14:12 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 40320 bytes
+2025-12-17 11:14:17 | services.unified_processor | INFO     | [解析成功] 转录: Can you tell me more about his...
+✅ 4.67s (历史: 40条)
+
+  📊 进度: 20/100 (20%)
+  ⏱️  最近10轮平均: 5.57s
+  ⏱️  总耗时: 3.0分钟, 预计剩余: 12.0分钟
+
+[ 21/100] Hello! I want to talk about football.... 2025-12-17 11:14:19 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 41088 bytes
+2025-12-17 11:14:24 | services.unified_processor | INFO     | [解析成功] 转录: Hello, I want to talk about fo...
+✅ 5.64s (历史: 42条)
+[ 22/100] I'm curious about i really like messi. he is amazi... 2025-12-17 11:14:26 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48768 bytes
+2025-12-17 11:14:33 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about I really lik...
+✅ 6.55s (历史: 44条)
+[ 23/100] I'm curious about can you tell me more about his e... 2025-12-17 11:14:35 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 62592 bytes
+2025-12-17 11:14:39 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about can you tell...
+✅ 4.62s (历史: 46条)
+[ 24/100] I'm curious about what about his achievements in b... 2025-12-17 11:14:40 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48768 bytes
+2025-12-17 11:14:49 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about what about h...
+✅ 8.85s (历史: 48条)
+[ 25/100] I'm curious about i also want to know about his fa... 2025-12-17 11:14:52 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 56832 bytes
+2025-12-17 11:14:56 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about I also want ...
+✅ 4.58s (历史: 50条)
+[ 26/100] I'm curious about how did he start playing footbal... 2025-12-17 11:14:57 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 49920 bytes
+2025-12-17 11:15:03 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about how did he s...
+✅ 5.65s (历史: 52条)
+[ 27/100] I'm curious about what was his first club?... 2025-12-17 11:15:05 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 44160 bytes
+2025-12-17 11:15:12 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about what was his...
+✅ 7.06s (历史: 54条)
+[ 28/100] I'm curious about when did he join barcelona?... 2025-12-17 11:15:13 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48768 bytes
+2025-12-17 11:15:18 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about I really lik...
+✅ 4.99s (历史: 56条)
+[ 29/100] I'm curious about how many goals did he score for ... 2025-12-17 11:15:20 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 49920 bytes
+2025-12-17 11:16:24 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about how many goa...
+✅ 64.62s (历史: 58条)
+[ 30/100] I'm curious about what about his international car... 2025-12-17 11:16:26 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 56064 bytes
+2025-12-17 11:16:33 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about what about h...
+✅ 7.54s (历史: 60条)
+
+  📊 进度: 30/100 (30%)
+  ⏱️  最近10轮平均: 12.01s
+  ⏱️  总耗时: 5.3分钟, 预计剩余: 12.3分钟
+
+[ 31/100] I'm curious about did he win the world cup?... 2025-12-17 11:16:35 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 41856 bytes
+2025-12-17 11:16:42 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about did he win t...
+✅ 6.74s (历史: 62条)
+[ 32/100] I'm curious about what year did he win it?... 2025-12-17 11:16:44 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 39168 bytes
+2025-12-17 11:16:48 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about what year di...
+✅ 4.11s (历史: 64条)
+[ 33/100] I'm curious about who were his teammates?... 2025-12-17 11:16:49 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 40320 bytes
+2025-12-17 11:16:57 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about who were his...
+✅ 7.73s (历史: 66条)
+[ 34/100] I'm curious about what about his playing style?... 2025-12-17 11:16:59 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48000 bytes
+2025-12-17 11:17:04 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about what about h...
+✅ 5.26s (历史: 68条)
+[ 35/100] I'm curious about is he still playing professional... 2025-12-17 11:17:06 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 43392 bytes
+2025-12-17 11:17:12 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about is he still ...
+✅ 5.78s (历史: 70条)
+[ 36/100] I'm curious about where does he play now?... 2025-12-17 11:17:14 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36096 bytes
+2025-12-17 11:17:17 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about where does h...
+✅ 3.75s (历史: 72条)
+[ 37/100] I'm curious about how old is he now?... 2025-12-17 11:17:18 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33024 bytes
+2025-12-17 11:17:23 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about how old is h...
+✅ 5.04s (历史: 74条)
+[ 38/100] I'm curious about what are his hobbies?... 2025-12-17 11:17:25 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36864 bytes
+2025-12-17 11:17:30 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about What are his...
+✅ 4.78s (历史: 76条)
+[ 39/100] I'm curious about does he have any charity work?... 2025-12-17 11:17:31 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 43392 bytes
+2025-12-17 11:17:36 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about does he have...
+✅ 5.25s (历史: 78条)
+[ 40/100] I'm curious about can you tell me more about his l... 2025-12-17 11:17:38 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 54528 bytes
+2025-12-17 11:17:43 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about can you tell...
+✅ 5.13s (历史: 80条)
+
+  📊 进度: 40/100 (40%)
+  ⏱️  最近10轮平均: 5.36s
+  ⏱️  总耗时: 6.4分钟, 预计剩余: 9.7分钟
+
+[ 41/100] Can you explain hello! i want to talk about footba... 2025-12-17 11:17:45 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 52224 bytes
+2025-12-17 11:17:50 | services.unified_processor | INFO     | [解析成功] 转录: Hello, I want to talk about fo...
+✅ 5.02s (历史: 82条)
+[ 42/100] Can you explain i really like messi. he is amazing... 2025-12-17 11:17:52 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 59520 bytes
+2025-12-17 11:17:56 | services.unified_processor | INFO     | [解析成功] 转录: I really like Messi. He is ama...
+✅ 3.90s (历史: 84条)
+[ 43/100] Can you explain can you tell me more about his ear... 2025-12-17 11:17:58 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 66432 bytes
+2025-12-17 11:19:08 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 69.93s (历史: 86条)
+[ 44/100] Can you explain what about his achievements in bar... 2025-12-17 11:19:10 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 45696 bytes
+2025-12-17 11:19:15 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about can you tell...
+✅ 5.43s (历史: 88条)
+[ 45/100] Can you explain i also want to know about his fami... 2025-12-17 11:19:17 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 64128 bytes
+2025-12-17 11:19:22 | services.unified_processor | INFO     | [解析成功] 转录: I'm curious about can you tell...
+✅ 5.24s (历史: 90条)
+[ 46/100] Can you explain how did he start playing football?... 2025-12-17 11:19:24 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48768 bytes
+2025-12-17 11:19:29 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 5.08s (历史: 92条)
+[ 47/100] Can you explain what was his first club??... 2025-12-17 11:19:31 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 51456 bytes
+2025-12-17 11:19:39 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 8.24s (历史: 94条)
+[ 48/100] Can you explain when did he join barcelona??... 2025-12-17 11:19:41 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 36864 bytes
+2025-12-17 11:19:55 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain when did he jo...
+✅ 13.73s (历史: 96条)
+[ 49/100] Can you explain how many goals did he score for ba... 2025-12-17 11:19:57 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 59520 bytes
+2025-12-17 11:20:24 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 26.75s (历史: 98条)
+[ 50/100] Can you explain what about his international caree... 2025-12-17 11:20:25 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 44160 bytes
+2025-12-17 11:20:30 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 4.36s (历史: 100条)
+
+  📊 进度: 50/100 (50%)
+  ⏱️  最近10轮平均: 14.77s
+  ⏱️  总耗时: 9.2分钟, 预计剩余: 9.2分钟
+
+[ 51/100] Can you explain did he win the world cup??... 2025-12-17 11:20:31 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 52224 bytes
+2025-12-17 11:20:36 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 5.35s (历史: 102条)
+[ 52/100] Can you explain what year did he win it??... 2025-12-17 11:20:38 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 37632 bytes
+2025-12-17 11:20:41 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain what year did ...
+✅ 3.69s (历史: 104条)
+[ 53/100] Can you explain who were his teammates??... 2025-12-17 11:20:43 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 32256 bytes
+2025-12-17 11:20:47 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain who were his t...
+✅ 4.82s (历史: 106条)
+[ 54/100] Can you explain what about his playing style??... 2025-12-17 11:20:49 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 41856 bytes
+2025-12-17 11:20:53 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain what about his...
+✅ 4.95s (历史: 108条)
+[ 55/100] Can you explain is he still playing professionally... 2025-12-17 11:20:55 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 57600 bytes
+2025-12-17 11:20:59 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain is he still pl...
+✅ 4.49s (历史: 110条)
+[ 56/100] Can you explain where does he play now??... 2025-12-17 11:21:00 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 32256 bytes
+2025-12-17 11:21:06 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 5.77s (历史: 112条)
+[ 57/100] Can you explain how old is he now??... 2025-12-17 11:21:08 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 37632 bytes
+2025-12-17 11:21:25 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 16.85s (历史: 114条)
+[ 58/100] Can you explain what are his hobbies??... 2025-12-17 11:21:27 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 33024 bytes
+2025-12-17 11:21:32 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain what are his h...
+✅ 5.03s (历史: 116条)
+[ 59/100] Can you explain does he have any charity work??... 2025-12-17 11:21:33 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 40320 bytes
+2025-12-17 11:21:39 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain does he have a...
+✅ 5.15s (历史: 118条)
+[ 60/100] Can you explain can you tell me more about his leg... 2025-12-17 11:21:40 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48768 bytes
+2025-12-17 11:21:55 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 14.89s (历史: 120条)
+
+  📊 进度: 60/100 (60%)
+  ⏱️  最近10轮平均: 7.10s
+  ⏱️  总耗时: 10.6分钟, 预计剩余: 7.1分钟
+
+[ 61/100] What do you think about hello! i want to talk abou... 2025-12-17 11:21:57 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 54528 bytes
+2025-12-17 11:22:01 | services.unified_processor | INFO     | [解析成功] 转录: Hello, I want to talk about fo...
+✅ 3.94s (历史: 122条)
+[ 62/100] What do you think about i really like messi. he is... 2025-12-17 11:22:02 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 79488 bytes
+2025-12-17 11:22:43 | services.unified_processor | INFO     | [解析成功] 转录: I really like Messi. He is ama...
+✅ 40.46s (历史: 124条)
+[ 63/100] What do you think about can you tell me more about... 2025-12-17 11:22:45 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 51456 bytes
+2025-12-17 11:22:53 | services.unified_processor | INFO     | [解析成功] 转录: Can you explain can you tell m...
+✅ 8.50s (历史: 126条)
+[ 64/100] What do you think about what about his achievement... 2025-12-17 11:22:55 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 70656 bytes
+2025-12-17 11:23:01 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about what a...
+✅ 5.83s (历史: 128条)
+[ 65/100] What do you think about i also want to know about ... 2025-12-17 11:23:15 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 55296 bytes
+2025-12-17 11:23:21 | services.unified_processor | INFO     | [解析成功] 转录: I also want to know about his ...
+✅ 6.09s (历史: 130条)
+[ 66/100] What do you think about how did he start playing f... 2025-12-17 11:23:23 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 54528 bytes
+2025-12-17 11:23:31 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about how di...
+✅ 8.14s (历史: 132条)
+[ 67/100] What do you think about what was his first club??... 2025-12-17 11:23:35 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 42624 bytes
+2025-12-17 11:23:39 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about what w...
+✅ 4.64s (历史: 134条)
+[ 68/100] What do you think about when did he join barcelona... 2025-12-17 11:23:41 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 39168 bytes
+2025-12-17 11:23:46 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about when d...
+✅ 4.86s (历史: 136条)
+[ 69/100] What do you think about how many goals did he scor... 2025-12-17 11:23:47 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 53760 bytes
+2025-12-17 11:23:52 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about how ma...
+✅ 4.73s (历史: 138条)
+[ 70/100] What do you think about what about his internation... 2025-12-17 11:23:53 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 49920 bytes
+2025-12-17 11:24:07 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about what a...
+✅ 14.42s (历史: 140条)
+
+  📊 进度: 70/100 (70%)
+  ⏱️  最近10轮平均: 10.16s
+  ⏱️  总耗时: 12.8分钟, 预计剩余: 5.5分钟
+
+[ 71/100] What do you think about did he win the world cup??... 2025-12-17 11:24:09 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 45696 bytes
+2025-12-17 11:24:16 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about did he...
+✅ 6.73s (历史: 142条)
+[ 72/100] What do you think about what year did he win it??... 2025-12-17 11:24:18 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 45696 bytes
+2025-12-17 11:24:24 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about what y...
+✅ 6.03s (历史: 144条)
+[ 73/100] What do you think about who were his teammates??... 2025-12-17 11:24:25 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 53760 bytes
+2025-12-17 11:24:29 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about who we...
+✅ 3.70s (历史: 146条)
+[ 74/100] What do you think about what about his playing sty... 2025-12-17 11:24:30 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 49920 bytes
+2025-12-17 11:24:34 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about what a...
+✅ 4.20s (历史: 148条)
+[ 75/100] What do you think about is he still playing profes... 2025-12-17 11:24:36 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 49920 bytes
+2025-12-17 11:24:41 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about is he ...
+✅ 4.99s (历史: 150条)
+[ 76/100] What do you think about where does he play now??... 2025-12-17 11:24:42 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 42624 bytes
+2025-12-17 11:24:45 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about where ...
+✅ 3.77s (历史: 152条)
+[ 77/100] What do you think about how old is he now??... 2025-12-17 11:24:47 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 37632 bytes
+2025-12-17 11:25:49 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about how ol...
+✅ 62.71s (历史: 154条)
+[ 78/100] What do you think about what are his hobbies??... 2025-12-17 11:25:51 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 38400 bytes
+2025-12-17 11:25:56 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about what a...
+✅ 5.36s (历史: 156条)
+[ 79/100] What do you think about does he have any charity w... 2025-12-17 11:25:58 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 61824 bytes
+2025-12-17 11:26:34 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about does h...
+✅ 36.29s (历史: 158条)
+[ 80/100] What do you think about can you tell me more about... 2025-12-17 11:26:37 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 46464 bytes
+2025-12-17 11:26:49 | services.unified_processor | INFO     | [解析成功] 转录: What do you think about can yo...
+✅ 12.36s (历史: 160条)
+
+  📊 进度: 80/100 (80%)
+  ⏱️  最近10轮平均: 14.62s
+  ⏱️  总耗时: 15.5分钟, 预计剩余: 3.9分钟
+
+[ 81/100] I want to know more about hello! i want to talk ab... 2025-12-17 11:26:51 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 64128 bytes
+2025-12-17 11:27:01 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about hell...
+✅ 9.53s (历史: 162条)
+[ 82/100] I want to know more about i really like messi. he ... 2025-12-17 11:27:03 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 62592 bytes
+2025-12-17 11:27:25 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about I re...
+✅ 21.81s (历史: 164条)
+[ 83/100] I want to know more about can you tell me more abo... 2025-12-17 11:27:27 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 67200 bytes
+2025-12-17 11:27:39 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about hell...
+✅ 11.87s (历史: 166条)
+[ 84/100] I want to know more about what about his achieveme... 2025-12-17 11:27:41 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 64896 bytes
+2025-12-17 11:27:48 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about what...
+✅ 7.73s (历史: 168条)
+[ 85/100] I want to know more about i also want to know abou... 2025-12-17 11:27:50 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 76032 bytes
+2025-12-17 11:27:58 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about I al...
+✅ 7.31s (历史: 170条)
+[ 86/100] I want to know more about how did he start playing... 2025-12-17 11:27:59 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 65664 bytes
+2025-12-17 11:28:08 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about how ...
+✅ 8.91s (历史: 172条)
+[ 87/100] I want to know more about what was his first club?... 2025-12-17 11:28:10 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 52224 bytes
+2025-12-17 11:28:18 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about what...
+✅ 7.39s (历史: 174条)
+[ 88/100] I want to know more about when did he join barcelo... 2025-12-17 11:28:19 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 56064 bytes
+2025-12-17 11:28:28 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about when...
+✅ 9.19s (历史: 176条)
+[ 89/100] I want to know more about how many goals did he sc... 2025-12-17 11:28:30 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 60288 bytes
+2025-12-17 11:28:37 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about how ...
+✅ 6.50s (历史: 178条)
+[ 90/100] I want to know more about what about his internati... 2025-12-17 11:28:39 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 61056 bytes
+2025-12-17 11:28:45 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about what...
+✅ 6.37s (历史: 180条)
+
+  📊 进度: 90/100 (90%)
+  ⏱️  最近10轮平均: 9.66s
+  ⏱️  总耗时: 17.5分钟, 预计剩余: 1.9分钟
+
+[ 91/100] I want to know more about did he win the world cup... 2025-12-17 11:28:47 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 52224 bytes
+2025-12-17 11:28:56 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about did ...
+✅ 8.45s (历史: 182条)
+[ 92/100] I want to know more about what year did he win it?... 2025-12-17 11:28:57 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48768 bytes
+2025-12-17 11:29:15 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about what...
+✅ 17.31s (历史: 184条)
+[ 93/100] I want to know more about who were his teammates?... 2025-12-17 11:29:16 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48000 bytes
+2025-12-17 11:29:25 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about who ...
+✅ 8.10s (历史: 186条)
+[ 94/100] I want to know more about what about his playing s... 2025-12-17 11:29:26 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 48768 bytes
+2025-12-17 11:29:33 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about what...
+✅ 6.41s (历史: 188条)
+[ 95/100] I want to know more about is he still playing prof... 2025-12-17 11:29:35 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 63360 bytes
+2025-12-17 11:29:43 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about is h...
+✅ 7.82s (历史: 190条)
+[ 96/100] I want to know more about where does he play now?... 2025-12-17 11:29:44 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 54528 bytes
+2025-12-17 11:29:55 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about wher...
+✅ 10.38s (历史: 192条)
+[ 97/100] I want to know more about how old is he now?... 2025-12-17 11:29:56 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 41856 bytes
+2025-12-17 11:30:03 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about how ...
+✅ 7.10s (历史: 194条)
+[ 98/100] I want to know more about what are his hobbies?... 2025-12-17 11:30:05 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 43392 bytes
+2025-12-17 11:30:13 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about what...
+✅ 8.32s (历史: 196条)
+[ 99/100] I want to know more about does he have any charity... 2025-12-17 11:30:15 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 64896 bytes
+2025-12-17 11:30:21 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about does...
+✅ 5.91s (历史: 198条)
+[100/100] I want to know more about can you tell me more abo... 2025-12-17 11:30:23 | services.qwen_omni_audio | INFO     | [API] Qwen-Omni 音频请求, 大小: 51456 bytes
+2025-12-17 11:30:31 | services.unified_processor | INFO     | [解析成功] 转录: I want to know more about can ...
+✅ 7.81s (历史: 200条)
+
+  📊 进度: 100/100 (100%)
+  ⏱️  最近10轮平均: 8.76s
+  ⏱️  总耗时: 19.2分钟, 预计剩余: 0.0分钟
+
+
+
+====================================================================================================
+100轮对话测试完成 - 详细分析
+====================================================================================================
+
+分段处理时间分析（每10轮一段）:
+段                    平均时间         最小         最大         增长        
+----------------------------------------------------------------------
+Turn 1-10                9.74s     2.84s    57.78s     +0.0%
+Turn 11-20               5.57s     4.11s    10.02s    -42.8%
+Turn 21-30              12.01s     4.58s    64.62s    +23.3%
+Turn 31-40               5.36s     3.75s     7.73s    -45.0%
+Turn 41-50              14.77s     3.90s    69.93s    +51.6%
+Turn 51-60               7.10s     3.69s    16.85s    -27.1%
+Turn 61-70              10.16s     3.94s    40.46s     +4.3%
+Turn 71-80              14.62s     3.70s    62.71s    +50.0%
+Turn 81-90               9.66s     6.37s    21.81s     -0.8%
+Turn 91-100              8.76s     5.91s    17.31s    -10.1%
+
+总体统计:
+  总轮数: 100
+  总耗时: 19.23分钟 (1153.97秒)
+  平均处理时间: 9.77s
+  最快: 2.84s (Turn 1)
+  最慢: 69.93s (Turn 43)
+
+增长趋势:
+  前10轮平均: 9.74s
+  后10轮平均: 8.76s
+  总体增长: -10.1%
+
+线性回归分析:
+  斜率: 0.0275秒/轮 (每增加1轮，时间增加0.0275秒)
+  相关系数 (R²): 0.0041
+  P值: 0.529273
+  ⚠️  统计不显著 (p >= 0.05)
+
+预测:
+  预测Turn 100的处理时间: 11.14s
+
+结果已保存到: conversation_100_turns_results.json
+====================================================================================================
