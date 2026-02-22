@@ -266,6 +266,28 @@ async def safe_send_json(websocket: WebSocket, data: dict, timeout: float = 5.0)
         return False
 
 
+# 录音保存目录（与 /api/debug-recording 端点一致）
+_RECORDINGS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "debug_recordings")
+
+
+def _save_recording(audio_data: bytes, audio_format: str, user_id: Optional[str], conversation_id: Optional[str]) -> None:
+    """保存用户录音到 debug_recordings/，默认开启"""
+    try:
+        import re
+        os.makedirs(_RECORDINGS_DIR, exist_ok=True)
+        uid = re.sub(r"[^a-zA-Z0-9_-]", "_", str(user_id or "unknown"))[:32]
+        cid = re.sub(r"[^a-zA-Z0-9_-]", "_", str(conversation_id or ""))[:16]
+        ts = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
+        ext = audio_format if audio_format in ("wav", "webm", "mp3") else "wav"
+        name = f"{uid}-{cid}-{ts}.{ext}" if cid else f"{uid}-{ts}.{ext}"
+        path = os.path.join(_RECORDINGS_DIR, name)
+        with open(path, "wb") as f:
+            f.write(audio_data)
+        logger.info(f"[录音] 已保存: {path} ({len(audio_data)} bytes)")
+    except Exception as e:
+        logger.warning(f"[录音] 保存失败: {e}")
+
+
 def get_processor() -> UnifiedProcessor:
     """获取 UnifiedProcessor（单例）- 用于评估轨"""
     global _processor
@@ -2755,6 +2777,8 @@ async def process_audio_stream(
             return
 
         logger.info(f"[处理] 音频大小: {len(audio_data)} bytes")
+        # 🆕 默认保存录音
+        _save_recording(audio_data, audio_format, user_id, conversation_id)
         await websocket.send_json({"type": "processing", "stage": "asr"})
 
         loop = asyncio.get_event_loop()
@@ -3570,6 +3594,9 @@ async def process_audio_stream_with_transcription(
             return
 
         logger.info(f"[双阈值] 使用预启动转录: {transcription[:50]}...")
+        # 🆕 默认保存录音
+        if audio_data:
+            _save_recording(audio_data, audio_format, user_id, conversation_id)
         
         # 🔧 发送转录结果给前端（让用户看到自己说的话）
         try:
