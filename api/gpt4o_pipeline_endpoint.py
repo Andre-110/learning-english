@@ -250,6 +250,22 @@ def get_pipeline() -> GPT4oPipeline:
     return _pipeline
 
 
+async def safe_send_json(websocket: WebSocket, data: dict, timeout: float = 5.0) -> bool:
+    """安全发送 JSON，超时或连接断开返回 False"""
+    try:
+        await asyncio.wait_for(websocket.send_json(data), timeout=timeout)
+        return True
+    except asyncio.TimeoutError:
+        logger.warning(f"[WebSocket] 发送超时({timeout}s): {data.get('type', 'unknown')}")
+        return False
+    except Exception as e:
+        if "1000" in str(e) or "closed" in str(e).lower():
+            logger.debug(f"[WebSocket] 连接已关闭，跳过发送: {data.get('type', 'unknown')}")
+        else:
+            logger.warning(f"[WebSocket] 发送失败: {e}")
+        return False
+
+
 def get_processor() -> UnifiedProcessor:
     """获取 UnifiedProcessor（单例）- 用于评估轨"""
     global _processor
@@ -350,6 +366,35 @@ async def generate_conversation_summary_async(conversation_id: str, user_text: s
         logger.error(f"生成摘要失败: {e}")
 
 
+# ========== turn_closed 超时兜底（独立函数，供多个处理函数调用）==========
+TURN_CLOSED_TIMEOUT_SECONDS = 30
+
+async def start_turn_closed_timeout(pipeline_context: dict, deepgram_context: dict = None):
+    """启动 turn_closed 超时兜底任务"""
+    if pipeline_context.get("turn_closed_timeout_task"):
+        pipeline_context["turn_closed_timeout_task"].cancel()
+        try:
+            await pipeline_context["turn_closed_timeout_task"]
+        except (asyncio.CancelledError, Exception):
+            pass
+
+    async def _timeout_fallback():
+        await asyncio.sleep(TURN_CLOSED_TIMEOUT_SECONDS)
+        if not pipeline_context.get("turn_closed", True):
+            logger.warning(f"[turn_closed] ⚠️ {TURN_CLOSED_TIMEOUT_SECONDS}秒未收到 assistant_played，自动关闭轮次")
+            pipeline_context["turn_closed"] = True
+            pipeline_context["active_message_round_id"] = None
+            pipeline_context["accumulated_transcript"] = ""
+            if deepgram_context is not None:
+                deepgram_context["accumulated_transcript"] = ""
+            pipeline_context["waiting_for_more"] = False
+            if pipeline_context.get("waiting_task"):
+                pipeline_context["waiting_task"].cancel()
+                pipeline_context["waiting_task"] = None
+
+    pipeline_context["turn_closed_timeout_task"] = asyncio.create_task(_timeout_fallback())
+
+
 @router.websocket("/gpt4o-pipeline")
 @router.websocket("/conversation")  # 🆕 兼容旧前端路径，替换旧的 conversation 端点
 async def gpt4o_pipeline_chat(
@@ -429,7 +474,7 @@ async def gpt4o_pipeline_chat(
                 logger.debug(f"[热点轨] 预热失败（不影响使用）: {e}")
         
         # 启动后台任务，不阻塞连接流程
-        asyncio.create_task(_warmup_user_interests())
+        _track_task(_warmup_user_interests(), name="warmup_interests")
         logger.info(f"[热点轨] 启动后台预热: {user_interests[:3]}")
 
     # 🆕 初始化对话记忆管理器（三层记忆架构）
@@ -465,6 +510,26 @@ async def gpt4o_pipeline_chat(
     audio_buffer = []
     audio_format = "wav"
     is_recording = False
+
+    # 🆕 Task #14: 后台任务追踪集合（避免 fire-and-forget 任务被 GC 回收）
+    _background_tasks: set = set()
+
+    def _track_task(coro, name: str = "unnamed"):
+        """创建并追踪后台任务，完成后自动移除"""
+        task = asyncio.create_task(coro, name=name)
+        _background_tasks.add(task)
+        def _done_cb(t):
+            _background_tasks.discard(t)
+            if t.cancelled():
+                return
+            exc = t.exception()
+            if exc:
+                logger.warning(f"[后台任务] {t.get_name()} 异常: {exc}")
+        task.add_done_callback(_done_cb)
+        return task
+
+    # 🆕 Task #15: conversation_history 线程安全锁
+    _history_lock = threading.Lock()
 
     # 评估队列管理
     eval_context = {
@@ -868,34 +933,6 @@ async def gpt4o_pipeline_chat(
 
         # 发送初始化完成
         await websocket.send_json({"type": "done", "latency": {"total": 0}})
-
-        # 🔧 turn_closed 超时兜底：防止前端未发送 assistant_played 导致状态机死锁
-        TURN_CLOSED_TIMEOUT_SECONDS = 30  # 30秒未收到 assistant_played 自动关闭轮次
-
-        async def start_turn_closed_timeout():
-            """启动 turn_closed 超时兜底任务"""
-            # 取消之前的超时任务
-            if pipeline_context.get("turn_closed_timeout_task"):
-                pipeline_context["turn_closed_timeout_task"].cancel()
-                try:
-                    await pipeline_context["turn_closed_timeout_task"]
-                except (asyncio.CancelledError, Exception):
-                    pass
-
-            async def _timeout_fallback():
-                await asyncio.sleep(TURN_CLOSED_TIMEOUT_SECONDS)
-                if not pipeline_context.get("turn_closed", True):
-                    logger.warning(f"[turn_closed] ⚠️ {TURN_CLOSED_TIMEOUT_SECONDS}秒未收到 assistant_played，自动关闭轮次")
-                    pipeline_context["turn_closed"] = True
-                    pipeline_context["active_message_round_id"] = None
-                    pipeline_context["accumulated_transcript"] = ""
-                    deepgram_context["accumulated_transcript"] = ""
-                    pipeline_context["waiting_for_more"] = False
-                    if pipeline_context.get("waiting_task"):
-                        pipeline_context["waiting_task"].cancel()
-                        pipeline_context["waiting_task"] = None
-
-            pipeline_context["turn_closed_timeout_task"] = asyncio.create_task(_timeout_fallback())
 
         # ========== 主消息循环 ==========
         # 🆕 流式音频帧缓冲区（用于自动对话模式）
@@ -1546,7 +1583,7 @@ async def gpt4o_pipeline_chat(
                                         logger.error(f"[双阈值] 预启动 STT 失败: {e}")
                                         speculative_stt_context["pending_transcription"] = None
                                 
-                                asyncio.create_task(run_speculative_stt())
+                                _track_task(run_speculative_stt(), name="speculative_stt")
                             
                         elif msg_type == "confirm_end":
                             # 🆕 双阈值系统：长阈值触发，确认用户说完
@@ -2399,6 +2436,12 @@ async def gpt4o_pipeline_chat(
                     pcm_bytes = message["bytes"]
                     audio_size = len(pcm_bytes)
                     if is_recording:
+                        # 🆕 Task #15: 音频缓冲上限 10MB，防止内存溢出
+                        total_buffer_bytes = sum(len(c) for c in audio_buffer) + audio_size
+                        if total_buffer_bytes > 10 * 1024 * 1024:
+                            logger.warning(f"[音频] 缓冲超过 10MB ({total_buffer_bytes} bytes)，丢弃最早帧")
+                            while audio_buffer and sum(len(c) for c in audio_buffer) + audio_size > 10 * 1024 * 1024:
+                                audio_buffer.pop(0)
                         audio_buffer.append(pcm_bytes)
 
                         # 流式模式：同步追加到 streaming_audio_frames 并发送到 ASR
@@ -2494,6 +2537,16 @@ async def gpt4o_pipeline_chat(
             except asyncio.CancelledError:
                 pass
             logger.info("[连接监控] 已停止")
+
+        # 🆕 Task #14: 清理所有后台任务
+        if _background_tasks:
+            logger.info(f"[清理] 取消 {len(_background_tasks)} 个后台任务...")
+            for task in list(_background_tasks):
+                if not task.done():
+                    task.cancel()
+            # 等待所有任务完成（忽略 CancelledError）
+            await asyncio.gather(*list(_background_tasks), return_exceptions=True)
+            _background_tasks.clear()
         
         # 🆕 记录完整会话统计
         session_duration = time.time() - robustness_context["session_start_time"]
@@ -2907,6 +2960,9 @@ async def process_audio_stream(
 
         def run_interaction():
             """在线程中运行 GPT-4o 三段链路"""
+            # 🆕 Task #15: 在线程中使用 conversation_history 快照，避免竞态
+            with _history_lock:
+                history_snapshot = list(conversation_history)
             try:
                 # 🆕 创建性能指标追踪器
                 metrics = PerformanceMetrics()
@@ -2917,8 +2973,8 @@ async def process_audio_stream(
                 asr_prompt = "This is an English speaking practice conversation. The user is practicing English conversation skills."
                 
                 # 🚀 增强 ASR Context: 将上一轮 AI 回复加入 prompt，防止幻觉
-                if conversation_history:
-                    last_ai_msg = next((m for m in reversed(conversation_history) if m.get("role") == "assistant"), None)
+                if history_snapshot:
+                    last_ai_msg = next((m for m in reversed(history_snapshot) if m.get("role") == "assistant"), None)
                     if last_ai_msg:
                         prev_content = last_ai_msg.get("content", "")[:100].replace("\n", " ")
                         asr_prompt += f" Previous AI said: '{prev_content}'. User replies:"
@@ -2954,7 +3010,7 @@ async def process_audio_stream(
                     for chunk in pipeline.generate_response_with_content(
                         user_text=transcription_result,
                         hot_content=pending_hot_content,
-                        conversation_history=conversation_history,
+                        conversation_history=history_snapshot,
                         user_profile=user_profile
                     ):
                         chunk_queue.put(("chunk", chunk))
@@ -2977,7 +3033,7 @@ async def process_audio_stream(
                     
                     for chunk in pipeline.process_text(
                         user_text=transcription_result,
-                        conversation_history=conversation_history,
+                        conversation_history=history_snapshot,
                         user_profile=user_profile,
                         memory_context=llm_memory_context,  # 🆕 传入 Layer 2 会话摘要
                         metrics=metrics
@@ -3075,18 +3131,20 @@ async def process_audio_stream(
                     if chunk_type == "transcription":
                         transcription = chunk.get("text", "")
                         # 发送转录（带 message_round_id）
-                        await websocket.send_json({
+                        if not await safe_send_json(websocket, {
                             "type": "transcription",
                             "text": transcription,
                             "message_round_id": message_round_id,
                             "timestamp": datetime.utcnow().isoformat() + "Z"
-                        })
+                        }):
+                            break
                         # ASR 完成后，发送 LLM 阶段（让前端创建 AI 消息容器）
-                        await websocket.send_json({
-                            "type": "processing", 
+                        if not await safe_send_json(websocket, {
+                            "type": "processing",
                             "stage": "llm",
                             "message_round_id": pipeline_context.get("active_message_round_id") if pipeline_context else message_round_id
-                        })
+                        }):
+                            break
                         llm_stage_sent = True
                         
                         # 🆕 启动 Thinking Indicator 计时器
@@ -3101,11 +3159,12 @@ async def process_audio_stream(
                         # 🆕 Backchanneling 填充音（降低心理延迟感）
                         # 将填充音作为 audio_chunk 发送，前端可以立即播放
                         logger.info("[Pipeline] 发送填充音到前端")
-                        await websocket.send_json({
+                        if not await safe_send_json(websocket, {
                             "type": "audio_chunk",
                             "data": chunk.get("data"),
                             "is_filler": True  # 标记为填充音
-                        })
+                        }):
+                            break
                         # 标记 AI 开始说话
                         if interrupt_state and not interrupt_state.get("is_speaking"):
                             interrupt_state["is_speaking"] = True
@@ -3113,11 +3172,12 @@ async def process_audio_stream(
                     elif chunk_type == "text_chunk":
                         # 如果尚未发送 LLM 阶段，先发送
                         if not llm_stage_sent:
-                            await websocket.send_json({
-                                "type": "processing", 
+                            if not await safe_send_json(websocket, {
+                                "type": "processing",
                                 "stage": "llm",
                                 "message_round_id": pipeline_context.get("active_message_round_id") if pipeline_context else message_round_id
-                            })
+                            }):
+                                break
                             llm_stage_sent = True
                         
                         # 🆕 收到第一个 text_chunk，取消 Thinking Indicator
@@ -3134,7 +3194,7 @@ async def process_audio_stream(
                                 thinking_timer_task.cancel()
                             # 如果已经发送了 thinking_indicator，发送结束消息
                             if thinking_indicator_sent:
-                                await websocket.send_json({
+                                await safe_send_json(websocket, {
                                     "type": "thinking_indicator_end",
                                     "timestamp": datetime.utcnow().isoformat() + "Z"
                                 })
@@ -3146,7 +3206,8 @@ async def process_audio_stream(
                             **chunk,
                             "message_round_id": pipeline_context.get("active_message_round_id") if pipeline_context else message_round_id
                         }
-                        await websocket.send_json(chunk_with_id)
+                        if not await safe_send_json(websocket, chunk_with_id):
+                            break
 
                     elif chunk_type == "audio_chunk":
                         # 🆕 检查是否被用户打断
@@ -3178,10 +3239,11 @@ async def process_audio_stream(
                                 message_round_id=pipeline_context.get("active_message_round_id") if pipeline_context else None
                             )
                         
-                        await websocket.send_json(chunk)
+                        if not await safe_send_json(websocket, chunk):
+                            break
 
                     elif chunk_type == "audio_end":
-                        await websocket.send_json(chunk)
+                        await safe_send_json(websocket, chunk)
                         # 🆕 AI 说完话
                         if interrupt_state:
                             interrupt_state["is_speaking"] = False
@@ -3203,7 +3265,7 @@ async def process_audio_stream(
                         
                         # 🆕 ASR 预热：AI 说完后立即初始化 ASR，用户下次说话时零延迟
                         if STREAMING_ASR_ENABLED and (DOUBAO_AVAILABLE or DEEPGRAM_AVAILABLE) and deepgram_context:
-                            asyncio.create_task(prewarm_deepgram_asr(deepgram_context))
+                            _track_task(prewarm_deepgram_asr(deepgram_context), name="prewarm_asr")
 
                     elif chunk_type == "done":
                         transcription = chunk.get("transcription", transcription)
@@ -3291,17 +3353,25 @@ async def process_audio_stream(
                 break
 
         # ========== 更新对话历史 + 记忆管理 ==========
+        with _history_lock:
+            if transcription:
+                conversation_history.append({"role": "user", "content": transcription})
+            if full_response:
+                conversation_history.append({"role": "assistant", "content": full_response})
+            # 降级截断（在锁内操作）
+            if not (memory_context and memory_context.get("memory")):
+                if len(conversation_history) > 20:
+                    conversation_history[:] = conversation_history[-20:]
+
         if transcription:
-            conversation_history.append({"role": "user", "content": transcription})
             # 🆕 记录消息计数（监控指标）
             increment("total_messages")
             increment("user_messages")
             # 🆕 添加到记忆管理器
             if memory_context and memory_context.get("memory"):
                 memory_context["memory"].add_message("user", transcription)
-        
+
         if full_response:
-            conversation_history.append({"role": "assistant", "content": full_response})
             # 🆕 添加到记忆管理器
             if memory_context and memory_context.get("memory"):
                 memory_context["memory"].add_message("assistant", full_response)
@@ -3310,14 +3380,10 @@ async def process_audio_stream(
         if memory_context and memory_context.get("memory"):
             memory = memory_context["memory"]
             logger.info(f"[Memory] 更新后状态: {memory.get_stats()}")
-            
+
             # 检查是否需要生成摘要
             if memory.summary_pending:
-                asyncio.create_task(_generate_memory_summary_async(memory, websocket))
-        else:
-            # 降级：使用原有的简单截断
-            if len(conversation_history) > 20:
-                conversation_history[:] = conversation_history[-20:]
+                _track_task(_generate_memory_summary_async(memory, websocket), name="memory_summary")
 
         # ========== 翻译轨已移除，改为按需翻译（用户点击翻译按钮时调用 /api/translate）==========
 
@@ -3400,7 +3466,7 @@ Output: topic only"""
                     logger.warning(f"[热点轨] 话题提取失败: {e}")
             
             # 启动异步任务（不阻塞主流程）
-            asyncio.create_task(extract_and_search_topic())
+            _track_task(extract_and_search_topic(), name="topic_search")
             hot_content_context["turn_count"] = current_turn + 1
 
         # ========== 保存消息到数据库 ==========
@@ -3439,8 +3505,9 @@ Output: topic only"""
 
         # ========== 摘要生成（第一轮）==========
         if conversation_id and round_number == 1 and transcription and full_response:
-            asyncio.create_task(
-                generate_conversation_summary_async(conversation_id, transcription, full_response, websocket)
+            _track_task(
+                generate_conversation_summary_async(conversation_id, transcription, full_response, websocket),
+                name="conv_summary"
             )
 
         # ========== 发送完成信号 ==========
@@ -3454,7 +3521,7 @@ Output: topic only"""
         })
 
         # 🔧 启动 turn_closed 超时兜底
-        await start_turn_closed_timeout()
+        await start_turn_closed_timeout(pipeline_context)
 
         logger.info(f"[性能] 总耗时: {timings['total']}s")
 
@@ -3565,8 +3632,8 @@ async def process_audio_stream_with_transcription(
                         "order": current_order,
                         "reason": "cadence"
                     })
-                except:
-                    pass
+                except Exception as e:
+                    logger.debug(f"[评估轨] 发送通知失败: {e}")
                 return
 
             try:
@@ -3580,8 +3647,8 @@ async def process_audio_stream_with_transcription(
                         "order": current_order,
                         "reason": "queue_full"
                     })
-                except:
-                    pass
+                except Exception as e:
+                    logger.debug(f"[评估轨] 发送通知失败: {e}")
                 return
 
             try:
@@ -3598,8 +3665,8 @@ async def process_audio_stream_with_transcription(
                             "order": current_order,
                             "reason": "empty_transcription"
                         })
-                    except:
-                        pass
+                    except Exception as e:
+                        logger.debug(f"[评估轨] 发送通知失败: {e}")
                     return
 
                 evaluation_track = get_evaluation_track()
@@ -3710,13 +3777,16 @@ async def process_audio_stream_with_transcription(
                             logger.warning(f"[热点轨] Recovery 搜索失败: {e}")
                     
                     # 启动异步任务
-                    asyncio.create_task(recovery_search_async())
+                    _track_task(recovery_search_async(), name="recovery_search")
 
         # ========== 交互轨（跳过 STT）==========
         chunk_queue = queue.Queue()
 
         def run_interaction():
             """在线程中运行 LLM + TTS（跳过 STT）"""
+            # 🆕 Task #15: 在线程中使用 conversation_history 快照，避免竞态
+            with _history_lock:
+                history_snapshot = list(conversation_history)
             try:
                 # 🆕 创建性能指标追踪器（跳过 ASR）
                 metrics = PerformanceMetrics()
@@ -3757,7 +3827,7 @@ async def process_audio_stream_with_transcription(
                     for chunk in pipeline.generate_response_with_content(
                         user_text=transcription,
                         hot_content=pending_hot_content,
-                        conversation_history=conversation_history,
+                        conversation_history=history_snapshot,
                         user_profile=user_profile
                     ):
                         chunk_queue.put(("chunk", chunk))
@@ -3781,7 +3851,7 @@ async def process_audio_stream_with_transcription(
                     
                     for chunk in pipeline.process_text(
                         user_text=transcription,
-                        conversation_history=conversation_history,
+                        conversation_history=history_snapshot,
                         user_profile=user_profile,
                         memory_context=llm_memory_context,  # 🆕 传入 Layer 2 会话摘要
                         metrics=metrics
@@ -3882,7 +3952,8 @@ async def process_audio_stream_with_transcription(
                             **chunk,
                             "message_round_id": message_round_id
                         }
-                        await websocket.send_json(chunk_with_id)
+                        if not await safe_send_json(websocket, chunk_with_id):
+                            break
                     elif chunk_type == "audio_chunk":
                         # logger.info(f"[DEBUG] 处理 audio_chunk, is_first={is_first_audio}")
                         # 🆕 检查用户是否继续说话（取消 LLM）
@@ -3943,12 +4014,13 @@ async def process_audio_stream_with_transcription(
                                 message_round_id=message_round_id
                             )
                         
-                        await websocket.send_json(chunk)
+                        if not await safe_send_json(websocket, chunk):
+                            break
                     elif chunk_type == "audio_end":
                         # 🆕 检查取消状态
                         if pipeline_context and pipeline_context.get("llm_cancelled"):
                              break
-                        await websocket.send_json(chunk)
+                        await safe_send_json(websocket, chunk)
                         # 🆕 AI 说完话
                         if interrupt_state:
                             interrupt_state["is_speaking"] = False
@@ -4068,23 +4140,27 @@ async def process_audio_stream_with_transcription(
             return
 
         # ========== 更新对话历史 ==========
+        with _history_lock:
+            if transcription:
+                conversation_history.append({"role": "user", "content": transcription})
+            if full_response:
+                conversation_history.append({"role": "assistant", "content": full_response})
+            if not (memory_context and memory_context.get("memory")):
+                if len(conversation_history) > 20:
+                    conversation_history[:] = conversation_history[-20:]
+
         if transcription:
-            conversation_history.append({"role": "user", "content": transcription})
             if memory_context and memory_context.get("memory"):
                 memory_context["memory"].add_message("user", transcription)
 
         if full_response:
-            conversation_history.append({"role": "assistant", "content": full_response})
             if memory_context and memory_context.get("memory"):
                 memory_context["memory"].add_message("assistant", full_response)
 
         if memory_context and memory_context.get("memory"):
             memory = memory_context["memory"]
             if memory.summary_pending:
-                asyncio.create_task(_generate_memory_summary_async(memory, websocket))
-        else:
-            if len(conversation_history) > 20:
-                conversation_history[:] = conversation_history[-20:]
+                _track_task(_generate_memory_summary_async(memory, websocket), name="memory_summary")
 
         # ========== 🆕 每轮话题检测 + 热点搜索（双阈值模式）==========
         if CONTENT_INJECTION_ENABLED and hot_content_context is not None and transcription:
@@ -4165,7 +4241,7 @@ Output: topic only"""
                     logger.warning(f"[热点轨-双阈值] 话题提取失败: {e}")
             
             # 启动异步任务（不阻塞主流程）
-            asyncio.create_task(extract_and_search_topic_dual())
+            _track_task(extract_and_search_topic_dual(), name="topic_search_dual")
             hot_content_context["turn_count"] = current_turn + 1
 
         # ========== 保存消息 ==========
@@ -4204,8 +4280,9 @@ Output: topic only"""
 
         # ========== 摘要生成 ==========
         if conversation_id and round_number == 1 and transcription and full_response:
-            asyncio.create_task(
-                generate_conversation_summary_async(conversation_id, transcription, full_response, websocket)
+            _track_task(
+                generate_conversation_summary_async(conversation_id, transcription, full_response, websocket),
+                name="conv_summary"
             )
 
         # ========== 发送完成信号 ==========
@@ -4223,7 +4300,7 @@ Output: topic only"""
         })
 
         # 🔧 启动 turn_closed 超时兜底
-        await start_turn_closed_timeout()
+        await start_turn_closed_timeout(pipeline_context)
 
         logger.info(f"[性能-双阈值] 总耗时: {timings['total']}s (STT 已预启动)")
 
@@ -4251,8 +4328,8 @@ async def prewarm_deepgram_asr(deepgram_context: dict):
         if deepgram_context.get("asr"):
             try:
                 await deepgram_context["asr"].stop_stream()
-            except:
-                pass
+            except Exception as e:
+                logger.debug(f"[ASR] 停止流失败: {e}")
             deepgram_context["asr"] = None
         
         # 🆕 根据配置创建 ASR 实例
