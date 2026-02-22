@@ -822,13 +822,16 @@ async def gpt4o_pipeline_chat(
                 if use_new_user_greeting:
                     initial_question = get_new_user_greeting()
                     logger.info(f"[新用户] 使用引导式开场白: {initial_question[:50]}...")
-                    
+
+                    # 重置前端打断标志，确保音频能播放
+                    await websocket.send_json({"type": "ai_response_started"})
+
                     # 直接发送文本
                     await websocket.send_json({
                         "type": "text_chunk",
                         "text": initial_question
                     })
-                    
+
                     # 生成 TTS
                     try:
                         audio = pipeline.synthesize(initial_question)
@@ -870,6 +873,9 @@ async def gpt4o_pipeline_chat(
                         chunks = []  # 空结果，触发兜底逻辑
                 
                 audio_chunk_count = 0
+                if chunks:
+                    # 重置前端打断标志，确保开场白音频能播放
+                    await websocket.send_json({"type": "ai_response_started"})
                 for chunk in chunks:
                     chunk_type = chunk.get("type")
                     
@@ -894,6 +900,7 @@ async def gpt4o_pipeline_chat(
             # 兜底：如果初始问题为空，使用固定开场白
             if not initial_question:
                 initial_question = "Hi! How are you today?"
+                await websocket.send_json({"type": "ai_response_started"})
                 await websocket.send_json({
                     "type": "text_chunk",
                     "text": initial_question
