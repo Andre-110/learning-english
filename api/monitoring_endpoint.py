@@ -198,7 +198,19 @@ async def get_alerts():
         return {"status": "error", "message": str(e)}
 
 
-@router.get("/alerts/config")
+@router.get("/timeline")
+async def get_timeline(count: int = 50):
+    """获取最近 N 轮对话的时间轴延迟数据"""
+    try:
+        from services.utils.timeline_logger import get_timeline_logger
+        tl = get_timeline_logger()
+        rounds = tl.get_recent_timelines(count)
+        return {"status": "ok", "rounds": rounds}
+    except Exception as e:
+        return {"status": "error", "message": str(e), "rounds": []}
+
+
+
 async def get_alert_config():
     """获取告警配置"""
     return {

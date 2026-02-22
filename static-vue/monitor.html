@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinguaCoach 监控面板</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; padding: 16px; }
+h1 { font-size: 18px; margin-bottom: 12px; color: #e2e8f0; display: flex; align-items: center; gap: 8px; }
+h2 { font-size: 12px; color: #64748b; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+.top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.refresh-info { color: #64748b; font-size: 12px; }
+.refresh-info span { color: #94a3b8; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin-bottom: 10px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.card { background: #1e293b; border-radius: 8px; padding: 14px; border: 1px solid #334155; }
+.metric { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+.metric-label { color: #94a3b8; font-size: 13px; }
+.metric-value { font-size: 20px; font-weight: 600; }
+.metric-value.sm { font-size: 15px; }
+.ok { color: #4ade80; } .warn { color: #fbbf24; } .crit { color: #f87171; } .blue { color: #38bdf8; } .purple { color: #a78bfa; }
+.bar-bg { background: #334155; border-radius: 4px; height: 5px; margin-top: 3px; margin-bottom: 8px; }
+.bar-fill { height: 5px; border-radius: 4px; transition: width 0.5s; }
+.alert-item { padding: 6px 10px; margin-bottom: 4px; border-radius: 4px; font-size: 12px; }
+.alert-warning { background: #422006; border-left: 3px solid #fbbf24; }
+.alert-critical { background: #450a0a; border-left: 3px solid #f87171; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { text-align: left; color: #64748b; padding: 5px 8px; border-bottom: 1px solid #334155; font-weight: 500; }
+td { padding: 5px 8px; border-bottom: 1px solid #1e293b; color: #cbd5e1; }
+td.mono { font-family: monospace; font-size: 11px; color: #94a3b8; }
+#error-banner { display: none; background: #450a0a; color: #fca5a5; padding: 8px 12px; border-radius: 6px; margin-bottom: 10px; font-size: 13px; }
+.section-title { font-size: 13px; color: #94a3b8; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <h1>📊 LinguaCoach 监控面板</h1>
+  <div class="refresh-info">运行时长: <span id="uptime">-</span> &nbsp;|&nbsp; 刷新: <span id="countdown">10</span>s &nbsp;|&nbsp; <span id="last-update">-</span></div>
+</div>
+<div id="error-banner"></div>
+
+<!-- Row 1: System + Connections -->
+<div class="grid-2">
+  <div class="card">
+    <h2>系统资源</h2>
+    <div class="metric"><span class="metric-label">CPU 使用率</span><span class="metric-value" id="cpu">-</span></div>
+    <div class="bar-bg"><div class="bar-fill" id="cpu-bar" style="width:0;background:#4ade80"></div></div>
+    <div class="metric"><span class="metric-label">内存使用率</span><span class="metric-value" id="mem">-</span></div>
+    <div class="bar-bg"><div class="bar-fill" id="mem-bar" style="width:0;background:#38bdf8"></div></div>
+    <div class="metric"><span class="metric-label">磁盘使用率</span><span class="metric-value" id="disk">-</span></div>
+    <div class="bar-bg"><div class="bar-fill" id="disk-bar" style="width:0;background:#a78bfa"></div></div>
+  </div>
+  <div class="card">
+    <h2>连接状态</h2>
+    <div class="metric"><span class="metric-label">WebSocket 连接数</span><span class="metric-value ok" id="users">-</span></div>
+    <div class="metric"><span class="metric-label">活跃对话数</span><span class="metric-value" id="convs">-</span></div>
+    <div class="metric"><span class="metric-label">在线用户数</span><span class="metric-value" id="online">-</span></div>
+    <div class="metric"><span class="metric-label">运行时长</span><span class="metric-value sm blue" id="uptime2">-</span></div>
+  </div>
+</div>
+
+<!-- Row 2: Network + Process -->
+<div class="grid-2">
+  <div class="card">
+    <h2>网络 I/O</h2>
+    <div class="metric"><span class="metric-label">发送速率</span><span class="metric-value sm blue" id="net-send">-</span></div>
+    <div class="metric"><span class="metric-label">接收速率</span><span class="metric-value sm blue" id="net-recv">-</span></div>
+    <div class="metric"><span class="metric-label">累计发送</span><span class="metric-value sm" id="net-send-total">-</span></div>
+    <div class="metric"><span class="metric-label">累计接收</span><span class="metric-value sm" id="net-recv-total">-</span></div>
+  </div>
+  <div class="card">
+    <h2>进程信息</h2>
+    <div class="metric"><span class="metric-label">进程 ID</span><span class="metric-value sm" id="pid">-</span></div>
+    <div class="metric"><span class="metric-label">CPU 占用</span><span class="metric-value sm" id="proc-cpu">-</span></div>
+    <div class="metric"><span class="metric-label">内存占用</span><span class="metric-value sm" id="proc-mem">-</span></div>
+    <div class="metric"><span class="metric-label">线程数</span><span class="metric-value sm" id="proc-threads">-</span></div>
+    <div class="metric"><span class="metric-label">文件描述符</span><span class="metric-value sm" id="proc-fds">-</span></div>
+  </div>
+</div>
+
+<!-- Row 3: Latency table + Alerts -->
+<div class="grid-2">
+  <div class="card">
+    <h2>延迟统计 (ms)</h2>
+    <table>
+      <thead><tr><th>操作</th><th>次数</th><th>P50</th><th>P95</th><th>最大</th></tr></thead>
+      <tbody id="latency-body"><tr><td colspan="5" style="color:#64748b">暂无数据</td></tr></tbody>
+    </table>
+  </div>
+  <div class="card">
+    <h2>告警</h2>
+    <div id="alerts"><span style="color:#64748b;font-size:13px">加载中...</span></div>
+  </div>
+</div>
+
+<!-- Row 4: Per-round timeline -->
+<div class="card" style="margin-bottom:10px">
+  <h2>每轮对话延迟明细</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Round ID</th>
+          <th>ASR</th>
+          <th>LLM TTFT</th>
+          <th>TTS First</th>
+          <th>用户感知</th>
+          <th>时间</th>
+        </tr>
+      </thead>
+      <tbody id="timeline-body"><tr><td colspan="6" style="color:#64748b">暂无数据</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+const BASE = location.pathname.includes('/english') ? '/english' : '';
+const API = BASE + '/monitoring';
+let countdown = 10;
+
+function cls(pct) { return pct > 90 ? 'crit' : pct > 75 ? 'warn' : 'ok'; }
+function setBar(id, pct) {
+  const el = document.getElementById(id);
+  el.style.width = Math.min(pct, 100) + '%';
+  el.style.background = pct > 90 ? '#f87171' : pct > 75 ? '#fbbf24' : '#4ade80';
+}
+function fmt(ms) {
+  if (ms == null || ms === 0) return '-';
+  if (ms >= 1000) return (ms/1000).toFixed(2) + 's';
+  return ms + 'ms';
+}
+function fmtBytes(mb) {
+  if (mb == null) return '-';
+  if (mb >= 1024) return (mb/1024).toFixed(1) + ' GB';
+  return mb.toFixed(1) + ' MB';
+}
+function fmtSpeed(kbps) {
+  if (kbps == null) return '-';
+  if (kbps >= 1024) return (kbps/1024).toFixed(1) + ' MB/s';
+  return kbps.toFixed(1) + ' KB/s';
+}
+
+async function refresh() {
+  try {
+    const [sumRes, sysRes, metRes, alertRes, tlRes] = await Promise.all([
+      fetch(API + '/summary'),
+      fetch(API + '/system'),
+      fetch(API + '/metrics'),
+      fetch(API + '/alerts'),
+      fetch(API + '/timeline?count=50')
+    ]);
+    const sum = await sumRes.json();
+    const sys = await sysRes.json();
+    const met = await metRes.json();
+    const alerts = await alertRes.json();
+    const tl = await tlRes.json();
+
+    document.getElementById('error-banner').style.display = 'none';
+
+    // Uptime
+    const uptime = met.uptime_human || sys.uptime_human || '-';
+    document.getElementById('uptime').textContent = uptime;
+    document.getElementById('uptime2').textContent = uptime;
+
+    // System
+    const cpu = sum.cpu_percent || 0, mem = sum.memory_percent || 0, disk = sum.disk_percent || 0;
+    document.getElementById('cpu').className = 'metric-value ' + cls(cpu);
+    document.getElementById('cpu').textContent = cpu.toFixed(1) + '%';
+    setBar('cpu-bar', cpu);
+    document.getElementById('mem').className = 'metric-value ' + cls(mem);
+    document.getElementById('mem').textContent = mem.toFixed(1) + '%';
+    setBar('mem-bar', mem);
+    document.getElementById('disk').className = 'metric-value ' + cls(disk);
+    document.getElementById('disk').textContent = disk.toFixed(1) + '%';
+    setBar('disk-bar', disk);
+
+    // Connections
+    const conn = met.connections || {};
+    const cur = conn.current || {};
+    document.getElementById('users').textContent = cur.websocket_connections ?? sum.active_connections ?? 0;
+    document.getElementById('convs').textContent = cur.active_conversations ?? sum.total_conversations ?? 0;
+    document.getElementById('online').textContent = cur.online_users ?? sum.online_users ?? 0;
+
+    // Network
+    const net = sys.network || {};
+    document.getElementById('net-send').textContent = fmtSpeed(net.bytes_sent_speed_kb);
+    document.getElementById('net-recv').textContent = fmtSpeed(net.bytes_recv_speed_kb);
+    document.getElementById('net-send-total').textContent = fmtBytes(net.bytes_sent_total_mb);
+    document.getElementById('net-recv-total').textContent = fmtBytes(net.bytes_recv_total_mb);
+
+    // Process
+    const proc = sys.process || {};
+    document.getElementById('pid').textContent = proc.pid || '-';
+    document.getElementById('proc-cpu').textContent = proc.cpu_percent != null ? proc.cpu_percent.toFixed(1) + '%' : '-';
+    document.getElementById('proc-mem').textContent = proc.memory_mb != null ? proc.memory_mb.toFixed(1) + ' MB' : '-';
+    document.getElementById('proc-threads').textContent = proc.threads ?? '-';
+    document.getElementById('proc-fds').textContent = proc.open_files ?? proc.num_fds ?? '-';
+
+    // Latency table
+    const lat = met.latencies || {};
+    const tbody = document.getElementById('latency-body');
+    if (Object.keys(lat).length === 0) {
+      tbody.innerHTML = '<tr><td colspan="5" style="color:#64748b">暂无数据</td></tr>';
+    } else {
+      tbody.innerHTML = Object.entries(lat).map(([k, v]) =>
+        `<tr><td>${k}</td><td>${v.count}</td><td>${fmt(v.p50)}</td><td>${fmt(v.p95 ?? v.p90)}</td><td>${fmt(v.max)}</td></tr>`
+      ).join('');
+    }
+
+    // Alerts
+    const al = (alerts.system_alerts || []).concat(alerts.business_alerts || alerts.alerts || []);
+    const ad = document.getElementById('alerts');
+    if (al.length === 0) {
+      ad.innerHTML = '<span style="color:#4ade80;font-size:13px">✓ 无告警</span>';
+    } else {
+      ad.innerHTML = al.map(a =>
+        `<div class="alert-item alert-${a.level || 'warning'}">${a.message}</div>`
+      ).join('');
+    }
+
+    // Timeline rounds
+    const rounds = (tl.rounds || []).slice().reverse();
+    const tb = document.getElementById('timeline-body');
+    if (rounds.length === 0) {
+      tb.innerHTML = '<tr><td colspan="6" style="color:#64748b">暂无数据</td></tr>';
+    } else {
+      tb.innerHTML = rounds.map(r => {
+        const lat = r.latencies || {};
+        const ts = r.created_at ? new Date(r.created_at).toLocaleTimeString() : '-';
+        const rid = (r.message_round_id || r.conversation_id || '').slice(-12);
+        return `<tr>
+          <td class="mono">${rid}</td>
+          <td>${fmt(lat.asr_ms)}</td>
+          <td>${fmt(lat.llm_ttft_ms)}</td>
+          <td>${fmt(lat.tts_first_chunk_ms)}</td>
+          <td>${fmt(lat.user_perceived_ms)}</td>
+          <td class="mono">${ts}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+  } catch (e) {
+    const banner = document.getElementById('error-banner');
+    banner.textContent = '获取数据失败: ' + e.message;
+    banner.style.display = 'block';
+  }
+}
+
+setInterval(() => {
+  countdown--;
+  document.getElementById('countdown').textContent = countdown;
+  if (countdown <= 0) { countdown = 10; refresh(); }
+}, 1000);
+refresh();
+</script>
+</body>
+</html>
