@@ -3186,7 +3186,9 @@ async def process_audio_stream(
                         if not await safe_send_json(websocket, {
                             "type": "audio_chunk",
                             "data": chunk.get("data"),
-                            "is_filler": True  # 标记为填充音
+                            "format": chunk.get("format", "pcm"),
+                            "sample_rate": chunk.get("sample_rate", pipeline.get_tts_sample_rate()),
+                            "is_filler": True
                         }):
                             break
                         # 标记 AI 开始说话

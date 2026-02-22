@@ -189,9 +189,9 @@ async def startup_warmups() -> None:
     if GPT4O_PIPELINE_ENABLED:
         def _warmup_pipeline():
             try:
-                from services.gpt4o_pipeline import GPT4oPipeline
+                from api.gpt4o_pipeline_endpoint import get_pipeline
                 logger.info("预热 GPT-4o Pipeline 服务...")
-                pipeline = GPT4oPipeline()
+                pipeline = get_pipeline()  # 使用单例，确保 filler 缓存在运行时生效
                 pipeline.preload_fillers()
                 logger.info("GPT-4o Pipeline 服务预热完成")
             except Exception as e:
