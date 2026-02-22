@@ -1075,6 +1075,16 @@ class GPT4oPipeline:
             yield {"type": "done", "latency": {"total": 0}}
             return
 
+        # Backchanneling: 立即发送填充音，降低用户感知延迟
+        try:
+            filler = self.get_filler_audio()
+            if filler:
+                import base64 as _b64
+                sample_rate = self.get_tts_sample_rate()
+                yield {"type": "filler_audio", "data": _b64.b64encode(filler).decode("utf-8"), "format": "pcm", "sample_rate": sample_rate}
+        except Exception as _fe:
+            logger.warning(f"[Filler] 发送填充音失败: {_fe}")
+
         llm_start = time.time()
         full_response = ""
         sentence_buffer = ""
